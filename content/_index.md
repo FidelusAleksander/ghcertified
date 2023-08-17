@@ -14,6 +14,7 @@ A Github Actions Quiz created in preparation for the **Github Actions** certific
 
 ---
 primary_color: steelblue
+shuffle_questions: true
 ---
 
 # The sound of dog
@@ -22,13 +23,14 @@ primary_color: steelblue
 shuffle_answers: false
 ---
 
+
 What do dogs sound like?
 
 > ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dog_-_%E0%B4%A8%E0%B4%BE%E0%B4%AF-6.JPG/150px-Dog_-_%E0%B4%A8%E0%B4%BE%E0%B4%AF-6.JPG)
 
 ```python
 class Dog(Animal):
-    def __init__(self, name):
+    def __init__(self, name)
         self.name = name
 ```
 
@@ -46,6 +48,28 @@ class Dog(Animal):
 3. Wednesday
 4. Friday
 5. Saturday  
+
+# Put the [days](https://en.wikipedia.org/wiki/Day) in order!
+
+> Monday is the *first* day of the week.
+
+1. Monday
+2. Tuesday
+3. Wednesday
+4. Friday
+5. Saturday  
+
+
+# Put the [days](https://en.wikipedia.org/wiki/Day) in order!
+
+> Monday is the *first* day of the week.
+
+1. Monday
+2. Tuesday
+3. Wednesday
+4. Friday
+5. Saturday  
+
 
 
 # Optional Math formula rendering
