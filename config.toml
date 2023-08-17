@@ -1,3 +1,25 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl                  = "https://example.com"           # Your domain name. Must end with "/"
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "Github Actions Quiz"
+
+description = "Github Actions certification preparation quiz"
+
+
+theme = "hugo-theme-learn"
+
+[params]
+  description = "A Custom Hugo Shortcode for Interactive Quizzes"
+  author = "Malte Bonart"
+  showVisitedLinks = false
+  disableBreadcrumb = true
+  disableNextPrev = true
+  disableSearch = true
+  disableHistory= true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[minify]
+  disableHTML = true
