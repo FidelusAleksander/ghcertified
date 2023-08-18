@@ -17,6 +17,7 @@ theme = "hugo-theme-learn"
   disableNextPrev = true
   disableSearch = true
   disableHistory= true
+  themeVariant = "blue"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
