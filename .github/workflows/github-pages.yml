@@ -40,6 +40,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - run: echo "${{ github.event }}"
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -47,7 +48,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/${{ github.event.repository.name}}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/github-actions-quiz/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
