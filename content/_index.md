@@ -19,9 +19,7 @@ shuffle_questions: true
 
 # Are Github Actions free for public repositories?
 
-
-> ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dog_-_%E0%B4%A8%E0%B4%BE%E0%B4%AF-6.JPG/150px-Dog_-_%E0%B4%A8%E0%B4%BE%E0%B4%AF-6.JPG)
-
+![](https://images.credly.com/size/340x340/images/556afa03-8682-4e3a-9975-b588b7aa5ba0/image.png)
 
 1. [x] Yes
 1. [ ] No
@@ -38,8 +36,8 @@ shuffle_questions: true
 > https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 
 1. [x] none, write, read
-2. [ ] read, write, delete
-3. [ ] read, write
+1. [ ] read, write, delete
+1. [ ] read, write
 
 # Which statement is correct regarding passing permissions to reusable workflows
 

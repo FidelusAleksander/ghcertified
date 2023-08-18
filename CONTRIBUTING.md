@@ -2,7 +2,7 @@
 
 Before you get started, make sure to install:
 
-- [HUGO](https://gohugo.io/getting-started/installing/): The static site generator used to build the website.
+- [HUGO](https://gohugo.io/installation/): The static site generator used to build the website.
 
 ## Getting Started
 
