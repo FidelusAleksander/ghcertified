@@ -19,8 +19,6 @@ shuffle_questions: true
 
 # Are Github Actions free for public repositories?
 
-![](https://images.credly.com/size/340x340/images/556afa03-8682-4e3a-9975-b588b7aa5ba0/image.png)
-
 1. [x] Yes
 1. [ ] No
 
