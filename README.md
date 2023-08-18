@@ -4,12 +4,9 @@
   <img src="https://images.credly.com/size/340x340/images/556afa03-8682-4e3a-9975-b588b7aa5ba0/image.png" />
 </p>
 
-## Studying for the exam
+## How to use
 
-Currently this project is in-development phase and can be run **locally**.
-To see instructions on local setup see [CONTRIBUTING](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/CONTRIBUTING.md)
-
-When ready it will be hosted publicly under yet to be decided domain
+Use the quiz directly on [Github Pages](https://fidelusaleksander.github.io/github-actions-quiz/)
 
 ## Contributing
 
