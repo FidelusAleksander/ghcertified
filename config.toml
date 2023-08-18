@@ -1,4 +1,3 @@
-baseurl                  = "https://example.com"           # Your domain name. Must end with "/"
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
@@ -17,9 +16,16 @@ theme = "hugo-theme-learn"
   disableNextPrev = true
   disableSearch = true
   disableHistory= true
+  themeVariant = "blue"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [minify]
   disableHTML = true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/FidelusAleksander/github-actions-quiz"
+weight = 10
