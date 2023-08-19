@@ -2,8 +2,6 @@
 
 {{ .Content }}
 
-
-
 <div class='quizdown'>
 {{ range (where .Site.RegularPages "Section" "questions") }}
     {{ .RawContent }}
