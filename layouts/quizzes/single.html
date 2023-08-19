@@ -5,7 +5,7 @@
 
 
 <div class='quizdown'>
-{{ range (where .Site.Pages "Section" "questions") }}
+{{ range (where .Site.RegularPages "Section" "questions") }}
     {{ .RawContent }}
 {{ end }}
 </div>
