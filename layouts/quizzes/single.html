@@ -3,13 +3,9 @@
 {{ .Content }}
 
 
+
+<div class='quizdown'>
 {{ range (where .Site.Pages "Section" "questions") }}
-    {{ .Content }}
+    {{ .RawContent }}
 {{ end }}
-
-
-
-# Pure markdown question?
-
-1. [x] Yes
-1. [ ] No
+</div>
