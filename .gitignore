@@ -1,3 +1,4 @@
 # Hugo default output directory
 /public
 .idea/
+.hugo_build.lock
