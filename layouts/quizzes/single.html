@@ -1,17 +1,15 @@
 {{ partial "header.html" . }}
 
-{{ .Content}}
-<div class='quizdown'>
-{{ range (where .Site.Pages "Section" "questions") }}
-   {{ range .Pages }}
-    {{ .Content }}
-   {{ end }}
-{{ end }}
-</div>
+{{ .Content }}
 
-<div class='quizdown'>
-# test inline?
+
+{{ range (where .Site.Pages "Section" "questions") }}
+    {{ .Content }}
+{{ end }}
+
+
+
+# Pure markdown question?
 
 1. [x] Yes
 1. [ ] No
-</div>
