@@ -1,14 +1,14 @@
-+++
-title = 'Question 001'
-date = 2023-08-19T05:52:23-07:00
-draft = false
-subject = ['colors']
-level = ['easy']
-answer = 'blue'
-+++
+---
+title: "Question 001"
+date: 2023-08-19T21:08:59+02:00
+draft: false
+subject: []
+---
 
-What color is the sky?
+# Which statement is correct regarding passing permissions to reusable workflows
 
-1. Red
-1. Green
-1. Blue
+> https://docs.github.com/en/actions/using-workflows/reusing-workflows?
+
+1. [x] The GITHUB_TOKEN permissions passed from the caller workflow can be only downgraded by the called workflow.
+1. [ ] The GITHUB_TOKEN permissions passed from the caller workflow can be both downgraded and elevated by the called workflow.
+1. [ ] The GITHUB_TOKEN permissions passed from the caller workflow can be neither downgraded or elevated by the called workflow.
