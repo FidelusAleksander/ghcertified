@@ -5,9 +5,9 @@ draft: false
 subject: []
 ---
 
-# What workflow_run event trigger will TODO
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-for-workflow-run-events
-1. [x] 1
-1. [ ] 2
-1. [ ] 4
-1. [ ] 3
+# Which event allows You to manually trigger a workflow from the GitHub UI?
+> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
+1. [x] workflow_dispatch
+1. [ ] manual_dispatch
+1. [ ] workflow_trigger
+1. [ ] manual_trigger
