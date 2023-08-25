@@ -7,8 +7,8 @@ subject: []
 
 # Which matrix job definition is syntactically correct?
 
-
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
+
 1. [x]
 ```yaml
   jobs:
@@ -18,6 +18,7 @@ subject: []
           version: [10, 12, 14]
           os: [ubuntu-latest, windows-latest]
 ```
+
 1. [ ]
 ```yaml
   jobs:
