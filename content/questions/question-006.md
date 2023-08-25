@@ -8,7 +8,7 @@ subject: []
 # Which is true about workflows?
 > https://docs.github.com/en/actions/using-workflows/about-workflows
 - [x] Workflows can run one or multiple jobs at a time
-- [x] Workflows can only be triggered manually, by an event or run on a schedule
+- [x] Workflows can be triggered manually, by an event or run on a schedule
 - [x] Workflows have to be defined in the `.github/workflows` directory
 - [ ] Workflows can only be run on a schedule
 - [ ] Workflow can run one job at a time
