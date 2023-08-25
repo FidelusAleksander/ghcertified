@@ -4,6 +4,7 @@ date: 2023-08-25T14:35:18+02:00
 draft: false
 subject: []
 ---
+
 # What are the valid use cases for using **defaults**?
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults
 
