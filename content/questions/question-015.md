@@ -9,7 +9,7 @@ subject: []
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
 
-1. [x]
+1. [x] 
 ```yaml
   jobs:
     example_matrix:
@@ -19,7 +19,7 @@ subject: []
           os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ]
+1. [ ] 
 ```yaml
   jobs:
     example_matrix:
@@ -29,7 +29,7 @@ subject: []
           os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ]
+1. [ ] 
 ```yaml
   jobs:
     example_matrix:
@@ -38,7 +38,7 @@ subject: []
         os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ]
+1. [ ] 
 ```yaml
   jobs:
     matrix:
