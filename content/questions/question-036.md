@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# You defined a `matrix` job `example_matrix`. How can limit the matrix to run a maximum of 2 jobs at the same time?
+# You defined a matrix job `example_matrix`. How can limit the matrix to run a maximum of 2 jobs at the same time?
 
 ```yaml
   jobs:

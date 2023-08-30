@@ -5,9 +5,9 @@ draft: false
 subject: []
 ---
 
-# If job B requires job A to be finished you need to:
+# If job B requires job A to be finished you have to:
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs
-1. [x] you can use the needs keyword in job B to create this dependency
-1. [ ] you can use the needs keyword in job A to create this dependency
-1. [ ] you can use the requires keyword in job B to create this dependency
-1. [ ] you can use the requires keyword in job A to create this dependency
+1. [x] use the `needs` keyword in job B to create this dependency
+1. [ ] use the `needs` keyword in job A to create this dependency
+1. [ ] use the `requires` keyword in job B to create this dependency
+1. [ ] use the `requires` keyword in job A to create this dependency

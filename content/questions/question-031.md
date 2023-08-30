@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# What jobs.<job_id>.if conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository?
+# What `jobs.job_id.if` conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository?
 ```yaml
   jobs:
     production-deploy:  

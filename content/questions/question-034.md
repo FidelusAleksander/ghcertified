@@ -6,7 +6,7 @@ subject: []
 ---
 
 
-# When using actions published in public repositories maintained by someone else - You can use often that action in multiple versions. Rank the different approaches from most to least stable.
+# When using actions published in public repositories maintained by someone else - You can often use that action in multiple versions. Rank the different approaches from most to least stable.
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
 1. Using the commit SHA
 ```yaml
