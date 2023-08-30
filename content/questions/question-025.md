@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# You want to create a reusable workflow "CI" that runs some quality checks, linting or tests on code changes. What event trigger should "CI" workflow have to allow reusing it in other workflows?
+# You want to create a reusable workflow `CI` that runs some quality checks, linting or tests on code changes. What event trigger should the `CI` workflow define to allow reusing it in other workflows?
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 1. [x] workflow_call
 1. [ ] workflow_trigger

@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# What are the different permission levels You can assign to GITHUB_TOKEN in the permissions block?
+# What are the different permission levels You can assign to `GITHUB_TOKEN` in the `permissions` block?
 
 > https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 
