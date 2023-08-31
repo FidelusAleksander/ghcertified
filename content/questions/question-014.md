@@ -15,6 +15,6 @@ jobs:
         version: [10, 12, 14]
         os: [ubuntu-latest, windows-latest]
 ```
-> https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [x] No
-1. [ ] Yes
+> https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-a-matrix-strategy-with-a-reusable-workflow
+1. [ ] No
+1. [x] Yes

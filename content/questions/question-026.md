@@ -6,7 +6,7 @@ subject: []
 ---
 
 # A reusable workflow named `build` creates zip file artifacts. How do You pass the zip file location to the caller workflow that is using the `build` workflow?
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-of-onworkflow_calloutputs
+> https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow
 
 - [x] You define an output on workflow level in the `build` workflow
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-of-onworkflow_calloutputs
