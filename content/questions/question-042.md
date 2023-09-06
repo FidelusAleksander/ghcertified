@@ -8,14 +8,11 @@ subject: []
 
 # When should You use `artifacts`?
 
-```yaml
-  uses: actions/upload-artifact@v3
-```
-
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 
-- [x] When you want to save files produced by a job to view after a workflow run has ended, such as test results or build logs.
-- [x] When you want to save binaries produced by a build job to use in a subsequent deploy job to deploy a new version of an application
-- [ ] When you want to reuse files that don't change often between jobs or workflow runs, such as build dependencies from a package management system.
+- [x] Use artifacts to save files produced by a job to view after a workflow run has ended, such as test results or build logs.
+- [x] Use artifacts to save binaries produced by a build job to use in a subsequent deploy job to deploy a new version of an application
+- [ ] Use artifacts to reuse files that don't change often between jobs or workflow runs, such as build dependencies from a package management system.
 > Caching should be used for that https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
-- [ ] When you want to reuse files that do change often between jobs or workflow runs, such as build dependencies from a package management system.
+- [ ] Use artifacts to create new versions of Your application together with release notes, mentions and/or contributors
+> That's a use case for releases, not artifacts

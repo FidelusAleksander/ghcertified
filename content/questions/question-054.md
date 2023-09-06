@@ -7,7 +7,7 @@ subject: []
 
 # When creating custom Github Actions - in what file all the action `metadata` has to be defined? 
 
-Metadata such as name or description of the action, the outputs or required inputs etc
+Metadata examples: name, description, outputs or required inputs
 > https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
 1. [x] In the `action.yml` or `action.yaml` file in the action repository
 1. [ ] In the repository `README` file

@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# This is code will launch 6 different jobs in parallel using the matrix strategy. Can You use the matrix strategy to parallelize entire workflows?
+# This code will launch 6 different jobs in parallel using the matrix strategy. Can You use the matrix strategy to parallelize entire workflows?
 
 ```yaml
 jobs:

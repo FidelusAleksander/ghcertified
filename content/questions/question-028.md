@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# How can You ensure that a workflow called "Deploy Prod" is always running at most one at a time?
+# How can You ensure that a workflow called `Deploy Prod` is always running at most one at a time?
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
 
 1. [x] Use `concurrency` on workflow level
