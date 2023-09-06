@@ -2,3 +2,4 @@
 /public
 .idea/
 .hugo_build.lock
+.vscode/
