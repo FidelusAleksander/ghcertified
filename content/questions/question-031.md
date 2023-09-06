@@ -16,7 +16,6 @@ subject: []
 ```
 > https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 - [x] `if: github.repository == 'my-org/my-repo'`
-> You may omit the ${{ }} expression syntax in `if` conditionals
 - [x] `if: ${{ github.repository == 'my-org/my-repo' }}`
 - [ ] `if: ${{ github.organization == 'my-org' && github.repository == 'my-repo' }}`
 > https://docs.github.com/en/actions/learn-github-actions/contexts#github-context

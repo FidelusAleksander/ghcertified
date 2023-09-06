@@ -8,7 +8,7 @@ subject: []
 # Which is true about `Starter Workflows` ?
 
 > https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
-- [x] They allow users to leverage ready-to-use (or with minimal changes) workflow templates when using Github UI 
+- [x] They allow users to leverage ready-to-use (or requiring minimal changes) workflow templates
 - [x] Github provides and maintains starter workflows for different categories, languages and tooling
 - [x] Your organization can create custom starter workflows for users in Your organization
 - [ ] Starter workflows cannot call reusable workflows

@@ -8,10 +8,6 @@ subject: []
 
 # When should You use `caching`?
 
-```yaml
-  uses: actions/cache@v3
-```
-
 > https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
 
 1. [x] When you want to reuse files that don't change often between jobs or workflow runs, such as build dependencies from a package management system.

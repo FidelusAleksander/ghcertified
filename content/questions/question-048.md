@@ -5,7 +5,7 @@ draft: false
 subject: []
 ---
 
-# A job called `job2` is using artifacts created in `job1`. To make sure `job1` finished before `job2` starts looking for the artifacts how should You create that dependency?
+# A job called `job2` is using artifacts created in `job1`. Therefore it's important to make sure `job1` finishes before `job2` starts looking for the artifacts. How should You create that dependency?
 
 > https://github.com/sede-x/osdu-dpsolutions-gha-commons/pull/40/commits/f46cc3161059ec787afa78c3875b9f5288d3f73c
 

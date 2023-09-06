@@ -6,7 +6,7 @@ subject: []
 ---
 
 
-# When using actions published in public repositories maintained by someone else - You can often use that action in multiple versions. Rank the different approaches from most to least stable.
+# For any action published in GitHub Marketplace, You can often use it in multiple versions, rank the different approaches from most to least stable and secure.
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
 1. Using the commit SHA
 ```yaml
@@ -16,7 +16,7 @@ subject: []
 ```yaml
     uses: actions/checkout@v3
 ```
-3. Using the master branch
+3. Using the main branch
 ```yaml
     uses: actions/checkout@main
 ```
