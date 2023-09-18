@@ -1,0 +1,5 @@
+[[shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/FidelusAleksander/github-actions-quiz"
+weight = 10

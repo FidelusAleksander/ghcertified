@@ -1,0 +1,11 @@
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "Github Actions Quiz"
+baseUrl                  = "https://fidelusaleksander.github.io/github-actions-quiz/"
+
+description = "Github Actions certification preparation quiz"
+theme = "hugo-theme-learn"
+
+[minify]
+  disableHTML = true
