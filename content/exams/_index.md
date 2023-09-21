@@ -1,12 +1,13 @@
 ---
-title: "Quizzes"
+title: "Practice Exams"
 chapter: true
 date: 2023-08-19T11:04:05+02:00
 draft: false
+weight: 50
 ---
 
 # **Welcome**
-Go through the quiz to validate Your Github Actions knowledge.
+Go through the practice tests to validate Your Github Actions knowledge.
 
 At the end of the quiz You will be marked and given the option to review and fix Your mistakes!
 
