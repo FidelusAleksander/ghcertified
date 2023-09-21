@@ -1,8 +1,8 @@
 ---
-title: "Quizzes"
-chapter: true
-date: 2023-08-19T11:04:05+02:00
+title: "Exam FAQ"
+date: 2023-09-18T10:55:55+02:00
 draft: false
+weight: 100
 ---
 
 # **Welcome**
