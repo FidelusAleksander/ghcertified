@@ -21,7 +21,7 @@ It should be available under http://localhost:1313
 
 # Updating the quiz content
 
-All of the questions in this repository are stored in [content/questions](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/content/questions) directory.
+All of the questions in this repository are stored in [content/questions](https://github.com/FidelusAleksander/githubcertified/blob/master/content/questions) directory.
 
 ## Adding a question
 1) Run hugo command to add a new file with auto-generated metadata (frontmatter)

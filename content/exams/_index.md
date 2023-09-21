@@ -13,4 +13,4 @@ At the end of the quiz You will be marked and given the option to review and fix
 
 ### Contributing
 
-If You wish to add any questions or raise an issue with existing ones [click here](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/CONTRIBUTING.md)
+If You wish to add any questions or raise an issue with existing ones [click here](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md)

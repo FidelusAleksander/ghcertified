@@ -13,11 +13,11 @@ The site is deployed @ https://githubcertified.com/
 We welcome contributions to improve and expand the quiz content.
 If you have additional questions or topics that you believe would benefit those preparing for the GitHub Actions Certification Exam,
 feel free to submit a pull request.
-Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/CONTRIBUTING.md)
+Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md)
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/FidelusAleksander/githubcertified/blob/master/LICENSE).
 
 ## Acknowledgments
 
