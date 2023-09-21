@@ -7,7 +7,7 @@ weight: 50
 ---
 
 # **Welcome**
-Go through the practice tests to validate Your Github Actions knowledge.
+Go through the practice tests to validate Your Github knowledge.
 
 At the end of the quiz You will be marked and given the option to review and fix Your mistakes!
 

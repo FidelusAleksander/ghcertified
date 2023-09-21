@@ -1,10 +1,10 @@
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
-title                    = "Github Actions Quiz"
+title                    = "Github Certified"
 baseUrl                  = "https://githubcertified.com"
 
-description = "Github Actions certification preparation quiz"
+description = "Github Certification Exam Preparation"
 theme = "hugo-theme-learn"
 
 [minify]
