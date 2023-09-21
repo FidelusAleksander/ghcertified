@@ -6,7 +6,7 @@
 
 ## How to use
 
-Use the quiz directly on [Github Pages](https://fidelusaleksander.github.io/github-actions-quiz/)
+The site is deployed @ https://githubcertified.com/
 
 ## Contributing
 
