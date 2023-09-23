@@ -1,23 +1,24 @@
-# GitHub Actions Certification Exam Preparation Quiz
+# Get GitHub Certified
 
-<p align="center">
-  <img src="https://images.credly.com/size/340x340/images/556afa03-8682-4e3a-9975-b588b7aa5ba0/image.png" />
-</p>
+GitHub Admin             |  GitHub Actions             |  GitHub Advanced Security
+:-------------------------:|:-------------------------:|:-------------------------:
+![GitHub Admin](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/admin_badge.png?raw=true)  |  ![GitHub Actions](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/actions_badge.png?raw=true)  |  ![Advanced Security](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/advanced_security_badge.png?raw=true)
+
 
 ## How to use
 
-Use the quiz directly on [Github Pages](https://fidelusaleksander.github.io/github-actions-quiz/)
+The site is deployed @ https://githubcertified.com/
 
 ## Contributing
 
-We welcome contributions to improve and expand the quiz content.
-If you have additional questions or topics that you believe would benefit those preparing for the GitHub Actions Certification Exam,
+We welcome contributions to improve and expand the site content.
+If you have additional questions or topics that you believe would benefit those preparing for the GitHub Certification Exams,
 feel free to submit a pull request.
-Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/CONTRIBUTING.md)
+Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md)
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/FidelusAleksander/github-actions-quiz/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/FidelusAleksander/githubcertified/blob/master/LICENSE).
 
 ## Acknowledgments
 

@@ -1,0 +1,5 @@
+[[shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/FidelusAleksander/githubcertified"
+weight = 10

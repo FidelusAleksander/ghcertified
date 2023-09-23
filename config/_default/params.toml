@@ -1,0 +1,7 @@
+showVisitedLinks = false
+disableBreadcrumb = true
+disableNextPrev = true
+disableSearch = true
+disableHistory = true
+disableLandingPageButton = true
+themeVariant = "blue"

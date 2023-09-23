@@ -1,0 +1,11 @@
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "Github Certified"
+baseUrl                  = "https://githubcertified.com"
+
+description = "Github Certification Exam Preparation"
+theme = "hugo-theme-learn"
+
+[minify]
+  disableHTML = true
