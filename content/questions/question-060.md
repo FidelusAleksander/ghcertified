@@ -13,4 +13,3 @@ subject: []
 1. [ ] `GITHUB_REPOSITORY`
 1. [ ] `GITHUB_WORKFLOW`
 1. [x] `GITHUB_ACTOR`
-> The `GITHUB_ACTOR` environment variable contains the name of the person or app that initiated the workflow run. For example, `octocat`.
