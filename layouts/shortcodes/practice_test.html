@@ -1,8 +1,4 @@
-{{ partial "header.html" . }}
-
-{{ .Content }}
-
-{{ $exam := .Params.exam }}
+{{ $exam := .Page.Params.exam }}
 
 <div class='quizdown'>
 {{ range where .Site.RegularPages "Section" "questions" }}
