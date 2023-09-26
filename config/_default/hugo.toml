@@ -4,8 +4,8 @@ isMultilingual           = false
 title                    = "Github Certified"
 baseUrl                  = "https://githubcertified.com"
 
-description = "Github Certification Exam Preparation"
-theme = "hugo-theme-learn"
+
+theme = "hugo-theme-relearn"
 
 [minify]
   disableHTML = true

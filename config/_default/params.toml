@@ -1,7 +1,12 @@
 showVisitedLinks = false
-disableBreadcrumb = true
+disableBreadcrumb = false
 disableNextPrev = true
 disableSearch = true
 disableHistory = true
 disableLandingPageButton = true
-themeVariant = "blue"
+themeVariant = "auto"
+
+alwaysopen = true
+editURL = "https://github.com/FidelusAleksander/githubcertified/edit/master/content/"
+author = "Aleksander Fidelus"
+description = "Github Certification Exam Preparation"
