@@ -4,7 +4,7 @@ disableNextPrev = true
 disableSearch = true
 disableHistory = true
 disableLandingPageButton = true
-themeVariant = "auto"
+themeVariant = "blue"
 
 alwaysopen = true
 editURL = "https://github.com/FidelusAleksander/githubcertified/edit/master/content/"
