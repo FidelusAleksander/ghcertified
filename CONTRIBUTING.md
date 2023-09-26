@@ -26,9 +26,12 @@ All of the questions in this repository are stored in [content/questions](https:
 ## Adding a question
 1) Run hugo command to add a new file with auto-generated metadata (frontmatter)
 ```bash
-hugo new questions/question-XXX.md
+hugo new questions/actions/question-XXX.md
+hugo new questions/admin/question-XXX.md
+hugo new questions/advanced_security/question-XXX.md
 ```
-2) Fill the contents of the generated markdown file with a question mattching the
+
+2) Fill the contents of the generated markdown file with a question matching the
  [quizdown-js/syntax](https://github.com/bonartm/quizdown-js/blob/main/docs/syntax.md):
 
 Questions can be of three types:
