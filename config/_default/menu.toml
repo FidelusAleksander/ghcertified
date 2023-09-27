@@ -1,5 +1,17 @@
 [[shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub repo"
+name = "<i class='fab fa-github'></i> Repository"
 identifier = "ds"
 url = "https://github.com/FidelusAleksander/githubcertified"
 weight = 10
+
+[[shortcuts]]
+name = "<i class='fas fa-fw fa-calendar'></i> Schedule exam"
+identifier = "schedule"
+url = "https://examregistration.github.com/"
+weight = 20
+
+[[shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> GitHub Documentation"
+identifier = "githubdoc"
+url = "https://docs.github.com/en"
+weight = 30
