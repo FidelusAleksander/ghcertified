@@ -4,7 +4,8 @@ disableNextPrev = true
 disableSearch = true
 disableHistory = true
 disableLandingPageButton = true
-themeVariant = "blue"
+themeVariant = [ "auto", "relearn-bright", "relearn-light", "relearn-dark", "zen-light", "zen-dark", "neon", "learn", "blue", "green", "red" ]
+themeVariantAuto = [ "relearn-light", "relearn-dark" ]
 
 alwaysopen = true
 editURL = "https://github.com/FidelusAleksander/githubcertified/edit/master/content/"
