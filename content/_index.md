@@ -12,8 +12,7 @@ archetype: "home"
 
 ## Overview
 
-Learn about the GitHub Certification program. What to expect and how to prepare
-
+Learn about the GitHub Certification program and what to expect.
 {{< badges >}}
 
 
