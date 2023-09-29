@@ -9,11 +9,10 @@ weight: 20
 
 ## Get Ready for GitHub Actions Certification
 
-[Start the GitHub Actions Practice Exam](#) (Link coming soon)
 
-- Test your knowledge and skills with our practice test for the GitHub Actions certification.
-- Practice with real-world questions to increase your confidence and readiness for the official exam.
-- Identify areas where you may need to focus your study efforts before taking the certification exam.
+
+**[Start the GitHub Actions Practice Exam]({{< relref "practice_tests/actions.md" >}})**
+
 
 
 {{% notice style="info" %}}
