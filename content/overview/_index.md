@@ -48,7 +48,7 @@ Questions are designed to measure skills in the following categories
 
 
 ### 3. GitHub Advanced Security
-- Questions are designed to measure skills in the following categories
+Questions are designed to measure skills in the following categories
 - Describe the GitHub Advanced Security features and functionality
 - Configure and use secret scanning
 - Configure and use dependency management

@@ -24,7 +24,7 @@ As of right now, practice exams for **GitHub Admin** and **GitHub Advanced Secur
 
 ### Contributing Questions: Enhance Your Exam Preparation
 
- [Click Here](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md) to contribute Your own questions. Not only can you help fellow learners and aspiring certification holders by expanding our question bank, but it's also an excellent way to enhance your own exam preparation.
+ You can [**contribute**](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md) Your own set of questions. Not only can you help fellow learners and aspiring certification holders by expanding our question bank, but it's also an excellent way to enhance your own exam preparation.
 
 Here's how contributing can be a valuable part of your study strategy:
 
