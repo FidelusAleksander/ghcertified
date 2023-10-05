@@ -1,0 +1,48 @@
+.exam-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.exam-box {
+  flex-basis: auto;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+.exam-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.exam-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.exam-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+
+.exam-disabled {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: not-allowed
+}
