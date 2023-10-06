@@ -1,14 +1,19 @@
 .exam-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: stretch
 }
 
 .card {
-  position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: stretch;
-  justify-content: space-between;
+
+  position: relative;
   width: 320px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 32px;
@@ -24,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   color: #e8e8e8;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }

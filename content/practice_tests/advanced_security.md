@@ -5,4 +5,4 @@ draft: true
 exam: "GitHub Advanced Security"
 ---
 
-{{< practice_test >}}
+{{< quizdown >}}
