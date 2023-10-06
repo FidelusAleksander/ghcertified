@@ -5,4 +5,4 @@ draft: true
 exam: "GitHub Admin"
 ---
 
-{{< practice_test >}}
+{{< quizdown >}}

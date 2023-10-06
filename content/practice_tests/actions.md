@@ -6,4 +6,4 @@ exam: "GitHub Actions"
 ---
 
 
-{{< practice_test >}}
+{{< quizdown >}}
