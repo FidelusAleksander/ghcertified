@@ -5,7 +5,7 @@ draft: false
 weight: 20
 ---
 
-{{< tests >}}
+{{< test_cards >}}
 
 {{% notice style="info" %}}
 
