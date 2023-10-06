@@ -13,12 +13,12 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 32px;
   margin: 2px;
-  overflow: hidden;
   border-radius: 10px;
   background: #212121;
   border: 2px solid #313131;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
+
 
 .content {
   display: flex;
@@ -68,4 +68,11 @@
   outline: 2px solid #e8e8e8;
   background: transparent;
   color: #e8e8e8;
+}
+
+@media (max-width: 768px) {
+  .exam-container {
+      flex-direction: column;
+      align-items: center;
+  }
 }

@@ -5,7 +5,6 @@ draft: false
 weight: 20
 ---
 
-{{< test_cards >}}
 
 {{% notice style="info" %}}
 
@@ -14,3 +13,6 @@ As of right now, practice exams for **GitHub Admin** and **GitHub Advanced Secur
 [How to contribute](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md). 
 
 {{% /notice %}}
+
+
+{{< test_cards >}}
