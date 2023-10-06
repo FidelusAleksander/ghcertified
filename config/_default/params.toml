@@ -1,11 +1,14 @@
+# Looks best on blue
+# themeVariant = [ "auto", "blue", "relearn-bright", "relearn-light", "relearn-dark", "zen-light", "zen-dark", "neon", "learn",  "green", "red" ]
+# themeVariantAuto = [ "relearn-light", "relearn-dark" ]
+themeVariant = "blue"
+
 showVisitedLinks = false
 disableBreadcrumb = false
 disableNextPrev = true
 disableSearch = true
 disableHistory = true
 disableLandingPageButton = true
-themeVariant = [ "auto", "relearn-bright", "relearn-light", "relearn-dark", "zen-light", "zen-dark", "neon", "learn", "blue", "green", "red" ]
-themeVariantAuto = [ "relearn-light", "relearn-dark" ]
 
 alwaysopen = false
 editURL = "https://github.com/FidelusAleksander/githubcertified/edit/master/content/"
