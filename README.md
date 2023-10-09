@@ -1,6 +1,7 @@
+<p align="center">
+  <img src="https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/logo.png?raw=true" />
+</p>
 
-
-![http://githubcertified.com/](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/logo.png?raw=true) 
 ## How to use
 
 The site is deployed @ https://githubcertified.com/
