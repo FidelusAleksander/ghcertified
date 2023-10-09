@@ -4,10 +4,11 @@ identifier = "ds"
 url = "https://github.com/FidelusAleksander/githubcertified"
 weight = 10
 
+
 [[shortcuts]]
-name = "<i class='fas fa-fw fa-calendar'></i> Schedule exam"
-identifier = "schedule"
-url = "https://examregistration.github.com/"
+name = "<i class='fas fa-fw fa-calendar'></i> Official Site"
+identifier = "Certifications"
+url = "https://resources.github.com/learn/certifications/"
 weight = 20
 
 [[shortcuts]]
