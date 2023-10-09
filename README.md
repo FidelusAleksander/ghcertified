@@ -1,10 +1,6 @@
-# Get GitHub Certified
-
-GitHub Admin             |  GitHub Actions             |  GitHub Advanced Security
-:-------------------------:|:-------------------------:|:-------------------------:
-![GitHub Admin](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/admin_badge.png?raw=true)  |  ![GitHub Actions](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/actions_badge.png?raw=true)  |  ![Advanced Security](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/advanced_security_badge.png?raw=true)
 
 
+![http://githubcertified.com/](https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/logo.png?raw=true) 
 ## How to use
 
 The site is deployed @ https://githubcertified.com/
