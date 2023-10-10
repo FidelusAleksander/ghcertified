@@ -29,6 +29,7 @@ All of the questions in this repository are stored in [content/questions](https:
 hugo new questions/actions/question-XXX.md
 hugo new questions/admin/question-XXX.md
 hugo new questions/advanced_security/question-XXX.md
+hugo new questions/foundations/question-XXX.md
 ```
 
 2) Fill the contents of the generated markdown file with a question matching the
