@@ -1,11 +1,10 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | strings.FirstUpper }}"
-date: {{ .Date }}
 draft: false
 subject: []
 ---
 
-# Single Choice
+# Single Choice 
 > 
 1. [x]
 1. [ ] 
