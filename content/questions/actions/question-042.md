@@ -5,7 +5,7 @@ subject: []
 ---
 
 
-# When should You use `artifacts`?
+# When should You use `artifacts`? (Select two.)
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 

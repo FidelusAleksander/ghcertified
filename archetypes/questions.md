@@ -11,7 +11,7 @@ subject: []
 1. [ ] 
 1. [ ] 
 
-# Multi Choice
+# Multi Choice (Select two.)
 > 
 - [x] 
 - [x] 
