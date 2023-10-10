@@ -1,12 +1,11 @@
 ---
 title: "Question 042"
-date: 2023-08-31T14:35:09+02:00
 draft: false
 subject: []
 ---
 
 
-# When should You use `artifacts`?
+# When should You use `artifacts`? (Select two.)
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 

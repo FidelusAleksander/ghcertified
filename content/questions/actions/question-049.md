@@ -1,11 +1,10 @@
 ---
 title: "Question 049"
-date: 2023-09-01T13:58:35+02:00
 draft: false
 subject: []
 ---
 
-# Which is true about `Starter Workflows` ?
+# Which is true about `Starter Workflows` ? (Select three.)
 
 > https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
 - [x] They allow users to leverage ready-to-use (or requiring minimal changes) workflow templates

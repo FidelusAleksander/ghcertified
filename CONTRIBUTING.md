@@ -35,7 +35,7 @@ hugo new questions/foundations/question-XXX.md
 2) Fill the contents of the generated markdown file with a question matching the
  [quizdown-js/syntax](https://github.com/bonartm/quizdown-js/blob/main/docs/syntax.md):
 
-Questions can be of three types:
+Questions can be of two types:
 
 - **Single choice question**
 
@@ -69,21 +69,7 @@ Questions can be of three types:
 
 ```
 
-- **Sequence**
 
-``` markdown
-
-## Please bring the following into sequence!
-
-> (optional hint) text hint or a link
-
-1. One
-2. Two
-3. Three
-4. Four
-5. Five
-
-```
 
 ## Updating/Removing a question
 Update the contents of the question or remove the file

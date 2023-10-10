@@ -1,6 +1,5 @@
 ---
 title: "Question 051"
-date: 2023-09-04T11:22:44+02:00
 draft: false
 subject: []
 ---

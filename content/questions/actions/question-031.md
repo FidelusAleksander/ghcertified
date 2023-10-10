@@ -1,11 +1,10 @@
 ---
 title: "Question 031"
-date: 2023-08-28T16:41:29+02:00
 draft: false
 subject: []
 ---
 
-# What `jobs.job_id.if` conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository?
+# What `jobs.job_id.if` conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository? (Select two.)
 ```yaml
   jobs:
     production-deploy:  

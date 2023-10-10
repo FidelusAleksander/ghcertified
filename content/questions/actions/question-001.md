@@ -1,11 +1,10 @@
 ---
 title: "Question 001"
-date: 2023-08-19T21:08:59+02:00
 draft: false
 subject: []
 ---
 
-# Which statement is correct regarding passing permissions to reusable workflows?
+# Which statement is correct regarding passing permissions to reusable workflows? eusable workflows?
 
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#access-and-permissions
 
