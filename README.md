@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/logo.png?raw=true" />
+  <a href="https://githubcertified.com/">
+    <img src="https://github.com/FidelusAleksander/githubcertified/blob/master/static/images/logo.png?raw=true" />
+  </a>
 </p>
 
 ## How to use
@@ -17,6 +19,6 @@ Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com
 
 This project is licensed under the [MIT License](https://github.com/FidelusAleksander/githubcertified/blob/master/LICENSE).
 
-## Acknowledgments
+## Contributors
 
-This repository is using the [hugo-quiz](https://github.com/bonartm/hugo-quiz) project.
+[![Contributors](https://contrib.rocks/image?repo=FidelusAleksander/githubcertified)](https://github.com/FidelusAleksander/githubcertified/graphs/contributors)
