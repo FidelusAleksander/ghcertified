@@ -5,6 +5,7 @@ draft: false
 hidden: true
 badge: "foundations_badge.png"
 exam: "GitHub Foundations"
+domains: ["Collaboration", "Repositories and Project Management", "Introduction to GitHub"]
 ---
 
 {{< quizdown >}}

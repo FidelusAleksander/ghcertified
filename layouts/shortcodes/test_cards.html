@@ -7,12 +7,19 @@
         <div class="content">
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
             {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $exam) }}
+            
 
+            
             <ul class="check-list">
-                <li>{{ $question_count }} Questions</li>
-                <li>Code scanning</li>
-                <li>Dependency management</li>
-                <li>Other</li>
+                {{ if gt $question_count 1 }}
+                    <li>{{ $question_count }} Questions</li>
+                {{ else }}
+                    <li>{{ $question_count }} Question</li>
+                {{ end }}
+                
+                {{ range .Page.Params.domains }}
+                    <li>{{ . }}</li>
+                {{ end }}
             </ul>
             {{ if gt $question_count 30 }}
                 <a href="{{ .Permalink }}" class="btn">Start</a>

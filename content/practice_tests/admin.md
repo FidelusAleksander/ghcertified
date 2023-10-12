@@ -5,6 +5,7 @@ draft: false
 hidden: true
 badge: "admin_badge.png"
 exam: "GitHub Admin"
+domains: ["Repository Management", "Workflow Optimization", "Efficient Collaboration"]
 ---
 
 {{< quizdown >}}
