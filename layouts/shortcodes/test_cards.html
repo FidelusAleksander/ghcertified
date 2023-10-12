@@ -1,50 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="/css/practice-tests.css">
+<div class="exam-container">
+    
+{{ range where .Site.RegularPages "Section" "practice_tests" }}
+{{ $exam := .Page.Params.exam }}
+    <div class="card">
+        <div class="content">
+            <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
+            {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $exam) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/practice-tests.css">
-</head>
-
-<body>
-    <div class="exam-container">
-        <div class="card">
-            <div class="content">
-                <img src="/images/advanced_security_badge.png" alt="advanced_security_badge" style="max-width: 100%;">
-                <ul class="check-list">
-                    <li>1 Questions</li>
-                    <li>Code scanning</li>
-                    <li>Dependency management</li>
-                    <li>Other</li>
-                </ul>
-                <a href="/practice_tests/advanced_security" class="btn disabled">Unavailable</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <img src="/images/actions_badge.png" alt="actions_badge" style="max-width: 100%;">
-                <ul class="check-list">
-                    <li>63 Questions</li>
-                    <li>Consume workflows</li>
-                    <li>Author and maintain actions</li>
-                    <li>Other</li>
-                </ul>
-                <a href="/practice_tests/actions" class="btn">Start</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <img src="/images/admin_badge.png" alt="admin_badge" style="max-width: 100%;">
-                <ul class="check-list">
-                    <li>1 Questions</li>
-                    <li>Manage user identities</li>
-                    <li>GitHub authentication</li>
-                    <li>Other</li>
-                </ul>
-                <a href="/practice_tests/admin" class="btn disabled">Unavailable</a>
-            </div>
+            <ul class="check-list">
+                <li>{{ $question_count }} Questions</li>
+                <li>Code scanning</li>
+                <li>Dependency management</li>
+                <li>Other</li>
+            </ul>
+            {{ if gt $question_count 30 }}
+                <a href="{{ .Permalink }}" class="btn">Start</a>
+            {{ else }}
+                <a href="/" class="btn disabled">Unavailable</a>
+            {{ end }}
         </div>
     </div>
-</body>
-</html>
+
+{{ end }}
