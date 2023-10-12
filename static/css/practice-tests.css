@@ -63,10 +63,14 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
   background: url("/images/check_list.svg") no-repeat left center;
   background-size: contain;
 }
+
+.content .check-list li:first-child {
+  font-weight: 600;
+}
+
 
 .content .para {
   line-height: 1.5;
