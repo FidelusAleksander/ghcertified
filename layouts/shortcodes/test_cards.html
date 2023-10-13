@@ -8,8 +8,6 @@
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
             {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $exam) }}
             
-
-            
             <ul class="check-list">
                 {{ if gt $question_count 1 }}
                     <li>{{ $question_count }} Questions</li>
