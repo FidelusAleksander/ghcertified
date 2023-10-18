@@ -5,28 +5,34 @@ draft: false
 weight: 10
 ---
 
+## The Certification Program
 
-## Availability
+GitHub will be opening the certification program to individuals in **early 2024**. Until then You can:
+- Explore the [certification website](https://resources.github.com/learn/certifications/)
+- Join the [waitlist](https://examregistration.github.com/waitlist/certifications) to be notified when the program opens to individuals
 
-**Exam registrations are open on https://examregistration.github.com/ for eligible individuals**
 
-All GitHub certifications are currently only available to GitHub Employees, Microsoft Employees, GitHub Channel & Services Partners, and [all Microsoft Partners](https://techcommunity.microsoft.com/t5/news-from-microsoft-norway/github-certs-are-now-available-for-all-partners/ba-p/3808333). 
+{{< badges >}}
+
 
 
 {{% notice style="info" %}}
-**GitHub [ anticipates](https://examregistration.github.com/waitlist/certifications) opening the certification program to individuals in early 2024. For now You can join the [waitlist](https://examregistration.github.com/waitlist/certifications)**
+GitHub certifications are already available to GitHub and Microsoft Employees, GitHub Channel & Services Partners, and all Microsoft Partners. If You are one of these, You can register for the exam [here](https://examregistration.github.com/).
 
-> The certification program will be generally available in early 2024. Join us at GitHub Universe on November 8-9 to take the exam in person and become one of the first to be certified. If you can't make it in person, sign up for the waitlist to secure priority scheduling once the program launches.
 {{% /notice %}}
 
 
 
-## Preparation
+## Study resources
 
-You can visit the official [GitHub Certifications](https://resources.github.com/learn/certifications/) site for more information about the certifications and official study resources. 
+GitHub prepared dedicated courses for each of the available certification exams:
+- [GitHub Foundations](https://learn.microsoft.com/en-us/collections/o1njfe825p602p)
+- [GitHub Actions](https://learn.microsoft.com/en-us/collections/n5p4a5z7keznp5)
+- [GitHub Advanced Security](https://learn.microsoft.com/en-us/collections/rqymc6yw8q5rey)
+- [GitHub Administration](https://learn.microsoft.com/en-us/collections/mom7u1gzjdxw03)
 
 
-## Practice
-Official study resources are a good way to start, but don't limit yourself to them. Read through the [GitHub documentation](https://docs.github.com/en/actions), try out the features, and build something!
+{{% notice style="tip" %}}
+Official study resources are a good way to start, but don't limit yourself to them. Read through the [GitHub Documentation](https://docs.github.com/en/) then go on [GitHub](https://github.com/) and try out the features!
 
-Once You are ready to take the exam, attempt the available [**practice tests**]({{< ref "practice_tests/_index.md" >}}) to get a feel for the exam format and the types of questions You will encounter. 
+{{% /notice %}}
