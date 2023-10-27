@@ -16,5 +16,5 @@ author = "Aleksander Fidelus"
 description = "Github Certification Exam Preparation"
 
 
-# OpenGraph
-images = ["images/octocat_certified.jpg", "logo.png"]
+# Images for OpenGraph
+images = ["images/octocat_certified.jpg"]
