@@ -14,3 +14,7 @@ alwaysopen = false
 editURL = "https://github.com/FidelusAleksander/githubcertified/edit/master/content/"
 author = "Aleksander Fidelus"
 description = "Github Certification Exam Preparation"
+
+
+# OpenGraph
+images = ["images/octocat_certified.jpg", "logo.png"]
