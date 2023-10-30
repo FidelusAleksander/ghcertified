@@ -6,6 +6,8 @@ hidden: true
 badge: "advanced_security_badge.png"
 exam: "GitHub Advanced Security"
 domains: ["Vulnerability Identification", "Workflow Security", "Security Implementation"]
+shuffleAnswers: true
+shuffleQuestions: true
 ---
 
 {{< quizdown >}}
