@@ -1,3 +1,27 @@
+<script
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownKatex.js">
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
+</script>
+<script>
+    let config = {
+        startOnLoad: true,          // detect and convert all div html elements with class quizdown
+        shuffleAnswers: true,       // shuffle answers for each question
+        shuffleQuestions: true,    // shuffle questions for each quiz
+        nQuestions: undefined,       // display n questions at random, if shuffleQuestions is true
+        primaryColor: 'steelblue',  // primary CSS color
+        secondaryColor: '#f2f2f2',  // secondary CSS color
+        textColor: 'black',         // text color of some elements
+        locale: null                // language of the user interface (auto-detect per default)
+    };
+    quizdown.register(quizdownHighlight).register(quizdownKatex).init(config)
+</script>
+
+
 {{ $exam := .Page.Params.exam }}
 
 <div class='quizdown'>
