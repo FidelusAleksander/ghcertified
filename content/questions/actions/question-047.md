@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# In job `deploy`, if You want to access binaries (containing Your application) that were created in job `build` You should
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#comparing-artifacts-and-dependency-caching
 

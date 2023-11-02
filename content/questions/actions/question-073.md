@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# How many jobs will be executed in the following workflow?
 ```yaml
 jobs:
   matrix-job:

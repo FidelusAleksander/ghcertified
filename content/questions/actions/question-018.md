@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# This workflow will run on all pull requests where:
 ```yaml
 on:
   pull_request:

@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# What are the valid use cases for using **defaults**? (Select two.)
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults
 
 - [x] Using defaults.run on workflow level to set default shell (e.g bash) for an entire workflow

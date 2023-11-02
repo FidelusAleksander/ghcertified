@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Is this statement true? `Workflows can be reused, but a reusable workflow cannot call another reusable workflow.`
 
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows
 1. [x] False

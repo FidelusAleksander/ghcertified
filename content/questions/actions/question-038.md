@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which of these is a way using `action_state` in `step_two`? 
 ```yaml
   steps:
     - name: Set the value

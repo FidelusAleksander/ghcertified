@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# A workflow was initially run on `commit A` and failed. You fixed the workflow with the subsequent `commit B`. When You re-run that workflow it will run with code from which commit?
 > https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#about-re-running-workflows-and-jobs
 1. [x] It will run with code from `commit A`
 1. [ ] It will run with code from `commit B`

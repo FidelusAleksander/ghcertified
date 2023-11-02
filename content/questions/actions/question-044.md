@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# To access an `artifact` that was created in another, previously triggered workflow run You can:
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 1. [x] You cannot access `artifacts` that were created in a different workflow run

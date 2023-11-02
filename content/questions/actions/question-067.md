@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which is the correct way of triggering a job only if configuration variable `MY_VAR` has the value of `MY_VALUE` ? 
 > https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context
 1. [x] By creating the following conditional on job level
 ```yaml

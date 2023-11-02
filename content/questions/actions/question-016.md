@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# How do You access matrix variables in a matrix strategy job?
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
 1. [ ] Using the `vars` context

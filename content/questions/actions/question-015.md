@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which matrix job definition is syntactically correct?
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
 

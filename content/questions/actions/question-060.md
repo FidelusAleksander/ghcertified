@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which of the following default environment variables contains the name of the person or app that initiated the workflow run?
 
 > https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables
 

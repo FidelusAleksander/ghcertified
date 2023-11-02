@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# To run a `step` only if the secret `MY_SECRET` has been set, You can:
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets
 1. [x] Set the secret `MY_SECRET` as a job level environment variable, then reference that environment variable to conditionally run that step
 ```yaml
