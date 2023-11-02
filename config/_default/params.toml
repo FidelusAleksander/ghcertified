@@ -5,8 +5,8 @@ themeVariant = "blue"
 
 showVisitedLinks = false
 disableBreadcrumb = false
-disableNextPrev = true
-disableSearch = true
+disableNextPrev = false
+disableSearch = false
 disableHistory = true
 disableLandingPageButton = true
 
