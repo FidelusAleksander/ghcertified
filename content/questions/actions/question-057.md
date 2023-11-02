@@ -1,4 +1,5 @@
 ---
+question: "Which is true about environments?"
 archetype: "questions"
 title: "Question 057"
 draft: false

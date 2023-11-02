@@ -1,4 +1,5 @@
 ---
+question: "Your open-source publicly available repository contains a workflow with a `pull_request` event trigger. How can You require approvals for workflow runs triggered from forks of Your repository?"
 archetype: "questions"
 title: "Question 059"
 draft: false

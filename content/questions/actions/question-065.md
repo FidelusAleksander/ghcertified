@@ -1,4 +1,5 @@
 ---
+question: "Where can You find network connectivity logs for a GitHub self-hosted-runner?"
 archetype: "questions"
 title: "Question 065"
 draft: false

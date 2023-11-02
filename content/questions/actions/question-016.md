@@ -1,4 +1,5 @@
 ---
+question: "How do You access matrix variables in a matrix strategy job?"
 archetype: "questions"
 title: "Question 016"
 draft: false

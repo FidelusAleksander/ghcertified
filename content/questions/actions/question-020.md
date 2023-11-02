@@ -1,4 +1,5 @@
 ---
+question: "Which event allows You to manually trigger a workflow from the GitHub UI?"
 archetype: "questions"
 title: "Question 020"
 draft: false

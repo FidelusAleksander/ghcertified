@@ -1,4 +1,5 @@
 ---
+question: "What is the name of a default environment variable containing the user that triggered the workflow?"
 archetype: "questions"
 title: "Question 074"
 draft: false

@@ -1,4 +1,5 @@
 ---
+question: "Which of these is a proper way of setting an output parameter `PET` with a value of `DOG` in a `step`."
 archetype: "questions"
 title: "Question 037"
 draft: false

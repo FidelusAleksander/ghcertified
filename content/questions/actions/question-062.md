@@ -1,4 +1,5 @@
 ---
+question: "Your organization defines a secret `SomeSecret`, however when You reference that secret in a workflow using `${{ secrets.SomeSecret }}` it provides a different value than expected. What may be the reason for that?"
 archetype: "questions"
 title: "Question 062"
 draft: false

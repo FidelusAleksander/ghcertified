@@ -1,4 +1,5 @@
 ---
+question: "What are the valid use cases for using **defaults**? (Select two.)"
 archetype: "questions"
 title: "Question 027"
 draft: false

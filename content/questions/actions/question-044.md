@@ -1,4 +1,5 @@
 ---
+question: "To access an `artifact` that was created in another, previously triggered workflow run You can:"
 archetype: "questions"
 title: "Question 044"
 draft: false
