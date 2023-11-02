@@ -8,4 +8,4 @@ exam: "GitHub Foundations"
 domains: ["Collaboration", "Repositories and Project Management", "Introduction to GitHub"]
 ---
 
-{{< quizdown >}}
+{{< practice_test >}}

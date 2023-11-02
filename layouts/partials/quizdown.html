@@ -20,15 +20,3 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
     };
     quizdown.register(quizdownHighlight).register(quizdownKatex).init(config)
 </script>
-
-
-{{ $exam := .Page.Params.exam }}
-
-<div class='quizdown'>
-
-{{ range where .Site.RegularPages "Section" "questions" }}
-    {{ if eq $exam .Params.exam }}
-        {{ .RawContent }}
-    {{ end }}
-{{ end }}
-</div>
