@@ -1,4 +1,6 @@
 ---
+question: "In a workflow with multiple jobs, if job A fails then:"
+archetype: "questions"
 title: "Question 013"
 draft: false
 subject: []

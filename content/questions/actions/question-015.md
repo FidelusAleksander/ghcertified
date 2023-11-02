@@ -1,4 +1,6 @@
 ---
+question: "Which matrix job definition is syntactically correct?"
+archetype: "questions"
 title: "Question 015"
 draft: false
 subject: []

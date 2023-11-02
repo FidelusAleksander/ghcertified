@@ -1,4 +1,6 @@
 ---
+question: "Which event is triggered by a webhook action from outside of the repository?"
+archetype: "questions"
 title: "Question 008"
 draft: false
 subject: []

@@ -1,4 +1,6 @@
 ---
+question: "Which of the following are default environment variables in GitHub Actions? (Select three.)"
+archetype: "questions"
 title: "Question 061"
 draft: false
 subject: []

@@ -1,4 +1,6 @@
 ---
+question: "How can organizations which are using GitHub Enterprise Server enable automatic syncing of third party GitHub Actions hosted on GitHub.com to their GitHub Enterprise Server instance?"
+archetype: "questions"
 title: "Question 064"
 draft: false
 subject: []

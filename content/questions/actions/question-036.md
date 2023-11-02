@@ -1,4 +1,6 @@
 ---
+question: "You defined a matrix job `example_matrix`. How can limit the matrix to run a maximum of 2 jobs at a time?"
+archetype: "questions"
 title: "Question 036"
 draft: false
 subject: []

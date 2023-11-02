@@ -1,4 +1,6 @@
 ---
+question: "How can You use the GitHub API to download workflow run logs?"
+archetype: "questions"
 title: "Question 069"
 draft: false
 subject: []

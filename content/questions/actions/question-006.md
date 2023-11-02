@@ -1,4 +1,6 @@
 ---
+question: "Which is true about workflows? (Select three.)"
+archetype: "questions"
 title: "Question 006"
 draft: false
 subject: []

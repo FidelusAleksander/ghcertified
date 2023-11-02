@@ -1,4 +1,6 @@
 ---
+question: "If job B requires job A to be finished you have to:"
+archetype: "questions"
 title: "Question 012"
 draft: false
 subject: []

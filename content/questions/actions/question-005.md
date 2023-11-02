@@ -1,4 +1,6 @@
 ---
+question: "Which of these is not a valid event that could trigger a workflow?"
+archetype: "questions"
 title: "Question 005"
 draft: false
 subject: []

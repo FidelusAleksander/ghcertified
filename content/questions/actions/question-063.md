@@ -1,4 +1,6 @@
 ---
+question: "Which is a correct way to print a debug message?"
+archetype: "questions"
 title: "Question 063"
 draft: false
 subject: []
