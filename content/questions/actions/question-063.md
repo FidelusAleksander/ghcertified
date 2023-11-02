@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which is a correct way to print a debug message?
 > https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-setting-a-debug-message
 1. [x] `echo "::debug::Watch out here!"`
 1. [ ] `echo ":debug:Watch out here!"`

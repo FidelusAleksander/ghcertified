@@ -7,7 +7,6 @@ subject: []
 ---
 
 
-# When should You use `caching`?
 
 > https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
 

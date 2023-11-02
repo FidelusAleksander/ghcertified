@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# What is the name of a default environment variable containing the user that triggered the workflow?
 
 > https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables
 

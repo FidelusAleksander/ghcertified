@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which of the following are default environment variables in GitHub Actions? (Select three.)
 
 > https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables
 

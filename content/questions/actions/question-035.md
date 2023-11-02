@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# To prevent a job from failure when one of the steps fails You can include:
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
 1. [x] `continue-on-error` flag in the failing step
 ```yaml

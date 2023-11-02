@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# When will job3 run?
 ```yaml
   jobs:
     job1:

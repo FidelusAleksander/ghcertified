@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# When creating custom Github Actions - in what file all the action `metadata` has to be defined? 
 
 Metadata examples: name, description, outputs or required inputs
 > https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions

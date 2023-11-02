@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# How can You validate that Your GitHub self-hosted-runner can access all required GitHub services?
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners#checking-self-hosted-runner-network-connectivity
 1. [x] Using a GitHub provided script on the runner machine
 1. [ ] By trying to access the runner machine by `ssh` to validate the network connectivity

@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# What components can be reused within a GitHub Organization? (Select four.)
 - [x] Secrets
 - [x] Configuration Variables
 - [x] Self Hosted Runners

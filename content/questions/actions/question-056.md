@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# How can You require manual approvals by a maintainer if the workflow run is targeting the `production` environment?
 > https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment
 1. [x] Using deployment protection rules
 1. [ ] Setting the required required reviewers in the `production` workflow

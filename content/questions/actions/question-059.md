@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Your open-source publicly available repository contains a workflow with a `pull_request` event trigger. How can You require approvals for workflow runs triggered from forks of Your repository?
 > https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks#about-workflow-runs-from-public-forks
 1. [x] Setup required approvals for fork runs in the repository
 1. [ ] Setup deployment protection rules for the repository

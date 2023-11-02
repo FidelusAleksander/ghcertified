@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Your Pull Request analysis workflow uses multiple code analysis tools and takes about 20minutes to fully complete. It is triggered on `pull_request` event with `branches` filter set to `master`. Therefore if a developer pushes multiple commits within few minutes multiple workflows are running in parallel. How can You stop all previous workflow runs and only run the one with latest changes?
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run
 
 1. [x] Use concurrency with cancel-in-progress

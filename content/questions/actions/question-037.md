@@ -6,7 +6,6 @@ draft: false
 subject: []
 ---
 
-# Which of these is a proper way of setting an output parameter `PET` with a value of `DOG` in a `step`.
 
 > https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter
 1. [x] `echo "PET=DOG" >> "$GITHUB_OUTPUT"`
