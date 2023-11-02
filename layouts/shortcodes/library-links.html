@@ -2,6 +2,6 @@
 
 {{ range where (where .Site.RegularPages ".Params.exam" .Params.questions) "Section" "questions" }}
 <ol>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }} - {{ .Params.question | markdownify}}</a>
 </ol>
 {{ end }}

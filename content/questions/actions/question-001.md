@@ -1,7 +1,9 @@
 ---
+archetype: "questions"
 title: "Question 001"
 draft: false
 subject: []
+
 ---
 
 ### Which statement is correct regarding passing permissions to reusable workflows? eusable workflows?
