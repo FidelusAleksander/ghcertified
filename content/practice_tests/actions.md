@@ -11,4 +11,4 @@ shuffleAnswers: true
 shuffleQuestions: true
 ---
 
-{{< quizdown >}}
+{{< practice_test >}}
