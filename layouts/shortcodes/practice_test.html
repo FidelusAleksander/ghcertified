@@ -6,7 +6,7 @@
 
 {{ range where .Site.RegularPages "Section" "questions" }}
     {{ if eq $exam .Params.exam }}
-{{ partial "question.html"  . }} 
+        {{ partial "question.html"  . }} 
     {{ end }}
 {{ end }}
 </div>
