@@ -1,0 +1,12 @@
+{{ partial "quizdown.html" .}}
+
+{{ $exam := .Page.Params.exam }}
+
+<div class='quizdown'>
+
+{{ range where .Site.RegularPages "Section" "questions" }}
+    {{ if eq $exam .Params.exam }}
+        {{ .RawContent }}
+    {{ end }}
+{{ end }}
+</div>
