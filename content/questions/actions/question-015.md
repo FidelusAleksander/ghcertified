@@ -1,4 +1,5 @@
 ---
+archetype: "questions"
 title: "Question 015"
 draft: false
 subject: []
