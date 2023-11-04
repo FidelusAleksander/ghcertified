@@ -10,7 +10,7 @@ subject: []
 - [x] choice
 - [x] boolean
 - [x] string
-- [x] environment
-- [ ] number
+- [x] number
+- [ ] environment
 - [ ] dropdown
 - [ ] select
