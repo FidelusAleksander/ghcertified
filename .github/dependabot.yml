@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "github_actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
