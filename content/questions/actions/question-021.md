@@ -1,5 +1,5 @@
 ---
-question: "What are the possible types of an input variable for a manually triggered workflow? (Select four.)"
+question: "What are the possible types of an input variable for a manually triggered workflow? (Select five.)"
 archetype: "questions"
 title: "Question 021"
 draft: false
@@ -10,7 +10,7 @@ subject: []
 - [x] choice
 - [x] boolean
 - [x] string
+- [x] number
 - [x] environment
-- [ ] number
 - [ ] dropdown
 - [ ] select
