@@ -16,7 +16,7 @@ subject: []
       id: step_two
       run: ?
 ```
-> https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-environment-variable
+> https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-of-writing-an-environment-variable-to-github_env
 1. [x] `run: echo "$action_state"`
 1. [ ] `run: echo "${{ steps.step_one.outputs.action_state }}"`
 > That would be the case if `action_state` was written to `$GITHUB_OUTPUT`
