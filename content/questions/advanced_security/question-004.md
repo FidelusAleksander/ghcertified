@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 004"
-question: "Which tool helps You to keep repository dependencies up to date?"
+question: "Which tool helps You keep the repository dependencies up to date?"
 draft: false
 subject: []
 ---
