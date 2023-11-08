@@ -1,5 +1,5 @@
 ---
-question: "Which of the following default environment variables contains the full name of the repository where the workflow is running?"
+question: "Which of the following default environment variables contains the full name (e.g `octocat/hello-world`) of the repository where the workflow is running?"
 archetype: "questions"
 title: "Question 074"
 draft: false
