@@ -2,7 +2,7 @@
 name: Content Issue
 about: Something is wrong with the content of the practice tests on many or single questions
 title: ''
-labels: ''
+labels: 'content'
 assignees: ''
 
 ---
