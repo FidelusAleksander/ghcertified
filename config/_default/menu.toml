@@ -12,7 +12,14 @@ url = "https://resources.github.com/learn/certifications/"
 weight = 20
 
 [[shortcuts]]
+name = "<i class='fas fa-hand-holding-heart'></i> Contribute"
+identifier = "contribute"
+url = "https://github.com/FidelusAleksander/githubcertified/contribute"
+weight = 30
+
+
+[[shortcuts]]
 name = "<i class='fas fa-fw fa-bookmark'></i> GitHub Documentation"
 identifier = "githubdoc"
 url = "https://docs.github.com/en"
-weight = 30
+weight = 40
