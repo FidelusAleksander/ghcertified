@@ -3,7 +3,6 @@ question: "Where should You store sensitive data such as passwords or certificat
 archetype: "questions"
 title: "Question 010"
 draft: false
-subject: []
 ---
 
 1. [x] secrets

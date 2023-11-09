@@ -3,7 +3,6 @@ question: "You defined a matrix job `example_matrix`. How can limit the matrix t
 archetype: "questions"
 title: "Question 036"
 draft: false
-subject: []
 ---
 
 

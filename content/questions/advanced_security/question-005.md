@@ -3,7 +3,6 @@ archetype: "questions"
 title: "Question 005"
 question: "Which of the following is a curated list of security vulnerabilities found in open source projects?"
 draft: false
-subject: []
 ---
 
 

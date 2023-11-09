@@ -3,7 +3,6 @@ question: "What are `activity types` of an event used for ?"
 archetype: "questions"
 title: "Question 024"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows

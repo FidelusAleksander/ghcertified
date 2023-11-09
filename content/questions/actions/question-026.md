@@ -3,7 +3,6 @@ question: "A reusable workflow named `build` creates zip file artifacts. How do 
 archetype: "questions"
 title: "Question 026"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow

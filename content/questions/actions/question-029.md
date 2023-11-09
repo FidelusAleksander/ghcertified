@@ -3,7 +3,6 @@ question: "Your Pull Request analysis workflow uses multiple code analysis tools
 archetype: "questions"
 title: "Question 029"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run

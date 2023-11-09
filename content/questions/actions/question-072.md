@@ -3,7 +3,6 @@ question: "What components can be reused within a GitHub Organization? (Select f
 archetype: "questions"
 title: "Question 072"
 draft: false
-subject: []
 ---
 
 - [x] Secrets

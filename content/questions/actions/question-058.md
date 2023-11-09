@@ -3,7 +3,6 @@ question: "When using Github Actions to access resources in one of the cloud pro
 archetype: "questions"
 title: "Question 058"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect

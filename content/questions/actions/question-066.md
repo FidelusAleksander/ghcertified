@@ -3,7 +3,6 @@ question: "How can You validate that Your GitHub self-hosted-runner can access a
 archetype: "questions"
 title: "Question 066"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners#checking-self-hosted-runner-network-connectivity

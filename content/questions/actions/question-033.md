@@ -3,7 +3,6 @@ question: "Is this statement true? `Not all steps run actions, but all actions r
 archetype: "questions"
 title: "Question 033"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps

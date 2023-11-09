@@ -3,7 +3,6 @@ question: "In a workflow with multiple jobs the default behaviour is:"
 archetype: "questions"
 title: "Question 011"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs

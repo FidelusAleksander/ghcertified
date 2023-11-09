@@ -3,7 +3,6 @@ question: "How can You require manual approvals by a maintainer if the workflow 
 archetype: "questions"
 title: "Question 056"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment

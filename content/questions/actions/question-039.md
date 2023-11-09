@@ -3,7 +3,6 @@ question: "Is this statement true? `Workflows can be reused, but a reusable work
 archetype: "questions"
 title: "Question 039"
 draft: false
-subject: []
 ---
 
 

@@ -3,7 +3,6 @@ question: "Which event allows You to manually trigger a workflow from the GitHub
 archetype: "questions"
 title: "Question 020"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow

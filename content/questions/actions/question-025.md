@@ -3,7 +3,6 @@ question: "You want to create a reusable workflow `CI` that runs some quality ch
 archetype: "questions"
 title: "Question 025"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows

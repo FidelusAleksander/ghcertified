@@ -3,7 +3,6 @@ question: "Which of these is a way of using `action_state` in `step_two`? "
 archetype: "questions"
 title: "Question 038"
 draft: false
-subject: []
 ---
 
 ```yaml

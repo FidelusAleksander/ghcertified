@@ -3,7 +3,6 @@ question: "Fill in the blank: When using `push` event trigger filters You can us
 archetype: "questions"
 title: "Question 019"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events

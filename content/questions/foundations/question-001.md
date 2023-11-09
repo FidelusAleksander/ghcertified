@@ -3,7 +3,6 @@ question: "What are the possible GitHub account types? (Select three.)"
 archetype: "questions"
 title: "Question 001"
 draft: false
-subject: []
 ---
 
 

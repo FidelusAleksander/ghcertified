@@ -3,7 +3,6 @@ question: "For any action published in GitHub Marketplace, You can often use it 
 archetype: "questions"
 title: "Question 034"
 draft: false
-subject: []
 ---
 
 

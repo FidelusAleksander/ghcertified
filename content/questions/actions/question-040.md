@@ -3,7 +3,6 @@ question: "In the following example, `workflow A` passes all of its secrets to `
 archetype: "questions"
 title: "Question 040"
 draft: false
-subject: []
 ---
 
 

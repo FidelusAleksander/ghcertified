@@ -3,7 +3,6 @@ question: "What are the different permission levels You can assign to `GITHUB_TO
 archetype: "questions"
 title: "Question 002"
 draft: false
-subject: []
 ---
 
 

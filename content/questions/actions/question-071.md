@@ -3,7 +3,6 @@ question: "How can you override an organization-level GitHub Secret `API_KEY` wi
 archetype: "questions"
 title: "Question 071"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets

@@ -3,7 +3,6 @@ question: "You can only upload a single file at a time when using `actions/uploa
 archetype: "questions"
 title: "Question 046"
 draft: false
-subject: []
 ---
 
 

@@ -3,7 +3,6 @@ question: "When using the `pull_request` and `pull_request_target` events, how d
 archetype: "questions"
 title: "Question 017"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-for-pull-request-events

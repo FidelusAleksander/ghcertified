@@ -3,7 +3,6 @@ question: "What are the possible types of an input variable for a manually trigg
 archetype: "questions"
 title: "Question 021"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs

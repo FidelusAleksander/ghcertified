@@ -3,7 +3,6 @@ question: "How can You ensure that a workflow called `Deploy Prod` is always run
 archetype: "questions"
 title: "Question 028"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency

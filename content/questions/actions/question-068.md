@@ -3,7 +3,6 @@ question: "To run a `step` only if the secret `MY_SECRET` has been set, You can:
 archetype: "questions"
 title: "Question 068"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets

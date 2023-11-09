@@ -3,7 +3,6 @@ question: "Which is the correct way of triggering a job only if configuration va
 archetype: "questions"
 title: "Question 067"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context

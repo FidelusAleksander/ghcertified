@@ -3,7 +3,6 @@ question: "Which event is triggered by a webhook action from outside of the repo
 archetype: "questions"
 title: "Question 008"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows

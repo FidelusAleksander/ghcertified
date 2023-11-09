@@ -3,7 +3,6 @@ question: "This workflow will run on all pull requests where:"
 archetype: "questions"
 title: "Question 018"
 draft: false
-subject: []
 ---
 
 ```yaml

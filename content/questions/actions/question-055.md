@@ -3,7 +3,6 @@ question: "A workflow was initially run on `commit A` and failed. You fixed the 
 archetype: "questions"
 title: "Question 055"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#about-re-running-workflows-and-jobs
