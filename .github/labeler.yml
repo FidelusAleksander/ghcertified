@@ -1,0 +1,21 @@
+content:
+  - "content/**/*"
+
+actions:
+  - "content/questions/actions/*"
+
+admin:
+  - "content/questions/admin/*"
+
+advanced security:
+  - "content/questions/advanced_security/*"
+
+foundations:
+  - "content/questions/foundations/*"
+
+documentation:
+  - "README.md"
+  - "CONTRIBUTING.md"
+
+dependencies:
+  - "themes/**/*"
