@@ -3,7 +3,6 @@ question: "Your organization defines a secret `SomeSecret`, however when You ref
 archetype: "questions"
 title: "Question 062"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets

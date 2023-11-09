@@ -3,7 +3,6 @@ question: "In job `deploy`, if You want to access binaries (containing Your appl
 archetype: "questions"
 title: "Question 047"
 draft: false
-subject: []
 ---
 
 

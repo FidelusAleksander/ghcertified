@@ -3,7 +3,6 @@ question: "Which of the following are default environment variables in GitHub Ac
 archetype: "questions"
 title: "Question 061"
 draft: false
-subject: []
 ---
 
 

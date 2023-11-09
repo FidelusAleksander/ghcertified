@@ -3,7 +3,6 @@ question: "What `jobs.job_id.if` conditional will make sure that job `production
 archetype: "questions"
 title: "Question 031"
 draft: false
-subject: []
 ---
 
 ```yaml

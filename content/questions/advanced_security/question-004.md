@@ -3,7 +3,6 @@ archetype: "questions"
 title: "Question 004"
 question: "Which tool helps You keep the repository dependencies up to date?"
 draft: false
-subject: []
 ---
 
 

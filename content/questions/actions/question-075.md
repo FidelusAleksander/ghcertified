@@ -3,7 +3,6 @@ question: "In a workflow that has multiple jobs, all running on GitHub-hosted ru
 archetype: "questions"
 title: "Question 075"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/using-jobs/choosing-the-runner-for-a-job#choosing-github-hosted-runners

@@ -3,7 +3,6 @@ question: "When should You use `caching`?"
 archetype: "questions"
 title: "Question 041"
 draft: false
-subject: []
 ---
 
 

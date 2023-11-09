@@ -3,7 +3,6 @@ question: "When creating a custom Github Action You have to store the source cod
 archetype: "questions"
 title: "Question 053"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/creating-actions/about-custom-actions#choosing-a-location-for-your-action

@@ -3,7 +3,6 @@ question: "What should You use to store coverage reports or screenshots generate
 archetype: "questions"
 title: "Question 045"
 draft: false
-subject: []
 ---
 
 

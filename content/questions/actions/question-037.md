@@ -3,7 +3,6 @@ question: "Which of these is a proper way of setting an output parameter `PET` w
 archetype: "questions"
 title: "Question 037"
 draft: false
-subject: []
 ---
 
 

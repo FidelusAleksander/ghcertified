@@ -3,7 +3,6 @@ question: "Which of the following default environment variables contains the nam
 archetype: "questions"
 title: "Question 060"
 draft: false
-subject: []
 ---
 
 

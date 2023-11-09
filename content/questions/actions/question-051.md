@@ -3,7 +3,6 @@ question: "What are the three types of Actions?"
 archetype: "questions"
 title: "Question 051"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/creating-actions/about-custom-actions#types-of-actions

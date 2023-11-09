@@ -3,7 +3,6 @@ archetype: "questions"
 title: "Question 002"
 question: "What does `shifting left` mean in the context of Security?"
 draft: false
-subject: []
 ---
 
 > https://github.com/readme/guides/github-advanced-security-telus

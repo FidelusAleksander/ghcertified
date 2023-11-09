@@ -3,7 +3,6 @@ question: "Your open-source publicly available repository contains a workflow wi
 archetype: "questions"
 title: "Question 059"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks#about-workflow-runs-from-public-forks

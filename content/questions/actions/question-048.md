@@ -3,7 +3,6 @@ question: "A job called `job2` is using artifacts created in `job1`. Therefore i
 archetype: "questions"
 title: "Question 048"
 draft: false
-subject: []
 ---
 
 

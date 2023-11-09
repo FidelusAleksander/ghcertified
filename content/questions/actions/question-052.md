@@ -3,7 +3,6 @@ question: "Is this statement true? `Docker container actions are usually slower 
 archetype: "questions"
 title: "Question 052"
 draft: false
-subject: []
 ---
 
 > Docker container actions are slower than JavaScript actions

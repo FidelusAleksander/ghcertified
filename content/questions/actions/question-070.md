@@ -3,7 +3,6 @@ question: "How can You use the GitHub API to create or update a repository secre
 archetype: "questions"
 title: "Question 070"
 draft: false
-subject: []
 ---
 
 > https://docs.github.com/en/rest/actions/secrets?create-or-update-a-repository-secret=&apiVersion=2022-11-28#create-or-update-a-repository-secret

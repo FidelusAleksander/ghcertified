@@ -2,7 +2,6 @@
 question: "As a GitHub Organization administrator, You want users to authenticate using a corporate identity provider. Which of the following is a way to achieve this?"
 archetype: "questions"
 title: "Question 001"
-subject: []
 draft: false
 ---
 
