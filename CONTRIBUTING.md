@@ -1,32 +1,40 @@
-# Prerequisites
+# Contributing to GitHub Certified
 
-Before you get started, make sure to install:
+This repository contains the source code for the [GitHub Certified](https://githubcertified.com) website. 
+GitHub Certified is built using [Hugo](https://gohugo.io/) together with [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn) and is hosted on [GitHub Pages](https://docs.github.com/en/pages).
 
-- [HUGO](https://gohugo.io/installation/): The static site generator used to build the website.
+The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/githubcertified/issues/new/choose). No contribution is too small - we encourage you to report any typos, unclear questions or feature requests.
 
-# Getting Started
-
-To set up and run the quiz website locally on your machine, follow these steps:
-
-1) Fork the repository
-2) Update the submodules
+## The process
+In order to contribute a code/content change:
+- [Fork](https://github.com/FidelusAleksander/githubcertified/fork) the repository
+- Update the submodules
    ```bash
    git submodule update --init --recursive
    ```
-   
-3) Launch the Hugo server
-   ```bash
-   hugo server -D
-   ```
+- Make your changes
+- Submit a pull request
 
-It should be available under http://localhost:1313
 
-# Updating the quiz content
+## Content Changes
 
-All of the questions in this repository are stored in [content/questions](https://github.com/FidelusAleksander/githubcertified/blob/master/content/questions) directory, each question follows the same naming convention `question-XXX.md` where `XXX` is the question's unique number.
+All of the content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
 
-## Adding a question
-1) Run hugo command to add a new question file. Change `XXX` to the next available number.
+For any content changes it's best to install [Hugo](https://gohugo.io/) and run the website locally to see the changes before submitting a pull request.
+- [Hugo Installation](https://gohugo.io/installation/): The static site generator used to build the website.
+
+Make sure that the git submodule in this repository is updated and then launch the Hugo server.
+
+```bash
+hugo server -D
+```
+It should be available at http://localhost:1313
+
+
+### Adding new question
+
+1) Run one of the following commands to add a new question file. Change `XXX` to the next available number.
+
 ```bash
 hugo new questions/actions/question-XXX.md
 hugo new questions/admin/question-XXX.md
@@ -37,3 +45,7 @@ hugo new questions/foundations/question-XXX.md
 For example `hugo new questions/actions/question-084.md`
 
 2) Open the newly created file and fill in the question and answers.
+
+
+### Updating existing content
+If You want to update existing content, simply find the file in the [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and edit the markdown file.
