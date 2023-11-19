@@ -13,5 +13,4 @@ draft: false
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
 - [ ] GitHub Environment secrets
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-environment
-- [ ] On the main branch of the repository
-- [ ] On all protected branch in the repository
+- [ ] Entire git history on all protected branches in the repository
