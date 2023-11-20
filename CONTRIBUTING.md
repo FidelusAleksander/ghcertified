@@ -1,34 +1,41 @@
 # Contributing to GitHub Certified
-
-This repository contains the source code for the [GitHub Certified](https://githubcertified.com) website. 
-GitHub Certified is built using [Hugo](https://gohugo.io/) together with [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn) and is hosted on [GitHub Pages](https://docs.github.com/en/pages).
+> **Warning**: We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.`
 
 The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/githubcertified/issues/new/choose). No contribution is too small - we encourage you to report any typos, unclear questions or feature requests.
 
-## The process
+<!-- MarkdownTOC autolink="true" -->
+- [Contribution process](#contribution-process)
+- [Install Hugo](#install-hugo)
+- [Content Changes](#content-changes)
+  - [Adding new question](#adding-new-question)
+  - [Updating existing content](#updating-existing-content)
+
+<!-- /MarkdownTOC -->
+
+## Contribution process
 In order to contribute a code/content change:
 - [Fork](https://github.com/FidelusAleksander/githubcertified/fork) the repository
-- Update the submodules
+- Update the submodules to install the theme
    ```bash
    git submodule update --init --recursive
    ```
 - Make your changes
 - Submit a pull request
 
+## Install Hugo
 
-## Content Changes
+Before contributing, ensure you have [Hugo](https://gohugo.io/installation/) installed for local testing.
 
-All of the content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
-
-For any content changes it's best to install [Hugo](https://gohugo.io/) and run the website locally to see the changes before submitting a pull request.
-- [Hugo Installation](https://gohugo.io/installation/): The static site generator used to build the website.
-
-Make sure that the git submodule in this repository is updated and then launch the Hugo server.
+Make sure that the git submodule in this repository is updated and then launch the Hugo server with:
 
 ```bash
 hugo server -D
 ```
-It should be available at http://localhost:1313
+Preview your changes at at http://localhost:1313
+
+## Content Changes
+
+All of the content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
 
 
 ### Adding new question
