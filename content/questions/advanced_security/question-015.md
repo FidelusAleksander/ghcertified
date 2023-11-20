@@ -10,4 +10,4 @@ draft: false
 1. [x] Consider the token compromised and delete it immediately
 1. [ ] Change the token's permissions to read-only
 1. [ ] Overwrite the git history to mask the token
-1. [ ] Check if this token is used in any of your applications, if so, delete it immediately
+1. [ ] Check if this token is used in any of your applications, if so - delete it.
