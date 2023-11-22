@@ -10,7 +10,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
 <script>
     let config = {
         startOnLoad: true,          // detect and convert all div html elements with class quizdown
-        shuffleAnswers: {{ with .Page.Params.shuffleAnswers }} {{ . }} {{ else }} false {{ end }},      // shuffle answers for each question
+        shuffleAnswers: {{ with .Page.Params.shuffleAnswers }} {{ . }} {{ else }} true {{ end }},      // shuffle answers for each question
         shuffleQuestions: {{ with .Page.Params.shuffleQuestions }} {{ . }} {{ else }} false {{ end }},    // shuffle questions for each quiz
         nQuestions: {{ with .Page.Params.nQuestions }} {{ . }} {{ else }} undefined {{ end }},      // display n questions at random, if shuffleQuestions is true
         primaryColor: 'steelblue',  // primary CSS color
