@@ -12,14 +12,4 @@ draft: false
 > GitHub partner program is meant for service providers which distribute secrets outside of their organization (e.g cloud providers). It's not meant for internal secrets of a single organization.
 1. [ ] Define custom GitHub Actions workflows for repositories in the organization that will scan for these secrets.
 1. [ ] In all repositories include `secret_scanning.yml` file which will define these custom secrets that should be scanned for.
-> `secret_scanning.yml` file that can be used to disable secret scanning for specific files or directories. https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users
-
-
-
-> (optional hint) text hint or a link
-- [x] Multi-Choice Correct Answer 1
-- [x] Multi-Choice Correct Answer 2
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
+> `secret_scanning.yml` file that can be used to disable secret scanning for specific files or directories. 

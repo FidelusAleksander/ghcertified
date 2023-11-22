@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 020"
-question: "GitHub maintains different sets of secret scanning patterns. What are the three different sets of secret scanning patterns? (Select three.)"
+question: "What are the three different sets of secret scanning patterns that GitHub maintains? (Select three.)"
 draft: false
 ---
 
