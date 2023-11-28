@@ -13,4 +13,3 @@ draft: false
 - [ ] When your repository publishes a new release
 - [ ] When your repository publishes a new git tag
 - [ ] When the GitHub Actions workflow that uses the `actions/dependency-graph` GitHub Action is triggered
-> There is no such GitHub Action.
