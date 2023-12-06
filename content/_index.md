@@ -4,6 +4,13 @@ archetype: "home"
 ---
 
 
+{{% notice style="note" title="Legal disclaimer" %}}
+
+
+This website is **NOT** affiliated, associated, authorized, sponsored, endorsed by, or in any way officially connected with [GitHub](https://github.com/). The names and logos of GitHub are trademarks of their respective owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.
+
+{{% /notice %}}
+
 
 ##  About 
 
