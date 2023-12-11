@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 002"
-question: "Which of GitHub features serves the purpose of an adaptable spreadsheet, task-board and a road map that integrates with issues and pull requests on GitHub to plan and track your work effectively?"
+question: "Which of GitHub features serves the purpose of an adaptable spreadsheet, task board and a roadmap that integrates with issues and pull requests on GitHub to plan and track your work effectively?"
 draft: false
 ---
 

@@ -9,6 +9,6 @@ draft: false
 > https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 - [x] Create a repository template from an existing repository
 - [x] Create a new repository from a repository template
-- [ ] Create an organzation from a repository template
+- [ ] Create an organization from a repository template
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization

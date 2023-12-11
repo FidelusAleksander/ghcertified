@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 017"
-question: "Which feature allows you to easily create graphs and charts to visualize your project's current and historical items?"
+question: "Which feature allows you to easily create graphs and charts to visualize your project's current and historical progress?"
 draft: false
 ---
 
