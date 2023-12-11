@@ -1,21 +1,28 @@
 content:
-  - "content/**/*"
+- changed-files:
+  - any-glob-to-any-file: "content/**/*"
 
 actions:
-  - "content/questions/actions/*"
+- changed-files:
+  - any-glob-to-any-file: "content/questions/actions/*"
 
 admin:
-  - "content/questions/admin/*"
+- changed-files:
+  - any-glob-to-any-file: "content/questions/admin/*"
 
 advanced security:
-  - "content/questions/advanced_security/*"
+- changed-files:
+  - any-glob-to-any-file: "content/questions/advanced_security/*"
 
 foundations:
-  - "content/questions/foundations/*"
+- changed-files:
+  - any-glob-to-any-file: "content/questions/foundations/*"
 
 documentation:
-  - "README.md"
-  - "CONTRIBUTING.md"
+- changed-files:
+  - any-glob-to-any-file: ["README.md", "CONTRIBUTING.md"]
 
 dependencies:
-  - "themes/**/*"
+- changed-files:
+  - any-glob-to-any-file: "themes/**/*"
+- head-branch: ['dependabot/*']
