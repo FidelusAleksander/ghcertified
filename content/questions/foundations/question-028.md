@@ -1,13 +1,15 @@
 ---
 archetype: "questions"
 title: "Question 028"
-question: "What GitHub feature allows repository contributors to work on code changes in a repository without having to setup a local development environment?"
+question: "What GitHub features allow repository contributors to work on code changes directly through the web browser? (Choose two.)"
 draft: false
 ---
 
 
-> https://docs.github.com/en/codespaces/overview#benefits-of-github-codespaces
-1. [x] GitHub Codespaces
-1. [ ] GitHub Projects
-1. [ ] GitHub Dependabot
-1. [ ] GitHub Remote
+> https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
+- [x] GitHub Codespaces
+- [x] github.dev editor
+- [ ] GitHub Projects
+- [ ] GitHub Dependabot
+- [ ] GitHub Remote
+- [ ] GitHub Online
