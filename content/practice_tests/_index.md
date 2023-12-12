@@ -8,7 +8,7 @@ weight: 20
 
 {{% notice style="info" %}}
 
-As of right now, practice exams for **GitHub Foundations** and **GitHub Admin** are not available due to limited amount of questions contributed 
+As of right now, practice exam for **GitHub Admin** is not available due to limited amount of questions contributed 
 
 [**How to contribute**](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md). 
 
