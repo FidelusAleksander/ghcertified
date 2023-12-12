@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 020"
-question: "GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support?"
+question: "GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)"
 draft: false
 ---
 

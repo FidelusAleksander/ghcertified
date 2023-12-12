@@ -11,5 +11,5 @@ draft: false
 - [x] You can disconnect and reconnect to an active Codespace without affecting its running processes.
 - [ ] You can stop and restart a Codespace without affecting its running processes.
 - [ ] If you create another Codespace on a branch which already had a Codespace running on it, the original Codespace will be deleted
-- [ ] If you close the browser tab in which your Codespace was running, it will be automatically stopped
+- [ ] If you close the browser tab in which your Codespace was running, the Codespace will automatically be stopped
 > Closing the browser tab does not stop the Codespace and the processes continue running. If you only closed the tab, the Codespace will stop after reaching the inactivity timeout period

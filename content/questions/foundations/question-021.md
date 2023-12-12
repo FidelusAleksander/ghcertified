@@ -7,7 +7,7 @@ draft: false
 
 
 > https://github.com/marketplace?type=actions
-1. [x] In GitHub Marketplace
-1. [ ] In GitHub Public Action Storage
-1. [ ] In all GitHub public repositories
-1. [ ] GitHub Actions Project boards
+1. [x] GitHub Marketplace
+1. [ ] GitHub Public Action Storage
+1. [ ] GitHub private repositories
+1. [ ] GitHub Actions Project Boards

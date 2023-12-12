@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 029"
-question: "What lifecycle actions does GitHub Codespaces support?"
+question: "What are the different possible lifecycle phases for a GitHub Codespace?"
 draft: false
 ---
 

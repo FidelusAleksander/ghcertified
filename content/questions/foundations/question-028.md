@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 028"
-question: "What GitHub features allow repository contributors to work on code changes directly through the web browser? (Choose two.)"
+question: "What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)"
 draft: false
 ---
 
