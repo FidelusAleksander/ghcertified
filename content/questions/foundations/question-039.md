@@ -1,25 +1,12 @@
 ---
 archetype: "questions"
 title: "Question 039"
-question: "<Fill in the Question>"
+question: "Can you disable the issues tab on a repository?"
 draft: false
 ---
 
 
-> (optional hint) text hint or a link
-1. [x] Single-Choice Correct Answer
-1. [ ] Incorrect Answer
-1. [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-1. [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-
-
-
-> (optional hint) text hint or a link
-- [x] Multi-Choice Correct Answer 1
-- [x] Multi-Choice Correct Answer 2
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
+> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues
+1. [x] Yes
+1. [ ] No
+> Features such as issues, wikis or projects can be disabled on a repository in the repository settings
