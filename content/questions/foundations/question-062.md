@@ -7,7 +7,7 @@ draft: false
 
 
 > https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository
-- [x] A nicely written set of markdown files such as `README.md`, `CONTRIBUTING.md` etc.
+- [x] A well-crafted collection of markdown documents like `README.md`, `CONTRIBUTING.md` and others.
 - [x] Giving the repository a descriptive name
 - [x] Setting up topics for the repository
 - [ ] Defining proper CI/CD pipelines

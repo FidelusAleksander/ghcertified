@@ -7,7 +7,7 @@ draft: false
 
 
 > https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/about-your-personal-dashboard#staying-updated-with-activity-from-the-community
-1. [x] Because you are following `octocat`
-1. [ ] Because you recently visited `octocat` profile
+1. [x] Because you are following the user `octocat`
+1. [ ] Because you recently visited `octocat` user profile
 1. [ ] Because you contributed to the `octocat/my-repo` repository
 1. [ ] Because you starred the `octocat/my-repo` repository
