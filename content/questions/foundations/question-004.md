@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 004"
-question: "Which of these is true regarding custom fields for issues and pull requests in GitHub Projects?"
+question: "Which of these is true regarding custom fields for items in GitHub Projects?"
 draft: false
 ---
 

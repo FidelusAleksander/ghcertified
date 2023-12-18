@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 017"
-question: "Which feature allows you to easily create graphs and charts to visualize your project's current and historical progress?"
+question: "Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?"
 draft: false
 ---
 
