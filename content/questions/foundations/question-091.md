@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 091"
-question: "What is the effect of adding a line `Closes #11` to a pull request description?"
+question: "What is the effect of adding a line `Closes #11` to the pull request's description?"
 draft: false
 ---
 
