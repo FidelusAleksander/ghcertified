@@ -5,7 +5,7 @@ title: "Question 039"
 draft: false
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/about-code-scanning-with-codeql
+> https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers
 1. [x] PHP
 1. [ ] JavaScript/TypeScript
 1. [ ] C/C++
