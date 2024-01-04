@@ -7,20 +7,12 @@ weight: 10
 
 ## The Certification Program
 
-GitHub will be opening the certification program to individuals in **early 2024**. Until then You can:
-- Explore the [certification website](https://resources.github.com/learn/certifications/)
-- Join the [waitlist](https://examregistration.github.com/waitlist/certifications) to be notified when the program opens to individuals
+GitHub will be opening the certification program to individuals on **8th of January 2024**. 
+
+Go to the [official registration site](https://examregistration.github.com/overview) to register for one of the available certification exams
 
 
 {{< badges >}}
-
-
-
-{{% notice style="info" %}}
-GitHub certifications are already available to GitHub and Microsoft Employees, GitHub Channel & Services Partners, and all Microsoft Partners. If You are one of these, You can register for the exam [here](https://examregistration.github.com/).
-
-{{% /notice %}}
-
 
 
 ## Study resources
