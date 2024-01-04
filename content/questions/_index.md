@@ -7,6 +7,8 @@ hidden: false
 
 This page contains all the questions that were [contributed](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md) by the community when studying for the exam.
 
+
+
 {{% /notice %}}
 
 ## GitHub Actions

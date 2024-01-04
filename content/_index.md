@@ -11,16 +11,14 @@ This website is **NOT** affiliated, associated, authorized, sponsored, endorsed 
 
 {{% /notice %}}
 
-##  About 
+##  Motivation 
 
-[GitHub Certified](https://githubcertified.com/) serves as a bundle of information and **FREE practice exams** to assist You on the journey to become **GitHub Certified**.
+This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://resources.github.com/learn/certifications/) exams.
 
-{{< badges >}}
 
-## Practice Tests
 
-- People that are studying for the exam are encouraged to [**contribute**](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md) mock exam questions to this project.
-- If You are not ready yet to take the practice tests, we have a [**list of resources**]({{% ref "study_resources" %}}) to help you get started with your preparation.
+## Practice test taking
+
 
 [**Click here**]({{% ref "practice_tests" %}}) to attempt our free and open-source practice tests, which are designed to simulate the real exam experience, allowing you to assess your skills and boost your confidence.
 
