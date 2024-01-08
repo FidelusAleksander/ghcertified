@@ -7,6 +7,6 @@ draft: false
 
 > https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users
 1. [x] `paths-ignore:`
-2. [ ] `paths-exclude:`
-3. [ ] `ignore-directories`
-4. [ ] `exclude-paths:`
+1. [ ] `paths-exclude:`
+1. [ ] `ignore-directories`
+1. [ ] `exclude-paths:`
