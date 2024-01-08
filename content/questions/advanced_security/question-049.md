@@ -1,5 +1,5 @@
 ---
-question: "What YAML syntax should be used in a `secret_scanning.yml` file to exclude directories from secret scanning alerts in GitHub?"
+question: "Which key should be used in a `secret_scanning.yml` file to exclude directories from secret scanning alerts in GitHub?"
 archetype: "questions"
 title: "Question 049"
 draft: false
@@ -7,6 +7,6 @@ draft: false
 
 > https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users
 1. [x] `paths-ignore:`
-1. [ ] `paths-exclude:`
-1. [ ] `ignore-directories`
-1. [ ] `exclude-paths:`
+2. [ ] `paths-exclude:`
+3. [ ] `ignore-directories`
+4. [ ] `exclude-paths:`
