@@ -1,0 +1,12 @@
+---
+question: "Which of the following tools can be used for code analysis in a third-party CI system to upload results to GitHub?"
+archetype: "questions"
+title: "Question 045"
+draft: false
+---
+
+> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system
+1. [x] CodeQL CLI
+1. [ ] CodeQL API
+1. [ ] GitHub Actions `github/codeql-action`
+1. [ ] GitHub CLI
