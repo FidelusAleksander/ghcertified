@@ -1,5 +1,5 @@
 ---
-question: "In the context of uploading SARIF results to GitHub, what happens when a second SARIF results file is uploaded for a commit?"
+question: "In the context of uploading SARIF results to GitHub, what happens when a second SARIF results file is uploaded for a single commit?"
 archetype: "questions"
 title: "Question 047"
 draft: false
