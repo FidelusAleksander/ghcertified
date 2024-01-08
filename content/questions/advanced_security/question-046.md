@@ -1,5 +1,5 @@
 ---
-question: "What is required for a CI server to upload results to GitHub?"
+question: "What is required for a CI server to upload SARIF results to GitHub?"
 archetype: "questions"
 title: "Question 046"
 draft: false
