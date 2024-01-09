@@ -1,7 +1,9 @@
 ## PR Type
 <!-- What kind of change does this PR introduce? -->
 
-- [ ] Content changes (add/update questions, answers, explanations)
+- [ ] Adding new question(s)
+> **Warning**: We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.`
+- [ ] Other content changes (updating questions, answers, explanations or study resources)
 - [ ] Bugfix
 - [ ] Feature
 - [ ] Refactor (no functional changes)
