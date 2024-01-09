@@ -1,5 +1,5 @@
 ---
-question: "What does the default setup for CodeQL analysis in GitHub do?"
+question: "What does the default CodeQL analysis setup in GitHub do?"
 archetype: "questions"
 title: "Question 037"
 draft: false
