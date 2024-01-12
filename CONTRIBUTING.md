@@ -1,44 +1,53 @@
 # Contributing to GitHub Certified
-> **Warning**: We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.`
 
-The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/githubcertified/issues/new/choose). No contribution is too small - we encourage you to report any typos, unclear questions or feature requests.
+>The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/githubcertified/issues/new/choose). No contribution is too small - we encourage you to report any typos, unclear questions or feature requests.
+
 
 <!-- MarkdownTOC autolink="true" -->
-- [Contribution process](#contribution-process)
-- [Install Hugo](#install-hugo)
+- [Two ways of running the project](#two-ways-of-running-the-project)
+  - [GitHub Codespaces](#github-codespaces-easy)
+  - [Local setup (traditional)](#local-setup-traditional)
 - [Content Changes](#content-changes)
   - [Adding new question](#adding-new-question)
   - [Updating existing content](#updating-existing-content)
 
 <!-- /MarkdownTOC -->
 
-## Contribution process
-In order to contribute a code/content change:
+## Two ways of running the project
+
+### GitHub Codespaces
+
+A Codespace is an online development environment that runs in the cloud and is powered by Visual Studio Code where all dependencies for developing this project are already setup for you.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/FidelusAleksander/githubcertified)
+
+Once the Codespace installation is complete and you can go to forward port tab to see the link to the website running locally and start making [content changes](#content-changes).
+
+### Local setup (traditional)
+If You've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/githubcertified) but instead want to run the project locally, follow the steps below.
 - [Fork](https://github.com/FidelusAleksander/githubcertified/fork) the repository
-- Update the submodules to install the theme
+- Install [Hugo](https://gohugo.io/installation/)
+- Update the submodules to install the theme used in this project
    ```bash
    git submodule update --init --recursive
    ```
-- Make your changes
-- Submit a pull request
 
-## Install Hugo
-
-Before contributing, ensure you have [Hugo](https://gohugo.io/installation/) installed for local testing.
-
-Make sure that the git submodule in this repository is updated and then launch the Hugo server with:
-
-```bash
-hugo server -D
-```
-Preview your changes at at http://localhost:1313
 
 ## Content Changes
+All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
 
-All of the content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
+
+Start the Hugo server to see your changes live at http://localhost:1313
+   ```bash
+  hugo server
+  ```
+
+
 
 
 ### Adding new question
+
+> **Warning**: We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.`
 
 1) Run one of the following commands to add a new question file. Change `XXX` to the next available number.
 
