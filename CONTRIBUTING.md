@@ -31,19 +31,13 @@ If You've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusA
    ```bash
    git submodule update --init --recursive
    ```
-
-
-## Content Changes
-All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
-
-
-Start the Hugo server to see your changes live at http://localhost:1313
-   ```bash
+- Start the Hugo server to see your changes live at http://localhost:1313
+  ```bash
   hugo server
   ```
 
-
-
+## Content Changes
+All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
 
 ### Adding new question
 
