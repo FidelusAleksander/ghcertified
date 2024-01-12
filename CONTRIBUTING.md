@@ -4,18 +4,18 @@
 
 
 <!-- MarkdownTOC autolink="true" -->
-- [Two ways of running the project](#two-ways-of-running-the-project)
-  - [GitHub Codespaces](#github-codespaces-easy)
-  - [Local setup (traditional)](#local-setup-traditional)
+- [Setting up the project](#setting-up-the-project)
+  - [Option 1: GitHub Codespaces](#option-1-github-codespaces)
+  - [Option 2: Local setup (traditional)](#option-2-local-setup-traditional)
 - [Content Changes](#content-changes)
   - [Adding new question](#adding-new-question)
   - [Updating existing content](#updating-existing-content)
 
 <!-- /MarkdownTOC -->
 
-## Two ways of running the project
+## Setting up the project
 
-### GitHub Codespaces
+### Option 1: GitHub Codespaces
 
 A Codespace is an online development environment that runs in the cloud and is powered by Visual Studio Code where all dependencies for developing this project are already setup for you.
 
@@ -23,27 +23,21 @@ A Codespace is an online development environment that runs in the cloud and is p
 
 Once the Codespace installation is complete and you can go to forward port tab to see the link to the website running locally and start making [content changes](#content-changes).
 
-### Local setup (traditional)
+### Option 2: Local setup (traditional)
 If You've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/githubcertified) but instead want to run the project locally, follow the steps below.
-- [Fork](https://github.com/FidelusAleksander/githubcertified/fork) the repository
-- Install [Hugo](https://gohugo.io/installation/)
-- Update the submodules to install the theme used in this project
-   ```bash
-   git submodule update --init --recursive
-   ```
-
-
-## Content Changes
-All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
-
-
-Start the Hugo server to see your changes live at http://localhost:1313
-   ```bash
+1. [Fork](https://github.com/FidelusAleksander/githubcertified/fork) the repository
+2. Install [Hugo](https://gohugo.io/installation/)
+3. Update the submodules to install the theme used in this project
+  ```bash
+  git submodule update --init --recursive
+  ```
+4. Start the Hugo server to see your changes live at http://localhost:1313
+  ```bash
   hugo server
   ```
 
-
-
+## Content Changes
+All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/githubcertified/blob/master/content) directory and is written in markdown.
 
 ### Adding new question
 
