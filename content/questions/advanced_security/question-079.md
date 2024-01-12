@@ -7,7 +7,7 @@ draft: false
 
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries
 - [x] In the `queries` input parameter of the `github/codeql-action/init` action
-- [x] In the CodeQL configuration file
+- [x] In a CodeQL configuration YAML file
 - [ ] In the `paths` input parameter of the `github/codeql-action/queries` action
 - [ ] In the Code Scanning section of the Security tab in the repository
 - [ ] In the `codeql` field of the `.github/settings.yml` file
