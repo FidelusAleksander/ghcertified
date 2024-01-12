@@ -3,3 +3,4 @@
 .idea/
 .hugo_build.lock
 .vscode/
+nohup.out
