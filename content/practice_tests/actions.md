@@ -1,6 +1,6 @@
 ---
-title: "Github Actions Certification Practice Exam"
-menuTitle: "Github Actions"
+title: "Github Actions Practice Test"
+Description: "Free practice test for the GitHub Actions Certification Exam."
 date: 2023-08-19T11:04:20+02:00
 draft: false
 hidden: true

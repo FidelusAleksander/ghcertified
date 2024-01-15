@@ -1,6 +1,6 @@
 ---
-title: "Github Admin Certification Practice Exam"
-menuTitle: "Github Admin"
+title: "Github Administration Practice Test"
+Description: "Free practice test for the GitHub Administration Certification Exam."
 date: 2023-09-21T15:42:00+02:00
 draft: false
 hidden: true
