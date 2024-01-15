@@ -11,13 +11,3 @@ draft: false
 1. [ ] It allows the action to upload the results of the analysis to a private GitHub repository.
 1. [ ] It allows the action to access a private GitHub repository that contains the source code to be analyzed.
 1. [ ] It allows the action to upload the generated CodeQL database to a private GitHub repository.
-
-
-
-> (optional hint) text hint or a link
-- [x] Multi-Choice Correct Answer 1
-- [x] Multi-Choice Correct Answer 2
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer

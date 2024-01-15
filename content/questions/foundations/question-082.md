@@ -10,14 +10,3 @@ draft: false
 1. [x] a profile `README.md` file
 1. [ ] a profile `CONTRIBUTING.md` file
 1. [ ] profile is not customizable through files but through the account settings
-
-
-
-
-> (optional hint) text hint or a link
-- [x] Multi-Choice Correct Answer 1
-- [x] Multi-Choice Correct Answer 2
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer
-- [ ] Incorrect Answer
-> (optional) explanation why this is a wrong answer

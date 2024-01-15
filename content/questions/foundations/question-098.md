@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> (optional hint) text hint or a link
+> https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis
 1. [x] Wikis is repository feature for hosting documentation.
 1. [ ] Wikis is the official GitHub documentation.
 1. [ ] Wikis is a feature for hosting code snippets.
