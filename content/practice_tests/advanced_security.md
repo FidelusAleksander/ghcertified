@@ -1,6 +1,6 @@
 ---
-title: "Github Advanced Security Certification Practice Exam"
-menuTitle: "Github Advanced Security"
+title: "Github Advanced Security Practice Test"
+Description: "Free practice test for the GitHub Advanced Security Certification Exam."
 date: 2023-09-21T15:42:20+02:00
 draft: false
 hidden: true
