@@ -1,5 +1,6 @@
 ---
-title: "GitHub Foundations"
+title: "Github Foundations Certification Practice Exam"
+menuTitle: "Github Foundations"
 date: 2023-09-21T15:42:20+02:00
 draft: false
 hidden: true

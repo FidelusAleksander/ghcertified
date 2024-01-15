@@ -1,5 +1,6 @@
 ---
-title: "GitHub Advanced Security"
+title: "Github Advanced Security Certification Practice Exam"
+menuTitle: "Github Advanced Security"
 date: 2023-09-21T15:42:20+02:00
 draft: false
 hidden: true
