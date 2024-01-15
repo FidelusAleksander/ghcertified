@@ -1,5 +1,6 @@
 ---
-title: "Contributed Questions"
+title: "GitHub Certifications Practice Exam Questions"
+menuTitle: "Contributed Questions"
 hidden: false
 weight: 100
 ---
