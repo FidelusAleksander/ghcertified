@@ -3,11 +3,13 @@ title: "GitHub Certified"
 archetype: "home"
 ---
 
+{{% notice style="note" title="Upcoming Changes" %}}
 
-{{% notice style="note" title="Legal disclaimer" %}}
+**This page will no longer be accessible under http://githubcertified.com/**
 
 
-This website is **NOT** affiliated, associated, authorized, sponsored, endorsed by, or in any way officially connected with [GitHub](https://github.com/). The names and logos of GitHub are trademarks of their respective owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.
+This website and its repository will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/githubcertified) to keep track of the changes.
+
 
 {{% /notice %}}
 
