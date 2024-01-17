@@ -7,7 +7,7 @@ weight: 100
 
 {{% notice style="info" %}}
 
-This page contains all the questions that were [contributed](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md) by the community when studying for the exam.
+This page contains all the questions that were [contributed](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) by the community when studying for the exam.
 
 
 {{% /notice %}}

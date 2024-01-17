@@ -11,7 +11,7 @@ weight: 20
 
 As of right now, practice exam for **GitHub Admin** is not available due to limited amount of questions contributed 
 
-[**How to contribute**](https://github.com/FidelusAleksander/githubcertified/blob/master/CONTRIBUTING.md). 
+[**How to contribute**](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md). 
 
 {{% /notice %}}
 
