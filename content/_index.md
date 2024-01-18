@@ -3,16 +3,6 @@ title: "GitHub Certified"
 archetype: "home"
 ---
 
-{{% notice style="note" title="Upcoming Changes" %}}
-
-**This page will no longer be accessible under http://githubcertified.com/**
-
-
-This website and its repository will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/ghcertified) to keep track of the changes.
-
-
-{{% /notice %}}
-
 ##  Motivation 
 
 This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://resources.github.com/learn/certifications/) exams.
