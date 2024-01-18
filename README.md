@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://ghcertified.com/">
-    <img src="https://github.com/FidelusAleksander/ghcertified/blob/master/static/images/branding/logo-black.png?raw=true" />
+    <img src="https://github.com/FidelusAleksander/ghcertified/blob/master/static/images/branding/logo-black.png?raw=true" style="width: 50%;" />
   </a>
 </p>
 
