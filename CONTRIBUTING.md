@@ -1,4 +1,4 @@
-# Contributing to GitHub Certified
+# Contributing to ghcertified
 
 >The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/ghcertified/issues/new/choose). No contribution is too small - we encourage you to report any typos, unclear questions or feature requests.
 

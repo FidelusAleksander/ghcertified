@@ -1,7 +1,7 @@
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
-title                    = "Github Certified"
+title                    = "GitHub Certified"
 baseUrl                  = "https://ghcertified.com"
 
 

@@ -1,5 +1,5 @@
 ---
-title: "GitHub Certified"
+title: "Prepare for GitHub Certifications"
 archetype: "home"
 ---
 
