@@ -8,7 +8,7 @@ archetype: "home"
 **This page will no longer be accessible under http://githubcertified.com/**
 
 
-This website and its repository will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/githubcertified) to keep track of the changes.
+This website and its repository will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/ghcertified) to keep track of the changes.
 
 
 {{% /notice %}}

@@ -1,5 +1,5 @@
 > **Warning**: **This page will no longer be accessible under http://githubcertified.com/**
-  This repository and its corresponding website will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/githubcertified) to keep track of the changes.
+  This repository and its corresponding website will soon change domain name and repository name due to legal complications. Star the [repository](https://github.com/FidelusAleksander/ghcertified) to keep track of the changes.
 
 
 <p align="center">
