@@ -9,6 +9,7 @@ include_exam: "GitHub Foundations"
 domains: ["Introduction to GitHub", "Collaboration", "Project Management", "Modern Development"]
 shuffleAnswers: true
 shuffleQuestions: true
+defaultQuestionsAmount: 75
 ---
 
 {{< practice_test >}}

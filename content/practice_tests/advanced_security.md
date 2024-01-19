@@ -9,6 +9,7 @@ include_exam: "GitHub Advanced Security"
 domains: ["Vulnerability Identification", "Secret Scanning", "Dependency Management"]
 shuffleAnswers: true
 shuffleQuestions: true
+defaultQuestionsAmount: 75
 ---
 
 {{< practice_test >}}
