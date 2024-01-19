@@ -20,7 +20,7 @@
                 {{ end }}
             </ul>
             {{ if gt $question_count 30 }}
-                <a href="{{ .Permalink }}" class="btn">Start</a>
+                <a href="{{ .Permalink }}" class="btn start-button">Start</a>
             {{ else }}
                 <a href="/" class="btn disabled">Unavailable</a>
             {{ end }}
@@ -28,3 +28,30 @@
     </div>
 
 {{ end }}
+</div>
+
+<h4>Advanced settings</h4>
+<section class="advanced-settings">
+    <script>
+        function setNumberOfQuestions(numberOfQuestions) {
+            var links = document.getElementsByClassName('start-button');
+
+            for (var i = 0; i < links.length; i++) {
+                var url = new URL(links[i].href);
+                var params = new URLSearchParams(url.search);
+                params.set('questions', numberOfQuestions ? parseInt(numberOfQuestions, 10) : '');
+                links[i].href = url.origin + url.pathname + '?' + params.toString();
+            }
+        }
+    </script>
+
+    <label for="numberOfQuestions">Limit number of questions. Leave blank for all questions.</label>
+    <input 
+        type="number" 
+        value="" 
+        step="1"
+        id="numberOfQuestions" 
+        placeholder="Number or blank for all" 
+        onchange="setNumberOfQuestions(this.value)"
+    />
+</section> 

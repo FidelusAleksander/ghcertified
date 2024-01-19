@@ -8,15 +8,27 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
 src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
 </script>
 <script>
+// If the question options is available as a querystring param, let's use that.
+    let urlParams = new URLSearchParams(window.location.search);
+    let nQuestionsParam = urlParams.get('questions');
+
     let config = {
-        startOnLoad: true,          // detect and convert all div html elements with class quizdown
-        shuffleAnswers: {{ with .Page.Params.shuffleAnswers }} {{ . }} {{ else }} true {{ end }},      // shuffle answers for each question
-        shuffleQuestions: {{ with .Page.Params.shuffleQuestions }} {{ . }} {{ else }} false {{ end }},    // shuffle questions for each quiz
-        nQuestions: {{ with .Page.Params.nQuestions }} {{ . }} {{ else }} undefined {{ end }},      // display n questions at random, if shuffleQuestions is true
-        primaryColor: 'steelblue',  // primary CSS color
-        secondaryColor: '#f2f2f2',  // secondary CSS color
-        textColor: 'black',         // text color of some elements
-        locale: null                // language of the user interface (auto-detect per default)
+        // detect and convert all div html elements with class quizdown
+        startOnLoad: true,          
+        // shuffle answers for each question
+        shuffleAnswers: {{ with .Page.Params.shuffleAnswers }} {{ . }} {{ else }} true {{ end }},      
+        // shuffle questions for each quiz
+        shuffleQuestions:nQuestionsParam ? true : {{ with .Page.Params.shuffleQuestions }} {{ . }} {{ else }} false {{ end }},    
+        // display n questions at random, if shuffleQuestions is true
+        nQuestions: nQuestionsParam ? parseInt(nQuestionsParam) : {{ with .Page.Params.nQuestions }} {{ . }} {{ else }} undefined {{ end }},      
+        // primary CSS color
+        primaryColor: 'steelblue',  
+        // secondary CSS color
+        secondaryColor: '#f2f2f2',  
+        // text color of some elements
+        textColor: 'black',         
+        // language of the user interface (auto-detect per default)
+        locale: null                
     };
     quizdown.register(quizdownHighlight).register(quizdownKatex).init(config)
 </script>
