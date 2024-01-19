@@ -2,11 +2,11 @@
 <div class="exam-container">
     
 {{ range where .Site.RegularPages "Section" "practice_tests" }}
-{{ $exam := .Page.Params.exam }}
+{{ $include_exam := .Page.Params.include_exam }}
     <div class="card">
         <div class="content">
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
-            {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $exam) }}
+            {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
             
             <ul class="check-list">
                 {{ if gt $question_count 1 }}

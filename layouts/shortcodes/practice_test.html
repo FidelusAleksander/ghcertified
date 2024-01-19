@@ -2,12 +2,12 @@
 
 {{ partial "quizdown.html" .}}
 
-{{ $exam := .Page.Params.exam }}
+{{ $include_exam := .Page.Params.include_exam }}
 
 <div class='quizdown'>
 
 {{ range where .Site.RegularPages "Section" "questions" }}
-    {{ if eq $exam .Params.exam }}
+    {{ if eq $include_exam .Params.exam }}
         {{ partial "question.html"  . }} 
     {{ end }}
 {{ end }}

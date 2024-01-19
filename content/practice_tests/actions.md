@@ -6,7 +6,7 @@ draft: false
 hidden: true
 weight: 10
 badge: "actions_badge.png"
-exam: "GitHub Actions"
+include_exam: "GitHub Actions"
 domains: ["Author and maintain workflows/actions", "Automate tasks", "Manage GitHub Actions for the enterprise"]
 shuffleAnswers: true
 shuffleQuestions: true
