@@ -6,23 +6,19 @@
     <div class="card">
         <div class="content">
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
-            {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
+            {{ $questionCount := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
             
             <ul class="check-list">
-                {{ if gt $question_count 1 }}
-                    <li>{{ $question_count }} Questions</li>
-                {{ else }}
-                    <li>{{ $question_count }} Question</li>
-                {{ end }}
-                
+                <li>{{ $questionCount }} Questions</li>
                 {{ range .Page.Params.domains }}
                     <li>{{ . }}</li>
                 {{ end }}
             </ul>
-            {{ if gt $question_count 30 }}
-                <a href="{{ .Permalink }}" class="btn">Start</a>
-            {{ else }}
+
+            {{ if .Page.Params.examDisabled }}
                 <a href="/" class="btn disabled">Unavailable</a>
+            {{ else }}
+                <a href="{{ .Permalink }}?{{ (querify "questions" $questionCount) | safeURL }}" class="btn">Start</a>
             {{ end }}
         </div>
     </div>
