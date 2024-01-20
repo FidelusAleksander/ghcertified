@@ -11,4 +11,4 @@ draft: false
 - [x] Anyone with read permission for a repository can see code scanning annotations on pull requests.
 - [ ] You need write permission to view code scanning annotations on pull requests.
 - [ ] Anyone with read permissions for a repository can view code scanning alerts in the Security tab.
-- [ ] Only the repository owner can see the code scanninng alerts in the Security tab.
+- [ ] Only the repository owner can see the code scanning alerts in the Security tab.

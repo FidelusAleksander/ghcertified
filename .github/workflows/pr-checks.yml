@@ -20,3 +20,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - uses: pre-commit/action@v3.0.0
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install cspell
+        run: npm install -g cspell
+      - name: Run Spell Checker
+        run: find ./content -name "*.md" | xargs cspell
