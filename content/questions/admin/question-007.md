@@ -1,5 +1,5 @@
 ---
-question: "Which endspoints does the GitHub API provide to administer your enterprise?"
+question: "Which endpoints does the GitHub API provide to administer your enterprise?"
 archetype: "questions"
 title: "Question 007"
 draft: false
