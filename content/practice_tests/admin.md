@@ -7,7 +7,7 @@ hidden: true
 badge: "admin_badge.png"
 include_exam: "GitHub Admin"
 domains: ["Repository Management", "Workflow Optimization", "Efficient Collaboration"]
-defaultQuestionsAmount: 75
+examDisabled: true
 ---
 
 {{< practice_test >}}

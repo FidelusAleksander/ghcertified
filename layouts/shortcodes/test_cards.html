@@ -9,20 +9,16 @@
             {{ $question_count := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
             
             <ul class="check-list">
-                <li>
-                    {{ with .Page.Params.defaultQuestionsAmount }} 
-                    {{ if gt $question_count . }} {{ . }} {{ else }} {{ $question_count }} {{ end }} {{ end }} 
-                    Questions
-                </li>
-
+                <li>{{ $question_count }} Questions</li>
                 {{ range .Page.Params.domains }}
                     <li>{{ . }}</li>
                 {{ end }}
             </ul>
-            {{ if gt $question_count 30 }}
-                <a href="{{ .Permalink }}" class="btn">Start</a>
-            {{ else }}
+
+            {{ if .Page.Params.examDisabled }}
                 <a href="/" class="btn disabled">Unavailable</a>
+            {{ else }}
+                <a href="{{ .Permalink }}?{{ (querify "questions" 5) | safeURL }}" class="btn">Start</a>
             {{ end }}
         </div>
     </div>

@@ -7,7 +7,6 @@ hidden: true
 badge: "foundations_badge.png"
 include_exam: "GitHub Foundations"
 domains: ["Introduction to GitHub", "Collaboration", "Project Management", "Modern Development"]
-defaultQuestionsAmount: 75
 ---
 
 {{< practice_test >}}

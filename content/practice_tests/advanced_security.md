@@ -7,7 +7,6 @@ hidden: true
 badge: "advanced_security_badge.png"
 include_exam: "GitHub Advanced Security"
 domains: ["Vulnerability Identification", "Secret Scanning", "Dependency Management"]
-defaultQuestionsAmount: 75
 ---
 
 {{< practice_test >}}
