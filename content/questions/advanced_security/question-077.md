@@ -9,5 +9,5 @@ draft: false
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#changing-the-languages-that-are-analyzed
 1. [x] By creating a `languages` matrix for the job and then reference it in the `github/codeql-action/init` action's `languages` input parameter
 1. [ ] By calling the `github/codeql-action/analyze` action in separate steps for each language
-1. [ ] By creating a seperate workflow for each language
+1. [ ] By creating a separate workflow for each language
 1. [ ] Define the parallelism in the `github/codeql-action/analyze` action

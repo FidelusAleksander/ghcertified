@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 015"
-question: "You have accidentaly commited Your GitHub personal access token to a public repository. What actions should You take to prevent Your account from being compromised?"
+question: "You have accidentally committed Your GitHub personal access token to a public repository. What actions should You take to prevent Your account from being compromised?"
 draft: false
 ---
 

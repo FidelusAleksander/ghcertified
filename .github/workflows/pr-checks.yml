@@ -20,3 +20,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - uses: pre-commit/action@v3.0.0
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: streetsidesoftware/cspell-action@v4
+        with:
+          files: '**/*.md'
+          root: 'content'
+          config: 'cspell.json'
+          

@@ -1,5 +1,5 @@
 ---
-question: "To stop a workflow from running temporarily without modyfing the source code You should"
+question: "To stop a workflow from running temporarily without modifying the source code You should"
 archetype: "questions"
 title: "Question 023"
 draft: false
