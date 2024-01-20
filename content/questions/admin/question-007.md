@@ -13,4 +13,4 @@ draft: false
 - [x] License
 - [x] SCIM
 - [ ] Marketplace
-- [ ] Actions
+- [ ] Projects
