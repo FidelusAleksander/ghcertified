@@ -1,5 +1,5 @@
 ---
-question: "What are the correct steps to install a GitHub App from GitHub Marketplace for an organization?"
+question: "What are the steps to install a GitHub App from GitHub Marketplace for an organization?"
 archetype: "questions"
 title: "Question 008"
 draft: false
