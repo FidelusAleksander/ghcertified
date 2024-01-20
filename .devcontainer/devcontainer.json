@@ -5,9 +5,6 @@
 		"ghcr.io/devcontainers/features/hugo:1.1.2": {
 			"version": "0.121.0",
 			"extended": false
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "20"
 		}
 	},
 	// Configure tool-specific properties.
@@ -26,7 +23,7 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "git submodule update --init --recursive --depth 1 && npm install -g cspell",
+	"postCreateCommand": "git submodule update --init --recursive --depth 1",
 	"postStartCommand": "nohup bash -c 'hugo server &'"
 
 }

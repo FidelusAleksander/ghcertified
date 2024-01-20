@@ -25,7 +25,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Install cspell
-        run: npm install -g cspell
-      - name: Run Spell Checker
-        run: find ./content -name "*.md" | xargs cspell
+      - uses: streetsidesoftware/cspell-action@v4
+        with:
+          files: '**/*.md'
+          root: 'content'
+          config: '.'
