@@ -6,7 +6,7 @@ draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@3.11/support/contacting-github-support/providing-data-to-github-support#creating-and-sharing-diagnostic-files
-- [x] Create a diagnostic file by running the `ghe-diagnostics` command-line utility, then download it from the Management Console.
+- [x] Use the `ghe-diagnostics` command-line utility to retrieve the diagnostics for your instance.
 - [x] Create a diagnostic file from the Management Console by navigating to the Support tab and clicking `Download diagnostics info`.
 - [ ] Use the `ghe-support-bundle` command to create and upload the diagnostic file.
 - [ ] Generate a diagnostic file using the GitHub mobile app.
