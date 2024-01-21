@@ -1,5 +1,5 @@
 ---
-question: "Which of the following issues can GitHub Support help resolve? (Choose three.)"
+question: "Which of the following issues can GitHub Support help resolve? (Choose four.)"
 archetype: "questions"
 title: "Question 004"
 draft: false
