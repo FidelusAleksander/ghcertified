@@ -67,11 +67,6 @@
   background-size: contain;
 }
 
-.content .check-list li:first-child {
-  font-weight: 600;
-}
-
-
 .content .para {
   line-height: 1.5;
 }
