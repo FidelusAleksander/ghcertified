@@ -67,11 +67,6 @@
   background-size: contain;
 }
 
-.content .check-list li:first-child {
-  font-weight: 600;
-}
-
-
 .content .para {
   line-height: 1.5;
 }
@@ -107,6 +102,21 @@
   outline: 2px solid #e8e8e8;
   background: transparent;
   color: #e8e8e8;
+}
+
+.questions-settings {
+  margin-top: 16px;
+}
+
+.card .content .questions-input {
+  color: #333;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.card .hint {
+  font-size: smaller;
+  margin-top: 0;
 }
 
 @media (max-width: 1300px) {

@@ -1,15 +1,13 @@
 <link rel="stylesheet" href="/css/practice-tests.css">
 <div class="exam-container">
-    
 {{ range where .Site.RegularPages "Section" "practice_tests" }}
-{{ $include_exam := .Page.Params.include_exam }}
+    {{ $include_exam := .Page.Params.include_exam }}
     <div class="card">
-        <div class="content">
+        <form class="content" action="{{ .Permalink }}" method="get">
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
             {{ $questionCount := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
-            
+
             <ul class="check-list">
-                <li>{{ $questionCount }} Questions</li>
                 {{ range .Page.Params.domains }}
                     <li>{{ . }}</li>
                 {{ end }}
@@ -18,9 +16,16 @@
             {{ if .Page.Params.examDisabled }}
                 <a href="/" class="btn disabled">Unavailable</a>
             {{ else }}
-                <a href="{{ .Permalink }}?{{ (querify "questions" $questionCount) | safeURL }}" class="btn">Start</a>
-            {{ end }}
-        </div>
-    </div>
+                <div class="questions-settings">
+                    <label for="questions_{{ $include_exam }}">Questions:</label>
+                    <input class="questions-input" name="questions" id="questions_{{ $include_exam }}" type="number" min="1"
+                        max="{{ $questionCount }}" value="{{ $questionCount }}" step="1"
+                        title="Number of questions to practice on" required />
+                    <p class="hint">Number of question to include in practice round</p>
+                </div>
 
+                <button type="submit" class="btn">Start</button>
+            {{ end }}
+        </form>
+    </div>
 {{ end }}
