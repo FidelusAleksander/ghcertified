@@ -8,7 +8,6 @@
             {{ $questionCount := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
 
             <ul class="check-list">
-                <li>{{ $questionCount }} Questions</li>
                 {{ range .Page.Params.domains }}
                     <li>{{ . }}</li>
                 {{ end }}
