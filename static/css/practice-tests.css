@@ -109,6 +109,21 @@
   color: #e8e8e8;
 }
 
+.questions-settings {
+  margin-top: 16px;
+}
+
+.card .content .questions-input {
+  color: #333;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.card .hint {
+  font-size: smaller;
+  margin-top: 0;
+}
+
 @media (max-width: 1300px) {
   .exam-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
