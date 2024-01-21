@@ -12,18 +12,34 @@ This page contains all the questions that were [contributed](https://github.com/
 
 {{% /notice %}}
 
-## GitHub Actions
+
+
+{{< expand title="**GitHub Foundations questions**" >}}
+
+{{< library-links questions="GitHub Foundations" >}}
+
+{{< /expand >}}
+
+
+
+{{< expand title="**GitHub Actions questions**" >}}
 
 {{< library-links questions="GitHub Actions" >}}
 
-## GitHub Admin
+{{< /expand >}}
+
+
+
+{{< expand title="**GitHub Admin questions**" >}}
 
 {{< library-links questions="GitHub Admin" >}}
 
-## GitHub Advanced Security
+{{< /expand >}}
+
+
+
+{{< expand title="**GitHub Advanced Security questions**" >}}
 
 {{< library-links questions="GitHub Advanced Security" >}}
 
-## GitHub Foundations
-
-{{< library-links questions="GitHub Foundations" >}}
+{{< /expand >}}
