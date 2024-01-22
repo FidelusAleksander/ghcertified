@@ -19,6 +19,7 @@
         "qlcli",
         "roadmaps",
         "SARIF",
-        "sarifs"
+        "sarifs",
+        "GHAS"
     ]
 }

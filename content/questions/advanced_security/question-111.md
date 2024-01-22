@@ -12,4 +12,4 @@ draft: false
 1. [ ] All of these
 > GitHub Actions is not required for Dependabot version updates and Dependabot security updates to run on GitHub. However, pull requests opened by Dependabot can trigger workflows that run actions.
 1. [ ] None of these
-> Dependency review uses `actions/dependency-review-action` GitHub Actionn
+> Dependency review uses `actions/dependency-review-action` GitHub Action
