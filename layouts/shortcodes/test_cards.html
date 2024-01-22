@@ -3,7 +3,7 @@
 {{ range where .Site.RegularPages "Section" "practice_tests" }}
     {{ $include_exam := .Page.Params.include_exam }}
     <div class="card">
-        <form class="content" action="{{ .Permalink }}" method="get">
+        <form class="content" action="{{ .RelPermalink }}" method="get">
             <img src="/images/{{.Params.badge}}" alt="advanced_security_badge" style="max-width: 100%;">
             {{ $questionCount := len (where (where .Site.RegularPages "Section" "questions") "Params.exam" $include_exam) }}
 
