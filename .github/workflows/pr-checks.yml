@@ -29,4 +29,5 @@ jobs:
           files: '**/*.md'
           root: 'content'
           config: 'cspell.json'
+          verbose: true
           
