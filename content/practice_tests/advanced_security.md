@@ -6,7 +6,7 @@ draft: false
 hidden: true
 badge: "advanced_security_badge.png"
 include_exam: "GitHub Advanced Security"
-domains: ["Vulnerability Identification", "Secret Scanning", "Dependency Management"]
+domains: ["Vulnerability Identification", "Secret Scanning", "Dependency Management", "Code scanning"]
 ---
 
 {{< practice_test >}}
