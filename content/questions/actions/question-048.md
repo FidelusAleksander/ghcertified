@@ -1,5 +1,5 @@
 ---
-question: "A job called `job2` is using artifacts created in `job1`. Therefore it's important to make sure `job1` finishes before `job2` starts looking for the artifacts. How should You create that dependency?"
+question: "A job called `job2` is using artifacts created in `job1`. Therefore it's important to make sure `job1` finishes before `job2` starts looking for the artifacts. How should you create that dependency?"
 archetype: "questions"
 title: "Question 048"
 draft: false

@@ -24,7 +24,7 @@ A Codespace is an online development environment that runs in the cloud and is p
 Once the Codespace installation is complete and you can go to forward port tab to see the link to the website running locally and start making [content changes](#content-changes).
 
 ### Option 2: Local setup (traditional)
-If You've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/ghcertified) but instead want to run the project locally, follow the steps below.
+If you've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/ghcertified) but instead want to run the project locally, follow the steps below.
 1. [Fork](https://github.com/FidelusAleksander/ghcertified/fork) the repository
 2. Install [Hugo](https://gohugo.io/installation/)
 3. Update the submodules to install the theme used in this project
@@ -58,4 +58,4 @@ For example `hugo new questions/actions/question-084.md`
 
 
 ### Updating existing content
-If You want to update existing content, simply find the file in the [content/](https://github.com/FidelusAleksander/ghcertified/blob/master/content) directory and edit the markdown file.
+If you want to update existing content, simply find the file in the [content/](https://github.com/FidelusAleksander/ghcertified/blob/master/content) directory and edit the markdown file.

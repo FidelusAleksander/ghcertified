@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 014"
-question: "You have included some fake secrets in Your test code and they have been picked up by GitHub's secret scanning. What can You do to tell GitHub that these are fake secrets and can be ignored? (Choose two.)"
+question: "You have included some fake secrets in your test code and they have been picked up by GitHub's secret scanning. What can you do to tell GitHub that these are fake secrets and can be ignored? (Choose two.)"
 draft: false
 ---
 
