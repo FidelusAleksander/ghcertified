@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 074"
-question: "Which of the following statements are true about enabling CodeQL scanning default setup? (Choose two.)"
+question: "Which of the following statements about enabling CodeQL scanning default setup are true? (Choose two.)"
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 027"
-question: "Which of these will trigger the GitHub Dependency graph on your repository to update? (Choose two.)"
+question: "When will the GitHub Dependency graph for your repository be updated? (Choose two.)"
 draft: false
 ---
 

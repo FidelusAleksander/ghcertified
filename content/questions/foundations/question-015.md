@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 015"
-question: "Which of these are true about `saved replies`? (Choose two.)"
+question: "Which of these statements about `saved replies` are true? (Choose two.)"
 draft: false
 ---
 

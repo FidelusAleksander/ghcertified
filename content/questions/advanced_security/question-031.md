@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 031"
-question: "Which of these statements are true about Dependabot Alerts? (Choose three.)"
+question: "Which of these statements about Dependabot Alerts are true? (Choose three.)"
 draft: false
 ---
 

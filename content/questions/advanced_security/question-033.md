@@ -1,5 +1,5 @@
 ---
-question: "What is CodeQL in the context of GitHub's code scanning feature?"
+question: "What is CodeQL?"
 archetype: "questions"
 title: "Question 033"
 draft: false
