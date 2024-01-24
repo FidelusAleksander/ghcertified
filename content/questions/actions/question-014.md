@@ -1,5 +1,5 @@
 ---
-question: "This code will launch 6 different jobs in parallel using the matrix strategy. Can You use the matrix strategy to parallelize entire workflows?"
+question: "This code will launch 6 different jobs in parallel using the matrix strategy. Can you use the matrix strategy to parallelize entire workflows?"
 archetype: "questions"
 title: "Question 014"
 draft: false

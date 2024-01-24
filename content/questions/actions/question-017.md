@@ -1,5 +1,5 @@
 ---
-question: "When using the `pull_request` and `pull_request_target` events, how do You configure the workflow to run only when targeting the `prod` branch?"
+question: "When using the `pull_request` and `pull_request_target` events, how do you configure the workflow to run only when targeting the `prod` branch?"
 archetype: "questions"
 title: "Question 017"
 draft: false

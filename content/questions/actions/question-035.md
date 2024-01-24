@@ -1,5 +1,5 @@
 ---
-question: "To prevent a job from failure when one of the steps fails You can include:"
+question: "To prevent a job from failure when one of the steps fails you can include:"
 archetype: "questions"
 title: "Question 035"
 draft: false

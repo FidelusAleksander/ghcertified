@@ -1,5 +1,5 @@
 ---
-question: "Fill in the blank: When using `push` event trigger filters You can use <____> patterns to target multiple branches"
+question: "Fill in the blank: When using `push` event trigger filters you can use <____> patterns to target multiple branches"
 archetype: "questions"
 title: "Question 019"
 draft: false

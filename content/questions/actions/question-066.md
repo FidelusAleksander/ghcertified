@@ -1,5 +1,5 @@
 ---
-question: "How can You validate that Your GitHub self-hosted-runner can access all required GitHub services?"
+question: "How can you validate that your GitHub self-hosted-runner can access all required GitHub services?"
 archetype: "questions"
 title: "Question 066"
 draft: false
