@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
-title: "What's the maximum amount of reusable workflows can you call from a single workflow file? "
-question: "Question 076"
+question: "What's the maximum amount of reusable workflows can you call from a single workflow file? "
+title: "Question 076"
 draft: false
 ---
 
