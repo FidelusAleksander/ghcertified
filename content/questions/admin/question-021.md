@@ -5,7 +5,7 @@ title: "Question 021"
 draft: false
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users
+> https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#supporting-developers-with-multiple-user-accounts-on-githubcom
 1. [x] Managed users are not allowed to contribute to public resources, and they need a separate, personal account for this purpose.
 1. [ ] Managed users can freely contribute to public resources and external enterprises without restrictions.
 1. [ ] Managed users must request special permission from GitHub to contribute to external resources.
