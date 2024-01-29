@@ -23,6 +23,7 @@
     "GHAS",
     "SCIM",
     "Keycloak",
-    "Entra"
+    "Entra",
+    "passwordless"
   ]
 }
