@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.9.1
+        uses: lycheeverse/lychee-action@v1.9.2
         with:
           args: --verbose --no-progress './**/*.md' './**/*.html' --exclude-all-private --exclude 'file:///*'
           fail: true
