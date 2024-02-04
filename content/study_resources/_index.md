@@ -12,9 +12,9 @@ weight: 50
 Thankfully GitHub prepared study guides for each of the available certification exams. They list out all the topics covered in the exam. 
 
 - [Study Guide: GitHub Foundations](https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/4e60030cc6c76688698652e830ea2a48/github-foundations-exam-study-guide.pdf)
-- [Study Guide: GitHub Actions](https://assets.ctfassets.net/wfutmusr1t3h/2mMJ6nECbUAdiQMTObbPw6/4b66f25661e8aadcb4db984a95071682/github-actions-exam-preparation-study-guide.pdf)
-- [Study Guide: GitHub Advanced Security](https://assets.ctfassets.net/wfutmusr1t3h/4WQrNeENScZlISZKdknVbK/88e6b744c8591f71efef6308483daa4f/github-advanced-security-exam-preparation-study-guide__1_.pdf)
-- [Study Guide: GitHub Administration](https://assets.ctfassets.net/wfutmusr1t3h/5zTfUfFWQknwoUVA1SAw0o/5e1498f30d64825d94e01cec7dac90fe/github-administration-exam-preparation-study-guide.pdf)
+- [Study Guide: GitHub Actions](https://assets.ctfassets.net/wfutmusr1t3h/2mMJ6nECbUAdiQMTObbPw6/275fd49301e7a0d1b4e3de0bfe95d765/github-actions-exam-preparation-study-guide__1_.pdf)
+- [Study Guide: GitHub Advanced Security](https://assets.ctfassets.net/wfutmusr1t3h/4WQrNeENScZlISZKdknVbK/5ef56a63ec9656c6fc1c4597f4e95bc9/github-advanced-security-exam-preparation-study-guide__2_.pdf)
+- [Study Guide: GitHub Administration](https://assets.ctfassets.net/wfutmusr1t3h/5zTfUfFWQknwoUVA1SAw0o/19c94b456fc26c200281a92bf274ede6/github-administration-exam-preparation-study-guide__1_.pdf)
 
 In fact, the practice exams on this site are built based on the study guides and the GitHub Documentation.
 
@@ -34,9 +34,9 @@ Start with a Microsoft Learn Course. They cover a lot of ground and are a great 
 **LinkedIn Learning**
 
 - [LinkedIn Learning: GitHub Foundations](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification)
+- [LinkedIn Learning: GitHub Advanced Security](https://www.linkedin.com/learning/github-advanced-security-ghas/github-advanced-security)
 - [LinkedIn Learning: GitHub Administration](https://www.linkedin.com/learning/paths/prepare-for-the-github-administration-certification)
 - *[In Progress] LinkedIn Learning: GitHub Actions*
-- *[In Progress] LinkedIn Learning: GitHub Advanced Security*
 
 **GitHub Learn**
 
@@ -44,6 +44,7 @@ Start with a Microsoft Learn Course. They cover a lot of ground and are a great 
 - [GitHub Learn: GitHub Advanced Security](https://resources.github.com/learn/pathways/security/)
 - [GitHub Learn: GitHub Administration](https://resources.github.com/learn/pathways/administration-governance/)
 
-**Other**
+Other Free Resources
 - [GitHub Skills](https://skills.github.com/) - Interactive courses from GitHub
-- [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - Interactive GitHub Actions course
+- [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - GitHub Actions playground
+- [ExamPro: GitHub Foundations](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - YouTube course for GitHub Foundations Certification
