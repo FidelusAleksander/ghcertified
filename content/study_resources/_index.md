@@ -44,6 +44,7 @@ Start with a Microsoft Learn Course. They cover a lot of ground and are a great 
 - [GitHub Learn: GitHub Advanced Security](https://resources.github.com/learn/pathways/security/)
 - [GitHub Learn: GitHub Administration](https://resources.github.com/learn/pathways/administration-governance/)
 
-**Other**
+Other Free Resources
 - [GitHub Skills](https://skills.github.com/) - Interactive courses from GitHub
-- [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - Interactive GitHub Actions course
+- [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - GitHub Actions playground
+- [ExamPro: GitHub Foundations](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - YouTube course for GitHub Foundations Certification
