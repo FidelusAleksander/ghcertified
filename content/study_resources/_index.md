@@ -34,9 +34,9 @@ Start with a Microsoft Learn Course. They cover a lot of ground and are a great 
 **LinkedIn Learning**
 
 - [LinkedIn Learning: GitHub Foundations](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification)
+- [LinkedIn Learning: GitHub Advanced Security](https://www.linkedin.com/learning/github-advanced-security-ghas/github-advanced-security)
 - [LinkedIn Learning: GitHub Administration](https://www.linkedin.com/learning/paths/prepare-for-the-github-administration-certification)
 - *[In Progress] LinkedIn Learning: GitHub Actions*
-- *[In Progress] LinkedIn Learning: GitHub Advanced Security*
 
 **GitHub Learn**
 
