@@ -7,6 +7,6 @@ draft: false
 
 > https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions
 1. [x] GitHub Actions usage is free for public repositories.
-2. [ ] GitHub Actions incurs a charge for every minute used in public repositories.
-3. [ ] Public repositories are given half the amount of free minutes compared to private repositories.
-4. [ ] GitHub Actions is not available for public repositories.
+1. [ ] GitHub Actions incurs a charge for every minute used in public repositories.
+1. [ ] Public repositories are given half the amount of free minutes compared to private repositories.
+1. [ ] GitHub Actions is not available for public repositories.
