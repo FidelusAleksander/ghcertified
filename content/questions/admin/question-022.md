@@ -1,7 +1,7 @@
 ---
 question: "What is SCIM in the context of GitHub?"
 archetype: "questions"
-title: "Question 021"
+title: "Question 022"
 draft: false
 ---
 
