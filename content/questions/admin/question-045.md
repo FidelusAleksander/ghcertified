@@ -5,6 +5,7 @@ title: "Question 045"
 draft: false
 ---
 
+> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises
 1. [x] It allows owners to centrally manage policy and billing for multiple organizations.
 1. [ ] It provides unlimited private repositories for individual users.
 1. [ ] It offers a free domain for hosting the organization's website.
