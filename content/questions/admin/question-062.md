@@ -1,5 +1,5 @@
 ---
-question: "What are the repository roles available in a GitHub organization?"
+question: "What are the repository roles available in a GitHub organization? (Choose five.)"
 archetype: "questions"
 title: "Question 062"
 draft: false
