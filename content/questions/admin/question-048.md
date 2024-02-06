@@ -7,6 +7,6 @@ draft: false
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
 1. [x] Owner
-2. [ ] Member
-3. [ ] Billing manager
-4. [ ] Outside collaborator
+1. [ ] Member
+1. [ ] Billing manager
+1. [ ] Outside collaborator
