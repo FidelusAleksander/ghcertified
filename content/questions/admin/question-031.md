@@ -6,7 +6,7 @@ draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] On-premises datacenter or to a public cloud service (e.g., AWS, GCP, Azure)
+1. [x] On-premises data center or to a public cloud service (e.g., AWS, GCP, Azure)
 1. [ ] Exclusively to private cloud environments
 1. [ ] Only on GitHub-managed servers
 1. [ ] Directly onto personal computing devices
