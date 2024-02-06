@@ -7,6 +7,6 @@ draft: false
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
 1. [x] JSON and CSV.
-2. [ ] PDF and DOCX.
-3. [ ] TXT and RTF.
-4. [ ] ZIP.
+1. [ ] PDF and DOCX.
+1. [ ] TXT and RTF.
+1. [ ] ZIP.
