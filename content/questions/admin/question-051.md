@@ -6,7 +6,7 @@ draft: false
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Outside collaborators are granted access to specific repositories rather than the entire organization.
-1. [ ] Outside collaborators can manage organization settings.
-1. [ ] There is no difference; outside collaborators have the same access as members.
+1. [x] Outside collaborators are assigned access on a repository-by-repository basis, while members may have broader permissions within the organization depending on their role.
+1. [ ] Outside collaborators have the capability to modify organization settings.
+1. [ ] There is no distinction in access levels between outside collaborators and members.
 1. [ ] Outside collaborators can add or remove members from the organization.
