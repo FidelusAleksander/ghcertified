@@ -9,4 +9,4 @@ draft: false
 - [x] Installation Access Token for a GitHub App
 - [x] User Access Token for a GitHub App
 - [ ] IoT Token for an IoT device
-- [ ] Ephimeral Access Token for temporary access
+- [ ] Ephemeral Access Token for temporary access
