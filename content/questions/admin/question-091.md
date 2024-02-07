@@ -1,0 +1,12 @@
+---
+question: "How can you use 3rd party vaults to manage secrets for GitHub Actions?"
+archetype: "questions"
+title: "Question 091"
+draft: false
+---
+
+> https://docs.github.com/en/actions/security-guides/encrypted-secrets#storing-large-secrets
+1. [x] Store secrets in the 3rd party vault and use a decryption step in your workflow to access them, with the decryption key stored as a secret on GitHub.
+1. [ ] Direct integration with 3rd party vaults is supported natively within GitHub Actions without needing any additional configuration.
+1. [ ] 3rd party vaults can only be accessed by embedding their API keys directly within the workflow files.
+1. [ ] GitHub Actions does not support the use of 3rd party vaults for secret management; all secrets must be stored within GitHub.
