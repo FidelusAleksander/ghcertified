@@ -7,7 +7,7 @@ draft: false
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners#self-hosted-runner-security
 - [x] Malicious programs running on the machine
-- [x] scaping the runner sandbox
+- [x] Escaping the runner sandbox environment
 - [x] Exposing network environment
 - [x] Persisting dangerous data
 - [ ] Automatic environment cleanup after job execution can cause data loss
