@@ -1,5 +1,5 @@
 ---
-question: "Which of these practices can help avoid commiting sensitive data or files to a git repository?"
+question: "Which of these practices can help avoid committing sensitive data or files to a git repository?"
 archetype: "questions"
 title: "Question 070"
 draft: false
