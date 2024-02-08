@@ -1,7 +1,7 @@
 ---
 question: "How can you ensure your self-hosted or larger hosted runners can communicate with GitHub when using an IP allow list?"
 archetype: "questions"
-title: "Question 083"
+title: "Question 082"
 draft: false
 ---
 
