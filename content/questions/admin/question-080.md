@@ -1,7 +1,7 @@
 ---
 question: "Can organization owners manage IP allow list entries inherited from the enterprise account's allow list?"
 archetype: "questions"
-title: "Question 081"
+title: "Question 080"
 draft: false
 ---
 
