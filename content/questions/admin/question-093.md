@@ -1,5 +1,5 @@
 ---
-question: "How can you access, write, and share GitHub Packages within your projects?"
+question: "How can one authenticate to GitHub Packages?"
 archetype: "questions"
 title: "Question 093"
 draft: false
