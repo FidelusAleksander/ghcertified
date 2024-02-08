@@ -9,4 +9,4 @@ draft: false
 1. [x] Using a visual program like GitHub Desktop to review commits
 1. [ ] Regularly changing your passwords
 1. [ ] Disabling push access to the repository
-1. [ ] Only using Git from the command line
+1. [ ] Using `git add .` before all commits
