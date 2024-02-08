@@ -1,7 +1,7 @@
 ---
 question: "Who can configure IP allow lists for an enterprise on GitHub?"
 archetype: "questions"
-title: "Question 078"
+title: "Question 079"
 draft: false
 ---
 
