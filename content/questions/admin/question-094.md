@@ -1,5 +1,5 @@
 ---
-question: "How do you use GitHub Packages in workflows, such as with GitHub Actions or other CI/CD tools?"
+question: "What is required to download or publish a GitHub Package within workflows, such as with GitHub Actions or other CI/CD tools?"
 archetype: "questions"
 title: "Question 094"
 draft: false
