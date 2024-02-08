@@ -10,6 +10,6 @@ draft: false
 - [x] scaping the runner sandbox
 - [x] Exposing network environment
 - [x] Persisting dangerous data
-- [ ] Automatic environment cleanup after job execution
+- [ ] Automatic environment cleanup after job execution can cause data loss
 - [ ] Lower computational efficiency due to security measures
 - [ ] Limited integration with GitHub-hosted services
