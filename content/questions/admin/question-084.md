@@ -1,5 +1,5 @@
 ---
-question: "What are some potential abuse vectors of enabling self-hosted runners on public repositories?"
+question: "What are some potential abuse vectors of enabling self-hosted runners on public repositories? (Choose four.)"
 archetype: "questions"
 title: "Question 084"
 draft: false
