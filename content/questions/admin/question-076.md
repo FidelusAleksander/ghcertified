@@ -1,5 +1,5 @@
 ---
-question: "What's the difference between GitHub Apps and OAuth apps'?"
+question: "What's the difference between GitHub Apps and OAuth apps?"
 archetype: "questions"
 title: "Question 076"
 draft: false
