@@ -9,4 +9,4 @@ draft: false
 1. [x] Create runner groups to collect sets of runners, then configure access policies for repositories within the organization.
 1. [ ] Manually assign each self-hosted runner to individual repositories without using runner groups.
 1. [ ] Use a single default runner group for all runners and repositories, with no option to create additional groups or configure access policies.
-1. [ ] Allow unrestricted access to all self-hosted runners from any repository within the organization, without the ability to limit access.
+1. [ ] By creating runner groups which are then assigned to teams of people within an organization. These teams can then manage these groups and assign the runner groups to repositories they manage
