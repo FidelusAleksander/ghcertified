@@ -1,5 +1,5 @@
 ---
-question: "What defines organization policies within the context of GitHub Enterprise?"
+question: "Which of these best defines GitHub Enterprise Policies?"
 archetype: "questions"
 title: "Question 071"
 draft: false
