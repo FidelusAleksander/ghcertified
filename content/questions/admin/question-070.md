@@ -1,5 +1,5 @@
 ---
-question: "How can you prevent sensitive data from being accidentally committed to a Git repository in the future?"
+question: "Which of these practices can help avoid commiting sensitive data or files to a git repository?"
 archetype: "questions"
 title: "Question 070"
 draft: false
