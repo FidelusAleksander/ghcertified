@@ -1,5 +1,5 @@
 ---
-question: "Which package managers and formats are supported by GitHub Packages?"
+question: "Which package managers and formats are supported by GitHub Packages? (Choose five.)"
 archetype: "questions"
 title: "Question 092"
 draft: false
