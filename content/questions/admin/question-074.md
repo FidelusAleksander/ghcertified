@@ -1,5 +1,5 @@
 ---
-question: "Which of the following are types of access tokens supported by GitHub?"
+question: "Which of the following are types of access tokens supported by GitHub? (Choose three.)"
 archetype: "questions"
 title: "Question 074"
 draft: false
