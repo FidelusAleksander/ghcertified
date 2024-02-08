@@ -1,5 +1,5 @@
 ---
-question: "What is the primary rate limit for authenticated users making REST API requests on GitHub?"
+question: "What is the primary rate limit for authenticated personal users making REST API requests to GitHub API?"
 archetype: "questions"
 title: "Question 075"
 draft: false
