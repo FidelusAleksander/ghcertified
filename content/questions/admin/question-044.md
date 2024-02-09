@@ -1,5 +1,5 @@
 ---
-question: "Which GitHub plans allows to use GitHub Acrions secrets in private repositories? (choose two.)"
+question: "Which GitHub plans allows to use GitHub Acrions secrets in private repositories? (choose three.)"
 archetype: "questions"
 title: "Question 044"
 draft: false
