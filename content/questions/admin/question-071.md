@@ -9,4 +9,4 @@ draft: false
 1. [x] Settings managed by organization owners to control aspects like repository management, team access, and security features within their GitHub organization.
 1. [ ] Policies set at the enterprise level that dictate the billing and subscription details for all organizations under an enterprise account.
 1. [ ] Guidelines suggested by GitHub to improve collaboration and productivity across all organizations without enforcement capabilities.
-1. [ ] Default settings applied to all new repositories within an organization, which cannot be modified by the organization owners.
+1. [ ] Default settings applied to all new repositories within an organization, which can be overridden by the organization owners.
