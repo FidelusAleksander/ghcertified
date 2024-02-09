@@ -1,12 +1,12 @@
 ---
-question: "Which GitHub plans allow organizations to own an unlimited number of public and private repositories? (choose two.)"
+question: "Which GitHub plans allow to use GitHub Acrions secrets in private repositories? (choose two.)"
 archetype: "questions"
 title: "Question 044"
 draft: false
 ---
 
 - [x] GitHub Team
-- [x] GitHub Enterprise Cloud
+- [x] GitHub Enterprise
+- [x] GitHub Pro
 - [ ] GitHub Free
-- [ ] GitHub Pro
 - [ ] GitHub for Nonprofits
