@@ -9,7 +9,4 @@ draft: false
 > https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
 1. [ ] Yes
 1. [x] No
-> After creating a gist, you cannot convert it from public to secret
-
-
-
+> After creating a gist, you cannot convert it from public to secret.
