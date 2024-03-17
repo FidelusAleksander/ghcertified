@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 077"
-question: "What is the simplest method to execute CodeQL analysis concurrently for each language in a multi-language repository using GitHub Actions? (Choose two.)"
+question: "What is the simplest method to execute CodeQL analysis concurrently for each language in a multi-language repository using GitHub Actions?"
 draft: false
 ---
 
