@@ -11,4 +11,3 @@ draft: false
 1. [ ] A self-hosted runner is a system to upload code to a private server
 1. [ ] A self-hosted runner is a system to be able to create workloads automatically
 1. [ ] A self-hosted runner is a system to manage pull requests from users of the organization
-
