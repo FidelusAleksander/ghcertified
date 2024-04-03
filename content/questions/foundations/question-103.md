@@ -7,9 +7,9 @@ draft: false
 
 
 > https://git-scm.com/docs/git-switch
-1. [x] git checkout -b `<new_branch_name>`
-1. [ ] git branch -c `<new_branch_name>`
-1. [x] git switch -c `<new_branch_name>`
-1. [ ] git merge -m `<new_branch_name>`
-1. [ ] git switch -m `<new_branch_name>`
-1. [ ] git checkout -m `<new_branch_name>`
+- [x] git checkout -b `<new_branch_name>`
+- [ ] git branch -c `<new_branch_name>`
+- [x] git switch -c `<new_branch_name>`
+- [ ] git merge -m `<new_branch_name>`
+- [ ] git switch -m `<new_branch_name>`
+- [ ] git checkout -m `<new_branch_name>`
