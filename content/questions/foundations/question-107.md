@@ -8,7 +8,7 @@ draft: false
 
 > https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
 - [ ] Owner of the repository
-> This is not mentioned as a permissiosn level for GitHub administration.
+> This is not mentioned as a permission level for GitHub administration.
 - [ ] Team maintainer at the team level
 > Billing is not mentioned at the team level.
 - [ ] Admin in at the team level
