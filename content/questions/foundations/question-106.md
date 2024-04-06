@@ -13,4 +13,3 @@ draft: false
 - [ ] Pro level
 > (optional) GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
 - [x] Enterprize level
-
