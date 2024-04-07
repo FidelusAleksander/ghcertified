@@ -13,4 +13,4 @@ draft: false
 - [ ] Email
 - [x] Security key
 - [x] GitHub mobile
-- [ ] Time-based one time password (TOTP)
+- [ ] Time-based one-time password (TOTP)
