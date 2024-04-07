@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 107"
-question: "Which permissions can setup billing or assign billing managers for their organization(s)? (Select 2)"
+question: "Who can setup billing or assign billing managers for an organization? (Select two.)"
 draft: false
 ---
 
