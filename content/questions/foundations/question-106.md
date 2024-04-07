@@ -12,4 +12,4 @@ draft: false
 > GitHub Personal is a type of account and not an organizational hierarchy on GitHub.
 - [ ] Pro level
 > GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
-- [x] Enterprize level
+- [x] Enterprise level
