@@ -9,7 +9,7 @@ draft: false
 - [x] Team level
 - [x] Organization level
 - [ ] Personal level
-> (optional) GitHub Personal is a type of account and not an organizational hierarchy on GitHub.
+> GitHub Personal is a type of account and not an organizational hierarchy on GitHub.
 - [ ] Pro level
 > (optional) GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
 - [x] Enterprize level
