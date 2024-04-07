@@ -9,7 +9,7 @@ draft: false
 - [x] Passkey
 - [x] Text message
 - [ ] Phone call
-> While text messages are supported in some countries, there is no mention of phone calls for 2FA/MFA.
+> While text messages are supported in some countries, phone calls are not
 - [ ] Email
 > There is no mention of email as an option to receive a code for MFA/2FA.
 - [x] Security key
