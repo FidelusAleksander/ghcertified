@@ -10,7 +10,7 @@ draft: false
 - [ ] Owner of the repository
 > This is not mentioned as a permission level for GitHub administration.
 - [ ] Team maintainer at the team level
-> Billing is not mentioned at the team level.
+> Being a team maintainer does not grant billing access
 - [ ] Admin in at the team level
 > Billing is not mentioned at the team level.
 - [x] Owner at the organization level 
