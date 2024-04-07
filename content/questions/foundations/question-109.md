@@ -13,5 +13,4 @@ draft: false
 - [ ] Email
 - [x] Security key
 - [x] GitHub mobile
-- [ ] Biometrics
-> There is no mention of biometrics, such as face ID or fingerprint scans, for MFA/2FA.
+- [ ] Time-based one time password (TOTP)
