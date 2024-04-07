@@ -11,7 +11,6 @@ draft: false
 - [ ] Phone call
 > While text messages are supported in some countries, phone calls are not
 - [ ] Email
-> There is no mention of email as an option to receive a code for MFA/2FA.
 - [x] Security key
 - [x] GitHub mobile
 - [ ] Biometrics
