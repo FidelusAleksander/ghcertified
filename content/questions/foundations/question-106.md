@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 106"
-question: "<What are the different levels of GitHub Administration hierarchy?  (Choose 3)>"
+question: "What are the different levels of GitHub organizational hierarchy?  (Choose three.)"
 draft: false
 ---
 
