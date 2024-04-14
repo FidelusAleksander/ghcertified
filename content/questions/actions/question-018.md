@@ -9,8 +9,8 @@ draft: false
 on:
   pull_request:
     branches:
-      - 'releases/**'
-      - '!releases/**-alpha'
+      - 'release/**'
+      - '!release/**-alpha'
 ```
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-branches
 1. [x] the target branch name starts with `release` but does not end with `-alpha`
