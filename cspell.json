@@ -24,6 +24,7 @@
     "SCIM",
     "Keycloak",
     "Entra",
-    "passwordless"
+    "passwordless",
+    "TOTP"
   ]
 }
