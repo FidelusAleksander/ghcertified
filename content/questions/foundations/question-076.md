@@ -10,7 +10,7 @@ draft: false
 - [x] Free
 - [x] Team
 - [x] Enterprise
-- [ ] Pro
+- [x] Pro
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
