@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 111"
-question: "What is the common GitHub pricing plan(s) for both personal and organization accounts?"
+question: "What is/are the common GitHub pricing plan(s) for both personal and organization accounts?"
 draft: false
 ---
 
