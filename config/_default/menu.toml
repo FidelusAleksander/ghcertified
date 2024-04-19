@@ -15,3 +15,9 @@ name = "<i class='fas fa-fw fa-calendar'></i> Official Site"
 identifier = "Certifications"
 url = "https://resources.github.com/learn/certifications/"
 weight = 30
+
+[[shortcuts]]
+name = "<i class='fas fa-fw fa-comments'></i> Discussions"
+identifier = "Discussions"
+url = "https://github.com/FidelusAleksander/ghcertified/discussions"
+weight = 40
