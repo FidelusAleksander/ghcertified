@@ -10,4 +10,4 @@ draft: false
 1. [ ] Delete and archive 
 1. [x] Close and delete
 1. [ ] Archive and close
-1. [ ] Archive and delete
+1. [ ] Deactivate and archive
