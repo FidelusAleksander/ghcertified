@@ -5,7 +5,7 @@ title: "Question 007"
 draft: false
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin?apiVersion=2022-11-28
+> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
 - [x] Admin stats
 - [x] Audit log
 - [x] Billing
