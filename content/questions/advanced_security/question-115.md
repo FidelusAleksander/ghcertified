@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 115"
-question: "How can a dependabot pull request completed with comment commands?"
+question: "Which dependabot comment command will get a pull request successfully completed?"
 draft: false
 ---
 
