@@ -17,6 +17,7 @@
     "OIDC",
     "preconfigured",
     "qlcli",
+    "ratelimit",
     "roadmaps",
     "SARIF",
     "sarifs",

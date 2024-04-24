@@ -5,7 +5,7 @@ title: "Question 004"
 draft: false
 ---
 
-> https://docs.github.com/en/enterprise-server@3.11/support/learning-about-github-support/about-github-support#scope-of-support
+> https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#scope-of-support
 - [x] Installing and using GitHub Enterprise Server
 - [x] Identifying and verifying the causes of suspected errors
 - [x] Installing and using Advanced Security
