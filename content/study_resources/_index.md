@@ -48,3 +48,4 @@ Other Free Resources
 - [GitHub Skills](https://skills.github.com/) - Interactive courses from GitHub
 - [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - GitHub Actions playground
 - [ExamPro: GitHub Foundations](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - YouTube course for GitHub Foundations Certification
+- [ExamPro: GitHub Actions](https://www.youtube.com/playlist?list=PLBfufR7vyJJ5cW6kvAqxHyjLJ1MX3H4rX) - YouTube course for GitHub Actions Certification
