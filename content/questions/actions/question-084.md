@@ -1,13 +1,13 @@
 ---
 archetype: "questions"
-title: "Question 080"
-question: "What is the default shell used by GitHub Actions on Windows runners?"
+title: "Question 084"
+question: "Which keyword allows you to define environment variables in a GitHub Actions workflow?"
 draft: false
 ---
 
 
-> Link Here
-1. [ ] bash
-1. [ ] sh
-1. [x] powershell
-1. [ ] cmd
+> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenv
+1. [x] env
+1. [ ] vars
+1. [ ] secrets
+1. [ ] config

@@ -1,13 +1,13 @@
 ---
 archetype: "questions"
-title: "Question 080"
-question: "What is the default shell used by GitHub Actions on Windows runners?"
+title: "Question 082"
+question: "How can you ensure a job runs only on a specific branch?"
 draft: false
 ---
 
 
-> Link Here
-1. [ ] bash
-1. [ ] sh
-1. [x] powershell
-1. [ ] cmd
+> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters
+1. [x] By using the branches filter
+1. [ ] By using the runs-on filter
+1. [ ] By using the jobs filter
+1. [ ] By using the branch keyword

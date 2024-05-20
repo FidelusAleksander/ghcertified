@@ -1,13 +1,13 @@
 ---
 archetype: "questions"
-title: "Question 080"
-question: "What is the default shell used by GitHub Actions on Windows runners?"
+title: "Question 083"
+question: "What does the "needs" keyword do in a GitHub Actions workflow?"
 draft: false
 ---
 
 
-> Link Here
-1. [ ] bash
-1. [ ] sh
-1. [x] powershell
-1. [ ] cmd
+> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
+1. [x] Specifies the dependencies of a job
+1. [ ] Defines environment variables
+1. [ ] Sets up the environment
+1. [ ] Triggers a job based on an event

@@ -1,13 +1,13 @@
 ---
 archetype: "questions"
-title: "Question 080"
-question: "What is the default shell used by GitHub Actions on Windows runners?"
+title: "Question 085"
+question: "What is the purpose of the "with" keyword in a GitHub Actions workflow?"
 draft: false
 ---
 
 
-> Link Here
-1. [ ] bash
-1. [ ] sh
-1. [x] powershell
-1. [ ] cmd
+> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
+1. [ ] To define environment variables
+1. [x] To specify input parameters for an action
+1. [ ] To set up dependencies
+1. [ ] To trigger another workflow
