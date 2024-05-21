@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
+> https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-commands-for-github-actions#example-of-a-multiline-string
 1. [ ] Using && to chain commands
 1. [ ] Defining commands in an array
 1. [x] Using a multiline string with |
