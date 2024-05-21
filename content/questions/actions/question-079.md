@@ -11,6 +11,6 @@ draft: false
    > incorrect, both specific commit and on last modified branch
 1. [ ] Scheduled workflows run on the specific commit on the main branch.
    > incorrect, both specific commit and main branch
-1. [x] Scheduled workflows run on the latest commit on the default or base branch.
+1. [x] Scheduled workflows run on the latest commit on the repository default branch.
 1. [ ] Scheduled workflows run on the latest commit on the main branch.
    > latest commit is correct but the main branch is not
