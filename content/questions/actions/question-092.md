@@ -10,12 +10,16 @@ draft: false
 1. [x] 
 ```yaml
   uses: actions/setup-node@v4 with node-version
+```
 1. [ ] 
 ```yaml
   uses: actions/node-setup@v4 with node-version
+```
 1. [ ] 
 ```yaml
   uses: setup-node@v4 with version
+```
 1. [ ] 
 ```yaml
   uses: setup-node@v4 with node
+```
