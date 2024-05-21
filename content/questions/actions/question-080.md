@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 080"
-question: "which is the correct syntax for setting the directory for all jobs in a workflow?"
+question: "What is the correct syntax for setting the directory for all `run` commands in a workflow?"
 draft: false
 ---
 
