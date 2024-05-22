@@ -15,7 +15,9 @@ draft: false
 ```
 1. [ ] 
 ```yaml
-  uses: actions/node-setup@v4 with node-version
+  uses: actions/node-setup@v4
+  with:
+    node-version: 20
 ```
 1. [ ] 
 ```yaml
