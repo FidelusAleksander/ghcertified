@@ -1,6 +1,6 @@
 ---
 archetype: "questions"
-title: "Question 079"
+title: "Question 093"
 question: "How do you reference a secret stored in GitHub Secrets in a workflow?"
 draft: false
 ---
