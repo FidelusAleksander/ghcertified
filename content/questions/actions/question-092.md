@@ -21,7 +21,9 @@ draft: false
 ```
 1. [ ] 
 ```yaml
-  uses: setup-node@v4 with version
+  uses: setup-node@v4
+  with:
+    version: 20
 ```
 1. [ ] 
 ```yaml
