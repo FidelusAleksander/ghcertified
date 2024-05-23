@@ -2,7 +2,7 @@
 question: "What are some actions you can do in regards to Project Templates in your organization? (Choose three.)"
 archetype: "questions"
 title: "Question 116"
-draft: true
+draft: false
 ---
 
 
