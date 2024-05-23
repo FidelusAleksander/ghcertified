@@ -1,0 +1,25 @@
+name: Check if Hugo builds successfully
+
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths-ignore:
+      - ".github/**"
+      - "README.md"
+      - "CONTRIBUTING.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.117.0'
+      - name: Build
+        run: hugo
