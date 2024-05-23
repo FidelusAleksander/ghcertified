@@ -29,4 +29,3 @@ jobs:
           files: 'content/**/*.md'
           config: 'cspell.json'
           verbose: true
-          
