@@ -10,4 +10,4 @@ draft: false
 1. [x] Draft pull requests are pull requests that are not ready to be reviewed yet.
 1. [ ] Draft pull requests are pull requests that have already been reviewed but not merged.
 1. [ ] Draft pull requests are pull requests that have already been reviewed but not approved.
-1. [ ] Draft pull requests are pull requests are like issue templates but for pull requests.
+1. [ ] Draft pull requests are templates for creating new pull requests.
