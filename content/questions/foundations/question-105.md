@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 105"
-question: "Which information can be found in the Pulse section in the Insights tab of a repository? (Choose three)"
+question: "Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)"
 draft: false
 ---
 
@@ -13,5 +13,5 @@ draft: false
 - [x] Summary of repository activity
 - [x] Amount of code line additions and deletions
 - [ ] List of issue discussions
-- [ ] List of unresolved conversations
+- [x] List of unresolved conversations
 - [ ] Amount of forks of the repo
