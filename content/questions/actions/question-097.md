@@ -1,5 +1,5 @@
 ---
-question: "How does the cache action in GitHub Actions handle a cache miss?"
+question: "How does the `actions/cache` action in GitHub Actions handle a cache miss?"
 archetype: "questions"
 title: "Question 097"
 draft: false
