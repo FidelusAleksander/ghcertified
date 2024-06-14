@@ -1,5 +1,5 @@
 ---
-question: "Which context holds information about the event that triggered a workflow run"
+question: "Which context holds information about the event that triggered a workflow run?"
 archetype: "questions"
 title: "Question 102"
 draft: false
