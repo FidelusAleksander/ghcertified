@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> https://github.com/marketplace?type=actions
+> https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace
 1. [x] GitHub Marketplace
 1. [ ] GitHub Public Action Storage
 1. [ ] GitHub private repositories
