@@ -1,5 +1,5 @@
 ---
-question: "Doston wants to be notified when a comment is created on an issue within a GitHub repository. Which event should be used within the configuration?"
+question: "Dave wants to be notified when a comment is created on an issue within a GitHub repository. Which event trigger should be used within the workflow configuration?"
 archetype: "questions"
 title: "Question 111"
 draft: false

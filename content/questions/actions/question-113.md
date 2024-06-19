@@ -1,5 +1,5 @@
 ---
-question: "What is true about the following workflow configuration if triggered against the `myorg/my-dev-repo` repository?"
+question: "What is true about the following workflow configuration if triggered against the `octo/my-dev-repo` repository?"
 archetype: "questions"
 title: "Question 113"
 draft: false
@@ -10,7 +10,7 @@ name: deploy-workflow
 on: [push]
 jobs:
     production-deploy:
-        if: github.repository == 'myorg/my-prod-repo'
+        if: github.repository == 'octo/my-prod-repo'
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
