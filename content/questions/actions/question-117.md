@@ -6,7 +6,6 @@ draft: false
 ---
 
 > https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#allow-administrators-to-bypass-configured-protection-rules
-1. [x] Administrators
-1. [ ] Owners
+1. [x] Repository administrators
 1. [ ] Anyone with repository write permission
 1. [ ] Anyone with repository read permission

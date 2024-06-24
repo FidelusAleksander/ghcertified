@@ -18,7 +18,7 @@ jobs:
 
 >https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
 
-1. [x] By defining the following keywords in the commit message or in the title of the pull-request
+1. [x] By including any one of the following keywords in the commit message or in the title of the pull-request
 ```yaml
 [skip ci]
 [ci skip]
