@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 122"
-question: "What are the scopes defined in a workflow for custom variables? (choose three)"
+question: "What are the scopes defined for custom variables in a workflow? (choose three)"
 draft: false
 ---
 
