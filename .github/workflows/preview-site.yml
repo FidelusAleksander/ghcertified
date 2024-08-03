@@ -1,0 +1,32 @@
+name: Deploy Preview
+
+on:
+  workflow_dispatch:
+#  pull_request:
+#    types:
+#      - labeled
+
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+#    if: github.event.label.name == 'request-preview-deployment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.117.0'
+      - name: Build site
+        run: hugo
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          directory: 'public/'
