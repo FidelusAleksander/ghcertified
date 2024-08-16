@@ -1,5 +1,5 @@
 ---
-question: "When creating custom Github Actions - in what file all the action `metadata` has to be defined?"
+question: "When creating custom Github Actions - in what file does all the action `metadata` have to be defined?"
 archetype: "questions"
 title: "Question 054"
 draft: false

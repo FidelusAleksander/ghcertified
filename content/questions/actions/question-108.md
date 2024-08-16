@@ -12,7 +12,7 @@ draft: false
 ```yaml
 on:
     check_run:
-        types: [requested, completed]
+        types: [rerequested, completed]
 ```
 
 1. [ ] 
