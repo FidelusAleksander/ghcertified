@@ -14,4 +14,4 @@ draft: false
 - [ ] Cache
 > Cache can be reused across workflows within one repository
 - [ ] Environment Variables
-> Environment variables can be scopes to a step, job or a workflow. They cannot be shared across workflows/repositories or organizations
+> Environment variables can be scoped to a step, job or a workflow. They cannot be shared across workflows/repositories or organizations
