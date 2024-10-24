@@ -12,5 +12,5 @@ draft: false
 - [ ] Workflows can only be run on a schedule
 - [ ] Workflow can run only one job at a time
 - [ ] Workflows are written in any of `.yaml`, `.json` or `.toml` formats
-- [ ] Workflows can be shared in Github Marketplace
-  > Actions (not workflows) can be shared in Github Marketplace
+- [ ] Workflows can be shared in GitHub Marketplace
+  > Actions (not workflows) can be shared in GitHub Marketplace

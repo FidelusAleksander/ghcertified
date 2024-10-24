@@ -17,5 +17,5 @@ draft: false
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategymax-parallel
 1. [x] Set `jobs.example_matrix.strategy.max-parallel` to 2
 1. [ ] Set `jobs.example_matrix.strategy.concurrency` to 2
-1. [ ] Use Github's REST API to check if the job count is lesser than 2
+1. [ ] Use GitHub's REST API to check if the job count is lesser than 2
 1. [ ] It's not possible, a matrix will always run all of the jobs in parallel if there are runners available

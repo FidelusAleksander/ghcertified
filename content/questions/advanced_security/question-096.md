@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 096"
-question: "Which API endpoint can be used to retrieve a list of all dependabot alerts for an enterprise?"
+question: "Which API endpoint can be used to retrieve a list of all Dependabot alerts for an enterprise?"
 draft: false
 ---
 
