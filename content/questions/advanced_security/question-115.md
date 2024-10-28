@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 115"
-question: "Which dependabot comment command will get a pull request successfully completed?"
+question: "Which Dependabot comment command will get a pull request successfully completed?"
 draft: false
 ---
 

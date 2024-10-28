@@ -9,4 +9,4 @@ draft: false
 1. [x] Using deployment protection rules
 1. [ ] Setting the required reviewers in the `production` workflow
 1. [ ] Using branch protection rules
-1. [ ] Manual approvals are not supported by Github Actions
+1. [ ] Manual approvals are not supported by GitHub Actions
