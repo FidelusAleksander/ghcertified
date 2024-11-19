@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning#historical-scans
+> https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/monitoring-alerts#historical-scans
 - [x] GitHub notifies the enterprise owners and security managers, even if no secrets are found.
 - [x] GitHub notifies Repository administrators, security managers, and users with custom roles with read/write access whenever a secret is detected in a repository.
 - [ ] GitHub notifies the enterprise owners and security managers, only if it detects exposed secrets.
