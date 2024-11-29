@@ -1,5 +1,5 @@
 ---
-question: "When can you delete workflow runs? (selct two)"
+question: "When can you delete workflow runs? (select two)"
 archetype: "questions"
 title: "Question 116"
 draft: false
