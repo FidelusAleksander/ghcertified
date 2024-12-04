@@ -3,7 +3,7 @@ title: "Prepare for GitHub Certifications"
 archetype: "home"
 ---
 
-##  Motivation 
+## Motivation 
 
 This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://resources.github.com/learn/certifications/) exams.
 

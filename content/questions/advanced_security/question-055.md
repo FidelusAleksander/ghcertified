@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 055"
-question: "An organization has recently started using CodeQL analysis for all pull requests on their repositories as  well as running the analysis on an hourly schedule. Since then they are experiencing larger than usual GitHub Actions bills. What is the most likely cause of this?"
+question: "An organization has recently started using CodeQL analysis for all pull requests on their repositories as well as running the analysis on an hourly schedule. Since then they are experiencing larger than usual GitHub Actions bills. What is the most likely cause of this?"
 draft: false
 ---
 
