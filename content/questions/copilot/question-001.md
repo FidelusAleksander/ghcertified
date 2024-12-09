@@ -5,5 +5,6 @@ title: "Question 001"
 draft: false
 ---
 
+> https://github.com/features/copilot/plans
 1. [x] No
 1. [ ] Yes
