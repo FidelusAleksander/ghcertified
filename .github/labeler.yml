@@ -18,6 +18,10 @@ foundations:
 - changed-files:
   - any-glob-to-any-file: "content/questions/foundations/*"
 
+copilot:
+- changed-files:
+  - any-glob-to-any-file: "content/questions/copilot/*"
+
 documentation:
 - changed-files:
   - any-glob-to-any-file: ["README.md", "CONTRIBUTING.md"]
