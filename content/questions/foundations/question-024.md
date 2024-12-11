@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> https://docs.github.com/en/copilot/overview-of-github-copilot
+> https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot
 1. [x] GitHub Copilot Individual can only be used by personal accounts and GitHub Copilot Business is used by organizations and enterprises
 1. [ ] GitHub Copilot Individual uses an AI model trained on public source code and GitHub Copilot Business uses an AI model trained on private source code
 1. [ ] GitHub Copilot Individual is free and GitHub Copilot Business is a paid feature
