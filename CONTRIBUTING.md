@@ -50,6 +50,7 @@ hugo new questions/actions/question-XXX.md
 hugo new questions/admin/question-XXX.md
 hugo new questions/advanced_security/question-XXX.md
 hugo new questions/foundations/question-XXX.md
+hugo new questions/copilot/question-XXX.md
 ```
 
 For example `hugo new questions/actions/question-084.md`
