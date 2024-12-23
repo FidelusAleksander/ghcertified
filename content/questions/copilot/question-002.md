@@ -13,4 +13,3 @@ draft: false
 1. [ ] Via your Enterprise settings, enable GitHub Copilot for selected organizations or  all organizations.
 1. [ ] Via your Organizations settings, enable GitHub Copilot for either selected teams or users or the entire organization.
 1. [ ] You can use GitHub's REST API to grant access to GitHub Copilot for teams, or specific users, in your organization.
-
