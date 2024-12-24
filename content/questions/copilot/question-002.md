@@ -9,4 +9,4 @@ draft: false
 1. [ ] Visual Studio, NetBeans, Eclipse
 2. [x] Visual Studio Code, Xcode, Vim/NeoVim
 3. [x] Visual Studio, Visual Studio, IntelliJ IDEA,
-4. [ ] Visual Studio, BlueJ, Codenvy
+4. [ ] Visual Studio, BlueJ, NetBeans
