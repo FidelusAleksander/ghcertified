@@ -5,7 +5,7 @@ title: "Question 021"
 draft: false
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#inputs-context
 - [x] choice
 - [x] boolean
 - [x] string
