@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-> https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable
 1. [x] treat environment variables as case-sensitive
 1. [ ] use only uppercase letters for environment variable names
 1. [ ] ignore case sensitivity as GitHub Actions handles it automatically
