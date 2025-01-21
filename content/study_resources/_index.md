@@ -54,3 +54,6 @@ Other Free Resources
 - [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - GitHub Actions playground
 - [ExamPro: GitHub Foundations](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - YouTube course for GitHub Foundations Certification
 - [ExamPro: GitHub Actions](https://www.youtube.com/playlist?list=PLBfufR7vyJJ5cW6kvAqxHyjLJ1MX3H4rX) - YouTube course for GitHub Actions Certification
+- [GitHub Advanced Security Certification Exam Prep](https://github.com/orgs/community/discussions/137197) - GitHub Community thread with a structured four-week study guide
+- [GitHub Copilot Certification Exam Prep](https://github.com/orgs/community/discussions/144443) - GitHub Community thread with a structured four-week study guide
+
