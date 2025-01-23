@@ -41,7 +41,8 @@ All of the site content in this repository is stored in [content/](https://githu
 
 ### Adding new question
 
-> **Warning**: We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.
+> [!warning]
+> We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.
 
 1) Run one of the following commands to add a new question file. Change `XXX` to the next available number.
 
