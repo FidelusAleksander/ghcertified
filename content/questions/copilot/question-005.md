@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 005"
-question: "What are some of the principles of Prompt Engineering?"
+question: "What are some of the principles of Prompt Engineering? (Choose three.)"
 draft: false
 ---
 

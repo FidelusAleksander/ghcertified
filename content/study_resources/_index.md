@@ -56,4 +56,3 @@ Other Free Resources
 - [ExamPro: GitHub Actions](https://www.youtube.com/playlist?list=PLBfufR7vyJJ5cW6kvAqxHyjLJ1MX3H4rX) - YouTube course for GitHub Actions Certification
 - [GitHub Advanced Security Certification Exam Prep](https://github.com/orgs/community/discussions/137197) - GitHub Community thread with a structured four-week study guide
 - [GitHub Copilot Certification Exam Prep](https://github.com/orgs/community/discussions/144443) - GitHub Community thread with a structured four-week study guide
-
