@@ -1,11 +1,16 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+
 {
 	"name": "ghcertified website",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1.1.2": {
 			"version": "0.121.0",
 			"extended": false
-		}
+		},
+		"ghcr.io/devcontainers-extra/features/pre-commit:2": {}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
@@ -17,7 +22,8 @@
 		},
 		"vscode": {
 			"extensions": [
-				"github.copilot"
+				"github.copilot",
+				"github.copilot-chat"
 			]
 		}
 	},
