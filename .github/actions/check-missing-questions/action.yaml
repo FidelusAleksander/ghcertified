@@ -1,0 +1,9 @@
+name: 'Check Missing Questions'
+description: 'Checks if question files are in sequential order'
+inputs:
+  questions-path:
+    description: 'Path to the questions directory'
+    required: true
+runs:
+  using: 'node20'
+  main: 'index.js'
