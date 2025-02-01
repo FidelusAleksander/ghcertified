@@ -29,3 +29,14 @@ jobs:
           files: 'content/**/*.md'
           config: 'cspell.json'
           verbose: true
+  check-questions:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        question-type: ['actions', 'admin', 'advanced_security', 'copilot', 'foundations']
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for missing question files
+        uses: ./.github/actions/check-missing-questions
+        with:
+          questions-path: 'content/questions/${{ matrix.question-type }}'
