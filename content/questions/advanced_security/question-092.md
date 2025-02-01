@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 092"
 question: "How can you enable GitHub Advanced Security features for all repositories in an organization in GitHub Enterprise Cloud?"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories

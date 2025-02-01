@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 097"
 question: "Which of the GitHub features best serves as a simple way to share small code snippets with others?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "Which of the following is the correct procedure for generating a support bundle in GitHub Enterprise Server? (Choose two.)"
 archetype: "questions"
 title: "Question 006"
-draft: false
 ---
 
 - [x] Navigate to your GitHub Enterprise Server instance, select the `Site admin` page, then `Management Console`. Choose `Support` in the top navigation bar and click `Download support bundle`.

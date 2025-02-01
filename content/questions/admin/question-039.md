@@ -2,7 +2,6 @@
 question: "How can an organization admin set default permissions for new members in a GitHub organization?"
 archetype: "questions"
 title: "Question 039"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization#setting-base-permissions

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 051"
 question: "What are GitHub teams?"
-draft: false
 ---
 
 

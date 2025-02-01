@@ -2,7 +2,6 @@
 question: "Where can you find network connectivity logs for a GitHub self-hosted-runner?"
 archetype: "questions"
 title: "Question 065"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners#checking-self-hosted-runner-network-connectivity

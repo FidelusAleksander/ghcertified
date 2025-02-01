@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 072"
 question: "What are the differences when running CodeQL database creation for compiled and interpreted languages? (Choose two.)"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "Which statement is true regarding usernames and profile information for Enterprise Managed Users?"
 archetype: "questions"
 title: "Question 020"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users

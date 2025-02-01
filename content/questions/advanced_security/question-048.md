@@ -2,7 +2,6 @@
 question: "How can users exclude specific directories from secret scanning alerts on GitHub?"
 archetype: "questions"
 title: "Question 048"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users

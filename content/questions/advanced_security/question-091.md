@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 091"
 question: "How can you enable GitHub Advanced Security features on GitHub Enterprise Server? (Choose two.)"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@3.3/admin/code-security/managing-github-advanced-security-for-your-enterprise/enabling-github-advanced-security-for-your-enterprise

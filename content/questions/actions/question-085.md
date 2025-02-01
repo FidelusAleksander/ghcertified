@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 085"
 question: "What is the purpose of the `with` keyword in a GitHub Actions workflow?"
-draft: false
 ---
 
 

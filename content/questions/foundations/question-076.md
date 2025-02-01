@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 076"
 question: "What are the different GitHub pricing plans for organization accounts? (Select three.)"
-draft: false
 ---
 
 

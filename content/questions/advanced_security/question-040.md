@@ -2,7 +2,6 @@
 question: "How does CodeQL analyze code in GitHub?"
 archetype: "questions"
 title: "Question 040"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql

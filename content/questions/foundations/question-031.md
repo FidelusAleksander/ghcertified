@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 031"
 question: "Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)"
-draft: false
 ---
 
 > https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 009"
 question: "Which of the following describes how to use the GitHub Copilot's Productivity API?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 115"
 question: "Which Dependabot comment command will get a pull request successfully completed?"
-draft: false
 ---
 
 

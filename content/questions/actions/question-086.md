@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 086"
 question: "Which of the following GitHub Actions syntax is used to run multiple commands in a single step?"
-draft: false
 ---
 
 

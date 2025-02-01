@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 067"
 question: "Which of these best describes git?"
-draft: false
 ---
 
 

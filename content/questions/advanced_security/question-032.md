@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 032"
 question: "What are the primary benefits of the Security Overview feature in GitHub?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/security-overview/about-security-overview

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 107"
 question: "What are Dependabot auto-triage rules?"
-draft: false
 ---
 
 

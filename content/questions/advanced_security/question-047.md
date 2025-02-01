@@ -2,7 +2,6 @@
 question: "What happens when a second SARIF results file is uploaded to GitHub for a single commit?"
 archetype: "questions"
 title: "Question 047"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#uploading-your-results-to-github

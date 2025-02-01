@@ -2,7 +2,6 @@
 question: "What does GitHub recommend for safeguarding against data loss in GitHub Enterprise Server?"
 archetype: "questions"
 title: "Question 034"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

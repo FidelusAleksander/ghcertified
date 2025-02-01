@@ -2,7 +2,6 @@
 question: "What is the advantage of having an enterprise account on GitHub Enterprise Cloud for an organization?"
 archetype: "questions"
 title: "Question 045"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises

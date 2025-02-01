@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 006"
 question: "Which of these GitHub security features are available for FREE for both public and private personal repositories? (Choose four.)"
-draft: false
 ---
 
 

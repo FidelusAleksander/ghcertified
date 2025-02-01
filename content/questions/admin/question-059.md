@@ -2,7 +2,6 @@
 question: "What permissions does a GitHub App manager have within an organization?"
 archetype: "questions"
 title: "Question 059"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

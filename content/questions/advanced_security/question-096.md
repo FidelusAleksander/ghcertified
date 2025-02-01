@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 096"
 question: "Which API endpoint can be used to retrieve a list of all Dependabot alerts for an enterprise?"
-draft: false
 ---
 
 > https://docs.github.com/en/rest/dependabot/alerts?apiVersion=2022-11-28#list-dependabot-alerts-for-an-enterprise

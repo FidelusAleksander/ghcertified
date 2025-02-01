@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 111"
 question: "You need GitHub Actions enabled for"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates

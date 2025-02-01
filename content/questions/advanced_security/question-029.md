@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 029"
 question: "Can your repository use Dependency Graph without using Dependabot Alerts?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#using-the-dependency-graph

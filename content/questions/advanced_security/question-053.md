@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 053"
 question: "How can you enable code scanning for a repository?"
-draft: false
 ---
 
 

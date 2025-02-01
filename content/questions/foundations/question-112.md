@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 112"
 question: "What syntax is used in GitHub Markdown to create a task list?"
-draft: false
 ---
 
 

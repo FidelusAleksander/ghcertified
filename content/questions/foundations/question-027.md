@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 027"
 question: "What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?"
-draft: false
 ---
 
 

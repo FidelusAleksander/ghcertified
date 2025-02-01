@@ -2,7 +2,6 @@
 question: "Select the default environment variable that contains the operating system of the runner executing the job"
 archetype: "questions"
 title: "Question 096"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables

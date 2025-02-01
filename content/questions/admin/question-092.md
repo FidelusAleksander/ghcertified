@@ -2,7 +2,6 @@
 question: "Which package managers and formats are supported by GitHub Packages? (Choose five.)"
 archetype: "questions"
 title: "Question 092"
-draft: false
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages

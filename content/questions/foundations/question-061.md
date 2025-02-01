@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 061"
 question: "What is a fork in GitHub?"
-draft: false
 ---
 
 

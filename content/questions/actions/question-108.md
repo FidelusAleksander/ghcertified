@@ -2,7 +2,6 @@
 question: "Which configuration is appropriate for triggering a workflow to run on webhook events related to check_run actions?"
 archetype: "questions"
 title: "Question 108"
-draft: false
 ---
 
 

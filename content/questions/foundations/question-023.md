@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 023"
 question: "Is GitHub Copilot free to use?"
-draft: false
 ---
 
 

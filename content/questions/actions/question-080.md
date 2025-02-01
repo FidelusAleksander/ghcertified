@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 080"
 question: "What is the correct syntax for setting the directory for all `run` commands in a workflow?"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory

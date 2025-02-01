@@ -2,7 +2,6 @@
 question: "How can you manage access to self-hosted runners in an organization using runner groups?"
 archetype: "questions"
 title: "Question 088"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups

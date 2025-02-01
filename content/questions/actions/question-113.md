@@ -2,7 +2,6 @@
 question: "What is true about the following workflow configuration if triggered against the `octo/my-dev-repo` repository?"
 archetype: "questions"
 title: "Question 113"
-draft: false
 ---
 
 ```yaml

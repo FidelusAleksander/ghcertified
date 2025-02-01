@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 029"
 question: "What are the different possible lifecycle phases for a GitHub Codespace?"
-draft: false
 ---
 
 > https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle

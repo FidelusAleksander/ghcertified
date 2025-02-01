@@ -2,7 +2,6 @@
 question: "For any action published in GitHub Marketplace, you can often use it in multiple versions, which approach is the most stable and secure?"
 archetype: "questions"
 title: "Question 034"
-draft: false
 ---
 
 

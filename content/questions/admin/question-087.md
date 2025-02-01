@@ -2,7 +2,6 @@
 question: "What is required to add a self-hosted runner to an organization on GitHub?"
 archetype: "questions"
 title: "Question 087"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners

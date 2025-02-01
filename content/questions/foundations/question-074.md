@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 074"
 question: "What is a GitHub Pro plan?"
-draft: false
 ---
 
 

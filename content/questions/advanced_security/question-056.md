@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 056"
 question: "If you don't want to use GitHub Actions, you can run code scanning in an external CI system, then upload the results to GitHub."
-draft: false
 ---
 
 

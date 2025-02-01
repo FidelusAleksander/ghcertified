@@ -2,7 +2,6 @@
 question: "To prevent a job from failure when one of the steps fails you can include:"
 archetype: "questions"
 title: "Question 035"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error

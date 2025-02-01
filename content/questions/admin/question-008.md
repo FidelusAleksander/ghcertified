@@ -2,7 +2,6 @@
 question: "What are the steps to install a GitHub App from GitHub Marketplace for an organization?"
 archetype: "questions"
 title: "Question 008"
-draft: false
 ---
 
 > https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations

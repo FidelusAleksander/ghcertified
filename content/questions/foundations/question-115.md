@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 115"
 question: "Which of the following actions cannot be performed directly from GitHub Desktop?"
-draft: false
 ---
 
 > Managing GitHub Actions is not a feature available in GitHub Desktop and must be done via github.com or CI/CD integration

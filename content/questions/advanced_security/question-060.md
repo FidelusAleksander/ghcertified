@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 060"
 question: "Which of these is true about code scanning? (Choose two.)"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code#scan-your-code-for-vulnerable-patterns

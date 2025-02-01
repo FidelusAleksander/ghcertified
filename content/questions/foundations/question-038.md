@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 038"
 question: "Which of these is NOT a role in a GitHub Organization?"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

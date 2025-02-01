@@ -2,7 +2,6 @@
 question: "Fill in the blank: When using `push` event trigger filters you can use <____> patterns to target multiple branches"
 archetype: "questions"
 title: "Question 019"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events

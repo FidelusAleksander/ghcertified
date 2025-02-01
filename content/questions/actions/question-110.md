@@ -2,7 +2,6 @@
 question: "Dave is creating a templated workflow for his organization. Where must Dave store the workflow files and associated metadata files for the templated workflow?"
 archetype: "questions"
 title: "Question 110"
-draft: false
 ---
 
 

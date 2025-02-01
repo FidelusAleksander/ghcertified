@@ -2,7 +2,6 @@
 question: "Which of the following are types of access tokens supported by GitHub? (Choose three.)"
 archetype: "questions"
 title: "Question 074"
-draft: false
 ---
 
 > https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats

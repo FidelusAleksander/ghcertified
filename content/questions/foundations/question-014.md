@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 014"
 question: "If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?"
-draft: false
 ---
 
 

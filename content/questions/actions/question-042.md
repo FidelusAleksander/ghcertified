@@ -2,7 +2,6 @@
 question: "When should you use `artifacts`? (Select two.)"
 archetype: "questions"
 title: "Question 042"
-draft: false
 ---
 
 

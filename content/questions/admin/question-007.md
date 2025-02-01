@@ -2,7 +2,6 @@
 question: "Which endpoints does the GitHub API provide to administer your enterprise? (Choose six.)"
 archetype: "questions"
 title: "Question 007"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin

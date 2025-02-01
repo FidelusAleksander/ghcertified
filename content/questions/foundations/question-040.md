@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 040"
 question: "Where can you disable repository features such as issues, wikis or projects on a repository that you own?"
-draft: false
 ---
 
 

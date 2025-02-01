@@ -2,7 +2,6 @@
 question: "Which environments can GitHub Enterprise Server be deployed to?"
 archetype: "questions"
 title: "Question 031"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

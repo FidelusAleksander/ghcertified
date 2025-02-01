@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 098"
 question: "Which API endpoint can be used to retrieve a list of all code scanning alerts for a repository?"
-draft: false
 ---
 
 > https://docs.github.com/en/rest/code-scanning/code-scanning?apiVersion=2022-11-28#list-code-scanning-alerts-for-a-repository

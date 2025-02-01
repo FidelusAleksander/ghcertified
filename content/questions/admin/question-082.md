@@ -2,7 +2,6 @@
 question: "How can you ensure your self-hosted or larger hosted runners can communicate with GitHub when using an IP allow list?"
 archetype: "questions"
 title: "Question 082"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-actions-with-an-ip-allow-list

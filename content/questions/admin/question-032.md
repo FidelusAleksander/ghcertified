@@ -2,7 +2,6 @@
 question: "Which of the following is a key feature of GitHub Enterprise Server?"
 archetype: "questions"
 title: "Question 032"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

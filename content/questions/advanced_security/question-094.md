@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 094"
 question: "What is a GitHub security policy?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository#about-security-policies

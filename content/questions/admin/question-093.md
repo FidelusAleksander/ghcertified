@@ -2,7 +2,6 @@
 question: "How can one authenticate to GitHub Packages?"
 archetype: "questions"
 title: "Question 093"
-draft: false
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages

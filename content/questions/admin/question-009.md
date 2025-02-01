@@ -2,7 +2,6 @@
 question: "What are the benefits and risks of using apps and actions from the GitHub Marketplace?"
 archetype: "questions"
 title: "Question 009"
-draft: false
 ---
 
 1. [x] Benefits include automation of workflows and enhanced functionality; risks include potential security vulnerabilities and dependency on third-party services.

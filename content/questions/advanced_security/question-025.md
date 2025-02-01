@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 025"
 question: "Is GitHub dependency graph available for free to all repositories?"
-draft: false
 ---
 
 

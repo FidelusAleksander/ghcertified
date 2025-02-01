@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 085"
 question: "How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?"
-draft: false
 ---
 
 

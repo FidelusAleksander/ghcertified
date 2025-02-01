@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 076"
 question: "When running CodeQL analysis in GitHub Actions, what Actions should you use? (Choose three.)"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages

@@ -2,7 +2,6 @@
 question: "How can you access the current values of variables in a matrix within a job in the example below:"
 archetype: "questions"
 title: "Question 114"
-draft: false
 ---
 
 ```yaml

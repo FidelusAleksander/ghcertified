@@ -2,7 +2,6 @@
 question: "Which of the following is a management option exclusive to GitHub Enterprise Cloud?"
 archetype: "questions"
 title: "Question 028"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

@@ -2,7 +2,6 @@
 question: "What components can be reused within a GitHub Organization? (Select four.)"
 archetype: "questions"
 title: "Question 072"
-draft: false
 ---
 
 - [x] Secrets

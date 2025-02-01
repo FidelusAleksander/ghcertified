@@ -2,7 +2,6 @@
 question: "What is the primary purpose of a GitHub organization?"
 archetype: "questions"
 title: "Question 041"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations#about-organizations

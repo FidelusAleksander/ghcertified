@@ -2,7 +2,6 @@
 question: "Secrets and configuration variables can be scoped to: (Select three.)"
 archetype: "questions"
 title: "Question 050"
-draft: false
 ---
 
 

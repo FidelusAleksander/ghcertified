@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 063"
 question: "How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?"
-draft: false
 ---
 
 

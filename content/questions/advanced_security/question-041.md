@@ -2,7 +2,6 @@
 question: "How can CodeQL be used in an external CI system together with GitHub repositories?"
 archetype: "questions"
 title: "Question 041"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 078"
 question: "Under which GitHub pricing plan can you create an unlimited number of public repositories?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 084"
 question: "What details can you find on a code scanning alert page? (Choose three.)"
-draft: false
 ---
 
 

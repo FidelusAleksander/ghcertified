@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "{{ replace .File.ContentBaseName "-" " " | strings.FirstUpper }}"
 question: "<Fill in the Question>"
-draft: false
 ---
 
 

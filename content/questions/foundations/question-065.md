@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 065"
 question: "Which of these statements best describes a version control system?"
-draft: false
 ---
 
 

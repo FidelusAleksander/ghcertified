@@ -2,7 +2,6 @@
 question: "How can GitHub Enterprise Server's administration be handled?"
 archetype: "questions"
 title: "Question 033"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

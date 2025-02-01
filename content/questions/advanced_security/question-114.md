@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 114"
 question: "What does `CWE` stand for?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "What steps are involved in creating a self-hosted runner group for an organization on GitHub?"
 archetype: "questions"
 title: "Question 089"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 088"
 question: "What does it mean to dismiss a code scanning alert?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/managing-code-scanning-alerts-for-your-repository#dismissing--alerts1. [x] Single-Choice Correct Answer

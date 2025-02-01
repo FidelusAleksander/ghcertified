@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 027"
 question: "When will the GitHub Dependency graph for your repository be updated? (Choose two.)"
-draft: false
 ---
 
 

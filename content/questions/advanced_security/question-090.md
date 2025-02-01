@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 090"
 question: "What is the purpose of defining a SARIF category?"
-draft: false
 ---
 
 

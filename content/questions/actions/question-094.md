@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 094"
 question: "What is the default shell used by GitHub Actions on Windows runners?"
-draft: false
 ---
 
 

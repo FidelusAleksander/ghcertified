@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 092"
 question: "In a GitHub Actions workflow, how do you specify a specific version of Node.js to use in a job?"
-draft: false
 ---
 
 

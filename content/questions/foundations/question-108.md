@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 108"
 question: "What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?"
-draft: false
 ---
 
 

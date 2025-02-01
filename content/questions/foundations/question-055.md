@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 055"
 question: "What is the GitHub Sponsors program?"
-draft: false
 ---
 
 

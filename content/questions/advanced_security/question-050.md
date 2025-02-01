@@ -2,7 +2,6 @@
 question: "What is the maximum number of custom patterns that can be defined for secret scanning on GitHub?"
 archetype: "questions"
 title: "Question 050"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#about-custom-patterns-for-secret-scanning

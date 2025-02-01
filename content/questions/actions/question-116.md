@@ -2,7 +2,6 @@
 question: "When can you delete workflow runs? (select two)"
 archetype: "questions"
 title: "Question 116"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/managing-workflow-runs/deleting-a-workflow-run

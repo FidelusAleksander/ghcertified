@@ -2,7 +2,6 @@
 question: "How does team synchronization with Microsoft Entra ID (previously Azure AD) benefit GitHub Enterprise Cloud organizations?"
 archetype: "questions"
 title: "Question 040"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise

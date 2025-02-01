@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 084"
 question: "What are GitHub's slash commands?"
-draft: false
 ---
 
 > https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands

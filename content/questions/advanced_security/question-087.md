@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 087"
 question: "When viewing a code scanning alert what is the `Show paths` option used for?"
-draft: false
 ---
 
 

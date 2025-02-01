@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 079"
 question: "On which commit and branch do scheduled workflows run in GitHub Actions?"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule

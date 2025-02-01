@@ -2,7 +2,6 @@
 question: "How can you require manual approvals by a maintainer if the workflow run is targeting the `production` environment?"
 archetype: "questions"
 title: "Question 056"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 081"
 question: "What are pinned repositories on GitHub?"
-draft: false
 ---
 
 

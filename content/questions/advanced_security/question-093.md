@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 093"
 question: "As a repository maintainer where should you put instructions on how to report a security vulnerability in your codebase?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository#about-security-policies

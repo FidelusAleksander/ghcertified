@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 032"
 question: "Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?"
-draft: false
 ---
 
 

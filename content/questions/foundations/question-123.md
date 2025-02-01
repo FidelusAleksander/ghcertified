@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 123"
 question: "What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?"
-draft: false
 ---
 
 > **More info**: [Adding outside collaborators to repositories in your organization](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization)
