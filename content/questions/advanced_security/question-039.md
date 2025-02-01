@@ -2,7 +2,6 @@
 question: "Which of the following languages is NOT supported by CodeQL for code scanning?"
 archetype: "questions"
 title: "Question 039"
-draft: false
 ---
 
 > https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers

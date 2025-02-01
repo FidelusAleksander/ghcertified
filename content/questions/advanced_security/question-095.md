@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 095"
 question: "How can you set a default security policy for all repositories in `my-org` GitHub Organization?"
-draft: false
 ---
 
 > https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#supported-file-types

@@ -2,7 +2,6 @@
 question: "What is GitHub Enterprise Server primarily designed for?"
 archetype: "questions"
 title: "Question 030"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

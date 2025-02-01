@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 002"
 question: "Which option below is NOT a possible way to grant access to Copilot for members of an organization?"
-draft: false
 ---
 
 > Article Grant access to Copilot for members of an organization -https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization

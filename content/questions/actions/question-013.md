@@ -2,7 +2,6 @@
 question: "In a workflow with multiple jobs, if job A fails then:"
 archetype: "questions"
 title: "Question 013"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs

@@ -2,7 +2,6 @@
 question: "What is the role of a Security Manager within a GitHub organization?"
 archetype: "questions"
 title: "Question 058"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

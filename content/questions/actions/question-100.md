@@ -2,7 +2,6 @@
 question: "Select status check functions in GitHub Actions"
 archetype: "questions"
 title: "Question 100"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions

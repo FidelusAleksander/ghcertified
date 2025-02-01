@@ -2,7 +2,6 @@
 question: "A reusable workflow named `build` creates zip file artifacts. How do you pass the zip file location to the caller workflow that is calling the `build` workflow? (Select three.)"
 archetype: "questions"
 title: "Question 026"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow

@@ -2,7 +2,6 @@
 question: "What's the purpose of SCIM and team synchronization in GitHub?"
 archetype: "questions"
 title: "Question 023"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/managing-team-synchronization-for-your-organization

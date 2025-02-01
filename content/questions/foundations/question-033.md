@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 033"
 question: "How can you customize the environment that is run in GitHub Codespaces?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "What are the default permissions of a member in a GitHub organization?"
 archetype: "questions"
 title: "Question 049"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

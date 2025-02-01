@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 018"
 question: "What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?"
-draft: false
 ---
 
 

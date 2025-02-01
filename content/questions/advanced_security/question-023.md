@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 023"
 question: "What information do Dependabot alerts provide?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "How can you give a user the minimum required permissions necessary for accessing a specific repository within a GitHub organization?"
 archetype: "questions"
 title: "Question 053"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

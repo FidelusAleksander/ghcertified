@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 104"
 question: "If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?"
-draft: false
 ---
 
 

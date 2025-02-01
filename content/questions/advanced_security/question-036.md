@@ -2,7 +2,6 @@
 question: "Is secret scanning available for both public and private repositories on GitHub?"
 archetype: "questions"
 title: "Question 036"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning

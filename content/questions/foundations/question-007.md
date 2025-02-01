@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 007"
 question: "Which GitHub Project layout would best serve as a Kanban board?"
-draft: false
 ---
 
 

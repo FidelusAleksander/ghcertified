@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 008"
 question: "Which of these workflows are built-in automations in GitHub Projects? (Choose two.)"
-draft: false
 ---
 
 

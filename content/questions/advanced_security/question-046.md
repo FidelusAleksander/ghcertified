@@ -2,7 +2,6 @@
 question: "What is required for a CI server to upload SARIF results to GitHub?"
 archetype: "questions"
 title: "Question 046"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#generating-a-token-for-authentication-with-github

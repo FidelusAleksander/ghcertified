@@ -2,7 +2,6 @@
 question: "What is the purpose of code scanning in GitHub?"
 archetype: "questions"
 title: "Question 035"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning

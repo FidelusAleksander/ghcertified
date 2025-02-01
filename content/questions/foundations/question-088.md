@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 088"
 question: "How can you link a pull request to an issue? (Choose two.)"
-draft: false
 ---
 
 > https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue

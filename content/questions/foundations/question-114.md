@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 114"
 question: "What feature is unique to GitHub Desktop compared to github.com?"
-draft: false
 ---
 
 > GitHub Desktop provides a graphical interface for visualizing branch histories, which is unique compared to the website

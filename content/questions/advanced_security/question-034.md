@@ -2,7 +2,6 @@
 question: "What do Dependabot alerts indicate in GitHub?"
 archetype: "questions"
 title: "Question 034"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts

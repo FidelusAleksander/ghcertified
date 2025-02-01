@@ -2,7 +2,6 @@
 question: "What are valid authentication methods available in GitHub? (choose six.)"
 archetype: "questions"
 title: "Question 024"
-draft: false
 ---
 
 > https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github

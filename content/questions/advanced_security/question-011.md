@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 011"
 question: "How can you prevent commits containing cloud provider credentials from being pushed to GitHub?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 016"
 question: "What are some actions you can do in regards to Repository Templates? (Choose two.)"
-draft: false
 ---
 
 

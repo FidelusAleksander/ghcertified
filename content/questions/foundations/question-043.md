@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 043"
 question: "How can you enforce status checks passing before merging a pull request to the `main` branch?"
-draft: false
 ---
 
 

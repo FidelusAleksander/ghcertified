@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 120"
 question: "What is the correct syntax for specifying a cleanup script in a container action?"
-draft: false
 ---
 
 

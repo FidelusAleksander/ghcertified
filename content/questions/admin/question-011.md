@@ -2,7 +2,6 @@
 question: "What is a key difference between enabling SAML Single Sign-On (SSO) for all organizations in an enterprise account versus enabling it for a single organization in GitHub Enterprise Cloud?"
 archetype: "questions"
 title: "Question 011"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on

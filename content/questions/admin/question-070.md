@@ -2,7 +2,6 @@
 question: "Which of these practices can help avoid committing sensitive data or files to a git repository?"
 archetype: "questions"
 title: "Question 070"
-draft: false
 ---
 
 > https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#avoiding-accidental-commits-in-the-future

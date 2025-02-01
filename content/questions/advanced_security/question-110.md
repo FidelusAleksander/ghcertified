@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 110"
 question: "The tool that checks if a pull request introduces any dependencies with security vulnerabilities is called:"
-draft: false
 ---
 
 

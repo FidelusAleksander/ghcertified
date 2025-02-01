@@ -2,7 +2,6 @@
 question: "What is CodeQL?"
 archetype: "questions"
 title: "Question 001"
-draft: false
 ---
 
 > https://codeql.github.com/

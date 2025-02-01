@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 107"
 question: "Who can setup billing or assign billing managers for an organization? (Select three.)"
-draft: false
 ---
 
 

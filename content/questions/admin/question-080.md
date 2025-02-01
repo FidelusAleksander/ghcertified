@@ -2,7 +2,6 @@
 question: "Can organization owners manage IP allow list entries inherited from the enterprise account's allow list?"
 archetype: "questions"
 title: "Question 080"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#about-githubs-ip-allow-list

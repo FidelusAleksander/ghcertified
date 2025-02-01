@@ -2,7 +2,6 @@
 question: "What are the implications of a managed user needing to contribute to resources outside of the enterprise?"
 archetype: "questions"
 title: "Question 021"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#supporting-developers-with-multiple-user-accounts-on-githubcom

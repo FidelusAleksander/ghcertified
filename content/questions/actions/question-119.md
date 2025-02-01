@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 119"
 question: "How can you determine if an action is a container action by looking at its action.yml file?"
-draft: false
 ---
 
 

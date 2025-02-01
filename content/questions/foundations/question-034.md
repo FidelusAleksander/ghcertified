@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 034"
 question: "What is a GitHub Codespace deep link?"
-draft: false
 ---
 
 

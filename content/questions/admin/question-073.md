@@ -2,7 +2,6 @@
 question: "What steps should organization admins follow to access audit logs of actions performed within their GitHub organization?"
 archetype: "questions"
 title: "Question 073"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization

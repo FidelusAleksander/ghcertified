@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 082"
 question: "How can you ensure a job runs only on a specific branch?"
-draft: false
 ---
 
 

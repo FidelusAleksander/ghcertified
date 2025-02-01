@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 007"
 question: "Which of these best describes secret scanning?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning

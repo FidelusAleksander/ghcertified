@@ -2,7 +2,6 @@
 question: "What distinguishes a visible team from a secret team in a GitHub organization?"
 archetype: "questions"
 title: "Question 055"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

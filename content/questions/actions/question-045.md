@@ -2,7 +2,6 @@
 question: "What should you use to store coverage reports or screenshots generated during a workflow that runs automated testing for a repository?"
 archetype: "questions"
 title: "Question 045"
-draft: false
 ---
 
 

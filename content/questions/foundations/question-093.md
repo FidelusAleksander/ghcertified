@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 093"
 question: "You want to merge changes from branch `feature-a` into `main` and you are creating a pull request. Which branch should be the `base` branch and which branch should be the `compare` branch?"
-draft: false
 ---
 
 

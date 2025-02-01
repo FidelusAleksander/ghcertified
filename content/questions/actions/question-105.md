@@ -2,7 +2,6 @@
 question: "Which of the following statements accurately describes the behavior of workflow jobs referencing an environment's protection rules?"
 archetype: "questions"
 title: "Question 105"
-draft: false
 ---
 
 

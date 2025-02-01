@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 113"
 question: "Which Markdown element is not correctly paired with its syntax?"
-draft: false
 ---
 
 

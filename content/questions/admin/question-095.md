@@ -2,7 +2,6 @@
 question: "What are the differences and use cases between GitHub Packages and releases?"
 archetype: "questions"
 title: "Question 095"
-draft: false
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages

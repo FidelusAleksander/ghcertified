@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 101"
 question: "What happens when you choose to close a Project?"
-draft: false
 ---
 
 

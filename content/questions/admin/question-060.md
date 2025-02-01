@@ -2,7 +2,6 @@
 question: "What roles can a team member hold within a GitHub team?"
 archetype: "questions"
 title: "Question 060"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

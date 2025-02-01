@@ -2,7 +2,6 @@
 question: "What are the valid use cases for using **defaults**? (Select two.)"
 archetype: "questions"
 title: "Question 027"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults

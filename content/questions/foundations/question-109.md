@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 109"
 question: "What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)"
-draft: false
 ---
 
 > https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication

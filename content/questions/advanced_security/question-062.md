@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 062"
 question: "What is the effect of adding the `paths-ignore` keyword to your code scanning GitHub Actions workflow?"
-draft: false
 ---
 
 

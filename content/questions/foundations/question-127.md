@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 127"
 question: "Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?"
-draft: false
 ---
 
 > **More info**: [About projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic)

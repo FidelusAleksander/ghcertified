@@ -2,7 +2,6 @@
 question: "To stop a workflow from running temporarily without modifying the source code you should"
 archetype: "questions"
 title: "Question 023"
-draft: false
 ---
 
 

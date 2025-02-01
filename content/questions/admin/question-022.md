@@ -2,7 +2,6 @@
 question: "What is SCIM in the context of GitHub?"
 archetype: "questions"
 title: "Question 022"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations

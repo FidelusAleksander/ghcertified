@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 066"
 question: "What is the meaning of the word `distributed` in distributed version control system?"
-draft: false
 ---
 
 

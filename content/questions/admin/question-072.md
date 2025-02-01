@@ -2,7 +2,6 @@
 question: "What are enterprise policies in the context of GitHub Enterprise Cloud?"
 archetype: "questions"
 title: "Question 072"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise

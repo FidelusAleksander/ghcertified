@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 102"
 question: "Who can enable Dependabot alerts on a repository?"
-draft: false
 ---
 
 

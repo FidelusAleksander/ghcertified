@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 100"
 question: "What are Dependabot security updates?"
-draft: false
 ---
 
 

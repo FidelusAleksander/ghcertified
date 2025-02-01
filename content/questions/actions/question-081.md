@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 081"
 question: "How can you reuse a defined workflow in multiple repositories? (Choose two.)"
-draft: false
 ---
 
 

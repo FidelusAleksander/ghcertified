@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 028"
 question: "In what format can you export the GitHub Dependency graph of your repository?"
-draft: false
 ---
 
 

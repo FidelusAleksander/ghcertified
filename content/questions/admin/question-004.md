@@ -2,7 +2,6 @@
 question: "Which of the following issues can GitHub Support help resolve? (Choose four.)"
 archetype: "questions"
 title: "Question 004"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#scope-of-support

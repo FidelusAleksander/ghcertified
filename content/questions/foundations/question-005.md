@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 005"
 question: "What are the different available options for adding issues and pull requests to a GitHub Project board?"
-draft: false
 ---
 
 

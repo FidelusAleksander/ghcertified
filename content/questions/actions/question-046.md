@@ -2,7 +2,6 @@
 question: "You can only upload a single file at a time when using `actions/upload-artifact` action"
 archetype: "questions"
 title: "Question 046"
-draft: false
 ---
 
 

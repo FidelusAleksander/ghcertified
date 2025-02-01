@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 117"
 question: "Which of the following is true about GitHub wikis?"
-draft: true
 ---
 
 > https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis

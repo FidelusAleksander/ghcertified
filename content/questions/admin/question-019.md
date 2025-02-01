@@ -2,7 +2,6 @@
 question: "What is required for a user to authenticate with an Enterprise Managed Users account?"
 archetype: "questions"
 title: "Question 019"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#authenticating-with-a-managed-user-account

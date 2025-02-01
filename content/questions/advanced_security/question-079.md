@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 079"
 question: "Where can you specify the CodeQL queries to run in a GitHub Actions workflow? (Choose two.)"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries

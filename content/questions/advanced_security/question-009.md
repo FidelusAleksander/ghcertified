@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 009"
 question: "What's the purpose of the Secret scanning partner program?"
-draft: false
 ---
 
 

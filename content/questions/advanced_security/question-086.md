@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 086"
 question: "When a CodeQL analysis GitHub Actions workflow detects a new vulnerability on a pull request, where can you find the information about that vulnerability?"
-draft: false
 ---
 
 

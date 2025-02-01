@@ -2,7 +2,6 @@
 question: "How can you use the GitHub API to download workflow run logs?"
 archetype: "questions"
 title: "Question 069"
-draft: false
 ---
 
 > https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28#download-workflow-run-logs

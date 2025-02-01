@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 104"
 question: "To enable Dependabot Alerts on all repositories in an organization you should:"
-draft: false
 ---
 
 

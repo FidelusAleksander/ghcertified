@@ -2,7 +2,6 @@
 question: "How can enterprises track their usage of GitHub Actions?"
 archetype: "questions"
 title: "Question 078"
-draft: false
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage

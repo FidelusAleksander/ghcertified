@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 030"
 question: "Which feature is a pre-requisite for using Dependabot Alerts on a repository?"
-draft: false
 ---
 
 

@@ -2,7 +2,6 @@
 question: "How can access management and collaboration be simplified within a GitHub organization?"
 archetype: "questions"
 title: "Question 043"
-draft: false
 ---
 
 > https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations#about-organizations

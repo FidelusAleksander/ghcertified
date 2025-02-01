@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 072"
 question: "Which git feature allows developers to concurrently work on the same codebase without causing conflicts with each other?"
-draft: false
 ---
 
 

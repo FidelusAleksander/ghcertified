@@ -2,7 +2,6 @@
 question: "What is the main purpose of using the CodeQL CLI?"
 archetype: "questions"
 title: "Question 038"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/about-the-codeql-cli#about-the-codeql-cli

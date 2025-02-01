@@ -2,7 +2,6 @@
 question: "If job B requires job A to be finished you have to:"
 archetype: "questions"
 title: "Question 012"
-draft: false
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs

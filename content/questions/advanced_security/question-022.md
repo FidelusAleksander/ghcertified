@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 022"
 question: "Your company has internal secrets that should not be pushed to GitHub repositories. The pattern of these secrets is not known by GitHub and therefore is not detected by secret scanning. What can companies do to protect their developers from accidentally pushing these secrets to repositories in their GitHub Organization?"
-draft: false
 ---
 
 

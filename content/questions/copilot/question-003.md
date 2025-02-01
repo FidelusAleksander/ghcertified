@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 003"
 question: "What IDEs does GitHub Copilot support? (Choose two.)"
-draft: false
 ---
 
 https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot

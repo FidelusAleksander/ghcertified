@@ -2,7 +2,6 @@
 archetype: "questions"
 title: "Question 042"
 question: "Which of these statements isn't true about secret scanning on GitHub?"
-draft: false
 ---
 
 > https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
