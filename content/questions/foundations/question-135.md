@@ -13,4 +13,4 @@ draft: false
   > **Correct**. GitHub Pages is specifically for static site hosting from your repo.  
 1. [ ] GitHub Pages automatically converts Java files into dynamic web apps.  
 1. [ ] GitHub Pages can only be used by organization accounts.  
-  > Both personal and organization accounts can use Pages.  
+  > Both personal and organization accounts can use Pages.

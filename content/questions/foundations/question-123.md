@@ -11,4 +11,3 @@ draft: false
 1. [ ] Outside collaborators can manage billing settings, while members cannot.  
 1. [ ] Members can never contribute to private repositories, while outside collaborators can.  
 1. [ ] Outside collaborators automatically become team maintainers in the organization.  
-

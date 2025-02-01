@@ -12,4 +12,4 @@ draft: false
 - [x] Merged  
 - [x] Closed  
 - [ ] Pending  
-- [ ] Abandoned  
+- [ ] Abandoned

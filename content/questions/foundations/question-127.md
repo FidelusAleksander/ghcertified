@@ -11,4 +11,3 @@ draft: false
 1. [ ] GitHub Projects Classic has a built-in AI that automatically closes pull requests, while the new GitHub Projects do not.  
 1. [ ] GitHub Projects Classic supports code scanning and secret scanning, while the new GitHub Projects do not.  
 1. [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests.
-
