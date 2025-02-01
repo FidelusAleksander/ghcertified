@@ -28,4 +28,9 @@ jobs:
         with:
           files: 'content/**/*.md'
           config: 'cspell.json'
+          # Log progress and other information during the action execution.
           verbose: true
+          # Determines if the action should be failed if any spelling issues are found.
+          strict: true
+          # Limit the files checked to the ones in the pull request or push.
+          incremental_files_only: true
