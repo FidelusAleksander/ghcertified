@@ -1,7 +1,7 @@
 ---
 archetype: "questions"
 title: "Question 011"
-question: "How can you provide GitHub Copilot with context to generate tailored responses for your team or project?"
+question: "How can you provide GitHub Copilot with context to generate tailored responses for your repository?"
 ---
 
 > https://docs.github.com/en/copilot/customizing-github-copilot/custom-instructions
