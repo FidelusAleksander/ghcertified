@@ -5,5 +5,5 @@ title: "Question 001"
 ---
 
 > https://github.com/features/copilot/plans
-1. [x] No
-1. [ ] Yes
+1. [ ] No
+1. [X] Yes
