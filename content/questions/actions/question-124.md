@@ -18,8 +18,8 @@ strategy:
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
 
-- [ ] 4 jobs
-- [x] 5 jobs
-- [ ] 6 jobs
-- [ ] 7 jobs
-- [ ] No jobs will run because the syntax is invalid.
+1. [ ] 4 jobs
+1. [x] 5 jobs
+1. [ ] 6 jobs
+1. [ ] 7 jobs
+1. [ ] No jobs will run because the syntax is invalid.
