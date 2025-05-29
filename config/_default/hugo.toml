@@ -1,8 +1,74 @@
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
-isMultilingual           = false
+isMultilingual           = true
 title                    = "GitHub Certified"
 baseUrl                  = "https://ghcertified.com"
+
+[mediaTypes]
+  [mediaTypes."text/javascript"]
+    suffixes = ["js"]
+
+[outputFormats]
+  [outputFormats.PRINT]
+    name= "PRINT"
+    baseName = "index.print"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.SEARCH]
+    name= "SEARCH"
+    baseName = "index.search"
+    isPlainText = true
+    mediaType = 'text/javascript'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.SEARCHPAGE]
+    name= "SEARCHPAGE"
+    baseName = "search"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+[outputs]
+home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
+
+[languages]
+  [languages.en]
+    title = "GitHub Certified"
+    weight = 1
+    languageName = "English"
+  [languages.es]
+    title = "GitHub Certificado"
+    weight = 2
+    languageName = "Español"
+
+[module]
+  [[module.mounts]]
+    lang = 'en'
+    source = 'content/en'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'data'
+    target = 'data'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'i18n'
+    target = 'i18n'
+  [[module.mounts]]
+    source = 'archetypes'
+    target = 'archetypes'
 
 
 theme = "hugo-theme-relearn"
