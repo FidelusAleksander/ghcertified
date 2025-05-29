@@ -52,6 +52,10 @@ home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
     source = 'content/en'
     target = 'content'
   [[module.mounts]]
+    lang = 'es'
+    source = 'content/es'
+    target = 'content'
+  [[module.mounts]]
     source = 'static'
     target = 'static'
   [[module.mounts]]
