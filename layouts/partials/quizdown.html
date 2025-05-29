@@ -19,7 +19,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
         primaryColor: 'steelblue',  // primary CSS color
         secondaryColor: '#f2f2f2',  // secondary CSS color
         textColor: 'black',         // text color of some elements
-        locale: null                // language of the user interface (auto-detect per default)
+        locale: '{{ .Page.Language.Lang }}'                // language of the user interface
     };
     quizdown.register(quizdownHighlight).register(quizdownKatex).init(config)
 </script>
