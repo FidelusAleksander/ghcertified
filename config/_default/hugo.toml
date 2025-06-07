@@ -3,8 +3,7 @@ defaultContentLanguage = "en"
 title = "GitHub Certified"
 baseUrl = "https://ghcertified.com"
 
-# Enable multilingual features
-# defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 theme = "hugo-theme-relearn"
 

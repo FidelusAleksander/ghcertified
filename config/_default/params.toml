@@ -21,3 +21,5 @@ images = ["images/opengraph.png"]
 
 showLanguageSwitcher = true
 additionalContentLanguage = ['en']
+
+hideAuthorDate = true
