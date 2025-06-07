@@ -1,10 +1,12 @@
-languageCode             = "en-us"
-defaultContentLanguage   = "en"
-title                    = "GitHub Certified"
-baseUrl                  = "https://ghcertified.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "GitHub Certified"
+baseUrl = "https://ghcertified.com"
 
+# Enable multilingual features
 
 theme = "hugo-theme-relearn"
 
 [minify]
-  disableHTML = true
+disableHTML = true
+

@@ -1,0 +1,22 @@
+# showcase of the menu shortcuts;
+# you can use relative URLs linking to your content or use
+# fully-qualified URLs to link outside of your project
+
+[en]
+title = "GitHub Certified"
+weight = 1
+languageCode = 'en'
+languageName = 'English'
+# Language dependent settings:
+# Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+contentDir = 'content/en'
+
+[es]
+title = "Certificación de GitHub"
+weight = 2
+languageCode = 'es'
+languageName = 'Español'
+# Language dependent settings:
+# Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+contentDir = 'content/es'
+
