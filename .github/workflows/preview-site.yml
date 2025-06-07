@@ -24,7 +24,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.117.0'
+          hugo-version: '0.145.0'
       - name: Build site
         run: hugo
       - name: Deploy to Cloudflare Pages
@@ -52,11 +52,11 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             **✅ Preview Environment Ready!**
-            
+
             | Name | Link |
             | --- | --- |
             | :link: Preview Url | ${{ steps.deploy.outputs.alias }} |
-            
+
             Please verify everything looks as expected.
 
 
@@ -77,7 +77,7 @@ jobs:
             | :link: Preview Url | ${{ steps.deploy.outputs.alias }} |
             | :hammer: Latest Commit | ${{ github.event.pull_request.head.sha }} |
             | :clock10: Latest Deploy | ${{ github.event.pull_request.updated_at }} |
-            
+
             Please verify everything looks as expected.
           reactions: hooray
           edit-mode: 'replace'

@@ -26,6 +26,7 @@
     "Keycloak",
     "Entra",
     "passwordless",
-    "TOTP"
+    "TOTP",
+    "relref"
   ]
 }
