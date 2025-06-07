@@ -1,9 +1,11 @@
 ---
 title: "Prepare for GitHub Certifications"
 archetype: "home"
+description: "Prepare for GitHub Certification exams by taking free practice tests. These are not questions dumps but a set of community made questions for GitHub Actions, GitHub Administration, GitHub Advanced Security and GitHub Foundations exams!"
+
 ---
 
-## Motivation 
+## Motivation
 
 This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://resources.github.com/learn/certifications/) exams.
 

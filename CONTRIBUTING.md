@@ -26,7 +26,8 @@ Once the Codespace installation is complete and you can go to forward port tab t
 ### Option 2: Local setup (traditional)
 If you've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/ghcertified) but instead want to run the project locally, follow the steps below.
 1. [Fork](https://github.com/FidelusAleksander/ghcertified/fork) the repository
-2. Install [Hugo](https://gohugo.io/installation/)
+2. Install [Hugo](https://gohugo.io/installation/) recommended version (0.145.0)
+
 3. Update the submodules to install the theme used in this project
   ```bash
   git submodule update --init --recursive

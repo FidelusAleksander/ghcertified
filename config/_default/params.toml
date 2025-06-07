@@ -14,7 +14,6 @@ disableSeoHiddenPages = false
 alwaysopen = false
 editURL = "https://github.com/FidelusAleksander/ghcertified/edit/master/content/"
 author.name = "Aleksander Fidelus"
-description = "Prepare for GitHub Certification exams by taking free practice tests. These are not questions dumps but a set of community made questions for GitHub Actions, GitHub Administration, GitHub Advanced Security and GitHub Foundations exams!"
 
 
 # Images for OpenGraph

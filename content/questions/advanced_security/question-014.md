@@ -5,8 +5,7 @@ question: "You have included some fake secrets in your test code and they have b
 ---
 
 
-> <br/> [Managing secret scanning alerts](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning#managing-secret-scanning-alerts) 
-> <br/> [Excluding directories from secret scanning alerts](https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users)
+> https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/excluding-folders-and-files-from-secret-scanning
 - [x] By creating a `secret_scanning.yml` file within which you declare paths where fake secrets are located, so scans will omit them
 - [x] Close the Secret Scanning Alert with `Used in tests` close reason
 - [ ] In your test files, add a comment `#gh_ignore: fake secret` on the line where the fake secret is located.
