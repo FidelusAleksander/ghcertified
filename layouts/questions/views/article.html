@@ -1,12 +1,12 @@
 {{ partial "quizdown.html" .}}
 
-{{- $page := .page }}
+{{- $page := . }}
 {{- with $page }}
-<article class="questions"> 
+<article class="questions">
 <h1 id="{{ .Title | plainify | anchorize }}">{{ .Title }}</h1>{{ partial "heading-post.html" . }}
     <div class='quizdown'>
         {{ partial "question.html" . }}
     </div>
 </article>
 {{- end }}
- 
+
