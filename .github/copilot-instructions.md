@@ -1,7 +1,29 @@
+This repository contains a quiz application for GitHub certification exam preparation built with Hugo static site generator. Here's how it works:
 
-This repository contains a series of questions related to GitHub Features. Questions are divided depending on which feature they refer to.
-All questions are test-type, they can be single or multiple choice questions.
+## Repository Structure
+- Questions are stored as Markdown files in `content/questions/` organized by certification type (actions, admin, advanced_security, foundations, copilot)
+- The site layout and rendering logic is in the `layouts/` as well as in the `themes/hugo-theme-relearn/` directory
+- Static assets like CSS and images are in `static/`
 
-All answers should be believable, even if they are wrong, so the test taker can truly test their knowledge.
+## Quiz Rendering
+The application uses Quizdown.js for rendering interactive quizzes:
+- `layouts/partials/quizdown.html` initializes the quiz UI
+- `layouts/questions/views/article.html` renders individual questions
+- `layouts/shortcodes/practice_test.html` combines questions into practice tests
+- `layouts/partials/question.html` formats question content
 
-Each question is a markdown file with a specific format. The format is available in `archetypes/questions.md` as a template which is later reused in `content/questions/**` files.
+## Key Functionality
+- Questions can be rendered individually at `/questions/` or more importantly, as practice tests at `/practice_tests/`
+- The `/practice_tests/` page displays interactive cards for each certification exam to start a practice test
+
+## Running Locally
+- Start the Hugo development server:
+  ```bash
+  hugo server
+  ```
+- Access the application at `http://localhost:1313`
+- The development server provides live reload for instant preview of changes
+
+## Theme
+This site uses the [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn), a feature-rich documentation theme:
+The theme is available as a git [submodule](/themes/hugo-theme-relearn) with documentation in the `themes/hugo-theme-relearn/docs` directory.
