@@ -6,8 +6,8 @@
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/hugo:1.1.2": {
-			"version": "0.121.0",
+		"ghcr.io/devcontainers/features/hugo:1.1.3": {
+			"version": "0.124.0",
 			"extended": false
 		},
 		"ghcr.io/devcontainers-extra/features/pre-commit:2": {}
@@ -35,6 +35,6 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "git submodule update --init --recursive --depth 1",
-	"postStartCommand": "nohup bash -c 'hugo server &'"
+	// "postStartCommand": "nohup bash -c 'hugo server &'"
 
 }
