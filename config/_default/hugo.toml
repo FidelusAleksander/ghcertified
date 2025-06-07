@@ -8,6 +8,7 @@ defaultContentLanguageInSubdir = false
 theme = "hugo-theme-relearn"
 
 
+
 [minify]
 disableHTML = true
 
