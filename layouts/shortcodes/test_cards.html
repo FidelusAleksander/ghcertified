@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="/css/practice-tests.css">
+{{ $lang := .Site.Language.Lang }}
+
+
 <div class="exam-container">
+
 {{ range where .Site.RegularPages "Section" "practice_tests" }}
     {{ $include_exam := .Page.Params.include_exam }}
     <div class="card">

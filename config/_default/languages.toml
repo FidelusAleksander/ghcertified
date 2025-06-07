@@ -5,7 +5,7 @@
 [en]
 title = "GitHub Certified"
 weight = 1
-languageCode = 'en'
+languageCode = 'en-US'
 languageName = 'English'
 # Language dependent settings:
 # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
