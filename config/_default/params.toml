@@ -23,6 +23,3 @@ disableLanguageSwitchingButton = true
 
 # Images for OpenGraph
 images = ["images/opengraph.png"]
-
-
-

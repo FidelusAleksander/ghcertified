@@ -44,4 +44,3 @@ weight: 100
 {{< library-links questions="GitHub Copilot" >}}
 
 {{< /expand >}}
-

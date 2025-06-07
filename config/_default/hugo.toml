@@ -11,4 +11,3 @@ theme = "hugo-theme-relearn"
 
 [minify]
 disableHTML = true
-
