@@ -9,6 +9,11 @@ on:
         default: "content/en"
         type: string
 
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
