@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-> **More info**: [About GitHub Commands](https://learn.microsoft.com/en-us/training/modules/intro-to-git/3-basic-git-commands)
+> **More info**: [Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
 
 1. [ ] git status
 1. [ ] git init

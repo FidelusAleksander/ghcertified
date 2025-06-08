@@ -8,4 +8,4 @@ question: "Which action is necessary for adding a file to a GitHub repository?"
 1. [ ] Having read access to the repository.
 1. [ ] Having write access to the repository.
 
-> **More info**: [About GitHub Flow](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/3-components-of-github-flow)
+> **More info**: [Repository permission levels for an organization](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization)

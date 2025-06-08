@@ -9,4 +9,4 @@ question: "What is the significance of the 'commit message' in the GitHub flow p
 1. [x] It provides a summary of changes made in a commit, aiding in project history tracking. 
 
 
-> **More info**: [About GitHub Flow](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/3-components-of-github-flow)
+> **More info**: [About commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)

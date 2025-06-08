@@ -4,7 +4,7 @@ question: "In what scenario would GitHub Issues be more effective than Discussio
 draft: false
 ---
 
-> **More info**: [About GitHub Collaborative Platforms](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/4-collaborative-platform)
+> **More info**: [About GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 
 1. [ ] When making announcements and sharing news with the team.
 1. [x] When tracking specific tasks and bugs that require resolution.

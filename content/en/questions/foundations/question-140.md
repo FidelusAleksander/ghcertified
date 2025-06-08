@@ -11,4 +11,4 @@ draft: false
 1. [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
 
 
-> **More info**: [About GitHub Flow](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/3-components-of-github-flow)
+> **More info**: [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)

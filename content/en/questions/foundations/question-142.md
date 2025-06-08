@@ -7,4 +7,4 @@ question: "Why might a team choose GitHub Issues over Discussions for managing b
 1. [x] Issues provide a structured format for tracking and resolving bugs.
 1. [ ] Issues are automatically resolved when linked to pull requests.
 
-> **More info**: [About GitHub Flow](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/3-components-of-github-flow)
+> **More info**: [About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
