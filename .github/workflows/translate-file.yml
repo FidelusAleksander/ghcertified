@@ -1,0 +1,52 @@
+name: Translate a File
+
+on:
+  workflow_call:
+    inputs:
+      file:
+        required: true
+        type: string
+      language_code:
+        required: true
+        type: string
+      language_name:
+        required: true
+        type: string
+
+jobs:
+  translate:
+    name: Translate ${{ inputs.file}} to ${{ inputs.language_name }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Translate file
+        uses: FidelusAleksander/ai-translate-action@v1
+        id: translate
+        with:
+          text-file: ${{ inputs.file }}
+          target-language: ${{ inputs.language_name }}
+          custom-instructions: "Keep technical terms, GitHub nomenclature, code blocks, and Front Matter in their original form. Maintain Markdown formatting."
+
+      - name: Save translation
+        id: save-translation
+        run: |
+          FILE="${{ inputs.file }}"
+          LANG="${{ inputs.language_code }}"
+
+          TARGET_PATH="${FILE/content\/en/content\/$LANG}"
+          TARGET_DIR=$(dirname "$TARGET_PATH")
+
+          mkdir -p "$TARGET_DIR"
+          echo "$TRANSLATED_TEXT" > "$TARGET_PATH"
+        env:
+          TRANSLATED_TEXT: ${{ steps.translate.outputs.translated-text }}
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "content/${{ inputs.language_code }}/**"
+          message: "i18n: translate ${{ inputs.file }} to ${{ inputs.language_name }}"
+          push: true
+          new_branch: i18n/update-translations

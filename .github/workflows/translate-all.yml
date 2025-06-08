@@ -1,0 +1,41 @@
+name: Translate All Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      content_path:
+        description: "Path to content directory to translate"
+        required: false
+        default: "content/en"
+        type: string
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      files: ${{ steps.get-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get all .md files in ${{ inputs.content_path }}
+        id: get-files
+        run: |
+          files=$(find ${{ inputs.content_path }} -type f -name "*.md" -not -path "*/\.*" | jq -R -s -c 'split("\n")[:-1]')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "$files"
+
+  translate:
+    needs: prepare
+    strategy:
+      matrix:
+        language:
+          # [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }]
+          [{ code: "pl", name: "Polish" }]
+        file: ${{ fromJSON(needs.prepare.outputs.files) }}
+      max-parallel: 1
+      fail-fast: true
+    uses: ./.github/workflows/translate-file.yml
+    with:
+      file: ${{ matrix.file }}
+      language_code: ${{ matrix.language.code }}
+      language_name: ${{ matrix.language.name }}
