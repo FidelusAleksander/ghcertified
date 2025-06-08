@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 092"
 question: "In GitHub a proposal to merge a set of changes from one branch into another branch is called a:"
 ---

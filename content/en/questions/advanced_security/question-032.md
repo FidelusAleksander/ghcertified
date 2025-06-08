@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 032"
 question: "What are the primary benefits of the Security Overview feature in GitHub?"
 ---

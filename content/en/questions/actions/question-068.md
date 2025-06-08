@@ -1,6 +1,5 @@
 ---
 question: "To run a `step` only if the secret `MY_SECRET` has been set, you can:"
-archetype: "questions"
 title: "Question 068"
 ---
 

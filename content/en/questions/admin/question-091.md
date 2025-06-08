@@ -1,6 +1,5 @@
 ---
 question: "How can you use 3rd party vaults to manage secrets for GitHub Actions?"
-archetype: "questions"
 title: "Question 091"
 ---
 

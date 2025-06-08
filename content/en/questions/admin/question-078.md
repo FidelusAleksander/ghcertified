@@ -1,6 +1,5 @@
 ---
 question: "How can enterprises track their usage of GitHub Actions?"
-archetype: "questions"
 title: "Question 078"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 049"
 question: "Who are repository collaborators?"
 ---

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 114"
 question: "What feature is unique to GitHub Desktop compared to github.com?"
 ---

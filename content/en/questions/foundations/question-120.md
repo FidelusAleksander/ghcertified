@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 120"  
 question: "Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?"  
 draft: false  

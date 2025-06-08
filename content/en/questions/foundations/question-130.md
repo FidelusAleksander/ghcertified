@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 130"  
 question: "Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?"  
 draft: false  

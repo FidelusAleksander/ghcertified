@@ -1,6 +1,5 @@
 ---
 question: "What is the primary responsibility of a billing manager in a GitHub organization?"
-archetype: "questions"
 title: "Question 050"
 ---
 

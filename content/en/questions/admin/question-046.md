@@ -1,6 +1,5 @@
 ---
 question: "How can an organization enhance the security of their GitHub Actions workflows?"
-archetype: "questions"
 title: "Question 046"
 ---
 

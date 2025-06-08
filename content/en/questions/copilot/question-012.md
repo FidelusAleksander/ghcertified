@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 012"
 question: "Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?"
 ---

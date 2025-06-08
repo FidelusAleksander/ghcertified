@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 099"
 question: "What are the two available options when you no longer need to use a Project?"
 ---

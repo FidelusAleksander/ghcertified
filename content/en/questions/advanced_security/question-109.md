@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 109"
 question: "To enable Dependabot security updates on all repositories in an organization you should:"
 ---

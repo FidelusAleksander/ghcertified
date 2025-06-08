@@ -1,6 +1,5 @@
 ---
 question: "What is required to add a self-hosted runner to an organization on GitHub?"
-archetype: "questions"
 title: "Question 087"
 ---
 

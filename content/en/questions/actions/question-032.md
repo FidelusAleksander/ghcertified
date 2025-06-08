@@ -1,6 +1,5 @@
 ---
 question: "What GitHub-hosted runner types are available to use? (Select three.)"
-archetype: "questions"
 title: "Question 032"
 ---
 

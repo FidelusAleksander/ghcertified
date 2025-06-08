@@ -1,6 +1,5 @@
 ---
 question: "What roles can a team member hold within a GitHub team?"
-archetype: "questions"
 title: "Question 060"
 ---
 

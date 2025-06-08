@@ -1,6 +1,5 @@
 ---
 question: "How can CodeQL be used in an external CI system together with GitHub repositories?"
-archetype: "questions"
 title: "Question 041"
 ---
 

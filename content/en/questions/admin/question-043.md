@@ -1,6 +1,5 @@
 ---
 question: "How can access management and collaboration be simplified within a GitHub organization?"
-archetype: "questions"
 title: "Question 043"
 ---
 

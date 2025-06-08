@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 071"
 question: "Which of these statements are true regarding running CodeQL analysis on codebases with multiple programming languages? (Choose two.)"
 ---

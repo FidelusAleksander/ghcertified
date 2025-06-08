@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 068"
 question: "Which of these statements best describes what GitHub is?"
 ---

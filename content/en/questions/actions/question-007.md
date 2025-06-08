@@ -1,6 +1,5 @@
 ---
 question: "Which components are required for a workflow? (Select two.)"
-archetype: "questions"
 title: "Question 007"
 ---
 

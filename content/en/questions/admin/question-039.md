@@ -1,6 +1,5 @@
 ---
 question: "How can an organization admin set default permissions for new members in a GitHub organization?"
-archetype: "questions"
 title: "Question 039"
 ---
 

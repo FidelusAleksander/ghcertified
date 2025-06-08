@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 019"
 question: "Which set of principles correctly represents Microsoft's six key principles for Responsible AI that guide GitHub Copilot's development?"
 ---

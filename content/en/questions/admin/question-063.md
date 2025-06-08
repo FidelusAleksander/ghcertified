@@ -1,6 +1,5 @@
 ---
 question: "What functionality does the audit log provide to organization admins within a GitHub organization?"
-archetype: "questions"
 title: "Question 063"
 ---
 

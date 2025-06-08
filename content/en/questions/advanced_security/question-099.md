@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 099"
 question: "Which of these statements best defines a vulnerable dependency?"
 ---

@@ -1,6 +1,5 @@
 ---
 question: "Which is the minimum level of support that provides help with installing and using Advanced Security?"
-archetype: "questions"
 title: "Question 003"
 ---
 

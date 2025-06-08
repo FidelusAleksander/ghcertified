@@ -1,6 +1,5 @@
 ---
 question: "Which is the main restriction of Enterprise Managed User accounts in GitHub Enterprise Cloud?"
-archetype: "questions"
 title: "Question 029"
 ---
 

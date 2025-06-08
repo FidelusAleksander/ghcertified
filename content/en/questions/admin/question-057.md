@@ -1,6 +1,5 @@
 ---
 question: "What can be found on a team’s page within a GitHub organization?"
-archetype: "questions"
 title: "Question 057"
 ---
 

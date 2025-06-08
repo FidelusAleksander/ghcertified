@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 069"
 question: "What are the steps of CodeQL analysis workflow?"
 ---

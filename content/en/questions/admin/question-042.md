@@ -1,6 +1,5 @@
 ---
 question: "Which role in a GitHub organization has the authority to manage access to the organization's resources?"
-archetype: "questions"
 title: "Question 042"
 ---
 

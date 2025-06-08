@@ -1,6 +1,5 @@
 ---
 question: "Which of the following identity providers (IdPs) is NOT officially supported and internally tested by GitHub Enterprise Cloud for SAML SSO?"
-archetype: "questions"
 title: "Question 014"
 ---
 

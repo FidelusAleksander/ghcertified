@@ -1,6 +1,5 @@
 ---
 question: "Which top-level keys are required in the `dependabot.yml` file?"
-archetype: "questions"
 title: "Question 043"
 ---
 

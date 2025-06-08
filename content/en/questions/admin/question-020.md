@@ -1,6 +1,5 @@
 ---
 question: "Which statement is true regarding usernames and profile information for Enterprise Managed Users?"
-archetype: "questions"
 title: "Question 020"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 014"
 question: "You have included some fake secrets in your test code and they have been picked up by GitHub's secret scanning. What can you do to tell GitHub that these are fake secrets used in tests and can be ignored by secret scanning? (Choose two.)"
 ---

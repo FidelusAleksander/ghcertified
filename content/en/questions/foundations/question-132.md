@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 132"  
 question: "Which of these statements about pinned items on your GitHub profile is true?"  
 draft: false  

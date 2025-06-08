@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 089"
 question: "Which of these is NOT a valid approach one can take to reduce the time it takes for CodeQL analysis workflow to complete?" 
 ---

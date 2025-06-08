@@ -1,6 +1,5 @@
 ---
 question: "What is the main purpose of using the CodeQL CLI?"
-archetype: "questions"
 title: "Question 038"
 ---
 

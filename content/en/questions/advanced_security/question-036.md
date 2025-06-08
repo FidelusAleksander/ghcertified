@@ -1,6 +1,5 @@
 ---
 question: "Is secret scanning available for both public and private repositories on GitHub?"
-archetype: "questions"
 title: "Question 036"
 ---
 

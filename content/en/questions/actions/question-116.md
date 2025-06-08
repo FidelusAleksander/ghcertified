@@ -1,6 +1,5 @@
 ---
 question: "When can you delete workflow runs? (select two)"
-archetype: "questions"
 title: "Question 116"
 ---
 

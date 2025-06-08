@@ -1,6 +1,5 @@
 ---
 question: "What are the benefits and risks of using apps and actions from the GitHub Marketplace?"
-archetype: "questions"
 title: "Question 009"
 ---
 

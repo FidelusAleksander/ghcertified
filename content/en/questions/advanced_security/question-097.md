@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 097"
 question: "Which API endpoint can be used to retrieve a list of all secret scanning alerts for an organization?"
 ---

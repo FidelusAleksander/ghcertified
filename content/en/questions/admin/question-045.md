@@ -1,6 +1,5 @@
 ---
 question: "What is the advantage of having an enterprise account on GitHub Enterprise Cloud for an organization?"
-archetype: "questions"
 title: "Question 045"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 078"
 question: "Which of the following is a correct statement about GitHub Workflows and Actions?"
 ---

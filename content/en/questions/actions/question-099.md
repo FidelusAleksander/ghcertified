@@ -1,6 +1,5 @@
 ---
 question: "What is the recommended approach for storing secrets larger than 48 KB?"
-archetype: "questions"
 title: "Question 099"
 ---
 

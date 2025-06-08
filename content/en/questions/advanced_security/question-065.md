@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 065"
 question: "What is QL?"
 ---

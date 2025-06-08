@@ -1,6 +1,5 @@
 ---
 question: "What should you do before running git filter-repo or BFG Repo-Cleaner to remove sensitive data from your repository?"
-archetype: "questions"
 title: "Question 068"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 102"
 question: "If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?"
 ---

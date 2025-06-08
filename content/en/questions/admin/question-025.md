@@ -1,6 +1,5 @@
 ---
 question: "How does GitHub Enterprise Cloud differ from GitHub Enterprise Server?"
-archetype: "questions"
 title: "Question 025"
 ---
 

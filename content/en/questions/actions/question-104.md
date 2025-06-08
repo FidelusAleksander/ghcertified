@@ -1,6 +1,5 @@
 ---
 question: "What is the recommended practice for treating environment variables in GitHub Actions, regardless of the operating system and shell used?"
-archetype: "questions"
 title: "Question 104"
 ---
 

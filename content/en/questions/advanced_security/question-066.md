@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 066"
 question: "What is a CodeQL query suite?"
 ---

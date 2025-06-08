@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 121"  
 question: "Which feature provides pre-built charts or visualizations for repository activity and health?"  
 draft: false  

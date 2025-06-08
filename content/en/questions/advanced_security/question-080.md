@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 080"
 question: "What is the purpose of the `external-repository-token` parameter in `github/codeql-action/init` GitHub Action?"
 ---

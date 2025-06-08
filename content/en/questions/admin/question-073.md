@@ -1,6 +1,5 @@
 ---
 question: "What steps should organization admins follow to access audit logs of actions performed within their GitHub organization?"
-archetype: "questions"
 title: "Question 073"
 ---
 

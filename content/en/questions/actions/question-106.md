@@ -1,6 +1,5 @@
 ---
 question: "What is the purpose of the `restore-keys` parameter in `actions/cache` in GitHub Actions?"
-archetype: "questions"
 title: "Question 106"
 ---
 

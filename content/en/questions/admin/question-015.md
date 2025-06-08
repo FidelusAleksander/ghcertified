@@ -1,6 +1,5 @@
 ---
 question: "How do you require two-factor authentication (2FA) for an organization?"
-archetype: "questions"
 title: "Question 015"
 ---
 

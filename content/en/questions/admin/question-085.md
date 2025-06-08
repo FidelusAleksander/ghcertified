@@ -1,6 +1,5 @@
 ---
 question: "How should you select appropriate runners to support your workflow's specific workloads?"
-archetype: "questions"
 title: "Question 085"
 ---
 

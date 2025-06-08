@@ -1,6 +1,5 @@
 ---
 question: "How can GitHub Apps react to specific events, and what are some examples of these events?"
-archetype: "questions"
 title: "Question 077"
 ---
 

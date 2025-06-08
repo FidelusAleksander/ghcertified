@@ -1,6 +1,5 @@
 ---
 question: "Which environments can GitHub Enterprise Server be deployed to?"
-archetype: "questions"
 title: "Question 031"
 ---
 

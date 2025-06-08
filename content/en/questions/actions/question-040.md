@@ -1,6 +1,5 @@
 ---
 question: "In the following example, `workflow A` passes all of its secrets to `workflow B`, by using the inherit keyword. Then `workflow B` calls `workflow C`. Which statement regarding `secrets` is true for that example?"
-archetype: "questions"
 title: "Question 040"
 ---
 

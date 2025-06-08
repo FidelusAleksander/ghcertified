@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 016"
 question: "Which of the following options best describes GitHub Copilot?"
 ---

@@ -1,6 +1,5 @@
 ---
 question: "Which role in a GitHub organization has the highest level of access?"
-archetype: "questions"
 title: "Question 048"
 ---
 

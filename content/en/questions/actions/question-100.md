@@ -1,6 +1,5 @@
 ---
 question: "Select status check functions in GitHub Actions"
-archetype: "questions"
 title: "Question 100"
 ---
 

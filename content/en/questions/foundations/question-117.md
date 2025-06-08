@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 117"
 question: "Which of the following is true about GitHub wikis?"
 ---

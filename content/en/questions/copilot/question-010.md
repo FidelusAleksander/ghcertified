@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 010"
 question: "Which of the following integrates GitHub Copilot Chat with external tools?"
 ---

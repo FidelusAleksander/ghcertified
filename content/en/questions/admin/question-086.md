@@ -1,6 +1,5 @@
 ---
 question: "How do you add a self-hosted runner to a GitHub repository?"
-archetype: "questions"
 title: "Question 086"
 ---
 

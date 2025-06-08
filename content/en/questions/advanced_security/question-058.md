@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 058"
 question: "When using GitHub Actions as your CI system and a third party tool to run code scanning, how can you upload the SARIF results to GitHub?"
 ---

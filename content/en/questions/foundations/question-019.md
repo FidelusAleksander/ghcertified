@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 019"
 question: "Which of these is a common use case for GitHub Actions?"
 ---

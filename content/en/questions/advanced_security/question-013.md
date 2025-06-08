@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 013"
 question: "How can you exclude certain directories or files from secret scanning?"
 ---

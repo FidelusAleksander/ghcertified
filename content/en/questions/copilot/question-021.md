@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 021"
 question: "Which statement correctly describes GitHub Copilot's CLI command functionality?"
 ---

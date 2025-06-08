@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 020"
 question: "Which of the following is a potential benefit of using GitHub Copilot to enhance developer workflows?"
 ---

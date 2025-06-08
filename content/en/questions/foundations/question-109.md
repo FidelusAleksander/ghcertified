@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 109"
 question: "What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)"
 ---

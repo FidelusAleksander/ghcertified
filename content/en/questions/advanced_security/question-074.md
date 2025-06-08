@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 074"
 question: "Which of the following statements about enabling CodeQL scanning default setup are true? (Choose three.)"
 ---

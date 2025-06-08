@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 018"
 question: "Which steps occur when GitHub Copilot's proxy service processes a prompt?"
 ---

@@ -1,6 +1,5 @@
 ---
 question: "What is the primary purpose of a GitHub organization?"
-archetype: "questions"
 title: "Question 041"
 ---
 

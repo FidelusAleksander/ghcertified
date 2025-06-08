@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 052"
 question: "What is the role of an organization moderator?"
 ---

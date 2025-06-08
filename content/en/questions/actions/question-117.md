@@ -1,6 +1,5 @@
 ---
 question: "Who can bypass configured deployment protection rules to force deployment (by default)"
-archetype: "questions"
 title: "Question 117"
 ---
 

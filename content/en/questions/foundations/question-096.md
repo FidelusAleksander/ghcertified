@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 096"
 question: "Which of these statements about the differences of issues and discussions is true?"
 ---

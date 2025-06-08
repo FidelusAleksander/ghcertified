@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 056"
 question: "On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?"
 ---

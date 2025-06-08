@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 058"
 question: "What is the GitHub Marketplace?"
 ---

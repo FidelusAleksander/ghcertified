@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 080"
 question: "Which of these statements about GitHub Enterprise deployment options are true? (Select two.)"
 ---

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 083"
 question: "As part of your Jenkins CI pipeline you've successfully created and then analyzed a CodeQL database, therefore producing a SARIF file. How can you upload the SARIF file to GitHub? (Choose two.)"
 ---

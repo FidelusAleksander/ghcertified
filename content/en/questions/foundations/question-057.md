@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 057"
 question: "What are the effects of you following a user on GitHub?"
 ---

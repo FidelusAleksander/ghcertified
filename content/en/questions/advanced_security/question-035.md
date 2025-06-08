@@ -1,6 +1,5 @@
 ---
 question: "What is the purpose of code scanning in GitHub?"
-archetype: "questions"
 title: "Question 035"
 ---
 

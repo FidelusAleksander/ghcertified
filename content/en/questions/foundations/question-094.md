@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 094"
 question: "What are draft pull requests?"
 ---

@@ -1,6 +1,5 @@
 ---
 question: "How can you use the GitHub API to download workflow run logs?"
-archetype: "questions"
 title: "Question 069"
 ---
 

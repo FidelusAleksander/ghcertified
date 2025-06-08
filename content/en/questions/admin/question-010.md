@@ -1,6 +1,5 @@
 ---
 question: "What are the key implications of enabling SAML single sign-on (SSO) for an organization in GitHub Enterprise Cloud?"
-archetype: "questions"
 title: "Question 010"
 ---
 

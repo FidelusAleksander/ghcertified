@@ -1,6 +1,5 @@
 ---
 question: "A workflow was initially run on `commit A` and failed. You fixed the workflow with the subsequent `commit B`. When you re-run that workflow it will run with code from which commit?"
-archetype: "questions"
 title: "Question 055"
 ---
 

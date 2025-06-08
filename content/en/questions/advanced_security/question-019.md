@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 019"
 question: "Does GitHub use the same set of secret scanning patterns for both user alerts and push protection alerts?"
 ---

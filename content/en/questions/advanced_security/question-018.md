@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 018"
 question: "When GitHub runs a scan of all historical code in enterprise repositories what is the notification behavior? (Select two.)"
 ---

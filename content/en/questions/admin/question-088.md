@@ -1,6 +1,5 @@
 ---
 question: "How can you manage access to self-hosted runners in an organization using runner groups?"
-archetype: "questions"
 title: "Question 088"
 ---
 

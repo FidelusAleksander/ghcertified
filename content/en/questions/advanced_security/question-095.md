@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 095"
 question: "How can you set a default security policy for all repositories in `my-org` GitHub Organization?"
 ---

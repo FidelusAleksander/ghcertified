@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 057"
 question: "When using a third party CI system to run code scanning, what GitHub tool do you need to analyze the codebase?"
 ---

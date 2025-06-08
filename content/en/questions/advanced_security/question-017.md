@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 017"
 question: "Who will be notified when a NEW secret is pushed and detected in a repository? (Choose five.)"
 ---

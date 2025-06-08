@@ -1,6 +1,5 @@
 ---
 question: "Which of the following languages is NOT supported by CodeQL for code scanning?"
-archetype: "questions"
 title: "Question 039"
 ---
 

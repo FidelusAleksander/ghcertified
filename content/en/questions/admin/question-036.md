@@ -1,6 +1,5 @@
 ---
 question: "How are minutes calculated for jobs that run on different operating systems in GitHub Actions?"
-archetype: "questions"
 title: "Question 036"
 ---
 

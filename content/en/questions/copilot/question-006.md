@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 006"
 question: "How can you exclude specific files from GitHub Copilot?"
 ---

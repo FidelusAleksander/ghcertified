@@ -1,6 +1,5 @@
 ---
 question: "Which statement is correct regarding passing permissions to reusable workflows?"
-archetype: "questions"
 title: "Question 001"
 ---
 

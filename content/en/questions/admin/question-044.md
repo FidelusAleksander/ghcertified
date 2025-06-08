@@ -1,6 +1,5 @@
 ---
 question: "Which GitHub plan allows to use secret scanning in private repositories?"
-archetype: "questions"
 title: "Question 044"
 ---
 

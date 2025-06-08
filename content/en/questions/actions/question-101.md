@@ -1,6 +1,5 @@
 ---
 question: "How do you ensure that `Upload Failure test report` step is executed only if `Run Tests` step fails?"
-archetype: "questions"
 title: "Question 101"
 ---
 

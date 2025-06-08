@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 133"  
 question: "Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?"  
 draft: false  

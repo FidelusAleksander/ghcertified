@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 061"
 question: "When using CodeQL analysis in your GitHub Actions workflow, how often is the scan triggered?"
 ---

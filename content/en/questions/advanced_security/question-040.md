@@ -1,6 +1,5 @@
 ---
 question: "How does CodeQL analyze code in GitHub?"
-archetype: "questions"
 title: "Question 040"
 ---
 

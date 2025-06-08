@@ -1,6 +1,5 @@
 ---
 question: "When an Enterprise IP allow list is in place, what happens when you try publish your GitHub Pages site from a branch instead of using a custom GitHub Actions workflow?"
-archetype: "questions"
 title: "Question 083"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 103"
 question: "Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)"
 ---

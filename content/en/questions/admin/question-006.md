@@ -1,6 +1,5 @@
 ---
 question: "Which of the following is the correct procedure for generating a support bundle in GitHub Enterprise Server? (Choose two.)"
-archetype: "questions"
 title: "Question 006"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 025"
 question: "How can you start using GitHub Copilot after activating the GitHub Copilot subscription?"
 ---

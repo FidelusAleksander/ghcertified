@@ -1,6 +1,5 @@
 ---
 question: "Which formats are available for exporting the audit log from a GitHub organization?"
-archetype: "questions"
 title: "Question 064"
 ---
 

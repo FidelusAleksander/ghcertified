@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 051"
 question: "Fill in the blank: `GitHub __________ is a feature that you can use to analyze code in a GitHub repository to find security vulnerabilities and coding errors.`"
 ---

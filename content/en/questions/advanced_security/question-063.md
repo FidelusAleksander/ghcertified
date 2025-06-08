@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 063"
 question: "CodeQL scanning supports:"
 ---

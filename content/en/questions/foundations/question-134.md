@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 134"  
 question: "Which of the following best describes GitHub secret scanning?"  
 draft: false  
