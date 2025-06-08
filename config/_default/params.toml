@@ -10,10 +10,15 @@ disableSearch = false
 disableHistory = true
 disableLandingPageButton = true
 disableSeoHiddenPages = false
+hideAuthorDate = true
+
 
 alwaysopen = false
 editURL = "https://github.com/FidelusAleksander/ghcertified/edit/master/content/"
 author.name = "Aleksander Fidelus"
+
+# Disable the language switching button until the site is fully translated
+disableLanguageSwitchingButton = true
 
 
 # Images for OpenGraph

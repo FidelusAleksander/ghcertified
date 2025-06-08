@@ -12,8 +12,6 @@ This page contains all the questions that were [contributed](https://github.com/
 
 {{% /notice %}}
 
-
-
 {{< expand title="**GitHub Foundations questions**" >}}
 
 {{< library-links questions="GitHub Foundations" >}}

@@ -27,6 +27,7 @@
     "Entra",
     "passwordless",
     "TOTP",
-    "relref"
+    "relref",
+    "rerequested"
   ]
 }
