@@ -9,4 +9,3 @@ question: "How should a dependent job reference the `output1` value produced by 
 - [ ] `${{job1.outputs.output1}}`
 - [ ] `${{needs.job1.output1}}`
 - [ ] `${{depends.job1.output1}}`
-
