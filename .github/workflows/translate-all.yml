@@ -1,4 +1,4 @@
-name: Translate All Content
+name: Translate ${{ inputs.content_path }} to ${{ inputs.language_name }}
 
 on:
   workflow_dispatch:
