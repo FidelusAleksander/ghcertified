@@ -4,7 +4,6 @@ question: "What Git command gives information about how to use Git?"
 draft: false
 ---
 
-
 > **More info**: [Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
 
 1. [ ] git status
