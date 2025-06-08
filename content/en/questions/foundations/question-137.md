@@ -9,9 +9,3 @@ draft: false
 1. [ ] Incorrect AnswerVersion management software (VMS)
 1. [ ] Incorrect AnswerSoftware control management (SCM) system
 1. [x] Software configuration management (SCM) system
-
-
-
-
-
-

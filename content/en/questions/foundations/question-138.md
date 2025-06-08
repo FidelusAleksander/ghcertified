@@ -10,8 +10,3 @@ draft: false
 1. [ ] git status
 1. [ ] git init
 1. [x] git help
-
-
-
-
-
