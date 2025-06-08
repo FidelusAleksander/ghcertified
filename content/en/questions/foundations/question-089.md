@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 089"
 question: "What improvement do issue forms bring over issue templates?"
 ---

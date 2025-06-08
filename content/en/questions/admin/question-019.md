@@ -1,6 +1,5 @@
 ---
 question: "What is required for a user to authenticate with an Enterprise Managed Users account?"
-archetype: "questions"
 title: "Question 019"
 ---
 

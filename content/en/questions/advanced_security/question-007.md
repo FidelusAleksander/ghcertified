@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 007"
 question: "Which of these best describes secret scanning?"
 ---

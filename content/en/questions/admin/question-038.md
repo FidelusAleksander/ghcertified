@@ -1,6 +1,5 @@
 ---
 question: "How can an organization owner find statistics on license usage for their GitHub Enterprise Server?"
-archetype: "questions"
 title: "Question 038"
 ---
 

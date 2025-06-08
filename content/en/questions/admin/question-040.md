@@ -1,6 +1,5 @@
 ---
 question: "How does team synchronization with Microsoft Entra ID (previously Azure AD) benefit GitHub Enterprise Cloud organizations?"
-archetype: "questions"
 title: "Question 040"
 ---
 

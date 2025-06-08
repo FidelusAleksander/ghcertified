@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 095"
 question: "Which of the following statements are true about adding a self-hosted runner in GitHub Actions? (Choose three.)"
 ---

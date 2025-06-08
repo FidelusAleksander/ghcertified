@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 084"
 question: "What are GitHub's slash commands?"
 ---

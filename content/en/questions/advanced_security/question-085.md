@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 085"
 question: "Which of these statements regarding viewing the results of a CodeQL analysis are true? (Choose two.)"
 ---

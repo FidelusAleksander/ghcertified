@@ -1,6 +1,5 @@
 ---
 question: "What do Dependabot alerts indicate in GitHub?"
-archetype: "questions"
 title: "Question 034"
 ---
 

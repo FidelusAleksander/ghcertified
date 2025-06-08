@@ -1,6 +1,5 @@
 ---
 question: "Which of the following are extra features provided by GitHub Enterprise Cloud over GitHub Free plan? (choose four.)"
-archetype: "questions"
 title: "Question 026"
 ---
 

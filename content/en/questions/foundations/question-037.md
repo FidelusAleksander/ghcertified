@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 037"
 question: "What are the different permission levels for a repository owned by a personal account? (Choose two.)"
 ---

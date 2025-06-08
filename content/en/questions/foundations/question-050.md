@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 050"
 question: "How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?"
 ---

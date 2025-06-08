@@ -1,6 +1,5 @@
 ---
 question: "What distinguishes a visible team from a secret team in a GitHub organization?"
-archetype: "questions"
 title: "Question 055"
 ---
 

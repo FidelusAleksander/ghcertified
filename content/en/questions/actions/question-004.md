@@ -1,6 +1,5 @@
 ---
 question: "Are GitHub Actions free for public repositories?"
-archetype: "questions"
 title: "Question 004"
 ---
 

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 016"
 question: "What is the behavior when a new secret pattern is added or updated in the GitHub secret scanning partner program?"
 ---

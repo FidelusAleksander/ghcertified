@@ -1,6 +1,5 @@
 ---
 question: "What are the default permissions of a member in a GitHub organization?"
-archetype: "questions"
 title: "Question 049"
 ---
 

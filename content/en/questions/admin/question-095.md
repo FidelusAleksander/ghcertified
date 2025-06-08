@@ -1,6 +1,5 @@
 ---
 question: "What are the differences and use cases between GitHub Packages and releases?"
-archetype: "questions"
 title: "Question 095"
 ---
 

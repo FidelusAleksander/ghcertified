@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 105"
 question: "Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)"
 ---

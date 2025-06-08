@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 022"
 question: "Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?"
 ---

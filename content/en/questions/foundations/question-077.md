@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 077"
 question: "Which GitHub pricing plan offers self-hosted deployment of GitHub?"
 ---

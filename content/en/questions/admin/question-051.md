@@ -1,6 +1,5 @@
 ---
 question: "How does the role of an outside collaborator differ from that of a member within a GitHub organization?"
-archetype: "questions"
 title: "Question 051"
 ---
 

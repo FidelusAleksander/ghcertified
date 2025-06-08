@@ -1,6 +1,5 @@
 ---
 question: "What are the key features and functionalities of teams within a GitHub organization?"
-archetype: "questions"
 title: "Question 054"
 ---
 

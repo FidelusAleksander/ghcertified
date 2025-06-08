@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 052"
 question: "Which GitHub Advanced Security feature allows you to find, triage, and prioritize fixes for new and existing problems in your code?"
 ---

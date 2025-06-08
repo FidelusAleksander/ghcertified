@@ -1,6 +1,5 @@
 ---
 question: "When creating a custom GitHub Action you have to store the source code in `.github/workflows` directory"
-archetype: "questions"
 title: "Question 053"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "What `jobs.job_id.if` conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository? (Select two.)"
-archetype: "questions"
 title: "Question 031"
 ---
 

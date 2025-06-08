@@ -1,6 +1,5 @@
 ---
 question: "What's the purpose of SCIM and team synchronization in GitHub?"
-archetype: "questions"
 title: "Question 023"
 ---
 

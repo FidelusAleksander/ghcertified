@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 111"
 question: "You need GitHub Actions enabled for"
 ---

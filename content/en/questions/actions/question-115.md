@@ -1,6 +1,5 @@
 ---
 question: "What level of permission is required to re-run the workflows"
-archetype: "questions"
 title: "Question 115"
 ---
 

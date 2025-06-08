@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 068"
 question: "What is a CodeQL query pack?"
 ---

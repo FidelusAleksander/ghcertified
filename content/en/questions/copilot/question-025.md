@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 025"
 question: "What are the post-processing checks performed on GitHub Copilot's responses?"
 ---

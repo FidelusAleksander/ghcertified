@@ -1,6 +1,5 @@
 ---
 question: "What level of access is required on a GitHub repository in order to delete log files from workflow runs?"
-archetype: "questions"
 title: "Question 112"
 ---
 

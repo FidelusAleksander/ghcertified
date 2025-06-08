@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 105"
 question: "Which of these is a valid `dependabot.yml` configuration file?"
 ---

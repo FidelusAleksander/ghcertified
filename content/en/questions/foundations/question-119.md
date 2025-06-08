@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 119"  
 question: "What is the minimum permission a user must have to directly push commits to a repository owned by an organization?"  
 draft: false  

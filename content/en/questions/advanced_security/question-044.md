@@ -1,6 +1,5 @@
 ---
 question: "Which GitHub Action can be used to upload a third-party SARIF file?"
-archetype: "questions"
 title: "Question 044"
 ---
 

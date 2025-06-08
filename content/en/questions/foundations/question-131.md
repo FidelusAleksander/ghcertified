@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 131"  
 question: "Which statement best describes the difference between cloning a repository and forking a repository?"  
 draft: false  

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 026"
 question: "How does GitHub Dependency graph know what dependencies your project is using? (Choose two.)"
 ---

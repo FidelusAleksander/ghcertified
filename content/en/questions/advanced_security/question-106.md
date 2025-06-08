@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 106"
 question: "Which of these is not a GitHub supported channel for receiving Dependabot alerts?"
 ---

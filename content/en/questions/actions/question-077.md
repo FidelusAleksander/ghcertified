@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 077"
 question: "What is a self-hosted runner?"
 ---

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 011"
 question: "How can you provide GitHub Copilot with context to generate tailored responses for your repository?"
 ---

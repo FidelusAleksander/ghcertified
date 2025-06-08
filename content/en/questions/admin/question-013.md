@@ -1,6 +1,5 @@
 ---
 question: "What are the steps to enable and enforce SAML SSO for a single organization?"
-archetype: "questions"
 title: "Question 013"
 ---
 

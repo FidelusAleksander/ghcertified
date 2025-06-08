@@ -1,6 +1,5 @@
 ---
 question: "What are valid authentication methods available in GitHub? (choose six.)"
-archetype: "questions"
 title: "Question 024"
 ---
 

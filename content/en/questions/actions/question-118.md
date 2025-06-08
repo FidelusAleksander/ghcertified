@@ -1,6 +1,5 @@
 ---
 question: "How can you skip the following workflow run when you commit or create a PR?"
-archetype: "questions"
 title: "Question 118"
 ---
 

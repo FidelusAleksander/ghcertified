@@ -1,6 +1,5 @@
 ---
 question: "How are user accounts provisioned with Enterprise Managed Users?"
-archetype: "questions"
 title: "Question 018"
 ---
 

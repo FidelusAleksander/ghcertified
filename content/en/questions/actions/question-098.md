@@ -1,6 +1,5 @@
 ---
 question: "How can you specify the schedule of a GitHub actions workflow to run on weekdays only?"
-archetype: "questions"
 title: "Question 098"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "In a workflow with multiple jobs the default behavior is:"
-archetype: "questions"
 title: "Question 011"
 ---
 

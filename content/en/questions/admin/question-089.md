@@ -1,6 +1,5 @@
 ---
 question: "What steps are involved in creating a self-hosted runner group for an organization on GitHub?"
-archetype: "questions"
 title: "Question 089"
 ---
 

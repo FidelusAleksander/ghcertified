@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 020"
 question: "What are the three different sets of secret scanning patterns that GitHub maintains? (Select three.)"
 ---

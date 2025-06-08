@@ -1,6 +1,5 @@
 ---
 question: "What are enterprise policies in the context of GitHub Enterprise Cloud?"
-archetype: "questions"
 title: "Question 072"
 ---
 

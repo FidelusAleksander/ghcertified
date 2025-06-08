@@ -1,6 +1,5 @@
 ---
 question: "How can an organization owner change the role of a member within the organization?"
-archetype: "questions"
 title: "Question 052"
 ---
 

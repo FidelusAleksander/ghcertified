@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 088"
 question: "What does the `matrix` keyword do in a GitHub Actions workflow?"
 ---

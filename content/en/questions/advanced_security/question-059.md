@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 059"
 question: "Can you use CodeQL analysis with third party CI systems?"
 ---

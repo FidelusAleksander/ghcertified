@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 021"
 question: "Multiple public repositories that you are contributing to do not have secret scanning push protection option enabled. What can you do to protect yourself from accidentally pushing secrets to these repositories?"
 ---

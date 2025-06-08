@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 082"
 question: "What is the purpose of the `codeql database analyze` command in CodeQL CLI?"
 ---

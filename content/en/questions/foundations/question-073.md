@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 073"
 question: "What is the GitHub Flow?"
 ---

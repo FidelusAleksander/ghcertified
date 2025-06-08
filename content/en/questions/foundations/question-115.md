@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 115"
 question: "Which of the following actions cannot be performed directly from GitHub Desktop?"
 ---

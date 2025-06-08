@@ -1,6 +1,5 @@
 ---
 question: "After sensitive data is removed from a repository's history and pushed to GitHub, what is a necessary step to fully remove the data from GitHub?"
-archetype: "questions"
 title: "Question 069"
 ---
 

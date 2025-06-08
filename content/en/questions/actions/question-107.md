@@ -1,6 +1,5 @@
 ---
 question: "Which variable would you set to `true` in order to enable step debug logging?"
-archetype: "questions"
 title: "Question 107"
 ---
 

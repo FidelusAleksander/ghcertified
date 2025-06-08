@@ -1,6 +1,5 @@
 ---
 question: "What is the maximum number of custom patterns that can be defined for secret scanning on GitHub?"
-archetype: "questions"
 title: "Question 050"
 ---
 

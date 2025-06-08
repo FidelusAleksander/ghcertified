@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 048"
 question: "What are Repository Insights?"
 ---

@@ -1,6 +1,5 @@
 ---
 question: "Which of these best defines GitHub Enterprise Policies?"
-archetype: "questions"
 title: "Question 071"
 ---
 

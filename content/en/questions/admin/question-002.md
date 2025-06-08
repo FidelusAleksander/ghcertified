@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 002"
 question: "What is the GitHub dependency graph?"
 ---

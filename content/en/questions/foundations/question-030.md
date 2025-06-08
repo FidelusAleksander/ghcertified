@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 030"
 question: "If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?"
 ---

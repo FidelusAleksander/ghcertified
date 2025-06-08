@@ -1,6 +1,5 @@
 ---
 question: "What permissions does a GitHub App manager have within an organization?"
-archetype: "questions"
 title: "Question 059"
 ---
 

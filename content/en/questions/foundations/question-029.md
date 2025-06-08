@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 029"
 question: "What are the different possible lifecycle phases for a GitHub Codespace?"
 ---

@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 060"
 question: "Which of these is true about code scanning? (Choose two.)"
 ---

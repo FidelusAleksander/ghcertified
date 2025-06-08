@@ -1,6 +1,5 @@
 ---
 question: "How can users exclude specific directories from secret scanning alerts on GitHub?"
-archetype: "questions"
 title: "Question 048"
 ---
 

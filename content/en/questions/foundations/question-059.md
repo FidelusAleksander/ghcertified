@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 059"
 question: "What is InnerSource?"
 ---

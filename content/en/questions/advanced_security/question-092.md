@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 092"
 question: "How can you enable GitHub Advanced Security features for all repositories in an organization in GitHub Enterprise Cloud?"
 ---

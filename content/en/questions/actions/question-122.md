@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 122"
 question: "What are the scopes defined for custom variables in a workflow? (choose three)"
 ---

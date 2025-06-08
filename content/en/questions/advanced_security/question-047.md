@@ -1,6 +1,5 @@
 ---
 question: "What happens when a second SARIF results file is uploaded to GitHub for a single commit?"
-archetype: "questions"
 title: "Question 047"
 ---
 

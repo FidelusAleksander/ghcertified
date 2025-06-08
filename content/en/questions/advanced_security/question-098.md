@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 098"
 question: "Which API endpoint can be used to retrieve a list of all code scanning alerts for a repository?"
 ---

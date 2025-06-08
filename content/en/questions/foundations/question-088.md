@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 088"
 question: "How can you link a pull request to an issue? (Choose two.)"
 ---

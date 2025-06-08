@@ -1,6 +1,5 @@
 ---
 question: "Which runners must you use with GitHub Actions when an IP allow list is enabled on your enterprise?"
-archetype: "questions"
 title: "Question 081"
 ---
 

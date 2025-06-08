@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 123"
 question: "What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?"
 ---

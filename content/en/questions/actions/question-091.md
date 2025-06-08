@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 091"
 question: "How can you specify the operating system for a job in GitHub Actions?"
 ---

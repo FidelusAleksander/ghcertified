@@ -1,6 +1,5 @@
 ---
 question: "How can an organization admin search the audit log for events related to webhook modifications?"
-archetype: "questions"
 title: "Question 065"
 ---
 

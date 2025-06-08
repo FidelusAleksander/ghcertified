@@ -1,6 +1,5 @@
 ---
 question: "What is SCIM in the context of GitHub?"
-archetype: "questions"
 title: "Question 022"
 ---
 

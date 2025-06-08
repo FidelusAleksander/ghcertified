@@ -1,6 +1,5 @@
 ---
 question: "Which of the following are recognized roles within a GitHub organization?"
-archetype: "questions"
 title: "Question 047"
 ---
 

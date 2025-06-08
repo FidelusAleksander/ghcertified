@@ -1,6 +1,5 @@
 ---
 question: "Which tools can be used to remove sensitive data from a Git repository's history?"
-archetype: "questions"
 title: "Question 067"
 ---
 

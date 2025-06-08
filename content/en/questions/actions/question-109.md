@@ -1,6 +1,5 @@
 ---
 question: "What is the purpose of the `timeout-minutes` keyword in a step?"
-archetype: "questions"
 title: "Question 109"
 ---
 

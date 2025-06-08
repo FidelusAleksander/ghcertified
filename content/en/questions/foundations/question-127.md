@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 127"
 question: "Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?"
 ---

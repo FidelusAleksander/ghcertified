@@ -1,6 +1,5 @@
 ---
 question: "What is GitHub Enterprise Server primarily designed for?"
-archetype: "questions"
 title: "Question 030"
 ---
 

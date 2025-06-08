@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 116"
 question: "Jobs that run on macOS runners that GitHub hosts consume minutes at __ rate as Linux runners consume"
 ---

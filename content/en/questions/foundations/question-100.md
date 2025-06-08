@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 100"
 question: "Can you change a gist from public to secret after creating it?"
 ---

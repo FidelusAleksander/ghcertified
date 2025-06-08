@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 069"
 question: "What is the relation between Git and GitHub?"
 ---

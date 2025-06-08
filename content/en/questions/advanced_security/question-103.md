@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 103"
 question: "What's the lowest access level needed to see Dependabot alerts in a repository within an organization?"
 ---

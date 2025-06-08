@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 083"
 question: "What language is used to write comments on GitHub issues and pull requests?"
 ---

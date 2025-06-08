@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 122"  
 question: "Which of these features does GitHub Copilot for Business offer that GitHub Copilot for Individuals does not?"  
 draft: false  

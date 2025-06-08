@@ -1,6 +1,5 @@
 ---
 question: "Which repository role in a GitHub organization is recommended for contributors who need to proactively manage issues and pull requests without having write access?"
-archetype: "questions"
 title: "Question 061"
 ---
 

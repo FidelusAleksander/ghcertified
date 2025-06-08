@@ -1,6 +1,5 @@
 ---
 question: "How can one authenticate to GitHub Packages?"
-archetype: "questions"
 title: "Question 093"
 ---
 

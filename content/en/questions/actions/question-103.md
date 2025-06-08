@@ -1,6 +1,5 @@
 ---
 question: "In GitHub Actions, if you define both branches and paths filter, what is the effect on the workflow execution?"
-archetype: "questions"
 title: "Question 103"
 ---
 

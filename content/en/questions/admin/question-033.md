@@ -1,6 +1,5 @@
 ---
 question: "How can GitHub Enterprise Server's administration be handled?"
-archetype: "questions"
 title: "Question 033"
 ---
 

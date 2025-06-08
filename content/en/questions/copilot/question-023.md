@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 023"
 question: "How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?"
 ---

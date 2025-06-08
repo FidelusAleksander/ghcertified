@@ -1,5 +1,4 @@
 ---
-archetype: "questions"  
 title: "Question 135"  
 question: "Which of these statements about GitHub Pages is correct?"  
 draft: false  

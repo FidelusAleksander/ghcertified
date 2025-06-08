@@ -1,5 +1,4 @@
 ---
-archetype: "questions"
 title: "Question 082"
 question: "Which of these files can customize your GitHub profile?"
 ---
