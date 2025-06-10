@@ -29,13 +29,11 @@ jobs:
         run: hugo
       - name: Deploy to Cloudflare Pages
         id: deploy
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: 'public/'
-          branch: ${{ github.event.pull_request.head.ref }}
+          command: pages deploy public/ --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
       - name: Find Comment
         uses: peter-evans/find-comment@v3
         id: fc
@@ -55,7 +53,7 @@ jobs:
 
             | Name | Link |
             | --- | --- |
-            | :link: Preview Url | ${{ steps.deploy.outputs.alias }} |
+            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
 
             Please verify everything looks as expected.
 
@@ -74,7 +72,7 @@ jobs:
 
             | Name | Link |
             | --- | --- |
-            | :link: Preview Url | ${{ steps.deploy.outputs.alias }} |
+            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
             | :hammer: Latest Commit | ${{ github.event.pull_request.head.sha }} |
             | :clock10: Latest Deploy | ${{ github.event.pull_request.updated_at }} |
 
