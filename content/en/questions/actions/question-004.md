@@ -1,5 +1,5 @@
 ---
-question: "Are GitHub Actions free for public repositories?"
+question: "Are Github Actions free for public repositories?"
 title: "Question 004"
 ---
 
