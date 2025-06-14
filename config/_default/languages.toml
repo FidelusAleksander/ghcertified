@@ -7,3 +7,18 @@ weight = 1
 languageCode = 'en-US'
 languageName = 'English'
 contentDir = 'content/en'
+
+[pt]
+title = "GitHub Certified"
+weight = 2
+languageCode = 'pt-BR'
+languageName = 'Português'
+contentDir = 'content/pt'
+
+
+[pl]
+title = "GitHub Certified"
+weight = 3
+languageCode = 'pt-PL'
+languageName = 'Polski'
+contentDir = 'content/pl'
