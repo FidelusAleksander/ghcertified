@@ -2,7 +2,7 @@
 title: "Perguntas para Administradores do GitHub"
 hidden: true
 cascade:
-    exam: "Administrador do GitHub"
+    exam: "GitHub Admin"
     Description: "Perguntas simuladas para o exame de certificação de Administrador do GitHub."
 ---
 

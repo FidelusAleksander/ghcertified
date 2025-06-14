@@ -2,7 +2,7 @@
 title: "Perguntas sobre Segurança Avançada do GitHub"
 hidden: true
 cascade:
-    exam: "Segurança Avançada do GitHub"
+    exam: "GitHub Advanced Security"
     Description: "Perguntas simuladas para o exame de certificação de Segurança Avançada do GitHub."
 ---
 
