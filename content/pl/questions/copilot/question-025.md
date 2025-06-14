@@ -8,4 +8,3 @@ question: "Jakie kontrole post-processingu są wykonywane na odpowiedziach GitHu
 1. [ ] Tylko walidacja składni i sprawdzanie formatowania kodu
 1. [ ] Benchmarking wydajności i optymalizacja wykorzystania pamięci
 1. [ ] Tylko sprawdzanie błędów kompilacji i wyjątków czasu wykonania
-

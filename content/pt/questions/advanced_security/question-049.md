@@ -8,4 +8,3 @@ title: "Pergunta 049"
 1. [ ] `paths-exclude:`
 1. [ ] `ignore-directories`
 1. [ ] `exclude-paths:`
-

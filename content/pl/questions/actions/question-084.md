@@ -9,4 +9,3 @@ question: "Które słowo kluczowe pozwala zdefiniować zmienne środowiskowe w p
 1. [ ] vars
 1. [ ] secrets
 1. [ ] config
-

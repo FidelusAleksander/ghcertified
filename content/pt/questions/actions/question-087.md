@@ -9,4 +9,3 @@ question: "Como você pode armazenar em cache dependências para acelerar a exec
 1. [x] Usando a ação actions/cache
 1. [ ] Armazenando-as no repositório
 1. [ ] Usando a palavra-chave store
-

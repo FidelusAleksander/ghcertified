@@ -7,4 +7,3 @@ title: "Question 053"
 1. [x] Falso
 1. [ ] Verdadeiro
 > Isso é verdade para `workflows`, não para `actions`
-

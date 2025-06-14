@@ -13,4 +13,3 @@ draft: false
   > Isso está faltando o operador de intervalo (`>`) para estrelas, e `name:docker` não é uma sintaxe válida.  
 1. [ ] `topic:docker stars:>100 in:readme`  
   > Isso busca em tópicos ou arquivos readme, não no nome do repositório.  
-

@@ -8,4 +8,3 @@ title: "Pytanie 080"
 1. [ ] Tak, mają pełną kontrolę nad odziedziczonymi wpisami
 1. [ ] Tak, ale tylko za zgodą właścicieli przedsiębiorstwa
 1. [ ] Nie, tylko pomoc techniczna GitHub może zarządzać odziedziczonymi wpisami
-

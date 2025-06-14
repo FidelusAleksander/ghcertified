@@ -8,4 +8,3 @@ title: "Pergunta 012"
 1. [ ] GitHub Enterprise Support
 1. [ ] GitHub Standard Support
 1. [ ] GitHub Community Support
-

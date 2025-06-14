@@ -8,4 +8,3 @@ title: "Pergunta 017"
 1. [ ] Usando o filtro `branch`
 1. [ ] Você cria o workflow apenas no branch `prod`
 1. [ ] Usando padrões globais
-

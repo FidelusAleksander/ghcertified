@@ -7,4 +7,3 @@ title: "Pytanie 010"
 1. [ ] zmienne konfiguracyjne
 1. [ ] vault
 1. [ ] zmienne środowiskowe
-

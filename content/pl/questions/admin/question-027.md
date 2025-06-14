@@ -8,4 +8,3 @@ title: "Pytanie 027"
 1. [ ] Aby zapewnić indywidualnym użytkownikom nieograniczoną liczbę prywatnych repozytoriów
 1. [ ] Aby oferować darmowy dostęp do GitHub Enterprise Server
 1. [ ] Aby umożliwić użytkownikom oddzielne zarządzanie ich publicznymi i prywatnymi wkładami
-

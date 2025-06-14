@@ -9,4 +9,3 @@ question: "Które z poniższych można użyć do ograniczenia liczby równocześ
 1. [ ] limit
 1. [ ] max-jobs
 1. [ ] parallelism
-

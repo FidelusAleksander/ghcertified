@@ -8,4 +8,3 @@ question: "Os jobs que são executados em runners macOS hospedados pelo GitHub c
 1. [ ] 2x
 1. [ ] 5x
 1. [x] 10x
-

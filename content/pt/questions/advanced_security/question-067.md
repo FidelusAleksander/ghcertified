@@ -10,4 +10,3 @@ question: "Quais são os diferentes tipos de pacotes CodeQL? (Escolha três.)"
 - [ ] Pacotes de código
 - [ ] Pacotes de linguagem
 - [ ] Pacotes de vulnerabilidade
-

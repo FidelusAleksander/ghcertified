@@ -13,4 +13,3 @@ draft: false
 1. [ ] Um recurso que executa gerenciadores de senhas de terceiros no seu código para armazenar segredos com segurança.  
 1. [x] Um recurso que pesquisa repositórios em busca de formatos conhecidos de segredos para evitar a exposição acidental de dados sensíveis.  
   > **Correto**. A verificação de segredos detecta tokens, chaves e outras credenciais para ajudar a evitar vazamentos.  
-

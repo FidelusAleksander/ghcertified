@@ -10,4 +10,3 @@ draft: false
 1. [ ] `is:issue in:comments label:test "fix"`  
 1. [x] `is:issue is:open label:test "fix"`  
 1. [ ] `type:issue label:test is:open body:"fix"`
-

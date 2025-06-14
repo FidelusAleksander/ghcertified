@@ -8,4 +8,3 @@ title: "Pergunta 099"
 1. [ ] segredos maiores que 48 KB não podem ser armazenados
 1. [x] criptografar e armazenar segredos no repositório, mas manter a frase de descriptografia como um segredo
 1. [ ] armazenar segredos grandes diretamente como segredos do repositório para evitar limitações
-

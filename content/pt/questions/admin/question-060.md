@@ -8,4 +8,3 @@ title: "Pergunta 060"
 1. [ ] Gerente de projetos, Contribuidor, Visualizador
 1. [ ] Proprietário do repositório, Colaborador do repositório
 1. [ ] Gerente de cobrança, Gerente de segurança, Gerente de aplicativos
-

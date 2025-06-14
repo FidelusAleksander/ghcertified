@@ -9,4 +9,3 @@ question: "O que significa `CVSS`?"
 1. [ ] `Code Verification Security System`
 1. [ ] `Critical Vulnerability Scanning Service`
 1. [ ] `Cybersecurity Validation Scoring Scheme`
-

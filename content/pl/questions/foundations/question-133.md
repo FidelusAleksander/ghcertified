@@ -13,4 +13,3 @@ draft: false
   > Brakuje tu operatora zakresu (`>`) dla gwiazdek, a `name:docker` nie jest poprawną składnią.  
 1. [ ] `topic:docker stars:>100 in:readme`  
   > To wyszukuje w tematach lub plikach readme, a nie w nazwie repozytorium.  
-

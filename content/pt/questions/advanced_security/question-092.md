@@ -9,4 +9,3 @@ question: "Como você pode habilitar os recursos do GitHub Advanced Security par
 > Essa é uma opção ao usar o GitHub Enterprise Server
 1. [ ] Solicitando uma atualização ao suporte do GitHub
 1. [ ] Na página de administração do site da sua conta empresarial
-

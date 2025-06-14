@@ -8,4 +8,3 @@ title: "Pergunta 070"
 1. [ ] Alterar suas senhas regularmente
 1. [ ] Desabilitar o acesso de push ao repositório
 1. [ ] Usar `git add .` antes de todos os commits
-

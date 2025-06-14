@@ -8,4 +8,3 @@ title: "Pergunta 075"
 1. [ ] 60 solicitações por hora
 1. [ ] 15.000 solicitações por hora
 1. [ ] 1.000 solicitações por hora
-

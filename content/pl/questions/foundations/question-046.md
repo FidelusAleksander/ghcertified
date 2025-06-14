@@ -9,4 +9,3 @@ question: "Czym jest CodeQL?"
 1. [ ] Język programowania
 1. [ ] Edytor tekstu
 1. [ ] System kontroli wersji
-

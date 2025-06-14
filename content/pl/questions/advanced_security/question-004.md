@@ -9,4 +9,3 @@ question: "Które narzędzie pomaga utrzymać zależności repozytorium w aktual
 1. [ ] Security Advisories
 1. [ ] CodeQL
 1. [ ] GitHub Actions
-

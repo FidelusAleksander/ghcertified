@@ -9,4 +9,3 @@ title: "Questão 074"
 - [x] Token de Acesso do Usuário para um aplicativo GitHub
 - [ ] Token IoT para um dispositivo IoT
 - [ ] Token de Acesso Efêmero para acesso temporário
-

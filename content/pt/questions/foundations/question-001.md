@@ -10,4 +10,3 @@ title: "Pergunta 001"
 - [x] Contas empresariais
 - [ ] Contas compartilhadas
 - [ ] Contas corporativas
-

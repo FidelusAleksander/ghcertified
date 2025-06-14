@@ -9,4 +9,3 @@ question: "Como você referencia um segredo armazenado no GitHub Secrets em um f
 1. [ ] ${{ secret.SECRET_NAME }}
 1. [ ] ${{ env.SECRET_NAME }}
 1. [ ] ${{ config.SECRET_NAME }}
-

@@ -12,4 +12,3 @@ title: "Pergunta 007"
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Projetos
-

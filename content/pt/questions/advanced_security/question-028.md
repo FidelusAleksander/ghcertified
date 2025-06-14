@@ -10,4 +10,3 @@ question: "Em que formato você pode exportar o gráfico de dependência do GitH
 1. [ ] JSON
 1. [ ] XML
 1. [ ] CSV
-

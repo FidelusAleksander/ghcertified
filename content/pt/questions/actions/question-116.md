@@ -8,4 +8,3 @@ title: "Pergunta 116"
 - [x] Quando a execução do fluxo de trabalho tem duas semanas
 - [ ] Quando a execução do fluxo de trabalho tem 10 dias
 - [ ] Quando a execução do fluxo de trabalho está em andamento
-

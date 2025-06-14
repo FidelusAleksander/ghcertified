@@ -9,4 +9,3 @@ title: "Pergunta 104"
 1. [ ] usar apenas letras maiúsculas para nomes de variáveis de ambiente
 1. [ ] ignorar a sensibilidade a maiúsculas e minúsculas, pois o GitHub Actions lida com isso automaticamente
 1. [ ] depender do comportamento do sistema operacional em uso
-

@@ -12,4 +12,3 @@ question: "Na którym commicie i gałęzi uruchamiają się zaplanowane przepły
 1. [x] Zaplanowane przepływy pracy uruchamiają się na najnowszym commicie na domyślnej gałęzi repozytorium.
 1. [ ] Zaplanowane przepływy pracy uruchamiają się na najnowszym commicie na gałęzi main.
    > najnowszy commit jest prawidłowy, ale gałąź main nie
-

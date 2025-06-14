@@ -12,4 +12,3 @@ draft: false
 - [x] Nome de exibição do Codespace  
 - [ ] Regras de proteção de branch do repositório  
 - [ ] Políticas em nível de organização  
-

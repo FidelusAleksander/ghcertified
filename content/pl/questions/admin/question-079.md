@@ -8,4 +8,3 @@ title: "Pytanie 079"
 1. [ ] Właściciele organizacji
 1. [ ] Menedżerowie bezpieczeństwa
 1. [ ] Moderatorzy organizacji
-

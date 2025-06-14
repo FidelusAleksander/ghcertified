@@ -9,4 +9,3 @@ question: "Qual dessas ferramentas serve como um par programador de IA que ofere
 1. [ ] GitHub AI Aid
 1. [ ] GitHub Partner
 1. [ ] GitHub Assistant
-

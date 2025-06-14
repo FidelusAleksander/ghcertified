@@ -8,4 +8,3 @@ title: "Pytanie 098"
 1. [ ] nie jest to możliwe w GitHub Actions
 1. [ ] użyć on: schedule: weekdays jako wyzwalacza zdarzeń
 1. [x] użyć on: schedule: cron jako wyzwalacza zdarzeń
-

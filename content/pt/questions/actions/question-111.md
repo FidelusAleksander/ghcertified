@@ -8,4 +8,3 @@ title: "Pergunta 111"
 1. [ ] `issues.comment`
 1. [ ] `issues`
 1. [ ] `comment`
-

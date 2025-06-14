@@ -8,4 +8,3 @@ title: "Pytanie 061"
 1. [ ] Read
 1. [ ] Write
 1. [ ] Maintain
-

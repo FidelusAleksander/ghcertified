@@ -9,4 +9,3 @@ question: "Co robi słowo kluczowe `matrix` w przepływie pracy GitHub Actions?"
 1. [ ] Ustawia zmienne środowiskowe dla zadania
 1. [ ] Wyzwala przepływy pracy na podstawie harmonogramu
 1. [ ] Definiuje sekrety dla przepływu pracy
-

@@ -9,4 +9,3 @@ question: "Em quais níveis as variáveis de ambiente podem ser definidas? (Esco
 - [x] Nível de job
 - [x] Nível de step
 - [ ] Nível de action
-

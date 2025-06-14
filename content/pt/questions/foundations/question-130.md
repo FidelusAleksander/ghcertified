@@ -12,4 +12,3 @@ draft: false
 1. [ ] Uma conta pessoal só pode ser acessada via chaves SSH, enquanto uma conta de organização só pode ser acessada via senhas.  
 1. [ ] Uma conta de organização só pode ser criada se você tiver um plano GitHub Enterprise.  
   > Organizações estão disponíveis nos planos Free, Team ou Enterprise.
-

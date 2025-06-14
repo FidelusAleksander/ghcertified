@@ -9,4 +9,3 @@ question: "Która funkcja GitHub Advanced Security pozwala znaleźć, ocenić i 
 1. [ ] Alerty Dependabot
 1. [ ] Polityki bezpieczeństwa
 1. [ ] Porady dotyczące bezpieczeństwa
-

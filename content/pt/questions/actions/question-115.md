@@ -8,4 +8,3 @@ title: "Pergunta 115"
 1. [ ] read
 1. [ ] admin
 1. [ ] owner
-

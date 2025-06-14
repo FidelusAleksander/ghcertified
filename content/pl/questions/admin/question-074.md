@@ -9,4 +9,3 @@ title: "Pytanie 074"
 - [x] User Access Token for a GitHub App
 - [ ] IoT Token for an IoT device
 - [ ] Ephemeral Access Token for temporary access
-

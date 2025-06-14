@@ -8,4 +8,3 @@ title: "Pytanie 035"
 1. [ ] Sprawdzanie formatowania i stylu kodu
 1. [ ] Automatyczne przeglądanie pull requestów
 1. [ ] Synchronizowanie kodu z serwerami produkcyjnymi
-

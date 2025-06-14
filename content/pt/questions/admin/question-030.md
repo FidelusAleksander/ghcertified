@@ -8,4 +8,3 @@ title: "Questão 030"
 1. [ ] Uma plataforma de desenvolvimento de software baseada na nuvem para projetos de código aberto
 1. [ ] Uma plataforma para desenvolvedores individuais hospedarem projetos pessoais
 1. [ ] Um serviço para implementar e gerenciar aplicações em contêineres
-

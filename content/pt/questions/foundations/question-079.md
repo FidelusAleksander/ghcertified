@@ -10,4 +10,3 @@ question: "Quais são as diferentes opções de implantação para o GitHub Ente
 - [ ] GitHub Enterprise Team
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
-

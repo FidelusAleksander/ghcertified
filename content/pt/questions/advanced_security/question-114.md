@@ -8,4 +8,3 @@ question: "O que significa `CWE`?"
 1. [ ] `Cybersecurity Weakness Enumeration`
 1. [ ] `Code Wrapping Engine`
 1. [ ] `Critical Web Elements`
-

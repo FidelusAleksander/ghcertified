@@ -11,4 +11,3 @@ question: "Quais desses layouts estão disponíveis no GitHub Projects? (Escolha
 - [ ] Layout de scrum
 - [ ] Layout ágil
 - [ ] Layout de projeto
-

@@ -8,4 +8,3 @@ title: "Pergunta 042"
 1. [ ] Membro da equipe
 1. [ ] Colaborador externo
 1. [ ] Contribuidor do repositório
-

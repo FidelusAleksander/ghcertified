@@ -9,4 +9,3 @@ question: "Które z tych zastosowań jest powszechne dla GitHub Actions?"
 1. [ ] Dodanie przycisku sponsoringu do Twojego projektu
 1. [ ] Przetwarzanie i analiza dużych zbiorów danych
 1. [ ] Trenowanie modeli uczenia maszynowego
-

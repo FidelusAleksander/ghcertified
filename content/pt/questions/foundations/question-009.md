@@ -12,4 +12,3 @@ question: "Quais são as diferentes opções que permitem automatizar operaçõe
 - [ ] Gráficos do GitHub
 - [ ] GitHub Dependabot
 - [ ] Itens do projeto
-

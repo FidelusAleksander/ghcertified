@@ -10,4 +10,3 @@ draft: false
 1. [ ] GitHub Actions  
 1. [ ] GitHub Projects  
 1. [ ] GitHub Discussions  
-

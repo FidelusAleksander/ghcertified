@@ -8,4 +8,3 @@ title: "Pytanie 097"
 1. [ ] szukając cache w innych repozytoriach
 1. [x] automatycznie tworząc nowy cache, jeśli zadanie zakończy się pomyślnie
 1. [ ] przerywając działanie workflow w przypadku braku trafienia w cache
-

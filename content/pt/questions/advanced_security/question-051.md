@@ -9,4 +9,3 @@ question: "Preencha o espaço em branco: `O GitHub __________ é um recurso que 
 1. [ ] Dependency Graph
 1. [ ] Security Advisories
 1. [ ] Vulnerability Detection
-

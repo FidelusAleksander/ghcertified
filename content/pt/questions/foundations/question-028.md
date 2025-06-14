@@ -11,4 +11,3 @@ question: "Quais recursos do GitHub permitem que os contribuidores de repositór
 - [ ] GitHub Dependabot
 - [ ] GitHub Remote
 - [ ] GitHub Online
-

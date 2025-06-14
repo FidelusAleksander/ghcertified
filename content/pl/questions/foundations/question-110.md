@@ -12,4 +12,3 @@ question: "Jakie są różne plany cenowe GitHub dla kont osobistych? (Wybierz d
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
-

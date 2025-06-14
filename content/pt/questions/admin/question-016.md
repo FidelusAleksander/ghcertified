@@ -11,4 +11,3 @@ title: "Pergunta 016"
 - [ ] Google Identity Platform
 - [ ] Auth0
 - [ ] Keycloak
-

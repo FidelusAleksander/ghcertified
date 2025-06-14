@@ -8,4 +8,3 @@ question: "Como é calculado o uso de assentos para o GitHub Copilot no nível e
 1. [ ] Número total de commits × Número de desenvolvedores ativos
 1. [ ] Número de sugestões de código × Número de conclusões aceitas
 1. [ ] Tamanho total do repositório × Número de organizações
-

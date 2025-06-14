@@ -13,4 +13,3 @@ draft: false
 1. [ ] Funkcja, która uruchamia menedżery haseł innych firm na Twoim kodzie, aby bezpiecznie przechowywać tajemnice.  
 1. [x] Funkcja, która przeszukuje repozytoria pod kątem znanych formatów tajemnic, aby zapobiec przypadkowemu ujawnieniu danych wrażliwych.  
   > **Poprawne**. Skanowanie tajemnic wykrywa tokeny, klucze i inne poświadczenia, aby pomóc unikać wycieków.  
-

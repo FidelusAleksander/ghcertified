@@ -8,4 +8,3 @@ title: "Questão 047"
 1. [ ] Gerentes de projetos, Contribuidores, Observadores, Consultores externos
 1. [ ] Administradores de sistema, Gerentes de banco de dados, Suporte de TI, Auditores externos
 1. [ ] Desenvolvedores líderes, Desenvolvedores júnior, Desenvolvedores sênior, Proprietários de projetos
-

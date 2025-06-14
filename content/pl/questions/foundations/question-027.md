@@ -9,4 +9,3 @@ question: "Która funkcja GitHub umożliwia tworzenie prekonfigurowanych środow
 1. [ ] GitHub Docker
 1. [ ] GitHub Copilot
 1. [ ] GitHub DevEnv
-

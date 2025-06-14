@@ -12,4 +12,3 @@ draft: false
 1. [ ] Konto osobiste można uzyskać wyłącznie za pomocą kluczy SSH, natomiast konto organizacji wyłącznie za pomocą haseł.  
 1. [ ] Konto organizacji można utworzyć jedynie w ramach planu GitHub Enterprise.  
   > Konta organizacji są dostępne w planach Free, Team lub Enterprise.
-

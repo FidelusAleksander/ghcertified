@@ -8,4 +8,3 @@ title: "Questão 012"
 1. [ ] usar a palavra-chave `needs` no trabalho A para criar essa dependência
 1. [ ] usar a palavra-chave `requires` no trabalho B para criar essa dependência
 1. [ ] usar a palavra-chave `requires` no trabalho A para criar essa dependência
-

@@ -8,4 +8,3 @@ title: "Pergunta 079"
 1. [ ] Proprietários da organização
 1. [ ] Gerentes de segurança
 1. [ ] Moderadores da organização
-

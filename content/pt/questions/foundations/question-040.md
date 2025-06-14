@@ -9,4 +9,3 @@ question: "Onde você pode desativar recursos do repositório, como issues, wiki
 1. [ ] No arquivo de configuração `.github/settings.yml`
 1. [ ] Esses recursos não podem ser desativados
 1. [ ] Nas configurações da sua conta
-

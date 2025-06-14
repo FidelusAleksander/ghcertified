@@ -8,4 +8,3 @@ question: "Qual das opções a seguir pode ser usada para limitar o número de j
 1. [ ] limit
 1. [ ] max-jobs
 1. [ ] parallelism
-

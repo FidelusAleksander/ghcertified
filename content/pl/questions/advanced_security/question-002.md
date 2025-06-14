@@ -8,4 +8,3 @@ question: "Co oznacza termin `shifting left` w kontekście bezpieczeństwa?"
 1. [ ] Pisanie kodu w języku, który jest powszechnie używany
 1. [ ] Włączanie praktyk bezpieczeństwa tuż przed uruchomieniem produkcji
 1. [ ] Pisanie kodu bez zwracania uwagi na bezpieczeństwo
-

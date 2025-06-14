@@ -8,4 +8,3 @@ question: "Która z tych funkcji GitHub służy jako elastyczny arkusz kalkulacy
 1. [ ] GitHub Copilot
 1. [ ] GitHub Repository
 1. [ ] GitHub Organization
-

@@ -8,4 +8,3 @@ title: "Pergunta 034"
 1. [ ] Dependências desatualizadas que precisam ser atualizadas
 1. [ ] Erros nos arquivos de configuração de dependências
 1. [ ] Conflitos entre diferentes dependências
-

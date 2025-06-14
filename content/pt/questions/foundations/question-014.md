@@ -9,4 +9,3 @@ question: "Se você frequentemente se depara escrevendo o mesmo conjunto de come
 1. [ ] Modelos de comentário
 1. [ ] Modelos de repositório
 1. [ ] Rótulos
-

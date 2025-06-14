@@ -8,4 +8,3 @@ title: "Pytanie 096"
 1. [ ] `GITHUB_RUNNER_OS`
 1. [ ] `RUNNER_ARCH`
 1. [ ] `RUNNER_NAME`
-

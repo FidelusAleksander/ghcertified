@@ -8,4 +8,3 @@ title: "Pergunta 048"
 1. [ ] Membro
 1. [ ] Gerente de faturamento
 1. [ ] Colaborador externo
-

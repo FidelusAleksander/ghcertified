@@ -8,4 +8,3 @@ title: "Pytanie 019"
 1. [ ] regex
 1. [ ] scheme
 1. [ ] action
-

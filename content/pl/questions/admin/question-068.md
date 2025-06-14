@@ -8,4 +8,3 @@ title: "Pytanie 068"
 1. [ ] Usuń katalog .git
 1. [ ] Utwórz nową gałąź
 1. [ ] Wypchnij wszystkie lokalne zmiany na GitHub
-

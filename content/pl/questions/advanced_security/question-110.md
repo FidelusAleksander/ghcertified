@@ -9,4 +9,3 @@ question: "Narzędzie, które sprawdza, czy pull request wprowadza zależności 
 1. [ ] Dependabot Alerts
 1. [ ] Dependabot Security Updates
 1. [ ] Dependabot Version Updates
-

@@ -9,4 +9,3 @@ title: "Questão 062"
 > Se um segredo com o mesmo nome existir em vários níveis, o segredo no nível mais baixo tem precedência.
 1. [ ] A expressão `${{ secrets.SomeSecret }}` é usada apenas para segredos no escopo do repositório
 1. [ ] Você precisa usar a API do GitHub para acessar segredos no escopo da organização
-

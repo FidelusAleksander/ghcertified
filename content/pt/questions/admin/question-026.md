@@ -11,4 +11,3 @@ title: "Pergunta 026"
 - [ ] Repositórios públicos gratuitos para todos os usuários
 - [ ] Repositórios privados ilimitados para usuários individuais
 - [ ] Revisão automática de código para cada push
-

@@ -8,4 +8,3 @@ title: "Pytanie 045"
 1. [ ] CodeQL API
 1. [ ] GitHub Actions `github/codeql-action`
 1. [ ] GitHub CLI
-

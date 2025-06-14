@@ -8,4 +8,3 @@ title: "Pytanie 001"
 1. [ ] Język programowania
 1. [ ] Edytor tekstu
 1. [ ] System kontroli wersji
-

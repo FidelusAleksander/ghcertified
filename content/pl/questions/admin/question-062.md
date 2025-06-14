@@ -11,4 +11,3 @@ title: "Pytanie 062"
 - [x] Admin (Administrator)
 - [ ] Owner (Właściciel)
 - [ ] Moderator (Moderator)
-

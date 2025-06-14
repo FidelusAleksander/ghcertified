@@ -12,4 +12,3 @@ question: "Quais são os diferentes planos de preços do GitHub para contas de o
 - [ ] Pessoal
 - [ ] Negócios
 - [ ] Avançado
-

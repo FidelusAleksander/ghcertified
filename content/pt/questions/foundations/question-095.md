@@ -11,4 +11,3 @@ question: "Quais são os possíveis status para a revisão de um pull request? (
 - [ ] Fechar
 - [ ] Rejeitar
 - [ ] Aplaudir
-

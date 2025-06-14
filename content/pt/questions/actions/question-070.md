@@ -8,4 +8,3 @@ title: "Pergunta 070"
 1. [ ] `POST /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 1. [ ] `HEAD /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 1. [ ] `GET /repos/{owner}/{repo}/actions/secrets/{secret_name}`
-

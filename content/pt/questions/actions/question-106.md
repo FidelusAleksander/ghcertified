@@ -9,4 +9,3 @@ title: "Pergunta 106"
 1. [ ] indicar se ocorreu um acerto no cache
 1. [ ] especificar a localização dos arquivos em cache
 1. [ ] habilitar a funcionalidade de cache entre sistemas operacionais
-

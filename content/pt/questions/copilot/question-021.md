@@ -8,4 +8,3 @@ question: "Qual afirmação descreve corretamente a funcionalidade de comando CL
 1. [ ] Os comandos são executados automaticamente sem confirmação do usuário ao usar 'gh copilot suggest'
 1. [ ] O comando 'gh copilot explain' modifica arquivos do sistema sem mostrar a explicação
 1. [ ] Comandos sugeridos são executados diretamente sem serem copiados para a área de transferência primeiro
-

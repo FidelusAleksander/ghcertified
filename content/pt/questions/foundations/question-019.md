@@ -9,4 +9,3 @@ question: "Qual destes é um caso de uso comum para o GitHub Actions?"
 1. [ ] Adicionar um botão de patrocínio ao seu projeto
 1. [ ] Processamento e análise de grandes volumes de dados
 1. [ ] Treinamento de modelos de machine learning
-

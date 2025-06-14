@@ -7,4 +7,3 @@ question: "Jakie jest znaczenie 'wiadomości dołączonej do commita' w procesie
 1. [ ] Automatycznie scala zmiany z główną gałęzią.
 1. [ ] Tworzy kopię zapasową repozytorium.
 1. [x] Dostarcza podsumowanie wprowadzonych zmian w commicie, pomagając w śledzeniu historii projektu. 
-

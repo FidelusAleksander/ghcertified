@@ -8,4 +8,3 @@ title: "Pytanie 048"
 1. [ ] Członek (Member)
 1. [ ] Menedżer rozliczeń (Billing manager)
 1. [ ] Zewnętrzny współpracownik (Outside collaborator)
-

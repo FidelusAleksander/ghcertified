@@ -9,4 +9,3 @@ question: "Qual recurso do GitHub Advanced Security permite que você encontre, 
 1. [ ] Alertas do Dependabot
 1. [ ] Políticas de segurança
 1. [ ] Avisos de segurança
-

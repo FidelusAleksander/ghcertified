@@ -11,4 +11,3 @@ question: "Jakie są przypadki użycia etykiet?"
 > Nie można przypisać etykiet do wydań
 1. [ ] Przypisywanie etykiet współtwórcom repozytorium w celu wskazania ich roli i uprawnień w projekcie
 > Nie można przypisać etykiet współtwórcom
-

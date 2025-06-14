@@ -8,4 +8,3 @@ title: "Pytanie 038"
 1. [ ] Zarządzanie ustawieniami i uprawnieniami repozytorium
 1. [ ] Planowanie regularnych zadań konserwacyjnych w repozytorium
 1. [ ] Automatyczne scalanie pull requestów
-

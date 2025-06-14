@@ -8,4 +8,3 @@ title: "Pergunta 043"
 1. [ ] Através do uso de single sign-on (SSO) exclusivamente para todos os membros.
 1. [ ] Concedendo permissões de nível de proprietário a todos os membros.
 1. [ ] Limitando a criação de repositórios apenas aos proprietários da organização.
-

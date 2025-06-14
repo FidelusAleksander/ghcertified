@@ -9,4 +9,3 @@ question: "Qual dessas é uma funcionalidade de repositório usada como um fóru
 1. [ ] Wikis
 1. [ ] Gists
 1. [ ] Pull requests
-

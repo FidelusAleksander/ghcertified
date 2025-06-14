@@ -9,4 +9,3 @@ question: "Quais são as diferentes opções de visibilidade do repositório?"
 1. [ ] Pessoal, Público e Interno (somente Enterprise)
 1. [ ] Privado e Público
 1. [ ] Pessoal e Público
-

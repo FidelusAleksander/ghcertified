@@ -8,4 +8,3 @@ title: "Pergunta 032"
 - [x] Ubuntu Linux
 - [x] macOS
 - [ ] Android
-

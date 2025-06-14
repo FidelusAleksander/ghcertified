@@ -9,4 +9,3 @@ question: "Qual palavra-chave permite que você defina variáveis de ambiente em
 1. [ ] vars
 1. [ ] secrets
 1. [ ] config
-

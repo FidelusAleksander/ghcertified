@@ -8,4 +8,3 @@ title: "Pytanie 007"
 - [x] Jedno lub więcej zadań (jobs)
 - [ ] Nazwa workflow
 - [ ] Określone gałęzie, na których workflow będzie działać
-

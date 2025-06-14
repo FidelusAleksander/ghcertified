@@ -12,4 +12,3 @@ question: "Qual(is) o(s) plano(s) de preços comum(ns) do GitHub para contas pes
 1. [ ] Pessoal
 1. [ ] Negócios
 1. [ ] Avançado
-

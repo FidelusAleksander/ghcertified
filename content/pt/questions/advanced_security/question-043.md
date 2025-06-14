@@ -8,4 +8,3 @@ title: "Pergunta 043"
 1. [ ] `version` e `package-ecosystem`
 1. [ ] `assignees` e `directory`
 1. [ ] `updates` e `directory`
-

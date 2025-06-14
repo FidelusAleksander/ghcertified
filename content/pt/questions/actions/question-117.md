@@ -7,4 +7,3 @@ title: "Pergunta 117"
 1. [x] Administradores do repositório
 1. [ ] Qualquer pessoa com permissão de escrita no repositório
 1. [ ] Qualquer pessoa com permissão de leitura no repositório
-

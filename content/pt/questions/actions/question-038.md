@@ -19,4 +19,3 @@ title: "Questão 038"
 > Isso seria o caso se `action_state` fosse escrito para `$GITHUB_OUTPUT`
 1. [ ] `run: echo "$steps.step_one.outputs.action_state"`
 1. [ ] `run: echo "${{ action_state }}"`
-

@@ -11,4 +11,3 @@ title: "Pytanie 092"
 - [x] Docker i obrazy OCI
 - [ ] Poetry dla Python
 - [ ] Cargo dla Rust
-

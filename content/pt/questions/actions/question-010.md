@@ -7,4 +7,3 @@ title: "Pergunta 010"
 1. [ ] variáveis de configuração
 1. [ ] cofre
 1. [ ] variáveis de ambiente
-

@@ -8,4 +8,3 @@ title: "Pergunta 007"
 - [x] Um ou mais jobs
 - [ ] Nome do fluxo de trabalho
 - [ ] Branches definidas nas quais o fluxo de trabalho será executado
-

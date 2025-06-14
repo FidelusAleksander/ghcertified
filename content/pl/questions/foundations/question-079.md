@@ -10,4 +10,3 @@ question: "Jakie są różne opcje wdrożenia dla GitHub Enterprise? (Wybierz dw
 - [ ] GitHub Enterprise Team
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
-

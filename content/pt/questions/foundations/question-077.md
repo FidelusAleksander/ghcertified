@@ -11,4 +11,3 @@ question: "Qual plano de preços do GitHub oferece implantação auto-hospedada 
 1. [ ] Gratuito
 1. [ ] Todos eles
 1. [ ] Nenhum deles
-

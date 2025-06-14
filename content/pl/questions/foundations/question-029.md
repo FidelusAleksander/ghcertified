@@ -8,4 +8,3 @@ question: "Jakie są różne możliwe fazy cyklu życia dla GitHub Codespace?"
 1. [ ] Utworzenie, Usunięcie
 1. [ ] Utworzenie, Zatrzymanie, Usunięcie
 1. [ ] Utworzenie, Odbudowa, Usunięcie
-

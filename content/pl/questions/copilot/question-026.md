@@ -8,4 +8,3 @@ question: "Jakie elementy GitHub Copilot może wykorzystać jako kontekst podcza
 1. [ ] Tylko bieżąca linia kodu edytowana bez żadnego otaczającego kontekstu
 1. [ ] Wyłącznie zewnętrzna dokumentacja z internetu
 1. [ ] Jedynie plik README projektu i nic więcej
-

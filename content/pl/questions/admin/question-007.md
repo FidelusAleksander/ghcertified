@@ -12,4 +12,3 @@ title: "Pytanie 007"
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Projekty
-

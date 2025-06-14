@@ -9,4 +9,3 @@ question: "Qual layout de Projeto do GitHub seria mais adequado para um quadro K
 1. [ ] Layout de tabela
 1. [ ] Layout de roteiro
 1. [ ] Layout ágil
-

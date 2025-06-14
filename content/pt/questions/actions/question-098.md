@@ -8,4 +8,3 @@ title: "Pergunta 098"
 1. [ ] não é possível no GitHub Actions
 1. [ ] usar o gatilho de evento on: schedule: weekdays
 1. [x] usar o gatilho de evento on: schedule: cron
-

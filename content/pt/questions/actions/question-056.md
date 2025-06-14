@@ -8,4 +8,3 @@ title: "Pergunta 056"
 1. [ ] Definindo os revisores necessários no fluxo de trabalho `production`
 1. [ ] Usando regras de proteção de branch
 1. [ ] Aprovações manuais não são suportadas pelo GitHub Actions
-

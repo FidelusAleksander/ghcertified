@@ -11,4 +11,3 @@ question: "Quais são os três conjuntos diferentes de padrões de varredura de 
 - [ ] Padrões de alerta empresarial
 - [ ] Padrões de alerta de código aberto
 - [ ] Padrões de provedores de nuvem
-

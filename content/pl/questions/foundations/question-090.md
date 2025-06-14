@@ -9,4 +9,3 @@ question: "Która z tych funkcji repozytorium jest używana jako forum społeczn
 1. [ ] Wiki
 1. [ ] Gisty
 1. [ ] Żądania ściągnięcia
-

@@ -7,4 +7,3 @@ title: "Pytanie 117"
 1. [x] Administratorzy repozytorium
 1. [ ] Każdy z uprawnieniami zapisu w repozytorium
 1. [ ] Każdy z uprawnieniami odczytu w repozytorium
-

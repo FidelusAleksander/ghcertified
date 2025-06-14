@@ -8,4 +8,3 @@ title: "Pytanie 102"
 1. [ ] `github.repository`
 1. [ ] `github.job`
 1. [ ] `jobs.<job_id>.result`
-

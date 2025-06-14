@@ -8,4 +8,3 @@ title: "Pergunta 097"
 1. [ ] procurando um cache em outros repositórios
 1. [x] criando automaticamente um novo cache se o job for concluído com sucesso
 1. [ ] encerrando o workflow se ocorrer uma falha de cache
-

@@ -8,4 +8,3 @@ question: "Zadania uruchamiane na runnerach macOS hostowanych przez GitHub zuży
 1. [ ] 2x
 1. [ ] 5x
 1. [x] 10x
-

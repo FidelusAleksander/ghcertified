@@ -8,4 +8,3 @@ title: "Pytanie 003"
 1. [ ] GitHub Premium Support
 1. [ ] GitHub Standard Support
 1. [ ] GitHub Community Support
-

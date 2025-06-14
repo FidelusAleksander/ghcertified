@@ -8,4 +8,3 @@ title: "Pergunta 036"
 1. [ ] Sim, sem requisitos adicionais
 1. [ ] Não, está disponível apenas para repositórios públicos
 1. [ ] Não, está disponível apenas para repositórios privados
-

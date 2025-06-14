@@ -9,4 +9,3 @@ question: "Które narzędzie pomaga utrzymać aktualność zależności w repozy
 1. [ ] GitHub Copilot
 1. [ ] CodeQL
 1. [ ] GitHub Actions
-

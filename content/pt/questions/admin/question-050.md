@@ -8,4 +8,3 @@ title: "Pergunta 050"
 1. [ ] Eles podem gerenciar permissões de equipes e configurações de repositórios.
 1. [ ] Criar e excluir todos os repositórios dentro da organização.
 1. [ ] Atribuir e remover proprietários da organização.
-

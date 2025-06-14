@@ -8,4 +8,3 @@ title: "Pytanie 001"
 1. [ ] Firmowe klucze SSH 
 1. [ ] Skonfiguruj OAuth SSO
 1. [ ] Skonfiguruj MFA
-

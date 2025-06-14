@@ -8,4 +8,3 @@ title: "Pytanie 033"
 1. [ ] Nowy język programowania do analizy bezpieczeństwa
 1. [ ] Baza danych używana do przechowywania wyników analizy kodu
 1. [ ] Narzędzie zewnętrzne do statycznej analizy kodu
-

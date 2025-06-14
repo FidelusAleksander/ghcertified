@@ -11,4 +11,3 @@ title: "Pytanie 025"
 > To zdarzenie jest używane do ręcznych wywołań
 1. [ ] workflow_run
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run
-

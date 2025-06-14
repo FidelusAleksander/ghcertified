@@ -8,4 +8,3 @@ question: "Jak obliczana jest liczba użytych miejsc dla GitHub Copilot na pozio
 1. [ ] Całkowita liczba commitów × Liczba aktywnych deweloperów
 1. [ ] Liczba sugestii kodu × Liczba zaakceptowanych podpowiedzi
 1. [ ] Całkowity rozmiar repozytorium × Liczba organizacji
-

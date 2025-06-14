@@ -9,4 +9,3 @@ question: "Qual é o shell padrão usado pelos runners do GitHub Actions no Wind
 1. [ ] sh
 1. [x] powershell
 1. [ ] cmd
-

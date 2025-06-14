@@ -5,6 +5,4 @@ repos:
     rev: v5.0.0
     hooks:
       - id: check-yaml
-      - id: end-of-file-fixer
-        exclude: \.svg$
       - id: check-toml

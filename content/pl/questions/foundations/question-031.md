@@ -11,4 +11,3 @@ question: "Które z poniższych stwierdzeń dotyczących cyklu życia GitHub Cod
 - [ ] Jeśli utworzysz kolejny Codespace na gałęzi, która miała już działający Codespace, oryginalny Codespace zostanie usunięty.
 - [ ] Jeśli zamkniesz kartę przeglądarki, na której działał Codespace, Codespace zostanie automatycznie zatrzymany.
 > Zamknięcie karty przeglądarki nie zatrzymuje Codespace, a procesy kontynuują działanie. Jeśli tylko zamknąłeś kartę, Codespace zatrzyma się po osiągnięciu okresu bezczynności.
-

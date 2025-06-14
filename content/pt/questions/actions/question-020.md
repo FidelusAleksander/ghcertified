@@ -8,4 +8,3 @@ title: "Questão 020"
 1. [ ] manual_dispatch
 1. [ ] workflow_trigger
 1. [ ] manual_trigger
-

@@ -8,4 +8,3 @@ title: "Pergunta 068"
 1. [ ] Excluir o diretório .git
 1. [ ] Criar um novo branch
 1. [ ] Enviar todas as alterações locais para o GitHub
-

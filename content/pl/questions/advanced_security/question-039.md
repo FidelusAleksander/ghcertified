@@ -8,4 +8,3 @@ title: "Pytanie 039"
 1. [ ] JavaScript/TypeScript
 1. [ ] C/C++
 1. [ ] Python
-

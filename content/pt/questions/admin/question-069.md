@@ -8,4 +8,3 @@ title: "Questão 069"
 1. [ ] Notificar todos os usuários que fizeram fork do repositório
 1. [ ] Alterar a visibilidade do repositório para privado
 1. [ ] Renomear o repositório
-

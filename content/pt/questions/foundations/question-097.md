@@ -9,4 +9,3 @@ question: "Qual recurso do GitHub serve melhor como uma maneira simples de compa
 1. [ ] Wikis
 1. [ ] Issues
 1. [ ] Projects
-

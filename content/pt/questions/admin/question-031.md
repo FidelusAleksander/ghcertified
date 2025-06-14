@@ -8,4 +8,3 @@ title: "Pergunta 031"
 1. [ ] Exclusivamente em ambientes de nuvem privada
 1. [ ] Apenas em servidores gerenciados pelo GitHub
 1. [ ] Diretamente em dispositivos de computação pessoais
-

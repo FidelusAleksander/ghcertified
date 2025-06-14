@@ -8,4 +8,3 @@ question: "Quais elementos o GitHub Copilot pode usar como contexto ao gerar sug
 1. [ ] Apenas a linha de código atual sendo editada, sem nenhum contexto ao redor
 1. [ ] Exclusivamente documentação externa da internet
 1. [ ] Somente o arquivo README do projeto e nada mais
-

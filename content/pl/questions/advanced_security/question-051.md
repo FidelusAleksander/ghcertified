@@ -8,4 +8,3 @@ question: "Uzupełnij zdanie: `GitHub __________ to funkcja, której można uży
 1. [ ] Dependency Graph
 1. [ ] Security Advisories
 1. [ ] Vulnerability Detection
-

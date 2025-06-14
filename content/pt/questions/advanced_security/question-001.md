@@ -8,4 +8,3 @@ title: "Pergunta 001"
 1. [ ] Uma linguagem de programação
 1. [ ] Um editor de texto
 1. [ ] Um sistema de controle de versões
-

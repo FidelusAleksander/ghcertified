@@ -9,4 +9,3 @@ question: "Qual linguagem é usada para escrever comentários em issues e pull r
 1. [ ] HTML
 1. [ ] AsciiDoc
 1. [ ] reStructuredText
-

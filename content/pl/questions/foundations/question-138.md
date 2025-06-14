@@ -7,4 +7,3 @@ question: "Które polecenie Git daje informacje o tym, jak używać Gita?"
 1. [ ] git status
 1. [ ] git init
 1. [x] git help
-

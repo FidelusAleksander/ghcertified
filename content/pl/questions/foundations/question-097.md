@@ -9,4 +9,3 @@ question: "Która z funkcji GitHub najlepiej służy jako prosty sposób na udos
 1. [ ] Wikis
 1. [ ] Issues
 1. [ ] Projects
-

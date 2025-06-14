@@ -9,4 +9,3 @@ question: "Como você pode reutilizar um fluxo de trabalho definido em vários r
 - [x] Usando templates de fluxo de trabalho
 - [ ] Criando uma ação reutilizável
 - [x] Definindo o fluxo de trabalho em um repositório central
-

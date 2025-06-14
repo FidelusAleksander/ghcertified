@@ -9,4 +9,3 @@ title: "Pergunta 037"
 1. [ ] `echo "DOG=PET" >> "$GITHUB_OUTPUT"`
 1. [ ] `gh set-output "DOG=PET"`
 1. [ ] `gh set-output "PET=DOG"`
-

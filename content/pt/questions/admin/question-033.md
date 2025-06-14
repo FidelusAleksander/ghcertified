@@ -8,4 +8,3 @@ title: "Pergunta 033"
 1. [ ] Apenas através do acesso direto ao console do servidor
 1. [ ] Exclusivamente via interface web do GitHub.com
 1. [ ] Apenas através de ferramentas de gerenciamento de terceiros
-

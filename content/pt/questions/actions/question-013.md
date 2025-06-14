@@ -7,4 +7,3 @@ title: "Pergunta 013"
 1. [x] os jobs que dependem do job A são ignorados
 1. [ ] os jobs que dependem do job A falham
 1. [ ] o fluxo de trabalho cancela imediatamente todos os outros jobs
-

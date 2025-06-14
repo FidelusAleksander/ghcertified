@@ -8,4 +8,3 @@ title: "Pergunta 061"
 1. [ ] Leitura
 1. [ ] Escrita
 1. [ ] Manutenção
-
