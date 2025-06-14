@@ -1,4 +1,5 @@
-name: Translate All Content
+name: Translate All Content Files
+run-name: Translate ${{ inputs.content_path }} to ${{ inputs.language_name }}
 
 on:
   workflow_dispatch:
@@ -8,6 +9,20 @@ on:
         required: false
         default: "content/en"
         type: string
+      language_code:
+        description: "Language code to translate to"
+        required: true
+        type: choice
+        options:
+          - pt
+          - pl
+      language_name:
+        description: "Language name"
+        required: true
+        type: choice
+        options:
+          - Portuguese
+          - Polish
 
 permissions:
   contents: write
@@ -33,14 +48,11 @@ jobs:
     needs: prepare
     strategy:
       matrix:
-        language:
-          # [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }]
-          [{ code: "pl", name: "Polish" }]
         file: ${{ fromJSON(needs.prepare.outputs.files) }}
       max-parallel: 1
       fail-fast: true
     uses: ./.github/workflows/translate-file.yml
     with:
       file: ${{ matrix.file }}
-      language_code: ${{ matrix.language.code }}
-      language_name: ${{ matrix.language.name }}
+      language_code: ${{ inputs.language_code }}
+      language_name: ${{ inputs.language_name }}
