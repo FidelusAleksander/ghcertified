@@ -2,7 +2,7 @@
 title: "Podstawy GitHuba"
 hidden: true
 cascade:
-    exam: "Podstawy GitHuba"
+    exam: "GitHub Foundations"
     Description: "Pytania przykładowe do egzaminu certyfikacyjnego z Podstaw GitHuba."
 ---
 
