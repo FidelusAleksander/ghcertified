@@ -1,5 +1,5 @@
 ---
-title: "Questão 086"
+title: "Pergunta 086"
 question: "Qual das seguintes sintaxes do GitHub Actions é usada para executar múltiplos comandos em um único passo?"
 ---
 
