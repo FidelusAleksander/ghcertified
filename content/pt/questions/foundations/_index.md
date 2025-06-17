@@ -1,9 +1,9 @@
 ---
-title: "GitHub Foundations"
+title: "Fundamentos do GitHub"
 hidden: true
 cascade:
-    exam: "GitHub Foundations"
-    Description: "Questões de simulação para o exame de certificação Fundamentos do GitHub."
+    exam: "Fundamentos do GitHub"
+    Description: "Questões simuladas do exame de certificação em Fundamentos do GitHub."
 ---
 
 ### Fundamentos do GitHub
