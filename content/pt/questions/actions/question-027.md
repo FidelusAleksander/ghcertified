@@ -1,15 +1,14 @@
 ---
-question: "Quais são os casos de uso válidos para usar **defaults**? (Selecione dois.)"
+question: "Quais são os casos de uso válidos para usar **defaults**? (Selecionar dois.)"
 title: "Pergunta 027"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults
 
-- [x] Usar defaults.run no nível do workflow para definir o shell padrão (por exemplo, bash) para todo o workflow
-- [x] Usar defaults.run no nível do job para definir o diretório de trabalho padrão para todos os steps em um único job
-- [ ] Usar defaults.run no nível do step para definir o shell padrão (por exemplo, bash) para aquele único step  
-> defaults.run só pode ser definido no nível do workflow ou do job
-- [ ] Usar defaults.env no nível do workflow para definir variáveis de ambiente padrão para todo o workflow  
+- [x] Usar defaults.run no nível de fluxo de trabalho para definir o shell padrão (ex.: bash) para um fluxo de trabalho inteiro
+- [x] Usar defaults.run no nível de job para definir o diretório de trabalho padrão para todas as etapas em um único job
+- [ ] Usar defaults.run no nível de etapa para definir o shell padrão (ex.: bash) para aquela etapa única  
+> defaults.run só pode ser configurado no nível de fluxo de trabalho ou de job
+- [ ] Usar defaults.env no nível de fluxo de trabalho para definir variáveis de ambiente padrão para um fluxo de trabalho inteiro  
 > Não existe defaults.env
-- [ ] Usar defaults.env no nível do job para definir variáveis de ambiente padrão para todos os steps em um único job  
-> Não existe defaults.env
+- [ ] Usar defaults
