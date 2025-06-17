@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 078"
-question: "Sob qual plano de preços do GitHub você pode criar um número ilimitado de repositórios públicos?"
+question: "Em qual plano de preços do GitHub você pode criar um número ilimitado de repositórios públicos?"
 ---
 
 
@@ -10,4 +10,4 @@ question: "Sob qual plano de preços do GitHub você pode criar um número ilimi
 1. [ ] Pro
 1. [ ] Team
 1. [ ] Team e Enterprise
-1. [ ] Free
+1. [ ] Gratuíto
