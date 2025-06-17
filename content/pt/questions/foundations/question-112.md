@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 112"
-question: "Qual a sintaxe usada no Markdown do GitHub para criar uma lista de tarefas?"
+question: "Qual a sintaxe usada no GitHub Markdown para criar uma lista de tarefas?"
 ---
 
 
