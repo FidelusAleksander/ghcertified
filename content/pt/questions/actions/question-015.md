@@ -1,5 +1,5 @@
 ---
-question: "Qual definição de trabalho de matriz é sintaticamente correta?"
+question: "Qual definição de job de matriz está sintaticamente correta?"
 title: "Questão 015"
 ---
 
@@ -36,9 +36,4 @@ title: "Questão 015"
 ```
 
 1. [ ] 
-```yaml
-  jobs:
-    matrix:
-      version: [10, 12, 14]
-      os: [ubuntu-latest, windows-latest]
 ```
