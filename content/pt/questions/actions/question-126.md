@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 126"
-question: "Como um job dependente deve referenciar o valor `output1` produzido por um job chamado `job1` anteriormente no mesmo workflow?"
+question: "Como um job dependente deve referenciar o valor `output1` produzido por um job chamado `job1` anteriormente no mesmo fluxo de trabalho?"
 ---
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/passing-information-between-jobs
