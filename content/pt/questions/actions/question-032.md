@@ -1,5 +1,5 @@
 ---
-question: "Quais tipos de runners hospedados no GitHub estão disponíveis para uso? (Selecione três.)"
+question: "Quais tipos de executores hospedados no GitHub estão disponíveis para uso? (Selecione três.)"
 title: "Pergunta 032"
 ---
 
