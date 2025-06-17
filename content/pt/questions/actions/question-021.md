@@ -1,6 +1,6 @@
 ---
-question: "Quais são os possíveis tipos de uma variável de entrada para um fluxo de trabalho acionado manualmente? (Selecione cinco.)"
-title: "Pergunta 021"
+question: "Quais são os tipos possíveis de uma variável de entrada para um fluxo de trabalho acionado manualmente? (Selecione cinco.)"
+title: "Questão 021"
 ---
 
 > https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputsinput_idtype
@@ -11,3 +11,4 @@ title: "Pergunta 021"
 - [x] environment
 - [ ] dropdown
 - [ ] select
+
