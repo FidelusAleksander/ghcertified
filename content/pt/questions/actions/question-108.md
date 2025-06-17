@@ -1,6 +1,7 @@
+```yaml
 ---
-question: "Qual configuração é apropriada para acionar um workflow em eventos de webhook relacionados a ações de check_run?"
-title: "Pergunta 108"
+question: "Qual configuração é apropriada para acionar um fluxo de trabalho para eventos de webhook relacionados a ações de check_run?"
+title: "Questão 108"
 ---
 
 
@@ -32,4 +33,5 @@ on:
 on:
     check_run:
         filter: [requested]
+```
 ```
