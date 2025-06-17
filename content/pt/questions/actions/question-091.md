@@ -9,3 +9,4 @@ question: "Como você pode especificar o sistema operacional para um job no GitH
 1. [x] Usando a palavra-chave runs-on
 1. [ ] Usando a palavra-chave platform
 1. [ ] Usando a palavra-chave env
+
