@@ -1,6 +1,6 @@
 ---
-title: "Pergunta 022"
-question: "Qual dessas ferramentas serve como um par programador de IA que oferece sugestões no estilo de autocompletar enquanto você codifica?"
+title: "Questão 022"
+question: "Qual dessas ferramentas serve como um auxiliar de programação por IA que oferece sugestões no estilo de autocompletar enquanto você programa?"
 ---
 
 
