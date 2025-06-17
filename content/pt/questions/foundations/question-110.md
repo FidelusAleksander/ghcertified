@@ -4,11 +4,11 @@ question: "Quais são os diferentes planos de preços do GitHub para contas pess
 ---
 
 
-> https://docs.github.com/en/get-started/learning-about-github/githubs-plans
-- [x] Gratuito
-- [ ] Equipe
-- [ ] Empresarial
+> https://docs.github.com/pt/get-started/learning-about-github/githubs-plans
+- [x] Gratuíto
+- [ ] Team
+- [ ] Enterprise
 - [x] Pro
 - [ ] Pessoal
-- [ ] Negócios
-- [ ] Avançado
+- [ ] Business
+- [ ] Advanced
