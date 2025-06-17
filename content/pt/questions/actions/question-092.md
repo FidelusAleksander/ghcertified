@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 092"
-question: "Em um fluxo de trabalho do GitHub Actions, como você especifica uma versão específica do Node.js para usar em um job?"
+question: "Em um fluxo de trabalho do GitHub Actions, como especificar uma versão específica do Node.js para usar em um job?"
 ---
 
 
