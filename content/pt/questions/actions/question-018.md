@@ -15,3 +15,4 @@ on:
 1. [ ] o nome da branch de destino começa com `release`
 1. [ ] o nome da branch de origem começa com `release`, mas não termina com `-alpha`
 1. [ ] o nome da branch de origem começa com `release`
+
