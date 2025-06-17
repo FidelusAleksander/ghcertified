@@ -1,5 +1,5 @@
 ---
-question: "Um fluxo de trabalho que possui apenas o gatilho de evento `workflow_dispatch` pode ser acionado usando a API REST do GitHub"
+question: "Um fluxo de trabalho que possui apenas o acionador de evento `workflow_dispatch` pode ser acionado usando a API REST do GitHub"
 title: "Pergunta 022"
 ---
 
