@@ -3,8 +3,7 @@ question: "Você pode usar `permissions` para modificar as permissões do `GITHU
 title: "Pergunta 003"
 ---
 
-
-> https://docs.github.com/pt/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
-- [x] Nível de workflow
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
+- [x] Nível de fluxo de trabalho
 - [x] Nível de job
-- [ ] Nível de step
+- [ ] Nível de etapa
