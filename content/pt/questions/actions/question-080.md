@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 080"
-question: "Qual é a sintaxe correta para definir o diretório para todos os comandos `run` em um workflow?"
+question: "Qual é a sintaxe correta para definir o diretório para todos os comandos `run` em um fluxo de trabalho?"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory
@@ -19,7 +19,7 @@ question: "Qual é a sintaxe correta para definir o diretório para todos os com
             shell: bash
             directory: ./scripts
    ```
-1. [ ] definir `working-directory` dentro de `job`
+1. [ ] definir `working-directory` em `job`
    ```yaml
     defaults:
         run:
@@ -27,11 +27,8 @@ question: "Qual é a sintaxe correta para definir o diretório para todos os com
     job:
         working-directory: ./scripts
    ```
-1. [ ] definir `directory` dentro de `job`
+1. [ ] definir `directory` em `job`
    ```yaml
     defaults:
         run:
-            shell: bash
-    job:
-        directory: ./scripts
-   ```
+
