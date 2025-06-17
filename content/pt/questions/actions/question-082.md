@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 082"
-question: "Como você pode garantir que um job seja executado apenas em um branch específico?"
+question: "Como você pode garantir que um job seja executado apenas em uma branch específica?"
 ---
 
 
