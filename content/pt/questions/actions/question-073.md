@@ -1,5 +1,5 @@
 ---
-question: "Quantos jobs serão executados no seguinte workflow?"
+question: "Quantos jobs serão executados no seguinte fluxo de trabalho?"
 title: "Questão 073"
 ---
 
