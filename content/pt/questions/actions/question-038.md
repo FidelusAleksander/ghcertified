@@ -1,15 +1,15 @@
 ---
-question: "Qual destas é uma maneira de usar `action_state` em `step_two`?"
+question: "Qual dessas é uma maneira de usar `action_state` no `step_two`?"
 title: "Questão 038"
 ---
 
 ```yaml
   steps:
-    - name: Set the value
+    - name: Definir o valor
       id: step_one
       run: |
         echo "action_state=yellow" >> "$GITHUB_ENV"
-    - name: Use the value
+    - name: Usar o valor
       id: step_two
       run: ?
 ```
@@ -18,4 +18,4 @@ title: "Questão 038"
 1. [ ] `run: echo "${{ steps.step_one.outputs.action_state }}"`
 > Isso seria o caso se `action_state` fosse escrito para `$GITHUB_OUTPUT`
 1. [ ] `run: echo "$steps.step_one.outputs.action_state"`
-1. [ ] `run: echo "${{ action_state }}"`
+1. [ ] `run: echo "${{ action_state
