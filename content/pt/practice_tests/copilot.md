@@ -15,7 +15,5 @@ examDisabled: false
 {{% notice style="primary" title="" %}}
 Achou este teste prático útil?
 
-Deixe uma &#x2B50; no [repositório](https://github.com/FidelusAleksander/ghcertified) e considere retribuir à comunidade:
-- [contribuindo](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) com uma ou mais questões de simulado (*leva minutos*)
-
-{{% /notice %}}
+Deixe uma &#x2B50; no [repositório](https://github.com/FidelusAleksander/ghcertified) e considere contribuir com a comunidade ao:  
+- [contribuir](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) com uma
