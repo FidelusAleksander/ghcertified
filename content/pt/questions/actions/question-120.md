@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 120"
-question: "Qual é a sintaxe correta para especificar um script de limpeza em uma ação de container?"
+question: "Qual é a sintaxe correta para especificar um script de limpeza em uma container action?"
 ---
 
 
@@ -36,17 +36,4 @@ question: "Qual é a sintaxe correta para especificar um script de limpeza em um
 1. [ ] 
 ```yaml
     runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      after-entrypoint: 'cleanup.sh'
-```
-
-1. [ ] 
-```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      cleanup: 'cleanup.sh'
-```
+      using
