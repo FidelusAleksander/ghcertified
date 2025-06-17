@@ -38,7 +38,7 @@ jobs:
               in their original form. Maintain Markdown formatting.
 
               For consistency, use the following glossary of technical terms, if a term appears in the glossary, always use the provided translation.:
-              ${{ secrets.PT_GLOSSARY }}
+              ${{ secrets.PL_GLOSSARY }}
 
       - name: Save translation
         id: save-translation
