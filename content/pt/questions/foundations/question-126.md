@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 126"  
-question: "Quais dos seguintes são estados válidos para uma pull request no GitHub? (Escolha quatro.)"  
+question: "Quais dos seguintes são estados válidos para um pull request no GitHub? (Escolha quatro.)"  
 draft: false  
 ---
 
