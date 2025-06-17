@@ -52,6 +52,7 @@ jobs:
       max-parallel: 1
       fail-fast: true
     uses: ./.github/workflows/translate-file.yml
+    secrets: inherit
     with:
       file: ${{ matrix.file }}
       language_code: ${{ inputs.language_code }}
