@@ -8,3 +8,4 @@ title: "Pergunta 063"
 1. [ ] `echo ":debug:Watch out here!"`
 1. [ ] `echo "::debug::message=Watch out here!"`
 1. [ ] `echo "Watch out here!" >> $GITHUB_DEBUG`
+
