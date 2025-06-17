@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 017"
-question: "Qual recurso no GitHub Projects permite gerar gráficos e tabelas de maneira fácil para visualizar o status atual e a progressão histórica do seu projeto?"
+question: "Qual recurso no GitHub Projects permite que você gere gráficos e tabelas facilmente para visualizar o status atual e a progressão histórica do seu projeto?"
 ---
 
 
