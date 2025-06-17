@@ -8,7 +8,7 @@ question: "Quais são as diferentes formas de autenticação de dois fatores ou 
 - [x] Mensagem de texto
 - [ ] Chamada telefônica  
 > Embora mensagens de texto sejam suportadas em alguns países, chamadas telefônicas não são
-- [ ] E-mail
+- [ ] Email
 - [x] Chave de segurança
-- [x] Aplicativo móvel do GitHub
-- [x] Senha temporária baseada em tempo (TOTP)
+- [x] GitHub mobile
+- [x] senha de uso único baseada em tempo (TOTP)
