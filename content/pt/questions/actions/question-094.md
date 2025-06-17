@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 094"
-question: "Qual é o shell padrão usado pelos runners do GitHub Actions no Windows?"
+question: "Qual é o shell padrão usado pelos GitHub Actions em executores Windows?"
 ---
 
 
