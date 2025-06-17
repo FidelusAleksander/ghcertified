@@ -22,12 +22,23 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Translate file
-        uses: FidelusAleksander/ai-translate-action@v1
+        uses: actions/ai-inference@v1.1.0
         id: translate
         with:
-          text-file: ${{ inputs.file }}
-          target-language: ${{ inputs.language_name }}
-          custom-instructions: "Keep technical terms, GitHub nomenclature, code blocks, and Front Matter in their original form. Maintain Markdown formatting."
+          prompt-file: ${{ inputs.file }}
+          system-prompt: |
+            You are a highly skilled ${{ inputs.language_name }} translator.
+            Your responsibilities:
+            - Translate the provided text to ${{ inputs.language_name }}
+            - Preserve the meaning, tone, formatting and style of the original text
+            - Detect the source language automatically
+            - Return only the translation, no explanations or notes
+
+              Keep technical terms, GitHub nomenclature, code blocks, and Front Matter
+              in their original form. Maintain Markdown formatting.
+
+              For consistency, use the following glossary of technical terms, if a term appears in the glossary, always use the provided translation.:
+              ${{ secrets.PT_GLOSSARY }}
 
       - name: Save translation
         id: save-translation
@@ -41,7 +52,7 @@ jobs:
           mkdir -p "$TARGET_DIR"
           echo "$TRANSLATED_TEXT" > "$TARGET_PATH"
         env:
-          TRANSLATED_TEXT: ${{ steps.translate.outputs.translated-text }}
+          TRANSLATED_TEXT: ${{ steps.translate.outputs.response }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
