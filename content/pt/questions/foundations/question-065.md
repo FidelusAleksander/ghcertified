@@ -1,8 +1,7 @@
 ---
-title: "Pergunta 065"
-question: "Qual dessas afirmações descreve melhor um sistema de controle de versão?"
+title: "Questão 065"
+question: "Qual destas afirmações descreve melhor um sistema de controle de versão?"
 ---
-
 
 > https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git
 1. [x] É um sistema que rastreia o histórico de alterações feitas em uma coleção de arquivos.
