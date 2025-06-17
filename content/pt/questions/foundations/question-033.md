@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 033"
-question: "Como você pode personalizar o ambiente que é executado no GitHub Codespaces?"
+question: "Como você pode personalizar o ambiente executado no GitHub Codespaces?"
 ---
 
 
