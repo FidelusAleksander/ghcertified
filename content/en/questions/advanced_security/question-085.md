@@ -4,7 +4,7 @@ question: "Which of these statements regarding viewing the results of a CodeQL a
 ---
 
 
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/managing-code-scanning-alerts-for-your-repository#viewing-the-alerts-for-a-repository
+> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository
 - [x] You need write permission to view a summary of all the alerts for a repository in the Security tab.
 - [x] Anyone with read permission for a repository can see code scanning annotations on pull requests.
 - [ ] You need write permission to view code scanning annotations on pull requests.
