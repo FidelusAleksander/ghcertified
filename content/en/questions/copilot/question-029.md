@@ -1,6 +1,6 @@
 ---
 title: "Question 029"
-question: "Which of the following can be added as context in Chat to add context to your prompt? (Select three)"
+question: "Which of the following can be added as context in Chat to add context to your prompt? (Select three.)"
 ---
 
 
