@@ -8,4 +8,4 @@ question: "Which of the sentences is correct? (Select two.)"
 - [x] Slash commands (such as /tests, /fix or /explain) are a way to concisely tell what you would like to achieve with the prompt.
 - [ ] It is not possible to combine chat participants, commands and chat variables in a single prompt.
 - [ ] Chat participants can only be used to tag other members in the same organization.
-> Chat participants such as @workspace or @vscode are diesigned to provide context about code base, domain or technology, not for tagging other people.
+> Chat participants such as @workspace or @vscode are designed to provide context about code base, domain or technology, not for tagging other people.
