@@ -1,5 +1,5 @@
 ---
-question: "Który z tych sposobów jest prawidłowym ustawieniem parametru wyjściowego `PET` z wartością `DOG` w kroku `step`."
+question: "Która z poniższych odpowiedzi jest poprawnym sposobem ustawienia parametru wyjściowego `PET` z wartością `DOG` w `step`?"
 title: "Pytanie 037"
 ---
 
