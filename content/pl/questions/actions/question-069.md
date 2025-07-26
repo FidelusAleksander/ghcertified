@@ -1,5 +1,5 @@
 ---
-question: "Jak można użyć API GitHub do pobrania logów z uruchomienia workflow?"
+question: "Jak możesz użyć GitHub API do pobrania logów uruchomienia workflow?"
 title: "Pytanie 069"
 ---
 
