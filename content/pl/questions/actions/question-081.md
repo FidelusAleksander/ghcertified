@@ -1,11 +1,11 @@
 ---
 title: "Pytanie 081"
-question: "Jak można ponownie wykorzystać zdefiniowany workflow w wielu repozytoriach? (Wybierz dwie odpowiedzi.)"
+question: "Jak można ponownie użyć zdefiniowanego workflow w wielu repozytoriach? (Wybierz dwie.)"
 ---
 
 
 > https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
-- [ ] Kopiując plik workflow do każdego repozytorium
-- [x] Korzystając z szablonów workflow
-- [ ] Tworząc wielokrotnego użycia akcję (reusable action)
+- [ ] Poprzez skopiowanie pliku workflow do każdego repozytorium
+- [x] Używając szablonów workflow
+- [ ] Tworząc akcję wielokrotnego użytku
 - [x] Definiując workflow w centralnym repozytorium
