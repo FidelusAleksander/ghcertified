@@ -12,6 +12,23 @@ on:
       language_name:
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'File path to translate (e.g., content/en/questions/foundations/example.md)'
+        required: true
+        type: string
+        default: 'content/en/questions/actions/question-029.md'
+      language_code:
+        description: 'Target language code (e.g., pl, pt)'
+        required: true
+        type: string
+        default: 'pl'
+      language_name:
+        description: 'Target language name (e.g., Polish, Portuguese)'
+        required: true
+        type: string
+        default: 'Polish'
 
 jobs:
   translate:
@@ -21,13 +38,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Build System Prompt
+        id: build-system-prompt
+        uses: skills/action-text-variables@v3
+        with:
+          template-file: .github/translation-system-prompt.md
+          template-vars: |
+            targetLanguage: ${{ inputs.language_name }}
+
       - name: Translate file
-        uses: FidelusAleksander/ai-translate-action@v1
+        uses: FidelusAleksander/prompt-action@v1
         id: translate
         with:
-          text-file: ${{ inputs.file }}
-          target-language: ${{ inputs.language_name }}
-          custom-instructions: "Keep technical terms, GitHub nomenclature, code blocks, and Front Matter in their original form. Maintain Markdown formatting."
+          system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
+          prompt-file: ${{ inputs.file }}
 
       - name: Save translation
         id: save-translation
@@ -41,7 +65,7 @@ jobs:
           mkdir -p "$TARGET_DIR"
           echo "$TRANSLATED_TEXT" > "$TARGET_PATH"
         env:
-          TRANSLATED_TEXT: ${{ steps.translate.outputs.translated-text }}
+          TRANSLATED_TEXT: ${{ steps.translate.outputs.text }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
