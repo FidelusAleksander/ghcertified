@@ -9,3 +9,4 @@ question: "Jak odwołać się do sekretu przechowywanego w GitHub Secrets w work
 1. [ ] ${{ secret.SECRET_NAME }}
 1. [ ] ${{ env.SECRET_NAME }}
 1. [ ] ${{ config.SECRET_NAME }}
+
