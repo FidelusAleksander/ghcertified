@@ -1,17 +1,17 @@
 ---
-question: "Sekrety i zmienne konfiguracyjne mogą być przypisane do: (Wybierz trzy.)"
+question: "Sekrety i zmienne konfiguracyjne mogą być przypisane do zakresu: (Wybierz trzy.)"
 title: "Pytanie 050"
 ---
 
 
 > https://docs.github.com/en/actions/using-workflows/sharing-workflows-secrets-and-runners-with-your-organization#sharing-secrets-and-variables-within-an-organization
-- [x] Całej organizacji lub wybranych repozytoriów w organizacji
-- [x] Pojedynczego repozytorium
-- [x] Środowiska w repozytorium
-- [ ] Środowiska współdzielonego pomiędzy wieloma repozytoriami
-> Środowiska nie mogą być współdzielone pomiędzy repozytoriami
-- [ ] Wielu repozytoriów, które nie są częścią organizacji/przedsiębiorstwa
-- [ ] Określonego przepływu pracy w repozytorium
-> Zmienne środowiskowe mogą być przypisane do przepływu pracy, zmienne konfiguracyjne nie
-- [ ] Określonego zadania w przepływie pracy
-> Zmienne środowiskowe mogą być przypisane do przepływu pracy, zmienne konfiguracyjne nie
+- [x] Cała organizacja lub wybrane repository w organizacji
+- [x] Pojedyncze repository
+- [x] Środowisko w repository
+- [ ] Środowisko współdzielone pomiędzy wieloma repository
+> Środowiska nie mogą być współdzielone pomiędzy repository
+- [ ] Wiele repository, które nie są częścią tej samej organizacji/Enterprise
+- [ ] Konkretnego workflow w repository
+> Zmienne środowiskowe mogą być przypisane do workflow, zmienne konfiguracyjne nie
+- [ ] Konkretnego zadania w workflow
+> Zmienne środowiskowe mogą być przypisane do workflow, zmienne konfiguracyjne nie
