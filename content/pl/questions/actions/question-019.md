@@ -1,5 +1,5 @@
 ---
-question: "Uzupełnij puste miejsce: Podczas korzystania z filtrów wyzwalaczy zdarzeń `push` możesz używać wzorców <____>, aby celować w wiele gałęzi"
+question: "Uzupełnij puste miejsce: Podczas korzystania z filtrów wyzwalania zdarzeń `push` możesz używać wzorców <____>, aby skierować działania na wiele gałęzi"
 title: "Pytanie 019"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 019"
 1. [ ] regex
 1. [ ] scheme
 1. [ ] action
+
