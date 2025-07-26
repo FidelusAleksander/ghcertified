@@ -45,7 +45,7 @@ Comece com um curso no Microsoft Learn. Eles abrangem muitos tópicos e são um 
 - [GitHub Learn: GitHub Copilot](https://resources.github.com/learn/pathways/copilot/essentials/essentials-of-github-copilot/)
 
 Outros Recursos Gratuitos
-- [GitHub Skills](https://skills.github.com/) - Cursos interativos do GitHub
+- [GitHub Skills](https://learn.github.com/skills) - Cursos interativos do GitHub
 - [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - Playground de GitHub Actions
 - [ExamPro: Fundamentos do GitHub](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - Curso no YouTube para a Certificação de Fundamentos do GitHub
 - [ExamPro: GitHub Actions](https://www.youtube.com/playlist?list=PLBfufR7vyJJ5cW6kvAqxHyjLJ1MX3H4rX) - Curso no YouTube para a Certificação de GitHub Actions
