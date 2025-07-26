@@ -45,7 +45,7 @@ jobs:
           system-prompt-file: .github/translation-system-prompt.md
           prompt-file: ${{ inputs.file }}
           vars: |
-            targetLanguage=${{ inputs.language_name }}
+            targetLanguage: ${{ inputs.language_name }}
 
       - name: Save translation
         id: save-translation
