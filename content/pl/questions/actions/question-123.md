@@ -1,5 +1,5 @@
 ---
-question: "Co należy dodać do `actions/checkout`, jeśli `my-org/my-private-repo` jest prywatnym repozytorium różniącym się od tego, które zawiera obecny workflow?"
+question: "Co należy dodać do `actions/checkout`, jeśli `my-org/my-private-repo` jest prywatnym repozytorium różniącym się od tego, które zawiera bieżący workflow?"
 title: "Pytanie 123"
 ---
 
@@ -27,7 +27,7 @@ with:
     token: ${{ secrets.MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] Utwórz wejście `MY_ACCESS_TOKEN`
+1. [ ] Utwórz dane wejściowe `MY_ACCESS_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -35,7 +35,7 @@ with:
     token: ${{ MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] Zmienna środowiskowa `GITHUB_TOKEN`
+1. [ ] Zmienną środowiskową `GITHUB_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -43,7 +43,7 @@ with:
     token: $GITHUB_TOKEN
 ```
 
-1. [ ] Pozostaw bez zmian, ponieważ tokeny dostępowe będą przekazywane automatycznie
+1. [ ] Pozostaw bez zmian, ponieważ tokeny dostępu zostaną przekazane automatycznie
 ```yaml
 with:
     repository: my-org/my-private-repo
