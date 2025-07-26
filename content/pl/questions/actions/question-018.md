@@ -1,5 +1,5 @@
 ---
-question: "Ten workflow zostanie uruchomiony dla wszystkich pull requestów, gdzie:"
+question: "Ten workflow uruchomi się we wszystkich pull requestach, gdzie:"
 title: "Pytanie 018"
 ---
 
