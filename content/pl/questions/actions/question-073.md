@@ -1,5 +1,5 @@
 ---
-question: "Ile zadań zostanie wykonanych w poniższym przepływie pracy?"
+question: "Ile zadań zostanie wykonanych w poniższym workflow?"
 title: "Pytanie 073"
 ---
 
@@ -22,3 +22,4 @@ jobs:
 1. [ ] 4
 1. [ ] 6
 1. [ ] 7
+
