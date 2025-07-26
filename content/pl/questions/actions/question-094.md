@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 094"
-question: "Jaka jest domyślna powłoka używana przez GitHub Actions na serwerach Windows?"
+question: "Jaka jest domyślna powłoka używana przez GitHub Actions na Windows runners?"
 ---
 
 
