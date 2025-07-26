@@ -1,5 +1,5 @@
 ---
-question: "Podczas tworzenia niestandardowego GitHub Action musisz przechowywać kod źródłowy w katalogu `.github/workflows`"
+question: "Podczas tworzenia niestandardowej GitHub Action musisz przechowywać kod źródłowy w katalogu `.github/workflows`"
 title: "Pytanie 053"
 ---
 
