@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 126"
-question: "W jaki sposób zależne zadanie powinno odwoływać się do wartości `output1` wygenerowanej przez zadanie o nazwie `job1` wcześniej w tym samym przebiegu działania?"
+question: "W jaki sposób zależne zadanie powinno odwoływać się do wartości `output1` wygenerowanej przez zadanie o nazwie `job1` wcześniej w tym samym workflow?"
 ---
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/passing-information-between-jobs
