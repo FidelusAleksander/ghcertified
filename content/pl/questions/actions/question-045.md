@@ -1,13 +1,13 @@
 ---
-question: "Czego należy użyć do przechowywania raportów pokrycia kodu lub zrzutów ekranu generowanych podczas realizacji przepływu pracy wykonującego testy automatyczne dla repozytorium?"
+question: "Czego należy użyć do przechowywania raportów pokrycia lub zrzutów ekranu generowanych podczas workflow, który wykonuje testy automatyczne dla repository?"
 title: "Pytanie 045"
 ---
 
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#comparing-artifacts-and-dependency-caching
-1. [x] Artefakty
-1. [ ] Bufory
-1. [ ] Pakiety
+1. [x] Artifacts
+1. [ ] Caches
+1. [ ] Packages
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
-1. [ ] Wydania
+1. [ ] Releases
 > https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
