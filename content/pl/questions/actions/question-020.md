@@ -1,5 +1,5 @@
 ---
-question: "Które zdarzenie pozwala na ręczne uruchomienie przepływu pracy z interfejsu użytkownika GitHub?"
+question: "Które zdarzenie pozwala ręcznie uruchomić workflow z interfejsu użytkownika GitHub?"
 title: "Pytanie 020"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 020"
 1. [ ] manual_dispatch
 1. [ ] workflow_trigger
 1. [ ] manual_trigger
+
