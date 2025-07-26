@@ -1,15 +1,15 @@
 ---
-question: "Jakie komponenty można ponownie wykorzystać w ramach organizacji na GitHub? (Wybierz cztery.)"
+question: "Jakie komponenty mogą być ponownie użyte w ramach GitHub Organization? (Wybierz cztery.)"
 title: "Pytanie 072"
 ---
 
-- [x] Sekrety
-- [x] Zmienne konfiguracyjne
-- [x] Samodzielnie hostowane runnery
-- [x] Szablony workflow
-- [ ] Artefakty  
-> Artefakty są używane do zachowania danych po zakończeniu zadania i/lub udostępniania tych danych innemu zadaniu w ramach tego samego workflow.  
+- [x] Secrets
+- [x] Configuration Variables
+- [x] Self Hosted Runners
+- [x] Workflow Templates
+- [ ] Artifacts  
+> Artifacts są używane do przechowywania danych po zakończeniu zadania i/lub dzielenia się tymi danymi z innym zadaniem w ramach tego samego workflow.  
 - [ ] Cache  
-> Cache może być ponownie wykorzystywany w workflowach w ramach jednego repozytorium.  
-- [ ] Zmienne środowiskowe  
-> Zmienne środowiskowe mogą być przypisane do kroku, zadania lub workflow. Nie mogą być udostępniane pomiędzy workflowami/repozytoriami lub organizacjami.  
+> Cache może być używana ponownie w różnych workflows w ramach tego samego repository.  
+- [ ] Environment Variables  
+> Zmienne środowiskowe mogą być powiązane z krokiem, zadaniem lub workflow. Nie mogą być współdzielone między workflows/repositories lub organizations.  
