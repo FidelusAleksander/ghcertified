@@ -1,28 +1,28 @@
 ---
-question: "Aby zapobiec awarii zadania, gdy jeden z kroków zawodzi, można użyć:"
+question: "Aby zapobiec niepowodzeniu zadania, gdy jeden z kroków zawiedzie, możesz użyć:"
 title: "Pytanie 035"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
-1. [x] Flagi `continue-on-error` w kroku, który zawodzi
+1. [x] flagi `continue-on-error` w zawodzącym kroku
 ```yaml
   steps:
       - uses: my-org/failing-action@v1
         continue-on-error: true
 ```
-1. [ ] Flagi `ignore-error` w kroku, który zawodzi
+1. [ ] flagi `ignore-error` w zawodzącym kroku
 ```yaml
   steps:
       - uses: my-org/failing-action@v1
         ignore-error: true
 ```
-1. [ ] Warunku `failure()` w kroku, który zawodzi
+1. [ ] warunku `failure()` w zawodzącym kroku
 ```yaml
   steps:
       - uses: my-org/failing-action@v1
         if: failure()
 ```
-1. [ ] Warunku `always()` w kroku, który zawodzi
+1. [ ] warunku `always()` w zawodzącym kroku
 ```yaml
   steps:
       - uses: my-org/failing-action@v1
