@@ -1,5 +1,5 @@
 ---
-question: "Które zdarzenie jest wywoływane przez akcję webhooka spoza repozytorium?"
+question: "Które zdarzenie jest wyzwalane przez akcję webhooka spoza repozytorium?"
 title: "Pytanie 008"
 ---
 
@@ -9,3 +9,4 @@ title: "Pytanie 008"
 1. [ ] workflow_dispatch
 1. [ ] remote_dispatch
 1. [ ] api_dispatch
+
