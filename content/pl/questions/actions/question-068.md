@@ -4,7 +4,7 @@ title: "Pytanie 068"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets
-1. [x] Ustawić sekret `MY_SECRET` jako zmienną środowiskową na poziomie zadania, a następnie odnieść się do tej zmiennej środowiskowej, aby warunkowo uruchomić ten krok
+1. [x] Ustawić sekret `MY_SECRET` jako zmienną środowiskową na poziomie zadania, a następnie odwołać się do tej zmiennej środowiskowej, aby warunkowo uruchomić ten krok
 ```yaml
   my-job:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ title: "Pytanie 068"
     runs-on: ubuntu-latest
     if: ${{ secrets.MY_SECRET == '' }}
 ```
-> sekrety nie mogą być bezpośrednio odniesione w warunkach `if:`
+> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
 1. [ ] Tworząc następujący warunek na poziomie kroku
 ```yaml
   my-job:
@@ -27,7 +27,7 @@ title: "Pytanie 068"
     steps:
       - if: ${{ secrets.MY_SECRET == '' }}
 ```
-> sekrety nie mogą być bezpośrednio odniesione w warunkach `if:`
+> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
 1. [ ] Tworząc następujący warunek na poziomie kroku
 ```yaml
   my-job:
@@ -35,4 +35,4 @@ title: "Pytanie 068"
     steps:
       - if: ${{ secrets.MY_SECRET }}
 ```
-> sekrety nie mogą być bezpośrednio odniesione w warunkach `if:`
+> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
