@@ -1,5 +1,5 @@
 ---
-question: "Workflows są definiowane w jakim formacie"
+question: "Workflows są definiowane w którym formacie"
 title: "Pytanie 009"
 ---
 
