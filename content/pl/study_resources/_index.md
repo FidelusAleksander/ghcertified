@@ -50,7 +50,7 @@ Zacznij od kursu Microsoft Learn. Obejmują one szeroki zakres materiału i są 
 
 
 Inne darmowe zasoby
-- [GitHub Skills](https://skills.github.com/) - Interaktywne kursy od GitHub
+- [GitHub Skills](https://learn.github.com/skills) - Interaktywne kursy od GitHub
 - [GitHub Actions Hero](https://github-actions-hero.vercel.app/) - Plac zabaw GitHub Actions
 - [ExamPro: Podstawy GitHub](https://www.youtube.com/playlist?list=PLBfufR7vyJJ4uRXqarjPKqxYq4_Pexj1V) - Kurs YouTube dla certyfikatu Podstawy GitHub
 - [ExamPro: GitHub Actions](https://www.youtube.com/playlist?list=PLBfufR7vyJJ5cW6kvAqxHyjLJ1MX3H4rX) - Kurs YouTube dla certyfikatu GitHub Actions

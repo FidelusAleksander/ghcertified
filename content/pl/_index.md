@@ -7,7 +7,7 @@ description: "Przygotuj się do egzaminów certyfikacyjnych GitHub, rozwiązują
 
 ## Motywacja
 
-Ta strona to wspólnotowy projekt mający na celu wspieranie osób przygotowujących się do egzaminów [Certyfikacji GitHub](https://resources.github.com/learn/certifications/).
+Ta strona to wspólnotowy projekt mający na celu wspieranie osób przygotowujących się do egzaminów [Certyfikacji GitHub](https://learn.github.com/certifications).
 
 Zaleca się najpierw zapoznać z listą [zasobów do nauki]({{% relref "study_resources" %}}), a następnie spróbować swoich sił w naszych [testach próbnych stworzonych przez społeczność]({{% relref "practice_tests" %}}).
 

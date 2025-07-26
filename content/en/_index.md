@@ -7,7 +7,7 @@ description: "Prepare for GitHub Certification exams by taking free practice tes
 
 ## Motivation
 
-This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://resources.github.com/learn/certifications/) exams.
+This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://learn.github.com/certifications) exams.
 
 It is recommended to first take a look at the list of [study resources]({{% relref "study_resources" %}}) and follow up with attempting our community made [practice tests]({{% relref "practice_tests" %}}).
 
