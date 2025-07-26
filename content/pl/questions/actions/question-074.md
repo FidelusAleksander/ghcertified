@@ -1,5 +1,5 @@
 ---
-question: "Która z poniższych domyślnych zmiennych środowiskowych zawiera pełną nazwę (np. `octocat/hello-world`) repozytorium, w którym uruchamiane jest workflow?"
+question: "Która z poniższych domyślnych zmiennych środowiskowych zawiera pełną nazwę (np. `octocat/hello-world`) repozytorium, w którym działa workflow?"
 title: "Pytanie 074"
 ---
 
