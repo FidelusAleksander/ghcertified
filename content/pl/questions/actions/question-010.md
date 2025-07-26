@@ -1,9 +1,10 @@
 ---
-question: "Gdzie powinieneś przechowywać poufne dane, takie jak hasła lub certyfikaty, które będą używane w workflowach"
+question: "Gdzie należy przechowywać poufne dane, takie jak hasła czy certyfikaty, które będą używane w workflows?"
 title: "Pytanie 010"
 ---
 
 1. [x] secrets
-1. [ ] zmienne konfiguracyjne
+1. [ ] config variables
 1. [ ] vault
-1. [ ] zmienne środowiskowe
+1. [ ] environment variables
+---
