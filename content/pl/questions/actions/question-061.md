@@ -1,5 +1,5 @@
 ---
-question: "Które z poniższych są domyślnymi zmiennymi środowiskowymi w GitHub Actions? (Wybierz trzy.)"
+question: "Które z poniższych to domyślne zmienne środowiskowe w GitHub Actions? (Wybierz trzy.)"
 title: "Pytanie 061"
 ---
 
