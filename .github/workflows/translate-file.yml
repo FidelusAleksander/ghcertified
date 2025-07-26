@@ -65,7 +65,7 @@ jobs:
           mkdir -p "$TARGET_DIR"
           echo "$TRANSLATED_TEXT" > "$TARGET_PATH"
         env:
-          TRANSLATED_TEXT: ${{ steps.translate.outputs.response }}
+          TRANSLATED_TEXT: ${{ steps.translate.outputs.text }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
