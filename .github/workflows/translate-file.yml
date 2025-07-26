@@ -47,7 +47,7 @@ jobs:
             targetLanguage: ${{ inputs.language_name }}
 
       - name: Translate file
-        uses: actions/ai-inference@v1
+        uses: FidelusAleksander/prompt-action@v1
         id: translate
         with:
           system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
