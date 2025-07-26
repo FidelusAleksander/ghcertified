@@ -1,5 +1,5 @@
 ---
-question: "Jak można zastąpić organizacyjny sekret GitHub `API_KEY` inną wartością podczas pracy w repozytorium? (Wybierz dwie.)"
+question: "Jak można zastąpić tajny klucz na poziomie organizacji GitHub `API_KEY` inną wartością podczas pracy w ramach repozytorium? (Wybierz dwie odpowiedzi.)"
 title: "Pytanie 071"
 ---
 
