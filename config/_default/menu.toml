@@ -13,7 +13,7 @@ weight = 20
 [[shortcuts]]
 name = "<i class='fas fa-fw fa-calendar'></i> Official Site"
 identifier = "Certifications"
-url = "https://resources.github.com/learn/certifications/"
+url = "https://learn.github.com/certifications"
 weight = 30
 
 [[shortcuts]]

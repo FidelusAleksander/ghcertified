@@ -7,7 +7,7 @@ description: "Prepare-se para os exames de Certificação do GitHub fazendo test
 
 ## Motivação
 
-Este site é um projeto colaborativo dedicado a ajudar indivíduos em sua preparação para os exames de [Certificação do GitHub](https://resources.github.com/learn/certifications/).
+Este site é um projeto colaborativo dedicado a ajudar indivíduos em sua preparação para os exames de [Certificação do GitHub](https://learn.github.com/certifications).
 
 Recomenda-se primeiro dar uma olhada na lista de [recursos de estudo]({{% relref "study_resources" %}}) e, em seguida, tentar nossos [testes práticos]({{% relref "practice_tests" %}}) feitos pela comunidade.
 
