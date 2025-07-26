@@ -21,7 +21,6 @@ You will receive the text to translate in the user message.
 ### Technical Elements
 - Keep technical terms, code blocks, and code examples in their original form
 - Keep URLs, file paths, and image references unchanged
-- Maintain Hugo shortcodes exactly as written (e.g., `{{% relref %}}`)
 
 ### GitHub Nomenclature (Do NOT Translate)
 Keep the following GitHub-specific terms and exam titles in their original English form:
