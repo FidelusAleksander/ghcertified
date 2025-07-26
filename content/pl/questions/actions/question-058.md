@@ -1,5 +1,5 @@
 ---
-question: "Przy korzystaniu z GitHub Actions w celu uzyskania dostępu do zasobów jednego z dostawców chmury (takich jak AWS, Azure czy GCP), najbezpieczniejszym i zalecanym sposobem uwierzytelniania jest"
+question: "Korzystając z GitHub Actions do uzyskiwania dostępu do zasobów w jednym z dostawców chmury (takich jak AWS, Azure lub GCP), najbezpieczniejszym i zalecanym sposobem uwierzytelniania jest"
 title: "Pytanie 058"
 ---
 
@@ -7,6 +7,6 @@ title: "Pytanie 058"
 1. [x] Korzystanie z OIDC
 1. [ ] Korzystanie z Vault
 1. [ ] Przechowywanie kluczy dostępu w `secrets`
-> Używanie długotrwałych kluczy dostępu nie jest zalecane ze względu na ryzyko wycieków danych lub ataków, takich jak [iniekcja skryptów](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#understanding-the-risk-of-script-injections)
+> Wykorzystywanie długoterminowych kluczy dostępu nie jest zalecane w przypadku ewentualnych wycieków bezpieczeństwa lub ataków, takich jak [script injection](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#understanding-the-risk-of-script-injections)
 1. [ ] Przechowywanie kluczy dostępu w `variables`
-> Wrażliwe wartości nie powinny być przechowywane w `variables`
+> Żadne wartości wrażliwe nie powinny być przechowywane w `variables`
