@@ -38,14 +38,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Build System Prompt
+        id: build-system-prompt
+        uses: skills/action-text-variables@v3
+        with:
+          template-file: .github/translation-system-prompt.md
+          template-vars: |
+            targetLanguage: ${{ inputs.language_name }}
+
       - name: Translate file
-        uses: FidelusAleksander/prompt-action@v1
+        uses: actions/ai-inference@v1
         id: translate
         with:
-          system-prompt-file: .github/translation-system-prompt.md
+          system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
           prompt-file: ${{ inputs.file }}
-          vars: |
-            targetLanguage: ${{ inputs.language_name }}
 
       - name: Save translation
         id: save-translation
