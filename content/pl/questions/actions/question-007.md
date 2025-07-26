@@ -1,5 +1,5 @@
 ---
-question: "Które komponenty są wymagane dla workflow? (Wybierz dwa.)"
+question: "Jakie komponenty są wymagane dla workflow? (Wybierz dwa.)"
 title: "Pytanie 007"
 ---
 
@@ -7,4 +7,5 @@ title: "Pytanie 007"
 - [x] Jedno lub więcej zdarzeń, które uruchomią workflow
 - [x] Jedno lub więcej zadań (jobs)
 - [ ] Nazwa workflow
-- [ ] Określone gałęzie, na których workflow będzie działać
+- [ ] Zdefiniowane gałęzie, na których workflow będzie działać
+
