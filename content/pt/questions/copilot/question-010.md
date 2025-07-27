@@ -1,5 +1,5 @@
 ---
-title: "Pergunta 010"
+title: "Questão 010"
 question: "Qual das opções a seguir integra o GitHub Copilot Chat com ferramentas externas?"
 ---
 

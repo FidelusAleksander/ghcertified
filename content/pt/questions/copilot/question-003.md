@@ -1,5 +1,5 @@
 ---
-title: "Questão 003"
+title: "Pergunta 003"
 question: "Quais IDEs o GitHub Copilot suporta? (Escolha duas.)"
 ---
 
