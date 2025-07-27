@@ -2,6 +2,7 @@ This repository contains a quiz application for GitHub certification exam prepar
 
 ## Repository Structure
 - Questions are stored as Markdown files in `content/questions/` organized by certification type (actions, admin, advanced_security, foundations, copilot)
+- Content is organized into multiple language directories, but we **only edit content in the `content/en/` directory**. Other language directories are maintained by an external process and should never be modified directly.
 - The site layout and rendering logic is in the `layouts/` as well as in the `themes/hugo-theme-relearn/` directory
 - Static assets like CSS and images are in `static/`
 
