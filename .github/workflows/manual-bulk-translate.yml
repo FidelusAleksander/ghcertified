@@ -1,4 +1,4 @@
-name: Translate All Content Files
+name: Manual Bulk Translate
 run-name: Translate ${{ inputs.content_path }} to ${{ inputs.language_name }}
 
 on:

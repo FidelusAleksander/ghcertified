@@ -1,4 +1,4 @@
-name: Translate Content Files
+name: Auto Translate on Push
 
 on:
   push:
