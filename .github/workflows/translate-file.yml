@@ -12,6 +12,10 @@ on:
       language_name:
         required: true
         type: string
+      branch:
+        required: false
+        type: string
+        default: 'i18n/update-translations'
   workflow_dispatch:
     inputs:
       file:
@@ -29,6 +33,11 @@ on:
         required: true
         type: string
         default: 'Polish'
+      branch:
+        description: 'Target branch for commits (e.g., i18n/update-translations)'
+        required: false
+        type: string
+        default: 'i18n/update-translations'
 
 jobs:
   translate:
@@ -73,4 +82,4 @@ jobs:
           add: "content/${{ inputs.language_code }}/**"
           message: "i18n: translate ${{ inputs.file }} to ${{ inputs.language_name }}"
           push: true
-          new_branch: i18n/update-translations
+          new_branch: ${{ inputs.branch }}

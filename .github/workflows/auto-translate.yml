@@ -1,4 +1,5 @@
-name: Translate Content Files
+name: Auto Translate Content
+run-name: Auto translate content changes from ${{ github.sha }}
 
 on:
   push:
@@ -39,8 +40,7 @@ jobs:
       max-parallel: 1
       matrix:
         language:
-          # [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }]
-          [{ code: "pl", name: "Polish" }]
+          [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }]
 
         file: ${{ fromJSON(needs.detect-changes.outputs.changed_files) }}
     uses: ./.github/workflows/translate-file.yml
@@ -48,6 +48,7 @@ jobs:
       file: ${{ matrix.file }}
       language_code: ${{ matrix.language.code }}
       language_name: ${{ matrix.language.name }}
+      branch: i18n/auto-translate-${{ github.sha }}
 
   create-pr:
     needs: translate
@@ -61,7 +62,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
-            --title "i18n: update translations of changed content" \
-            --body "This PR updates translations for recently changed content." \
+            --title "i18n: auto-translate content changes" \
+            --body "This PR updates translations for recently changed content from commit ${{ github.sha }}." \
             --base master \
-            --head i18n/update-translations
+            --head i18n/auto-translate-${{ github.sha }}

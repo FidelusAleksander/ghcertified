@@ -1,4 +1,4 @@
-name: Translate All Content Files
+name: Manual Bulk Translate
 run-name: Translate ${{ inputs.content_path }} to ${{ inputs.language_name }}
 
 on:
@@ -56,3 +56,4 @@ jobs:
       file: ${{ matrix.file }}
       language_code: ${{ inputs.language_code }}
       language_name: ${{ inputs.language_name }}
+      branch: i18n/bulk-translate-${{ inputs.language_code }}
