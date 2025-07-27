@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 009"
-question: "Qual das seguintes opções descreve como usar a API de Produtividade do GitHub Copilot?"
+question: "Qual das opções a seguir descreve como usar a Productivity API do GitHub Copilot?"
 ---
 
 
@@ -9,3 +9,4 @@ question: "Qual das seguintes opções descreve como usar a API de Produtividade
 1. [ ] Para excluir arquivos específicos
 1. [x] Para coletar métricas de uso dos membros da organização
 1. [ ] Para atualizar automaticamente o Copilot
+
