@@ -1,19 +1,38 @@
 ---
-title: "Przygotuj się do Certyfikacji GitHub"
+title: "Przygotuj się do certyfikacji GitHub"
 type: "home"
-description: "Przygotuj się do egzaminów certyfikacyjnych GitHub, rozwiązując darmowe testy próbne. To nie są zestawy gotowych pytań, lecz zbiór pytań stworzonych przez społeczność dla egzaminów z GitHub Actions, Administracji GitHub, Zaawansowanego Bezpieczeństwa GitHub i Podstaw GitHub!"
+description: "Opanuj certyfikacje GitHub dzięki autentycznym testom praktycznym. Nie baza pytań - prawdziwe pytania stworzone przez społeczność do egzaminów GitHub Actions, Administration, Advanced Security, Foundations i Copilot!"
 
 ---
 
-## Motywacja
 
-Ta strona to wspólnotowy projekt mający na celu wspieranie osób przygotowujących się do egzaminów [Certyfikacji GitHub](https://learn.github.com/certifications).
-
-Zaleca się najpierw zapoznać z listą [zasobów do nauki]({{% relref "study_resources" %}}), a następnie spróbować swoich sił w naszych [testach próbnych stworzonych przez społeczność]({{% relref "practice_tests" %}}).
+{{% notice style="info" %}}
 
 
-## Rozwiązywanie testów próbnych
+Wszystkie pytania są oryginalnymi treściami stworzonymi, aby pomóc Ci przygotować się do [oficjalnych certyfikacji GitHub](https://learn.github.com/certifications). 
 
-[**Kliknij tutaj**]({{% relref "practice_tests" %}}), aby spróbować naszych darmowych i otwartoźródłowych testów próbnych, które zostały zaprojektowane w celu symulacji prawdziwego doświadczenia egzaminacyjnego, co pozwoli Ci ocenić swoje umiejętności i zwiększyć pewność siebie.
+To **NIE JEST** strona z bazą pytań. Zobacz nasz [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) przewodnik.
 
-{{< figure src="/images/practice_tests.gif" alt="Testy Próbne" >}}
+
+{{% /notice %}}
+
+
+## 🎯 Testy Praktyczne
+
+[**Rozpocznij testy praktyczne teraz**]({{% relref "practice_tests" %}}) - Przeżyj realistyczne symulacje egzaminacyjne, które budują pewność siebie i identyfikują obszary do poprawy.
+
+{{< figure src="/images/practice_tests.gif" alt="Interaktywny interfejs testów praktycznych" >}}
+
+---
+
+
+
+### 👥 Stworzone przez społeczność
+
+
+
+Te pytania praktyczne zostały stworzone przez pasjonatów użytkowników GitHub i entuzjastów certyfikacji z całego świata. 
+
+**Ogromne ❤️ DZIĘKUJEMY ❤️ dla wszystkich, którzy pomogli stworzyć te cenne zasoby edukacyjne!** 
+
+[![Contributors](https://contrib.rocks/image?repo=FidelusAleksander/ghcertified)](https://github.com/FidelusAleksander/ghcertified/graphs/contributors)
