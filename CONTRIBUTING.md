@@ -21,7 +21,13 @@ A Codespace is an online development environment that runs in the cloud and is p
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/FidelusAleksander/ghcertified)
 
-Once the Codespace installation is complete and you can go to forward port tab to see the link to the website running locally and start making [content changes](#content-changes).
+Once the Codespace installation is complete you can start making [content changes](#content-changes). 
+
+Start the Hugo server to see your changes live at http://localhost:1313
+
+  ```bash
+  hugo server
+  ```
 
 ### Option 2: Local setup (traditional)
 If you've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/ghcertified) but instead want to run the project locally, follow the steps below.

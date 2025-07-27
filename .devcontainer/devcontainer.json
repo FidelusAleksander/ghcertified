@@ -35,6 +35,5 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "git submodule update --init --recursive --depth 1",
-	"postStartCommand": "nohup bash -c 'hugo server &'"
+	"postCreateCommand": "git submodule update --init --recursive --depth 1"
 }

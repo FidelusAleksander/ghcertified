@@ -6,16 +6,6 @@ description: "Master GitHub Certifications with authentic practice tests. Not qu
 ---
 
 
-{{% notice style="info" %}}
-
-
-All questions are original content created to help you prepare for [official GitHub Certifications](https://learn.github.com/certifications). 
-
-This is **NOT** a question dump site. See our [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) guide.
-
-
-{{% /notice %}}
-
 
 ## 🎯 Practice Tests
 
@@ -30,10 +20,10 @@ This is **NOT** a question dump site. See our [CONTRIBUTING](https://github.com/
 ### 👥 Built by the Community
 
 
-
-These practice questions are contributed by passionate GitHub users and certification enthusiasts from around the world. 
+All questions were [created](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) by the community to help you prepare for [official GitHub Certifications](https://learn.github.com/certifications). 
 
 **A big ❤️ THANK YOU ❤️ to everyone who has helped create these valuable learning resources!** 
 
 [![Contributors](https://contrib.rocks/image?repo=FidelusAleksander/ghcertified)](https://github.com/FidelusAleksander/ghcertified/graphs/contributors)
 
+> This is **NOT** a question dump site from official GitHub Exams! See the [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) guide
