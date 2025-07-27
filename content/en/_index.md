@@ -1,20 +1,39 @@
 ---
 title: "Prepare for GitHub Certifications"
 type: "home"
-description: "Prepare for GitHub Certification exams by taking free practice tests. These are not questions dumps but a set of community made questions for GitHub Actions, GitHub Administration, GitHub Advanced Security and GitHub Foundations exams!"
+description: "Master GitHub Certifications with authentic practice tests. Not question dumps - genuine community-created questions for GitHub Actions, Administration, Advanced Security, Foundations, and Copilot exams!"
 
 ---
 
-## Motivation
 
-This website is a collaborative project dedicated to assisting individuals in their preparation for the [GitHub Certification](https://learn.github.com/certifications) exams.
-
-It is recommended to first take a look at the list of [study resources]({{% relref "study_resources" %}}) and follow up with attempting our community made [practice tests]({{% relref "practice_tests" %}}).
+{{% notice style="info" %}}
 
 
-## Practice test taking
+All questions are original content created to help you prepare for [official GitHub Certifications](https://learn.github.com/certifications). 
+
+This is **NOT** a question dump site. See our [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) guide.
 
 
-[**Click here**]({{% relref "practice_tests" %}}) to attempt our free and open-source practice tests, which are designed to simulate the real exam experience, allowing you to assess your skills and boost your confidence.
+{{% /notice %}}
 
-{{< figure src="/images/practice_tests.gif" alt="Practice Tests" >}}
+
+## 🎯 Practice Tests
+
+[**Take Practice Tests Now**]({{% relref "practice_tests" %}}) - Experience realistic exam simulations that build confidence and identify areas for improvement.
+
+{{< figure src="/images/practice_tests.gif" alt="Interactive Practice Tests Interface" >}}
+
+---
+
+
+
+### 👥 Built by the Community
+
+
+
+These practice questions are contributed by passionate GitHub users and certification enthusiasts from around the world. 
+
+**A big ❤️ THANK YOU ❤️ to everyone who has helped create these valuable learning resources!** 
+
+[![Contributors](https://contrib.rocks/image?repo=FidelusAleksander/ghcertified)](https://github.com/FidelusAleksander/ghcertified/graphs/contributors)
+
