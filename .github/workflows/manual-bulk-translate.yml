@@ -16,6 +16,7 @@ on:
         options:
           - pt
           - pl
+          - es
       language_name:
         description: "Language name"
         required: true
@@ -23,6 +24,7 @@ on:
         options:
           - Portuguese
           - Polish
+          - Spanish
 
 permissions:
   contents: write

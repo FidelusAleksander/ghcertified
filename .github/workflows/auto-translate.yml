@@ -40,7 +40,7 @@ jobs:
       max-parallel: 1
       matrix:
         language:
-          [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }]
+          [{ code: "pt", name: "Portuguese" }, { code: "pl", name: "Polish" }, { code: "es", name: "Spanish" }]
 
         file: ${{ fromJSON(needs.detect-changes.outputs.changed_files) }}
     uses: ./.github/workflows/translate-file.yml
