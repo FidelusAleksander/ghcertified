@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 010"
-question: "Który z poniższych elementów integruje GitHub Copilot Chat z zewnętrznymi narzędziami?"
+question: "Które z poniższych integruje GitHub Copilot Chat z narzędziami zewnętrznymi?"
 ---
 
 
