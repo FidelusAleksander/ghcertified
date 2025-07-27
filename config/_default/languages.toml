@@ -19,6 +19,13 @@ contentDir = 'content/pt'
 [pl]
 title = "GitHub Certified"
 weight = 3
-languageCode = 'pt-PL'
+languageCode = 'pl-PL'
 languageName = 'Polski'
 contentDir = 'content/pl'
+
+[es]
+title = "GitHub Certified"
+weight = 4
+languageCode = 'es-ES'
+languageName = 'Español'
+contentDir = 'content/es'
