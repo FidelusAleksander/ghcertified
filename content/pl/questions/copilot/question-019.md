@@ -4,7 +4,7 @@ question: "Który zestaw zasad poprawnie reprezentuje sześć kluczowych zasad o
 ---
 
 > https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai
-1. [x] Sprawiedliwość, Niezawodność i Bezpieczeństwo, Prywatność i Ochrona, Integracja, Przejrzystość oraz Odpowiedzialność
-1. [ ] Wydajność, Szybkość, Dokładność, Innowacja, Niezawodność i Bezpieczeństwo
-1. [ ] Prywatność, Wydajność, Dostępność, Skalowalność, Utrzymywalność i Testowanie
-1. [ ] Bezpieczeństwo, Rozwój, Operacje, Utrzymanie, Wsparcie i Dokumentacja
+1. [x] Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, and Accountability
+1. [ ] Efficiency, Speed, Accuracy, Innovation, Reliability, and Security
+1. [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing
+1. [ ] Security, Development, Operations, Maintenance, Support, and Documentation
