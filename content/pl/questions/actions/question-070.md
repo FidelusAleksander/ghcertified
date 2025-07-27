@@ -1,5 +1,5 @@
 ---
-question: "Jak użyć GitHub API do utworzenia lub zaktualizowania sekretu repozytorium?"
+question: "Jak możesz użyć GitHub API, aby utworzyć lub zaktualizować secret repozytorium?"
 title: "Pytanie 070"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 070"
 1. [ ] `POST /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 1. [ ] `HEAD /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 1. [ ] `GET /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+

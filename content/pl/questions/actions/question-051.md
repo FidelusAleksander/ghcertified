@@ -1,5 +1,5 @@
 ---
-question: "Jakie są trzy typy Akcji?"
+question: "Jakie są trzy rodzaje Actions?"
 title: "Pytanie 051"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 051"
 1. [ ] `Python Actions`, `JavaScript Actions`, `Custom Actions`
 1. [ ] `Docker container Actions`, `JavaScript Actions`, `Custom Actions`
 1. [ ] `Docker container actions`, `Java Actions`, `Composite Actions`
+

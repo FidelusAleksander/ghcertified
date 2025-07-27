@@ -1,5 +1,5 @@
 ---
-question: "Którą zmienną należałoby ustawić na `true`, aby włączyć logowanie debugowania kroków?"
+question: "Którą zmienną należy ustawić na `true`, aby włączyć logowanie debugowania kroków?"
 title: "Pytanie 107"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 107"
 1. [ ] `ACTIONS_JOB_DEBUG`
 1. [ ] `ACTIONS_RUNNER_DEBUG`
 1. [ ] `ACTIONS_WORKFLOW_DEBUG`
+

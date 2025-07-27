@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 120"
-question: "Jaka jest poprawna składnia do określenia skryptu czyszczącego w akcji kontenera?"
+question: "Jaka jest poprawna składnia do określenia skryptu sprzątającego w akcji kontenerowej?"
 ---
 
 

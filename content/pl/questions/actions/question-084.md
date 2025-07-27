@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 084"
-question: "Które słowo kluczowe pozwala zdefiniować zmienne środowiskowe w przepływie pracy GitHub Actions?"
+question: "Które słowo kluczowe pozwala zdefiniować zmienne środowiskowe w workflow GitHub Actions?"
 ---
 
 
@@ -9,3 +9,4 @@ question: "Które słowo kluczowe pozwala zdefiniować zmienne środowiskowe w p
 1. [ ] vars
 1. [ ] secrets
 1. [ ] config
+

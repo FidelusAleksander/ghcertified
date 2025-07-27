@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 080"
-question: "Jaka jest poprawna składnia ustawiania katalogu dla wszystkich poleceń `run` w przepływie pracy?"
+question: "Jaka jest poprawna składnia ustawiania katalogu dla wszystkich poleceń `run` w workflow?"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory

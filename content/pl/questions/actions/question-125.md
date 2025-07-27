@@ -4,7 +4,8 @@ question: "Na jakich poziomach można definiować zmienne środowiskowe? (Wybier
 ---
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
-- [x] Poziom przepływu pracy (Workflow level)
-- [x] Poziom zadania (Job level)
-- [x] Poziom kroku (Step level)
-- [ ] Poziom akcji (Action level)
+- [x] Poziom workflow
+- [x] Poziom job
+- [x] Poziom step
+- [ ] Poziom action
+

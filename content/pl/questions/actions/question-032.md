@@ -8,3 +8,4 @@ title: "Pytanie 032"
 - [x] Ubuntu Linux
 - [x] macOS
 - [ ] Android
+

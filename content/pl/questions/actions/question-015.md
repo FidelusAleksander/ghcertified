@@ -1,5 +1,5 @@
 ---
-question: "Która definicja zadania macierzy jest składniowo poprawna?"
+question: "Które zdefiniowanie zadania macierzy jest składniowo poprawne?"
 title: "Pytanie 015"
 ---
 

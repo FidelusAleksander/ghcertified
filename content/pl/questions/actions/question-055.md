@@ -1,11 +1,11 @@
 ---
-question: "Workflow został początkowo uruchomiony na `commit A` i zakończył się niepowodzeniem. Naprawiłeś workflow w kolejnym `commit B`. Gdy ponownie uruchomisz ten workflow, z którym kodem commit będzie działał?"
-title: "Pytanie 055"
+question: "Przepływ pracy został początkowo uruchomiony na `commit A` i zakończył się niepowodzeniem. Naprawiłeś przepływ pracy w kolejnej `commit B`. Kiedy ponownie uruchomisz ten przepływ pracy, zostanie on uruchomiony z kodem z którego commitu?"
+title: "Question 055"
 ---
 
 > https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#about-re-running-workflows-and-jobs
-1. [x] Będzie działał z kodem z `commit A`
-1. [ ] Będzie działał z kodem z `commit B`
-> Ponowne uruchomienie workflow używa tego samego identyfikatora SHA commitu i referencji Git, co w oryginalnym zdarzeniu, które wywołało uruchomienie workflow.
-1. [ ] Nie można ponownie uruchamiać workflow w GitHub Actions. Trzeba wywołać nowy workflow, który będzie działał z najnowszymi zmianami
-1. [ ] Uruchomi dwa workflowy, jeden z kodem z `commit A` i jeden z kodem z `commit B`
+1. [x] Zostanie uruchomiony z kodem z `commit A`
+1. [ ] Zostanie uruchomiony z kodem z `commit B`
+> Ponowne uruchomienie przepływu pracy używa tego samego identyfikatora commit SHA i odwołania Git, które wyzwoliły oryginalny przebieg przepływu pracy.
+1. [ ] Nie można ponownie uruchomić przepływów pracy w GitHub Actions. Musisz uruchomić nowy przepływ pracy, który zostanie uruchomiony z najnowszymi zmianami
+1. [ ] Wyzwoli dwa przepływy pracy, jeden z kodem z `commit A`, a drugi z kodem z `commit B`

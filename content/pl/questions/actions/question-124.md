@@ -1,5 +1,5 @@
 ---
-question: "Mając poniższą konfigurację, ile zadań uruchomi GitHub Actions, gdy ta macierz zostanie oceniona?"
+question: "Biorąc pod uwagę następującą konfigurację, ile zadań uruchomi GitHub Actions, gdy ten matryca zostanie oceniona?"
 title: "Pytanie 124"
 ---
 
@@ -21,4 +21,4 @@ strategy:
 1. [x] 5 zadań
 1. [ ] 6 zadań
 1. [ ] 7 zadań
-1. [ ] Żadne zadania nie zostaną uruchomione, ponieważ składnia jest nieprawidłowa.
+1. [ ] Żadne zadanie nie zostanie uruchomione, ponieważ składnia jest nieprawidłowa.

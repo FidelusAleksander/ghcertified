@@ -1,11 +1,11 @@
 ---
-question: "Wielokrotnie używany przepływ pracy o nazwie `build` tworzy artefakty w postaci plików zip. Jak przekazać lokalizację pliku zip do wywołującego przepływu pracy, który wywołuje przepływ `build`? (Wybierz trzy.)"
+question: "Podległy workflow o nazwie `build` tworzy artefakty zip. Jak przekazać lokalizację pliku zip do workflow wywołującego, który uruchamia workflow `build`? (Wybierz trzy.)"
 title: "Pytanie 026"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow
 
-- [x] Definiujesz wynik na poziomie przepływu pracy w przepływie `build`
-- [x] Definiujesz wynik na poziomie zadania w przepływie `build`
-- [x] W przepływie `build` zapisujesz wynik do `$GITHUB_OUTPUT` w jednym z kroków
-- [ ] Wszystkie wyniki są automatycznie przekazywane do wywołujących przepływów pracy
+- [x] Definiujesz output na poziomie workflow w workflow `build`
+- [x] Definiujesz output na poziomie zadania (job) w workflow `build`
+- [x] W workflow `build` zapisujesz output do `$GITHUB_OUTPUT` w jednym z kroków
+- [ ] Wszystkie outputy są automatycznie przekazywane do workflow wywołujących

@@ -1,5 +1,5 @@
 ---
-question: "Kiedy powinieneś używać `artifacts`? (Wybierz dwie.)"
+question: "Kiedy powinno się używać `artifacts`? (Wybierz dwie odpowiedzi.)"
 title: "Pytanie 042"
 ---
 
@@ -7,9 +7,9 @@ title: "Pytanie 042"
 
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 
-- [x] Użyj artifacts, aby zapisać pliki wygenerowane przez zadanie, które można obejrzeć po zakończeniu działania workflow, takie jak wyniki testów lub logi kompilacji.
-- [x] Użyj artifacts, aby zapisać pliki binarne wygenerowane przez zadanie kompilacji, które będą wykorzystane w kolejnym zadaniu wdrożeniowym w celu wdrożenia nowej wersji aplikacji.
-- [ ] Użyj artifacts, aby ponownie wykorzystywać pliki, które nie zmieniają się często pomiędzy zadaniami lub uruchomieniami workflow, takie jak zależności kompilacji z systemu zarządzania pakietami.
-> Do tego celu powinno być używane caching https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
-- [ ] Użyj artifacts, aby tworzyć nowe wersje swojej aplikacji wraz z release notes, wzmianek i/lub współtwórców.
-> To jest przypadek użycia dla releases, a nie artifacts.
+- [x] Używaj artifacts, aby zapisać pliki wygenerowane przez zadanie do przeglądania po zakończeniu działania workflow, takie jak wyniki testów lub logi budowy.
+- [x] Używaj artifacts, aby zapisać binaria wygenerowane przez zadanie budowy w celu użycia w kolejnym zadaniu wdrażania nowej wersji aplikacji.
+- [ ] Używaj artifacts, aby ponownie wykorzystać pliki, które nie zmieniają się często między zadaniami lub uruchomieniami workflow, takie jak zależności budowy z systemu zarządzania pakietami.
+> W tym celu należy użyć cache https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
+- [ ] Używaj artifacts, aby tworzyć nowe wersje swojej aplikacji wraz z notatkami o wersji, wzmiankami i/lub współtwórcami.
+> To jest zastosowanie dla releases, a nie artifacts.

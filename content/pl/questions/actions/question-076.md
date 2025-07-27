@@ -1,5 +1,5 @@
 ---
-question: "Jaka jest maksymalna liczba wielokrotnego użytku workflows, które można wywołać z jednego pliku workflow?"
+question: "Jaka jest maksymalna liczba wielokrotnie używalnych workflowów, które można wywołać z pojedynczego pliku workflow?"
 title: "Pytanie 076"
 ---
 
@@ -9,3 +9,4 @@ title: "Pytanie 076"
 1. [ ] 5
 1. [ ] 1
 1. [ ] 10
+

@@ -1,5 +1,5 @@
 ---
-question: "Który sposób jest poprawny, aby wyświetlić komunikat debugowania?"
+question: "Który sposób wypisania komunikatu debugowania jest poprawny?"
 title: "Pytanie 063"
 ---
 

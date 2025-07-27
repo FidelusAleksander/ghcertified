@@ -1,5 +1,5 @@
 ---
-question: "Który kontekst zawiera informacje o zdarzeniu, które wywołało uruchomienie workflow?"
+question: "Który kontekst zawiera informacje o zdarzeniu, które uruchomiło działanie workflow?"
 title: "Pytanie 102"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 102"
 1. [ ] `github.repository`
 1. [ ] `github.job`
 1. [ ] `jobs.<job_id>.result`
+

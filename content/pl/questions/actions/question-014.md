@@ -1,5 +1,5 @@
 ---
-question: "Ten kod uruchomi 6 różnych zadań równolegle, wykorzystując strategię macierzy. Czy można użyć strategii macierzy do równoległego wykonywania całych przepływów pracy?"
+question: "Ten kod uruchomi 6 różnych zadań równolegle przy użyciu strategii macierzy. Czy można użyć strategii macierzy do równoległego wykonywania całych workflowów?"
 title: "Pytanie 014"
 ---
 

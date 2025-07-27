@@ -1,5 +1,5 @@
 ---
-question: "Jak zapewnić, aby krok `Upload Failure test report` był wykonywany tylko wtedy, gdy krok `Run Tests` zakończy się niepowodzeniem?"
+question: "Jak zapewnić, że krok `Upload Failure test report` jest wykonywany tylko wtedy, gdy krok `Run Tests` zakończy się niepowodzeniem?"
 title: "Pytanie 101"
 ---
 

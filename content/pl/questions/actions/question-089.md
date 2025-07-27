@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 089"
-question: "Które z poniższych można użyć do ograniczenia liczby równocześnie uruchomionych zadań w przebiegu GitHub Actions?"
+question: "Który z poniższych elementów można użyć do ograniczenia liczby jednocześnie uruchamianych zadań w ramach GitHub Actions workflow?"
 ---
 
 
@@ -9,3 +9,4 @@ question: "Które z poniższych można użyć do ograniczenia liczby równocześ
 1. [ ] limit
 1. [ ] max-jobs
 1. [ ] parallelism
+

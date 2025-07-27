@@ -1,5 +1,5 @@
 ---
-question: "Jakiego poziomu dostępu wymaga repozytorium na GitHubie, aby usunąć pliki dziennika z uruchomień przepływów pracy?"
+question: "Jakiego poziomu dostępu wymaga usunięcie plików dziennika z przebiegów workflow w repozytorium GitHub?"
 title: "Pytanie 112"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 112"
 1. [ ] read
 1. [ ] admin
 1. [ ] owner
+

@@ -1,5 +1,5 @@
 ---
-question: "Jaka konfiguracja jest odpowiednia do uruchomienia workflow w odpowiedzi na zdarzenia webhook związane z akcjami check_run?"
+question: "Jaka konfiguracja jest odpowiednia do uruchomienia workflow na zdarzenia webhook związane z akcjami check_run?"
 title: "Pytanie 108"
 ---
 

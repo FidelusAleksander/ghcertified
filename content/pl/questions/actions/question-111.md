@@ -1,5 +1,5 @@
 ---
-question: "Dave chce być powiadamiany, gdy komentarz zostanie dodany do zgłoszenia w repozytorium GitHub. Które wyzwalanie zdarzeń należy użyć w konfiguracji przepływu pracy?"
+question: "Dave chce otrzymywać powiadomienia, gdy w komentarzu do issue w GitHub repository zostanie dodany nowy komentarz. Którego wyzwalacza zdarzeń powinien użyć w konfiguracji workflow?"
 title: "Pytanie 111"
 ---
 
@@ -8,3 +8,4 @@ title: "Pytanie 111"
 1. [ ] `issues.comment`
 1. [ ] `issues`
 1. [ ] `comment`
+
