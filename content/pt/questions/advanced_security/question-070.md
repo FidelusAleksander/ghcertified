@@ -1,8 +1,7 @@
 ---
-title: "Pergunta 070"
-question: "O que é extração no contexto da análise de código CodeQL?"
+title: "Questão 070"
+question: "O que é extração no contexto da análise de código com CodeQL?"
 ---
-
 
 > https://codeql.github.com/docs/codeql-overview/about-codeql/#database-creation
 1. [x] Extração é o processo de criar uma representação relacional de cada arquivo-fonte na base de código.
