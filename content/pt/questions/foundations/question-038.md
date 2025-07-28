@@ -1,14 +1,14 @@
 ---
-title: "Pergunta 038"
-question: "Qual dessas NÃO é uma função em uma Organização no GitHub?"
+title: "Questão 038"
+question: "Qual desses NÃO é um papel em uma Organização do GitHub?"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Arquiteto da organização
-1. [ ] Proprietário da organização
-1. [ ] Membro da organização
-1. [ ] Moderador da organização
-1. [ ] Gerente de cobrança
-1. [ ] Gerente de segurança
-1. [ ] Gerente de App GitHub
-1. [ ] Colaborador externo
+1. [x] Organization architect
+1. [ ] Organization owner
+1. [ ] Organization member
+1. [ ] Organization moderator
+1. [ ] Billing manager
+1. [ ] Security manager
+1. [ ] GitHub App manager
+1. [ ] Outside collaborator
