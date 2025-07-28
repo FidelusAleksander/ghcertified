@@ -1,6 +1,6 @@
 ---
-title: "Questão 103"
-question: "Quais dos seguintes comandos Git permitem criar uma nova branch e começar a trabalhar nela em uma única linha? (Selecione duas.)"
+title: "Pergunta 103"
+question: "Qual dos seguintes comandos Git permite criar uma nova branch e começar a trabalhar nela em uma única linha? (Selecione duas.)"
 ---
 
 
