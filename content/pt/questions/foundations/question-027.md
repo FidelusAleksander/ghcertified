@@ -5,7 +5,8 @@ question: "Qual recurso do GitHub permite a criação de ambientes de desenvolvi
 
 
 > https://docs.github.com/en/codespaces/overview#benefits-of-github-codespaces
-1. [x] GitHub Codespaces  
-1. [ ] GitHub Docker  
-1. [ ] GitHub Copilot  
-1. [ ] GitHub DevEnv  
+1. [x] GitHub Codespaces
+1. [ ] GitHub Docker
+1. [ ] GitHub Copilot
+1. [ ] GitHub DevEnv
+
