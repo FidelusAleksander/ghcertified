@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 028"
-question: "Quais recursos do GitHub permitem que os contribuidores de repositórios trabalhem em alterações simples de código diretamente através do navegador? (Escolha dois.)"
+question: "Quais recursos do GitHub permitem que os contribuidores do repositório trabalhem em alterações simples de código diretamente pelo navegador da web? (Escolha duas.)"
 ---
 
 
