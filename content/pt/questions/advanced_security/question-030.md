@@ -1,11 +1,12 @@
 ---
 title: "Pergunta 030"
-question: "Qual recurso é um pré-requisito para usar os Alertas do Dependabot em um repositório?"
+question: "Qual recurso é um pré-requisito para usar os Dependabot Alerts em um repositório?"
 ---
 
 
-> https://docs.github.com/pt/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#using-the-dependency-graph
-1. [x] Gráfico de dependências
-1. [ ] Revisão de dependências
-1. [ ] Atualizações de segurança de dependências
-1. [ ] Atualizações de versão de dependências
+> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#using-the-dependency-graph
+1. [x] Dependency graph
+1. [ ] Dependency review
+1. [ ] Dependency security updates
+1. [ ] Dependency version updates
+
