@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 105"
-question: "Qual destas é uma configuração válida para o arquivo `dependabot.yml`?"
+question: "Qual das opções a seguir é um arquivo de configuração `dependabot.yml` válido?"
 ---
 
 
