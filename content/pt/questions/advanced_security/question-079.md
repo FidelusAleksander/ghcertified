@@ -1,5 +1,5 @@
 ---
-title: "Questão 079"
+title: "Pergunta 079"
 question: "Onde você pode especificar as consultas do CodeQL a serem executadas em um workflow do GitHub Actions? (Escolha duas.)"
 ---
 
@@ -7,5 +7,5 @@ question: "Onde você pode especificar as consultas do CodeQL a serem executadas
 - [x] No parâmetro de entrada `queries` da ação `github/codeql-action/init`
 - [x] Em um arquivo YAML de configuração do CodeQL
 - [ ] No parâmetro de entrada `paths` da ação `github/codeql-action/queries`
-- [ ] Na seção de verificação de código do Code Scanning na aba Security do repositório
+- [ ] Na seção Code Scanning da aba Security no repositório
 - [ ] No campo `codeql` do arquivo `.github/settings.yml`
