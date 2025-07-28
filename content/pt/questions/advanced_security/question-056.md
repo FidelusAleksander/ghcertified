@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 056"
-question: "Se você não quiser usar o GitHub Actions, pode executar a análise de código em um sistema de CI externo e, em seguida, enviar os resultados para o GitHub."
+question: "Se você não quiser usar o GitHub Actions, pode executar a análise de código em um sistema CI externo e, em seguida, enviar os resultados para o GitHub."
 ---
 
 
