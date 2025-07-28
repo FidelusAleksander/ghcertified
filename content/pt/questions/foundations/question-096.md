@@ -1,9 +1,9 @@
 ---
 title: "Pergunta 096"
-question: "Qual dessas afirmações sobre as diferenças entre issues e discussões é verdadeira?"
+question: "Qual dessas afirmações sobre as diferenças entre issues e discussions é verdadeira?"
 ---
 
 
 > https://docs.github.com/en/discussions/quickstart
-1. [x] O GitHub Discussions é para conversas que precisam ser transparentes e acessíveis, mas não precisam ser rastreadas em um quadro de projeto e não estão relacionadas a código, ao contrário do GitHub Issues.
-1. [ ] O GitHub Issues é para conversas que precisam ser transparentes e acessíveis, mas não precisam ser rastreadas em um quadro de projeto e não estão relacionadas a código, ao contrário do GitHub Discussions.
+1. [x] GitHub Discussions são para conversas que precisam ser transparentes e acessíveis, mas não precisam ser rastreadas em um quadro de projeto e não estão relacionadas ao código, diferente das GitHub Issues.
+1. [ ] GitHub Issues são para conversas que precisam ser transparentes e acessíveis, mas não precisam ser rastreadas em um quadro de projeto e não estão relacionadas ao código, diferente das GitHub Discussions.
