@@ -1,6 +1,6 @@
 ---
-title: "Pergunta 021"
-question: "Onde você pode encontrar GitHub Actions publicamente disponíveis?"
+title: "Questão 021"
+question: "Onde você pode encontrar GitHub Actions disponíveis publicamente?"
 ---
 
 
