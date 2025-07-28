@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 022"
-question: "Qual dessas ferramentas serve como um par programador de IA que oferece sugestões no estilo de autocompletar enquanto você codifica?"
+question: "Qual dessas ferramentas serve como um programador parceiro de IA que oferece sugestões no estilo de preenchimento automático enquanto você codifica?"
 ---
 
 
@@ -9,3 +9,4 @@ question: "Qual dessas ferramentas serve como um par programador de IA que ofere
 1. [ ] GitHub AI Aid
 1. [ ] GitHub Partner
 1. [ ] GitHub Assistant
+
