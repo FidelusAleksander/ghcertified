@@ -9,4 +9,4 @@ question: "O GitHub Copilot é gratuito?"
 1. [ ] Sim  
 1. [x] Sim, se você for um estudante, professor ou mantenedor de um projeto open source popular  
 1. [ ] Sim, mas apenas para indivíduos trabalhando em repositórios públicos  
-> Existe um período de teste gratuito. No entanto, o GitHub Copilot é uma funcionalidade paga, mesmo para indivíduos.  
+> Há um teste gratuito. No entanto, o GitHub Copilot é um recurso pago, mesmo para indivíduos.
