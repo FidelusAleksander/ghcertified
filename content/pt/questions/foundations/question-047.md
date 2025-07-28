@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 047"
-question: "Qual ferramenta ajuda você a manter as dependências do repositório atualizadas?"
+question: "Qual ferramenta ajuda a manter as dependências do repositório atualizadas?"
 ---
 
 
