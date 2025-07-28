@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 079"
-question: "Quais são as diferentes opções de implantação para o GitHub Enterprise? (Selecione duas.)"
+question: "Quais são as diferentes opções de deployment para o GitHub Enterprise? (Selecione duas.)"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
@@ -10,3 +10,4 @@ question: "Quais são as diferentes opções de implantação para o GitHub Ente
 - [ ] GitHub Enterprise Team
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
+

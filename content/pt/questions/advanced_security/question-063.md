@@ -1,6 +1,6 @@
 ---
-title: "Pergunta 063"
-question: "A análise com CodeQL suporta:"
+title: "Questão 063"
+question: "O CodeQL scanning suporta:"
 ---
 
 

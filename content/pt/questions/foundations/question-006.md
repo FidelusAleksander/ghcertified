@@ -8,6 +8,6 @@ question: "Quais desses layouts estão disponíveis no GitHub Projects? (Escolha
 - [x] Layout de tabela
 - [x] Layout de quadro
 - [x] Layout de roteiro
-- [ ] Layout de scrum
-- [ ] Layout ágil
+- [ ] Layout Scrum
+- [ ] Layout Ágil
 - [ ] Layout de projeto

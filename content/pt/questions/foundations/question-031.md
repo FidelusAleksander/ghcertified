@@ -8,6 +8,6 @@ question: "Quais dessas afirmações sobre o ciclo de vida do GitHub Codespaces 
 - [x] Você pode parar e reiniciar um Codespace sem perder as alterações feitas no seu projeto.
 - [x] Você pode se desconectar e reconectar a um Codespace ativo sem afetar seus processos em execução.
 - [ ] Você pode parar e reiniciar um Codespace sem afetar seus processos em execução.
-- [ ] Se você criar outro Codespace em um branch que já possuía um Codespace em execução, o Codespace original será excluído.
-- [ ] Se você fechar a aba do navegador onde seu Codespace estava sendo executado, o Codespace será automaticamente interrompido.
-> Fechar a aba do navegador não interrompe o Codespace, e os processos continuam em execução. Caso você apenas tenha fechado a aba, o Codespace será interrompido após atingir o período de tempo limite de inatividade.
+- [ ] Se você criar outro Codespace em uma branch que já tinha um Codespace em execução, o Codespace original será excluído.
+- [ ] Se você fechar a aba do navegador em que o seu Codespace estava em execução, o Codespace será automaticamente parado.  
+> Fechar a aba do navegador não para o Codespace, e os processos continuam sendo executados. Se você apenas fechou a aba, o Codespace será parado após atingir o período de inatividade configurado.

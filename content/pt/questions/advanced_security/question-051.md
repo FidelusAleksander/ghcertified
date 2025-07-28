@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 051"
-question: "Preencha o espaço em branco: `O GitHub __________ é um recurso que você pode usar para analisar o código em um repositório do GitHub para encontrar vulnerabilidades de segurança e erros de codificação.`"
+question: "Preencha o espaço em branco: `GitHub __________ é um recurso que você pode usar para analisar o código em um repositório do GitHub para encontrar vulnerabilidades de segurança e erros de codificação.`"
 ---
 
 

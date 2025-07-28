@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 032"
-question: "Quais são os principais benefícios do recurso Visão Geral de Segurança no GitHub?"
+question: "Quais são os principais benefícios do recurso Security Overview no GitHub?"
 ---
 
 > https://docs.github.com/en/code-security/security-overview/about-security-overview

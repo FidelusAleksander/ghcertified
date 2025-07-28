@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 081"
-question: "Qual comando do CodeQL CLI é usado para criar um banco de dados CodeQL?"
+question: "Qual comando da CLI do CodeQL é usado para criar um banco de dados do CodeQL?"
 ---
 
 

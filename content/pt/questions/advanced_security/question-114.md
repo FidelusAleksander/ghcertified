@@ -1,7 +1,8 @@
 ---
-title: "Pergunta 114"
+title: "Questão 114"
 question: "O que significa `CWE`?"
 ---
+
 
 > https://cwe.mitre.org/
 1. [x] `Common Weakness Enumeration`

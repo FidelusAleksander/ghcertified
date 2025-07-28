@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 065"
-question: "Qual dessas afirmações descreve melhor um sistema de controle de versão?"
+question: "Qual destas afirmações descreve melhor um sistema de controle de versão?"
 ---
 
 

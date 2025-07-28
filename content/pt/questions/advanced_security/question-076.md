@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 076"
-question: "Ao executar a análise do CodeQL no GitHub Actions, quais Ações você deve usar? (Escolha três.)"
+question: "Ao executar a análise CodeQL no GitHub Actions, quais Actions você deve usar? (Escolha três.)"
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages#about-the-codeql-analysis-workflow-and-compiled-languages
