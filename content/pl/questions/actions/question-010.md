@@ -7,4 +7,3 @@ title: "Pytanie 010"
 1. [ ] config variables
 1. [ ] vault
 1. [ ] environment variables
----
