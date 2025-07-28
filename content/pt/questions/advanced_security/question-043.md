@@ -1,5 +1,5 @@
 ---
-question: "Quais chaves de nível superior são necessárias no arquivo `dependabot.yml`?"
+question: "Quais chaves de nível superior são obrigatórias no arquivo `dependabot.yml`?"
 title: "Pergunta 043"
 ---
 
@@ -8,3 +8,4 @@ title: "Pergunta 043"
 1. [ ] `version` e `package-ecosystem`
 1. [ ] `assignees` e `directory`
 1. [ ] `updates` e `directory`
+
