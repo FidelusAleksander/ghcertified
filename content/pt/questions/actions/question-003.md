@@ -4,7 +4,8 @@ title: "Pergunta 003"
 ---
 
 
-> https://docs.github.com/pt/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
-- [x] Nível de workflow
-- [x] Nível de job
-- [ ] Nível de step
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
+- [x] Nível de Workflow
+- [x] Nível de Job
+- [ ] Nível de Step
+
