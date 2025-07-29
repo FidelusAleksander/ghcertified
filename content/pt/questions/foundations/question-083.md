@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 083"
-question: "Qual linguagem é usada para escrever comentários em issues e pull requests no GitHub?"
+question: "Qual linguagem é usada para escrever comentários em GitHub issues e pull requests?"
 ---
 
 
