@@ -1,8 +1,7 @@
 ---
 question: "Quais das seguintes são variáveis de ambiente padrão no GitHub Actions? (Selecione três.)"
-title: "Questão 061"
+title: "Pergunta 061"
 ---
-
 
 > https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables
 
