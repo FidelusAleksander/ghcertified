@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 083"
-question: "O que a palavra-chave `needs` faz em um fluxo de trabalho do GitHub Actions?"
+question: "O que a palavra-chave `needs` faz em um workflow do GitHub Actions?"
 ---
 
 
@@ -9,3 +9,4 @@ question: "O que a palavra-chave `needs` faz em um fluxo de trabalho do GitHub A
 1. [ ] Define variáveis de ambiente
 1. [ ] Configura o ambiente
 1. [ ] Aciona um job com base em um evento
+
