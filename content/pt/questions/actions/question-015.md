@@ -1,6 +1,6 @@
 ---
-question: "Qual definição de trabalho de matriz é sintaticamente correta?"
-title: "Questão 015"
+question: "Qual definição de trabalho com matriz é sintaticamente correta?"
+title: "Pergunta 015"
 ---
 
 
