@@ -1,6 +1,6 @@
 ---
-question: "Como garantir que a etapa `Upload Failure test report` seja executada apenas se a etapa `Run Tests` falhar?"
-title: "Questão 101"
+question: "Como você garante que a etapa `Upload Failure test report` é executada apenas se a etapa `Run Tests` falhar?"
+title: "Pergunta 101"
 ---
 
 
