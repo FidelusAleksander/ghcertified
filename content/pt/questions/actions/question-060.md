@@ -1,5 +1,5 @@
 ---
-question: "Qual das seguintes variáveis de ambiente padrão contém o nome da pessoa ou aplicativo que iniciou a execução do fluxo de trabalho?"
+question: "Qual das seguintes variáveis de ambiente padrão contém o nome da pessoa ou aplicativo que iniciou a execução do workflow?"
 title: "Pergunta 060"
 ---
 
