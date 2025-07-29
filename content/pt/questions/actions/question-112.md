@@ -1,5 +1,5 @@
 ---
-question: "Qual nível de acesso é necessário em um repositório GitHub para excluir arquivos de log de execuções de workflows?"
+question: "Qual nível de acesso é necessário em um repositório do GitHub para excluir os arquivos de log das execuções de workflows?"
 title: "Pergunta 112"
 ---
 
@@ -8,3 +8,4 @@ title: "Pergunta 112"
 1. [ ] read
 1. [ ] admin
 1. [ ] owner
+---
