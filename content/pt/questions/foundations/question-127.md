@@ -1,11 +1,11 @@
 ---
 title: "Pergunta 127"
-question: "Qual declaração descreve melhor uma diferença importante entre os novos Projetos do GitHub e o GitHub Projects Classic?"
+question: "Qual afirmação descreve melhor uma grande diferença entre o novo GitHub Projects e o GitHub Projects Classic?"
 ---
 
 > **Mais informações**: [Sobre projetos](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic)
 
-1. [x] Os novos Projetos do GitHub oferecem uma interface flexível semelhante a uma planilha, campos personalizados e sincronização bidirecional de issues, recursos que não estavam disponíveis no Projects Classic.  
-1. [ ] O GitHub Projects Classic possui uma IA integrada que fecha automaticamente pull requests, enquanto os novos Projetos do GitHub não possuem essa funcionalidade.  
-1. [ ] O GitHub Projects Classic suporta análise de código e análise de segredos, enquanto os novos Projetos do GitHub não.  
-1. [ ] Os novos Projetos do GitHub permitem apenas gerenciar issues abertas, sem suporte a pull requests.  
+1. [x] O novo GitHub Projects fornece uma interface flexível semelhante a uma planilha, campos personalizados e sincronização bidirecional de issues que não estavam disponíveis no Projects Classic.  
+1. [ ] O GitHub Projects Classic possui uma IA integrada que fecha automaticamente pull requests, enquanto o novo GitHub Projects não.  
+1. [ ] O GitHub Projects Classic suporta code scanning e secret scanning, enquanto o novo GitHub Projects não.  
+1. [ ] O novo GitHub Projects permite apenas gerenciar issues abertas sem suporte a pull requests.  
