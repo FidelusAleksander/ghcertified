@@ -9,3 +9,4 @@ title: "Pergunta 002"
 1. [x] none, write, read
 1. [ ] read, write, delete
 1. [ ] read, write
+
