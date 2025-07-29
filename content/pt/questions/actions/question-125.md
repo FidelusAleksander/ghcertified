@@ -5,7 +5,8 @@ question: "Em quais níveis as variáveis de ambiente podem ser definidas? (Esco
 
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
-- [x] Nível de workflow
-- [x] Nível de job
-- [x] Nível de step
-- [ ] Nível de action
+- [x] Nível de Workflow
+- [x] Nível de Job
+- [x] Nível de Step
+- [ ] Nível de Action
+
