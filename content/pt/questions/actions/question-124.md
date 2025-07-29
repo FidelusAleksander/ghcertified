@@ -1,5 +1,5 @@
 ---
-question: "Dada a seguinte configuração, quantos jobs o GitHub Actions executará quando essa matriz for avaliada?"
+question: "Dada a seguinte configuração, quantos trabalhos o GitHub Actions executará quando essa matriz for avaliada?"
 title: "Pergunta 124"
 ---
 
@@ -17,8 +17,8 @@ strategy:
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
 
-1. [ ] 4 jobs  
-1. [x] 5 jobs  
-1. [ ] 6 jobs  
-1. [ ] 7 jobs  
-1. [ ] Nenhum job será executado porque a sintaxe é inválida.  
+1. [ ] 4 trabalhos
+1. [x] 5 trabalhos
+1. [ ] 6 trabalhos
+1. [ ] 7 trabalhos
+1. [ ] Nenhum trabalho será executado porque a sintaxe é inválida.
