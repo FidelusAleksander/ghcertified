@@ -1,10 +1,11 @@
 ---
-question: "Qual é a verdade sobre os ambientes?"
-title: "Pergunta 057"
+question: "Qual é verdadeiro sobre os ambientes?"
+title: "Questão 057"
 ---
 
-> Cada trabalho em um fluxo de trabalho pode referenciar um único ambiente.
-1. [x] Cada trabalho em um fluxo de trabalho pode referenciar um único ambiente.
-1. [ ] Cada fluxo de trabalho pode referenciar um único ambiente.
-1. [ ] Cada trabalho em um fluxo de trabalho pode referenciar no máximo dois ambientes.
-1. [ ] Cada fluxo de trabalho pode referenciar no máximo dois ambientes.
+> Cada job em um workflow pode referenciar um único ambiente.
+1. [x] Cada job em um workflow pode referenciar um único ambiente.
+1. [ ] Cada workflow pode referenciar um único ambiente.
+1. [ ] Cada job em um workflow pode referenciar no máximo dois ambientes.
+1. [ ] Cada workflow pode referenciar no máximo dois ambientes.
+
