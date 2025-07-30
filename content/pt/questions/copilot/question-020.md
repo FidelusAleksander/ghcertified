@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 020"
-question: "Qual dos seguintes é um benefício potencial do uso do GitHub Copilot para melhorar os fluxos de trabalho dos desenvolvedores?"
+question: "Qual dos seguintes é um benefício potencial de usar o GitHub Copilot para aprimorar os fluxos de trabalho dos desenvolvedores?"
 ---
 
 > https://docs.github.com/en/copilot
