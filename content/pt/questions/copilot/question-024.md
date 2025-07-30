@@ -7,4 +7,4 @@ question: "Como funciona o recurso de correspondência de código público do Gi
 1. [x] Ele busca correspondências comparando sugestões de código com um índice de repositórios públicos do GitHub, que é atualizado a cada poucos meses
 1. [ ] Ele realiza buscas em tempo real em todos os repositórios do GitHub, incluindo os privados
 1. [ ] Ele corresponde apenas códigos de repositórios criados nas últimas 24 horas
-1. [ ] Ele verifica o código em plataformas externas de hospedagem de código fora do GitHub
+1. [ ] Ele verifica códigos em plataformas externas de hospedagem de código fora do GitHub
