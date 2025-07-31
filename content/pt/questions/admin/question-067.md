@@ -8,3 +8,4 @@ title: "Pergunta 067"
 1. [ ] Git Merge & Git Rebase
 1. [ ] Git Stash & Git Checkout
 1. [ ] Git Pull & Git Fetch
+
