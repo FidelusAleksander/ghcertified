@@ -8,4 +8,3 @@ title: "Pergunta 112"
 1. [ ] read
 1. [ ] admin
 1. [ ] owner
----
