@@ -1,5 +1,5 @@
 ---
-title: "Pytania Wkładowe"
+title: "Dostępne pytania"
 Description: "Pytania do egzaminów certyfikacyjnych GitHub, stworzone przez społeczność."
 hidden: false
 weight: 100
@@ -11,7 +11,7 @@ Ta strona zawiera wszystkie pytania, które zostały [przygotowane](https://gith
 
 {{% /notice %}}
 
-{{< expand title="**Pytania z podstaw GitHub**" >}}
+{{< expand title="**Pytania z GitHub Foundations**" >}}
 
 {{< library-links questions="GitHub Foundations" >}}
 
@@ -27,7 +27,7 @@ Ta strona zawiera wszystkie pytania, które zostały [przygotowane](https://gith
 
 
 
-{{< expand title="**Pytania z administracji GitHub**" >}}
+{{< expand title="**Pytania z GitHub Admin**" >}}
 
 {{< library-links questions="GitHub Admin" >}}
 
@@ -35,7 +35,7 @@ Ta strona zawiera wszystkie pytania, które zostały [przygotowane](https://gith
 
 
 
-{{< expand title="**Pytania z zaawansowanego bezpieczeństwa GitHub**" >}}
+{{< expand title="**Pytania z GitHub Advanced Security**" >}}
 
 {{< library-links questions="GitHub Advanced Security" >}}
 
@@ -43,7 +43,7 @@ Ta strona zawiera wszystkie pytania, które zostały [przygotowane](https://gith
 
 
 
-{{< expand title="**Pytania dotyczące GitHub Copilot**" >}}
+{{< expand title="**Pytania z GitHub Copilot**" >}}
 
 {{< library-links questions="GitHub Copilot" >}}
 

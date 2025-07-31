@@ -1,5 +1,5 @@
 ---
-title: "Question 026"
+title: "Pytanie 026"
 question: "Czym jest GitHub Codespace?"
 ---
 
