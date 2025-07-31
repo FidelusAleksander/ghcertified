@@ -1,5 +1,5 @@
 ---
-title: "Questão 004"
+title: "Pergunta 004"
 question: "Qual comando é usado para instalar a extensão do GitHub Copilot no CLI?"
 ---
 

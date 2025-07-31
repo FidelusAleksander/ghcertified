@@ -1,6 +1,6 @@
 ---
 question: "Por qual cabeçalho você pode verificar o número de requisições que fez na janela atual de limite de taxa ao usar a GitHub REST API?"
-title: "Questão 096"
+title: "Pergunta 096"
 ---
 
 > https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api#checking-the-status-of-your-rate-limit

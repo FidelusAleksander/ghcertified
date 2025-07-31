@@ -1,5 +1,5 @@
 ---
-title: "Questão 038"
+title: "Pergunta 038"
 question: "Qual desses NÃO é um papel em uma Organização do GitHub?"
 ---
 

@@ -1,6 +1,6 @@
 ---
 question: "Qual é a maneira correta de acionar um job apenas se a variável de configuração `MY_VAR` tiver o valor de `MY_VALUE`?"
-title: "Questão 067"
+title: "Pergunta 067"
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context

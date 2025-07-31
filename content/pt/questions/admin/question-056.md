@@ -1,6 +1,6 @@
 ---
 question: "Como as equipes aninhadas beneficiam a estrutura de uma organização dentro do GitHub?"
-title: "Questão 056"
+title: "Pergunta 056"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

@@ -1,6 +1,6 @@
 ---
 question: "Segredos e variáveis de configuração podem ser definidos para: (Selecione três.)"
-title: "Questão 050"
+title: "Pergunta 050"
 ---
 
 

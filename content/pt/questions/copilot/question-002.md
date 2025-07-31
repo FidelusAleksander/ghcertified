@@ -1,5 +1,5 @@
 ---
-title: "Questão 002"
+title: "Pergunta 002"
 question: "Qual das opções abaixo NÃO é uma maneira possível de conceder acesso ao Copilot para membros de uma organização?"
 ---
 

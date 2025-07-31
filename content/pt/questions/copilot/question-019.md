@@ -1,5 +1,5 @@
 ---
-title: "Questão 019"
+title: "Pergunta 019"
 question: "Qual conjunto de princípios representa corretamente os seis princípios fundamentais da Microsoft para IA Responsável que orientam o desenvolvimento do GitHub Copilot?"
 ---
 

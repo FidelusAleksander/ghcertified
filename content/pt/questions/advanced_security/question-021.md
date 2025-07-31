@@ -1,5 +1,5 @@
 ---
-title: "Questão 021"
+title: "Pergunta 021"
 question: "Vários repositórios públicos para os quais você está contribuindo não têm a opção de proteção contra push de segredos habilitada. O que você pode fazer para se proteger contra o envio acidental de segredos para esses repositórios?"
 ---
 

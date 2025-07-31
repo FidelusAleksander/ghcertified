@@ -1,6 +1,6 @@
 ---
 question: "Qual é o papel de um Gerente de Segurança dentro de uma organização no GitHub?"
-title: "Questão 058"
+title: "Pergunta 058"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

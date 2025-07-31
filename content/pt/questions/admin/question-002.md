@@ -1,5 +1,5 @@
 ---
-title: "Questão 002"
+title: "Pergunta 002"
 question: "O que é o gráfico de dependência do GitHub?"
 ---
 

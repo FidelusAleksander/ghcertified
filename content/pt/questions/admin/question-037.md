@@ -1,6 +1,6 @@
 ---
 question: "Qual é o limite de gastos padrão para o GitHub Actions em contas com cobrança mensal?"
-title: "Questão 037"
+title: "Pergunta 037"
 ---
 
 > https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions

@@ -1,5 +1,5 @@
 ---
-title: "Questão 095"
+title: "Pergunta 095"
 question: "Quais das seguintes afirmações são verdadeiras sobre adicionar um runner auto-hospedado no GitHub Actions? (Escolha três.)"
 ---
 

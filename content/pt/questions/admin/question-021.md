@@ -1,6 +1,6 @@
 ---
 question: "Quais são as implicações de um usuário gerenciado precisar contribuir para recursos fora da enterprise?"
-title: "Questão 021"
+title: "Pergunta 021"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#supporting-developers-with-multiple-user-accounts-on-githubcom

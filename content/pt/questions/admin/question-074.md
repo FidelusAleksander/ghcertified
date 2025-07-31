@@ -1,6 +1,6 @@
 ---
 question: "Quais das seguintes são tipos de tokens de acesso suportados pelo GitHub? (Escolha três.)"
-title: "Questão 074"
+title: "Pergunta 074"
 ---
 
 > https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats

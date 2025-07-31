@@ -1,6 +1,6 @@
 ---
 question: "Qual das opções a seguir é exclusiva de gerenciamento do GitHub Enterprise Cloud?"
-title: "Questão 028"
+title: "Pergunta 028"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

@@ -1,6 +1,6 @@
 ---
 question: "Qual é o nível mínimo de suporte que oferece ajuda com a instalação e uso do Advanced Security?"
-title: "Question 003"
+title: "Pergunta 003"
 ---
 
 > https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support

@@ -1,5 +1,5 @@
 ---
-title: "Questão 067"
+title: "Pergunta 067"
 question: "Qual das opções abaixo descreve melhor o git?"
 ---
 

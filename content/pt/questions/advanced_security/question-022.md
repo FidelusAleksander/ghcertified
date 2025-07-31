@@ -1,5 +1,5 @@
 ---
-title: "Questão 022"
+title: "Pergunta 022"
 question: "Sua empresa possui segredos internos que não devem ser enviados para os repositórios do GitHub. O padrão desses segredos não é reconhecido pelo GitHub e, portanto, não é detectado pela verificação de segredos. O que as empresas podem fazer para proteger seus desenvolvedores de enviar esses segredos acidentalmente para os repositórios em sua Organização do GitHub?"
 ---
 

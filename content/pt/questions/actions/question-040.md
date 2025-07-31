@@ -1,6 +1,6 @@
 ---
 question: "No exemplo a seguir, `workflow A` passa todos os seus segredos para `workflow B`, utilizando a palavra-chave inherit. Em seguida, `workflow B` chama `workflow C`. Qual afirmação sobre os `secrets` é verdadeira para esse exemplo?"
-title: "Questão 040"
+title: "Pergunta 040"
 ---
 
 

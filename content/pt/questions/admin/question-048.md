@@ -1,6 +1,6 @@
 ---
 question: "Qual função em uma organização do GitHub possui o nível mais alto de acesso?"
-title: "Question 048"
+title: "Pergunta 048"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

@@ -1,6 +1,6 @@
 ---
 question: "Qual é o propósito do parâmetro `restore-keys` em `actions/cache` no GitHub Actions?"
-title: "Questão 106"
+title: "Pergunta 106"
 ---
 
 

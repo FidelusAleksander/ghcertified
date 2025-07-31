@@ -1,6 +1,6 @@
 ---
 question: "Qual é o propósito da palavra-chave `timeout-minutes` em um passo?"
-title: "Questão 109"
+title: "Pergunta 109"
 ---
 
 

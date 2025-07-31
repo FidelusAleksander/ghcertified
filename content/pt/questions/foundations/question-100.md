@@ -1,5 +1,5 @@
 ---
-title: "Questão 100"
+title: "Pergunta 100"
 question: "Você pode alterar um gist de público para secreto depois de criá-lo?"
 ---
 

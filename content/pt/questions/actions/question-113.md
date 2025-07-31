@@ -1,6 +1,6 @@
 ---
 question: "O que é verdadeiro sobre a seguinte configuração de workflow quando disparada contra o repositório `octo/my-dev-repo`?"
-title: "Questão 113"
+title: "Pergunta 113"
 ---
 
 ```yaml

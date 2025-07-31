@@ -1,5 +1,5 @@
 ---
-title: "Questão 121"
+title: "Pergunta 121"
 question: "O que é verdade sobre variáveis padrão? (escolha três)"
 ---
 

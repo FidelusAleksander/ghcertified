@@ -1,5 +1,5 @@
 ---
-title: "Questão 025"
+title: "Pergunta 025"
 question: "Quais são as verificações de pós-processamento realizadas nas respostas do GitHub Copilot?"
 ---
 

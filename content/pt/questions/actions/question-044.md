@@ -1,6 +1,6 @@
 ---
 question: "Para acessar um `artifact` que foi criado em outra execução de workflow anteriormente acionada, você pode:"
-title: "Questão 044"
+title: "Pergunta 044"
 ---
 
 

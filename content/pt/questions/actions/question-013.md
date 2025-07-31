@@ -1,6 +1,6 @@
 ---
 question: "Em um workflow com múltiplos jobs, se o job A falhar, então:"
-title: "Questão 013"
+title: "Pergunta 013"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs

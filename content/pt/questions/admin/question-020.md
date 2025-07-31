@@ -1,6 +1,6 @@
 ---
 question: "Qual afirmação é verdadeira em relação a nomes de usuário e informações de perfil para Enterprise Managed Users?"
-title: "Questão 020"
+title: "Pergunta 020"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users

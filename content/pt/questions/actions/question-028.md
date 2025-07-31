@@ -1,6 +1,6 @@
 ---
 question: "Como você pode garantir que um workflow chamado `Deploy Prod` esteja sempre sendo executado, no máximo, um de cada vez?"
-title: "Questão 028"
+title: "Pergunta 028"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency

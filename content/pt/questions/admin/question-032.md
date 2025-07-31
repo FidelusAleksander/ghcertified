@@ -1,6 +1,6 @@
 ---
 question: "Qual das opções a seguir é uma característica principal do GitHub Enterprise Server?"
-title: "Questão 032"
+title: "Pergunta 032"
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

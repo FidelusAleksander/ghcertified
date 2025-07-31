@@ -1,6 +1,6 @@
 ---
 question: "O que é necessário para adicionar um runner auto-hospedado a uma organização no GitHub?"
-title: "Questão 087"
+title: "Pergunta 087"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners

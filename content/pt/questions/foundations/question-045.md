@@ -1,5 +1,5 @@
 ---
-title: "Questão 045"
+title: "Pergunta 045"
 question: "O que você pode encontrar na aba de segurança de um repositório?"
 ---
 

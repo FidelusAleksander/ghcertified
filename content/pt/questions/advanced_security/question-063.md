@@ -1,5 +1,5 @@
 ---
-title: "Questão 063"
+title: "Pergunta 063"
 question: "O CodeQL scanning suporta:"
 ---
 

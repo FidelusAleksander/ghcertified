@@ -1,6 +1,6 @@
 ---
 question: "Ao usar o GitHub Actions para acessar recursos em um dos provedores de nuvem (como AWS, Azure ou GCP), a forma mais segura e recomendada de autenticação é"
-title: "Question 058"
+title: "Pergunta 058"
 ---
 
 > https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect

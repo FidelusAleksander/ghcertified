@@ -1,6 +1,6 @@
 ---
 question: "Quais dos seguintes problemas o Suporte do GitHub pode ajudar a resolver? (Escolha quatro.)"
-title: "Questão 004"
+title: "Pergunta 004"
 ---
 
 > https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#scope-of-support

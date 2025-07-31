@@ -1,6 +1,6 @@
 ---
 question: "Quais componentes são necessários para um workflow? (Selecione dois.)"
-title: "Question 007"
+title: "Pergunta 007"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#workflow-basics

@@ -1,5 +1,5 @@
 ---
-title: "Questão 070"
+title: "Pergunta 070"
 question: "O que é extração no contexto da análise de código com CodeQL?"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Questão 038"
+title: "Pergunta 038"
 question: "Quais afirmações estão corretas em relação ao uso de @workspace e #codebase? (Selecione duas.)"
 ---
 

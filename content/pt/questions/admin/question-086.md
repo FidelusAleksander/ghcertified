@@ -1,6 +1,6 @@
 ---
 question: "Como adicionar um runner auto-hospedado a um repositório do GitHub?"
-title: "Question 086"
+title: "Pergunta 086"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners

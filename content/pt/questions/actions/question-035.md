@@ -1,6 +1,6 @@
 ---
 question: "Para evitar que um job falhe quando uma das etapas falhar, você pode incluir:"
-title: "Questão 035"
+title: "Pergunta 035"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error

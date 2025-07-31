@@ -1,5 +1,5 @@
 ---
-title: "Questão 015"
+title: "Pergunta 015"
 question: "Você acidentalmente cometeu seu token de acesso pessoal do GitHub em um repositório público. Quais ações você deve tomar para impedir que sua conta seja comprometida?"
 ---
 

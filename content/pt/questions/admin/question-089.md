@@ -1,6 +1,6 @@
 ---
 question: "Quais etapas estão envolvidas na criação de um grupo de runners auto-hospedados para uma organização no GitHub?"
-title: "Questão 089"
+title: "Pergunta 089"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups

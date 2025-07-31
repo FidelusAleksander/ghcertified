@@ -1,6 +1,6 @@
 ---
 question: "Para qualquer ação publicada no GitHub Marketplace, você pode frequentemente usá-la em múltiplas versões, qual abordagem é a mais estável e segura?"
-title: "Questão 034"
+title: "Pergunta 034"
 ---
 
 

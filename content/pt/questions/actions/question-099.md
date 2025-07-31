@@ -1,6 +1,6 @@
 ---
 question: "Qual é a abordagem recomendada para armazenar segredos maiores que 48 KB?"
-title: "Questão 099"
+title: "Pergunta 099"
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#limits-for-secrets

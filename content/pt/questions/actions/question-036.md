@@ -1,6 +1,6 @@
 ---
 question: "Você definiu um trabalho de matriz `example_matrix`. Como limitar a matriz para executar no máximo 2 trabalhos ao mesmo tempo?"
-title: "Questão 036"
+title: "Pergunta 036"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 question: "Qual é verdadeiro sobre os ambientes?"
-title: "Questão 057"
+title: "Pergunta 057"
 ---
 
 > Cada job em um workflow pode referenciar um único ambiente.

@@ -1,6 +1,6 @@
 ---
 question: "Sua organização define um segredo `SomeSecret`, no entanto, ao referenciar esse segredo em um workflow usando `${{ secrets.SomeSecret }}`, ele fornece um valor diferente do esperado. Qual pode ser a razão para isso?"
-title: "Questão 062"
+title: "Pergunta 062"
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets
