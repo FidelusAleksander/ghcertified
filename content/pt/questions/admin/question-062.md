@@ -1,5 +1,5 @@
 ---
-question: "Quais são os papéis de repositório disponíveis em uma organização no GitHub? (Escolha cinco.)"
+question: "Quais são os papéis de repositório disponíveis em uma organização do GitHub? (Escolha cinco.)"
 title: "Pergunta 062"
 ---
 
@@ -11,3 +11,4 @@ title: "Pergunta 062"
 - [x] Admin
 - [ ] Owner
 - [ ] Moderator
+
