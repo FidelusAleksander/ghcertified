@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 120"
-question: "Qual é a sintaxe correta para especificar um script de limpeza em uma ação de container?"
+question: "Qual é a sintaxe correta para especificar um script de limpeza em uma container action?"
 ---
 
 

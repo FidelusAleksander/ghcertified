@@ -1,6 +1,6 @@
 ---
-question: "Selecione funções de verificação de status no GitHub Actions"
-title: "Questão 100"
+question: "Selecione as funções de verificação de status no GitHub Actions"
+title: "Pergunta 100"
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions

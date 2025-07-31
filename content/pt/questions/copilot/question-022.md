@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 022"
-question: "Qual é o principal propósito do comando de barra '/tests' no GitHub Copilot?"
+question: "Qual é o principal propósito do comando '/tests' no GitHub Copilot?"
 ---
 
 > https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot

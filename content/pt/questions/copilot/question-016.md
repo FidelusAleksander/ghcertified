@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 016"
-question: "Qual das opções a seguir descreve melhor o GitHub Copilot?"
+question: "Qual das opções a seguir melhor descreve o GitHub Copilot?"
 ---
 
 

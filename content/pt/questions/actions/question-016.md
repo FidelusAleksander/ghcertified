@@ -1,5 +1,5 @@
 ---
-question: "Como você acessa variáveis de matriz em um trabalho de estratégia de matriz?"
+question: "Como você acessa variáveis de matriz em um job de estratégia de matriz?"
 title: "Pergunta 016"
 ---
 

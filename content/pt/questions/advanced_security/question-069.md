@@ -1,5 +1,5 @@
 ---
-title: "Questão 069"
+title: "Pergunta 069"
 question: "Quais são as etapas do fluxo de trabalho de análise do CodeQL?"
 ---
 

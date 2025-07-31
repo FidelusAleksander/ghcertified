@@ -1,5 +1,5 @@
 ---
-question: "Como administrador de uma organização no GitHub, você quer que os usuários se autentiquem usando um provedor de identidade corporativo. Qual das opções a seguir é uma maneira de alcançar isso?"
+question: "Como administrador de uma Organização do GitHub, você deseja que os usuários se autentiquem utilizando um provedor de identidade corporativo. Qual das opções a seguir é uma maneira de alcançar isso?"
 title: "Pergunta 001"
 ---
 

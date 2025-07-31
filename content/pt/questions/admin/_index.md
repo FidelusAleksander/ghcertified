@@ -1,11 +1,11 @@
 ---
-title: "Perguntas para Administradores do GitHub"
+title: "Perguntas sobre GitHub Admin"
 hidden: true
 cascade:
     exam: "GitHub Admin"
-    Description: "Perguntas simuladas para o exame de certificação de Administrador do GitHub."
+    Description: "Perguntas simuladas para o Exame de Certificação GitHub Admin."
 ---
 
-### Administrador do GitHub
+### GitHub Admin
 
 {{< library-links questions="GitHub Admin" >}}

@@ -1,6 +1,6 @@
 ---
 question: "Este fluxo de trabalho será executado em todos os pull requests onde:"
-title: "Questão 018"
+title: "Pergunta 018"
 ---
 
 ```yaml

@@ -1,5 +1,5 @@
 ---
-question: "Como você pode usar a API do GitHub para criar ou atualizar um segredo de repositório?"
+question: "Como você pode usar a API do GitHub para criar ou atualizar um secret de repositório?"
 title: "Pergunta 070"
 ---
 

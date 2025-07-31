@@ -1,5 +1,5 @@
 ---
-question: "Como pular a execução do workflow seguinte ao cometer ou criar um PR?"
+question: "Como você pode pular a execução do seguinte workflow ao fazer um commit ou criar um Pull Request?"
 title: "Pergunta 118"
 ---
 
@@ -16,7 +16,7 @@ jobs:
 
 >https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
 
-1. [x] Incluindo qualquer uma das seguintes palavras-chave na mensagem do commit ou no título do pull request
+1. [x] Incluindo qualquer uma das seguintes palavras-chave na mensagem do commit ou no título do Pull Request
 ```yaml
 [skip ci]
 [ci skip]
@@ -25,5 +25,5 @@ jobs:
 [actions skip]
 ```
 
-1. [ ] Fornecer `SKIP_WORKFLOW` na mensagem do commit
-1. [ ] O workflow acima será executado em todos os eventos de push ou pull request em qualquer caso
+1. [ ] Fornecendo `SKIP_WORKFLOW` na mensagem do commit
+1. [ ] O workflow acima será executado em todo evento de push ou pull request em todos os casos

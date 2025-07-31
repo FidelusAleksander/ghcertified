@@ -1,5 +1,5 @@
 ---
-question: "O GitHub Copilot é gratuito para todos?"
+question: "O GitHub Copilot é gratuito para uso por todos?"
 title: "Pergunta 001"
 ---
 

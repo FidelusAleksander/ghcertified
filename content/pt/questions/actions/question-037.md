@@ -1,5 +1,5 @@
 ---
-question: "Qual dessas é uma maneira correta de definir um parâmetro de saída `PET` com o valor `DOG` em um `step`."
+question: "Qual destas é uma maneira correta de definir um parâmetro de saída `PET` com o valor `DOG` em um `step`."
 title: "Pergunta 037"
 ---
 

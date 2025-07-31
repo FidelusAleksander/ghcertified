@@ -1,5 +1,5 @@
 ---
-question: "Dave quer ser notificado quando um comentário for criado em uma issue dentro de um repositório do GitHub. Qual gatilho de evento deve ser usado na configuração do workflow?"
+question: "Dave quer ser notificado quando um comentário for criado em uma issue dentro de um repositório do GitHub. Qual evento de gatilho deve ser usado na configuração do workflow?"
 title: "Pergunta 111"
 ---
 
@@ -8,3 +8,4 @@ title: "Pergunta 111"
 1. [ ] `issues.comment`
 1. [ ] `issues`
 1. [ ] `comment`
+

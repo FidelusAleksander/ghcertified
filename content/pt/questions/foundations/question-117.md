@@ -1,5 +1,5 @@
 ---
-title: "Questão 117"
+title: "Pergunta 117"
 question: "Qual das afirmações a seguir é verdadeira sobre os wikis do GitHub?"
 ---
 

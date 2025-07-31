@@ -1,5 +1,5 @@
 ---
-title: "Questão 027"
+title: "Pergunta 027"
 question: "Qual das seguintes opções NÃO é um modo selecionável no GitHub Copilot Chat?"
 ---
 

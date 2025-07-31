@@ -19,7 +19,7 @@ question: "Qual é a sintaxe correta para definir o diretório para todos os com
             shell: bash
             directory: ./scripts
    ```
-1. [ ] definir `working-directory` dentro de `job`
+1. [ ] definir `working-directory` em `job`
    ```yaml
     defaults:
         run:
@@ -27,7 +27,7 @@ question: "Qual é a sintaxe correta para definir o diretório para todos os com
     job:
         working-directory: ./scripts
    ```
-1. [ ] definir `directory` dentro de `job`
+1. [ ] definir `directory` em `job`
    ```yaml
     defaults:
         run:

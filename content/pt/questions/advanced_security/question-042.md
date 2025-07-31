@@ -1,5 +1,5 @@
 ---
-title: "Questão 042"
+title: "Pergunta 042"
 question: "Qual dessas afirmações não é verdadeira sobre a verificação de segredos no GitHub?"
 ---
 

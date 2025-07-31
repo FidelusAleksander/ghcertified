@@ -1,5 +1,5 @@
 ---
-question: "Qual configuração é apropriada para acionar um workflow em eventos de webhook relacionados a ações de check_run?"
+question: "Qual configuração é apropriada para acionar um workflow para ser executado em eventos de webhook relacionados a ações check_run?"
 title: "Pergunta 108"
 ---
 

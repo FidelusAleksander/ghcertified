@@ -1,5 +1,5 @@
 ---
-title: "Questão 106"
+title: "Pergunta 106"
 question: "Quais são os diferentes níveis da hierarquia organizacional do GitHub? (Escolha três.)"
 ---
 

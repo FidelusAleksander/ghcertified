@@ -1,5 +1,5 @@
 ---
-question: "Qual variável você definiria como `true` para habilitar o registro de depuração em etapas?"
+question: "Qual variável você configuraria como `true` para ativar o registro de depuração por etapa?"
 title: "Pergunta 107"
 ---
 

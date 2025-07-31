@@ -1,6 +1,6 @@
 ---
-question: "Os segredos e as variáveis de configuração podem ser definidos para: (Selecione três.)"
-title: "Questão 050"
+question: "Segredos e variáveis de configuração podem ser definidos para: (Selecione três.)"
+title: "Pergunta 050"
 ---
 
 
@@ -8,10 +8,10 @@ title: "Questão 050"
 - [x] Toda a organização ou repositórios selecionados em uma organização
 - [x] Um único repositório
 - [x] Um ambiente em um repositório
-- [ ] Um ambiente compartilhado entre vários repositórios
+- [ ] Um ambiente compartilhado entre múltiplos repositórios
 > Ambientes não podem ser compartilhados entre repositórios
-- [ ] Vários repositórios que não compartilham uma organização/empresa
+- [ ] Múltiplos repositórios que não compartilham uma organização/enterprise
 - [ ] Um workflow específico em um repositório
-> Variáveis de ambiente podem ser definidas para um workflow; variáveis de configuração não podem
-- [ ] Um job específico em um workflow
-> Variáveis de ambiente podem ser definidas para um workflow; variáveis de configuração não podem
+> Variáveis de ambiente podem ser definidas para um workflow, variáveis de configuração não
+- [ ] Uma job específica em um workflow
+> Variáveis de ambiente podem ser definidas para um workflow, variáveis de configuração não

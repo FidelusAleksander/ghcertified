@@ -1,5 +1,5 @@
 ---
-question: "Quais são os possíveis tipos de uma variável de entrada para um fluxo de trabalho acionado manualmente? (Selecione cinco.)"
+question: "Quais são os possíveis tipos de uma variável de entrada para um workflow acionado manualmente? (Selecione cinco.)"
 title: "Pergunta 021"
 ---
 
@@ -11,3 +11,4 @@ title: "Pergunta 021"
 - [x] environment
 - [ ] dropdown
 - [ ] select
+

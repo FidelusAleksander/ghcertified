@@ -1,10 +1,10 @@
 ---
-question: "Quais são os passos para habilitar e aplicar o SSO SAML para uma única organização?"
+question: "Quais são as etapas para habilitar e impor o SAML SSO para uma única organização?"
 title: "Pergunta 013"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enabling-and-testing-saml-single-sign-on-for-your-organization#enabling-and-testing-saml-single-sign-on-for-your-organization
-1. [x] Navegue até `Suas organizações`, escolha `Configurações`, clique em `Segurança de autenticação`, selecione `Habilitar autenticação SAML`, configure as configurações do IdP, teste a configuração SAML e aplique o SSO SAML.
-1. [ ] Vá para `Configurações da Organização`, selecione `Segurança`, escolha `Autenticação SAML`, insira as informações do IdP, realize um teste da configuração SAML e aplique o SSO SAML.
-1. [ ] No menu principal, selecione `Organização`, depois `Configurações de Segurança`, habilite `SSO SAML`, preencha os detalhes do IdP, teste a configuração de SSO e, em seguida, aplique o SSO SAML.
-1. [ ] Acesse `Configurações da Organização`, clique em `Segurança`, habilite `SSO SAML`, adicione a URL do IdP, teste a configuração e opte por aplicar o SSO SAML após um teste bem-sucedido.
+1. [x] Navegue para `Your organizations`, escolha `Settings`, clique em `Authentication security`, selecione `Enable SAML authentication`, configure as configurações do IdP, teste a configuração do SAML e imponha o SAML SSO.
+1. [ ] Acesse `Organization Settings`, selecione `Security`, escolha `SAML Authentication`, insira as informações do IdP, realize um teste da configuração do SAML e imponha o SAML SSO.
+1. [ ] No menu principal, selecione `Organization`, depois `Security Settings`, habilite `SAML SSO`, preencha os detalhes do IdP, teste a configuração do SSO e, em seguida, imponha o SAML SSO.
+1. [ ] Acesse `Organization Settings`, clique em `Security`, habilite `SAML SSO`, adicione a URL do IdP, teste a configuração e opte por impor o SAML SSO após a confirmação do teste.

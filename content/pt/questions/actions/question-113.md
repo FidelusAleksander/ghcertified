@@ -1,5 +1,5 @@
 ---
-question: "O que é verdadeiro sobre a seguinte configuração de fluxo de trabalho se acionada no repositório `octo/my-dev-repo`?"
+question: "O que é verdadeiro sobre a seguinte configuração de workflow quando disparada contra o repositório `octo/my-dev-repo`?"
 title: "Pergunta 113"
 ---
 
@@ -18,7 +18,7 @@ jobs:
             - run: npm install -g bats
 ```
 > https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution
-1. [x] o trabalho `production-deploy` será marcado como pulado
-1. [ ] o trabalho `production-deploy` apresentará erro
-1. [ ] o trabalho `production-deploy` executará três etapas
-1. [ ] o trabalho `production-deploy` será executado se a `node-version` for `14`
+1. [x] o job `production-deploy` será marcado como ignorado
+1. [ ] o job `production-deploy` apresentará erro
+1. [ ] o job `production-deploy` executará três etapas
+1. [ ] o job `production-deploy` será executado se o `node-version` for `14`

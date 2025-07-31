@@ -1,5 +1,5 @@
 ---
-question: "Quais tipos de runners hospedados no GitHub estão disponíveis para uso? (Selecione três.)"
+question: "Quais tipos de runners hospedados pelo GitHub estão disponíveis para uso? (Selecione três.)"
 title: "Pergunta 032"
 ---
 
@@ -8,3 +8,4 @@ title: "Pergunta 032"
 - [x] Ubuntu Linux
 - [x] macOS
 - [ ] Android
+

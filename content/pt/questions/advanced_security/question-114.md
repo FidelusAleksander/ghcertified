@@ -1,5 +1,5 @@
 ---
-title: "Questão 114"
+title: "Pergunta 114"
 question: "O que significa `CWE`?"
 ---
 

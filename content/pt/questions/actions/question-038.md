@@ -1,6 +1,6 @@
 ---
-question: "Qual destas é uma maneira de usar `action_state` em `step_two`?"
-title: "Questão 038"
+question: "Qual dessas é uma maneira de usar `action_state` em `step_two`? "
+title: "Pergunta 038"
 ---
 
 ```yaml
@@ -16,6 +16,6 @@ title: "Questão 038"
 > https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-of-writing-an-environment-variable-to-github_env
 1. [x] `run: echo "$action_state"`
 1. [ ] `run: echo "${{ steps.step_one.outputs.action_state }}"`
-> Isso seria o caso se `action_state` fosse escrito para `$GITHUB_OUTPUT`
+> Isso seria o caso se `action_state` tivesse sido escrito para `$GITHUB_OUTPUT`
 1. [ ] `run: echo "$steps.step_one.outputs.action_state"`
 1. [ ] `run: echo "${{ action_state }}"`

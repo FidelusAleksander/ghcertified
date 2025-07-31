@@ -1,6 +1,6 @@
 ---
-question: "Qual condicional `jobs.job_id.if` garantirá que o trabalho `production-deploy` seja acionado apenas no repositório `my-org/my-repo`? (Selecione duas.)"
-title: "Questão 031"
+question: "Qual condicional `jobs.job_id.if` garantirá que o job `production-deploy` seja acionado apenas no repositório `my-org/my-repo`? (Selecione duas.)"
+title: "Pergunta 031"
 ---
 
 ```yaml

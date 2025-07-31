@@ -1,5 +1,5 @@
 ---
-question: "Por qual cabeçalho você pode verificar o número de solicitações que fez na janela de limite de taxa atual ao usar a API REST do GitHub?"
+question: "Por qual cabeçalho você pode verificar o número de requisições que fez na janela atual de limite de taxa ao usar a GitHub REST API?"
 title: "Pergunta 096"
 ---
 

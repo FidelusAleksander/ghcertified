@@ -1,6 +1,6 @@
 ---
 question: "Quantos jobs serão executados no seguinte workflow?"
-title: "Questão 073"
+title: "Pergunta 073"
 ---
 
 ```yaml

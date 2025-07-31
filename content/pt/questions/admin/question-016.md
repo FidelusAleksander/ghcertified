@@ -1,5 +1,5 @@
 ---
-question: "Quais provedores de identidade (IdPs) são compatíveis com a API SCIM do GitHub Enterprise Cloud para organizações? (Escolha três.)"
+question: "Quais provedores de identidade (IdPs) suportam a API SCIM do GitHub Enterprise Cloud para organizações? (Escolha três.)"
 title: "Pergunta 016"
 ---
 
@@ -11,3 +11,4 @@ title: "Pergunta 016"
 - [ ] Google Identity Platform
 - [ ] Auth0
 - [ ] Keycloak
+
