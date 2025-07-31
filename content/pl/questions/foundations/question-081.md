@@ -1,5 +1,5 @@
 ---
-title: "Question 081"
+title: "Pytanie 081"
 question: "Czym są przypięte repozytoria na GitHubie?"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Question 038"
+title: "Pytanie 038"
 question: "Która z tych opcji NIE jest rolą w organizacji GitHub?"
 ---
 

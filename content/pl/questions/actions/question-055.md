@@ -1,6 +1,6 @@
 ---
 question: "Przepływ pracy został początkowo uruchomiony na `commit A` i zakończył się niepowodzeniem. Naprawiłeś przepływ pracy w kolejnej `commit B`. Kiedy ponownie uruchomisz ten przepływ pracy, zostanie on uruchomiony z kodem z którego commitu?"
-title: "Question 055"
+title: "Pytanie 055"
 ---
 
 > https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#about-re-running-workflows-and-jobs
