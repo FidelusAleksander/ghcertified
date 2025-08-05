@@ -1,5 +1,5 @@
 ---
-question: "Co jest prawdą na temat poniższej konfiguracji workflow, jeśli zostanie uruchomiona w repozytorium `octo/my-dev-repo`?"
+question: "Co jest prawdą na temat poniższej konfiguracji workflow, jeśli zostanie wywołana dla repozytorium `octo/my-dev-repo`?"
 title: "Pytanie 113"
 ---
 
@@ -19,6 +19,4 @@ jobs:
 ```
 > https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution
 1. [x] zadanie `production-deploy` zostanie oznaczone jako pominięte
-1. [ ] zadanie `production-deploy` zakończy się błędem
-1. [ ] zadanie `production-deploy` wykona trzy kroki
-1. [ ] zadanie `production-deploy` uruchomi się, jeśli `node-version` wynosi `14`
+1. [ ] zadanie `production-deploy` zakończy się błę
