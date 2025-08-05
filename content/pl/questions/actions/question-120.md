@@ -1,6 +1,6 @@
 ---
 title: "Pytanie 120"
-question: "Jaka jest poprawna składnia do określenia skryptu sprzątającego w akcji kontenerowej?"
+question: "Jaka jest poprawna składnia dla określenia skryptu czyszczącego w akcji kontenerowej?"
 ---
 
 
@@ -33,20 +33,4 @@ question: "Jaka jest poprawna składnia do określenia skryptu sprzątającego w
       after: 'cleanup.sh'
 ```
 
-1. [ ] 
-```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      after-entrypoint: 'cleanup.sh'
-```
-
-1. [ ] 
-```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      cleanup: 'cleanup.sh'
-```
+1. [ ]
