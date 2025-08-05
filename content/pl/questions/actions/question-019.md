@@ -1,5 +1,5 @@
 ---
-question: "Uzupełnij puste miejsce: Podczas korzystania z filtrów wyzwalania zdarzeń `push` możesz używać wzorców <____>, aby skierować działania na wiele gałęzi"
+question: "Uzupełnij zdanie: Korzystając z filtrów wyzwalacza zdarzenia `push`, możesz użyć wzorców <____>, aby celować w wiele gałęzi"
 title: "Pytanie 019"
 ---
 
