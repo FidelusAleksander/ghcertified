@@ -1,9 +1,9 @@
 ---
-title: "Pytania dotyczące GitHub Actions"
+title: "GitHub Actions Questions"
 hidden: true
 cascade:
     exam: "GitHub Actions"
-    Description: "Przykładowe pytania egzaminacyjne do certyfikacji GitHub Actions."
+    Description: "Pytania egzaminacyjne na próbny egzamin certyfikacyjny GitHub Actions."
 ---
 
 ### GitHub Actions
