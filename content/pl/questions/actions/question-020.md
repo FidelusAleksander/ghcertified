@@ -1,5 +1,5 @@
 ---
-question: "Które zdarzenie pozwala ręcznie uruchomić workflow z interfejsu użytkownika GitHub?"
+question: "Które zdarzenie pozwala na ręczne uruchomienie workflow z interfejsu GitHub?"
 title: "Pytanie 020"
 ---
 
