@@ -18,8 +18,7 @@ jobs:
       - run: echo "Hello ${{ matrix.color }} ${{ matrix.pet }}"
 ```
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [x] 5
-1. [ ] 4
-1. [ ] 6
-1. [ ] 7
-
+1. [x] 5  
+1. [ ] 4  
+1. [ ] 6  
+1. [ ] 7  
