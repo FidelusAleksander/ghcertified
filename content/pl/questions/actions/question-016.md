@@ -1,11 +1,11 @@
 ---
-question: "Jak uzyskać dostęp do zmiennych macierzy w zadaniu strategii macierzy?"
+question: "Jak uzyskać dostęp do zmiennych matrycy w zadaniu strategii matrycowej?"
 title: "Pytanie 016"
 ---
 
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [ ] Używając kontekstu `vars`
-1. [x] Używając kontekstu `matrix`
-1. [ ] Używając kontekstu `job`
-1. [ ] Używając kontekstu `jobs`
+1. [ ] Korzystając z kontekstu `vars`
+1. [x] Korzystając z kontekstu `matrix`
+1. [ ] Korzystając z kontekstu `job`
+1. [ ] Korzystając z kontekstu `jobs`
