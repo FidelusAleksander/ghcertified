@@ -1,5 +1,5 @@
 ---
-question: "Które zdefiniowanie zadania macierzy jest składniowo poprawne?"
+question: "Która definicja zadania macierzy jest składniowo poprawna?"
 title: "Pytanie 015"
 ---
 
@@ -35,10 +35,4 @@ title: "Pytanie 015"
         os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ] 
-```yaml
-  jobs:
-    matrix:
-      version: [10, 12, 14]
-      os: [ubuntu-latest, windows-latest]
-```
+
