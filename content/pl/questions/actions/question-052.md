@@ -1,9 +1,9 @@
 ---
-question: "Czy to stwierdzenie jest prawdziwe? `Docker container actions są zazwyczaj wolniejsze niż JavaScript actions`"
+question: "Czy to stwierdzenie jest prawdziwe? `Akcje kontenerów Docker są zwykle wolniejsze niż akcje JavaScript`"
 title: "Pytanie 052"
 ---
 
-> Docker container actions są wolniejsze niż JavaScript actions  
+> Akcje kontenerów Docker są wolniejsze niż akcje JavaScript  
 1. [x] Prawda  
 1. [ ] Fałsz  
-> Ze względu na opóźnienia związane z budowaniem i pobieraniem kontenera, Docker container actions są wolniejsze niż JavaScript actions.  
+> Ze względu na opóźnienia związane z budowaniem i pobieraniem kontenera, akcje kontenerów Docker są wolniejsze niż akcje JavaScript.
