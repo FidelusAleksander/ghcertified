@@ -1,6 +1,6 @@
 ---
 title: "Pergunta 007"
-question: "Qual é a afirmativa verdadeira sobre as exclusões de conteúdo do Copilot? (Escolha duas)"
+question: "O que é verdadeiro sobre as exclusões de conteúdo do Copilot? (Escolha duas)"
 ---
 
 
@@ -11,4 +11,4 @@ question: "Qual é a afirmativa verdadeira sobre as exclusões de conteúdo do C
 > O Copilot pode usar informações de um arquivo excluído se as informações forem fornecidas pelo IDE.
 - [ ] As exclusões de conteúdo não afetam a conclusão de código
 - [ ] As exclusões de conteúdo são aplicadas instantaneamente
-> Após adicionar ou alterar as exclusões de conteúdo, pode levar até 30 minutos para que entrem em vigor.
+> Após adicionar ou alterar exclusões de conteúdo, pode levar até 30 minutos para que entrem em vigor
