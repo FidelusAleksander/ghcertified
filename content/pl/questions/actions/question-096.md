@@ -1,5 +1,5 @@
 ---
-question: "Wybierz domyślną zmienną środowiskową, która zawiera system operacyjny wykonywanego zadania przez runnera"
+question: "Wybierz domyślną zmienną środowiskową zawierającą system operacyjny runnera wykonującego zadanie"
 title: "Pytanie 096"
 ---
 
@@ -8,4 +8,3 @@ title: "Pytanie 096"
 1. [ ] `GITHUB_RUNNER_OS`
 1. [ ] `RUNNER_ARCH`
 1. [ ] `RUNNER_NAME`
-
