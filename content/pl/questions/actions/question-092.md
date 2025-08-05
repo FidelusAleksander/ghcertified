@@ -1,8 +1,7 @@
 ---
 title: "Pytanie 092"
-question: "W workflow GitHub Actions, jak określić konkretną wersję Node.js do użycia w zadaniu?"
+question: "W przepływie pracy GitHub Actions, jak określić konkretną wersję Node.js do użycia w zadaniu?"
 ---
-
 
 > https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs#specifying-the-nodejs-version
 1. [x] 
