@@ -13,7 +13,7 @@ title: "Pytanie 030"
       needs: [job1, job2]
 ```
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-not-requiring-successful-dependent-jobs
-1. [x] job3 uruchomi się po zakończeniu job1 i job2, niezależnie od tego, czy zakończyły się pomyślnie
-1. [ ] Nie można używać `if: ${{ always() }}` i `needs` razem. Workflow zakończy się błędem przy uruchomieniu.
+1. [x] job3 uruchomi się po zakończeniu job1 i job2, niezależnie od tego, czy zakończyły się sukcesem
+1. [ ] Nie można używać `if: ${{ always() }}` i `needs` razem. Workflow zakończy się błędem na starcie.
 1. [ ] job3 uruchomi się po pomyślnym zakończeniu job1 i job2
-1. [ ] job3 uruchomi się po niepowodzeniu zarówno job1, jak i job2
+1. [ ] job3 uruch
