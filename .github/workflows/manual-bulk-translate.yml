@@ -58,4 +58,4 @@ jobs:
       file: ${{ matrix.file }}
       language_code: ${{ inputs.language_code }}
       language_name: ${{ inputs.language_name }}
-      branch: i18n/bulk-translate-${{ inputs.language_code }}
+      branch: i18n/ai-inference-${{ inputs.language_code }}
