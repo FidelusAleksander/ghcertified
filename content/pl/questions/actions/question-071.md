@@ -1,6 +1,6 @@
 ---
-question: "Jak można zastąpić tajny klucz na poziomie organizacji GitHub `API_KEY` inną wartością podczas pracy w ramach repozytorium? (Wybierz dwie odpowiedzi.)"
-title: "Pytanie 071"
+question: "Jak można nadpisać GitHub Secret `API_KEY` na poziomie organizacji inną wartością podczas pracy w repozytorium? (Wybierz dwie.)"
+title: "Question 071"
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets
@@ -10,5 +10,4 @@ title: "Pytanie 071"
 - [ ] Tworząc sekret przedsiębiorstwa o nazwie `OVERRIDE_API_KEY`
 - [ ] Tworząc sekret repozytorium o nazwie `OVERRIDE_API_KEY`
 - [ ] Tworząc sekret środowiska o nazwie `OVERRIDE_API_KEY`
-- [ ] Tworząc sekret repozytorium o nazwie `REPOSITORY_API_KEY`
-- [ ] Tworząc sekret środowiska o nazwie `ENVIRONMENT_API_KEY`
+- [ ] Twor
