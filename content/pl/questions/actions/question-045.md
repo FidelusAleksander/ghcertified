@@ -1,5 +1,5 @@
 ---
-question: "Czego należy użyć do przechowywania raportów pokrycia lub zrzutów ekranu generowanych podczas workflow, który wykonuje testy automatyczne dla repository?"
+question: "Czego powinieneś użyć do przechowywania raportów pokrycia kodu lub zrzutów ekranu generowanych podczas workflow uruchamiającego testy automatyczne dla repository?"
 title: "Pytanie 045"
 ---
 
