@@ -8,3 +8,4 @@ question: "Quais IDEs o GitHub Copilot suporta? (Escolha duas.)"
 - [x] Azure Data Studio, Visual Studio, IntelliJ IDEA
 - [ ] Visual Studio, NetBeans, Eclipse
 - [ ] Visual Studio, BlueJ, NetBeans
+
