@@ -17,22 +17,3 @@ title: "Pytanie 068"
 ```yaml
   my-job:
     runs-on: ubuntu-latest
-    if: ${{ secrets.MY_SECRET == '' }}
-```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
-1. [ ] Tworząc następujący warunek na poziomie kroku
-```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET == '' }}
-```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
-1. [ ] Tworząc następujący warunek na poziomie kroku
-```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET }}
-```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
