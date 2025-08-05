@@ -56,7 +56,7 @@ jobs:
             targetLanguage: ${{ inputs.language_name }}
 
       - name: Translate file
-        uses: FidelusAleksander/prompt-action@v1
+        uses: actions/ai-inference@v1
         id: translate
         with:
           system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
@@ -74,7 +74,7 @@ jobs:
           mkdir -p "$TARGET_DIR"
           echo "$TRANSLATED_TEXT" > "$TARGET_PATH"
         env:
-          TRANSLATED_TEXT: ${{ steps.translate.outputs.text }}
+          TRANSLATED_TEXT: ${{ steps.translate.outputs.response }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
