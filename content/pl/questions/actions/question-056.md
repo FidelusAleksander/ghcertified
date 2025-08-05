@@ -1,5 +1,5 @@
 ---
-question: "Jak można wymagać ręcznej akceptacji przez maintainera, jeśli uruchomienie workflow jest skierowane do środowiska `production`?"
+question: "Jak możesz wymagać ręcznych zatwierdzeń przez maintainer, jeśli uruchomienie workflow jest skierowane na środowisko `production`?"
 title: "Pytanie 056"
 ---
 
@@ -7,4 +7,4 @@ title: "Pytanie 056"
 1. [x] Korzystając z zasad ochrony wdrożeń (deployment protection rules)
 1. [ ] Ustawiając wymaganych recenzentów w workflow `production`
 1. [ ] Korzystając z zasad ochrony gałęzi (branch protection rules)
-1. [ ] Ręczne akceptacje nie są obsługiwane przez GitHub Actions
+1. [ ] Ręczne zatwierdzenia nie są obsługiwane przez GitHub Actions
