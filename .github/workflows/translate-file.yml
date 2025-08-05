@@ -61,6 +61,7 @@ jobs:
         with:
           system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
           prompt-file: ${{ inputs.file }}
+          model: gpt-4o
 
       - name: Save translation
         id: save-translation
