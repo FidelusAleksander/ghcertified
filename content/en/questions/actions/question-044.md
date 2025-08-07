@@ -4,7 +4,7 @@ title: "Question 044"
 ---
 
 
-> https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
+> https://github.com/actions/download-artifact?tab=readme-ov-file#download-artifacts-from-other-workflow-runs-or-repositories
 1. [ ] You cannot access `artifacts` that were created in a different workflow run
 1. [x] Use the `actions/download-artifact` action with elevated permissions.
 1. [ ] Use the `actions/upload-artifact` action.
