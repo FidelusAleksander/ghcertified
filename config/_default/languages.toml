@@ -29,3 +29,10 @@ weight = 4
 languageCode = 'es-ES'
 languageName = 'Español'
 contentDir = 'content/es'
+
+[ja]
+title = "GitHub Certified"
+weight = 4
+languageCode = 'ja-JP'
+languageName = 'Japanese'
+contentDir = 'content/ja'

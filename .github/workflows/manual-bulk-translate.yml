@@ -17,6 +17,7 @@ on:
           - pt
           - pl
           - es
+          - ja
       language_name:
         description: "Language name"
         required: true
@@ -25,6 +26,7 @@ on:
           - Portuguese
           - Polish
           - Spanish
+          - Japanese
 
 permissions:
   contents: write
