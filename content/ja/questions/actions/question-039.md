@@ -1,5 +1,5 @@
 ---
-question: "この記述は正しいですか？ `Workflowsは再利用できるが、再利用可能なWorkflowは別の再利用可能なWorkflowを呼び出すことはできない。`"
+question: "この記述は正しいですか？ Workflowsは再利用できるが、再利用可能なWorkflowは別の再利用可能なWorkflowを呼び出すことはできない。"
 title: "質問 039"
 ---
 

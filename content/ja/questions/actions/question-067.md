@@ -1,5 +1,5 @@
 ---
-question: "構成変数 `MY_VAR` が `MY_VALUE` の値を持つ場合のみJobをトリガーする正しい方法はどれですか？"
+question: "構成変数(Configuration Variables)  `MY_VAR` が `MY_VALUE` の値を持つ場合のみJobをトリガーする正しい方法はどれですか？"
 title: "質問 067"
 ---
 

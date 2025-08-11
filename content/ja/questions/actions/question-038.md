@@ -1,6 +1,6 @@
 ---
 question: "`step_two` で `action_state` を使用する方法として正しいのはどれですか？"
-title: "Question 038"
+title: "質問 038"
 ---
 
 ```yaml

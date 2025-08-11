@@ -1,6 +1,6 @@
 ---
 question: "matrix ジョブ `example_matrix` を定義しました。最大2つのジョブのみを同時に実行するよう制限するにはどうしますか？"
-title: "Question 036"
+title: "質問 036"
 ---
 
 ```yaml

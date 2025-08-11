@@ -1,6 +1,6 @@
 ---
 question: "`octo/my-dev-repo` Repository に対してトリガーされた場合、このワークフロー設定について正しいのはどれですか？"
-title: "Question 113"
+title: "質問 113"
 ---
 
 ```yaml

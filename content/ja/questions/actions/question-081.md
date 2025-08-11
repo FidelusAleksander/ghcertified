@@ -7,4 +7,4 @@ question: "定義済みのWorkflowを複数のRepositoryで再利用するには
 - [ ] Workflowファイルを各Repositoryにコピーする
 - [x] Workflowテンプレートを使用する
 - [ ] 再利用可能なActionを作成する
-- [x] 中央のRepositoryにWorkflowを定義する
+- [x] 組織の共通RepositoryにWorkflowを定義する

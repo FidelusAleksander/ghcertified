@@ -1,5 +1,5 @@
 ---
-question: "Secretsと構成変数はどのスコープに設定できますか？（3つ選択）"
+question: "Secretsと構成変数(Configuration Variables) はどのスコープに設定できますか？（3つ選択）"
 title: "質問 050"
 ---
 

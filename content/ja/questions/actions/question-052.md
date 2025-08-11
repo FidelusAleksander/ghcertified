@@ -1,5 +1,5 @@
 ---
-question: "この記述は正しいですか？ `Docker container actions are usually slower than JavaScript actions`"
+question: "次の記述は正しいですか？ Dockerコンテナアクションは、通常、JavaScriptアクションよりも遅いです。"
 title: "質問 052"
 ---
 

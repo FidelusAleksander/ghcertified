@@ -1,5 +1,5 @@
 ---
-question: "Organizationで定義されたSecret `SomeSecret` を`${{ secrets.SomeSecret }}`で参照したところ、予想と異なる値が返されました。考えられる理由は何ですか？"
+question: "Organizationで定義されたSecret `SomeSecret` を`${{ secrets.SomeSecret }}`で参照したところ、Organizationスコープで設定した値ではなく、別の値が取得されました。原因として最も考えられるのはどれですか？"
 title: "質問 062"
 ---
 

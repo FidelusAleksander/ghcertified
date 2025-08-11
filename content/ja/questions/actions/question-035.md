@@ -1,6 +1,6 @@
 ---
 question: "ステップの1つが失敗してもジョブを失敗させないようにするには、次のどれを含めますか？"
-title: "Question 035"
+title: "質問 035"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
