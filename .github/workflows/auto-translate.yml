@@ -21,7 +21,7 @@ jobs:
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -54,7 +54,7 @@ jobs:
     needs: translate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Create Pull Request
