@@ -4,7 +4,7 @@ question: "Qual das opções a seguir NÃO é um modo selecionável no GitHub Co
 ---
 
 > https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes#_builtin-chat-modes
-1. [ ] Perguntar
-1. [ ] Editar
-1. [x] Traduzir
-1. [ ] Agente
+1. [ ] Ask
+1. [ ] Edit
+1. [x] Translate
+1. [ ] Agent
