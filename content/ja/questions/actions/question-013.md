@@ -1,9 +1,9 @@
 ---
-question: "複数のJobを持つWorkflowで、Job Aが失敗した場合はどうなりますか？"
+question: "複数のジョブを含むワークフローで、ジョブAが失敗した場合、次のうちどれが正しいですか？"
 title: "質問 013"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs
-1. [x] Job Aに依存しているJobはスキップされる
-1. [ ] Job Aに依存しているJobは失敗する
-1. [ ] Workflowは即座に他のすべてのJobをキャンセルする
+> https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-jobs#defining-prerequisite-jobs
+1. [x] ジョブAに依存しているジョブはスキップされる
+1. [ ] ジョブAに依存しているジョブは失敗する
+1. [ ] ワークフローは直ちに他のすべてのジョブをキャンセルする
