@@ -14,7 +14,8 @@ hideAuthorDate = true
 
 
 alwaysopen = false
-editURL = "https://github.com/FidelusAleksander/ghcertified/edit/master/content/"
+# editURL is now set per-language in languages.toml
+# editURL = "https://github.com/FidelusAleksander/ghcertified/edit/master/content/"
 author.name = "Aleksander Fidelus"
 
 # Disable the language switching button until the site is fully translated

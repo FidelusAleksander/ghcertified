@@ -8,6 +8,9 @@ languageCode = 'en-US'
 languageName = 'English'
 contentDir = 'content/en'
 
+[en.params]
+editURL = 'https://github.com/FidelusAleksander/ghcertified/edit/master/content/en/'
+
 [pt]
 title = "GitHub Certified"
 weight = 2
@@ -15,6 +18,8 @@ languageCode = 'pt-BR'
 languageName = 'Português'
 contentDir = 'content/pt'
 
+[pt.params]
+editURL = 'https://github.com/FidelusAleksander/ghcertified/edit/master/content/pt/'
 
 [pl]
 title = "GitHub Certified"
@@ -23,6 +28,9 @@ languageCode = 'pl-PL'
 languageName = 'Polski'
 contentDir = 'content/pl'
 
+[pl.params]
+editURL = 'https://github.com/FidelusAleksander/ghcertified/edit/master/content/pl/'
+
 [es]
 title = "GitHub Certified"
 weight = 4
@@ -30,9 +38,15 @@ languageCode = 'es-ES'
 languageName = 'Español'
 contentDir = 'content/es'
 
+[es.params]
+editURL = 'https://github.com/FidelusAleksander/ghcertified/edit/master/content/es/'
+
 [ja]
 title = "GitHub Certified"
 weight = 4
 languageCode = 'ja-JP'
 languageName = 'Japanese'
 contentDir = 'content/ja'
+
+[ja.params]
+editURL = 'https://github.com/FidelusAleksander/ghcertified/edit/master/content/ja/'
