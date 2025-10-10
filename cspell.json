@@ -27,6 +27,8 @@
     "Entra",
     "passwordless",
     "TOTP",
+    "VCS",
+    "DVCS",
     "relref",
     "rerequested"
   ]
