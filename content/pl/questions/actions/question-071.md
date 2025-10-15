@@ -1,6 +1,6 @@
 ---
 question: "Jak można zastąpić wartość organizacyjnego GitHub Secret `API_KEY` inną wartością podczas pracy w repository? (Wybierz dwie.)"
-title: "Question 071"
+title: "Pytanie 071"
 ---
 
 > https://docs.github.com/en/actions/reference/security/secrets
