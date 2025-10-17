@@ -4,7 +4,7 @@ question: "What is the default timeout for a GitHub Actions job?"
 ---
 
 
-> https://docs.github.com/en/actions/learn-github-actions/usage-limits-billing-and-administration#usage-limits
+> https://docs.github.com/en/actions/reference/limits#existing-system-limits
 1. [ ] 30 minutes
 1. [ ] 60 minutes
 1. [ ] 120 minutes
