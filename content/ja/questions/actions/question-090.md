@@ -1,9 +1,10 @@
 ---
 title: "質問 090"
-question: "GitHub Actionsのジョブのデフォルトのタイムアウトは何分ですか？"
+question: "GitHub Actions ジョブのデフォルトのタイムアウトは何ですか？"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/usage-limits-billing-and-administration#usage-limits
+
+> https://docs.github.com/en/actions/reference/limits#existing-system-limits
 1. [ ] 30分
 1. [ ] 60分
 1. [ ] 120分
