@@ -39,7 +39,7 @@ jobs:
     outputs:
       files: ${{ steps.get-files.outputs.files }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Get all .md files in ${{ inputs.content_path }}
         id: get-files

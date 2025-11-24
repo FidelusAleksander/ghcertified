@@ -8,13 +8,13 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
       - uses: pre-commit/action@v3.0.1
   spell-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: streetsidesoftware/cspell-action@v8
         with:
           files: 'content/en/**/*.md'
