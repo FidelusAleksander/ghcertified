@@ -1,15 +1,15 @@
 .exam-container {
-  display: grid;
-  grid-gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
   border: 1px solid #2a3f5f;
   border-radius: 16px;
@@ -19,42 +19,51 @@
 }
 
 .card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(9, 117, 241, 0.3);
   border-color: #0974f1;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex-direction: row;
+  width: 100%;
   color: #e8e8e8;
 }
 
-.card-header {
+.card-image {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 20px;
+  justify-content: center;
+  padding: 24px;
   background: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.badge-image {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
   flex-shrink: 0;
 }
 
-.card-title-area {
+.badge-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card-main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 24px;
+}
+
+.card-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+  flex: 1;
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
   color: #ffffff;
@@ -67,14 +76,6 @@
   font-weight: 500;
 }
 
-.card-body {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .card-description {
   font-size: 0.9rem;
   color: #b0b0b0;
@@ -82,65 +83,24 @@
   line-height: 1.5;
 }
 
-.domains-section {
+.card-actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.domains-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #888;
-  font-weight: 600;
-}
-
-.check-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.check-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-  font-size: 0.9rem;
-  color: #d0d0d0;
-}
-
-.check-list li:before {
-  content: "";
-  display: block;
+  align-items: flex-end;
+  gap: 12px;
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  background: url("/images/check_list.svg") no-repeat center;
-  background-size: contain;
-}
-
-.card-footer {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.15);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .questions-settings {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  gap: 12px;
 }
 
 .questions-settings label {
   font-size: 0.875rem;
   color: #b0b0b0;
+  white-space: nowrap;
 }
 
 .input-group {
@@ -150,7 +110,7 @@
 }
 
 .questions-input {
-  width: 80px;
+  width: 70px;
   padding: 8px 12px;
   border-radius: 8px;
   border: 1px solid #3a4f6f;
@@ -188,6 +148,7 @@
   text-align: center;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(9, 117, 241, 0.3);
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -211,37 +172,48 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .exam-container {
-    grid-template-columns: 1fr;
     padding: 12px;
-    gap: 16px;
+    gap: 12px;
   }
 
-  .card-header {
+  .content {
+    flex-direction: column;
+  }
+
+  .card-image {
     padding: 16px;
   }
 
   .badge-image {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-main {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .card-info {
+    text-align: center;
+    align-items: center;
   }
 
   .card-title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
-  .card-body,
-  .card-footer {
-    padding: 16px;
+  .card-actions {
+    align-items: stretch;
   }
-}
 
-@media (max-width: 400px) {
-  .card-header {
-    flex-direction: column;
-    text-align: center;
+  .questions-settings {
+    justify-content: center;
   }
-  
-  .card-title-area {
-    align-items: center;
+
+  .btn {
+    width: 100%;
   }
 }
