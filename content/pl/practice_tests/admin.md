@@ -1,21 +1,20 @@
 ---
-title: "Test Praktyczny z Administracji GitHuba"
-Description: "Darmowy test praktyczny do certyfikatu Administracji GitHuba."
+title: "GitHub Administration"
+Description: "Bezpłatny test praktyczny do certyfikatu GitHub Administration Certification Exam."
 date: 2023-09-21T15:42:00+02:00
 draft: false
 hidden: true
 badge: "admin_badge.png"
 include_exam: "GitHub Admin"
-domains: ["Zarządzanie Repozytoriami", "Optymalizacja Workflowów", "Efektywna Kolaboracja"]
 examDisabled: false
 ---
 
 {{< practice_test >}}
 
 {{% notice style="primary" title="" %}}
-Uważasz, że ten test praktyczny był pomocny?
+Uważasz, że ten test praktyczny jest przydatny?
 
-Zostaw &#x2B50; w [repozytorium](https://github.com/FidelusAleksander/ghcertified) i rozważ wsparcie społeczności, na przykład poprzez:
-- [wkład](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) w postaci jednego lub więcej pytań do testów (*to tylko kilka minut*)
+Zostaw &#x2B50; w [repository](https://github.com/FidelusAleksander/ghcertified) i rozważ wsparcie społeczności poprzez:
+- [contributing](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md) jednego lub więcej pytań do testu próbnego (*zajmuje to tylko kilka minut*)
 
-{{% /notice %}}
+{{% /notice %}} 
