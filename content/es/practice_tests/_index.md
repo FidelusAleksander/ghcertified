@@ -1,6 +1,6 @@
 ---
-title: "Examen de Práctica de Certificación de GitHub"
-linkTitle: "Pruebas de Práctica"
+title: "Pruebas de práctica"
+linkTitle: "Pruebas de práctica"
 date: 2023-08-19T11:04:05+02:00
 draft: false
 weight: 20
