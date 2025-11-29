@@ -6,7 +6,6 @@ draft: false
 hidden: true
 badge: "foundations_badge.png"
 include_exam: "GitHub Foundations"
-domains: ["Introduction to GitHub", "Collaboration", "Project Management", "Modern Development"]
 ---
 
 {{< practice_test >}}

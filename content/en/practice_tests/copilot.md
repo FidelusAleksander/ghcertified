@@ -6,7 +6,6 @@ draft: false
 hidden: true
 badge: "copilot_badge.png"
 include_exam: "GitHub Copilot"
-domains: ["Responsible AI", "Prompt Engineering", "Privacy fundamentals"]
 examDisabled: false
 ---
 

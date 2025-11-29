@@ -7,7 +7,6 @@ hidden: true
 weight: 10
 badge: "actions_badge.png"
 include_exam: "GitHub Actions"
-domains: ["Author and maintain workflows/actions", "Automate tasks", "Manage GitHub Actions for the enterprise"]
 ---
 
 {{< practice_test >}}
