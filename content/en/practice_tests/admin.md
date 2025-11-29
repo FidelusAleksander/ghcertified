@@ -1,12 +1,11 @@
 ---
-title: "GitHub Administration Practice Test"
+title: "GitHub Administration"
 Description: "Free practice test for the GitHub Administration Certification Exam."
 date: 2023-09-21T15:42:00+02:00
 draft: false
 hidden: true
 badge: "admin_badge.png"
 include_exam: "GitHub Admin"
-domains: ["Repository Management", "Workflow Optimization", "Efficient Collaboration"]
 examDisabled: false
 ---
 
