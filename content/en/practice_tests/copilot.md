@@ -1,5 +1,5 @@
 ---
-title: "GitHub Copilot Practice Test"
+title: "GitHub Copilot"
 Description: "Free practice test for the GitHub Copilot Certification Exam."
 date: 2023-09-21T15:42:00+02:00
 draft: false

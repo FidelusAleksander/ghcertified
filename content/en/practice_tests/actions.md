@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions Practice Test"
+title: "GitHub Actions"
 Description: "Free practice test for the GitHub Actions Certification Exam."
 date: 2023-08-19T11:04:20+02:00
 draft: false

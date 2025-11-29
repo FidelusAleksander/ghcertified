@@ -6,12 +6,12 @@
     <div class="card">
         <form class="content" action="{{ .RelPermalink }}" method="get">
             <div class="card-image">
-                <img src="/images/{{.Params.badge}}" alt="{{ $include_exam }} badge" class="badge-image">
+                <img src="/images/{{.Params.badge}}" alt="{{ .Title }} badge" class="badge-image">
             </div>
 
             <div class="card-main">
                 <div class="card-info">
-                    <h2 class="card-title">{{ $include_exam }}</h2>
+                    <h2 class="card-title">{{ .Title }}</h2>
                     <span class="question-count">{{ $questionCount }} questions available</span>
                     <p class="card-description">{{ .Params.Description }}</p>
                 </div>
@@ -21,7 +21,7 @@
                         <a href="/" class="btn disabled">Unavailable</a>
                     {{ else }}
                         <div class="questions-settings">
-                            <label for="questions_{{ $include_exam }}">Practice with:</label>
+                            <label for="questions_{{ .Title }}">Practice with:</label>
                             <div class="input-group">
                                 <input class="questions-input" name="questions" id="questions_{{ $include_exam }}" type="number" min="1"
                                     max="{{ $questionCount }}" value="{{ $questionCount }}" step="1"
