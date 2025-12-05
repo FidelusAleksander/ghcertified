@@ -8,3 +8,4 @@ title: "Question 070"
 1. [ ] Regularly changing your passwords
 1. [ ] Disabling push access to the repository
 1. [ ] Using `git add .` before all commits
+1. [ ] Disabling all `.gitignore` rules to ensure every file is tracked
