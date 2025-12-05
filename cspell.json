@@ -23,6 +23,7 @@
     "sarifs",
     "GHAS",
     "SCIM",
+    "reflog",
     "Keycloak",
     "Entra",
     "passwordless",

@@ -10,4 +10,3 @@ title: "Question 026"
 - [x] Ability to restrict email notifications to verified domains
 - [ ] Free public repositories for all users
 - [ ] Unlimited private repositories for individual users
-- [ ] Automatic code review for every push
