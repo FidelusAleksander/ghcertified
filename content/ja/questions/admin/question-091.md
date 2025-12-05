@@ -1,12 +1,12 @@
 ---
-question: "GitHub ActionsでSecretを管理するためにサードパーティVaultを利用するにはどうしますか？"
+question: "GitHub Actionsのために、3rdパーティのボールトを使用してシークレットを管理するにはどうすればよいですか？"
 title: "質問 091"
 ---
 
-> https://developer.hashicorp.com/vault/docs/platform/github-actions
-> https://bitwarden.com/help/github-actions-integration/
-> https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/github-actions
-1. [x] SecretをサードパーティVaultに保存し、Workflow内で復号ステップを使用してアクセスする。このとき復号鍵はGitHub Actions Secretとして保存する
-1. [ ] GitHub Actionsは追加設定なしでサードパーティVaultとネイティブに統合されている
-1. [ ] サードパーティVaultには、そのベンダーのAPIキーをWorkflowファイル内に直接埋め込み、APIまたはCLIでアクセスする
-1. [ ] GitHub ActionsはサードパーティVaultによるSecret管理をサポートしておらず、すべてのSecretはGitHub内に保存しなければならない
+> https://developer.hashicorp.com/vault/docs/platform/github-actions  
+> https://bitwarden.com/help/github-actions-integration/  
+> https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/github-actions  
+1. [x] シークレットを3rdパーティのボールトに格納し、アクセス資格情報をGitHub Actionsのシークレットとして格納して認証し、ランタイム時にそれらを取得する（ベンダーのアクション/CLIを通して）。  
+1. [ ] GitHub Actions内での3rdパーティボールトとのネイティブな直接統合は、追加設定なしでサポートされている。  
+1. [ ] 3rdパーティのボールトは、そのAPIキーをワークフローファイル内に埋め込み、ベンダーのAPIまたはCLIを使用してアクセスするべきである。  
+1. [ ] GitHub Actionsは、シークレット管理に3rdパーティのボールトの使用をサポートしていない。すべてのシークレットはGitHub内に格納する必要がある。  

@@ -3,7 +3,9 @@ question: "¿Cuáles son los beneficios y riesgos de usar aplicaciones y accione
 title: "Pregunta 009"
 ---
 
-1. [x] Los beneficios incluyen la automatización de flujos de trabajo y funcionalidad mejorada; los riesgos incluyen posibles vulnerabilidades de seguridad y dependencia de servicios de terceros.
+> https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions
+
+1. [x] Los beneficios incluyen la automatización de workflows y funcionalidades mejoradas; los riesgos incluyen posibles vulnerabilidades de seguridad y dependencia de servicios de terceros.
 1. [ ] Los beneficios se limitan a mejoras en la interfaz de usuario; los riesgos incluyen altos costos y mayor complejidad del sistema.
-1. [ ] El único beneficio es la facilidad de instalación; los riesgos implican acceso completo a la base de código y los datos.
+1. [ ] El único beneficio es la facilidad de instalación; los riesgos implican acceso completo al código y a los datos.
 1. [ ] Los beneficios incluyen soporte oficial de GitHub; los riesgos incluyen funcionalidad limitada y falta de opciones de personalización.

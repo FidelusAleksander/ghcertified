@@ -1,10 +1,10 @@
 ---
-question: "単一のOrganizationに対してSAML SSOを有効化し、強制する手順はどれですか？"
+question: "単一の組織に対してSAML SSOを有効化し、適用する手順は何ですか？"
 title: "質問 013"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enabling-and-testing-saml-single-sign-on-for-your-organization#enabling-and-testing-saml-single-sign-on-for-your-organization
-1. [x] `Your organizations` に移動し、`Settings` を選択、`Authentication security` をクリック、`Enable SAML authentication` を選び、IdP設定を構成、SAML設定をテストし、SAML SSOを強制する
-1. [ ] `Organization Settings` に移動し、`Security` を選択、`SAML Authentication` を選び、IdP情報を入力、SAML設定をテストし、SAML SSOを強制する
-1. [ ] メインメニューで`Organization`を選び、`Security Settings`を選択、`SAML SSO`を有効化、IdP詳細を入力、SSO設定をテストし、SAML SSOを強制する
-1. [ ] `Organization Settings` にアクセスし、`Security` をクリック、`SAML SSO` を有効化、IdP URLを追加、設定をテストし、成功後にSAML SSOを強制する
+1. [x] 組織の`Settings`に移動し、`Authentication security`をクリックして、`Enable SAML authentication`を選択し、IdP設定を構成、SAML設定をテストし、SAML SSOを適用します。
+1. [ ] `Enterprise account settings`から、`Security`を開き、SAML SSOを有効化し、すべての組織に適用し、その後IdPを構成します。（これはエンタープライズ全体のSSOを管理するものであり、単一組織ではありません。）
+1. [ ] 組織内で、`Settings` → `Member privileges`に進み、`SAML SSO`を有効化し、IdPメタデータを追加し、テストせずに適用します。（SAMLは`Authentication security`で構成されており、テストが必要です。）
+1. [ ] リポジトリの`Settings`を開き、`Security`を選択し、`SAML SSO`を有効化し、IdPを構成し、適用します。（SAML SSOはリポジトリごとではなく、組織レベルで設定されます。）
