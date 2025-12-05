@@ -1,5 +1,5 @@
 ---
-question: "After sensitive data is removed from a repository's history and pushed to GitHub, what is a necessary step to fully remove the data from GitHub?"
+question: "After sensitive data is removed from a repository's history using `git-filter-repo` and pushed to GitHub, what is a necessary step to fully remove the data from GitHub?"
 title: "Question 069"
 ---
 

@@ -1,5 +1,5 @@
 ---
-question: "How can you ensure your self-hosted or larger hosted runners can communicate with GitHub when using an IP allow list?"
+question: "How can you ensure your self-hosted or larger GitHub hosted runners can communicate with GitHub when using an IP allow list?"
 title: "Question 082"
 ---
 

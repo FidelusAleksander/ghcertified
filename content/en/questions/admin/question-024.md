@@ -1,5 +1,5 @@
 ---
-question: "What are valid authentication methods available in GitHub? (choose six.)"
+question: "What are valid authentication methods available in GitHub? (Choose six.)"
 title: "Question 024"
 ---
 
@@ -8,7 +8,7 @@ title: "Question 024"
 - [x] Personal access token (PAT)
 - [x] SSH KEY
 - [x] SAML SSO for enterprise accounts
-- [x] Passkey authentication (opt-in beta for passwordless login)
+- [x] Passkey authentication
 - [x] OAuth tokens for third-party app integrations
 - [ ] QR code system linked to a mobile device
 - [ ] Authentication via social media accounts like Facebook or Google
