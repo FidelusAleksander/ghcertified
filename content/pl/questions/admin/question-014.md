@@ -1,5 +1,5 @@
 ---
-question: "Który z poniższych dostawców tożsamości (IdP) NIE jest oficjalnie wspierany i wewnętrznie testowany przez GitHub Enterprise Cloud dla SAML SSO?"
+question: "Który z poniższych dostawców tożsamości (IdP) NIE jest oficjalnie wspierany i testowany wewnętrznie przez GitHub Enterprise Cloud dla SAML SSO?"
 title: "Pytanie 014"
 ---
 
@@ -8,3 +8,5 @@ title: "Pytanie 014"
 1. [ ] Active Directory Federation Services (AD FS)
 1. [ ] Microsoft Entra ID
 1. [ ] Shibboleth
+1. [ ] Okta
+
