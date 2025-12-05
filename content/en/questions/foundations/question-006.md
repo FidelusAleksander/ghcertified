@@ -8,6 +8,6 @@ question: "Which of these layouts are available in GitHub Projects? (Choose thre
 - [x] Table layout
 - [x] Board layout
 - [x] Roadmap layout
-- [ ] Scrum layout
-- [ ] Agile layout
-- [ ] Project layout
+- [ ] Gantt layout
+- [ ] Calendar layout
+- [ ] Timeline layout

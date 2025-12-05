@@ -7,3 +7,4 @@ question: "What Git command gives information about how to use Git?"
 1. [ ] git status
 1. [ ] git init
 1. [x] git help
+1. [ ] git info

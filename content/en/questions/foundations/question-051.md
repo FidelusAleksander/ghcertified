@@ -9,3 +9,4 @@ question: "What are GitHub teams?"
 1. [ ] It's a version of Microsoft Teams for GitHub.
 1. [ ] It's a way of managing access to personal GitHub repositories to many users at once.
 > Personal repositories cannot be shared with teams, only with individual collaborators.
+1. [ ] It's a paid subscription tier for GitHub organizations.

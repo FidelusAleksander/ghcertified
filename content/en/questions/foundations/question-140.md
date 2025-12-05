@@ -7,3 +7,4 @@ question: "Your team is preparing to deploy a new feature using GitHub branches.
 1. [ ] Commit all changes directly to the main branch without review.
 1. [ ] Delete the feature branch to finalize the deployment process.
 1. [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
+1. [ ] Tag the feature branch with a version number before merging.

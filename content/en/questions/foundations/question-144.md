@@ -7,3 +7,4 @@ question: "While working on a feature, you decide to create a new branch for cha
 1. [ ] They prevent unauthorized users from viewing the repository.
 1. [ ] They automatically deploy changes to production environments.
 1. [x] They allow development work without affecting the main branch.
+1. [ ] They create automatic backups of the repository.
