@@ -10,4 +10,4 @@ question: "When will the GitHub Dependency graph for your repository be updated?
 - [ ] When you push any commit to the repository's default branch.
 - [ ] When your repository publishes a new release.
 - [ ] When your repository publishes a new git tag.
-- [ ] When the GitHub Actions workflow that uses the `actions/dependency-graph` GitHub Action is triggered.
+- [ ] When you manually trigger the dependency graph update from the repository settings.

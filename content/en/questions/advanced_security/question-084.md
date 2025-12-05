@@ -8,6 +8,6 @@ question: "What details can you find on a code scanning alert page? (Choose thre
 - [x] Branches affected by the vulnerability
 - [x] Highlighted vulnerable code
 - [x] Severity of the vulnerability
-- [ ] Information how many times the vulnerability has been exploited
+- [ ] List of all commits that introduced the vulnerability
 - [ ] Assigned developer to fix the vulnerability
 - [ ] ID of the CodeQL database that was used to find the vulnerability

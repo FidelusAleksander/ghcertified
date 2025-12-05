@@ -8,4 +8,4 @@ question: "CodeQL scanning supports:"
 1. [x] Both compiled and interpreted languages
 1. [ ] Only compiled languages
 1. [ ] Only interpreted languages
-1. [ ] All programming languages
+1. [ ] Only languages with static typing
