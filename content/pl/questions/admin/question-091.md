@@ -6,7 +6,7 @@ title: "Pytanie 091"
 > https://developer.hashicorp.com/vault/docs/platform/github-actions  
 > https://bitwarden.com/help/github-actions-integration/  
 > https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/github-actions  
-1. [x] Przechowuj sekrety w zewnętrznym sejfie i użyj kroku odszyfrowania w swoim workflow, z kluczem deszyfrującym przechowywanym jako sekret w GitHub Actions.  
-1. [ ] Bezpośrednia integracja z zewnętrznymi sejfami jest natywnie obsługiwana w GitHub Actions bez potrzeby jakiejkolwiek dodatkowej konfiguracji.  
-1. [ ] Zewnętrzne sejfy powinny być dostępne poprzez osadzanie ich kluczy API w plikach workflow i używanie API lub CLI danego dostawcy.  
-1. [ ] GitHub Actions nie obsługuje używania zewnętrznych sejfów do zarządzania sekretami; wszystkie sekrety muszą być przechowywane w GitHub.  
+1. [x] Przechowywanie sekretów w zewnętrznym sejfie i uwierzytelnianie z poziomu workflow (za pomocą akcji/CLI dostawcy) przy użyciu danych uwierzytelniających przechowywanych jako sekrety GitHub Actions w celu ich pobrania w czasie wykonywania.  
+1. [ ] Bezpośrednia integracja z zewnętrznymi sejfami jest obsługiwana natywnie w GitHub Actions bez konieczności dodatkowej konfiguracji.  
+1. [ ] Do zewnętrznych sejfów należy uzyskiwać dostęp, osadzając ich klucze API w plikach workflow i korzystając z API lub CLI tego dostawcy.  
+1. [ ] GitHub Actions nie obsługuje korzystania z zewnętrznych sejfów do zarządzania sekretami; wszystkie sekrety muszą być przechowywane w GitHub.  
