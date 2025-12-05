@@ -1,10 +1,10 @@
 ---
-question: "GitHub Enterprise CloudにおけるEnterprise policiesとは何ですか？"
+question: "GitHub Enterprise Cloud のコンテキストでのエンタープライズポリシーとは何ですか？"
 title: "質問 072"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
-1. [x] Enterprise policiesは、Enterprise内のすべてのOrganizationに一律のポリシーを適用し、各Organizationが独自のポリシーを適用することを禁止する
-1. [ ] GitHub Enterprise Cloud内の個人アカウントにのみ適用され、OrganizationやEnterpriseガバナンスとは無関係な個別ユーザー設定
-1. [ ] GitHub上のオープンソースプロジェクトに推奨される、コミュニティ参加や貢献を促進するためのベストプラクティス集
-1. [ ] Enterpriseアカウント内のすべてのRepositoryのコードベースに対して自動的に脆弱性をスキャンし修正するセキュリティプロトコル
+1. [x] エンタープライズ内のすべての組織に統一されたポリシーを強制するもの。
+1. [ ] GitHub Enterprise Cloud 内の個人アカウントだけに適用され、組織やエンタープライズ管理とは無関係な個別のユーザー設定。
+1. [ ] GitHub にホストされているオープンソースプロジェクトのための推奨プラクティス集で、コミュニティの関与や貢献を促進することを目的としたもの。
+1. [ ] エンタープライズアカウント内のすべてのリポジトリでコードベースの脆弱性を自動でスキャンし修正するセキュリティプロトコル。
