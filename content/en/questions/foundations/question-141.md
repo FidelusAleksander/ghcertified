@@ -7,3 +7,4 @@ question: "What is the significance of the 'commit message' in the GitHub flow p
 1. [ ] It automatically merges changes into the main branch.
 1. [ ] It creates a backup of the repository.
 1. [x] It provides a summary of changes made in a commit, aiding in project history tracking. 
+1. [ ] It assigns the commit to a specific team member. 

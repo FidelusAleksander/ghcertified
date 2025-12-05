@@ -8,3 +8,5 @@ question: "Can you disable the issues tab on a repository?"
 1. [x] Yes
 1. [ ] No
 > Features such as issues, wikis or projects can be disabled on a repository in the repository settings
+1. [ ] Yes, but only if the repository is private
+1. [ ] Yes, but only if you have no open issues

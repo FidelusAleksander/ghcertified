@@ -8,6 +8,6 @@ question: "What are the possible statuses for a pull request review? (Choose thr
 - [x] Comment
 - [x] Approve
 - [x] Request Changes
-- [ ] Close
-- [ ] Deny
-- [ ] Applaud
+- [ ] Reject
+- [ ] Dismiss
+- [ ] Pending
