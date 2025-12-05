@@ -1,5 +1,5 @@
 ---
-question: "¿Cuál de los siguientes proveedores de identidad (IdPs) NO está oficialmente soportado ni probado internamente por GitHub Enterprise Cloud para SAML SSO?"
+question: "¿Cuál de los siguientes proveedores de identidad (IdPs) NO es oficialmente compatible ni probado internamente por GitHub Enterprise Cloud para SAML SSO?"
 title: "Pregunta 014"
 ---
 
@@ -8,4 +8,5 @@ title: "Pregunta 014"
 1. [ ] Active Directory Federation Services (AD FS)
 1. [ ] Microsoft Entra ID
 1. [ ] Shibboleth
+1. [ ] Okta
 
