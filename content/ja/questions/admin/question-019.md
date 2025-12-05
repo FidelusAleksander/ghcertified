@@ -1,10 +1,10 @@
 ---
-question: "Enterprise Managed Usersアカウントで認証するために必要なことは何ですか？"
+question: "ユーザーがEnterprise Managed Userアカウントで認証するために必要なものは何ですか？"
 title: "質問 019"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#authenticating-with-a-managed-user-account
-1. [x] ユーザーはEnterpriseのIdPで認証し、GitHub.com上のリソースにアクセスする
-1. [ ] ユーザーはEnterpriseの関与なしにPublicなGitHubログインページで認証する
-1. [ ] 利便性のためEnterprise Managed Usersは認証を省略できる
-1. [ ] ユーザーはGitHub管理の特別な認証Tokenを提供する
+1. [x] ユーザーはGitHub.com上のリソースにアクセスするために、会社のIdPで認証する必要があります。
+1. [ ] ユーザーは、エンタープライズの干渉なしで公開GitHubログインページを通じて認証します。
+1. [ ] エンタープライズ管理ユーザー用の認証は、アクセスの容易さのためにスキップされます。
+1. [ ] ユーザーは特別なGitHub管理の認証トークンを提供します。
