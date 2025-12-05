@@ -8,4 +8,4 @@ question: "When viewing a code scanning alert what is the `Show paths` option us
 1. [x] It will display the path through the code that leads to the issue causing the alert.
 1. [ ] It's used for showing the paths to the CodeQL queries that were used to find the vulnerability
 1. [ ] It will show recommendations on how to fix the vulnerability
-1. [ ] It's used for showing the file path to the CodeQL database that was used to find the vulnerability
+1. [ ] It displays all file paths where similar vulnerabilities were found in the repository
