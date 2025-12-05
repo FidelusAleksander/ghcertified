@@ -1,9 +1,12 @@
 ---
 title: "Question 028"
-question: "When adding context in the chat, it is possible to add single files, but not entire folders. This statement is:"
+question: "Which of the following can you add as context in GitHub Copilot Chat? (Select three from the options below.)"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features
-1. [x] False
-1. [ ] True
+> https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context
+- [x] Individual files
+- [x] Entire folders
+- [x] Code symbols
+- [ ] External package documentation
+- [ ] Remote GitHub repositories you don't have cloned
+- [ ] System environment variables like PATH or HOME
