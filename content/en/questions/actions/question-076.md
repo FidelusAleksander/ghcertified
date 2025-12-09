@@ -4,7 +4,7 @@ title: "Question 076"
 ---
 
 
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
+> https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations#limitations-of-reusable-workflows
 1. [ ] 20
 1. [ ] 5
 1. [ ] 1
