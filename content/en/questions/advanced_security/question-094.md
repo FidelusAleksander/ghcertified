@@ -7,4 +7,4 @@ question: "What is a GitHub security policy?"
 1. [x] It's a document that instructs users on how to responsibly report security vulnerabilities in a project. It's typically defined in a `SECURITY.md` file in a repository.
 1. [ ] It's a tool for automatically fixing security vulnerabilities in your code.
 1. [ ] It's a feature that allows you to encrypt your repository.
-1. [ ] A GitHub security policy is a subscription service that provides antivirus protection for your projects.
+1. [ ] It's a set of rules that define which security features are enabled for a repository.
