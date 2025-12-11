@@ -1,0 +1,93 @@
+name: Deploy Preview Site (PR)
+
+on:
+  pull_request:
+    types:
+      - labeled
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+    if: github.event.label.name == 'preview-deployment-pr'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.145.0'
+      - name: Build site
+        run: hugo
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public/ --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
+      - name: Find Comment
+        uses: peter-evans/find-comment@v4
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: Preview Environment (PR)
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            **✅ Preview Environment (PR) Ready!**
+
+            | Name | Link |
+            | --- | --- |
+            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
+
+            Please verify everything looks as expected.
+
+
+          reactions: rocket
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            **✅ Preview Environment (PR) was deployed again!**
+
+            | Name | Link |
+            | --- | --- |
+            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
+            | :hammer: Latest Commit | ${{ github.event.pull_request.head.sha }} |
+            | :clock10: Latest Deploy | ${{ github.event.pull_request.updated_at }} |
+
+            Please verify everything looks as expected.
+          reactions: hooray
+          edit-mode: 'replace'
+
+      - name: Remove Label
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue_number = context.issue.number;
+            const labelToRemove = 'preview-deployment-pr';
+            github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              name: labelToRemove
+            });
