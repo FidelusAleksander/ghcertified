@@ -45,18 +45,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
       - name: Build System Prompt
         id: build-system-prompt
-        uses: skills/action-text-variables@v3
+        uses: skills/action-text-variables@c81bf1096233b41a88f53e78747ca8fa59f763d6 # v3.0.0
         with:
           template-file: .github/translation-system-prompt.md
           template-vars: |
             targetLanguage: ${{ inputs.language_name }}
 
       - name: Translate file
-        uses: FidelusAleksander/prompt-action@v1
+        uses: FidelusAleksander/prompt-action@fb83fe7a836dc98f20ba752fe9859a0807c53cd8 # v1
         id: translate
         with:
           system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
@@ -77,7 +77,7 @@ jobs:
           TRANSLATED_TEXT: ${{ steps.translate.outputs.text }}
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9
         with:
           add: "content/${{ inputs.language_code }}/**"
           message: "i18n: translate ${{ inputs.file }} to ${{ inputs.language_name }}"
