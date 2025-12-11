@@ -45,11 +45,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
       - name: Build System Prompt
         id: build-system-prompt
-        uses: skills/action-text-variables@c81bf1096233b41a88f53e78747ca8fa59f763d6 # v3
+        uses: skills/action-text-variables@c81bf1096233b41a88f53e78747ca8fa59f763d6 # v3.0.0
         with:
           template-file: .github/translation-system-prompt.md
           template-vars: |
