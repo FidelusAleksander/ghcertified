@@ -8,3 +8,4 @@ question: "Which of these files can customize your GitHub profile?"
 1. [x] a profile `README.md` file
 1. [ ] a profile `CONTRIBUTING.md` file
 1. [ ] profile is not customizable through files but through the account settings
+1. [ ] a profile `.github/profile.yml` file

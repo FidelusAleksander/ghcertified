@@ -7,3 +7,4 @@ question: "Why might a team choose GitHub Issues over Discussions for managing b
 1. [ ] Discussions provide better visibility and tracking for bug reports.
 1. [x] Issues provide a structured format for tracking and resolving bugs.
 1. [ ] Issues are automatically resolved when linked to pull requests.
+1. [ ] Issues allow for more collaborative input from the community.
