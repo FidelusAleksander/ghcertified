@@ -14,5 +14,7 @@ jobs:
 ```
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-a-matrix-strategy-with-a-reusable-workflow
 
-1. [ ] No
 1. [x] Yes
+1. [ ] No
+1. [ ] Only if the workflows are in the same repository
+1. [ ] Only with self-hosted runners
