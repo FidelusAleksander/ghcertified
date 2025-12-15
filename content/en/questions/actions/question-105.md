@@ -9,4 +9,3 @@ title: "Question 105"
 1. [ ] workflow jobs will start immediately and protection rules are evaluated during execution
 1. [ ] workflow jobs will start if at least one protection rule passes
 1. [ ] workflow jobs will fail if protection rules are configured
-> A job also cannot access secrets that are defined in an environment until all the deployment protection rules pass
