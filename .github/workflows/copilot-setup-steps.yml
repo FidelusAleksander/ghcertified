@@ -19,6 +19,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@e3b661c523413d13d642651a5ba5fc0d2b344c0d # v3
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3
         with:
           hugo-version: '0.145.0'
