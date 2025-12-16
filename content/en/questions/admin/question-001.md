@@ -3,7 +3,7 @@ question: "As a GitHub Organization administrator, you want users to authenticat
 title: "Question 001"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-authentication-with-saml-sso
+> https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on
 1. [x] Setup SAML SSO
 1. [ ] Corporate SSH Keys 
 1. [ ] Setup OAuth SSO
