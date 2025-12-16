@@ -1,6 +1,6 @@
 ---
-question: "このコードはmatrix戦略を使用して6つの異なるJobを並列に起動します。matrix戦略を使用してWorkflow全体を並列化できますか？"
-title: "質問 014"
+question: "このコードはマトリックスストラテジーを使用して、6つの異なるジョブを並列で起動します。マトリックスストラテジーを使用してワークフロー全体を並列化することはできますか？"
+title: "Question 014"
 ---
 
 
@@ -14,5 +14,7 @@ jobs:
 ```
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-a-matrix-strategy-with-a-reusable-workflow
 
-1. [ ] いいえ
 1. [x] はい
+1. [ ] いいえ
+1. [ ] ワークフローが同じリポジトリ内にある場合のみ
+1. [ ] セルフホストランナーの場合のみ
