@@ -15,6 +15,7 @@ mcp-servers:
 - Review exactly one question Markdown file per run.
 - Only operate on English source content: `content/en/questions/**`.
 - If the input is outside `content/en/`, do not edit; explain this and stop.
+- Report after completing steps for the single provided file. Do not continue to other files.
 
 ## What to Verify (exhaustive)
 
@@ -41,6 +42,7 @@ If you cannot confidently determine correctness for **every** option, do not edi
    - If any marking is wrong, update only what’s necessary to make markings correct.
    - If markings are already correct, do not edit.
 4. If any option is undetermined, do not edit.
+5. Report after completing steps for the single provided file. Do not continue to other files.
 
 ## Edit Policy (only when fully determined)
 
