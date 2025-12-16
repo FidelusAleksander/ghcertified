@@ -7,7 +7,7 @@ tools: ["*"]
 
 ## Purpose
 
-Batch-review a set of question files by preparing a review queue and then invoking `question-review-agent` once per file.
+Batch-review a set of question files by preparing a review queue and then calling `question-review-agent` custom agent once per file.
 
 ## Hard Rules
 
@@ -25,5 +25,5 @@ The user can specify the scope in multiple ways, here are some examples:
 ## Workflow
 
 1. Build a list of question Question files in scope
-2. For each file, invoke `question-review-agent` to review exactly that one file.
+2. For each file, call `question-review-agent` custom agent to review exactly that one file.
 3. At the end, summarize which files were edited vs unchanged vs blocked/undetermined.
