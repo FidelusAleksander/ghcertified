@@ -56,7 +56,7 @@ jobs:
             targetLanguage: ${{ inputs.language_name }}
 
       - name: Translate file
-        uses: FidelusAleksander/prompt-action@316913653188307cbd0261878e4f8056324bc40c # v1
+        uses: FidelusAleksander/prompt-action@316913653188307cbd0261878e4f8056324bc40c # v1.2.1
         id: translate
         with:
           system-prompt: ${{ steps.build-system-prompt.outputs.updated-text }}
@@ -77,7 +77,7 @@ jobs:
           TRANSLATED_TEXT: ${{ steps.translate.outputs.text }}
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
         with:
           add: "content/${{ inputs.language_code }}/**"
           message: "i18n: translate ${{ inputs.file }} to ${{ inputs.language_name }}"

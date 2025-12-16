@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-      - uses: streetsidesoftware/cspell-action@e5a858a18b7e0b56e0342b1dcad796308b7341a2 # v8
+      - uses: streetsidesoftware/cspell-action@e5a858a18b7e0b56e0342b1dcad796308b7341a2 # v8.1.1
         with:
           files: 'content/en/**/*.md'
           config: 'cspell.json'
