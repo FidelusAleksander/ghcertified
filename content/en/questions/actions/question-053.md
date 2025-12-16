@@ -7,3 +7,5 @@ title: "Question 053"
 1. [x] False
 1. [ ] True
 > That is true for `workflows`, not for `actions`
+1. [ ] Only if the action is reusable
+1. [ ] Only for Docker container actions

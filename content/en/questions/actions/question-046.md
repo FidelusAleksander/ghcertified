@@ -7,3 +7,4 @@ title: "Question 046"
 > https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#uploading-build-and-test-artifacts
 1. [x] False
 1. [ ] True
+1. [ ] Only directories can be uploaded, not individual files

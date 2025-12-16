@@ -7,3 +7,7 @@ title: "Question 075"
 1. [x] No
 1. [ ] Yes
 > Each job runs in a fresh instance of a runner image specified by runs-on
+1. [ ] Only if they run in parallel
+> Each job runs in a fresh instance of a runner image specified by runs-on
+1. [ ] Only if they use the same `runs-on` label
+> Each job runs in a fresh instance of a runner image specified by runs-on
