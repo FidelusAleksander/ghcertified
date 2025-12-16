@@ -4,7 +4,7 @@ title: "Question 101"
 ---
 
 
-> https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions#status-check-functions
 
 1. [x] 
 ```yaml

@@ -3,7 +3,7 @@ question: "How can you override an organization-level GitHub Secret `API_KEY` wi
 title: "Question 071"
 ---
 
-> https://docs.github.com/en/actions/reference/security/secrets
+> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
 - [x] By creating a repository secret with the same name `API_KEY`
 - [x] By creating a environment secret with the same name `API_KEY`
 - [ ] By creating a enterprise secret with the same name `API_KEY`
