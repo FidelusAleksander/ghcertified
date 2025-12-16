@@ -14,11 +14,11 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
               with:
-                  node-version: '14'
+                  node-version: '20'
             - run: npm install -g bats
 ```
 > https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution
 1. [x] the `production-deploy` job will be marked as skipped
 1. [ ] the `production-deploy` job will error
 1. [ ] the `production-deploy` job will execute three steps
-1. [ ] the `production-deploy` job will run if the `node-version` is `14`
+1. [ ] the `production-deploy` job will run if the `node-version` is `20`

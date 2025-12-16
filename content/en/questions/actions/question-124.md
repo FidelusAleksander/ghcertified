@@ -7,12 +7,12 @@ title: "Question 124"
 strategy:
   matrix:
     os: [ubuntu-latest, windows-latest]
-    node: [14, 16]
+    node: [18, 20]
     include:
       - os: macos-latest
-        node: 18
+        node: 22
       - os: ubuntu-latest
-        node: 14
+        node: 18
 ```
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations

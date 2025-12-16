@@ -3,6 +3,8 @@ question: "What components can be reused within a GitHub Organization? (Select f
 title: "Question 072"
 ---
 
+> https://docs.github.com/en/actions/using-workflows/sharing-workflows-secrets-and-runners-with-your-organization
+
 - [x] Secrets
 - [x] Configuration Variables
 - [x] Self Hosted Runners

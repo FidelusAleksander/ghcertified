@@ -4,7 +4,7 @@ question: "What is the default shell used by GitHub Actions on Windows runners?"
 ---
 
 
-> https://github.blog/changelog/2019-10-17-github-actions-default-shell-on-windows-runners-is-changing-to-powershell/
+> https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell
 1. [ ] bash
 1. [ ] sh
 1. [x] powershell
