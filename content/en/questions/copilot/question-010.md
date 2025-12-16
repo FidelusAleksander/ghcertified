@@ -4,7 +4,7 @@ question: "Which of the following integrates GitHub Copilot Chat with external t
 ---
 
 
-> https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat
+> https://docs.github.com/en/copilot/concepts/chat
 1. [x] GitHub Copilot Extensions
 1. [ ] GitHub Copilot Marketplace
 1. [ ] GitHub Copilot Integrations
