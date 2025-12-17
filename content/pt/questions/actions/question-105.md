@@ -1,11 +1,11 @@
 ---
-question: "Qual das seguintes afirmações descreve com precisão o comportamento dos jobs do workflow que fazem referência às regras de proteção de um ambiente?"
-title: "Pergunta 105"
+question: "Qual das seguintes afirmações descreve com precisão o comportamento de jobs de fluxo de trabalho que referenciam as regras de proteção de um ambiente?"
+title: "Questão 105"
 ---
 
 
 > https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment
-1. [x] os jobs do workflow não serão iniciados até que todas as regras de proteção do ambiente sejam atendidas
-1. [ ] os jobs do workflow nunca serão iniciados se o ambiente tiver regras de proteção
-1. [ ] os jobs do workflow serão iniciados imediatamente, independentemente das regras de proteção do ambiente
-1. [ ] os jobs do workflow serão iniciados apenas se algumas das regras de proteção do ambiente forem atendidas
+1. [x] jobs de fluxo de trabalho não iniciarão até que todas as regras de proteção do ambiente sejam aprovadas
+1. [ ] jobs de fluxo de trabalho iniciarão imediatamente e as regras de proteção serão avaliadas durante a execução
+1. [ ] jobs de fluxo de trabalho iniciarão se pelo menos uma regra de proteção for aprovada
+1. [ ] jobs de fluxo de trabalho falharão se as regras de proteção forem configuradas

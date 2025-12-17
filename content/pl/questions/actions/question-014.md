@@ -1,5 +1,5 @@
 ---
-question: "Ten kod uruchomi 6 różnych zadań równolegle przy użyciu strategii macierzy. Czy można użyć strategii macierzy do równoległego wykonywania całych workflowów?"
+question: "Ten kod uruchomi 6 różnych zadań równolegle, używając strategii macierzy. Czy możesz użyć strategii macierzy do równoległego przetwarzania całych workflow?"
 title: "Pytanie 014"
 ---
 
@@ -14,5 +14,7 @@ jobs:
 ```
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-a-matrix-strategy-with-a-reusable-workflow
 
-1. [ ] Nie  
-1. [x] Tak  
+1. [x] Tak
+1. [ ] Nie
+1. [ ] Tylko jeśli workflow znajdują się w tym samym repozytorium
+1. [ ] Tylko z użyciem runnerów hostowanych samodzielnie
