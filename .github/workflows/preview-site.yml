@@ -1,7 +1,7 @@
 name: Deploy Preview Site
 
 on:
-  pull_request_target:
+  pull_request:
     types:
       - labeled
 
@@ -19,8 +19,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-          repository: ${{ github.event.pull_request.head.repo.full_name }} # Potentially dangerous, shouldn't be used without the label trigger
-          ref: ${{ github.event.pull_request.head.ref }} # Potentially dangerous, shouldn't be used without the label trigger
+          # repository: ${{ github.event.pull_request.head.repo.full_name }} # Potentially dangerous, shouldn't be used without the label trigger
+          # ref: ${{ github.event.pull_request.head.ref }} # Potentially dangerous, shouldn't be used without the label trigger
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
