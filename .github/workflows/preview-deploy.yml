@@ -19,6 +19,10 @@ jobs:
       - name: Get PR number
         id: pr
         run: |
+          if [ "${{ toJson(github.event.workflow_run.pull_requests) }}" == "[]" ]; then
+            echo "No pull request associated with this workflow run"
+            exit 1
+          fi
           PR_NUMBER="${{ github.event.workflow_run.pull_requests[0].number }}"
           echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
           echo "PR Number: $PR_NUMBER"
@@ -49,7 +53,7 @@ jobs:
 
             | Name | Link |
             | --- | --- |
-            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
+            | :link: Preview URL | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
 
             Please verify everything looks as expected.
 
