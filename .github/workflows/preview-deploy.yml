@@ -1,8 +1,8 @@
-name: Preview Deploy (Trusted)
+name: Preview Deploy
 
 on:
   workflow_run:
-    workflows: ["Preview Build (Untrusted)"]
+    workflows: ["Preview Build"]
     types:
       - completed
 

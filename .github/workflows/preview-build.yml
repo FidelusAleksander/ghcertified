@@ -1,4 +1,4 @@
-name: Preview Build (Untrusted)
+name: Preview Build
 
 on:
   pull_request:
