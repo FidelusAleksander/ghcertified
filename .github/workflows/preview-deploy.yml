@@ -1,9 +1,10 @@
-name: Deploy Preview Site
+name: Preview Deploy
 
 on:
-  pull_request_target:
+  workflow_run:
+    workflows: ["Preview Build"]
     types:
-      - labeled
+      - completed
 
 permissions:
   contents: read
@@ -12,24 +13,19 @@ permissions:
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
-    if: github.event.label.name == 'request-preview-deployment'
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    env:
+      PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
         with:
-          submodules: recursive
-          fetch-depth: 0
-          repository: ${{ github.event.pull_request.head.repo.full_name }} # Potentially dangerous, shouldn't be used without the label trigger
-          ref: ${{ github.event.pull_request.head.ref }} # Potentially dangerous, shouldn't be used without the label trigger
-      
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
-        with:
-          hugo-version: '0.145.0'
-      
-      - name: Build site
-        run: hugo
-      
+          name: hugo-build
+          path: public/
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ github.event.workflow_run.id }}
+
       - name: Deploy to Cloudflare Pages
         id: deploy
         uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
@@ -42,13 +38,13 @@ jobs:
         uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ env.PR_NUMBER }}
           body: |
             **✅ Preview Environment Ready!**
 
             | Name | Link |
             | --- | --- |
-            | :link: Preview Url | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
+            | :link: Preview URL | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
 
             Please verify everything looks as expected.
 
@@ -59,9 +55,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const issue_number = context.issue.number;
+            const issue_number = ${{ process.env.PR_NUMBER }};
             const labelToRemove = 'request-preview-deployment';
-            github.rest.issues.removeLabel({
+            await github.rest.issues.removeLabel({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue_number,
