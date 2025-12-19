@@ -55,7 +55,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const issue_number = ${{ process.env.PR_NUMBER }};
+            const issue_number = process.env.PR_NUMBER;
             const labelToRemove = 'request-preview-deployment';
             await github.rest.issues.removeLabel({
               owner: context.repo.owner,
