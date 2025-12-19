@@ -21,6 +21,8 @@ jobs:
       - run: echo "$FULL_CONTEXT"
         env:
           FULL_CONTEXT: ${{ toJSON(github) }}
+      # echo pr number
+      - run: echo "PR Number ${{ env.PR_NUMBER }}"
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
