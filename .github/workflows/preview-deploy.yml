@@ -15,8 +15,6 @@ jobs:
     name: Deploy to Cloudflare Pages
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    env:
-      PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@v4
@@ -28,38 +26,10 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         id: deploy
-        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
+        uses: AdrianGonz97/refined-cf-pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public/ --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
-
-      - name: Create comment
-        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ env.PR_NUMBER }}
-          body: |
-            **✅ Preview Environment Ready!**
-
-            | Name | Link |
-            | --- | --- |
-            | :link: Preview URL | ${{ steps.deploy.outputs.pages-deployment-alias-url || steps.deploy.outputs.deployment-url }} |
-
-            Please verify everything looks as expected.
-
-          reactions: rocket
-
-      - name: Remove Label
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const issue_number = process.env.PR_NUMBER;
-            const labelToRemove = 'request-preview-deployment';
-            await github.rest.issues.removeLabel({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue_number,
-              name: labelToRemove
-            });
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          directory: public
