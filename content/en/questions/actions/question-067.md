@@ -3,7 +3,7 @@ question: "Which is the correct way of triggering a job only if configuration va
 title: "Question 067"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context
 1. [x] By creating the following conditional on job level
 ```yaml
   my-job:

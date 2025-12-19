@@ -3,7 +3,7 @@ question: "Select the default environment variable that contains the operating s
 title: "Question 096"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables
 1. [x] `RUNNER_OS`
 1. [ ] `GITHUB_RUNNER_OS`
 1. [ ] `RUNNER_ARCH`

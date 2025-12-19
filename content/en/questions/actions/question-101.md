@@ -4,7 +4,7 @@ title: "Question 101"
 ---
 
 
-> https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions#status-check-functions
 
 1. [x] 
 ```yaml
@@ -14,7 +14,7 @@ title: "Question 101"
 
     - name: Upload Failure test report
       if: failure() && steps.run-tests.outcome == 'failure'
-      run: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: test-report
         path: test-reports.html
@@ -28,7 +28,7 @@ title: "Question 101"
 
     - name: Upload Failure test report
       if: always() && steps.run-tests.outcome == 'failure'
-      run: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: test-report
         path: test-reports.html
@@ -42,7 +42,7 @@ title: "Question 101"
 
     - name: Upload Failure test report
       if: steps.run-tests.outcome == 'failure'
-      run: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: test-report
         path: test-reports.html
@@ -55,7 +55,7 @@ title: "Question 101"
       run: npm run test
 
     - name: Upload Failure test report
-      run: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: test-report
         path: test-reports.html

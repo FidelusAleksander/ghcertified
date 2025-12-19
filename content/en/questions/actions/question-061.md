@@ -4,7 +4,7 @@ title: "Question 061"
 ---
 
 
-> https://docs.github.com/en/actions/reference/workflows-and-actions/variables#default-environment-variables
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables
 
 - [x] `GITHUB_REPOSITORY`
 - [x] `GITHUB_WORKFLOW`

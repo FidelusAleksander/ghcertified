@@ -11,10 +11,10 @@ title: "Question 031"
       steps:
         ...
 ```
-> https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context
 - [x] `if: github.repository == 'my-org/my-repo'`
 - [x] `if: ${{ github.repository == 'my-org/my-repo' }}`
 - [ ] `if: ${{ github.organization == 'my-org' && github.repository == 'my-repo' }}`
-> https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context
 - [ ] `if: ${{ github.org == 'my-org' && github.repository == 'my-repo' }}`
-> https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context
