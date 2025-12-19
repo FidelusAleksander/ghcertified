@@ -10,7 +10,8 @@
 			"version": "0.145.0",
 			"extended": false
 		},
-		"ghcr.io/devcontainers-extra/features/pre-commit:2": {}
+		"ghcr.io/devcontainers-extra/features/pre-commit:2": {},
+		"ghcr.io/devcontainers-extra/features/actionlint:1": {}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
