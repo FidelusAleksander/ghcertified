@@ -9,4 +9,4 @@ question: "How can you configure your GitHub repository to run CodeQL analysis o
 - [x] By using the default CodeQL analysis setup.
 - [ ] By setting the `codeql.trigger` property in the repository settings to `schedule`.
 - [ ] By adding a `schedule` property to the `.github/codeql.yml` configuration file.
-- [ ] By raising a request with GitHub support to enable scheduled CodeQL analysis for the repository.
+- [ ] By configuring scheduled scans in the Security tab under Code scanning alerts.

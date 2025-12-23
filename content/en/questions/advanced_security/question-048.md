@@ -7,4 +7,4 @@ title: "Question 048"
 1. [x] By configuring a `secret_scanning.yml` file, under the `.github` path in the repository.
 1. [ ] Through the repository's `Security` tab, in the `Secret scanning` menu.
 1. [ ] Through the repository's `Settings` tab, in the `Code security and analysis` menu.
-1. [ ] By editing the repository's `README.md` file.
+1. [ ] By adding paths to the `.gitignore` file.
