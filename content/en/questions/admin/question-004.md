@@ -3,7 +3,7 @@ question: "Which of the following issues can GitHub Support help resolve? (Choos
 title: "Question 004"
 ---
 
-> https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#scope-of-support
+> https://docs.github.com/en/enterprise-server@latest/support/learning-about-github-support/about-github-support
 - [x] Installing and using GitHub Enterprise Server
 - [x] Identifying and verifying the causes of suspected errors
 - [x] Installing and using Advanced Security

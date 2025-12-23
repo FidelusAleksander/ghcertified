@@ -3,7 +3,7 @@ question: "What should you do before running git filter-repo or BFG Repo-Cleaner
 title: "Question 068"
 ---
 
-> https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
+> https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 1. [x] Merge or close all open pull requests
 1. [ ] Delete the .git directory
 1. [ ] Create a new branch
