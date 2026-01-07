@@ -1,0 +1,55 @@
+name: Deploy Preview Site
+
+on:
+  pull_request:
+    types:
+      - labeled
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+    if: github.event.label.name == 'request-preview-deployment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.117.0'
+      
+      - name: Build site
+        run: hugo
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          directory: 'public/'
+          branch: ${{ github.event.pull_request.head.ref }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            **✅ Preview Environment Ready!**
+            
+            | Name | Link |
+            | --- | --- |
+            | :link: Preview Url | ${{ steps.deploy.outputs.alias }} |
+            
+            Please verify everything looks as expected.
+
+          reactions: rocket
