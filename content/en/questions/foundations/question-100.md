@@ -8,3 +8,5 @@ question: "Can you change a gist from public to secret after creating it?"
 1. [ ] Yes
 1. [x] No
 > After creating a gist, you cannot convert it from public to secret.
+1. [ ] Yes, but only within 24 hours of creation
+1. [ ] Yes, but only if you are the repository owner
