@@ -33,7 +33,7 @@ Core user value proposition:
 | F05 | Randomized answer option order | Answer options are presented in varying order between attempts. | Repeating a question can show options in different order. | |
 | F06 | Interactive quiz answering | Users can select answers directly in the page and get immediate feedback. | Users can complete a full session without leaving the test flow. | |
 | F07 | Supports single-choice and multi-select questions | Question set includes both one-answer and multiple-answer formats. | Both formats are fully usable and clearly understandable in the UI. | |
-| F09 | Question library browsing | Users can browse question collections grouped by certification type and open individual questions. | Users can find and open any available question from the library page. | |
-| F14 | Contribution call-to-action | Users are encouraged to contribute questions/community improvements. | Contribution CTA appears in key parts of the user journey. | |
-| F15 | Technical content display | Questions can include technical notation and code-like formatting when needed. | Technical content such as code examples and technical notation is readable and correctly formatted in questions and test flows. | |
-| F16 | Test availability control | Certain test types can be marked unavailable without removing them entirely. | Users see clear unavailable state and cannot start disabled tests. | |
+| F08 | Question library browsing | Users can browse question collections grouped by certification type and open individual questions. | Users can find and open any available question from the library page. | |
+| F09 | Contribution call-to-action | Users are encouraged to contribute questions/community improvements. | Contribution CTA appears in key parts of the user journey. | |
+| F10 | Technical content display | Questions can include technical notation and code-like formatting when needed. | Technical content such as code examples and technical notation is readable and correctly formatted in questions and test flows. | |
+| F11 | Test availability control | Certain test types can be marked unavailable without removing them entirely. | Users see clear unavailable state and cannot start disabled tests. | |
