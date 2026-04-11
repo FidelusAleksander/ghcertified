@@ -321,7 +321,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           <Card className="shadow-sm border-[1.5px]">
             <CardContent className="p-5">
               <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Question Map</div>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-x-1.5 gap-y-3.5 pt-2">
                 {quizQuestions.map((q, i) => {
                   const isQuestionFlagged = flaggedSet.has(i);
                   let btnClass = "w-[30px] h-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative";
@@ -341,10 +341,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
                       {i + 1}
                       {isQuestionFlagged && (
-                        <svg width="8" height="8" viewBox="0 0 24 24" fill="hsl(var(--warning))" stroke="none" className="absolute -top-1 -right-1">
-                          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-                          <line x1="4" y1="22" x2="4" y2="15" />
-                        </svg>
+                        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-[14px] leading-none drop-shadow-sm">🚩</span>
                       )}
                     </button>
                   );
