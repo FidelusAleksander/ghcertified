@@ -1,7 +1,8 @@
 ---
-question: "matrix ジョブ `example_matrix` を定義しました。最大2つのジョブのみを同時に実行するよう制限するにはどうしますか？"
-title: "質問 036"
+question: "あなたはマトリックスジョブ `example_matrix` を定義しました。マトリックスが同時に最大2つのジョブを実行するように制限する方法は？"
+title: "Question 036"
 ---
+
 
 ```yaml
   jobs:
@@ -14,5 +15,5 @@ title: "質問 036"
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategymax-parallel
 1. [x] `jobs.example_matrix.strategy.max-parallel` を 2 に設定する
 1. [ ] `jobs.example_matrix.strategy.concurrency` を 2 に設定する
-1. [ ] GitHub REST API を使用してジョブ数が2未満か確認する
-1. [ ] 実行可能なランナーがあれば、matrix は常に全ジョブを並列実行するため制限できない
+1. [ ] GitHub の REST API を使用してジョブ数が 2 未満であることを確認する
+1. [ ] 実現不可能。マトリックスは、ランナーが利用可能であればジョブを常にすべて並列で実行する
