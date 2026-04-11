@@ -26,6 +26,11 @@
       "sourceType": "github",
       "computedHash": "1787478962577c9d5bde26e89e47c1654aa9c8f3c47c316a026731db0000a92e"
     },
+    "caveman": {
+      "source": "JuliusBrussee/caveman",
+      "sourceType": "github",
+      "computedHash": "4d486dd6f9fbb27ce1c51c972c9a5eb25a53236ae05eabf4d076ac1e293f4b7a"
+    },
     "clarify": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
