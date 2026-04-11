@@ -5,25 +5,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Play, Check, Shield } from "lucide-react";
+import { CERT_CATALOG } from "@/lib/questions";
 
 /**
  * Certification data for the homepage preview cards.
- * Each has a colored icon, name, description, and question count.
+ * Icons and descriptions are static; question counts come from CERT_CATALOG.
  */
-const certifications = [
-  {
-    id: "actions",
-    name: "GitHub Actions",
+const certMeta: Record<string, { desc: string; colorClass: string; icon: React.ReactNode }> = {
+  actions: {
     desc: "Automate workflows, CI/CD pipelines, and event-driven processes on GitHub.",
-    questions: 127,
     colorClass: "bg-cert-actions",
     icon: <Play className="text-primary-foreground" />,
   },
-  {
-    id: "foundations",
-    name: "GitHub Foundations",
+  foundations: {
     desc: "Core GitHub concepts, repositories, collaboration, and essential Git workflows.",
-    questions: 147,
     colorClass: "bg-cert-foundations",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary-foreground">
@@ -32,15 +27,21 @@ const certifications = [
       </svg>
     ),
   },
-  {
-    id: "advanced_security",
-    name: "Advanced Security",
+  advanced_security: {
     desc: "Code scanning, secret scanning, Dependabot, and security policy management.",
-    questions: 116,
     colorClass: "bg-cert-advanced-security",
     icon: <Shield className="text-primary-foreground" />,
   },
-];
+};
+
+const certifications = CERT_CATALOG
+  .filter((c) => c.cert in certMeta)
+  .map((c) => ({
+    id: c.cert,
+    name: c.title,
+    questions: c.questionCount,
+    ...certMeta[c.cert],
+  }));
 
 /**
  * Homepage — hero section + certification tracks preview.
