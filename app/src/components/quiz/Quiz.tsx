@@ -14,7 +14,8 @@ import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
 import { shuffle, cn } from "@/lib/utils";
 import Link from "next/link";
-import { useLocale, localePath } from "@/components/LocaleProvider";
+import { useLocale, useTranslations } from "next-intl";
+import { localePath } from "@/lib/locales";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -41,6 +42,7 @@ interface QuizProps {
 
 export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const locale = useLocale();
+  const t = useTranslations("Quiz");
   const [quizQuestions, setQuizQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -191,7 +193,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       {/* Top bar with breadcrumb */}
       <div className="mb-6 sm:mb-9">
         <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
-          <Link href={localePath(locale, "/practice-tests")} className="text-primary no-underline hover:underline">Practice Tests</Link>
+          <Link href={localePath(locale, "/practice-tests")} className="text-primary no-underline hover:underline">{t("breadcrumbPracticeTests")}</Link>
           <span>›</span>
           <span>{certName}</span>
         </div>
@@ -205,7 +207,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           <CardHeader className="bg-foreground px-4 sm:px-7 pt-4 sm:pt-5 pb-3 sm:pb-4 flex flex-col gap-3 space-y-0">
             <div className="flex items-center justify-between gap-3 w-full">
               <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
-                QUESTION {currentIndex + 1} OF {quizQuestions.length}
+                {t("questionOf", { current: currentIndex + 1, total: quizQuestions.length })}
               </span>
               <div className="flex items-center gap-2.5 ml-auto">
                 {!isComplete && (
@@ -213,10 +215,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     type="button"
                     onClick={handleToggleFlag}
                     className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
-                    title={isFlagged ? "Unflag this question" : "Flag for review"}
+                    title={isFlagged ? t("unflag") : t("flagForReview")}
                   >
                     <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
-                    <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
+                    <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? t("flagged") : t("flag")}</span>
                   </button>
                 )}
                 <a
@@ -224,13 +226,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
-                  title="Report an issue with this question"
+                  title={t("reportTooltip")}
                 >
                   <CircleAlert className="size-3.5" />
-                  <span>Report</span>
+                  <span>{t("report")}</span>
                 </a>
                 <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
-                  {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+                  {currentQuestion.isMultiSelect ? t("multiSelect") : t("singleChoice")}
                 </Badge>
               </div>
             </div>
@@ -252,7 +254,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             {currentQuestion.isMultiSelect && !isComplete && (
               <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
                 <Info className="size-4 flex-shrink-0" />
-                Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
+                {t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length })}
               </div>
             )}
 
@@ -302,7 +304,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                         "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
                         isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
                       )}>
-                        Your answer
+                        {t("yourAnswer")}
                       </span>
                     )}
                   </button>
@@ -315,7 +317,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <Alert className={`mt-5 ${isCurrentCorrectInReview ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive"}`}>
                 <AlertTitle className="flex items-center gap-2">
                   <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
-                  {isCurrentCorrectInReview ? "Correct!" : "Incorrect"}
+                  {isCurrentCorrectInReview ? t("correct") : t("incorrect")}
                 </AlertTitle>
                 {currentQuestion.hint && (
                   <AlertDescription className="text-sm leading-relaxed">
@@ -325,7 +327,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                       rel="noopener noreferrer"
                       className="underline underline-offset-4 hover:opacity-80"
                     >
-                      📖 Learn more in the docs
+                      {t("learnMore")}
                     </a>
                   </AlertDescription>
                 )}
@@ -370,14 +372,14 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 disabled={currentIndex === 0}
               >
                 <ChevronLeft data-icon="inline-start" />
-                Previous
+                {t("previous")}
               </Button>
               {currentIndex < quizQuestions.length - 1 ? (
                 <Button
                   onClick={handleNext}
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
-                  Next question
+                  {t("nextQuestion")}
                   <ChevronRight data-icon="inline-end" />
                 </Button>
               ) : !isComplete ? (
@@ -386,7 +388,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
                   <Send data-icon="inline-start" className="size-4" />
-                  Submit Exam
+                  {t("submitExam")}
                 </Button>
               ) : null}
             </div>
@@ -399,7 +401,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <Card className="shadow-sm border-[1.5px]">
               <CardHeader className="p-5 pb-0">
                 <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-                  Results
+                  {t("results")}
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-5 pt-3">
@@ -408,18 +410,18 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     {Math.round((score / quizQuestions.length) * 100)}%
                   </span>
                   <div className="text-[13px] text-muted-foreground mt-1">
-                    {score} of {quizQuestions.length} correct
+                    {t("scoreOf", { score, total: quizQuestions.length })}
                   </div>
                 </div>
                 <Progress value={(score / quizQuestions.length) * 100} className="h-2.5" />
                 <div className="mt-3 flex justify-between text-[12px] text-muted-foreground">
                   <span className="flex items-center gap-1.5">
                     <CheckCircle2 className="size-3.5 text-success" />
-                    {score} correct
+                    {t("correctCount", { count: score })}
                   </span>
                   <span className="flex items-center gap-1.5">
                     <XCircle className="size-3.5 text-destructive" />
-                    {quizQuestions.length - score} incorrect
+                    {t("incorrectCount", { count: quizQuestions.length - score })}
                   </span>
                 </div>
               </CardContent>
@@ -430,7 +432,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           <Card className="shadow-sm border-[1.5px]">
             <CardHeader className="p-5 pb-0">
               <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-                {mapTotalPages > 1 ? `${mapStart + 1}–${mapEnd} of ${quizQuestions.length}` : "Question Map"}
+                {mapTotalPages > 1 ? t("mapRange", { start: mapStart + 1, end: mapEnd, total: quizQuestions.length }) : t("questionMap")}
               </CardTitle>
             </CardHeader>
             <CardContent className="p-5 pt-3.5">
@@ -512,26 +514,26 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <>
                     <div className="flex items-center gap-2">
                       <span className="inline-block size-3 rounded-[3px] bg-success/15 border border-success/50" />
-                      Correct
+                      {t("correct")}
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="inline-block size-3 rounded-[3px] bg-destructive/15 border border-destructive/50" />
-                      Incorrect
+                      {t("incorrect")}
                     </div>
                   </>
                 ) : (
                   <>
                     <div className="flex items-center gap-2">
                       <span className="inline-block size-3 rounded-[3px] bg-foreground/10 border border-foreground/30" />
-                      Answered
+                      {t("answered")}
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50 dark:bg-amber-950/30" />
-                      Partially answered
+                      {t("partiallyAnswered")}
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="inline-block size-3 rounded-[3px] bg-card border border-border" />
-                      Unanswered
+                      {t("unanswered")}
                     </div>
                   </>
                 )}
@@ -542,13 +544,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           {/* Contribute CTA */}
           <Card className="bg-foreground text-card border-foreground shadow-sm">
             <CardContent className="px-4 py-3.5 flex items-center justify-between gap-3">
-              <span className="text-[13px] text-card/65 leading-snug">Found this useful? Help the community.</span>
+              <span className="text-[13px] text-card/65 leading-snug">{t("contributePrompt")}</span>
               <Button
                 render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
                 nativeButton={false}
                 className="bg-card text-foreground hover:bg-card/90 font-bold text-[12px] px-3 py-1.5 h-auto flex-shrink-0"
               >
-                ✍️ Contribute
+                {t("contribute")}
               </Button>
             </CardContent>
           </Card>
@@ -559,9 +561,9 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       <Dialog open={showConfirmDialog} onOpenChange={setShowConfirmDialog}>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle className="font-display text-xl font-extrabold">Submit Practice Test?</DialogTitle>
+            <DialogTitle className="font-display text-xl font-extrabold">{t("submitDialogTitle")}</DialogTitle>
             <DialogDescription className="text-muted-foreground">
-              You won&apos;t be able to change your answers after submitting.
+              {t("submitDialogDescription")}
             </DialogDescription>
           </DialogHeader>
           <div className="py-4">
@@ -569,7 +571,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <div className="flex justify-between items-center">
                 <span className="flex items-center gap-2">
                   <span className="inline-block size-2.5 rounded-full bg-foreground/30" />
-                  Answered
+                  {t("answered")}
                 </span>
                 <span className="font-semibold text-foreground tabular-nums">{fullyAnsweredCount}</span>
               </div>
@@ -577,7 +579,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-2">
                     <span className="inline-block size-2.5 rounded-full bg-amber-500" />
-                    Partially answered
+                    {t("partiallyAnswered")}
                   </span>
                   <span className="font-semibold text-foreground tabular-nums">{partialCount}</span>
                 </div>
@@ -585,7 +587,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <div className="flex justify-between items-center">
                 <span className="flex items-center gap-2">
                   <span className="inline-block size-2.5 rounded-full bg-border-dark" />
-                  Unanswered
+                  {t("unanswered")}
                 </span>
                 <span className="font-semibold text-foreground tabular-nums">{unansweredCount}</span>
               </div>
@@ -593,7 +595,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 <div className="flex justify-between items-center">
                   <span className="flex items-center gap-2">
                     <span className="text-sm">🚩</span>
-                    Flagged for review
+                    {t("submitDialogFlagged")}
                   </span>
                   <span className="font-semibold text-foreground tabular-nums">{flaggedSet.size}</span>
                 </div>
@@ -603,26 +605,23 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-[13.5px] text-amber-700 dark:text-amber-400">
                 <TriangleAlert className="size-4 mt-0.5 flex-shrink-0" />
                 <span>
-                  You have{" "}
-                  {unansweredCount > 0 && (
-                    <strong>{unansweredCount} unanswered</strong>
-                  )}
-                  {unansweredCount > 0 && partialCount > 0 && " and "}
-                  {partialCount > 0 && (
-                    <strong>{partialCount} partially answered</strong>
-                  )}
-                  {" "}question{(unansweredCount + partialCount) !== 1 ? "s" : ""}. These will be marked as incorrect.
+                  {unansweredCount > 0 && partialCount > 0
+                    ? t("submitDialogWarningBoth", { unanswered: unansweredCount, partial: partialCount })
+                    : unansweredCount > 0
+                      ? t("submitDialogWarningUnanswered", { count: unansweredCount })
+                      : t("submitDialogWarningPartial", { count: partialCount })
+                  }
                 </span>
               </div>
             )}
           </div>
           <DialogFooter className="gap-2 sm:gap-0">
             <Button variant="outline" onClick={() => setShowConfirmDialog(false)}>
-              Cancel
+              {t("cancel")}
             </Button>
             <Button onClick={handleConfirmSubmit} className="bg-foreground text-card hover:bg-foreground/90">
               <Send className="size-4" />
-              Submit Exam
+              {t("submitExam")}
             </Button>
           </DialogFooter>
         </DialogContent>

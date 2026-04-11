@@ -11,6 +11,7 @@
  */
 
 import { useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -25,6 +26,7 @@ interface QuestionBrowserProps {
 }
 
 export function QuestionBrowser({ questions }: QuestionBrowserProps) {
+  const t = useTranslations("QuestionBrowser");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
@@ -112,7 +114,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       <Card className="shadow-sm border-[1.5px] lg:sticky lg:top-6">
         <CardHeader className="p-4 pb-0">
           <span className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-            {pageStart + 1}–{pageEnd} of {questions.length}
+            {t("sidebarRange", { start: pageStart + 1, end: pageEnd, total: questions.length })}
           </span>
         </CardHeader>
         <CardContent className="p-4 pt-3">
@@ -205,7 +207,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       <Card className="overflow-hidden shadow-sm border-[1.5px]">
         <CardHeader className="bg-foreground px-4 sm:px-7 py-4 sm:py-5 flex flex-row items-center justify-between gap-3 space-y-0">
           <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
-            QUESTION {currentIndex + 1} OF {questions.length}
+            {t("questionOf", { current: currentIndex + 1, total: questions.length })}
           </span>
           <div className="flex items-center gap-2.5">
             <a
@@ -213,16 +215,16 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
-              title="Report an issue with this question"
+              title={t("reportTooltip")}
             >
               <CircleAlert className="size-3.5" />
-              <span>Report</span>
+              <span>{t("report")}</span>
             </a>
             <Badge
               variant="secondary"
               className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase"
             >
-              {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+              {currentQuestion.isMultiSelect ? t("multiSelect") : t("singleChoice")}
             </Badge>
           </div>
         </CardHeader>
@@ -237,7 +239,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           {currentQuestion.isMultiSelect && (
             <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
               <Info className="size-4 flex-shrink-0" />
-              Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
+              {t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length })}
             </div>
           )}
 
@@ -293,7 +295,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
             >
               <AlertTitle className="flex items-center gap-2">
                 <span className="text-lg">{isCurrentCorrect() ? "✅" : "❌"}</span>
-                {isCurrentCorrect() ? "Correct!" : "Not quite!"}
+                {isCurrentCorrect() ? t("correct") : t("notQuite")}
               </AlertTitle>
               <AlertDescription className="text-sm leading-relaxed">
                 {currentQuestion.hint && (
@@ -303,7 +305,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                     rel="noopener noreferrer"
                     className="underline underline-offset-4 hover:opacity-80"
                   >
-                    📖 Learn more in the docs
+                    {t("learnMore")}
                   </a>
                 )}
               </AlertDescription>
@@ -317,20 +319,20 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
         <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-3 flex-wrap">
           <div>
             {!isRevealed && (
-              <Button onClick={handleCheck} disabled={!canCheck}>Check Answer</Button>
+              <Button onClick={handleCheck} disabled={!canCheck}>{t("checkAnswer")}</Button>
             )}
           </div>
           <div className="flex gap-2">
             <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
               <ChevronLeft data-icon="inline-start" />
-              Previous
+              {t("previous")}
             </Button>
             <Button
               onClick={handleNext}
               disabled={currentIndex === questions.length - 1}
               className="bg-foreground text-card hover:bg-foreground/90"
             >
-              Next question
+              {t("nextQuestion")}
               <ChevronRight data-icon="inline-end" />
             </Button>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,8 @@ interface Props {
 }
 
 export function CatalogCards({ certs, locale }: Props) {
+  const t = useTranslations("CatalogCard");
+  const tCert = useTranslations("CertDescriptions");
   const defaultCount = (total: number) => Math.min(60, total);
   const [counts, setCounts] = useState<Record<string, number>>({});
 
@@ -39,15 +42,15 @@ export function CatalogCards({ certs, locale }: Props) {
                 </div>
                 <div>
                   <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>
-                  <div className="text-xs text-muted-foreground mt-0.5">{cert.questions} questions available</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">{t("questionsAvailable", { count: cert.questions })}</div>
                 </div>
               </div>
-              <div className="text-[13.5px] text-muted-foreground leading-relaxed">{meta.desc}</div>
+              <div className="text-[13.5px] text-muted-foreground leading-relaxed">{tCert(cert.id)}</div>
 
               {/* Question count slider */}
               <div className="flex flex-col gap-2.5">
                 <div className="flex items-center justify-between">
-                  <span className="text-[12.5px] text-muted-foreground">Practice with</span>
+                  <span className="text-[12.5px] text-muted-foreground">{t("practiceWith")}</span>
                   <span className="font-display text-sm font-bold text-foreground tabular-nums">
                     {count} <span className="font-normal text-muted-foreground">/ {cert.questions}</span>
                   </span>
@@ -68,7 +71,7 @@ export function CatalogCards({ certs, locale }: Props) {
                 nativeButton={false}
                 className="w-full rounded-[9px] text-[13.5px] font-semibold"
               >
-                Start →
+                {t("start")}
               </Button>
             </CardContent>
           </Card>

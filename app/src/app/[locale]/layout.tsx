@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
-import {
-  SUPPORTED_LOCALES,
-  isValidLocale,
-} from "@/lib/locales";
-import type { SupportedLocale } from "@/lib/locales";
-import { LocaleProvider } from "@/components/LocaleProvider";
+import { hasLocale } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { setRequestLocale, getMessages } from "next-intl/server";
+import { SUPPORTED_LOCALES } from "@/lib/locales";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export function generateStaticParams() {
   return SUPPORTED_LOCALES.map((locale) => ({ locale }));
@@ -18,13 +18,18 @@ interface Props {
 export default async function LocaleLayout({ params, children }: Props) {
   const { locale } = await params;
 
-  if (!isValidLocale(locale)) {
+  if (!hasLocale(SUPPORTED_LOCALES, locale)) {
     notFound();
   }
 
+  setRequestLocale(locale);
+  const messages = await getMessages();
+
   return (
-    <LocaleProvider locale={locale as SupportedLocale}>
-      {children}
-    </LocaleProvider>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Navbar />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
   );
 }

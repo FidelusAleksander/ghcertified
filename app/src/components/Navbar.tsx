@@ -11,16 +11,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { CheckCircle, Menu, X, Globe } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
-import { SUPPORTED_LOCALES, LOCALE_LABELS } from "@/lib/locales";
-
-/** Extract locale from the current pathname (first segment). */
-function extractLocale(pathname: string): string {
-  const seg = pathname.split("/")[1] ?? "en";
-  return (SUPPORTED_LOCALES as readonly string[]).includes(seg) ? seg : "en";
-}
+import { SUPPORTED_LOCALES, LOCALE_LABELS, LOCALE_FLAGS } from "@/lib/locales";
 
 /** Strip locale prefix from a path. */
 function stripLocale(pathname: string): string {
@@ -34,15 +29,16 @@ function stripLocale(pathname: string): string {
 export function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations("Nav");
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const locale = extractLocale(pathname);
   const pathWithoutLocale = stripLocale(pathname);
 
   const navLinks = [
-    { href: `/${locale}`, label: "Home" },
-    { href: `/${locale}/practice-tests`, label: "Practice Tests" },
-    { href: `/${locale}/questions`, label: "Questions" },
+    { href: `/${locale}`, label: t("home") },
+    { href: `/${locale}/practice-tests`, label: t("practiceTests") },
+    { href: `/${locale}/questions`, label: t("questions") },
   ] as const;
 
   function handleLocaleChange(newLocale: string) {
@@ -96,7 +92,7 @@ export function Navbar() {
               className="appearance-none bg-transparent text-sm font-medium cursor-pointer pr-4 outline-none hover:text-foreground transition-colors"
             >
               {SUPPORTED_LOCALES.map((loc) => (
-                <option key={loc} value={loc}>{LOCALE_LABELS[loc]}</option>
+                <option key={loc} value={loc}>{LOCALE_FLAGS[loc]} {LOCALE_LABELS[loc]}</option>
               ))}
             </select>
           </div>
@@ -108,7 +104,7 @@ export function Navbar() {
           type="button"
           className="lg:hidden ml-auto p-2 -mr-2 text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
         >
           {mobileOpen ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
@@ -151,7 +147,7 @@ export function Navbar() {
               className="appearance-none bg-transparent text-sm font-medium cursor-pointer pr-4 outline-none flex-1"
             >
               {SUPPORTED_LOCALES.map((loc) => (
-                <option key={loc} value={loc}>{LOCALE_LABELS[loc]}</option>
+                <option key={loc} value={loc}>{LOCALE_FLAGS[loc]} {LOCALE_LABELS[loc]}</option>
               ))}
             </select>
           </div>
