@@ -14,6 +14,7 @@ import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
 import { shuffle, cn } from "@/lib/utils";
 import Link from "next/link";
+import { useLocale, localePath } from "@/components/LocaleProvider";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -39,6 +40,7 @@ interface QuizProps {
 }
 
 export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
+  const locale = useLocale();
   const [quizQuestions, setQuizQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -189,7 +191,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       {/* Top bar with breadcrumb */}
       <div className="mb-6 sm:mb-9">
         <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
-          <Link href="/practice-tests" className="text-primary no-underline hover:underline">Practice Tests</Link>
+          <Link href={localePath(locale, "/practice-tests")} className="text-primary no-underline hover:underline">Practice Tests</Link>
           <span>›</span>
           <span>{certName}</span>
         </div>

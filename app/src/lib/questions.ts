@@ -3,10 +3,11 @@
  *
  * This is the app-specific glue layer: it knows about certification types,
  * directory structure, and how to map parsed questions to our domain model.
+ * Supports multiple locales — questions live in `questions/<locale>/<cert>/`.
  */
 
 import { join } from "node:path";
-import { readdirSync, existsSync } from "node:fs";
+import { existsSync } from "node:fs";
 import { parseDirectory } from "./quizdown";
 
 // ── App-specific types ──────────────────────────────────────────────
@@ -34,6 +35,18 @@ export interface CertInfo {
   questionCount: number;
 }
 
+// ── Locales ─────────────────────────────────────────────────────────
+
+export {
+  SUPPORTED_LOCALES,
+  DEFAULT_LOCALE,
+  isValidLocale,
+} from "./locales";
+export type { SupportedLocale } from "./locales";
+
+import { DEFAULT_LOCALE } from "./locales";
+import type { SupportedLocale } from "./locales";
+
 // ── Constants ───────────────────────────────────────────────────────
 
 const CERT_TITLES: Record<CertificationType, string> = {
@@ -48,18 +61,22 @@ const VALID_CERTS: CertificationType[] = [
   "actions", "admin", "advanced_security", "copilot", "foundations",
 ];
 
-const CONTENT_DIR = join(process.cwd(), "..", "questions", "en");
+function contentDir(locale: SupportedLocale): string {
+  return join(process.cwd(), "..", "questions", locale);
+}
 
-// ── Loader (cached) ─────────────────────────────────────────────────
+// ── Loader (cached per locale) ──────────────────────────────────────
 
-let _cache: Question[] | null = null;
+const _cache = new Map<SupportedLocale, Question[]>();
 
-function loadAll(): Question[] {
-  if (_cache) return _cache;
+function loadAll(locale: SupportedLocale): Question[] {
+  const cached = _cache.get(locale);
+  if (cached) return cached;
 
+  const base = contentDir(locale);
   const all: Question[] = [];
   for (const cert of VALID_CERTS) {
-    const dir = join(CONTENT_DIR, cert);
+    const dir = join(base, cert);
     if (!existsSync(dir)) continue;
 
     const raw = parseDirectory(dir, { filePrefix: "question-" });
@@ -76,26 +93,37 @@ function loadAll(): Question[] {
     }
   }
 
-  _cache = all;
+  _cache.set(locale, all);
   return all;
 }
 
 // ── Public API ──────────────────────────────────────────────────────
 
-export function getQuestionsByCert(cert: CertificationType): Question[] {
-  return loadAll().filter((q) => q.cert === cert);
+export function getQuestionsByCert(
+  cert: CertificationType,
+  locale: SupportedLocale = DEFAULT_LOCALE,
+): Question[] {
+  return loadAll(locale).filter((q) => q.cert === cert);
 }
 
-export const CERT_CATALOG: CertInfo[] = (() => {
-  const all = loadAll();
+export function getCertCatalog(
+  locale: SupportedLocale = DEFAULT_LOCALE,
+): CertInfo[] {
+  const all = loadAll(locale);
   return VALID_CERTS.map((cert) => ({
     cert,
     title: CERT_TITLES[cert],
     questionCount: all.filter((q) => q.cert === cert).length,
   }));
-})();
+}
 
-export function getCertInfo(cert: CertificationType): CertInfo | undefined {
-  return CERT_CATALOG.find((c) => c.cert === cert);
+/** @deprecated Use getCertCatalog(locale) instead */
+export const CERT_CATALOG: CertInfo[] = getCertCatalog(DEFAULT_LOCALE);
+
+export function getCertInfo(
+  cert: CertificationType,
+  locale: SupportedLocale = DEFAULT_LOCALE,
+): CertInfo | undefined {
+  return getCertCatalog(locale).find((c) => c.cert === cert);
 }
 

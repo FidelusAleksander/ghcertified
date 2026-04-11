@@ -15,9 +15,10 @@ interface CertData {
 
 interface Props {
   certs: CertData[];
+  locale: string;
 }
 
-export function CatalogCards({ certs }: Props) {
+export function CatalogCards({ certs, locale }: Props) {
   const defaultCount = (total: number) => Math.min(60, total);
   const [counts, setCounts] = useState<Record<string, number>>({});
 
@@ -63,7 +64,7 @@ export function CatalogCards({ certs }: Props) {
               </div>
 
               <Button
-                render={<Link href={`/practice-tests/${cert.id}?questions=${count}`} />}
+                render={<Link href={`/${locale}/practice-tests/${cert.id}?questions=${count}`} />}
                 nativeButton={false}
                 className="w-full rounded-[9px] text-[13.5px] font-semibold"
               >

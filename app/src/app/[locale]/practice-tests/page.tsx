@@ -5,11 +5,17 @@
  * passes them to the client CatalogCards for interactive inputs.
  */
 
-import { CERT_CATALOG } from "@/lib/questions";
+import { getCertCatalog } from "@/lib/questions";
+import type { SupportedLocale } from "@/lib/questions";
 import { CatalogCards } from "./catalog-cards";
 
-export default function PracticeTestsPage() {
-  const certs = CERT_CATALOG.map((c) => ({
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function PracticeTestsPage({ params }: Props) {
+  const { locale } = await params;
+  const certs = getCertCatalog(locale as SupportedLocale).map((c) => ({
     id: c.cert,
     name: c.title,
     questions: c.questionCount,
@@ -32,7 +38,7 @@ export default function PracticeTestsPage() {
         </div>
       </div>
 
-      <CatalogCards certs={certs} />
+      <CatalogCards certs={certs} locale={locale} />
     </div>
   );
 }

@@ -1,11 +1,6 @@
-/**
- * Practice test page — server component that loads questions
- * and passes them to the client Quiz component.
- */
-
 import { notFound } from "next/navigation";
-import { getQuestionsByCert } from "@/lib/questions";
-import type { CertificationType } from "@/lib/questions";
+import { getQuestionsByCert, SUPPORTED_LOCALES } from "@/lib/questions";
+import type { CertificationType, SupportedLocale } from "@/lib/questions";
 import { QuizWrapper } from "./quiz-wrapper";
 
 const VALID_CERTS: CertificationType[] = [
@@ -21,22 +16,24 @@ const CERT_NAMES: Record<string, string> = {
 };
 
 export function generateStaticParams() {
-  return VALID_CERTS.map((cert) => ({ cert }));
+  return SUPPORTED_LOCALES.flatMap((locale) =>
+    VALID_CERTS.map((cert) => ({ locale, cert })),
+  );
 }
 
 interface Props {
-  params: Promise<{ cert: string }>;
+  params: Promise<{ locale: string; cert: string }>;
 }
 
 export default async function PracticeTestPage({ params }: Props) {
-  const { cert } = await params;
+  const { locale, cert } = await params;
 
   if (!VALID_CERTS.includes(cert as CertificationType)) {
     notFound();
   }
 
   const certType = cert as CertificationType;
-  const questions = getQuestionsByCert(certType);
+  const questions = getQuestionsByCert(certType, locale as SupportedLocale);
 
   return (
     <QuizWrapper

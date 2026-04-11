@@ -5,8 +5,8 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import type { CertificationType } from "@/lib/questions";
-import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
+import type { CertificationType, SupportedLocale } from "@/lib/questions";
+import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES } from "@/lib/questions";
 import { QuestionBrowser } from "./question-browser";
 
 const VALID_CERTS: CertificationType[] = [
@@ -14,27 +14,29 @@ const VALID_CERTS: CertificationType[] = [
 ];
 
 export function generateStaticParams() {
-  return VALID_CERTS.map((cert) => ({ cert }));
+  return SUPPORTED_LOCALES.flatMap((locale) =>
+    VALID_CERTS.map((cert) => ({ locale, cert })),
+  );
 }
 
 interface Props {
-  params: Promise<{ cert: string }>;
+  params: Promise<{ locale: string; cert: string }>;
 }
 
 export default async function CertQuestionsPage({ params }: Props) {
-  const { cert } = await params;
-  const certInfo = getCertInfo(cert as CertificationType);
+  const { locale, cert } = await params;
+  const certInfo = getCertInfo(cert as CertificationType, locale as SupportedLocale);
 
   if (!certInfo) {
     notFound();
   }
 
-  const questions = getQuestionsByCert(cert as CertificationType);
+  const questions = getQuestionsByCert(cert as CertificationType, locale as SupportedLocale);
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-4">
-        <Link href="/questions" className="text-primary no-underline hover:underline">Questions</Link>
+        <Link href={`/${locale}/questions`} className="text-primary no-underline hover:underline">Questions</Link>
         <span>›</span>
         <span>{certInfo.title}</span>
       </div>
