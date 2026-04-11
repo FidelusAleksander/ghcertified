@@ -1,10 +1,10 @@
 ---
 title: "質問 078"
-question: "GitHub WorkflowsとActionsに関する正しい記述はどれですか？"
+question: "GitHub WorkflowsとActionsについて正しい記述は次のうちどれですか？"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
-1. [ ] 各Actionは1つ以上のWorkflowで構成され、そのWorkflowは1つ以上のジョブで構成され、各ジョブは1つ以上のステップで構成される
-1. [ ] 各Workflowは1つ以上のActionで構成され、そのActionは1つ以上のジョブで構成され、各ジョブは1つ以上のステップで構成される
-1. [x] 各Workflowは1つ以上のジョブで構成され、各ジョブは1つ以上のステップで構成され、各ステップはActionまたはスクリプトである
-1. [ ] 各Actionは1つ以上のジョブで構成され、各ジョブは1つ以上のステップで構成され、各ステップはWorkflowである
+> https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions  
+1. [ ] 各アクションは1つ以上のワークフローから構成されており、そのワークフローは1つ以上のジョブから構成され、各ジョブは1つ以上のステップから構成されています  
+1. [ ] 各ワークフローは1つ以上のアクションから構成されており、そのアクションは1つ以上のジョブから構成され、各ジョブは1つ以上のステップから構成されています  
+1. [x] 各ワークフローは1つ以上のジョブから構成されており、各ジョブは1つ以上のステップから構成され、各ステップはアクションまたはスクリプトです  
+1. [ ] 各アクションは1つ以上のジョブから構成されており、各ジョブは1つ以上のステップから構成され、各ステップはワークフローです  
