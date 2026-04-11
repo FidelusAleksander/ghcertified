@@ -21,26 +21,25 @@ A Codespace is an online development environment that runs in the cloud and is p
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/FidelusAleksander/ghcertified)
 
-Once the Codespace installation is complete you can start making [content changes](#content-changes). 
+Once the Codespace installation is complete you can start making [content changes](#content-changes).
 
-Start the Hugo server to see your changes live at http://localhost:1313
+Start the dev server to see your changes live at http://localhost:3000
 
   ```bash
-  hugo server
+  cd app && npm run dev
   ```
 
 ### Option 2: Local setup (traditional)
 If you've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusAleksander/ghcertified) but instead want to run the project locally, follow the steps below.
 1. [Fork](https://github.com/FidelusAleksander/ghcertified/fork) the repository
-2. Install [Hugo](https://gohugo.io/installation/) recommended version (0.145.0)
-
-3. Update the submodules to install the theme used in this project
+2. Install [Node.js](https://nodejs.org/) (see `.node-version` for the recommended version)
+3. Install dependencies
   ```bash
-  git submodule update --init --recursive
+  cd app && npm install
   ```
-4. Start the Hugo server to see your changes live at http://localhost:1313
+4. Start the dev server to see your changes live at http://localhost:3000
   ```bash
-  hugo server
+  npm run dev
   ```
 
 ## Content Changes
@@ -51,19 +50,30 @@ All of the site content in this repository is stored in [questions/](https://git
 > [!warning]
 > We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.
 
-1) Run one of the following commands to add a new question file. Change `XXX` to the next available number.
+1) Create a new markdown file in the appropriate certification directory. Change `XXX` to the next available number.
 
-```bash
-hugo new questions/actions/question-XXX.md
-hugo new questions/admin/question-XXX.md
-hugo new questions/advanced_security/question-XXX.md
-hugo new questions/foundations/question-XXX.md
-hugo new questions/copilot/question-XXX.md
+  - `questions/en/actions/question-XXX.md`
+  - `questions/en/admin/question-XXX.md`
+  - `questions/en/advanced_security/question-XXX.md`
+  - `questions/en/foundations/question-XXX.md`
+  - `questions/en/copilot/question-XXX.md`
+
+2) Use the following template for the new file:
+
+```markdown
+---
+title: "Question XXX"
+question: "<Fill in the Question>"
+---
+
+> (optional hint) text hint or a link
+- [x] Correct Answer
+- [ ] Incorrect Answer
+- [ ] Incorrect Answer
+- [ ] Incorrect Answer
 ```
 
-For example `hugo new questions/actions/question-084.md`
-
-2) Open the newly created file and fill in the question and answers.
+3) Fill in the question and answers.
 
 
 ### Updating existing content

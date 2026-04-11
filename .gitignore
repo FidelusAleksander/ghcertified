@@ -1,6 +1,5 @@
-# Hugo default output directory
-/public
-.idea/
-.hugo_build.lock
-nohup.out
+# Next.js build output
+app/.next/
+app/out/
 .DS_Store
+nohup.out

@@ -10,28 +10,30 @@ permissions:
 
 jobs:
   build:
-    name: Build Hugo Site
+    name: Build Next.js Site
     if: github.event.label.name == 'request-preview-deployment'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout PR code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-        with:
-          submodules: recursive
-          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          hugo-version: '0.145.0'
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        run: cd app && npm ci
 
       - name: Build site
-        run: hugo
+        run: cd app && npm run build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7
         with:
-          name: hugo-build
-          path: public/
+          name: nextjs-build
+          path: app/out/
           retention-days: 1
 

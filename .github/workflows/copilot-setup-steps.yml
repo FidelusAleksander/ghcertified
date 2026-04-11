@@ -7,18 +7,18 @@ jobs:
   copilot-setup-steps:
     runs-on: ubuntu-latest
 
-
     permissions:
       contents: read
 
-    # You can define any steps you want, and they will run before the agent starts.
-    # If you do not check out your code, Copilot will do this for you.
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
-        with:
-          hugo-version: '0.145.0'
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        run: cd app && npm ci

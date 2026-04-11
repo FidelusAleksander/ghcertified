@@ -28,5 +28,4 @@ documentation:
 
 dependencies:
 - changed-files:
-  - any-glob-to-any-file: "themes/**/*"
-- head-branch: ['dependabot/*']
+  - any-glob-to-any-file: ["**/package.json", "**/package-lock.json"]

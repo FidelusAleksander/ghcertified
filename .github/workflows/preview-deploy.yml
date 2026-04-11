@@ -21,7 +21,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v8
         with:
-          name: hugo-build
+          name: nextjs-build
           path: public/
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}

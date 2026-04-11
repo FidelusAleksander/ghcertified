@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { Play, ArrowRight } from "lucide-react";
 import { CERT_CATALOG } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
+import { getContributors } from "@/lib/contributors";
 
 const certifications = CERT_CATALOG.map((c) => ({
   id: c.cert,
@@ -21,7 +22,8 @@ const totalQuestions = certifications.reduce((sum, c) => sum + c.questions, 0);
  * Homepage — hero section + certification tracks preview.
  * Two-column layout: left (copy + CTA) + right (mock quiz card).
  */
-export default function HomePage() {
+export default async function HomePage() {
+  const contributors = await getContributors();
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-10 sm:pt-24 pb-8 sm:pb-20">
       {/* Hero — two columns */}
@@ -165,6 +167,54 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+      {/* Contributors section */}
+      {contributors.length > 0 && (
+        <div className="mt-16 sm:mt-24">
+          <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
+            Community
+          </div>
+          <div className="mb-8 sm:mb-10">
+            <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
+              Built by {contributors.length}+ contributors
+            </h2>
+            <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
+              This project is shaped by the community. Every question, fix, and improvement comes from people like you.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {contributors.map((c) => (
+              <a
+                key={c.login}
+                href={c.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`${c.login} — ${c.contributions} contribution${c.contributions !== 1 ? "s" : ""}`}
+                className="group relative"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`${c.avatarUrl}&s=72`}
+                  alt={c.login}
+                  width={36}
+                  height={36}
+                  className="size-9 rounded-full border-2 border-border bg-muted transition-all group-hover:scale-110 group-hover:border-primary group-hover:shadow-md"
+                  loading="lazy"
+                />
+              </a>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Button
+              variant="outline"
+              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+              nativeButton={false}
+              className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-medium"
+            >
+              Join the contributors →
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

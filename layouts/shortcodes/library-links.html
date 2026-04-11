@@ -1,7 +1,0 @@
-<ol>
-{{ range where (where .Site.RegularPages ".Params.exam" .Params.questions) "Section" "questions" }}
-<li>
-    <a href="{{ .RelPermalink }}">{{ .Params.question }}</a>
-</li>    
-{{ end }}
-</ol>

@@ -20,7 +20,7 @@ This document provides comprehensive guidelines for creating high-quality questi
   - `questions/en/foundations/` - GitHub Foundations certification
 
 ### File Structure
-Each question file must follow the structure defined in the [questions.md](../../archetypes/questions.md) archetype.
+Each question file must follow the structure shown in the examples below.
 
 The question can be either single choice or multiple choice.
 

@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   title: "GitHub Certified — Practice Tests",
   description:
     "Master GitHub Certifications with community-created practice tests for Actions, Admin, Advanced Security, Foundations, and Copilot.",
+  openGraph: {
+    title: "GitHub Certified — Practice Tests",
+    description:
+      "Master GitHub Certifications with community-created practice tests for Actions, Admin, Advanced Security, Foundations, and Copilot.",
+    images: [{ url: "/opengraph.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/opengraph.png"],
+  },
 };
 
 export default function RootLayout({
