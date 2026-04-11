@@ -21,7 +21,7 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Flag, Info, ChevronLeft, ChevronRight } from "lucide-react";
+import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 import { QuizResults } from "./QuizResults";
 
 interface QuizProps {
@@ -48,6 +48,15 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
   const [flaggedSet, setFlaggedSet] = useState<Set<number>>(new Set());
   const [isComplete, setIsComplete] = useState(false);
+  const [manualMapPage, setManualMapPage] = useState<number | null>(null);
+
+  // Question map pagination
+  const MAP_PAGE_SIZE = 60;
+  const mapTotalPages = Math.ceil(quizQuestions.length / MAP_PAGE_SIZE);
+  const activeMapPage = Math.floor(currentIndex / MAP_PAGE_SIZE);
+  const mapPage = manualMapPage ?? activeMapPage;
+  const mapStart = mapPage * MAP_PAGE_SIZE;
+  const mapEnd = Math.min(mapStart + MAP_PAGE_SIZE, quizQuestions.length);
 
   const currentQuestion = quizQuestions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
@@ -72,8 +81,12 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         const current = new Set(prev[qId] ?? []);
 
         if (currentQuestion.isMultiSelect) {
-          if (current.has(answerId)) current.delete(answerId);
-          else current.add(answerId);
+          const correctMax = currentQuestion.answers.filter((a) => a.isCorrect).length;
+          if (current.has(answerId)) {
+            current.delete(answerId);
+          } else if (current.size < correctMax) {
+            current.add(answerId);
+          }
         } else {
           current.clear();
           current.add(answerId);
@@ -92,14 +105,24 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   const handleNext = () => {
     if (currentIndex < quizQuestions.length - 1) {
-      setCurrentIndex((i) => i + 1);
+      const next = currentIndex + 1;
+      if (Math.floor(next / MAP_PAGE_SIZE) !== Math.floor(currentIndex / MAP_PAGE_SIZE)) {
+        setManualMapPage(null);
+      }
+      setCurrentIndex(next);
     } else {
       setIsComplete(true);
     }
   };
 
   const handlePrev = () => {
-    if (currentIndex > 0) setCurrentIndex((i) => i - 1);
+    if (currentIndex > 0) {
+      const next = currentIndex - 1;
+      if (Math.floor(next / MAP_PAGE_SIZE) !== Math.floor(currentIndex / MAP_PAGE_SIZE)) {
+        setManualMapPage(null);
+      }
+      setCurrentIndex(next);
+    }
   };
 
   // Check if current answer correct
@@ -111,14 +134,21 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   // Score calculations for sidebar
   const answeredCount = Object.keys(revealedMap).length;
-  const correctCount = Object.entries(revealedMap).filter(([qIdx]) => {
+  let correctCount = 0;
+  let partialCount = 0;
+  for (const qIdx of Object.keys(revealedMap)) {
     const q = quizQuestions[Number(qIdx)];
-    if (!q) return false;
+    if (!q) continue;
     const sel = selectedAnswers[q.id] ?? new Set<string>();
     const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
-    return correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
-  }).length;
-  const wrongCount = answeredCount - correctCount;
+    const allCorrect = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
+    if (allCorrect) {
+      correctCount++;
+    } else if (q.isMultiSelect && [...sel].some((id) => correctIds.has(id))) {
+      partialCount++;
+    }
+  }
+  const wrongCount = answeredCount - correctCount - partialCount;
   const scorePercent = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
 
   // Loading
@@ -200,9 +230,9 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
             </div>
             {currentQuestion.isMultiSelect && (
-              <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4 italic">
-                <Info />
-                Select all that apply
+              <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4">
+                <Info className="size-3.5" />
+                Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
               </div>
             )}
 
@@ -317,13 +347,18 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <div className="flex items-center gap-3 mb-3.5">
                 <div
                   className="size-[60px] rounded-full flex items-center justify-center flex-shrink-0 relative"
-                  style={{ background: `conic-gradient(hsl(var(--success)) 0% ${scorePercent}%, hsl(var(--border)) ${scorePercent}% 100%)` }}
+                  style={{
+                    background: answeredCount > 0
+                      ? `conic-gradient(hsl(var(--success)) 0% ${scorePercent}%, hsl(38 92% 50%) ${scorePercent}% ${scorePercent + Math.round((partialCount / answeredCount) * 100)}%, hsl(var(--destructive)) ${scorePercent + Math.round((partialCount / answeredCount) * 100)}% ${scorePercent + Math.round((partialCount / answeredCount) * 100) + Math.round((wrongCount / answeredCount) * 100)}%, hsl(var(--border)) ${scorePercent + Math.round((partialCount / answeredCount) * 100) + Math.round((wrongCount / answeredCount) * 100)}% 100%)`
+                      : `conic-gradient(hsl(var(--border)) 0% 100%)`
+                  }}
                 >
                   <div className="absolute size-11 bg-card rounded-full" />
                   <span className="font-display text-[15px] font-bold text-foreground relative z-10">{scorePercent}%</span>
                 </div>
                 <div className="text-[13px] text-muted-foreground leading-[1.8] flex-1">
                   <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-success mr-1.5" />Correct</span><span className="font-semibold text-foreground">{correctCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full mr-1.5" style={{ backgroundColor: "hsl(38 92% 50%)" }} />Partial</span><span className="font-semibold text-foreground">{partialCount}</span></div>
                   <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-destructive mr-1.5" />Incorrect</span><span className="font-semibold text-foreground">{wrongCount}</span></div>
                   <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-border-dark mr-1.5" />Remaining</span><span className="font-semibold text-foreground">{quizQuestions.length - answeredCount}</span></div>
                 </div>
@@ -334,11 +369,14 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           {/* Question Map */}
           <Card className="shadow-sm border-[1.5px]">
             <CardHeader className="p-5 pb-0">
-              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">Question Map</CardTitle>
+              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
+                {mapTotalPages > 1 ? `${mapStart + 1}–${mapEnd} of ${quizQuestions.length}` : "Question Map"}
+              </CardTitle>
             </CardHeader>
             <CardContent className="p-5 pt-3.5">
               <div className="flex flex-wrap gap-x-1.5 gap-y-3.5 pt-2">
-                {quizQuestions.map((q, i) => {
+                {quizQuestions.slice(mapStart, mapEnd).map((q, offset) => {
+                  const i = mapStart + offset;
                   const isQuestionFlagged = flaggedSet.has(i);
                   const btnClass = cn(
                     "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative",
@@ -347,9 +385,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                       const sel = selectedAnswers[q.id] ?? new Set<string>();
                       const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
                       const correct = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
-                      return correct
-                        ? "border-success bg-success-soft text-success"
-                        : "border-destructive bg-destructive-soft text-destructive";
+                      if (correct) return "border-success bg-success-soft text-success";
+                      const partial = q.isMultiSelect && [...sel].some((id) => correctIds.has(id));
+                      if (partial) return "border-amber-500 bg-amber-50 text-amber-600";
+                      return "border-destructive bg-destructive-soft text-destructive";
                     })(),
                     i !== currentIndex && !revealedMap[i] && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
                   );
@@ -363,6 +402,48 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   );
                 })}
               </div>
+              {/* Map pagination */}
+              {mapTotalPages > 1 && (
+                <div className="flex items-center justify-center gap-1 mt-3 pt-3 border-t border-border">
+                  <button
+                    onClick={() => setManualMapPage(Math.max(0, mapPage - 1))}
+                    disabled={mapPage === 0}
+                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ChevronsLeft className="size-3.5" />
+                  </button>
+                  {Array.from({ length: mapTotalPages }, (_, p) => {
+                    const show = p === 0 || p === mapTotalPages - 1 || Math.abs(p - mapPage) <= 1;
+                    const showEllipsis = !show && (p === 1 || p === mapTotalPages - 2) &&
+                      Math.abs(p - mapPage) === 2;
+                    if (showEllipsis) {
+                      return <span key={p} className="text-[10px] text-muted-foreground px-0.5">…</span>;
+                    }
+                    if (!show) return null;
+                    return (
+                      <button
+                        key={p}
+                        onClick={() => setManualMapPage(p)}
+                        className={cn(
+                          "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors",
+                          p === mapPage
+                            ? "bg-primary text-primary-foreground"
+                            : "text-muted-foreground hover:text-foreground hover:bg-muted",
+                        )}
+                      >
+                        {p + 1}
+                      </button>
+                    );
+                  })}
+                  <button
+                    onClick={() => setManualMapPage(Math.min(mapTotalPages - 1, mapPage + 1))}
+                    disabled={mapPage === mapTotalPages - 1}
+                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ChevronsRight className="size-3.5" />
+                  </button>
+                </div>
+              )}
               {flaggedSet.size > 0 && (
                 <div className="mt-3 flex items-center gap-1.5 text-[12px] text-warning">
                   <Flag className="fill-warning" />

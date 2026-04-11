@@ -18,16 +18,22 @@ interface QuizResultsProps {
 
 export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsProps) {
   let correct = 0;
+  let partial = 0;
   for (const q of questions) {
     const selected = selectedAnswers[q.id] ?? new Set<string>();
     const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
     const isCorrect =
       correctIds.size === selected.size &&
       [...correctIds].every((id) => selected.has(id));
-    if (isCorrect) correct++;
+    if (isCorrect) {
+      correct++;
+    } else if (q.isMultiSelect && [...selected].some((id) => correctIds.has(id))) {
+      partial++;
+    }
   }
 
   const total = questions.length;
+  const wrong = total - correct - partial;
   const pct = Math.round((correct / total) * 100);
   const passed = pct >= 70;
 
@@ -61,8 +67,14 @@ export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsPro
               <div className="text-2xl font-bold text-success tabular-nums">{correct}</div>
               <div className="text-sm text-muted-foreground">Correct</div>
             </div>
+            {partial > 0 && (
+              <div className="text-center">
+                <div className="text-2xl font-bold tabular-nums" style={{ color: "hsl(38 92% 50%)" }}>{partial}</div>
+                <div className="text-sm text-muted-foreground">Partial</div>
+              </div>
+            )}
             <div className="text-center">
-              <div className="text-2xl font-bold text-destructive tabular-nums">{total - correct}</div>
+              <div className="text-2xl font-bold text-destructive tabular-nums">{wrong}</div>
               <div className="text-sm text-muted-foreground">Incorrect</div>
             </div>
           </div>
