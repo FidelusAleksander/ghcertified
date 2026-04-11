@@ -1,39 +1,34 @@
 "use client";
 
 /**
- * Quiz — the main quiz orchestrator component.
+ * Quiz — main orchestrator with two-column layout.
  *
- * Manages all quiz state: which question is shown, what the user selected,
- * whether they've submitted, and when the quiz is complete.
+ * Left: question card with dark header, styled answer options, feedback, nav.
+ * Right: sidebar with session score, question map, contribute CTA.
  *
- * "use client" because it uses React state (useState) to track quiz progress.
- * In Next.js App Router, any component that uses hooks must be a client component.
- *
- * IMPORTANT: We use useEffect to shuffle questions on the client only.
- * Math.random() produces different results on server vs client, which causes
- * a "hydration mismatch" error. By shuffling in useEffect (which only runs
- * on the client), the server renders nothing and the client renders the
- * shuffled quiz — no mismatch.
+ * "use client" because it uses React state for quiz progress.
+ * Shuffles questions in useEffect (client-only) to avoid hydration mismatch.
  */
 
 import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
 import { shuffle } from "@/lib/utils";
-import { QuestionCard } from "./QuestionCard";
-import { QuizProgress } from "./QuizProgress";
+import Link from "next/link";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
+import { Separator } from "@/components/ui/separator";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { QuizResults } from "./QuizResults";
 
 interface QuizProps {
-  /** All questions for this cert (will be shuffled + sliced) */
   questions: Question[];
-  /** How many questions the user wants */
   questionCount: number;
-  /** Which cert this quiz is for (used in results links) */
   cert: string;
+  certName: string;
 }
 
-export function Quiz({ questions, questionCount, cert }: QuizProps) {
-  // Shuffle on client only to avoid hydration mismatch (Math.random differs server/client).
+export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const [quizQuestions, setQuizQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -46,33 +41,26 @@ export function Quiz({ questions, questionCount, cert }: QuizProps) {
   }, [questions, questionCount]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<
-    Record<string, Set<string>>
-  >({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
+  const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
   const [isComplete, setIsComplete] = useState(false);
 
   const currentQuestion = quizQuestions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
+  const isRevealed = revealedMap[currentIndex] || false;
 
-  // Toggle an answer selection (F06 interactive answering)
   const handleToggleAnswer = useCallback(
     (answerId: string) => {
-      if (isSubmitted || !currentQuestion) return;
+      if (isRevealed || !currentQuestion) return;
 
       setSelectedAnswers((prev) => {
         const qId = currentQuestion.id;
         const current = new Set(prev[qId] ?? []);
 
         if (currentQuestion.isMultiSelect) {
-          // Multi-select: toggle the answer
-          if (current.has(answerId)) {
-            current.delete(answerId);
-          } else {
-            current.add(answerId);
-          }
+          if (current.has(answerId)) current.delete(answerId);
+          else current.add(answerId);
         } else {
-          // Single-select: replace selection
           current.clear();
           current.add(answerId);
         }
@@ -80,77 +68,292 @@ export function Quiz({ questions, questionCount, cert }: QuizProps) {
         return { ...prev, [qId]: current };
       });
     },
-    [currentQuestion, isSubmitted]
+    [currentQuestion, isRevealed]
   );
 
-  // Submit current answer and show feedback
-  const handleSubmit = () => {
+  const handleCheck = () => {
     if (currentSelected.size === 0) return;
-    setIsSubmitted(true);
+    setRevealedMap((prev) => ({ ...prev, [currentIndex]: true }));
   };
 
-  // Move to next question or finish quiz
   const handleNext = () => {
     if (currentIndex < quizQuestions.length - 1) {
       setCurrentIndex((i) => i + 1);
-      setIsSubmitted(false);
     } else {
       setIsComplete(true);
     }
   };
 
-  // Loading state while shuffling on client
+  const handlePrev = () => {
+    if (currentIndex > 0) setCurrentIndex((i) => i - 1);
+  };
+
+  // Check if current answer correct
+  const isCurrentCorrect = () => {
+    if (!currentQuestion) return false;
+    const correctIds = new Set(currentQuestion.answers.filter((a) => a.isCorrect).map((a) => a.id));
+    return correctIds.size === currentSelected.size && [...correctIds].every((id) => currentSelected.has(id));
+  };
+
+  // Score calculations for sidebar
+  const answeredCount = Object.keys(revealedMap).length;
+  const correctCount = Object.entries(revealedMap).filter(([qIdx]) => {
+    const q = quizQuestions[Number(qIdx)];
+    if (!q) return false;
+    const sel = selectedAnswers[q.id] ?? new Set<string>();
+    const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
+    return correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
+  }).length;
+  const wrongCount = answeredCount - correctCount;
+  const scorePercent = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+
+  // Loading
   if (quizQuestions.length === 0) {
-    return (
-      <div className="py-12 text-center text-muted-foreground">
-        Loading questions…
-      </div>
-    );
+    return <div className="py-12 text-center text-muted-foreground">Loading questions…</div>;
   }
 
-  // Quiz complete — show results
+  // Complete
   if (isComplete) {
-    return (
-      <QuizResults
-        questions={quizQuestions}
-        selectedAnswers={selectedAnswers}
-        cert={cert}
-      />
-    );
+    return <QuizResults questions={quizQuestions} selectedAnswers={selectedAnswers} cert={cert} />;
   }
 
   return (
-    <div className="space-y-8">
-      <QuizProgress current={currentIndex} total={quizQuestions.length} />
+    <div className="max-w-[1200px] mx-auto px-8 py-12">
+      {/* Top bar with breadcrumb + progress */}
+      <div className="flex items-center justify-between mb-9 flex-wrap gap-4">
+        <div>
+          <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
+            <Link href="/practice-tests" className="text-primary no-underline hover:underline">Practice Tests</Link>
+            <span>›</span>
+            <span>{certName}</span>
+          </div>
+          <h1 className="font-display text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
+        </div>
+        <div className="flex-1 max-w-[360px]">
+          <div className="flex items-center gap-4">
+            <Progress value={((currentIndex + 1) / quizQuestions.length) * 100} className="flex-1 h-2" />
+            <span className="text-[13px] font-semibold text-muted-foreground whitespace-nowrap">
+              {currentIndex + 1} of {quizQuestions.length}
+            </span>
+          </div>
+        </div>
+      </div>
 
-      <QuestionCard
-        question={currentQuestion}
-        selectedAnswerIds={currentSelected}
-        isSubmitted={isSubmitted}
-        onToggleAnswer={handleToggleAnswer}
-      />
+      {/* Two-column layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
+        {/* Question card */}
+        <Card className="overflow-hidden shadow-sm border-[1.5px]">
+          <CardHeader className="bg-foreground px-7 py-5 flex flex-row items-center justify-between gap-3 space-y-0">
+            <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
+              QUESTION {currentIndex + 1} OF {quizQuestions.length}
+            </span>
+            <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
+              {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+            </Badge>
+          </CardHeader>
+          <CardContent className="p-7">
+            {/* Question text */}
+            <p className="text-[17px] font-medium text-foreground leading-relaxed mb-6">
+              {renderCodeSpans(currentQuestion.question)}
+            </p>
+            {currentQuestion.isMultiSelect && (
+              <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4 italic">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
+                Select all that apply
+              </div>
+            )}
 
-      {/* Action button */}
-      <div className="flex justify-end">
-        {!isSubmitted ? (
-          <button
-            onClick={handleSubmit}
-            disabled={currentSelected.size === 0}
-            className="inline-flex h-11 items-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            Check Answer
-          </button>
-        ) : (
-          <button
-            onClick={handleNext}
-            className="inline-flex h-11 items-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            {currentIndex < quizQuestions.length - 1
-              ? "Next Question"
-              : "See Results"}
-          </button>
-        )}
+            {/* Answer options */}
+            <div className="flex flex-col gap-2.5">
+              {currentQuestion.answers.map((answer) => {
+                const isSelected = currentSelected.has(answer.id);
+                const isCorrectOpt = answer.isCorrect;
+
+                // Option styling
+                let optionClass = "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed";
+                if (isRevealed) {
+                  if (isCorrectOpt) optionClass += " border-success bg-success-soft";
+                  else if (isSelected && !isCorrectOpt) optionClass += " border-destructive bg-destructive-soft";
+                  else optionClass += " border-border bg-card";
+                } else if (isSelected) {
+                  optionClass += " border-primary bg-primary-soft";
+                } else {
+                  optionClass += " border-border bg-card hover:border-primary hover:bg-primary-soft";
+                }
+
+                // Selector dot/check styling
+                const shape = currentQuestion.isMultiSelect ? "rounded-[5px]" : "rounded-full";
+                let selectorClass = `w-5 h-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center ${shape}`;
+                if (isRevealed) {
+                  if (isCorrectOpt) selectorClass += " border-success bg-success";
+                  else if (isSelected) selectorClass += " border-destructive bg-destructive";
+                  else selectorClass += " border-border-dark";
+                } else if (isSelected) {
+                  selectorClass += " border-primary bg-primary";
+                } else {
+                  selectorClass += " border-border-dark";
+                }
+
+                return (
+                  <button
+                    key={answer.id}
+                    type="button"
+                    onClick={() => handleToggleAnswer(answer.id)}
+                    disabled={isRevealed}
+                    className={optionClass}
+                  >
+                    <div className={selectorClass}>
+                      {(isSelected || (isRevealed && isCorrectOpt)) && (
+                        <div className="w-2 h-2 rounded-full bg-card" />
+                      )}
+                    </div>
+                    <span className="text-foreground">{renderCodeSpans(answer.text)}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Feedback alert */}
+            {isRevealed && (
+              <Alert className={`mt-5 ${isCurrentCorrect() ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive"}`}>
+                <AlertTitle className="flex items-center gap-2">
+                  <span className="text-lg">{isCurrentCorrect() ? "✅" : "❌"}</span>
+                  {isCurrentCorrect() ? "Correct!" : "Not quite!"}
+                </AlertTitle>
+                <AlertDescription className="text-sm leading-relaxed">
+                  {currentQuestion.hint && (
+                    <a
+                      href={currentQuestion.hint}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4 hover:opacity-80"
+                    >
+                      📖 Learn more in the docs
+                    </a>
+                  )}
+                </AlertDescription>
+              </Alert>
+            )}
+          </CardContent>
+
+          <Separator />
+
+          {/* Navigation footer */}
+          <div className="px-7 py-5 flex items-center justify-between gap-3 flex-wrap">
+            <div>
+              {!isRevealed && currentSelected.size > 0 && (
+                <button
+                  onClick={handleCheck}
+                  className="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-[13.5px] font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  Check Answer
+                </button>
+              )}
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={handlePrev}
+                disabled={currentIndex === 0}
+                className="inline-flex items-center rounded-lg border border-border px-4 py-2 text-[13.5px] font-semibold text-foreground transition-colors hover:bg-secondary disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                ← Previous
+              </button>
+              <button
+                onClick={handleNext}
+                className="inline-flex items-center rounded-lg bg-foreground px-4 py-2 text-[13.5px] font-semibold text-card transition-colors hover:bg-foreground/90"
+              >
+                {currentIndex < quizQuestions.length - 1 ? "Next question →" : "See Results →"}
+              </button>
+            </div>
+          </div>
+        </Card>
+
+        {/* Sidebar */}
+        <div className="flex flex-col gap-4">
+          {/* Session Score */}
+          <Card className="shadow-sm border-[1.5px]">
+            <CardContent className="p-5">
+              <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Session Score</div>
+              <div className="flex items-center gap-3 mb-3.5">
+                <div
+                  className="w-[60px] h-[60px] rounded-full flex items-center justify-center flex-shrink-0 relative"
+                  style={{ background: `conic-gradient(hsl(var(--success)) 0% ${scorePercent}%, hsl(var(--border)) ${scorePercent}% 100%)` }}
+                >
+                  <div className="absolute w-11 h-11 bg-card rounded-full" />
+                  <span className="font-display text-[15px] font-bold text-foreground relative z-10">{scorePercent}%</span>
+                </div>
+                <div className="text-[13px] text-muted-foreground leading-[1.8] flex-1">
+                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-success mr-1.5" />Correct</span><span className="font-semibold text-foreground">{correctCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-destructive mr-1.5" />Incorrect</span><span className="font-semibold text-foreground">{wrongCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-border-dark mr-1.5" />Remaining</span><span className="font-semibold text-foreground">{quizQuestions.length - answeredCount}</span></div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Question Map */}
+          <Card className="shadow-sm border-[1.5px]">
+            <CardContent className="p-5">
+              <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Question Map</div>
+              <div className="flex flex-wrap gap-1.5">
+                {quizQuestions.map((q, i) => {
+                  let btnClass = "w-[30px] h-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors";
+                  if (i === currentIndex) {
+                    btnClass += " bg-primary text-primary-foreground border-primary";
+                  } else if (revealedMap[i]) {
+                    const sel = selectedAnswers[q.id] ?? new Set<string>();
+                    const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
+                    const correct = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
+                    btnClass += correct
+                      ? " border-success bg-success-soft text-success"
+                      : " border-destructive bg-destructive-soft text-destructive";
+                  } else {
+                    btnClass += " border-border bg-card text-muted-foreground hover:border-primary hover:text-primary";
+                  }
+                  return (
+                    <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
+                      {i + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Contribute CTA */}
+          <Card className="bg-foreground text-card border-foreground">
+            <CardContent className="p-5">
+              <div className="font-display text-[15px] font-bold mb-2">Found this useful?</div>
+              <div className="text-[13px] text-card/65 leading-relaxed mb-3.5">
+                Give back to the community by contributing a question — it only takes a few minutes.
+              </div>
+              <a
+                href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-lg bg-card px-4 py-2 text-sm font-bold text-foreground transition-colors hover:bg-card/90"
+              >
+                ✍️ Contribute a question
+              </a>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );
+}
+
+/** Simple parser: turns `backtick` text into <code> spans for technical content. */
+function renderCodeSpans(text: string): React.ReactNode[] {
+  const parts = text.split(/(`[^`]+`)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("`") && part.endsWith("`")) {
+      return (
+        <code key={i} className="font-mono text-sm bg-muted px-1.5 py-0.5 rounded text-foreground">
+          {part.slice(1, -1)}
+        </code>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
 }

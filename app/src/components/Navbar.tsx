@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Navbar — top navigation for the site.
+ * Navbar — top navigation bar.
  *
- * "use client" because we need usePathname() to highlight the active link.
- * In Next.js App Router, hooks that read browser state require client components.
+ * "use client" because usePathname() reads browser state.
+ * Sticky top with white background, logo, nav links, and action buttons.
  */
 
 import Link from "next/link";
@@ -21,40 +21,62 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="border-b border-border/50 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
-      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="font-heading text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary"
-        >
-          GitHub Certified
+    <nav className="bg-card border-b border-border sticky top-0 z-50">
+      <div className="max-w-[1200px] mx-auto px-8 flex items-center h-16 gap-10">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
+          <div className="w-[34px] h-[34px] bg-foreground rounded-[9px] flex items-center justify-center">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <span className="font-display font-bold text-[17px] text-foreground tracking-tight">
+            gh<span className="text-primary">certified</span>
+          </span>
         </Link>
 
-        <ul className="flex items-center gap-1">
+        {/* Nav links */}
+        <div className="flex gap-1 flex-1">
           {NAV_LINKS.map(({ href, label }) => {
             const isActive =
-              href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(href);
+              href === "/" ? pathname === "/" : pathname.startsWith(href);
 
             return (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className={cn(
-                    "rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                    isActive
-                      ? "bg-secondary text-foreground"
-                      : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
-                  )}
-                >
-                  {label}
-                </Link>
-              </li>
+              <Link
+                key={href}
+                href={href}
+                className={cn(
+                  "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                  isActive
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+              >
+                {label}
+              </Link>
             );
           })}
-        </ul>
-      </nav>
-    </header>
+        </div>
+
+        {/* Right-side actions */}
+        <div className="flex items-center gap-3 ml-auto">
+          <a
+            href="https://github.com/FidelusAleksander/ghcertified"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex h-9 items-center rounded-lg border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+          >
+            ⭐ Star on GitHub
+          </a>
+          <Link
+            href="/practice-tests"
+            className="inline-flex h-9 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Start Practicing →
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
 }

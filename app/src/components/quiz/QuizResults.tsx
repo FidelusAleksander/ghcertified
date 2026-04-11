@@ -1,12 +1,12 @@
 "use client";
 
 /**
- * QuizResults — final score screen shown when the quiz is complete.
- *
- * Shows total score, breakdown of correct/incorrect, and a restart button.
+ * QuizResults — final score screen with card layout.
  */
 
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { Question } from "@/types/quiz";
 
 interface QuizResultsProps {
@@ -15,13 +15,7 @@ interface QuizResultsProps {
   cert: string;
 }
 
-export function QuizResults({
-  questions,
-  selectedAnswers,
-  cert,
-}: QuizResultsProps) {
-  // Calculate score: a question is correct only if ALL correct answers are
-  // selected and NO incorrect answers are selected
+export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsProps) {
   let correct = 0;
   for (const q of questions) {
     const selected = selectedAnswers[q.id] ?? new Set<string>();
@@ -37,58 +31,60 @@ export function QuizResults({
   const passed = pct >= 70;
 
   return (
-    <div className="mx-auto max-w-lg space-y-8 text-center">
-      {/* Score circle */}
-      <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-4 border-primary">
-        <span className="font-heading text-4xl font-bold tabular-nums">
-          {pct}%
-        </span>
-      </div>
-
-      <div>
-        <h2 className="font-heading text-2xl font-bold tracking-tight">
-          {passed ? "Great job! 🎉" : "Keep practicing! 💪"}
-        </h2>
-        <p className="mt-2 text-muted-foreground">
-          You got{" "}
-          <span className="font-semibold text-foreground">
-            {correct} out of {total}
-          </span>{" "}
-          questions correct.
-        </p>
-      </div>
-
-      {/* Breakdown */}
-      <div className="flex justify-center gap-8">
-        <div className="text-center">
-          <div className="text-2xl font-bold text-success tabular-nums">
-            {correct}
+    <div className="max-w-[600px] mx-auto px-8 py-20">
+      <Card className="shadow-sm border-[1.5px]">
+        <CardContent className="p-8 text-center space-y-6">
+          {/* Score circle */}
+          <div
+            className="mx-auto w-32 h-32 rounded-full flex items-center justify-center relative"
+            style={{ background: `conic-gradient(${passed ? "hsl(var(--success))" : "hsl(var(--destructive))"} 0% ${pct}%, hsl(var(--border)) ${pct}% 100%)` }}
+          >
+            <div className="absolute w-24 h-24 bg-card rounded-full" />
+            <span className="font-display text-3xl font-bold text-foreground relative z-10 tabular-nums">{pct}%</span>
           </div>
-          <div className="text-sm text-muted-foreground">Correct</div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-bold text-destructive tabular-nums">
-            {total - correct}
-          </div>
-          <div className="text-sm text-muted-foreground">Incorrect</div>
-        </div>
-      </div>
 
-      {/* Actions */}
-      <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <Link
-          href={`/practice-tests/${cert}?questions=${total}`}
-          className="inline-flex h-11 items-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-        >
-          Try Again
-        </Link>
-        <Link
-          href="/practice-tests"
-          className="inline-flex h-11 items-center rounded-lg border border-border px-6 text-sm font-medium transition-colors hover:bg-secondary"
-        >
-          Back to Tests
-        </Link>
-      </div>
+          <div>
+            <h2 className="font-display text-2xl font-extrabold tracking-tight text-foreground">
+              {passed ? "Great job! 🎉" : "Keep practicing! 💪"}
+            </h2>
+            <p className="mt-2 text-muted-foreground">
+              You got{" "}
+              <span className="font-semibold text-foreground">{correct} out of {total}</span>{" "}
+              questions correct.
+            </p>
+          </div>
+
+          {/* Breakdown */}
+          <div className="flex justify-center gap-8">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-success tabular-nums">{correct}</div>
+              <div className="text-sm text-muted-foreground">Correct</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-destructive tabular-nums">{total - correct}</div>
+              <div className="text-sm text-muted-foreground">Incorrect</div>
+            </div>
+          </div>
+
+          <Separator />
+
+          {/* Actions */}
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <Link
+              href={`/practice-tests/${cert}?questions=${total}`}
+              className="inline-flex items-center rounded-[10px] bg-foreground px-7 py-3 text-sm font-semibold text-card transition-colors hover:bg-foreground/90"
+            >
+              Try Again
+            </Link>
+            <Link
+              href="/practice-tests"
+              className="inline-flex items-center rounded-[10px] border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            >
+              Back to Tests
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }

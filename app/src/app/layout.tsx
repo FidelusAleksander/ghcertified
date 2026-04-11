@@ -1,26 +1,16 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Figtree } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 /**
- * Bricolage Grotesque — display/heading font.
- * Confident, slightly quirky geometric. Good for a study tool that
- * takes itself seriously but isn't corporate.
+ * JetBrains Mono — monospace font for code snippets.
+ * Loaded via next/font/google for optimal performance.
+ * Mona Sans (body + headings) is loaded via @font-face in globals.css.
  */
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-heading",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-/**
- * Figtree — body font.
- * Warm humanist sans, great readability for long study sessions.
- * Not overused like Inter/DM Sans.
- */
-const figtree = Figtree({
-  variable: "--font-sans",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -39,11 +29,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${figtree.variable} h-full antialiased`}
+      className={`${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
