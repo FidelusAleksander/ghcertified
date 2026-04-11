@@ -8,7 +8,7 @@
 
 import { join } from "node:path";
 import { existsSync } from "node:fs";
-import { parseDirectory } from "./quizdown";
+import { parseDirectory } from "mdquiz";
 
 // ── App-specific types ──────────────────────────────────────────────
 
