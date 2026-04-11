@@ -43,11 +43,22 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
+  const [flaggedSet, setFlaggedSet] = useState<Set<number>>(new Set());
   const [isComplete, setIsComplete] = useState(false);
 
   const currentQuestion = quizQuestions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
   const isRevealed = revealedMap[currentIndex] || false;
+  const isFlagged = flaggedSet.has(currentIndex);
+
+  const handleToggleFlag = useCallback(() => {
+    setFlaggedSet((prev) => {
+      const next = new Set(prev);
+      if (next.has(currentIndex)) next.delete(currentIndex);
+      else next.add(currentIndex);
+      return next;
+    });
+  }, [currentIndex]);
 
   const handleToggleAnswer = useCallback(
     (answerId: string) => {
@@ -147,13 +158,27 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
               QUESTION {currentIndex + 1} OF {quizQuestions.length}
             </span>
-            <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
-              {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
-            </Badge>
+            <div className="flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={handleToggleFlag}
+                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
+                title={isFlagged ? "Unflag this question" : "Flag for review"}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill={isFlagged ? "hsl(var(--warning))" : "none"} stroke={isFlagged ? "hsl(var(--warning))" : "currentColor"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={isFlagged ? "text-warning" : "text-card/50"}>
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+                <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
+              </button>
+              <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
+                {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+              </Badge>
+            </div>
           </CardHeader>
-          <CardContent className="p-7">
+          <CardContent className="p-7 text-left">
             {/* Question text */}
-            <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6">
+            <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
               {renderCodeSpans(currentQuestion.question)}
               {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
             </div>
@@ -171,7 +196,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const isCorrectOpt = answer.isCorrect;
 
                 // Option styling
-                let optionClass = "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed";
+                let optionClass = "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left";
                 if (isRevealed) {
                   if (isCorrectOpt) optionClass += " border-success bg-success-soft";
                   else if (isSelected && !isCorrectOpt) optionClass += " border-destructive bg-destructive-soft";
@@ -298,7 +323,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Question Map</div>
               <div className="flex flex-wrap gap-1.5">
                 {quizQuestions.map((q, i) => {
-                  let btnClass = "w-[30px] h-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors";
+                  const isQuestionFlagged = flaggedSet.has(i);
+                  let btnClass = "w-[30px] h-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative";
                   if (i === currentIndex) {
                     btnClass += " bg-primary text-primary-foreground border-primary";
                   } else if (revealedMap[i]) {
@@ -314,10 +340,25 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   return (
                     <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
                       {i + 1}
+                      {isQuestionFlagged && (
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="hsl(var(--warning))" stroke="none" className="absolute -top-1 -right-1">
+                          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                          <line x1="4" y1="22" x2="4" y2="15" />
+                        </svg>
+                      )}
                     </button>
                   );
                 })}
               </div>
+              {flaggedSet.size > 0 && (
+                <div className="mt-3 flex items-center gap-1.5 text-[12px] text-warning">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="hsl(var(--warning))" stroke="none">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                    <line x1="4" y1="22" x2="4" y2="15" />
+                  </svg>
+                  <span className="font-medium">{flaggedSet.size} flagged for review</span>
+                </div>
+              )}
             </CardContent>
           </Card>
 
