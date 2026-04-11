@@ -110,12 +110,13 @@ export function Navbar() {
               );
             })}
           </div>
-          <div className="flex flex-col gap-3 mt-3 pt-3 border-t border-border">
-            <GitHubStarButton className="self-start" />
+          <div className="flex items-center gap-3 mt-3 pt-3 border-t border-border">
+            <GitHubStarButton className="text-xs px-3 py-1.5" />
             <Button
               render={<Link href="/practice-tests" onClick={() => setMobileOpen(false)} />}
               nativeButton={false}
-              className="w-full"
+              size="sm"
+              className="flex-1"
             >
               Start Practicing →
             </Button>

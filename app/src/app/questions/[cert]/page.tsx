@@ -1,13 +1,13 @@
 /**
- * Questions list for a specific certification type. Server component.
+ * Questions library for a specific certification type.
+ * Server component loads data, mounts the client QuestionBrowser.
  */
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { CertificationType } from "@/lib/questions";
 import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { QuestionBrowser } from "./question-browser";
 
 const VALID_CERTS: CertificationType[] = [
   "actions", "admin", "advanced_security", "copilot", "foundations",
@@ -45,23 +45,7 @@ export default async function CertQuestionsPage({ params }: Props) {
         {questions.length} questions available
       </p>
 
-      <div className="flex flex-col gap-2">
-        {questions.map((q, i) => (
-          <Link key={q.id} href={`/questions/${cert}/${q.id}`} className="no-underline block">
-            <Card className="transition-all hover:border-primary hover:-translate-y-0.5 cursor-pointer">
-              <CardContent className="px-5 py-4 flex items-center gap-4">
-                <span className="text-sm font-medium text-muted-foreground tabular-nums">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-sm font-medium text-foreground flex-1">{q.question}</span>
-                <Badge variant="secondary" className="text-xs shrink-0">
-                  {q.isMultiSelect ? "Multi" : "Single"}
-                </Badge>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
+      <QuestionBrowser questions={questions} />
     </div>
   );
 }
