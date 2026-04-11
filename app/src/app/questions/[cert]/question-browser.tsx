@@ -29,21 +29,25 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
 
-  // Sidebar pagination
+  // Sidebar pagination — auto-follows active question, manual override resets on question nav
   const PAGE_SIZE = 20;
   const totalPages = Math.ceil(questions.length / PAGE_SIZE);
-  const activeSidebarPage = Math.floor(currentIndex / PAGE_SIZE);
-  const [sidebarPage, setSidebarPage] = useState(0);
-
-  // Auto-sync sidebar page when navigating questions
-  const prevIndex = useMemo(() => ({ current: currentIndex }), [currentIndex]);
-  if (Math.floor(currentIndex / PAGE_SIZE) !== sidebarPage && prevIndex.current === currentIndex) {
-    // Only auto-sync, don't override manual page browsing
-  }
-  const effectiveSidebarPage = activeSidebarPage;
-  const pageStart = effectiveSidebarPage * PAGE_SIZE;
+  const activeQuestionPage = Math.floor(currentIndex / PAGE_SIZE);
+  const [manualSidebarPage, setManualSidebarPage] = useState<number | null>(null);
+  const sidebarPage = manualSidebarPage ?? activeQuestionPage;
+  const pageStart = sidebarPage * PAGE_SIZE;
   const pageEnd = Math.min(pageStart + PAGE_SIZE, questions.length);
-  const pageQuestions = questions.slice(pageStart, pageEnd);
+
+  // Reset manual override when active question moves to a different page
+  const handleSetCurrentIndex = useCallback((idx: number | ((prev: number) => number)) => {
+    setCurrentIndex((prev) => {
+      const next = typeof idx === "function" ? idx(prev) : idx;
+      if (Math.floor(next / PAGE_SIZE) !== Math.floor(prev / PAGE_SIZE)) {
+        setManualSidebarPage(null);
+      }
+      return next;
+    });
+  }, []);
 
   const currentQuestion = questions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
@@ -77,11 +81,11 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   };
 
   const handleNext = () => {
-    if (currentIndex < questions.length - 1) setCurrentIndex((i) => i + 1);
+    if (currentIndex < questions.length - 1) handleSetCurrentIndex((i) => i + 1);
   };
 
   const handlePrev = () => {
-    if (currentIndex > 0) setCurrentIndex((i) => i - 1);
+    if (currentIndex > 0) handleSetCurrentIndex((i) => i - 1);
   };
 
   const isCurrentCorrect = () => {
@@ -94,20 +98,20 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6 items-start">
-      {/* Sidebar — numbered grid */}
+      {/* Sidebar — paginated numbered grid */}
       <Card className="shadow-sm border-[1.5px] lg:sticky lg:top-6">
         <CardHeader className="p-4 pb-0">
           <span className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-            Questions
+            {pageStart + 1}–{pageEnd} of {questions.length}
           </span>
         </CardHeader>
         <CardContent className="p-4 pt-3">
-          {/* Mobile: horizontal scroll strip */}
+          {/* Mobile: horizontal scroll strip (all questions) */}
           <div className="flex gap-1.5 overflow-x-auto pb-1 lg:hidden">
             {questions.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setCurrentIndex(i)}
+                onClick={() => handleSetCurrentIndex(i)}
                 className={cn(
                   "size-[30px] rounded-[7px] text-[11px] font-bold border flex-shrink-0 flex items-center justify-center cursor-pointer transition-colors",
                   i === currentIndex
@@ -119,22 +123,70 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               </button>
             ))}
           </div>
-          {/* Desktop: wrapping grid */}
-          <div className="hidden lg:flex flex-wrap gap-x-1.5 gap-y-1.5">
-            {questions.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentIndex(i)}
-                className={cn(
-                  "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors",
-                  i === currentIndex
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
-                )}
-              >
-                {i + 1}
-              </button>
-            ))}
+          {/* Desktop: paginated grid */}
+          <div className="hidden lg:block">
+            <div className="flex flex-wrap gap-x-1.5 gap-y-1.5">
+              {Array.from({ length: pageEnd - pageStart }, (_, offset) => {
+                const i = pageStart + offset;
+                return (
+                  <button
+                    key={i}
+                    onClick={() => handleSetCurrentIndex(i)}
+                    className={cn(
+                      "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors",
+                      i === currentIndex
+                        ? "bg-primary text-primary-foreground border-primary"
+                        : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+                    )}
+                  >
+                    {i + 1}
+                  </button>
+                );
+              })}
+            </div>
+            {/* Pagination controls */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-1 mt-3 pt-3 border-t border-border">
+                <button
+                  onClick={() => setManualSidebarPage(Math.max(0, sidebarPage - 1))}
+                  disabled={sidebarPage === 0}
+                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                >
+                  <ChevronsLeft className="size-3.5" />
+                </button>
+                {Array.from({ length: totalPages }, (_, p) => {
+                  // Show first, last, and pages near current
+                  const show = p === 0 || p === totalPages - 1 || Math.abs(p - sidebarPage) <= 1;
+                  const showEllipsis = !show && (p === 1 || p === totalPages - 2) &&
+                    Math.abs(p - sidebarPage) === 2;
+                  if (showEllipsis) {
+                    return <span key={p} className="text-[10px] text-muted-foreground px-0.5">…</span>;
+                  }
+                  if (!show) return null;
+                  return (
+                    <button
+                      key={p}
+                      onClick={() => setManualSidebarPage(p)}
+                      className={cn(
+                        "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors",
+                        p === sidebarPage
+                          ? "bg-primary text-primary-foreground"
+                          : "text-muted-foreground hover:text-foreground hover:bg-muted",
+                      )}
+                    >
+                      {p + 1}
+                    </button>
+                  );
+                })}
+                <button
+                  onClick={() => setManualSidebarPage(Math.min(totalPages - 1, sidebarPage + 1))}
+                  disabled={sidebarPage === totalPages - 1}
+                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                >
+                  <ChevronsRight className="size-3.5" />
+                </button>
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>
