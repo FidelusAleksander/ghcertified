@@ -18,3 +18,17 @@ export const LOCALE_LABELS: Record<SupportedLocale, string> = {
   pl: "Polski",
   pt: "Português",
 };
+
+export const LOCALE_FLAGS: Record<SupportedLocale, string> = {
+  en: "🇬🇧",
+  es: "🇪🇸",
+  ja: "🇯🇵",
+  pl: "🇵🇱",
+  pt: "🇧🇷",
+};
+
+/** Build a locale-prefixed path. */
+export function localePath(locale: string, path: string): string {
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  return `/${locale}${clean}`;
+}

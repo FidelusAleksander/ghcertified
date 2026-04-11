@@ -5,6 +5,7 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { CertificationType, SupportedLocale } from "@/lib/questions";
 import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES } from "@/lib/questions";
 import { QuestionBrowser } from "./question-browser";
@@ -25,6 +26,8 @@ interface Props {
 
 export default async function CertQuestionsPage({ params }: Props) {
   const { locale, cert } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("QuestionsLibrary");
   const certInfo = getCertInfo(cert as CertificationType, locale as SupportedLocale);
 
   if (!certInfo) {
@@ -36,7 +39,7 @@ export default async function CertQuestionsPage({ params }: Props) {
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-4">
-        <Link href={`/${locale}/questions`} className="text-primary no-underline hover:underline">Questions</Link>
+        <Link href={`/${locale}/questions`} className="text-primary no-underline hover:underline">{t("label")}</Link>
         <span>›</span>
         <span>{certInfo.title}</span>
       </div>
@@ -44,7 +47,7 @@ export default async function CertQuestionsPage({ params }: Props) {
         {certInfo.title}
       </h1>
       <p className="mt-2 text-muted-foreground mb-8">
-        {questions.length} questions available
+        {t("questions", { count: questions.length })}
       </p>
 
       <QuestionBrowser questions={questions} />

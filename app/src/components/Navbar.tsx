@@ -10,44 +10,24 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { CheckCircle, Menu, X, Globe } from "lucide-react";
+import { CheckCircle, Menu, X } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
-import { SUPPORTED_LOCALES, LOCALE_LABELS } from "@/lib/locales";
-
-/** Extract locale from the current pathname (first segment). */
-function extractLocale(pathname: string): string {
-  const seg = pathname.split("/")[1] ?? "en";
-  return (SUPPORTED_LOCALES as readonly string[]).includes(seg) ? seg : "en";
-}
-
-/** Strip locale prefix from a path. */
-function stripLocale(pathname: string): string {
-  const seg = pathname.split("/")[1] ?? "";
-  if ((SUPPORTED_LOCALES as readonly string[]).includes(seg)) {
-    return pathname.slice(seg.length + 1) || "/";
-  }
-  return pathname;
-}
+import { LanguagePicker } from "@/components/LanguagePicker";
 
 export function Navbar() {
   const pathname = usePathname();
-  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations("Nav");
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const locale = extractLocale(pathname);
-  const pathWithoutLocale = stripLocale(pathname);
-
   const navLinks = [
-    { href: `/${locale}`, label: "Home" },
-    { href: `/${locale}/practice-tests`, label: "Practice Tests" },
-    { href: `/${locale}/questions`, label: "Questions" },
+    { href: `/${locale}`, label: t("home") },
+    { href: `/${locale}/practice-tests`, label: t("practiceTests") },
+    { href: `/${locale}/questions`, label: t("questions") },
   ] as const;
-
-  function handleLocaleChange(newLocale: string) {
-    router.push(`/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`);
-  }
 
   return (
     <nav className="bg-card border-b border-border sticky top-0 z-50">
@@ -87,19 +67,7 @@ export function Navbar() {
 
         {/* Desktop right-side actions */}
         <div className="hidden lg:flex items-center gap-3 ml-auto">
-          {/* Language switcher */}
-          <div className="relative flex items-center gap-1.5 text-muted-foreground">
-            <Globe className="size-4" />
-            <select
-              value={locale}
-              onChange={(e) => handleLocaleChange(e.target.value)}
-              className="appearance-none bg-transparent text-sm font-medium cursor-pointer pr-4 outline-none hover:text-foreground transition-colors"
-            >
-              {SUPPORTED_LOCALES.map((loc) => (
-                <option key={loc} value={loc}>{LOCALE_LABELS[loc]}</option>
-              ))}
-            </select>
-          </div>
+          <LanguagePicker />
           <GitHubStarButton />
         </div>
 
@@ -108,7 +76,7 @@ export function Navbar() {
           type="button"
           className="lg:hidden ml-auto p-2 -mr-2 text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
         >
           {mobileOpen ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
@@ -140,20 +108,8 @@ export function Navbar() {
             })}
           </div>
           {/* Mobile language switcher */}
-          <div className="flex items-center gap-2 mt-3 pt-3 border-t border-border px-3">
-            <Globe className="size-4 text-muted-foreground" />
-            <select
-              value={locale}
-              onChange={(e) => {
-                handleLocaleChange(e.target.value);
-                setMobileOpen(false);
-              }}
-              className="appearance-none bg-transparent text-sm font-medium cursor-pointer pr-4 outline-none flex-1"
-            >
-              {SUPPORTED_LOCALES.map((loc) => (
-                <option key={loc} value={loc}>{LOCALE_LABELS[loc]}</option>
-              ))}
-            </select>
+          <div className="mt-3 pt-3 border-t border-border px-1">
+            <LanguagePicker />
           </div>
           <div className="mt-3 pt-3 border-t border-border">
             <GitHubStarButton className="text-xs px-3 py-1.5" />

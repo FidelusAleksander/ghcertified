@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { getQuestionsByCert, SUPPORTED_LOCALES } from "@/lib/questions";
 import type { CertificationType, SupportedLocale } from "@/lib/questions";
 import { QuizWrapper } from "./quiz-wrapper";
@@ -27,6 +28,7 @@ interface Props {
 
 export default async function PracticeTestPage({ params }: Props) {
   const { locale, cert } = await params;
+  setRequestLocale(locale);
 
   if (!VALID_CERTS.includes(cert as CertificationType)) {
     notFound();

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getCertCatalog } from "@/lib/questions";
 import type { SupportedLocale } from "@/lib/questions";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { CERT_META } from "@/lib/cert-meta";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
@@ -9,24 +10,22 @@ interface Props {
   params: Promise<{ locale: string }>;
 }
 
-/**
- * Question Library page — browse questions grouped by certification type.
- * Covers F08 (question library browsing). Server Component.
- */
 export default async function QuestionsPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("QuestionsLibrary");
+  const tCert = await getTranslations("CertDescriptions");
   const catalog = getCertCatalog(locale as SupportedLocale);
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
-        Question Library
+        {t("label")}
       </div>
       <h1 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-        Browse all questions
+        {t("title")}
       </h1>
       <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px] mb-10">
-        Explore every question organized by certification track. Pick a category
-        to study at your own pace.
+        {t("description")}
       </p>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -45,15 +44,15 @@ export default async function QuestionsPage({ params }: Props) {
                         {cert.title}
                       </div>
                       <div className="text-xs text-muted-foreground mt-0.5">
-                        {cert.questionCount} questions
+                        {t("questions", { count: cert.questionCount })}
                       </div>
                     </div>
                   </div>
                   <div className="text-[13.5px] text-muted-foreground leading-relaxed flex-1">
-                    {meta.desc}
+                    {tCert(cert.cert)}
                   </div>
                   <div className="flex items-center gap-1.5 text-[13px] font-semibold text-primary">
-                    Browse questions
+                    {t("browseQuestions")}
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </CardContent>

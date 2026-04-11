@@ -1,24 +1,29 @@
+"use client";
+
 /**
  * Footer — simple site footer with links and disclaimer.
- * Server component — no client state needed.
+ * Client component because it renders in the root layout (outside [locale]),
+ * where setRequestLocale hasn't been called yet.
  */
 
+import { useTranslations } from "next-intl";
 import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
+  const t = useTranslations("Footer");
   return (
     <footer className="mt-12">
       <Separator />
       <div className="py-6 sm:py-8 px-4 sm:px-8 text-center text-[13px] text-muted-foreground">
         <p>
-          ghcertified.com · Community-contributed questions for{" "}
+          {t("tagline")}{" "}
           <a
             href="https://learn.github.com/certifications"
             target="_blank"
             rel="noreferrer"
             className="text-primary no-underline hover:underline"
           >
-            official GitHub Certifications
+            {t("officialCerts")}
           </a>{" "}
           ·{" "}
           <a
@@ -27,12 +32,11 @@ export function Footer() {
             rel="noreferrer"
             className="text-primary no-underline hover:underline"
           >
-            ⭐ Star on GitHub
+            {t("starOnGitHub")}
           </a>
         </p>
         <p className="mt-1.5 text-xs text-muted-foreground/60">
-          Not affiliated with GitHub. All questions are original, community-created
-          content. We do not condone copying from real certification exams.
+          {t("disclaimer")}
         </p>
       </div>
     </footer>

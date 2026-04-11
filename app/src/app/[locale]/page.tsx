@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Play, ArrowRight } from "lucide-react";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import type { SupportedLocale } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
@@ -20,11 +21,15 @@ interface Props {
  */
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("Home");
+  const tCert = await getTranslations("CertDescriptions");
   const catalog = getCertCatalog(locale as SupportedLocale);
   const certifications = catalog.map((c) => ({
     id: c.cert,
     name: c.title,
     questions: c.questionCount,
+    desc: tCert(c.cert),
     ...CERT_META[c.cert],
   }));
   const totalQuestions = certifications.reduce((sum, c) => sum + c.questions, 0);
@@ -36,14 +41,12 @@ export default async function HomePage({ params }: Props) {
         {/* Left column: copy */}
         <div>
           <h1 className="font-display text-[clamp(36px,4vw,52px)] font-extrabold leading-[1.08] tracking-tight text-foreground mb-5">
-            Ace your<br />
-            <span className="text-primary">GitHub</span><br />
-            Certifications.
+            {t("heroTitle1")}<br />
+            <span className="text-primary">{t("heroTitle2")}</span><br />
+            {t("heroTitle3")}
           </h1>
           <p className="text-[17px] text-muted-foreground leading-relaxed max-w-[480px] mb-9">
-            Practice with realistic, community-contributed questions across all
-            GitHub certification tracks. Immediate feedback, randomized sessions,
-            and zero fluff.
+            {t("heroDescription")}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
             <Button
@@ -52,7 +55,7 @@ export default async function HomePage({ params }: Props) {
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-semibold bg-foreground text-card hover:bg-foreground/90 justify-center"
             >
               <Play data-icon="inline-start" />
-              Start Practicing
+              {t("startPracticing")}
             </Button>
             <Button
               variant="outline"
@@ -60,7 +63,7 @@ export default async function HomePage({ params }: Props) {
               nativeButton={false}
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
-              Contribute Questions
+              {t("contributeQuestions")}
             </Button>
           </div>
 
@@ -70,22 +73,21 @@ export default async function HomePage({ params }: Props) {
           <div className="grid grid-cols-3 gap-4 pt-6 sm:pt-8">
             <div className="text-center sm:text-left">
               <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">{totalQuestions}</div>
-              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Practice questions</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statQuestions")}</div>
             </div>
             <div className="text-center sm:text-left">
               <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">5</div>
-              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Cert tracks</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statTracks")}</div>
             </div>
             <div className="text-center sm:text-left">
-              <div className="font-display text-[24px] sm:text-[28px] font-bold text-primary tracking-tight">Free</div>
-              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Open source</div>
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-primary tracking-tight">{t("statFree")}</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statOpenSource")}</div>
             </div>
           </div>
         </div>
 
-        {/* Right column: mock quiz card (hidden on mobile) */}
+        {/* Right column: mock quiz card (hidden on mobile, stays English — decorative) */}
         <div className="relative hidden lg:block">
-          {/* Floating score badge */}
           <Card className="absolute -top-4 -right-3 z-10 shadow-md rotate-3">
             <CardContent className="px-4 py-3.5 flex items-center gap-2.5">
               <div className="size-9 bg-success-soft rounded-[9px] flex items-center justify-center text-lg">🏆</div>
@@ -95,8 +97,6 @@ export default async function HomePage({ params }: Props) {
               </div>
             </CardContent>
           </Card>
-
-          {/* Mock quiz card */}
           <Card className="shadow-xl rounded-[20px] relative -rotate-1 transition-transform hover:rotate-0 hover:shadow-2xl">
             <CardContent className="p-7">
               <div className="flex items-center gap-3 mb-6">
@@ -133,16 +133,15 @@ export default async function HomePage({ params }: Props) {
       {/* Certification tracks section */}
       <div className="mt-2 sm:mt-6">
         <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
-          Certification Tracks
+          {t("tracksLabel")}
         </div>
         <div className="flex items-end justify-between mb-8 sm:mb-10 gap-4 flex-wrap">
           <div>
             <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-              Pick your<br />certification path
+              {t("tracksTitle1")}<br />{t("tracksTitle2")}
             </h2>
             <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
-              Five tracks, all free. Community-maintained questions designed to
-              mirror the real exams.
+              {t("tracksDescription")}
             </p>
           </div>
         </div>
@@ -158,12 +157,12 @@ export default async function HomePage({ params }: Props) {
                     </div>
                     <div>
                       <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>
-                      <div className="text-xs text-muted-foreground mt-0.5">{cert.questions} questions</div>
+                      <div className="text-xs text-muted-foreground mt-0.5">{t("questionsCount", { count: cert.questions })}</div>
                     </div>
                   </div>
                   <div className="text-[13.5px] text-muted-foreground leading-relaxed flex-1">{cert.desc}</div>
                   <div className="flex items-center gap-1.5 text-[13px] font-semibold text-primary">
-                    Start practicing
+                    {t("startPracticingCard")}
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </CardContent>
@@ -176,14 +175,14 @@ export default async function HomePage({ params }: Props) {
       {contributors.length > 0 && (
         <div className="mt-16 sm:mt-24">
           <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
-            Community
+            {t("communityLabel")}
           </div>
           <div className="mb-8 sm:mb-10">
             <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-              Built by {contributors.length}+ contributors
+              {t("communityTitle", { count: contributors.length })}
             </h2>
             <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
-              This project is shaped by the community. Every question, fix, and improvement comes from people like you.
+              {t("communityDescription")}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -193,7 +192,7 @@ export default async function HomePage({ params }: Props) {
                 href={c.profileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={`${c.login} — ${c.contributions} contribution${c.contributions !== 1 ? "s" : ""}`}
+                title={t("contributorTooltip", { login: c.login, count: c.contributions })}
                 className="group relative"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -215,7 +214,7 @@ export default async function HomePage({ params }: Props) {
               nativeButton={false}
               className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-medium"
             >
-              Join the contributors →
+              {t("joinContributors")}
             </Button>
           </div>
         </div>

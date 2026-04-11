@@ -10,19 +10,16 @@ import type { CertificationType } from "./questions";
 
 export interface CertMeta {
   colorClass: string;
-  desc: string;
   icon: React.ReactNode;
 }
 
 export const CERT_META: Record<CertificationType, CertMeta> = {
   actions: {
     colorClass: "bg-cert-actions",
-    desc: "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",
     icon: <Play className="text-primary-foreground" />,
   },
   foundations: {
     colorClass: "bg-cert-foundations",
-    desc: "Core concepts, repositories, issues, pull requests, GitHub Flow, and Codespaces.",
     icon: (
       <svg
         width="24"
@@ -41,17 +38,14 @@ export const CERT_META: Record<CertificationType, CertMeta> = {
   },
   advanced_security: {
     colorClass: "bg-cert-advanced-security",
-    desc: "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.",
     icon: <Shield className="text-primary-foreground" />,
   },
   admin: {
     colorClass: "bg-cert-admin",
-    desc: "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.",
     icon: <Users className="text-primary-foreground" />,
   },
   copilot: {
     colorClass: "bg-cert-copilot",
-    desc: "AI pair programming, prompt engineering, Copilot features, and responsible use.",
     icon: <Bot className="text-primary-foreground" />,
   },
 };
