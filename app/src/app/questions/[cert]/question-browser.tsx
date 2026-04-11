@@ -10,7 +10,7 @@
  * Stateless — no scoring, no flagging, no shuffling, no results screen.
  */
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -18,7 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Info, ChevronLeft, ChevronRight } from "lucide-react";
+import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 
 interface QuestionBrowserProps {
   questions: Question[];
@@ -28,6 +28,22 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
+
+  // Sidebar pagination
+  const PAGE_SIZE = 20;
+  const totalPages = Math.ceil(questions.length / PAGE_SIZE);
+  const activeSidebarPage = Math.floor(currentIndex / PAGE_SIZE);
+  const [sidebarPage, setSidebarPage] = useState(0);
+
+  // Auto-sync sidebar page when navigating questions
+  const prevIndex = useMemo(() => ({ current: currentIndex }), [currentIndex]);
+  if (Math.floor(currentIndex / PAGE_SIZE) !== sidebarPage && prevIndex.current === currentIndex) {
+    // Only auto-sync, don't override manual page browsing
+  }
+  const effectiveSidebarPage = activeSidebarPage;
+  const pageStart = effectiveSidebarPage * PAGE_SIZE;
+  const pageEnd = Math.min(pageStart + PAGE_SIZE, questions.length);
+  const pageQuestions = questions.slice(pageStart, pageEnd);
 
   const currentQuestion = questions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
