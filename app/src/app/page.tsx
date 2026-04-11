@@ -49,7 +49,7 @@ const certifications = CERT_CATALOG
  */
 export default function HomePage() {
   return (
-    <div className="max-w-[1200px] mx-auto px-8 pt-24 pb-20">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-12 sm:pb-20">
       {/* Hero — two columns */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pb-20">
         {/* Left column: copy */}

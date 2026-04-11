@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
  */
 export default function QuestionsPage() {
   return (
-    <div className="max-w-[1200px] mx-auto px-8 py-20">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
         Question Library
       </div>

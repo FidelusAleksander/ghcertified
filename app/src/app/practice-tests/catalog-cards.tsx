@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Play, Clock, Shield, Users, Bot } from "lucide-react";
+import { Play, Shield, Users, Bot } from "lucide-react";
 
 interface CertData {
   id: string;
@@ -74,23 +74,7 @@ export function CatalogCards({ certs }: Props) {
         );
       })}
 
-      {/* Coming soon card */}
-      <Card className="bg-card opacity-55 pointer-events-none">
-        <CardContent className="p-6 flex flex-col gap-4">
-          <div className="flex items-center gap-3.5">
-            <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-muted-foreground/30">
-              <Clock className="text-primary-foreground" />
-            </div>
-            <div className="font-display text-[17px] font-bold text-foreground tracking-tight">More tracks coming</div>
-          </div>
-          <div className="text-[13.5px] text-muted-foreground leading-relaxed">
-            New certification tracks are added as the community contributes questions.
-          </div>
-          <div className="flex items-center justify-between gap-3">
-            <Badge variant="secondary" className="rounded-full text-xs font-semibold">⏳ Unavailable</Badge>
-          </div>
-        </CardContent>
-      </Card>
+
     </div>
   );
 }

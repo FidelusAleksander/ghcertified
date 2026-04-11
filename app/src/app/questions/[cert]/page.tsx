@@ -32,7 +32,7 @@ export default async function CertQuestionsPage({ params }: Props) {
   const questions = getQuestionsByCert(cert as CertificationType);
 
   return (
-    <div className="max-w-[1200px] mx-auto px-8 py-20">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-4">
         <Link href="/questions" className="text-primary no-underline hover:underline">Questions</Link>
         <span>›</span>

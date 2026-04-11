@@ -32,7 +32,7 @@ export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsPro
   const passed = pct >= 70;
 
   return (
-    <div className="max-w-[600px] mx-auto px-8 py-20">
+    <div className="max-w-[600px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <Card className="shadow-sm border-[1.5px]">
         <CardContent className="p-8 text-center flex flex-col gap-6">
           {/* Score circle */}

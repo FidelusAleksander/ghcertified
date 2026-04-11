@@ -124,13 +124,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   // Loading
   if (quizQuestions.length === 0) {
     return (
-      <div className="max-w-[1200px] mx-auto px-8 py-12">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
         <div className="flex items-center justify-between mb-9">
           <div>
             <Skeleton className="h-4 w-40 mb-2" />
             <Skeleton className="h-8 w-64" />
           </div>
-          <Skeleton className="h-2 w-60" />
+          <Skeleton className="h-2 w-60 hidden sm:block" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
           <Skeleton className="h-[400px] rounded-xl" />
@@ -149,18 +149,18 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   }
 
   return (
-    <div className="max-w-[1200px] mx-auto px-8 py-12">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
       {/* Top bar with breadcrumb + progress */}
-      <div className="flex items-center justify-between mb-9 flex-wrap gap-4">
+      <div className="flex items-center justify-between mb-6 sm:mb-9 flex-wrap gap-4">
         <div>
           <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
             <Link href="/practice-tests" className="text-primary no-underline hover:underline">Practice Tests</Link>
             <span>›</span>
             <span>{certName}</span>
           </div>
-          <h1 className="font-display text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
+          <h1 className="font-display text-[24px] sm:text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
         </div>
-        <div className="flex-1 max-w-[360px]">
+        <div className="flex-1 max-w-[360px] hidden sm:block">
           <div className="flex items-center gap-4">
             <Progress value={((currentIndex + 1) / quizQuestions.length) * 100} className="flex-1 h-2" />
             <span className="text-[13px] font-semibold text-muted-foreground whitespace-nowrap">
@@ -174,7 +174,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
         {/* Question card */}
         <Card className="overflow-hidden shadow-sm border-[1.5px]">
-          <CardHeader className="bg-foreground px-7 py-5 flex flex-row items-center justify-between gap-3 space-y-0">
+          <CardHeader className="bg-foreground px-4 sm:px-7 py-4 sm:py-5 flex flex-row items-center justify-between gap-3 space-y-0">
             <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
               QUESTION {currentIndex + 1} OF {quizQuestions.length}
             </span>
@@ -193,7 +193,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               </Badge>
             </div>
           </CardHeader>
-          <CardContent className="p-7 text-left">
+          <CardContent className="p-4 sm:p-7 text-left">
             {/* Question text */}
             <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
               {renderCodeSpans(currentQuestion.question)}
@@ -278,7 +278,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           <Separator />
 
           {/* Navigation footer */}
-          <div className="px-7 py-5 flex items-center justify-between gap-3 flex-wrap">
+          <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-3 flex-wrap">
             <div>
               {!isRevealed && currentSelected.size > 0 && (
                 <Button onClick={handleCheck}>
