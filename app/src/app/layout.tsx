@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
  * Loaded via next/font/google for optimal performance.
  * Mona Sans (body + headings) is loaded via @font-face in globals.css.
  */
+
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
