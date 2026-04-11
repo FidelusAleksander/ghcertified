@@ -12,6 +12,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { GitHubStarButton } from "@/components/GitHubStarButton";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -60,14 +61,7 @@ export function Navbar() {
 
         {/* Right-side actions */}
         <div className="flex items-center gap-3 ml-auto">
-          <Button
-            variant="outline"
-            size="lg"
-            render={<a href="https://github.com/FidelusAleksander/ghcertified" target="_blank" rel="noreferrer" />}
-            nativeButton={false}
-          >
-            ⭐ Star on GitHub
-          </Button>
+          <GitHubStarButton />
           <Button
             size="lg"
             render={<Link href="/practice-tests" />}

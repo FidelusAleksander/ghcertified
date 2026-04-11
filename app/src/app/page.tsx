@@ -104,10 +104,6 @@ export default function HomePage() {
               <div className="font-display text-[28px] font-bold text-foreground tracking-tight">5</div>
               <div className="text-[13px] text-muted-foreground mt-0.5">Certification tracks</div>
             </div>
-            <div>
-              <div className="font-display text-[28px] font-bold text-foreground tracking-tight">875</div>
-              <div className="text-[13px] text-muted-foreground mt-0.5">GitHub stars</div>
-            </div>
           </div>
         </div>
 
