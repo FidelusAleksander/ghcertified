@@ -9,6 +9,14 @@ import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+const VALID_CERTS: CertificationType[] = [
+  "actions", "admin", "advanced_security", "copilot", "foundations",
+];
+
+export function generateStaticParams() {
+  return VALID_CERTS.map((cert) => ({ cert }));
+}
+
 interface Props {
   params: Promise<{ cert: string }>;
 }

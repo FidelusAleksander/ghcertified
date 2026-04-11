@@ -20,14 +20,16 @@ const CERT_NAMES: Record<string, string> = {
   copilot: "GitHub Copilot",
 };
 
-interface Props {
-  params: Promise<{ cert: string }>;
-  searchParams: Promise<{ questions?: string }>;
+export function generateStaticParams() {
+  return VALID_CERTS.map((cert) => ({ cert }));
 }
 
-export default async function PracticeTestPage({ params, searchParams }: Props) {
+interface Props {
+  params: Promise<{ cert: string }>;
+}
+
+export default async function PracticeTestPage({ params }: Props) {
   const { cert } = await params;
-  const { questions: questionsParam } = await searchParams;
 
   if (!VALID_CERTS.includes(cert as CertificationType)) {
     notFound();
@@ -35,14 +37,10 @@ export default async function PracticeTestPage({ params, searchParams }: Props) 
 
   const certType = cert as CertificationType;
   const questions = getQuestionsByCert(certType);
-  const questionCount = questionsParam
-    ? Math.min(Math.max(1, parseInt(questionsParam, 10)), questions.length)
-    : questions.length;
 
   return (
     <QuizWrapper
       questions={questions}
-      questionCount={questionCount}
       cert={certType}
       certName={CERT_NAMES[certType] ?? certType}
     />
