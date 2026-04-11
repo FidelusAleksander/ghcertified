@@ -12,7 +12,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { CheckCircle, Menu, X } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
 
@@ -65,13 +64,6 @@ export function Navbar() {
         {/* Desktop right-side actions */}
         <div className="hidden lg:flex items-center gap-3 ml-auto">
           <GitHubStarButton />
-          <Button
-            size="lg"
-            render={<Link href="/practice-tests" />}
-            nativeButton={false}
-          >
-            Start Practicing →
-          </Button>
         </div>
 
         {/* Mobile hamburger */}
@@ -110,16 +102,8 @@ export function Navbar() {
               );
             })}
           </div>
-          <div className="flex items-center gap-3 mt-3 pt-3 border-t border-border">
+          <div className="mt-3 pt-3 border-t border-border">
             <GitHubStarButton className="text-xs px-3 py-1.5" />
-            <Button
-              render={<Link href="/practice-tests" onClick={() => setMobileOpen(false)} />}
-              nativeButton={false}
-              size="sm"
-              className="flex-1"
-            >
-              Start Practicing →
-            </Button>
           </div>
         </div>
       )}
