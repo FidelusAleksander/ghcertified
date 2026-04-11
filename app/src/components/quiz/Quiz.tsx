@@ -153,9 +153,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           </CardHeader>
           <CardContent className="p-7">
             {/* Question text */}
-            <p className="text-[17px] font-medium text-foreground leading-relaxed mb-6">
+            <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6">
               {renderCodeSpans(currentQuestion.question)}
-            </p>
+              {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
+            </div>
             {currentQuestion.isMultiSelect && (
               <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4 italic">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
@@ -207,7 +208,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                         <div className="w-2 h-2 rounded-full bg-card" />
                       )}
                     </div>
-                    <span className="text-foreground">{renderCodeSpans(answer.text)}</span>
+                    <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
                   </button>
                 );
               })}
@@ -345,15 +346,33 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
 /** Simple parser: turns `backtick` text into <code> spans for technical content. */
 function renderCodeSpans(text: string): React.ReactNode[] {
-  const parts = text.split(/(`[^`]+`)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith("`") && part.endsWith("`")) {
-      return (
-        <code key={i} className="font-mono text-sm bg-muted px-1.5 py-0.5 rounded text-foreground">
-          {part.slice(1, -1)}
-        </code>
-      );
+  // Split on fenced code blocks first (```lang\n...\n```), then inline backticks
+  const fencedRe = /(```\w*\n[\s\S]*?```)/g;
+  const segments = text.split(fencedRe);
+
+  return segments.flatMap((segment, i) => {
+    // Fenced code block
+    if (segment.startsWith("```")) {
+      const firstNewline = segment.indexOf("\n");
+      const code = segment.slice(firstNewline + 1, segment.lastIndexOf("```")).trimEnd();
+      return [
+        <pre key={`fence-${i}`} className="font-mono text-xs bg-muted/80 border border-border rounded-lg p-3 my-2 overflow-x-auto whitespace-pre">
+          <code>{code}</code>
+        </pre>,
+      ];
     }
-    return <span key={i}>{part}</span>;
+
+    // Inline backticks within non-fenced text
+    const parts = segment.split(/(`[^`]+`)/g);
+    return parts.map((part, j) => {
+      if (part.startsWith("`") && part.endsWith("`")) {
+        return (
+          <code key={`${i}-${j}`} className="font-mono text-sm bg-muted px-1.5 py-0.5 rounded text-foreground">
+            {part.slice(1, -1)}
+          </code>
+        );
+      }
+      return <span key={`${i}-${j}`}>{part}</span>;
+    });
   });
 }

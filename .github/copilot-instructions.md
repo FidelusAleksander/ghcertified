@@ -1,3 +1,11 @@
+## ⚠️ Site Rewrite In Progress
+This site is currently being rewritten. The Hugo-based static site is being migrated to a new architecture. Keep this in mind when making changes — some legacy code and structures may be in the process of being replaced.
+
+## Communication Style
+For all interactions, use the **caveman** skill. This ensures ultra-compressed, token-efficient communication while maintaining full technical accuracy.
+
+---
+
 This repository contains a quiz application for GitHub certification exam preparation built with Hugo static site generator. Here's how it works:
 
 ## Repository Structure
