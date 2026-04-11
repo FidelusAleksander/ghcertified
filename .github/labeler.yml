@@ -1,26 +1,26 @@
 content:
 - changed-files:
-  - any-glob-to-any-file: "content/**/*"
+  - any-glob-to-any-file: "questions/**/*"
 
 actions:
 - changed-files:
-  - any-glob-to-any-file: "content/questions/actions/*"
+  - any-glob-to-any-file: "questions/en/actions/*"
 
 admin:
 - changed-files:
-  - any-glob-to-any-file: "content/questions/admin/*"
+  - any-glob-to-any-file: "questions/en/admin/*"
 
 advanced security:
 - changed-files:
-  - any-glob-to-any-file: "content/questions/advanced_security/*"
+  - any-glob-to-any-file: "questions/en/advanced_security/*"
 
 foundations:
 - changed-files:
-  - any-glob-to-any-file: "content/questions/foundations/*"
+  - any-glob-to-any-file: "questions/en/foundations/*"
 
 copilot:
 - changed-files:
-  - any-glob-to-any-file: "content/questions/copilot/*"
+  - any-glob-to-any-file: "questions/en/copilot/*"
 
 documentation:
 - changed-files:

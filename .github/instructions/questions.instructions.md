@@ -1,6 +1,6 @@
 ---
 description: "Instructions on how to write and structure questions for the GitHub certification exams"
-applyTo: "content/en/questions/**/*.md"
+applyTo: "questions/en/**/*.md"
 ---
 
 # GitHub Certification Questions Writing Guide
@@ -13,11 +13,11 @@ This document provides comprehensive guidelines for creating high-quality questi
 - Each question must be in an individual Markdown file
 - File naming convention: `question-XXX.md` where `XXX` is a zero-padded 3-digit number
 - Place files in the appropriate certification directory:
-  - `content/en/questions/actions/` - GitHub Actions certification
-  - `content/en/questions/admin/` - GitHub Administration certification
-  - `content/en/questions/advanced_security/` - GitHub Advanced Security certification
-  - `content/en/questions/copilot/` - GitHub Copilot certification
-  - `content/en/questions/foundations/` - GitHub Foundations certification
+  - `questions/en/actions/` - GitHub Actions certification
+  - `questions/en/admin/` - GitHub Administration certification
+  - `questions/en/advanced_security/` - GitHub Advanced Security certification
+  - `questions/en/copilot/` - GitHub Copilot certification
+  - `questions/en/foundations/` - GitHub Foundations certification
 
 ### File Structure
 Each question file must follow the structure defined in the [questions.md](../../archetypes/questions.md) archetype.

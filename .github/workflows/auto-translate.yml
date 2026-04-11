@@ -6,7 +6,7 @@ on:
     branches:
       - master
     paths:
-      - "content/en/**"
+      - "questions/en/**"
 
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
         with:
           matrix: true
           files: |
-            content/en/**
+            questions/en/**
 
   translate:
     needs: detect-changes

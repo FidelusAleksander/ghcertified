@@ -44,7 +44,7 @@ If you've decided to not use [GitHub Codespaces](https://codespaces.new/FidelusA
   ```
 
 ## Content Changes
-All of the site content in this repository is stored in [content/](https://github.com/FidelusAleksander/ghcertified/blob/master/content) directory and is written in markdown.
+All of the site content in this repository is stored in [questions/](https://github.com/FidelusAleksander/ghcertified/blob/master/questions) directory and is written in markdown.
 
 ### Adding new question
 
@@ -67,4 +67,4 @@ For example `hugo new questions/actions/question-084.md`
 
 
 ### Updating existing content
-If you want to update existing content, simply find the file in the [content/](https://github.com/FidelusAleksander/ghcertified/blob/master/content) directory and edit the markdown file.
+If you want to update existing content, simply find the file in the [questions/](https://github.com/FidelusAleksander/ghcertified/blob/master/questions) directory and edit the markdown file.

@@ -13,8 +13,8 @@ mcp-servers:
 ## Scope
 
 - Review exactly one question Markdown file per run.
-- Only operate on English source content: `content/en/questions/**`.
-- If the input is outside `content/en/`, do not edit; explain this and stop.
+- Only operate on English source content: `questions/en/**`.
+- If the input is outside `questions/en/`, do not edit; explain this and stop.
 - Report after completing steps for the single provided file. Do not continue to other files.
 
 ## What to Verify (exhaustive)
@@ -46,7 +46,7 @@ If you cannot confidently determine correctness for **every** option, do not edi
 
 ## Edit Policy (only when fully determined)
 
-- Make minimal changes in the single input file under `content/en/`.
+- Make minimal changes in the single input file under `questions/en/`.
 - Prefer only toggling checkmarks (`[x]` / `[ ]`).
 - If wording must change to align with docs, keep it minimal and preserve the existing list style and spacing.
 - Do not add extra options or restructure the question unless absolutely necessary.

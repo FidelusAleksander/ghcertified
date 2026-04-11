@@ -48,7 +48,7 @@ const VALID_CERTS: CertificationType[] = [
   "actions", "admin", "advanced_security", "copilot", "foundations",
 ];
 
-const CONTENT_DIR = join(process.cwd(), "..", "content", "en", "questions");
+const CONTENT_DIR = join(process.cwd(), "..", "questions", "en");
 
 // ── Loader (cached) ─────────────────────────────────────────────────
 

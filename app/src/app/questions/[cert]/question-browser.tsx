@@ -18,7 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
+import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CircleAlert } from "lucide-react";
 
 interface QuestionBrowserProps {
   questions: Question[];
@@ -207,12 +207,24 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
             QUESTION {currentIndex + 1} OF {questions.length}
           </span>
-          <Badge
-            variant="secondary"
-            className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase"
-          >
-            {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
-          </Badge>
+          <div className="flex items-center gap-2.5">
+            <a
+              href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(`[${currentQuestion.cert}] Issue with ${currentQuestion.id}`)}&body=${encodeURIComponent(`**Question:** ${currentQuestion.question}\n\n**Issue:**\n\n<!-- Please describe the problem with this question -->`)}&labels=question-issue`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
+              title="Report an issue with this question"
+            >
+              <CircleAlert className="size-3.5" />
+              <span>Report</span>
+            </a>
+            <Badge
+              variant="secondary"
+              className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase"
+            >
+              {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+            </Badge>
+          </div>
         </CardHeader>
 
         <CardContent className="p-4 sm:p-7 text-left">

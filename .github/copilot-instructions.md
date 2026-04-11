@@ -12,11 +12,11 @@ This repository contains a quiz application for GitHub certification exam prepar
   - `app/src/components/ui/` — shadcn/ui primitives
   - `app/src/lib/` — Data loading, utilities, quizdown parser
   - `app/src/types/` — TypeScript type definitions
-- **`content/en/questions/`** — Question markdown files organized by certification (actions, admin, advanced_security, copilot, foundations)
-- Content is organized into multiple language directories, but we **only edit content in the `content/en/` directory**. Other language directories are maintained by an external process and should never be modified directly.
+- **`questions/en/`** — Question markdown files organized by certification (actions, admin, advanced_security, copilot, foundations)
+- Questions are organized into multiple language directories, but we **only edit questions in the `questions/en/` directory**. Other language directories are maintained by an external process and should never be modified directly.
 
 ## How Questions Work
-- Questions are authored as Markdown files in `content/en/questions/<cert>/`
+- Questions are authored as Markdown files in `questions/en/<cert>/`
 - At build time, `app/src/lib/questions.ts` reads these files using a custom quizdown parser (`app/src/lib/quizdown/`)
 - The parsed questions feed into the Quiz React component at `app/src/components/quiz/`
 

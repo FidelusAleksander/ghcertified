@@ -7,7 +7,7 @@ on:
       content_path:
         description: "Path to content directory to translate"
         required: false
-        default: "content/en"
+        default: "questions/en"
         type: string
       language_code:
         description: "Language code to translate to"

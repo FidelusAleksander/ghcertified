@@ -19,10 +19,10 @@ on:
   workflow_dispatch:
     inputs:
       file:
-        description: 'File path to translate (e.g., content/en/questions/foundations/example.md)'
+        description: 'File path to translate (e.g., questions/en/foundations/example.md)'
         required: true
         type: string
-        default: 'content/en/questions/actions/question-029.md'
+        default: 'questions/en/actions/question-029.md'
       language_code:
         description: 'Target language code (e.g., pl, pt)'
         required: true
@@ -68,7 +68,7 @@ jobs:
           FILE="${{ inputs.file }}"
           LANG="${{ inputs.language_code }}"
 
-          TARGET_PATH="${FILE/content\/en/content\/$LANG}"
+          TARGET_PATH="${FILE/questions\/en/questions\/$LANG}"
           TARGET_DIR=$(dirname "$TARGET_PATH")
 
           mkdir -p "$TARGET_DIR"
@@ -79,7 +79,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@290ea2c423ad77ca9c62ae0f5b224379612c0321 # v10.0.0
         with:
-          add: "content/${{ inputs.language_code }}/**"
+          add: "questions/${{ inputs.language_code }}/**"
           message: "i18n: translate ${{ inputs.file }} to ${{ inputs.language_name }}"
           push: true
           new_branch: ${{ inputs.branch }}

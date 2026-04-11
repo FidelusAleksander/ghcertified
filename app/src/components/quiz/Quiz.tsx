@@ -28,7 +28,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle } from "lucide-react";
+import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 interface QuizProps {
@@ -217,6 +217,16 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
                   </button>
                 )}
+                <a
+                  href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(`[${cert}] Issue with ${currentQuestion.id}`)}&body=${encodeURIComponent(`**Question:** ${currentQuestion.question}\n\n**Issue:**\n\n<!-- Please describe the problem with this question -->`)}&labels=question-issue`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
+                  title="Report an issue with this question"
+                >
+                  <CircleAlert className="size-3.5" />
+                  <span>Report</span>
+                </a>
                 <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
                   {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
                 </Badge>
@@ -351,31 +361,33 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
           {/* Navigation footer */}
           <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end gap-2 flex-wrap">
-            <Button
-              variant="outline"
-              onClick={handlePrev}
-              disabled={currentIndex === 0}
-            >
-              <ChevronLeft data-icon="inline-start" />
-              Previous
-            </Button>
-            {currentIndex < quizQuestions.length - 1 ? (
+            <div className="flex gap-2">
               <Button
-                onClick={handleNext}
-                className="bg-foreground text-card hover:bg-foreground/90"
+                variant="outline"
+                onClick={handlePrev}
+                disabled={currentIndex === 0}
               >
-                Next question
-                <ChevronRight data-icon="inline-end" />
+                <ChevronLeft data-icon="inline-start" />
+                Previous
               </Button>
-            ) : !isComplete ? (
-              <Button
-                onClick={handleSubmitExam}
-                className="bg-foreground text-card hover:bg-foreground/90"
-              >
-                <Send data-icon="inline-start" className="size-4" />
-                Submit Exam
-              </Button>
-            ) : null}
+              {currentIndex < quizQuestions.length - 1 ? (
+                <Button
+                  onClick={handleNext}
+                  className="bg-foreground text-card hover:bg-foreground/90"
+                >
+                  Next question
+                  <ChevronRight data-icon="inline-end" />
+                </Button>
+              ) : !isComplete ? (
+                <Button
+                  onClick={handleSubmitExam}
+                  className="bg-foreground text-card hover:bg-foreground/90"
+                >
+                  <Send data-icon="inline-start" className="size-4" />
+                  Submit Exam
+                </Button>
+              ) : null}
+            </div>
           </div>
         </Card>
 
