@@ -28,8 +28,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert } from "lucide-react";
-import { QuizResults } from "./QuizResults";
+import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle } from "lucide-react";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 interface QuizProps {
   questions: Question[];
@@ -80,7 +80,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   const handleToggleAnswer = useCallback(
     (answerId: string) => {
-      if (!currentQuestion) return;
+      if (!currentQuestion || isComplete) return;
 
       setSelectedAnswers((prev) => {
         const qId = currentQuestion.id;
@@ -101,7 +101,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         return { ...prev, [qId]: current };
       });
     },
-    [currentQuestion]
+    [currentQuestion, isComplete]
   );
 
   const handleNext = () => {
@@ -139,6 +139,18 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const partialCount = quizQuestions.filter((q) => getQuestionState(q) === "partial").length;
   const unansweredCount = quizQuestions.filter((q) => getQuestionState(q) === "unanswered").length;
 
+  // Correctness check (used in review mode after submission)
+  const isQuestionCorrect = (q: Question): boolean => {
+    const sel = selectedAnswers[q.id] ?? new Set<string>();
+    const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
+    if (sel.size !== correctIds.size) return false;
+    for (const id of sel) if (!correctIds.has(id)) return false;
+    return true;
+  };
+
+  const score = isComplete ? quizQuestions.filter(isQuestionCorrect).length : 0;
+  const isCurrentCorrectInReview = isComplete && currentQuestion ? isQuestionCorrect(currentQuestion) : false;
+
   const handleSubmitExam = () => {
     setShowConfirmDialog(true);
   };
@@ -170,55 +182,54 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
     );
   }
 
-  // Complete
-  if (isComplete) {
-    return <QuizResults questions={quizQuestions} selectedAnswers={selectedAnswers} cert={cert} />;
-  }
+  // No early return for isComplete — same view switches to review mode
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
-      {/* Top bar with breadcrumb + progress */}
-      <div className="flex items-center justify-between mb-6 sm:mb-9 flex-wrap gap-4">
-        <div>
-          <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
-            <Link href="/practice-tests" className="text-primary no-underline hover:underline">Practice Tests</Link>
-            <span>›</span>
-            <span>{certName}</span>
-          </div>
-          <h1 className="font-display text-[24px] sm:text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
+      {/* Top bar with breadcrumb */}
+      <div className="mb-6 sm:mb-9">
+        <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
+          <Link href="/practice-tests" className="text-primary no-underline hover:underline">Practice Tests</Link>
+          <span>›</span>
+          <span>{certName}</span>
         </div>
-        <div className="flex-1 max-w-[360px] hidden sm:block">
-          <div className="flex items-center gap-4">
-            <Progress value={((currentIndex + 1) / quizQuestions.length) * 100} className="flex-1 h-2" />
-            <span className="text-[13px] font-semibold text-muted-foreground whitespace-nowrap">
-              {currentIndex + 1} of {quizQuestions.length}
-            </span>
-          </div>
-        </div>
+        <h1 className="font-display text-[24px] sm:text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
       </div>
 
       {/* Two-column layout */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
         {/* Question card */}
-        <Card className="overflow-hidden shadow-sm border-[1.5px]">
-          <CardHeader className="bg-foreground px-4 sm:px-7 py-4 sm:py-5 flex flex-row items-center justify-between gap-3 space-y-0">
-            <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
-              QUESTION {currentIndex + 1} OF {quizQuestions.length}
-            </span>
-            <div className="flex items-center gap-2.5">
-              <button
-                type="button"
-                onClick={handleToggleFlag}
-                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
-                title={isFlagged ? "Unflag this question" : "Flag for review"}
-              >
-                <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
-                <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
-              </button>
-              <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
-                {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
-              </Badge>
+        <Card className="overflow-hidden shadow-sm border-[1.5px] pt-0 gap-0">
+          <CardHeader className="bg-foreground px-4 sm:px-7 pt-4 sm:pt-5 pb-3 sm:pb-4 flex flex-col gap-3 space-y-0">
+            <div className="flex items-center justify-between gap-3 w-full">
+              <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
+                QUESTION {currentIndex + 1} OF {quizQuestions.length}
+              </span>
+              <div className="flex items-center gap-2.5 ml-auto">
+                {!isComplete && (
+                  <button
+                    type="button"
+                    onClick={handleToggleFlag}
+                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
+                    title={isFlagged ? "Unflag this question" : "Flag for review"}
+                  >
+                    <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
+                    <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
+                  </button>
+                )}
+                <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
+                  {currentQuestion.isMultiSelect ? "Multi-select" : "Single choice"}
+                </Badge>
+              </div>
             </div>
+            {!isComplete && (
+              <div className="h-1 w-full rounded-full bg-card/10 overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-primary transition-all duration-300 ease-out"
+                  style={{ width: `${((currentIndex + 1) / quizQuestions.length) * 100}%` }}
+                />
+              </div>
+            )}
           </CardHeader>
           <CardContent className="p-4 sm:p-7 text-left">
             {/* Question text */}
@@ -226,7 +237,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               {renderCodeSpans(currentQuestion.question)}
               {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
             </div>
-            {currentQuestion.isMultiSelect && (
+            {currentQuestion.isMultiSelect && !isComplete && (
               <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
                 <Info className="size-4 flex-shrink-0" />
                 Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
@@ -237,19 +248,27 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <div className="flex flex-col gap-2.5">
               {currentQuestion.answers.map((answer) => {
                 const isSelected = currentSelected.has(answer.id);
+                const isCorrectOpt = answer.isCorrect;
 
                 const optionClass = cn(
-                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left",
-                  isSelected && "border-primary bg-primary-soft",
-                  !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
+                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all text-[14.5px] leading-relaxed text-left",
+                  !isComplete && "cursor-pointer",
+                  isComplete && isCorrectOpt && "border-success bg-success-soft",
+                  isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
+                  isComplete && !isSelected && !isCorrectOpt && "border-border bg-card opacity-60",
+                  !isComplete && isSelected && "border-primary bg-primary-soft",
+                  !isComplete && !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
                 );
 
                 const shape = currentQuestion.isMultiSelect ? "rounded-[5px]" : "rounded-full";
                 const selectorClass = cn(
                   "size-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center",
                   shape,
-                  isSelected && "border-primary bg-primary",
-                  !isSelected && "border-border-dark",
+                  isComplete && isCorrectOpt && "border-success bg-success",
+                  isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive",
+                  isComplete && !isSelected && !isCorrectOpt && "border-border-dark",
+                  !isComplete && isSelected && "border-primary bg-primary",
+                  !isComplete && !isSelected && "border-border-dark",
                 );
 
                 return (
@@ -258,17 +277,48 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     type="button"
                     onClick={() => handleToggleAnswer(answer.id)}
                     className={optionClass}
+                    disabled={isComplete}
                   >
                     <div className={selectorClass}>
-                      {isSelected && (
+                      {((isSelected && !isComplete) || (isComplete && (isCorrectOpt || isSelected))) && (
                         <div className="size-2 rounded-full bg-card" />
                       )}
                     </div>
                     <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
+                    {isComplete && isSelected && (
+                      <span className={cn(
+                        "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
+                        isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
+                      )}>
+                        Your answer
+                      </span>
+                    )}
                   </button>
                 );
               })}
             </div>
+
+            {/* Review feedback */}
+            {isComplete && (
+              <Alert className={`mt-5 ${isCurrentCorrectInReview ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive"}`}>
+                <AlertTitle className="flex items-center gap-2">
+                  <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
+                  {isCurrentCorrectInReview ? "Correct!" : "Incorrect"}
+                </AlertTitle>
+                {currentQuestion.hint && (
+                  <AlertDescription className="text-sm leading-relaxed">
+                    <a
+                      href={currentQuestion.hint}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4 hover:opacity-80"
+                    >
+                      📖 Learn more in the docs
+                    </a>
+                  </AlertDescription>
+                )}
+              </Alert>
+            )}
           </CardContent>
 
           <Separator />
@@ -293,7 +343,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   Next question
                   <ChevronRight data-icon="inline-end" />
                 </Button>
-              ) : (
+              ) : !isComplete ? (
                 <Button
                   onClick={handleSubmitExam}
                   className="bg-foreground text-card hover:bg-foreground/90"
@@ -301,13 +351,45 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <Send data-icon="inline-start" className="size-4" />
                   Submit Exam
                 </Button>
-              )}
+              ) : null}
             </div>
           </div>
         </Card>
 
         {/* Sidebar */}
         <div className="flex flex-col gap-4">
+
+          {/* Score card (review mode) */}
+          {isComplete && (
+            <Card className="shadow-sm border-[1.5px]">
+              <CardHeader className="p-5 pb-0">
+                <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
+                  Results
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-5 pt-3">
+                <div className="text-center mb-3">
+                  <span className="font-display text-[36px] font-extrabold text-foreground leading-none">
+                    {Math.round((score / quizQuestions.length) * 100)}%
+                  </span>
+                  <div className="text-[13px] text-muted-foreground mt-1">
+                    {score} of {quizQuestions.length} correct
+                  </div>
+                </div>
+                <Progress value={(score / quizQuestions.length) * 100} className="h-2.5" />
+                <div className="mt-3 flex justify-between text-[12px] text-muted-foreground">
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="size-3.5 text-success" />
+                    {score} correct
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <XCircle className="size-3.5 text-destructive" />
+                    {quizQuestions.length - score} incorrect
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Question Map */}
           <Card className="shadow-sm border-[1.5px]">
@@ -321,13 +403,21 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 {quizQuestions.slice(mapStart, mapEnd).map((q, offset) => {
                   const i = mapStart + offset;
                   const isQuestionFlagged = flaggedSet.has(i);
+                  const correct = isComplete ? isQuestionCorrect(q) : null;
                   const state = getQuestionState(q);
                   const btnClass = cn(
                     "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative",
-                    i === currentIndex && "bg-primary text-primary-foreground border-primary",
-                    i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
-                    i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
-                    i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+                    // Active question highlight
+                    i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
+                    // Review mode: green/red + ring for active
+                    isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
+                    isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
+                    isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
+                    isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
+                    // Exam mode (not submitted)
+                    !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
+                    !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                    !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
                   );
                   return (
                     <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
@@ -383,18 +473,33 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               )}
               {/* Legend */}
               <div className="mt-3 pt-3 border-t border-border flex flex-col gap-1.5 text-[11px] text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <span className="inline-block size-3 rounded-[3px] bg-foreground/10 border border-foreground/30" />
-                  Answered
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50 dark:bg-amber-950/30" />
-                  Partially answered
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="inline-block size-3 rounded-[3px] bg-card border border-border" />
-                  Unanswered
-                </div>
+                {isComplete ? (
+                  <>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-block size-3 rounded-[3px] bg-success/15 border border-success/50" />
+                      Correct
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-block size-3 rounded-[3px] bg-destructive/15 border border-destructive/50" />
+                      Incorrect
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-block size-3 rounded-[3px] bg-foreground/10 border border-foreground/30" />
+                      Answered
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50 dark:bg-amber-950/30" />
+                      Partially answered
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-block size-3 rounded-[3px] bg-card border border-border" />
+                      Unanswered
+                    </div>
+                  </>
+                )}
               </div>
             </CardContent>
           </Card>

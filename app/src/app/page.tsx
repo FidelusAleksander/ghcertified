@@ -15,6 +15,8 @@ const certifications = CERT_CATALOG.map((c) => ({
   ...CERT_META[c.cert],
 }));
 
+const totalQuestions = certifications.reduce((sum, c) => sum + c.questions, 0);
+
 /**
  * Homepage — hero section + certification tracks preview.
  * Two-column layout: left (copy + CTA) + right (mock quiz card).
@@ -60,7 +62,7 @@ export default function HomePage() {
           {/* Stats row */}
           <div className="grid grid-cols-3 gap-4 pt-6 sm:pt-8">
             <div className="text-center sm:text-left">
-              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">500+</div>
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">{totalQuestions}</div>
               <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Practice questions</div>
             </div>
             <div className="text-center sm:text-left">
