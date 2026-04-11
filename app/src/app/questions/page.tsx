@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CERT_CATALOG } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
 
 /**
  * Question Library page — browse questions grouped by certification type.
@@ -26,9 +26,9 @@ export default function QuestionsPage() {
         {CERT_CATALOG.map((cert) => {
           const meta = CERT_META[cert.cert];
           return (
-            <Link key={cert.cert} href={`/questions/${cert.cert}`} className="no-underline">
-              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card">
-                <CardContent className="p-6 flex flex-col gap-4">
+            <Link key={cert.cert} href={`/questions/${cert.cert}`} className="group no-underline">
+              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
                   <div className="flex items-center gap-3.5">
                     <div className={`size-12 rounded-xl flex items-center justify-center flex-shrink-0 ${meta.colorClass}`}>
                       {meta.icon}
@@ -38,20 +38,16 @@ export default function QuestionsPage() {
                         {cert.title}
                       </div>
                       <div className="text-xs text-muted-foreground mt-0.5">
-                        {cert.questionCount} questions available
+                        {cert.questionCount} questions
                       </div>
                     </div>
                   </div>
-                  <div className="text-[13.5px] text-muted-foreground leading-relaxed">
+                  <div className="text-[13.5px] text-muted-foreground leading-relaxed flex-1">
                     {meta.desc}
                   </div>
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="font-display text-[22px] font-bold text-foreground flex items-baseline gap-1">
-                      {cert.questionCount} <span className="text-[13px] font-normal text-muted-foreground">questions</span>
-                    </div>
-                    <Badge className="px-4 py-2 rounded-[9px] text-[13.5px] font-semibold">
-                      Browse →
-                    </Badge>
+                  <div className="flex items-center gap-1.5 text-[13px] font-semibold text-primary">
+                    Browse questions
+                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </CardContent>
               </Card>

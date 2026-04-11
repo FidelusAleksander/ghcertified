@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, Check } from "lucide-react";
+import { Play, Check, ArrowRight } from "lucide-react";
 import { CERT_CATALOG } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
 
@@ -160,23 +160,22 @@ export default function HomePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map((cert) => (
-            <Link key={cert.id} href={`/practice-tests/${cert.id}`} className="no-underline">
-              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card">
-                <CardContent className="p-6 flex flex-col gap-4">
+            <Link key={cert.id} href={`/practice-tests/${cert.id}`} className="group no-underline">
+              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
                   <div className="flex items-center gap-3.5">
                     <div className={`size-12 rounded-xl flex items-center justify-center flex-shrink-0 ${cert.colorClass}`}>
                       {cert.icon}
                     </div>
-                    <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>
-                  </div>
-                  <div className="text-[13.5px] text-muted-foreground leading-relaxed">{cert.desc}</div>
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="font-display text-[22px] font-bold text-foreground flex items-baseline gap-1">
-                      {cert.questions} <span className="text-[13px] font-normal text-muted-foreground">questions</span>
+                    <div>
+                      <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>
+                      <div className="text-xs text-muted-foreground mt-0.5">{cert.questions} questions</div>
                     </div>
-                    <Badge className="px-4 py-2 rounded-[9px] text-[13.5px] font-semibold">
-                      Practice →
-                    </Badge>
+                  </div>
+                  <div className="text-[13.5px] text-muted-foreground leading-relaxed flex-1">{cert.desc}</div>
+                  <div className="flex items-center gap-1.5 text-[13px] font-semibold text-primary">
+                    Start practicing
+                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </CardContent>
               </Card>

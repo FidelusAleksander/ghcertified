@@ -31,8 +31,8 @@ export function Footer() {
           </a>
         </p>
         <p className="mt-1.5 text-xs text-muted-foreground/60">
-          This is NOT an official GitHub resource. Questions are community-created
-          and do not come from real exams.
+          Not affiliated with GitHub. All questions are original, community-created
+          content. We do not condone copying from real certification exams.
         </p>
       </div>
     </footer>
