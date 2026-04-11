@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Play, Shield, Users, Bot } from "lucide-react";
@@ -27,6 +27,7 @@ interface Props {
 }
 
 export function CatalogCards({ certs }: Props) {
+  const defaultCount = (total: number) => Math.min(60, total);
   const [counts, setCounts] = useState<Record<string, number>>({});
 
   return (
@@ -34,6 +35,8 @@ export function CatalogCards({ certs }: Props) {
       {certs.map((cert) => {
         const meta = CERT_META[cert.id];
         if (!meta) return null;
+
+        const count = counts[cert.id] ?? defaultCount(cert.questions);
 
         return (
           <Card key={cert.id} className="bg-card transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5">
@@ -48,33 +51,37 @@ export function CatalogCards({ certs }: Props) {
                 </div>
               </div>
               <div className="text-[13.5px] text-muted-foreground leading-relaxed">{meta.desc}</div>
-              <div className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2 flex-1">
-                  <span className="text-[12.5px] text-muted-foreground whitespace-nowrap">Practice with</span>
-                  <Input
-                    type="number"
-                    className="w-16 px-2.5 py-1.5 h-auto text-sm font-semibold font-display text-center"
-                    value={counts[cert.id] ?? 20}
-                    min={1}
-                    max={cert.questions}
-                    onChange={(e) => setCounts({ ...counts, [cert.id]: Number(e.target.value) })}
-                  />
-                  <span className="text-[12.5px] text-muted-foreground whitespace-nowrap">questions</span>
+
+              {/* Question count slider */}
+              <div className="flex flex-col gap-2.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-[12.5px] text-muted-foreground">Practice with</span>
+                  <span className="font-display text-sm font-bold text-foreground tabular-nums">
+                    {count} <span className="font-normal text-muted-foreground">/ {cert.questions}</span>
+                  </span>
                 </div>
-                <Button
-                  render={<Link href={`/practice-tests/${cert.id}?questions=${counts[cert.id] ?? 20}`} />}
-                  nativeButton={false}
-                  className="rounded-[9px] text-[13.5px] font-semibold whitespace-nowrap"
-                >
-                  Start →
-                </Button>
+                <Slider
+                  value={[count]}
+                  min={1}
+                  max={cert.questions}
+                  onValueChange={(val) => {
+                    const v = Array.isArray(val) ? val[0] : val;
+                    setCounts({ ...counts, [cert.id]: v });
+                  }}
+                />
               </div>
+
+              <Button
+                render={<Link href={`/practice-tests/${cert.id}?questions=${count}`} />}
+                nativeButton={false}
+                className="w-full rounded-[9px] text-[13.5px] font-semibold"
+              >
+                Start →
+              </Button>
             </CardContent>
           </Card>
         );
       })}
-
-
     </div>
   );
 }
