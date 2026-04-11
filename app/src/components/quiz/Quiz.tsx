@@ -171,7 +171,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           </div>
           <Skeleton className="h-2 w-60 hidden sm:block" />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6">
           <Skeleton className="h-[400px] rounded-xl" />
           <div className="flex flex-col gap-4">
             <Skeleton className="h-32 rounded-xl" />
@@ -197,7 +197,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       </div>
 
       {/* Two-column layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6 items-start">
         {/* Question card */}
         <Card className="overflow-hidden shadow-sm border-[1.5px] pt-0 gap-0">
           <CardHeader className="bg-foreground px-4 sm:px-7 pt-4 sm:pt-5 pb-3 sm:pb-4 flex flex-col gap-3 space-y-0">
@@ -323,43 +323,64 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
           <Separator />
 
-          {/* Navigation footer */}
-          <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-3 flex-wrap">
-            <div />
-            <div className="flex gap-2">
-              <Button
-                variant="outline"
-                onClick={handlePrev}
-                disabled={currentIndex === 0}
-              >
-                <ChevronLeft data-icon="inline-start" />
-                Previous
-              </Button>
-              {currentIndex < quizQuestions.length - 1 ? (
-                <Button
-                  onClick={handleNext}
-                  className="bg-foreground text-card hover:bg-foreground/90"
-                >
-                  Next question
-                  <ChevronRight data-icon="inline-end" />
-                </Button>
-              ) : !isComplete ? (
-                <Button
-                  onClick={handleSubmitExam}
-                  className="bg-foreground text-card hover:bg-foreground/90"
-                >
-                  <Send data-icon="inline-start" className="size-4" />
-                  Submit Exam
-                </Button>
-              ) : null}
+          {/* Mobile question strip (hidden on desktop where sidebar has the map) */}
+          <div className="px-4 py-3 lg:hidden overflow-x-auto">
+            <div className="flex gap-1.5 w-max">
+              {quizQuestions.map((q, i) => {
+                const correct = isComplete ? isQuestionCorrect(q) : null;
+                const state = getQuestionState(q);
+                const dotClass = cn(
+                  "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors",
+                  i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
+                  isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
+                  isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
+                  isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
+                  isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
+                  !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
+                  !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                  !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground",
+                );
+                return (
+                  <button key={i} onClick={() => setCurrentIndex(i)} className={dotClass}>
+                    {i + 1}
+                  </button>
+                );
+              })}
             </div>
+          </div>
+
+          {/* Navigation footer */}
+          <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end gap-2 flex-wrap">
+            <Button
+              variant="outline"
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+            >
+              <ChevronLeft data-icon="inline-start" />
+              Previous
+            </Button>
+            {currentIndex < quizQuestions.length - 1 ? (
+              <Button
+                onClick={handleNext}
+                className="bg-foreground text-card hover:bg-foreground/90"
+              >
+                Next question
+                <ChevronRight data-icon="inline-end" />
+              </Button>
+            ) : !isComplete ? (
+              <Button
+                onClick={handleSubmitExam}
+                className="bg-foreground text-card hover:bg-foreground/90"
+              >
+                <Send data-icon="inline-start" className="size-4" />
+                Submit Exam
+              </Button>
+            ) : null}
           </div>
         </Card>
 
         {/* Sidebar */}
-        <div className="flex flex-col gap-4">
-
-          {/* Score card (review mode) */}
+        <div className="flex flex-col gap-4 lg:sticky lg:top-6">
           {isComplete && (
             <Card className="shadow-sm border-[1.5px]">
               <CardHeader className="p-5 pb-0">
@@ -505,20 +526,15 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           </Card>
 
           {/* Contribute CTA */}
-          <Card className="bg-foreground text-card border-foreground">
-            <CardHeader className="p-5 pb-0">
-              <CardTitle className="font-display text-[15px] font-bold">Found this useful?</CardTitle>
-            </CardHeader>
-            <CardContent className="p-5 pt-2">
-              <div className="text-[13px] text-card/65 leading-relaxed mb-3.5">
-                Give back to the community by contributing a question — it only takes a few minutes.
-              </div>
+          <Card className="bg-foreground text-card border-foreground shadow-sm">
+            <CardContent className="px-4 py-3.5 flex items-center justify-between gap-3">
+              <span className="text-[13px] text-card/65 leading-snug">Found this useful? Help the community.</span>
               <Button
                 render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
                 nativeButton={false}
-                className="bg-card text-foreground hover:bg-card/90 font-bold"
+                className="bg-card text-foreground hover:bg-card/90 font-bold text-[12px] px-3 py-1.5 h-auto flex-shrink-0"
               >
-                ✍️ Contribute a question
+                ✍️ Contribute
               </Button>
             </CardContent>
           </Card>
