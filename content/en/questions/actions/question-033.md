@@ -4,6 +4,6 @@ title: "Question 033"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps
-1. [x] True
-1. [ ] False
+- [x] True
+- [ ] False
 > Steps can but don't have to run actions (e.g running a run command)

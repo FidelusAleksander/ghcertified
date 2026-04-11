@@ -4,7 +4,7 @@ title: "Question 069"
 ---
 
 > https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#fully-removing-the-data-from-github
-1. [x] Contact GitHub Support to remove cached views and references
-1. [ ] Notify all users who have forked the repository
-1. [ ] Change the repository's visibility to private
-1. [ ] Rename the repository
+- [x] Contact GitHub Support to remove cached views and references
+- [ ] Notify all users who have forked the repository
+- [ ] Change the repository's visibility to private
+- [ ] Rename the repository

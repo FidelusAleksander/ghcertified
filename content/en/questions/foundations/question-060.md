@@ -5,7 +5,7 @@ question: "Which of these is a practice that encourages collaboration, visibilit
 
 
 > https://resources.github.com/innersource/what-is-innersource/
-1. [x] InnerSource
-1. [ ] OpenSource
-1. [ ] Continuous Integration
-1. [ ] Git Flow
+- [x] InnerSource
+- [ ] OpenSource
+- [ ] Continuous Integration
+- [ ] Git Flow

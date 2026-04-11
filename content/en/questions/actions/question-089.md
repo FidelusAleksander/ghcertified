@@ -5,7 +5,7 @@ question: "Which of the following can be used to limit the number of concurrent 
 
 
 > https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency
-1. [x] concurrency
-1. [ ] limit
-1. [ ] max-jobs
-1. [ ] parallelism
+- [x] concurrency
+- [ ] limit
+- [ ] max-jobs
+- [ ] parallelism

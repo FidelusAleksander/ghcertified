@@ -5,7 +5,7 @@ question: "What is the purpose of the `with` keyword in a GitHub Actions workflo
 
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
-1. [ ] To define environment variables
-1. [x] To specify input parameters for an action
-1. [ ] To set up dependencies
-1. [ ] To trigger another workflow
+- [ ] To define environment variables
+- [x] To specify input parameters for an action
+- [ ] To set up dependencies
+- [ ] To trigger another workflow

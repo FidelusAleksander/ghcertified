@@ -5,7 +5,7 @@ question: "Where can you disable repository features such as issues, wikis or pr
 
 
 > https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository
-1. [x] In the repository settings
-1. [ ] In the `.github/settings.yml` configuration file
-1. [ ] These features cannot be disabled
-1. [ ] In your account settings
+- [x] In the repository settings
+- [ ] In the `.github/settings.yml` configuration file
+- [ ] These features cannot be disabled
+- [ ] In your account settings

@@ -5,8 +5,8 @@ question: "Which feature in GitHub Projects enables you to effortlessly generate
 
 
 > https://docs.github.com/en/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects
-1. [x] Project Insights
-1. [ ] GitHub Actions
-1. [ ] Milestones
-1. [ ] Copilot Charts
+- [x] Project Insights
+- [ ] GitHub Actions
+- [ ] Milestones
+- [ ] Copilot Charts
 > There is no such thing as Copilot Charts.

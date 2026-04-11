@@ -5,7 +5,7 @@ question: "What GitHub feature allows the creation of preconfigured development 
 
 
 > https://docs.github.com/en/codespaces/overview#benefits-of-github-codespaces
-1. [x] GitHub Codespaces
-1. [ ] GitHub Docker
-1. [ ] GitHub Copilot
-1. [ ] GitHub DevEnv
+- [x] GitHub Codespaces
+- [ ] GitHub Docker
+- [ ] GitHub Copilot
+- [ ] GitHub DevEnv

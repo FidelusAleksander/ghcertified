@@ -6,7 +6,7 @@ title: "Question 015"
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
 
-1. [x] 
+- [x] 
 ```yaml
   jobs:
     example_matrix:
@@ -16,7 +16,7 @@ title: "Question 015"
           os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
   jobs:
     example_matrix:
@@ -26,7 +26,7 @@ title: "Question 015"
           os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
   jobs:
     example_matrix:
@@ -35,7 +35,7 @@ title: "Question 015"
         os: [ubuntu-latest, windows-latest]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
   jobs:
     matrix:

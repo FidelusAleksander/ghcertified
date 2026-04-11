@@ -5,7 +5,7 @@ title: "Question 104"
 
 
 > https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable
-1. [x] treat environment variables as case-sensitive
-1. [ ] use only uppercase letters for environment variable names
-1. [ ] ignore case sensitivity as GitHub Actions handles it automatically
-1. [ ] depend on the behavior of the operating system in use
+- [x] treat environment variables as case-sensitive
+- [ ] use only uppercase letters for environment variable names
+- [ ] ignore case sensitivity as GitHub Actions handles it automatically
+- [ ] depend on the behavior of the operating system in use

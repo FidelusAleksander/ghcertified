@@ -4,10 +4,10 @@ title: "Question 025"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-1. [x] workflow_call
-1. [ ] workflow_trigger
+- [x] workflow_call
+- [ ] workflow_trigger
 > There is no such event trigger
-1. [ ] workflow_dispatch
+- [ ] workflow_dispatch
 > This is used for manual triggers
-1. [ ] workflow_run
+- [ ] workflow_run
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run

@@ -4,7 +4,7 @@ title: "Question 036"
 ---
 
 > https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning
-1. [x] Yes, but for private repositories, it requires a license for GitHub Advanced Security
-1. [ ] Yes, with no additional requirements
-1. [ ] No, it is only available for public repositories
-1. [ ] No, it is only available for private repositories
+- [x] Yes, but for private repositories, it requires a license for GitHub Advanced Security
+- [ ] Yes, with no additional requirements
+- [ ] No, it is only available for public repositories
+- [ ] No, it is only available for private repositories

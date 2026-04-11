@@ -5,7 +5,7 @@ question: "How can you specify the operating system for a job in GitHub Actions?
 
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
-1. [ ] Using the os keyword
-1. [x] Using the runs-on keyword
-1. [ ] Using the platform keyword
-1. [ ] Using the env keyword
+- [ ] Using the os keyword
+- [x] Using the runs-on keyword
+- [ ] Using the platform keyword
+- [ ] Using the env keyword

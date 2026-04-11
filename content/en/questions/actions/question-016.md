@@ -5,7 +5,7 @@ title: "Question 016"
 
 
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [ ] Using the `vars` context
-1. [x] Using the `matrix` context
-1. [ ] Using the `job` context
-1. [ ] Using the `jobs` context
+- [ ] Using the `vars` context
+- [x] Using the `matrix` context
+- [ ] Using the `job` context
+- [ ] Using the `jobs` context

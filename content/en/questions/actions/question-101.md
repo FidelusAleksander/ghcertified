@@ -6,7 +6,7 @@ title: "Question 101"
 
 > https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions
 
-1. [x] 
+- [x] 
 ```yaml
     - name: Run Tests
       id: run-tests
@@ -20,7 +20,7 @@ title: "Question 101"
         path: test-reports.html
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     - name: Run Tests
       id: run-tests
@@ -34,7 +34,7 @@ title: "Question 101"
         path: test-reports.html
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     - name: Run Tests
       id: run-tests
@@ -48,7 +48,7 @@ title: "Question 101"
         path: test-reports.html
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     - name: Run Tests
       id: run-tests

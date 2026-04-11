@@ -4,7 +4,7 @@ title: "Question 064"
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
-1. [x] JSON and CSV.
-1. [ ] PDF and DOCX.
-1. [ ] TXT and RTF.
-1. [ ] ZIP.
+- [x] JSON and CSV.
+- [ ] PDF and DOCX.
+- [ ] TXT and RTF.
+- [ ] ZIP.

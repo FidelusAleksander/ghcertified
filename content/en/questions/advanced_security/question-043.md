@@ -4,7 +4,7 @@ title: "Question 043"
 ---
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file
-1. [x] `version` and `updates`
-1. [ ] `version` and `package-ecosystem`
-1. [ ] `assignees` and `directory`
-1. [ ] `updates` and `directory`
+- [x] `version` and `updates`
+- [ ] `version` and `package-ecosystem`
+- [ ] `assignees` and `directory`
+- [ ] `updates` and `directory`

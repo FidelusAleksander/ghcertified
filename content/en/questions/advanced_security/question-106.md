@@ -5,9 +5,9 @@ question: "Which of these is not a GitHub supported channel for receiving Depend
 
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-notifications-for-dependabot-alerts#configuring-notifications-for-dependabot-alerts
-1. [x] SMS/Call
-1. [ ] github.com notification inbox
-1. [ ] GitHub Mobile
-1. [ ] GitHub CLI
+- [x] SMS/Call
+- [ ] github.com notification inbox
+- [ ] GitHub Mobile
+- [ ] GitHub CLI
 > Warnings are displayed as callbacks when you push to repositories with any insecure dependencies
-1. [ ] Email
+- [ ] Email

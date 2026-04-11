@@ -6,7 +6,7 @@ draft: false
 
 > **More info**: [About repository insights](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs)
 
-1. [x] Insights tab  
-1. [ ] GitHub Actions  
-1. [ ] GitHub Projects  
-1. [ ] GitHub Discussions  
+- [x] Insights tab  
+- [ ] GitHub Actions  
+- [ ] GitHub Projects  
+- [ ] GitHub Discussions  

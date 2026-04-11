@@ -4,7 +4,7 @@ title: "Question 050"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Managing billing settings for the organization, including updating payment methods and reviewing invoices.
-1. [ ] They can manage team permissions and repository settings.
-1. [ ] Creating and deleting all repositories within the organization.
-1. [ ] Assigning and removing organization owners.
+- [x] Managing billing settings for the organization, including updating payment methods and reviewing invoices.
+- [ ] They can manage team permissions and repository settings.
+- [ ] Creating and deleting all repositories within the organization.
+- [ ] Assigning and removing organization owners.

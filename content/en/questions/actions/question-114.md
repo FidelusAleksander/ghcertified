@@ -12,7 +12,7 @@ jobs:
                 os: [ubuntu-latest, windows-latest]
 ```
 > https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [x] reference variables through the `matrix` context with syntax like`matrix.version` and `matrix.os`
-1. [ ] by using the `matrix.property` syntax
-1. [ ] by using the `context` keyword within the job configuration
-1. [ ] by accessing the variables directly with the syntax `version` and `os`
+- [x] reference variables through the `matrix` context with syntax like`matrix.version` and `matrix.os`
+- [ ] by using the `matrix.property` syntax
+- [ ] by using the `context` keyword within the job configuration
+- [ ] by accessing the variables directly with the syntax `version` and `os`

@@ -5,5 +5,5 @@ question: "Public repositories owned by personal users as well as public reposit
 
 
 > https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning
-1. [x] True
-1. [ ] False
+- [x] True
+- [ ] False

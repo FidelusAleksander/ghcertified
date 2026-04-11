@@ -8,7 +8,7 @@ question: "What feature is unique to GitHub Desktop compared to github.com?"
 > - https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/using-the-activity-view-to-see-changes-to-a-repository
 
 
-1. [ ] Clone repositories to local machine
-1. [ ] Create new repositories
-1. [ ] View repository insights
-1. [x] Visualize branch histories in a graphical interface
+- [ ] Clone repositories to local machine
+- [ ] Create new repositories
+- [ ] View repository insights
+- [x] Visualize branch histories in a graphical interface

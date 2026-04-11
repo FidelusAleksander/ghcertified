@@ -4,8 +4,8 @@ title: "Question 053"
 ---
 
 > https://docs.github.com/en/actions/creating-actions/about-custom-actions#choosing-a-location-for-your-action
-1. [x] False
-1. [ ] True
+- [x] False
+- [ ] True
 > That is true for `workflows`, not for `actions`
-1. [ ] Only if the action is reusable
-1. [ ] Only for Docker container actions
+- [ ] Only if the action is reusable
+- [ ] Only for Docker container actions

@@ -1,14 +1,12 @@
-"use client";
-
 /**
- * Individual question view — renders single question as mini quiz.
+ * Individual question view — server component loads data,
+ * passes to client QuizWrapper.
  */
 
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
-import { CertificationType } from "@/types/quiz";
-import { Quiz } from "@/components/quiz/Quiz";
+import { notFound } from "next/navigation";
+import { getQuestionsByCert } from "@/lib/questions";
+import type { CertificationType } from "@/lib/questions";
+import { QuizWrapper } from "@/app/practice-tests/[cert]/quiz-wrapper";
 
 const CERT_NAMES: Record<string, string> = {
   actions: "GitHub Actions",
@@ -18,30 +16,24 @@ const CERT_NAMES: Record<string, string> = {
   copilot: "GitHub Copilot",
 };
 
-export default function SingleQuestionPage() {
-  const params = useParams();
-  const cert = params.cert as CertificationType;
-  const slug = params.slug as string;
-  const certInfo = getCertInfo(cert);
-  const questions = getQuestionsByCert(cert);
+interface Props {
+  params: Promise<{ cert: string; slug: string }>;
+}
+
+export default async function SingleQuestionPage({ params }: Props) {
+  const { cert, slug } = await params;
+  const questions = getQuestionsByCert(cert as CertificationType);
   const question = questions.find((q) => q.id === slug);
 
-  if (!certInfo || !question) {
-    return (
-      <div className="mx-auto max-w-5xl px-6 py-16 text-center">
-        <h1 className="font-display text-2xl font-bold">Question not found</h1>
-        <Link href={`/questions/${cert}`} className="mt-4 inline-flex text-sm text-primary underline underline-offset-4">
-          ← Back to {certInfo?.title ?? "questions"}
-        </Link>
-      </div>
-    );
+  if (!question) {
+    notFound();
   }
 
   return (
-    <Quiz
+    <QuizWrapper
       questions={[question]}
       questionCount={1}
-      cert={cert}
+      cert={cert as CertificationType}
       certName={CERT_NAMES[cert] ?? cert}
     />
   );

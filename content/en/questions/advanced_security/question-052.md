@@ -5,7 +5,7 @@ question: "Which GitHub Advanced Security feature allows you to find, triage, an
 
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning
-1. [x] Code scanning
-1. [ ] Dependabot alerts
-1. [ ] Security policies
-1. [ ] Security advisories
+- [x] Code scanning
+- [ ] Dependabot alerts
+- [ ] Security policies
+- [ ] Security advisories

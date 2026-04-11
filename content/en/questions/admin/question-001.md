@@ -4,7 +4,7 @@ title: "Question 001"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-authentication-with-saml-sso
-1. [x] Setup SAML SSO
-1. [ ] Corporate SSH Keys 
-1. [ ] Setup OAuth SSO
-1. [ ] Setup MFA
+- [x] Setup SAML SSO
+- [ ] Corporate SSH Keys 
+- [ ] Setup OAuth SSO
+- [ ] Setup MFA

@@ -5,5 +5,5 @@ question: "When adding context in the chat, it is possible to add single files, 
 
 
 > https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features
-1. [x] False
-1. [ ] True
+- [x] False
+- [ ] True

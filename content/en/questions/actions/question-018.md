@@ -11,7 +11,7 @@ on:
       - '!release/**-alpha'
 ```
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-branches
-1. [x] the target branch name starts with `release` but does not end with `-alpha`
-1. [ ] the target branch name starts with `release`
-1. [ ] the source branch name starts with `release` but does not end with `-alpha`
-1. [ ] the source branch name starts with `release`
+- [x] the target branch name starts with `release` but does not end with `-alpha`
+- [ ] the target branch name starts with `release`
+- [ ] the source branch name starts with `release` but does not end with `-alpha`
+- [ ] the source branch name starts with `release`

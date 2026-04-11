@@ -5,7 +5,7 @@ question: "Which of the GitHub features best serves as a simple way to share sma
 
 
 > https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-1. [x] Gists
-1. [ ] Wikis
-1. [ ] Issues
-1. [ ] Projects
+- [x] Gists
+- [ ] Wikis
+- [ ] Issues
+- [ ] Projects

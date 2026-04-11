@@ -6,7 +6,7 @@ draft: false
 
 > **More info**: [GitHub Copilot for Business](https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot)
 
-1. [x] Organization-wide policy management, including restricting model suggestions based on public code  
-1. [ ] Exemption from all paid usage fees  
-1. [ ] 24/7 phone support from GitHub Copilot team  
-1. [ ] Local hosting of the AI model behind GitHub Copilot  
+- [x] Organization-wide policy management, including restricting model suggestions based on public code  
+- [ ] Exemption from all paid usage fees  
+- [ ] 24/7 phone support from GitHub Copilot team  
+- [ ] Local hosting of the AI model behind GitHub Copilot  

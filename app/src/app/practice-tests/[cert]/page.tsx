@@ -1,18 +1,12 @@
-"use client";
-
 /**
- * Practice test page for a specific certification.
- *
- * Dynamic route: /practice-tests/[cert]
- * Reads cert from URL params and question count from search params.
- * Quiz component handles its own layout (two-column with sidebar).
+ * Practice test page — server component that loads questions
+ * and passes them to the client Quiz component.
  */
 
-import { useParams, useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { CertificationType } from "@/types/quiz";
-import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
-import { Quiz } from "@/components/quiz/Quiz";
+import { notFound } from "next/navigation";
+import { getQuestionsByCert } from "@/lib/questions";
+import type { CertificationType } from "@/lib/questions";
+import { QuizWrapper } from "./quiz-wrapper";
 
 const VALID_CERTS: CertificationType[] = [
   "actions", "admin", "advanced_security", "copilot", "foundations",
@@ -26,28 +20,17 @@ const CERT_NAMES: Record<string, string> = {
   copilot: "GitHub Copilot",
 };
 
-export default function PracticeTestPage() {
-  const params = useParams();
-  const searchParams = useSearchParams();
+interface Props {
+  params: Promise<{ cert: string }>;
+  searchParams: Promise<{ questions?: string }>;
+}
 
-  const cert = params.cert as string;
-  const questionsParam = searchParams.get("questions");
+export default async function PracticeTestPage({ params, searchParams }: Props) {
+  const { cert } = await params;
+  const { questions: questionsParam } = await searchParams;
 
   if (!VALID_CERTS.includes(cert as CertificationType)) {
-    return (
-      <div className="mx-auto max-w-5xl px-6 py-16 text-center">
-        <h1 className="font-display text-2xl font-bold">Test not found</h1>
-        <p className="mt-3 text-muted-foreground">
-          No practice test exists for &ldquo;{cert}&rdquo;.
-        </p>
-        <Link
-          href="/practice-tests"
-          className="mt-6 inline-flex items-center rounded-lg border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
-        >
-          ← Back to tests
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   const certType = cert as CertificationType;
@@ -57,7 +40,7 @@ export default function PracticeTestPage() {
     : questions.length;
 
   return (
-    <Quiz
+    <QuizWrapper
       questions={questions}
       questionCount={questionCount}
       cert={certType}

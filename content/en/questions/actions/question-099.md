@@ -4,7 +4,7 @@ title: "Question 099"
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#limits-for-secrets
-1. [ ] avoid storing large secrets entirely to ensure security
-1. [ ] secrets larger than 48 KB cannot be stored
-1. [x] encrypt and store secrets in the repository but keep the decryption passphrase as a secret
-1. [ ] store large secrets directly as repository secrets to avoid limitations
+- [ ] avoid storing large secrets entirely to ensure security
+- [ ] secrets larger than 48 KB cannot be stored
+- [x] encrypt and store secrets in the repository but keep the decryption passphrase as a secret
+- [ ] store large secrets directly as repository secrets to avoid limitations

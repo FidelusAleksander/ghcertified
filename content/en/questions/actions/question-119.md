@@ -6,7 +6,7 @@ question: "How can you determine if an action is a container action by looking a
 
 > https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions
 
-1. [x] `runs.using` has `docker` as value
-1. [ ] `runs.using` has `container` as value
-1. [ ] `runs.using` has `Dockerfile` as value
-1. [ ] `runs.main` has `container` as value
+- [x] `runs.using` has `docker` as value
+- [ ] `runs.using` has `container` as value
+- [ ] `runs.using` has `Dockerfile` as value
+- [ ] `runs.main` has `container` as value

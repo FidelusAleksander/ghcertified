@@ -4,7 +4,7 @@ title: "Question 083"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-pages-with-an-ip-allow-list
-1. [x] The build runner will have access to the repository for the GitHub Pages site by default
-1. [ ] The build runner will be blocked from accessing the repository until manually added to the allow list
-1. [ ] GitHub Pages cannot be built or updated until the IP allow list is disabled
-1. [ ] You must manually trigger builds for GitHub Pages sites
+- [x] The build runner will have access to the repository for the GitHub Pages site by default
+- [ ] The build runner will be blocked from accessing the repository until manually added to the allow list
+- [ ] GitHub Pages cannot be built or updated until the IP allow list is disabled
+- [ ] You must manually trigger builds for GitHub Pages sites

@@ -5,20 +5,20 @@ title: "Question 029"
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run
 
-1. [x] Use concurrency with cancel-in-progress
+- [x] Use concurrency with cancel-in-progress
 ```yaml
   concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
 ```
-1. [ ] Use concurrency
+- [ ] Use concurrency
 ```yaml
   concurrency:
     group: ${{ github.ref }}
 ```
 > This would queue runs on that github ref. It will not stop previous runs
 
-1. [ ] Use activity types filter
+- [ ] Use activity types filter
 ```yaml
   on:
     pull_request:
@@ -27,7 +27,7 @@ title: "Question 029"
       types: [latest]
 ```
 > There is no such activity type as `latest` for pull_request event
-1. [ ] Use cancel-in-progress flag for `pull_request` event
+- [ ] Use cancel-in-progress flag for `pull_request` event
 ```yaml
   on:
     pull_request:

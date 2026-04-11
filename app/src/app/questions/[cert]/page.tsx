@@ -1,32 +1,27 @@
-"use client";
-
 /**
- * Questions list for a specific certification type.
+ * Questions list for a specific certification type. Server component.
  */
 
-import { useParams } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CertificationType } from "@/types/quiz";
+import type { CertificationType } from "@/lib/questions";
 import { getQuestionsByCert, getCertInfo } from "@/lib/questions";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-export default function CertQuestionsPage() {
-  const params = useParams();
-  const cert = params.cert as CertificationType;
-  const questions = getQuestionsByCert(cert);
-  const certInfo = getCertInfo(cert);
+interface Props {
+  params: Promise<{ cert: string }>;
+}
+
+export default async function CertQuestionsPage({ params }: Props) {
+  const { cert } = await params;
+  const certInfo = getCertInfo(cert as CertificationType);
 
   if (!certInfo) {
-    return (
-      <div className="mx-auto max-w-5xl px-6 py-16 text-center">
-        <h1 className="font-display text-2xl font-bold">Not found</h1>
-        <Link href="/questions" className="mt-4 inline-flex text-sm text-primary underline underline-offset-4">
-          ← Back to library
-        </Link>
-      </div>
-    );
+    notFound();
   }
+
+  const questions = getQuestionsByCert(cert as CertificationType);
 
   return (
     <div className="max-w-[1200px] mx-auto px-8 py-20">

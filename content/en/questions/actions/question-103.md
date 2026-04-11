@@ -5,7 +5,7 @@ title: "Question 103"
 
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore
-1. [x] the workflow will only run when both `branches` and `paths` are satisfied
-1. [ ] the workflow will run when either `branches` or `paths` are satisfied, but will only apply the matching filter
-1. [ ] the workflow will run when either `branches` or `paths` are satisfied
-1. [ ] the workflow will not run when both `branches` and `paths` are satisfied
+- [x] the workflow will only run when both `branches` and `paths` are satisfied
+- [ ] the workflow will run when either `branches` or `paths` are satisfied, but will only apply the matching filter
+- [ ] the workflow will run when either `branches` or `paths` are satisfied
+- [ ] the workflow will not run when both `branches` and `paths` are satisfied

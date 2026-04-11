@@ -4,7 +4,7 @@ title: "Question 017"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-for-pull-request-events
-1. [x] Using `branches` filter
-1. [ ] Using `branch` filter
-1. [ ] You create the workflow only on `prod` branch
-1. [ ] Using glob patterns
+- [x] Using `branches` filter
+- [ ] Using `branch` filter
+- [ ] You create the workflow only on `prod` branch
+- [ ] Using glob patterns

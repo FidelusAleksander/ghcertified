@@ -4,7 +4,7 @@ title: "Question 094"
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages
-1. [x] Use `GITHUB_TOKEN` for publishing packages associated with the workflow repository, and a PAT for installing packages from private repositories.
-1. [ ] GitHub Packages cannot be used in GitHub Actions workflows or any CI/CD tools.
-1. [ ] Only SSH keys are required for using GitHub Packages in workflows.
-1. [ ] Manual download and upload of packages is required for each workflow run.
+- [x] Use `GITHUB_TOKEN` for publishing packages associated with the workflow repository, and a PAT for installing packages from private repositories.
+- [ ] GitHub Packages cannot be used in GitHub Actions workflows or any CI/CD tools.
+- [ ] Only SSH keys are required for using GitHub Packages in workflows.
+- [ ] Manual download and upload of packages is required for each workflow run.

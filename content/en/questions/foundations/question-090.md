@@ -5,7 +5,7 @@ question: "Which of these is a repository feature that is used as a community fo
 
 
 > https://docs.github.com/en/discussions/quickstart#introduction
-1. [x] Discussions
-1. [ ] Wikis
-1. [ ] Gists
-1. [ ] Pull requests
+- [x] Discussions
+- [ ] Wikis
+- [ ] Gists
+- [ ] Pull requests

@@ -5,19 +5,19 @@ title: "Question 028"
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
 
-1. [x] Use `concurrency` on workflow level
+- [x] Use `concurrency` on workflow level
 ```yaml
 concurrency: ${{ github.workflow }}
 ```
-1. [ ] Use `queue` on workflow level
+- [ ] Use `queue` on workflow level
 ```yaml
 queue: ${{ github.workflow }}
 ```
-1. [ ] Use `order` on workflow level
+- [ ] Use `order` on workflow level
 ```yaml
 order: ${{ github.workflow }}
 ```
-1. [ ] Use `parallel` on workflow level
+- [ ] Use `parallel` on workflow level
 ```yaml
 parallel: ${{ github.workflow }}
 ```

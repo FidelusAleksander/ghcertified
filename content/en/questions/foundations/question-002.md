@@ -4,7 +4,7 @@ question: "Which of these GitHub features serves the purpose of an adaptable spr
 ---
 
 
-1. [x] GitHub Project
-1. [ ] GitHub Copilot
-1. [ ] GitHub Repository
-1. [ ] GitHub Organization
+- [x] GitHub Project
+- [ ] GitHub Copilot
+- [ ] GitHub Repository
+- [ ] GitHub Organization

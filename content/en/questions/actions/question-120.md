@@ -6,7 +6,7 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
 
 > https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runspost-entrypoint
 
-1. [x] 
+- [x] 
 ```yaml
     runs:
       using: 'docker'
@@ -15,7 +15,7 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
       post-entrypoint: 'cleanup.sh'
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     runs:
       using: 'docker'
@@ -24,7 +24,7 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
       post: 'cleanup.sh'
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     runs:
       using: 'docker'
@@ -33,7 +33,7 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
       after: 'cleanup.sh'
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     runs:
       using: 'docker'
@@ -42,7 +42,7 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
       after-entrypoint: 'cleanup.sh'
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
     runs:
       using: 'docker'

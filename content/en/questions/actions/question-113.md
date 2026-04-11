@@ -18,7 +18,7 @@ jobs:
             - run: npm install -g bats
 ```
 > https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution
-1. [x] the `production-deploy` job will be marked as skipped
-1. [ ] the `production-deploy` job will error
-1. [ ] the `production-deploy` job will execute three steps
-1. [ ] the `production-deploy` job will run if the `node-version` is `14`
+- [x] the `production-deploy` job will be marked as skipped
+- [ ] the `production-deploy` job will error
+- [ ] the `production-deploy` job will execute three steps
+- [ ] the `production-deploy` job will run if the `node-version` is `14`

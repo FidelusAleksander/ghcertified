@@ -4,7 +4,7 @@ title: "Question 098"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-1. [ ] add a condition in the workflow YAML for weekdays
-1. [ ] it is not possible in GitHub actions
-1. [ ] use the on: schedule: weekdays event trigger
-1. [x] use the on: schedule: cron event trigger
+- [ ] add a condition in the workflow YAML for weekdays
+- [ ] it is not possible in GitHub actions
+- [ ] use the on: schedule: weekdays event trigger
+- [x] use the on: schedule: cron event trigger

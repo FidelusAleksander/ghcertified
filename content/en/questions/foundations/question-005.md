@@ -5,7 +5,7 @@ question: "What are the different available options for adding issues and pull r
 
 
 > https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
-1. [x] Individually, automatically, or in bulk.
-1. [ ] Only manually, one at a time.
-1. [ ] Only individually or in bulk
-1. [ ] Only automatically using project workflows
+- [x] Individually, automatically, or in bulk.
+- [ ] Only manually, one at a time.
+- [ ] Only individually or in bulk
+- [ ] Only automatically using project workflows

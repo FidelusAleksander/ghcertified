@@ -5,7 +5,7 @@ question: "Fill in the blank: `GitHub __________ is a feature that you can use t
 
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning
-1. [x] Code Scanning
-1. [ ] Dependency Graph
-1. [ ] Security Advisories
-1. [ ] Vulnerability Detection
+- [x] Code Scanning
+- [ ] Dependency Graph
+- [ ] Security Advisories
+- [ ] Vulnerability Detection

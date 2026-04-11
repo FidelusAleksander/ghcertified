@@ -6,7 +6,7 @@ question: "What syntax is used in GitHub Markdown to create a task list?"
 
 > https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
 
-1. [x] `- [ ] and - [x]`
-1. [ ] `# TODO: and # DONE:`
-1. [ ] `// TODO: and // DONE:`
-1. [ ] `<task> and <done>`
+- [x] `- [ ] and - [x]`
+- [ ] `# TODO: and # DONE:`
+- [ ] `// TODO: and // DONE:`
+- [ ] `<task> and <done>`

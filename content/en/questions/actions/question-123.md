@@ -19,7 +19,7 @@ jobs:
 
 > https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow
 
-1. [x] Create a GitHub secret `MY_ACCESS_TOKEN`
+- [x] Create a GitHub secret `MY_ACCESS_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -27,7 +27,7 @@ with:
     token: ${{ secrets.MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] Create an input `MY_ACCESS_TOKEN`
+- [ ] Create an input `MY_ACCESS_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -35,7 +35,7 @@ with:
     token: ${{ MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] The environmental variable `GITHUB_TOKEN`
+- [ ] The environmental variable `GITHUB_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -43,7 +43,7 @@ with:
     token: $GITHUB_TOKEN
 ```
 
-1. [ ] Leave as is since access tokens will be passed automatically
+- [ ] Leave as is since access tokens will be passed automatically
 ```yaml
 with:
     repository: my-org/my-private-repo

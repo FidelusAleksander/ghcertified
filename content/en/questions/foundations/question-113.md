@@ -6,7 +6,7 @@ question: "Which Markdown element is not correctly paired with its syntax?"
 
 > https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
 
-1. [ ] Heading - `# Heading`
-1. [ ] Bold text - `**bold**`
-1. [x] Inline code - `'''code'''`
-1. [ ] Hyperlink - `[title](https://)`
+- [ ] Heading - `# Heading`
+- [ ] Bold text - `**bold**`
+- [x] Inline code - `'''code'''`
+- [ ] Hyperlink - `[title](https://)`
