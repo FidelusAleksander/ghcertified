@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
+import { Play, Check, Shield } from "lucide-react";
 
 /**
  * Certification data for the homepage preview cards.
@@ -14,21 +16,17 @@ const certifications = [
     name: "GitHub Actions",
     desc: "Automate workflows, CI/CD pipelines, and event-driven processes on GitHub.",
     questions: 127,
-    color: "#1a6cff",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
-        <polygon points="5 3 19 12 5 21 5 3" />
-      </svg>
-    ),
+    colorClass: "bg-cert-actions",
+    icon: <Play className="text-primary-foreground" />,
   },
   {
     id: "foundations",
     name: "GitHub Foundations",
     desc: "Core GitHub concepts, repositories, collaboration, and essential Git workflows.",
     questions: 147,
-    color: "#1cb87e",
+    colorClass: "bg-cert-foundations",
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary-foreground">
         <rect x="3" y="3" width="18" height="18" rx="2" />
         <path d="M9 9h6M9 13h4" />
       </svg>
@@ -39,12 +37,8 @@ const certifications = [
     name: "Advanced Security",
     desc: "Code scanning, secret scanning, Dependabot, and security policy management.",
     questions: 116,
-    color: "#7c3aed",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
+    colorClass: "bg-cert-advanced-security",
+    icon: <Shield className="text-primary-foreground" />,
   },
 ];
 
@@ -63,10 +57,8 @@ export default function HomePage() {
             variant="secondary"
             className="bg-primary-soft border border-primary/20 text-primary mb-6 px-3.5 py-1.5 text-[12.5px] font-semibold rounded-full"
           >
-            <span className="w-5 h-5 bg-primary rounded-full flex items-center justify-center mr-2">
-              <svg viewBox="0 0 12 12" width="11" height="11" fill="none">
-                <path d="M2 6l3 3 5-5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            <span className="size-5 bg-primary rounded-full flex items-center justify-center mr-2">
+              <Check className="text-primary-foreground" />
             </span>
             Community-Powered · 500+ Questions
           </Badge>
@@ -81,23 +73,22 @@ export default function HomePage() {
             and zero fluff.
           </p>
           <div className="flex gap-3 items-center flex-wrap">
-            <Link
-              href="/practice-tests"
-              className="inline-flex h-auto items-center gap-2 rounded-[10px] bg-foreground px-7 py-3.5 text-[15px] font-semibold text-card transition-colors hover:bg-foreground/90"
+            <Button
+              render={<Link href="/practice-tests" />}
+              nativeButton={false}
+              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-semibold bg-foreground text-card hover:bg-foreground/90"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
+              <Play data-icon="inline-start" />
               Start Practicing
-            </Link>
-            <a
-              href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex h-auto items-center rounded-[10px] border border-border px-7 py-3.5 text-[15px] font-medium text-foreground transition-colors hover:bg-secondary"
+            </Button>
+            <Button
+              variant="outline"
+              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+              nativeButton={false}
+              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium"
             >
               Contribute Questions
-            </a>
+            </Button>
           </div>
 
           <Separator className="mt-12 mb-0" />
@@ -124,7 +115,7 @@ export default function HomePage() {
           {/* Floating score badge */}
           <Card className="absolute -top-5 -right-5 z-10 shadow-md">
             <CardContent className="px-4 py-3.5 flex items-center gap-2.5">
-              <div className="w-9 h-9 bg-success-soft rounded-[9px] flex items-center justify-center text-lg">🏆</div>
+              <div className="size-9 bg-success-soft rounded-[9px] flex items-center justify-center text-lg">🏆</div>
               <div>
                 <div className="font-display text-xl font-bold text-foreground">87%</div>
                 <div className="text-xs text-muted-foreground">Latest score</div>
@@ -133,7 +124,7 @@ export default function HomePage() {
           </Card>
 
           {/* Mock quiz card */}
-          <Card className="shadow-lg rounded-[20px] relative z-[2]">
+          <Card className="shadow-lg rounded-[20px] relative">
             <CardContent className="p-7">
               <div className="flex items-center gap-3 mb-6">
                 <Badge className="bg-foreground text-card hover:bg-foreground font-display text-[11px] font-bold tracking-wide">ACTIONS</Badge>
@@ -146,8 +137,8 @@ export default function HomePage() {
               <div className="flex flex-col gap-2">
                 {["Workflow level", "Step level", "Job level"].map((opt, i) => (
                   <div key={i} className={`flex items-center gap-3 px-3.5 py-2.5 border-[1.5px] rounded-[10px] text-sm ${i === 0 || i === 2 ? "border-success bg-success-soft" : "border-destructive bg-destructive-soft"}`}>
-                    <div className={`w-[18px] h-[18px] rounded-full border-2 flex items-center justify-center flex-shrink-0 ${i === 0 || i === 2 ? "border-success bg-success" : "border-destructive bg-destructive"}`}>
-                      <div className="w-2 h-2 rounded-full bg-card" />
+                    <div className={`size-[18px] rounded-full border-2 flex items-center justify-center flex-shrink-0 ${i === 0 || i === 2 ? "border-success bg-success" : "border-destructive bg-destructive"}`}>
+                      <div className="size-2 rounded-full bg-card" />
                     </div>
                     {opt}
                   </div>
@@ -181,21 +172,22 @@ export default function HomePage() {
               mirror the real exams.
             </p>
           </div>
-          <Link
-            href="/practice-tests"
-            className="inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          <Button
+            render={<Link href="/practice-tests" />}
+            nativeButton={false}
+            className="text-sm font-semibold"
           >
             View all tests →
-          </Link>
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map((cert) => (
             <Link key={cert.id} href={`/practice-tests/${cert.id}`} className="no-underline">
-              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(222,100%,95%)] hover:-translate-y-0.5 cursor-pointer bg-card">
+              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card">
                 <CardContent className="p-6 flex flex-col gap-4">
                   <div className="flex items-center gap-3.5">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: cert.color }}>
+                    <div className={`size-12 rounded-xl flex items-center justify-center flex-shrink-0 ${cert.colorClass}`}>
                       {cert.icon}
                     </div>
                     <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>

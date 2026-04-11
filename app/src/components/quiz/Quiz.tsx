@@ -12,13 +12,16 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
-import { shuffle } from "@/lib/utils";
+import { shuffle, cn } from "@/lib/utils";
 import Link from "next/link";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Flag, Info, ChevronLeft, ChevronRight } from "lucide-react";
 import { QuizResults } from "./QuizResults";
 
 interface QuizProps {
@@ -120,7 +123,24 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   // Loading
   if (quizQuestions.length === 0) {
-    return <div className="py-12 text-center text-muted-foreground">Loading questions…</div>;
+    return (
+      <div className="max-w-[1200px] mx-auto px-8 py-12">
+        <div className="flex items-center justify-between mb-9">
+          <div>
+            <Skeleton className="h-4 w-40 mb-2" />
+            <Skeleton className="h-8 w-64" />
+          </div>
+          <Skeleton className="h-2 w-60" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
+          <Skeleton className="h-[400px] rounded-xl" />
+          <div className="flex flex-col gap-4">
+            <Skeleton className="h-32 rounded-xl" />
+            <Skeleton className="h-48 rounded-xl" />
+          </div>
+        </div>
+      </div>
+    );
   }
 
   // Complete
@@ -165,10 +185,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
                 title={isFlagged ? "Unflag this question" : "Flag for review"}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill={isFlagged ? "hsl(var(--warning))" : "none"} stroke={isFlagged ? "hsl(var(--warning))" : "currentColor"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={isFlagged ? "text-warning" : "text-card/50"}>
-                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-                  <line x1="4" y1="22" x2="4" y2="15" />
-                </svg>
+                <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
                 <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? "Flagged" : "Flag"}</span>
               </button>
               <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
@@ -184,7 +201,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             </div>
             {currentQuestion.isMultiSelect && (
               <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4 italic">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
+                <Info />
                 Select all that apply
               </div>
             )}
@@ -195,30 +212,26 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const isSelected = currentSelected.has(answer.id);
                 const isCorrectOpt = answer.isCorrect;
 
-                // Option styling
-                let optionClass = "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left";
-                if (isRevealed) {
-                  if (isCorrectOpt) optionClass += " border-success bg-success-soft";
-                  else if (isSelected && !isCorrectOpt) optionClass += " border-destructive bg-destructive-soft";
-                  else optionClass += " border-border bg-card";
-                } else if (isSelected) {
-                  optionClass += " border-primary bg-primary-soft";
-                } else {
-                  optionClass += " border-border bg-card hover:border-primary hover:bg-primary-soft";
-                }
+                const optionClass = cn(
+                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left",
+                  isRevealed && isCorrectOpt && "border-success bg-success-soft",
+                  isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
+                  isRevealed && !isCorrectOpt && !isSelected && "border-border bg-card",
+                  !isRevealed && isSelected && "border-primary bg-primary-soft",
+                  !isRevealed && !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
+                );
 
                 // Selector dot/check styling
                 const shape = currentQuestion.isMultiSelect ? "rounded-[5px]" : "rounded-full";
-                let selectorClass = `w-5 h-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center ${shape}`;
-                if (isRevealed) {
-                  if (isCorrectOpt) selectorClass += " border-success bg-success";
-                  else if (isSelected) selectorClass += " border-destructive bg-destructive";
-                  else selectorClass += " border-border-dark";
-                } else if (isSelected) {
-                  selectorClass += " border-primary bg-primary";
-                } else {
-                  selectorClass += " border-border-dark";
-                }
+                const selectorClass = cn(
+                  "size-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center",
+                  shape,
+                  isRevealed && isCorrectOpt && "border-success bg-success",
+                  isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive",
+                  isRevealed && !isCorrectOpt && !isSelected && "border-border-dark",
+                  !isRevealed && isSelected && "border-primary bg-primary",
+                  !isRevealed && !isSelected && "border-border-dark",
+                );
 
                 return (
                   <button
@@ -230,7 +243,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   >
                     <div className={selectorClass}>
                       {(isSelected || (isRevealed && isCorrectOpt)) && (
-                        <div className="w-2 h-2 rounded-full bg-card" />
+                        <div className="size-2 rounded-full bg-card" />
                       )}
                     </div>
                     <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
@@ -268,28 +281,27 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           <div className="px-7 py-5 flex items-center justify-between gap-3 flex-wrap">
             <div>
               {!isRevealed && currentSelected.size > 0 && (
-                <button
-                  onClick={handleCheck}
-                  className="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-[13.5px] font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
+                <Button onClick={handleCheck}>
                   Check Answer
-                </button>
+                </Button>
               )}
             </div>
             <div className="flex gap-2">
-              <button
+              <Button
+                variant="outline"
                 onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className="inline-flex items-center rounded-lg border border-border px-4 py-2 text-[13.5px] font-semibold text-foreground transition-colors hover:bg-secondary disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                ← Previous
-              </button>
-              <button
+                <ChevronLeft data-icon="inline-start" />
+                Previous
+              </Button>
+              <Button
                 onClick={handleNext}
-                className="inline-flex items-center rounded-lg bg-foreground px-4 py-2 text-[13.5px] font-semibold text-card transition-colors hover:bg-foreground/90"
+                className="bg-foreground text-card hover:bg-foreground/90"
               >
-                {currentIndex < quizQuestions.length - 1 ? "Next question →" : "See Results →"}
-              </button>
+                {currentIndex < quizQuestions.length - 1 ? "Next question" : "See Results"}
+                <ChevronRight data-icon="inline-end" />
+              </Button>
             </div>
           </div>
         </Card>
@@ -298,20 +310,22 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         <div className="flex flex-col gap-4">
           {/* Session Score */}
           <Card className="shadow-sm border-[1.5px]">
-            <CardContent className="p-5">
-              <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Session Score</div>
+            <CardHeader className="p-5 pb-0">
+              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">Session Score</CardTitle>
+            </CardHeader>
+            <CardContent className="p-5 pt-3.5">
               <div className="flex items-center gap-3 mb-3.5">
                 <div
-                  className="w-[60px] h-[60px] rounded-full flex items-center justify-center flex-shrink-0 relative"
+                  className="size-[60px] rounded-full flex items-center justify-center flex-shrink-0 relative"
                   style={{ background: `conic-gradient(hsl(var(--success)) 0% ${scorePercent}%, hsl(var(--border)) ${scorePercent}% 100%)` }}
                 >
-                  <div className="absolute w-11 h-11 bg-card rounded-full" />
+                  <div className="absolute size-11 bg-card rounded-full" />
                   <span className="font-display text-[15px] font-bold text-foreground relative z-10">{scorePercent}%</span>
                 </div>
                 <div className="text-[13px] text-muted-foreground leading-[1.8] flex-1">
-                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-success mr-1.5" />Correct</span><span className="font-semibold text-foreground">{correctCount}</span></div>
-                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-destructive mr-1.5" />Incorrect</span><span className="font-semibold text-foreground">{wrongCount}</span></div>
-                  <div className="flex justify-between"><span><span className="inline-block w-2 h-2 rounded-full bg-border-dark mr-1.5" />Remaining</span><span className="font-semibold text-foreground">{quizQuestions.length - answeredCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-success mr-1.5" />Correct</span><span className="font-semibold text-foreground">{correctCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-destructive mr-1.5" />Incorrect</span><span className="font-semibold text-foreground">{wrongCount}</span></div>
+                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-border-dark mr-1.5" />Remaining</span><span className="font-semibold text-foreground">{quizQuestions.length - answeredCount}</span></div>
                 </div>
               </div>
             </CardContent>
@@ -319,24 +333,26 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
           {/* Question Map */}
           <Card className="shadow-sm border-[1.5px]">
-            <CardContent className="p-5">
-              <div className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground mb-3.5">Question Map</div>
+            <CardHeader className="p-5 pb-0">
+              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">Question Map</CardTitle>
+            </CardHeader>
+            <CardContent className="p-5 pt-3.5">
               <div className="flex flex-wrap gap-x-1.5 gap-y-3.5 pt-2">
                 {quizQuestions.map((q, i) => {
                   const isQuestionFlagged = flaggedSet.has(i);
-                  let btnClass = "w-[30px] h-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative";
-                  if (i === currentIndex) {
-                    btnClass += " bg-primary text-primary-foreground border-primary";
-                  } else if (revealedMap[i]) {
-                    const sel = selectedAnswers[q.id] ?? new Set<string>();
-                    const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
-                    const correct = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
-                    btnClass += correct
-                      ? " border-success bg-success-soft text-success"
-                      : " border-destructive bg-destructive-soft text-destructive";
-                  } else {
-                    btnClass += " border-border bg-card text-muted-foreground hover:border-primary hover:text-primary";
-                  }
+                  const btnClass = cn(
+                    "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative",
+                    i === currentIndex && "bg-primary text-primary-foreground border-primary",
+                    i !== currentIndex && revealedMap[i] && (() => {
+                      const sel = selectedAnswers[q.id] ?? new Set<string>();
+                      const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
+                      const correct = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
+                      return correct
+                        ? "border-success bg-success-soft text-success"
+                        : "border-destructive bg-destructive-soft text-destructive";
+                    })(),
+                    i !== currentIndex && !revealedMap[i] && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+                  );
                   return (
                     <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
                       {i + 1}
@@ -349,10 +365,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               </div>
               {flaggedSet.size > 0 && (
                 <div className="mt-3 flex items-center gap-1.5 text-[12px] text-warning">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="hsl(var(--warning))" stroke="none">
-                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-                    <line x1="4" y1="22" x2="4" y2="15" />
-                  </svg>
+                  <Flag className="fill-warning" />
                   <span className="font-medium">{flaggedSet.size} flagged for review</span>
                 </div>
               )}
@@ -361,19 +374,20 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
           {/* Contribute CTA */}
           <Card className="bg-foreground text-card border-foreground">
-            <CardContent className="p-5">
-              <div className="font-display text-[15px] font-bold mb-2">Found this useful?</div>
+            <CardHeader className="p-5 pb-0">
+              <CardTitle className="font-display text-[15px] font-bold">Found this useful?</CardTitle>
+            </CardHeader>
+            <CardContent className="p-5 pt-2">
               <div className="text-[13px] text-card/65 leading-relaxed mb-3.5">
                 Give back to the community by contributing a question — it only takes a few minutes.
               </div>
-              <a
-                href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-lg bg-card px-4 py-2 text-sm font-bold text-foreground transition-colors hover:bg-card/90"
+              <Button
+                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+                nativeButton={false}
+                className="bg-card text-foreground hover:bg-card/90 font-bold"
               >
                 ✍️ Contribute a question
-              </a>
+              </Button>
             </CardContent>
           </Card>
         </div>

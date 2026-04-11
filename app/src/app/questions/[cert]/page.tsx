@@ -37,7 +37,7 @@ export default async function CertQuestionsPage({ params }: Props) {
         {questions.length} questions available
       </p>
 
-      <div className="space-y-2">
+      <div className="flex flex-col gap-2">
         {questions.map((q, i) => (
           <Link key={q.id} href={`/questions/${cert}/${q.id}`} className="no-underline block">
             <Card className="transition-all hover:border-primary hover:-translate-y-0.5 cursor-pointer">

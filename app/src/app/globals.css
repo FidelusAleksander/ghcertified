@@ -94,6 +94,12 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-cert-actions: var(--cert-actions);
+  --color-cert-foundations: var(--cert-foundations);
+  --color-cert-advanced-security: var(--cert-advanced-security);
+  --color-cert-admin: var(--cert-admin);
+  --color-cert-copilot: var(--cert-copilot);
+  --color-hover-ring: var(--primary-soft);
 }
 
 /*
@@ -143,6 +149,17 @@
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+/*
+ * Certification track colors — semantic vars for cert-specific branding.
+ */
+:root {
+  --cert-actions: hsl(220 100% 55%);
+  --cert-foundations: hsl(157 74% 41%);
+  --cert-advanced-security: hsl(269 67% 52%);
+  --cert-admin: hsl(27 90% 47%);
+  --cert-copilot: hsl(0 0% 6%);
 }
 
 @layer base {

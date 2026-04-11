@@ -22,7 +22,7 @@ export default function QuestionsPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {CERT_CATALOG.map((cert) => (
           <Link key={cert.cert} href={`/questions/${cert.cert}`} className="no-underline">
-            <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(222,100%,95%)] hover:-translate-y-0.5 cursor-pointer bg-card">
+            <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card">
               <CardContent className="p-6">
                 <h2 className="font-display text-[17px] font-bold tracking-tight text-foreground">
                   {cert.title}

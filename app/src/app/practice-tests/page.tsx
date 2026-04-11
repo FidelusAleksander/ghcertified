@@ -12,13 +12,15 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Play, Clock, Shield, Users, Bot } from "lucide-react";
 
 const certifications = [
-  { id: "actions", name: "GitHub Actions", questions: 127, color: "#1a6cff", desc: "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> },
-  { id: "foundations", name: "GitHub Foundations", questions: 147, color: "#1cb87e", desc: "Core concepts, repositories, issues, pull requests, GitHub Flow, and Codespaces.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg> },
-  { id: "advanced_security", name: "GitHub Advanced Security", questions: 116, color: "#7c3aed", desc: "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
-  { id: "admin", name: "GitHub Administration", questions: 96, color: "#e8750a", desc: "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> },
-  { id: "copilot", name: "GitHub Copilot", questions: 38, color: "#0f0f0f", desc: "AI pair programming, prompt engineering, Copilot features, and responsible use.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"><path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9-4-9-9-9z"/><path d="M9 10h.01M15 10h.01M9.5 15a5 5 0 005 0"/></svg> },
+  { id: "actions", name: "GitHub Actions", questions: 127, colorClass: "bg-cert-actions", desc: "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.", icon: <Play className="text-primary-foreground" /> },
+  { id: "foundations", name: "GitHub Foundations", questions: 147, colorClass: "bg-cert-foundations", desc: "Core concepts, repositories, issues, pull requests, GitHub Flow, and Codespaces.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary-foreground"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg> },
+  { id: "advanced_security", name: "GitHub Advanced Security", questions: 116, colorClass: "bg-cert-advanced-security", desc: "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.", icon: <Shield className="text-primary-foreground" /> },
+  { id: "admin", name: "GitHub Administration", questions: 96, colorClass: "bg-cert-admin", desc: "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.", icon: <Users className="text-primary-foreground" /> },
+  { id: "copilot", name: "GitHub Copilot", questions: 38, colorClass: "bg-cert-copilot", desc: "AI pair programming, prompt engineering, Copilot features, and responsible use.", icon: <Bot className="text-primary-foreground" /> },
 ];
 
 export default function PracticeTestsPage() {
@@ -43,10 +45,10 @@ export default function PracticeTestsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {certifications.map((cert) => (
-          <Card key={cert.id} className="bg-card transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(222,100%,95%)] hover:-translate-y-0.5">
+          <Card key={cert.id} className="bg-card transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5">
             <CardContent className="p-6 flex flex-col gap-4">
               <div className="flex items-center gap-3.5">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: cert.color }}>
+                <div className={`size-12 rounded-xl flex items-center justify-center flex-shrink-0 ${cert.colorClass}`}>
                   {cert.icon}
                 </div>
                 <div>
@@ -68,12 +70,13 @@ export default function PracticeTestsPage() {
                   />
                   <span className="text-[12.5px] text-muted-foreground whitespace-nowrap">questions</span>
                 </div>
-                <Link
-                  href={`/practice-tests/${cert.id}?questions=${counts[cert.id] ?? 20}`}
-                  className="inline-flex items-center rounded-[9px] bg-primary px-4 py-2 text-[13.5px] font-semibold text-primary-foreground whitespace-nowrap transition-colors hover:bg-primary/90"
+                <Button
+                  render={<Link href={`/practice-tests/${cert.id}?questions=${counts[cert.id] ?? 20}`} />}
+                  nativeButton={false}
+                  className="rounded-[9px] text-[13.5px] font-semibold whitespace-nowrap"
                 >
                   Start →
-                </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
@@ -83,11 +86,8 @@ export default function PracticeTestsPage() {
         <Card className="bg-card opacity-55 pointer-events-none">
           <CardContent className="p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3.5">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-muted-foreground/30">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 8v4l3 3" />
-                </svg>
+              <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-muted-foreground/30">
+                <Clock className="text-primary-foreground" />
               </div>
               <div className="font-display text-[17px] font-bold text-foreground tracking-tight">More tracks coming</div>
             </div>

@@ -10,6 +10,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { CheckCircle } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -25,11 +27,8 @@ export function Navbar() {
       <div className="max-w-[1200px] mx-auto px-8 flex items-center h-16 gap-10">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
-          <div className="w-[34px] h-[34px] bg-foreground rounded-[9px] flex items-center justify-center">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-              <path d="M9 12l2 2 4-4" />
-            </svg>
+          <div className="size-[34px] bg-foreground rounded-[9px] flex items-center justify-center text-card">
+            <CheckCircle />
           </div>
           <span className="font-display font-bold text-[17px] text-foreground tracking-tight">
             gh<span className="text-primary">certified</span>
@@ -61,20 +60,21 @@ export function Navbar() {
 
         {/* Right-side actions */}
         <div className="flex items-center gap-3 ml-auto">
-          <a
-            href="https://github.com/FidelusAleksander/ghcertified"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-9 items-center rounded-lg border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+          <Button
+            variant="outline"
+            size="lg"
+            render={<a href="https://github.com/FidelusAleksander/ghcertified" target="_blank" rel="noreferrer" />}
+            nativeButton={false}
           >
             ⭐ Star on GitHub
-          </a>
-          <Link
-            href="/practice-tests"
-            className="inline-flex h-9 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          </Button>
+          <Button
+            size="lg"
+            render={<Link href="/practice-tests" />}
+            nativeButton={false}
           >
             Start Practicing →
-          </Link>
+          </Button>
         </div>
       </div>
     </nav>

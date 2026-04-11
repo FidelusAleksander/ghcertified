@@ -5,8 +5,9 @@
  */
 
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import { Question } from "@/types/quiz";
 
 interface QuizResultsProps {
@@ -33,13 +34,13 @@ export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsPro
   return (
     <div className="max-w-[600px] mx-auto px-8 py-20">
       <Card className="shadow-sm border-[1.5px]">
-        <CardContent className="p-8 text-center space-y-6">
+        <CardContent className="p-8 text-center flex flex-col gap-6">
           {/* Score circle */}
           <div
-            className="mx-auto w-32 h-32 rounded-full flex items-center justify-center relative"
+            className="mx-auto size-32 rounded-full flex items-center justify-center relative"
             style={{ background: `conic-gradient(${passed ? "hsl(var(--success))" : "hsl(var(--destructive))"} 0% ${pct}%, hsl(var(--border)) ${pct}% 100%)` }}
           >
-            <div className="absolute w-24 h-24 bg-card rounded-full" />
+            <div className="absolute size-24 bg-card rounded-full" />
             <span className="font-display text-3xl font-bold text-foreground relative z-10 tabular-nums">{pct}%</span>
           </div>
 
@@ -70,18 +71,21 @@ export function QuizResults({ questions, selectedAnswers, cert }: QuizResultsPro
 
           {/* Actions */}
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href={`/practice-tests/${cert}?questions=${total}`}
-              className="inline-flex items-center rounded-[10px] bg-foreground px-7 py-3 text-sm font-semibold text-card transition-colors hover:bg-foreground/90"
+            <Button
+              render={<Link href={`/practice-tests/${cert}?questions=${total}`} />}
+              nativeButton={false}
+              className="rounded-[10px] px-7 py-3 h-auto text-sm font-semibold"
             >
               Try Again
-            </Link>
-            <Link
-              href="/practice-tests"
-              className="inline-flex items-center rounded-[10px] border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            </Button>
+            <Button
+              variant="outline"
+              render={<Link href="/practice-tests" />}
+              nativeButton={false}
+              className="rounded-[10px] px-7 py-3 h-auto text-sm font-medium"
             >
               Back to Tests
-            </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>
