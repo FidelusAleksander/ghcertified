@@ -1,5 +1,5 @@
 ---
-question: "You defined a matrix job `example_matrix`. How can limit the matrix to run a maximum of 2 jobs at a time?"
+question: "You defined a matrix job `example_matrix`. How can you limit the matrix to run a maximum of 2 jobs at a time?"
 title: "Question 036"
 ---
 
