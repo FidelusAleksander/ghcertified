@@ -10,7 +10,7 @@
  * Stateless — no scoring, no flagging, no shuffling, no results screen.
  */
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";

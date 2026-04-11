@@ -4,43 +4,23 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, Check, Shield } from "lucide-react";
+import { Play, Check } from "lucide-react";
 import { CERT_CATALOG } from "@/lib/questions";
+import { CERT_META } from "@/lib/cert-meta";
 
 /**
- * Certification data for the homepage preview cards.
- * Icons and descriptions are static; question counts come from CERT_CATALOG.
+ * Homepage shows only a subset of certifications as preview cards.
+ * Full list lives on /practice-tests.
  */
-const certMeta: Record<string, { desc: string; colorClass: string; icon: React.ReactNode }> = {
-  actions: {
-    desc: "Automate workflows, CI/CD pipelines, and event-driven processes on GitHub.",
-    colorClass: "bg-cert-actions",
-    icon: <Play className="text-primary-foreground" />,
-  },
-  foundations: {
-    desc: "Core GitHub concepts, repositories, collaboration, and essential Git workflows.",
-    colorClass: "bg-cert-foundations",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary-foreground">
-        <rect x="3" y="3" width="18" height="18" rx="2" />
-        <path d="M9 9h6M9 13h4" />
-      </svg>
-    ),
-  },
-  advanced_security: {
-    desc: "Code scanning, secret scanning, Dependabot, and security policy management.",
-    colorClass: "bg-cert-advanced-security",
-    icon: <Shield className="text-primary-foreground" />,
-  },
-};
+const HOMEPAGE_CERTS = ["actions", "foundations", "advanced_security"] as const;
 
 const certifications = CERT_CATALOG
-  .filter((c) => c.cert in certMeta)
+  .filter((c) => HOMEPAGE_CERTS.includes(c.cert as (typeof HOMEPAGE_CERTS)[number]))
   .map((c) => ({
     id: c.cert,
     name: c.title,
     questions: c.questionCount,
-    ...certMeta[c.cert],
+    ...CERT_META[c.cert],
   }));
 
 /**

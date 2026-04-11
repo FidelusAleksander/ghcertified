@@ -5,21 +5,13 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
-import { Play, Shield, Users, Bot } from "lucide-react";
+import { CERT_META } from "@/lib/cert-meta";
 
 interface CertData {
   id: string;
   name: string;
   questions: number;
 }
-
-const CERT_META: Record<string, { colorClass: string; desc: string; icon: React.ReactNode }> = {
-  actions: { colorClass: "bg-cert-actions", desc: "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.", icon: <Play className="text-primary-foreground" /> },
-  foundations: { colorClass: "bg-cert-foundations", desc: "Core concepts, repositories, issues, pull requests, GitHub Flow, and Codespaces.", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-primary-foreground"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg> },
-  advanced_security: { colorClass: "bg-cert-advanced-security", desc: "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.", icon: <Shield className="text-primary-foreground" /> },
-  admin: { colorClass: "bg-cert-admin", desc: "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.", icon: <Users className="text-primary-foreground" /> },
-  copilot: { colorClass: "bg-cert-copilot", desc: "AI pair programming, prompt engineering, Copilot features, and responsible use.", icon: <Bot className="text-primary-foreground" /> },
-};
 
 interface Props {
   certs: CertData[];
@@ -32,7 +24,7 @@ export function CatalogCards({ certs }: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {certs.map((cert) => {
-        const meta = CERT_META[cert.id];
+        const meta = CERT_META[cert.id as keyof typeof CERT_META];
         if (!meta) return null;
 
         const count = counts[cert.id] ?? defaultCount(cert.questions);
