@@ -20,8 +20,15 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert } from "lucide-react";
 import { QuizResults } from "./QuizResults";
 
 interface QuizProps {
@@ -45,9 +52,9 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
-  const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
   const [flaggedSet, setFlaggedSet] = useState<Set<number>>(new Set());
   const [isComplete, setIsComplete] = useState(false);
+  const [showConfirmDialog, setShowConfirmDialog] = useState(false);
   const [manualMapPage, setManualMapPage] = useState<number | null>(null);
 
   // Question map pagination
@@ -60,7 +67,6 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   const currentQuestion = quizQuestions[currentIndex];
   const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
-  const isRevealed = revealedMap[currentIndex] || false;
   const isFlagged = flaggedSet.has(currentIndex);
 
   const handleToggleFlag = useCallback(() => {
@@ -74,7 +80,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
   const handleToggleAnswer = useCallback(
     (answerId: string) => {
-      if (isRevealed || !currentQuestion) return;
+      if (!currentQuestion) return;
 
       setSelectedAnswers((prev) => {
         const qId = currentQuestion.id;
@@ -95,13 +101,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         return { ...prev, [qId]: current };
       });
     },
-    [currentQuestion, isRevealed]
+    [currentQuestion]
   );
-
-  const handleCheck = () => {
-    if (currentSelected.size === 0) return;
-    setRevealedMap((prev) => ({ ...prev, [currentIndex]: true }));
-  };
 
   const handleNext = () => {
     if (currentIndex < quizQuestions.length - 1) {
@@ -110,8 +111,6 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         setManualMapPage(null);
       }
       setCurrentIndex(next);
-    } else {
-      setIsComplete(true);
     }
   };
 
@@ -125,31 +124,29 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
     }
   };
 
-  // Check if current answer correct
-  const isCurrentCorrect = () => {
-    if (!currentQuestion) return false;
-    const correctIds = new Set(currentQuestion.answers.filter((a) => a.isCorrect).map((a) => a.id));
-    return correctIds.size === currentSelected.size && [...correctIds].every((id) => currentSelected.has(id));
+  // Exam submission stats — 3 states
+  const getQuestionState = (q: Question): "answered" | "partial" | "unanswered" => {
+    const sel = selectedAnswers[q.id]?.size ?? 0;
+    if (sel === 0) return "unanswered";
+    if (q.isMultiSelect) {
+      const correctCount = q.answers.filter((a) => a.isCorrect).length;
+      return sel < correctCount ? "partial" : "answered";
+    }
+    return "answered";
   };
 
-  // Score calculations for sidebar
-  const answeredCount = Object.keys(revealedMap).length;
-  let correctCount = 0;
-  let partialCount = 0;
-  for (const qIdx of Object.keys(revealedMap)) {
-    const q = quizQuestions[Number(qIdx)];
-    if (!q) continue;
-    const sel = selectedAnswers[q.id] ?? new Set<string>();
-    const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
-    const allCorrect = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
-    if (allCorrect) {
-      correctCount++;
-    } else if (q.isMultiSelect && [...sel].some((id) => correctIds.has(id))) {
-      partialCount++;
-    }
-  }
-  const wrongCount = answeredCount - correctCount - partialCount;
-  const scorePercent = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+  const fullyAnsweredCount = quizQuestions.filter((q) => getQuestionState(q) === "answered").length;
+  const partialCount = quizQuestions.filter((q) => getQuestionState(q) === "partial").length;
+  const unansweredCount = quizQuestions.filter((q) => getQuestionState(q) === "unanswered").length;
+
+  const handleSubmitExam = () => {
+    setShowConfirmDialog(true);
+  };
+
+  const handleConfirmSubmit = () => {
+    setShowConfirmDialog(false);
+    setIsComplete(true);
+  };
 
   // Loading
   if (quizQuestions.length === 0) {
@@ -230,8 +227,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
             </div>
             {currentQuestion.isMultiSelect && (
-              <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4">
-                <Info className="size-3.5" />
+              <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
+                <Info className="size-4 flex-shrink-0" />
                 Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
               </div>
             )}
@@ -240,27 +237,19 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <div className="flex flex-col gap-2.5">
               {currentQuestion.answers.map((answer) => {
                 const isSelected = currentSelected.has(answer.id);
-                const isCorrectOpt = answer.isCorrect;
 
                 const optionClass = cn(
                   "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left",
-                  isRevealed && isCorrectOpt && "border-success bg-success-soft",
-                  isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
-                  isRevealed && !isCorrectOpt && !isSelected && "border-border bg-card",
-                  !isRevealed && isSelected && "border-primary bg-primary-soft",
-                  !isRevealed && !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
+                  isSelected && "border-primary bg-primary-soft",
+                  !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
                 );
 
-                // Selector dot/check styling
                 const shape = currentQuestion.isMultiSelect ? "rounded-[5px]" : "rounded-full";
                 const selectorClass = cn(
                   "size-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center",
                   shape,
-                  isRevealed && isCorrectOpt && "border-success bg-success",
-                  isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive",
-                  isRevealed && !isCorrectOpt && !isSelected && "border-border-dark",
-                  !isRevealed && isSelected && "border-primary bg-primary",
-                  !isRevealed && !isSelected && "border-border-dark",
+                  isSelected && "border-primary bg-primary",
+                  !isSelected && "border-border-dark",
                 );
 
                 return (
@@ -268,11 +257,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     key={answer.id}
                     type="button"
                     onClick={() => handleToggleAnswer(answer.id)}
-                    disabled={isRevealed}
                     className={optionClass}
                   >
                     <div className={selectorClass}>
-                      {(isSelected || (isRevealed && isCorrectOpt)) && (
+                      {isSelected && (
                         <div className="size-2 rounded-full bg-card" />
                       )}
                     </div>
@@ -281,41 +269,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 );
               })}
             </div>
-
-            {/* Feedback alert */}
-            {isRevealed && (
-              <Alert className={`mt-5 ${isCurrentCorrect() ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive"}`}>
-                <AlertTitle className="flex items-center gap-2">
-                  <span className="text-lg">{isCurrentCorrect() ? "✅" : "❌"}</span>
-                  {isCurrentCorrect() ? "Correct!" : "Not quite!"}
-                </AlertTitle>
-                <AlertDescription className="text-sm leading-relaxed">
-                  {currentQuestion.hint && (
-                    <a
-                      href={currentQuestion.hint}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-4 hover:opacity-80"
-                    >
-                      📖 Learn more in the docs
-                    </a>
-                  )}
-                </AlertDescription>
-              </Alert>
-            )}
           </CardContent>
 
           <Separator />
 
           {/* Navigation footer */}
           <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-3 flex-wrap">
-            <div>
-              {!isRevealed && currentSelected.size > 0 && (
-                <Button onClick={handleCheck}>
-                  Check Answer
-                </Button>
-              )}
-            </div>
+            <div />
             <div className="flex gap-2">
               <Button
                 variant="outline"
@@ -325,46 +285,29 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 <ChevronLeft data-icon="inline-start" />
                 Previous
               </Button>
-              <Button
-                onClick={handleNext}
-                className="bg-foreground text-card hover:bg-foreground/90"
-              >
-                {currentIndex < quizQuestions.length - 1 ? "Next question" : "See Results"}
-                <ChevronRight data-icon="inline-end" />
-              </Button>
+              {currentIndex < quizQuestions.length - 1 ? (
+                <Button
+                  onClick={handleNext}
+                  className="bg-foreground text-card hover:bg-foreground/90"
+                >
+                  Next question
+                  <ChevronRight data-icon="inline-end" />
+                </Button>
+              ) : (
+                <Button
+                  onClick={handleSubmitExam}
+                  className="bg-foreground text-card hover:bg-foreground/90"
+                >
+                  <Send data-icon="inline-start" className="size-4" />
+                  Submit Exam
+                </Button>
+              )}
             </div>
           </div>
         </Card>
 
         {/* Sidebar */}
         <div className="flex flex-col gap-4">
-          {/* Session Score */}
-          <Card className="shadow-sm border-[1.5px]">
-            <CardHeader className="p-5 pb-0">
-              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">Session Score</CardTitle>
-            </CardHeader>
-            <CardContent className="p-5 pt-3.5">
-              <div className="flex items-center gap-3 mb-3.5">
-                <div
-                  className="size-[60px] rounded-full flex items-center justify-center flex-shrink-0 relative"
-                  style={{
-                    background: answeredCount > 0
-                      ? `conic-gradient(hsl(var(--success)) 0% ${scorePercent}%, hsl(38 92% 50%) ${scorePercent}% ${scorePercent + Math.round((partialCount / answeredCount) * 100)}%, hsl(var(--destructive)) ${scorePercent + Math.round((partialCount / answeredCount) * 100)}% ${scorePercent + Math.round((partialCount / answeredCount) * 100) + Math.round((wrongCount / answeredCount) * 100)}%, hsl(var(--border)) ${scorePercent + Math.round((partialCount / answeredCount) * 100) + Math.round((wrongCount / answeredCount) * 100)}% 100%)`
-                      : `conic-gradient(hsl(var(--border)) 0% 100%)`
-                  }}
-                >
-                  <div className="absolute size-11 bg-card rounded-full" />
-                  <span className="font-display text-[15px] font-bold text-foreground relative z-10">{scorePercent}%</span>
-                </div>
-                <div className="text-[13px] text-muted-foreground leading-[1.8] flex-1">
-                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-success mr-1.5" />Correct</span><span className="font-semibold text-foreground">{correctCount}</span></div>
-                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full mr-1.5" style={{ backgroundColor: "hsl(38 92% 50%)" }} />Partial</span><span className="font-semibold text-foreground">{partialCount}</span></div>
-                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-destructive mr-1.5" />Incorrect</span><span className="font-semibold text-foreground">{wrongCount}</span></div>
-                  <div className="flex justify-between"><span><span className="inline-block size-2 rounded-full bg-border-dark mr-1.5" />Remaining</span><span className="font-semibold text-foreground">{quizQuestions.length - answeredCount}</span></div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
 
           {/* Question Map */}
           <Card className="shadow-sm border-[1.5px]">
@@ -378,19 +321,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 {quizQuestions.slice(mapStart, mapEnd).map((q, offset) => {
                   const i = mapStart + offset;
                   const isQuestionFlagged = flaggedSet.has(i);
+                  const state = getQuestionState(q);
                   const btnClass = cn(
                     "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative",
                     i === currentIndex && "bg-primary text-primary-foreground border-primary",
-                    i !== currentIndex && revealedMap[i] && (() => {
-                      const sel = selectedAnswers[q.id] ?? new Set<string>();
-                      const correctIds = new Set(q.answers.filter((a) => a.isCorrect).map((a) => a.id));
-                      const correct = correctIds.size === sel.size && [...correctIds].every((id) => sel.has(id));
-                      if (correct) return "border-success bg-success-soft text-success";
-                      const partial = q.isMultiSelect && [...sel].some((id) => correctIds.has(id));
-                      if (partial) return "border-amber-500 bg-amber-50 text-amber-600";
-                      return "border-destructive bg-destructive-soft text-destructive";
-                    })(),
-                    i !== currentIndex && !revealedMap[i] && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+                    i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
+                    i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                    i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
                   );
                   return (
                     <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
@@ -444,12 +381,21 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   </button>
                 </div>
               )}
-              {flaggedSet.size > 0 && (
-                <div className="mt-3 flex items-center gap-1.5 text-[12px] text-warning">
-                  <Flag className="fill-warning" />
-                  <span className="font-medium">{flaggedSet.size} flagged for review</span>
+              {/* Legend */}
+              <div className="mt-3 pt-3 border-t border-border flex flex-col gap-1.5 text-[11px] text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <span className="inline-block size-3 rounded-[3px] bg-foreground/10 border border-foreground/30" />
+                  Answered
                 </div>
-              )}
+                <div className="flex items-center gap-2">
+                  <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50 dark:bg-amber-950/30" />
+                  Partially answered
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="inline-block size-3 rounded-[3px] bg-card border border-border" />
+                  Unanswered
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -473,6 +419,79 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           </Card>
         </div>
       </div>
+
+      {/* Submit confirmation dialog */}
+      <Dialog open={showConfirmDialog} onOpenChange={setShowConfirmDialog}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle className="font-display text-xl font-extrabold">Submit Practice Test?</DialogTitle>
+            <DialogDescription className="text-muted-foreground">
+              You won&apos;t be able to change your answers after submitting.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="py-4">
+            <div className="flex flex-col gap-2.5 text-[14px]">
+              <div className="flex justify-between items-center">
+                <span className="flex items-center gap-2">
+                  <span className="inline-block size-2.5 rounded-full bg-foreground/30" />
+                  Answered
+                </span>
+                <span className="font-semibold text-foreground tabular-nums">{fullyAnsweredCount}</span>
+              </div>
+              {partialCount > 0 && (
+                <div className="flex justify-between items-center">
+                  <span className="flex items-center gap-2">
+                    <span className="inline-block size-2.5 rounded-full bg-amber-500" />
+                    Partially answered
+                  </span>
+                  <span className="font-semibold text-foreground tabular-nums">{partialCount}</span>
+                </div>
+              )}
+              <div className="flex justify-between items-center">
+                <span className="flex items-center gap-2">
+                  <span className="inline-block size-2.5 rounded-full bg-border-dark" />
+                  Unanswered
+                </span>
+                <span className="font-semibold text-foreground tabular-nums">{unansweredCount}</span>
+              </div>
+              {flaggedSet.size > 0 && (
+                <div className="flex justify-between items-center">
+                  <span className="flex items-center gap-2">
+                    <span className="text-sm">🚩</span>
+                    Flagged for review
+                  </span>
+                  <span className="font-semibold text-foreground tabular-nums">{flaggedSet.size}</span>
+                </div>
+              )}
+            </div>
+            {(unansweredCount > 0 || partialCount > 0) && (
+              <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-[13.5px] text-amber-700 dark:text-amber-400">
+                <TriangleAlert className="size-4 mt-0.5 flex-shrink-0" />
+                <span>
+                  You have{" "}
+                  {unansweredCount > 0 && (
+                    <strong>{unansweredCount} unanswered</strong>
+                  )}
+                  {unansweredCount > 0 && partialCount > 0 && " and "}
+                  {partialCount > 0 && (
+                    <strong>{partialCount} partially answered</strong>
+                  )}
+                  {" "}question{(unansweredCount + partialCount) !== 1 ? "s" : ""}. These will be marked as incorrect.
+                </span>
+              </div>
+            )}
+          </div>
+          <DialogFooter className="gap-2 sm:gap-0">
+            <Button variant="outline" onClick={() => setShowConfirmDialog(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleConfirmSubmit} className="bg-foreground text-card hover:bg-foreground/90">
+              <Send className="size-4" />
+              Submit Exam
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

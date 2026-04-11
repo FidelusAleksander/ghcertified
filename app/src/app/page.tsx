@@ -1,27 +1,19 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, Check, ArrowRight } from "lucide-react";
+import { Play, ArrowRight } from "lucide-react";
 import { CERT_CATALOG } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
 
-/**
- * Homepage shows only a subset of certifications as preview cards.
- * Full list lives on /practice-tests.
- */
-const HOMEPAGE_CERTS = ["actions", "foundations", "advanced_security"] as const;
-
-const certifications = CERT_CATALOG
-  .filter((c) => HOMEPAGE_CERTS.includes(c.cert as (typeof HOMEPAGE_CERTS)[number]))
-  .map((c) => ({
-    id: c.cert,
-    name: c.title,
-    questions: c.questionCount,
-    ...CERT_META[c.cert],
-  }));
+const certifications = CERT_CATALOG.map((c) => ({
+  id: c.cert,
+  name: c.title,
+  questions: c.questionCount,
+  ...CERT_META[c.cert],
+}));
 
 /**
  * Homepage — hero section + certification tracks preview.
@@ -29,20 +21,11 @@ const certifications = CERT_CATALOG
  */
 export default function HomePage() {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-12 sm:pb-20">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-10 sm:pt-24 pb-8 sm:pb-20">
       {/* Hero — two columns */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pb-14 sm:pb-20">
         {/* Left column: copy */}
         <div>
-          <Badge
-            variant="secondary"
-            className="bg-primary-soft border border-primary/20 text-primary mb-6 px-3.5 py-1.5 text-[12.5px] font-semibold rounded-full"
-          >
-            <span className="size-5 bg-primary rounded-full flex items-center justify-center mr-2">
-              <Check className="text-primary-foreground" />
-            </span>
-            Community-Powered · 500+ Questions
-          </Badge>
           <h1 className="font-display text-[clamp(36px,4vw,52px)] font-extrabold leading-[1.08] tracking-tight text-foreground mb-5">
             Ace your<br />
             <span className="text-primary">GitHub</span><br />
@@ -53,11 +36,11 @@ export default function HomePage() {
             GitHub certification tracks. Immediate feedback, randomized sessions,
             and zero fluff.
           </p>
-          <div className="flex gap-3 items-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
             <Button
               render={<Link href="/practice-tests" />}
               nativeButton={false}
-              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-semibold bg-foreground text-card hover:bg-foreground/90"
+              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-semibold bg-foreground text-card hover:bg-foreground/90 justify-center"
             >
               <Play data-icon="inline-start" />
               Start Practicing
@@ -66,23 +49,27 @@ export default function HomePage() {
               variant="outline"
               render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
               nativeButton={false}
-              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium"
+              className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
               Contribute Questions
             </Button>
           </div>
 
-          <Separator className="mt-12 mb-0" />
+          <Separator className="mt-10 sm:mt-12 mb-0" />
 
           {/* Stats row */}
-          <div className="flex gap-8 pt-8">
-            <div>
-              <div className="font-display text-[28px] font-bold text-foreground tracking-tight">500+</div>
-              <div className="text-[13px] text-muted-foreground mt-0.5">Practice questions</div>
+          <div className="grid grid-cols-3 gap-4 pt-6 sm:pt-8">
+            <div className="text-center sm:text-left">
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">500+</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Practice questions</div>
             </div>
-            <div>
-              <div className="font-display text-[28px] font-bold text-foreground tracking-tight">5</div>
-              <div className="text-[13px] text-muted-foreground mt-0.5">Certification tracks</div>
+            <div className="text-center sm:text-left">
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">5</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Cert tracks</div>
+            </div>
+            <div className="text-center sm:text-left">
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-primary tracking-tight">Free</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">Open source</div>
             </div>
           </div>
         </div>
@@ -90,7 +77,7 @@ export default function HomePage() {
         {/* Right column: mock quiz card (hidden on mobile) */}
         <div className="relative hidden lg:block">
           {/* Floating score badge */}
-          <Card className="absolute -top-5 -right-5 z-10 shadow-md">
+          <Card className="absolute -top-4 -right-3 z-10 shadow-md rotate-3">
             <CardContent className="px-4 py-3.5 flex items-center gap-2.5">
               <div className="size-9 bg-success-soft rounded-[9px] flex items-center justify-center text-lg">🏆</div>
               <div>
@@ -101,7 +88,7 @@ export default function HomePage() {
           </Card>
 
           {/* Mock quiz card */}
-          <Card className="shadow-lg rounded-[20px] relative">
+          <Card className="shadow-xl rounded-[20px] relative -rotate-1 transition-transform hover:rotate-0 hover:shadow-2xl">
             <CardContent className="p-7">
               <div className="flex items-center gap-3 mb-6">
                 <Badge className="bg-foreground text-card hover:bg-foreground font-display text-[11px] font-bold tracking-wide">ACTIONS</Badge>
@@ -135,11 +122,11 @@ export default function HomePage() {
       </div>
 
       {/* Certification tracks section */}
-      <div className="mt-6">
+      <div className="mt-2 sm:mt-6">
         <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
           Certification Tracks
         </div>
-        <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
+        <div className="flex items-end justify-between mb-8 sm:mb-10 gap-4 flex-wrap">
           <div>
             <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
               Pick your<br />certification path
@@ -149,16 +136,9 @@ export default function HomePage() {
               mirror the real exams.
             </p>
           </div>
-          <Button
-            render={<Link href="/practice-tests" />}
-            nativeButton={false}
-            className="text-sm font-semibold"
-          >
-            View all tests →
-          </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map((cert) => (
             <Link key={cert.id} href={`/practice-tests/${cert.id}`} className="group no-underline">
               <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card h-full">

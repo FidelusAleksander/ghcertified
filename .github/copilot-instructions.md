@@ -36,3 +36,6 @@ Access at `http://localhost:3000`. The dev server provides hot reload.
 cd app && npm run build   # production build
 cd app && npm run lint     # ESLint
 ```
+
+## Browser Testing
+Use the **agent-browser** skill for any tasks that involve browser interaction — such as testing the website, verifying UI changes, taking screenshots, checking page behavior, or any form of exploratory/automated browser testing.

@@ -62,8 +62,12 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
         const current = new Set(prev[qId] ?? []);
 
         if (currentQuestion.isMultiSelect) {
-          if (current.has(answerId)) current.delete(answerId);
-          else current.add(answerId);
+          const correctMax = currentQuestion.answers.filter((a) => a.isCorrect).length;
+          if (current.has(answerId)) {
+            current.delete(answerId);
+          } else if (current.size < correctMax) {
+            current.add(answerId);
+          }
         } else {
           current.clear();
           current.add(answerId);
@@ -76,9 +80,15 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   );
 
   const handleCheck = () => {
-    if (currentSelected.size === 0) return;
+    if (!canCheck) return;
     setRevealedMap((prev) => ({ ...prev, [currentIndex]: true }));
   };
+
+  // Check Answer is enabled only when the right number of answers is selected
+  const requiredCount = currentQuestion
+    ? (currentQuestion.isMultiSelect ? currentQuestion.answers.filter((a) => a.isCorrect).length : 1)
+    : 1;
+  const canCheck = currentSelected.size === requiredCount;
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) handleSetCurrentIndex((i) => i + 1);
@@ -213,9 +223,9 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           </div>
 
           {currentQuestion.isMultiSelect && (
-            <div className="flex items-center gap-1.5 text-[12.5px] text-muted-foreground mb-4 italic">
-              <Info />
-              Select all that apply
+            <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
+              <Info className="size-4 flex-shrink-0" />
+              Select exactly {currentQuestion.answers.filter((a) => a.isCorrect).length} answers
             </div>
           )}
 
@@ -294,8 +304,8 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
         {/* Navigation footer */}
         <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-3 flex-wrap">
           <div>
-            {!isRevealed && currentSelected.size > 0 && (
-              <Button onClick={handleCheck}>Check Answer</Button>
+            {!isRevealed && (
+              <Button onClick={handleCheck} disabled={!canCheck}>Check Answer</Button>
             )}
           </div>
           <div className="flex gap-2">
