@@ -1,11 +1,9 @@
 ---
-title: "Pregunta 045"
-question: "¿Qué puedes encontrar en la pestaña de seguridad de un repository?"
+question: "¿Qué puedes encontrar en la pestaña de seguridad de un repositorio?"
+documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
 ---
 
-
-> https://docs.github.com/en/code-security/getting-started/securing-your-repository
-1. [x] Una vista general de seguridad de ese repository, como vulnerabilidades en dependencias, resultados de escaneo de código y alertas de escaneo de secretos
-1. [ ] Una lista de todos los Issues de GitHub que se han abierto en el repository por razones de seguridad
-1. [ ] Una lista de todas las mejores prácticas que GitHub recomienda para asegurar tu software
-1. [ ] Información de contacto del equipo de seguridad de GitHub
+- [x] Un resumen de seguridad de ese repositorio, como vulnerabilidades en las dependencias, resultados del análisis de código y alertas de escaneo de secretos
+- [ ] Una lista de todos los GitHub Issues que se han abierto en el repositorio por razones de seguridad
+- [ ] Una lista de todas las prácticas recomendadas que GitHub sugiere para proteger tu software
+- [ ] Información de contacto del equipo de seguridad de GitHub
