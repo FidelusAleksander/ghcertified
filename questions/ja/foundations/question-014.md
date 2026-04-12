@@ -1,11 +1,10 @@
 ---
-title: "質問 014"
-question: "IssueやPull Requestで同じコメントを何度も書く場合、時間を節約するために使えるGitHubの機能はどれですか？"
+question: "課題やプルリクエストに対して同じコメントセットを繰り返し書くことが多い場合、時間を節約するためにどのGitHub機能を使用しますか？"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
-1. [x] Saved replies
-1. [ ] コメントテンプレート
-1. [ ] Repositoryテンプレート
-1. [ ] ラベル
+- [x] Saved replies
+- [ ] Comment templates
+- [ ] Repository templates
+- [ ] Labels
+---
