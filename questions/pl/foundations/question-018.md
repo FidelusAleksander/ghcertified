@@ -1,10 +1,10 @@
 ---
-title: "Pytanie 018"
-question: "Jak nazywa się platforma ciągłej integracji i ciągłego wdrażania (CI/CD) GitHub?"
+question: "Jak nazywa się platforma GitHub do ciągłej integracji i ciągłego dostarczania (CI/CD)?"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
-1. [x] GitHub Actions  
-1. [ ] GitHub Workflows  
-1. [ ] GitHub Pipelines  
-1. [ ] GitHub Projects  
+- [x] GitHub Actions
+- [ ] GitHub Workflows
+- [ ] GitHub Pipelines
+- [ ] GitHub Projects
+---
