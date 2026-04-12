@@ -1,12 +1,10 @@
 ---
-title: "質問 112"
-question: "GitHub Markdownでタスクリストを作成する構文はどれですか？"
+question: "GitHub Markdownでタスクリストを作成するには、どのような構文を使用しますか？"
+documentation: "https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown"
 ---
 
+- [x] `- [ ] and - [x]`
+- [ ] `# TODO: and # DONE:`
+- [ ] `// TODO: and // DONE:`
+- [ ] `<task> and <done>`
 
-> https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
-
-1. [x] `- [ ]` および `- [x]`
-1. [ ] `# TODO:` および `# DONE:`
-1. [ ] `// TODO:` および `// DONE:`
-1. [ ] `<task>` および `<done>`
