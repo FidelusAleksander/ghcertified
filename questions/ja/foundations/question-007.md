@@ -1,11 +1,10 @@
 ---
-title: "質問 007"
-question: "Kanbanボードとして最適なGitHub Projectのレイアウトはどれですか？"
+question: "どのGitHub Projectレイアウトがカンバンボードとして最適ですか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout#about-the-board-layout"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout#about-the-board-layout
-1. [x] ボードレイアウト
-1. [ ] テーブルレイアウト
-1. [ ] ロードマップレイアウト
-1. [ ] アジャイルレイアウト
+- [x] Board layout
+- [ ] Table layout
+- [ ] Roadmap layout
+- [ ] Agile layout
+---
