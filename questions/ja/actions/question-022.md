@@ -1,8 +1,7 @@
 ---
-question: "`workflow_dispatch` イベントトリガーのみを持つWorkflowは、GitHubのREST APIを使用してトリガーできます"
-title: "質問 022"
+question: "`workflow_dispatch` イベントトリガーのみを持つワークフローは、GitHub の REST API を使用してトリガーできます"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
-1. [x] 正しい
-1. [ ] 誤り
+- [x] 正しい  
+- [ ] 誤り  
