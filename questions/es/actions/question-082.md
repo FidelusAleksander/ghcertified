@@ -1,11 +1,10 @@
 ---
-title: "Pregunta 082"
-question: "¿Cómo puedes asegurarte de que un job se ejecute solo en una rama específica?"
+question: "¿Cómo puedes garantizar que un trabajo se ejecute solo en una rama específica?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters
-1. [x] Usando el filtro branches  
-1. [ ] Usando el filtro runs-on  
-1. [ ] Usando el filtro jobs  
-1. [ ] Usando la palabra clave branch  
+- [x] Usando el filtro branches
+- [ ] Usando el filtro runs-on
+- [ ] Usando el filtro jobs
+- [ ] Usando la palabra clave branch
+---
