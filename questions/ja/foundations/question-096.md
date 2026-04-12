@@ -1,9 +1,7 @@
 ---
-title: "質問 096"
-question: "IssueとDiscussionの違いについて正しい説明はどれですか？"
+question: "問題とディスカッションの違いに関する以下の記述のうち、正しいものはどれですか？"
+documentation: "https://docs.github.com/en/discussions/quickstart"
 ---
 
-
-> https://docs.github.com/en/discussions/quickstart
-1. [x] GitHub Discussionsは、透明性とアクセス性が必要だがプロジェクトボードでの追跡やコードとの関連が不要な会話向け。一方、GitHub Issuesはそうではない
-1. [ ] GitHub Issuesは、透明性とアクセス性が必要だがプロジェクトボードでの追跡やコードとの関連が不要な会話向け。一方、GitHub Discussionsはそうではない
+- [x] GitHub Discussionsは、透明性とアクセス性が必要で、プロジェクトボードで追跡する必要がなく、コードに関連しない会話に適しています（GitHub Issuesとは異なります）。
+- [ ] GitHub Issuesは、透明性とアクセス性が必要で、プロジェクトボードで追跡する必要がなく、コードに関連しない会話に適しています（GitHub Discussionsとは異なります）。
