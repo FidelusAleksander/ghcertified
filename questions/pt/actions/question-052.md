@@ -1,9 +1,8 @@
 ---
-question: "Essa afirmação é verdadeira? `Docker container actions are usually slower than JavaScript actions`"
-title: "Pergunta 052"
+question: "Esta afirmação é verdadeira? `As ações de contêiner Docker geralmente são mais lentas que as ações JavaScript`"
 ---
 
-> Docker container actions são mais lentas do que JavaScript actions  
-1. [x] Verdadeiro  
-1. [ ] Falso  
-> Por causa da latência para construir e recuperar o container, Docker container actions são mais lentas do que JavaScript actions.
+> As ações de contêiner Docker são mais lentas que as ações JavaScript
+- [x] Verdadeiro
+- [ ] Falso
+> Devido à latência para construir e recuperar o contêiner, as ações de contêiner Docker são mais lentas que as ações JavaScript.
