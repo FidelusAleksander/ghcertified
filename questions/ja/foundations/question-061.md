@@ -1,11 +1,9 @@
 ---
-title: "質問 061"
 question: "GitHubにおけるフォークとは何ですか？"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
 ---
 
-
-> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
-1. [x] 他のユーザーのRepositoryを、自分のアカウント上にコピーしたもの
-1. [ ] ブランチが2つ以上に分岐する地点
-1. [ ] リモートRepositoryと同期していない状態のRepository
-1. [ ] デフォルトブランチと同期していないブランチ
+- [x] フォークは、他のユーザーのRepositoryを自分のアカウント内にコピーしたものです。
+- [ ] フォークは、Branchが少なくとも2つ以上に分岐する場所のことです。
+- [ ] フォークは、リモートRepositoryと同期していない状態のRepositoryのことです。
+- [ ] フォークは、RepositoryのDefault Branchと同期していないBranchのことです。
