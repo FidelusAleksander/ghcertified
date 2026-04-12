@@ -63,17 +63,20 @@ All of the site content in this repository is stored in [questions/](https://git
 
 ```markdown
 ---
-question: "<Fill in the Question>"
+question: "Which GitHub Actions syntax correctly defines a job that runs on Ubuntu?"
 ---
 
-> (optional hint) text hint or a link
-- [x] Correct Answer
-- [ ] Incorrect Answer
-- [ ] Incorrect Answer
-- [ ] Incorrect Answer
+> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+- [x] `runs-on: ubuntu-latest`
+- [ ] `os: ubuntu-latest`
+- [ ] `platform: ubuntu-latest`
+- [ ] `environment: ubuntu-latest`
 ```
 
 3) Fill in the question and answers.
+
+📖 **[Question Writing Guide](questions/README.md)** — all supported features (code blocks, multi-select, hints), quality guidelines, and examples.
 
 
 ### Updating existing content

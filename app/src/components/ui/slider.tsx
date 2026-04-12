@@ -1,4 +1,7 @@
+"use client"
+
 import { Slider as SliderPrimitive } from "@base-ui/react/slider"
+import { useState, useEffect } from "react"
 
 import { cn } from "@/lib/utils"
 
@@ -15,6 +18,18 @@ function Slider({
     : Array.isArray(defaultValue)
       ? defaultValue
       : [min, max]
+
+  // Defer to client render to avoid Base UI's pre-hydration <script> warning
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  if (!mounted) {
+    return (
+      <div
+        className={cn("data-horizontal:w-full data-vertical:h-full", className)}
+        data-slot="slider"
+      />
+    )
+  }
 
   return (
     <SliderPrimitive.Root
