@@ -1,11 +1,10 @@
 ---
-title: "質問 097"
-question: "他の人と小さなコードスニペットを簡単に共有するのに最適なGitHubの機能はどれですか？"
+question: "GitHub の機能のうち、小さなコードスニペットを他の人と共有する最も簡単な方法として最適なのはどれですか？"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists"
 ---
 
+- [x] Gists
+- [ ] Wikis
+- [ ] Issues
+- [ ] Projects
 
-> https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-1. [x] Gists
-1. [ ] Wikis
-1. [ ] Issues
-1. [ ] Projects
