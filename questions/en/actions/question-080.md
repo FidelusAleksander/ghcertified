@@ -5,32 +5,32 @@ question: "What is the correct syntax for setting the directory for all `run` co
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory
 
 - [x] set `working-directory` under `defaults.run`
-   ```yaml
+```yaml
 defaults:
-    run:
-        shell: bash
-        working-directory: ./scripts
-   ```
-- [ ] set `directory` under `defaults.run`
-   ```yaml
-defaults:
-    run:
-        shell: bash
-        directory: ./scripts
-   ```
-- [ ] set `working-directory` under `job`
-   ```yaml
-defaults:
-    run:
-        shell: bash
-job:
+  run:
+    shell: bash
     working-directory: ./scripts
-   ```
-- [ ] set `directory` under `job`
-   ```yaml
+```
+- [ ] set `directory` under `defaults.run`
+```yaml
 defaults:
-    run:
-        shell: bash
-job:
+  run:
+    shell: bash
     directory: ./scripts
-   ```
+```
+- [ ] set `working-directory` under `job`
+```yaml
+defaults:
+  run:
+    shell: bash
+job:
+  working-directory: ./scripts
+```
+- [ ] set `directory` under `job`
+```yaml
+defaults:
+  run:
+    shell: bash
+job:
+  directory: ./scripts
+```

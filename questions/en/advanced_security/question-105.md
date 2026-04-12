@@ -5,37 +5,37 @@ question: "Which of these is a valid `dependabot.yml` configuration file?"
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 - [x] 
-    ```yaml 
+```yaml 
 version: 2
 updates:
-- package-ecosystem: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    ```
+```
 - [ ] 
-    ```yaml 
+```yaml 
 version: 2
 config:
-- directory: "/"
+  - directory: "/"
     schedule:
       interval: "daily"
-    ```
+```
 - [ ] 
-    ```yaml 
+```yaml 
 version: 2
 updates:
-- package-ecosystem: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "everyday"
-    ```
+```
 - [ ] 
-    ```yaml 
+```yaml 
 version: 2
 config:
-- package-ecosystem: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    ```
+```
