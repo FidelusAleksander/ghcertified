@@ -1,11 +1,10 @@
 ---
 question: "Które zdarzenie pozwala ręcznie uruchomić workflow z interfejsu użytkownika GitHub?"
-title: "Pytanie 020"
+documentation: "https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
-1. [x] workflow_dispatch
-1. [ ] manual_dispatch
-1. [ ] workflow_trigger
-1. [ ] manual_trigger
-
+- [x] workflow_dispatch
+- [ ] manual_dispatch
+- [ ] workflow_trigger
+- [ ] manual_trigger
+---
