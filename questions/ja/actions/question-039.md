@@ -1,9 +1,9 @@
 ---
-question: "この記述は正しいですか？ Workflowsは再利用できるが、再利用可能なWorkflowは別の再利用可能なWorkflowを呼び出すことはできない。"
-title: "質問 039"
+question: "この文は正しいですか？`Workflows can be reused, but a reusable workflow cannot call another reusable workflow.`"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows
-1. [x] 誤り
-1. [ ] 正しい
-> 再利用可能なWorkflowsはネスト可能だが、制限がある https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
+- [x] False
+- [ ] True
+> 再利用可能なWorkflowsは入れ子にすることができますが、制限があります https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
+
