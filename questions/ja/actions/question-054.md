@@ -1,14 +1,12 @@
 ---
-question: "カスタムGitHub Actionsを作成する際、すべてのActionの `metadata` を定義する必要があるファイルはどれですか？"
-title: "質問 054"
+question: "カスタムGitHub Actionsを作成する際、すべてのアクション`metadata`を定義する必要があるファイルはどれですか？"
+documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions"
 ---
 
-
-Metadata例: name、description、outputs、必須inputsなど  
-> https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
-1. [x] ActionのRepository内の `action.yml` または `action.yaml` ファイル
-1. [ ] Repositoryの `README` ファイル  
-> 推奨ではあるが、Actionが動作するための必須条件ではない
-1. [ ] 公開時にGitHub MarketplaceのUIで編集する
-1. [ ] ActionのRepository内の `action.yml` または `action.yaml` ファイル（ただし、公開や共有を目的としない場合は必須ではない）  
-> すべてのActionsにmetadataファイルは必須
+メタデータの例: name、description、outputs、または必須のinputs
+- [x] アクションリポジトリ内の`action.yml`または`action.yaml`ファイル
+- [ ] リポジトリの`README`ファイル
+> それを行うことは良い習慣ですが、アクションが機能するための要件ではありません
+- [ ] 公開して共有する際にGitHub Marketplace UIで編集
+- [ ] アクションリポジトリ内の`action.yml`または`action.yaml`ファイル。ただし、アクションが公開されて一般に使用されることを目的としていない場合は不要です
+> すべてのアクションにはメタデータファイルが必要です。
