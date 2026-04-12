@@ -10,4 +10,4 @@ question: "Which is true about workflows?"
 - [ ] Workflow can run only one job at a time
 - [ ] Workflows are written in any of `.yaml`, `.json` or `.toml` formats
 - [ ] Workflows can be shared in GitHub Marketplace
-  > Actions (not workflows) can be shared in GitHub Marketplace
+> Actions (not workflows) can be shared in GitHub Marketplace

@@ -118,6 +118,22 @@ Code blocks can also appear inside individual answer options:
 - [ ] By setting `SKIP_WORKFLOW` in the commit message
 ````
 
+### Answer explanations
+
+Add a blockquote (`>`) on the line immediately after an answer to explain why it's correct or incorrect. These are optional and help learners understand the reasoning.
+
+```markdown
+- [ ] Scheduled workflows run on the specific commit on last modified branch.
+> incorrect, both specific commit and on last modified branch
+- [x] Scheduled workflows run on the latest commit on the repository default branch.
+- [ ] Scheduled workflows run on the latest commit on the main branch.
+> latest commit is correct but the main branch is not
+```
+
+Keep explanations short — one line is ideal.
+
+
+
 ## Quality guidelines
 
 ### ✅ Do

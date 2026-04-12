@@ -7,6 +7,6 @@ draft: false
 
 - [ ] You can pin up to 10 repositories on your profile.  
 - [x] You can pin up to six repositories or gists on your profile for quick access.  
-  > **Correct**. GitHub supports pinning up to six items (repositories or gists).  
+> **Correct**. GitHub supports pinning up to six items (repositories or gists).  
 - [ ] You can only pin public repositories, not private ones.  
 - [ ] Pinning an item deletes it from your repository list.  
