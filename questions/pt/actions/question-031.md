@@ -1,17 +1,16 @@
 ---
-question: "Qual condicional `jobs.job_id.if` garantirá que o job `production-deploy` seja acionado apenas no repositório `my-org/my-repo`? (Selecione duas.)"
-title: "Pergunta 031"
+question: "Qual condicional `jobs.job_id.if` garantirá que o job `production-deploy` seja acionado apenas no repositório `my-org/my-repo`?"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/contexts#github-context"
 ---
 
 ```yaml
-  jobs:
-    production-deploy:  
-      if: <CONDITION>
-      runs-on: ubuntu-latest
-      steps:
-        ...
+jobs:
+  production-deploy:  
+    if: <CONDITION>
+    runs-on: ubuntu-latest
+    steps:
+      ...
 ```
-> https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 - [x] `if: github.repository == 'my-org/my-repo'`
 - [x] `if: ${{ github.repository == 'my-org/my-repo' }}`
 - [ ] `if: ${{ github.organization == 'my-org' && github.repository == 'my-repo' }}`
