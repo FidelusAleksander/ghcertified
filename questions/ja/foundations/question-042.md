@@ -1,11 +1,9 @@
 ---
-title: "質問 042"
 question: "`CODEOWNERS` ファイルの目的は何ですか？"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
 ---
 
-
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
-1. [x] `CODEOWNERS` ファイルでは、コードベース全体または特定部分の責任者となる個人やチームを定義できる
-1. [ ] `CODEOWNERS` ファイルには、ソフトウェアのライセンス料や使用条件に関する情報が含まれる
-1. [ ] `CODEOWNERS` ファイルには、コード品質や保守性に関する情報が含まれる
-1. [ ] `CODEOWNERS` ファイルには、Repositoryオーナーの連絡先情報が含まれる
+- [x] `CODEOWNERS` ファイルは、コードベースの特定の領域または全体に対して責任を持つ個人またはチームを定義することができます。
+- [ ] `CODEOWNERS` ファイルには、ソフトウェアのライセンス料金やコードの利用条件に関する情報が含まれています。
+- [ ] `CODEOWNERS` ファイルには、コード品質やコードの保守性に関する情報が含まれています。
+- [ ] `CODEOWNERS` ファイルには、リポジトリ所有者の連絡先情報が含まれています。
