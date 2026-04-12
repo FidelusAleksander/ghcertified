@@ -1,9 +1,8 @@
 ---
-title: "Pytanie 104"
-question: "Jeśli dyskusja na GitHub zostanie przekonwertowana na zgłoszenie (Issue) i to zgłoszenie zostanie zamknięte lub odwołane przy użyciu jego odpowiadającego numeru #, czy dyskusja zostanie zmodyfikowana?"
+question: "Czy dyskusja na GitHub zostanie zmodyfikowana, jeśli zostanie przekształcona w Issue, a problem zostanie zamknięty lub odwołany za pomocą odpowiadającego mu numeru #?"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion"
 ---
 
-> https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion  
-1. [x] Nie  
-1. [ ] Tak  
-> Gdy "konwertujesz" dyskusję na zgłoszenie, zasadniczo tworzysz nowe zgłoszenie, które jest miękko powiązane z dyskusją i automatycznie uzupełnia informację o zgłoszeniu. Nie ma większego powiązania między nimi.  
+- [x] Nie
+- [ ] Tak
+> Kiedy "konwertujesz" dyskusję na Issue, w zasadzie tworzysz nowe Issue, które jest miękko powiązane z dyskusją i automatycznie wypełnia informacje o problemie. Nie ma większego powiązania między nimi.
