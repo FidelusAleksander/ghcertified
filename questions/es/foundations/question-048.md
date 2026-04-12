@@ -1,10 +1,9 @@
 ---
-title: "Pregunta 048"
 question: "¿Qué son los Repository Insights?"
+documentation: "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs"
 ---
 
-> https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs
-1. [x] Es un lugar donde puedes ver datos sobre el repositorio, como la frecuencia de código, la lista de los colaboradores más activos y más.  
-1. [ ] Repository Insights es una función que te permite ver los secretos del repositorio y alertas de escaneo de código.  
-1. [ ] Es una lista de mejores prácticas a seguir al administrar un repositorio.  
-1. [ ] Es una función que te permite ver el resumen de seguridad del repositorio.
+- [x] Es un lugar donde puedes ver datos sobre el repository, como la frecuencia de código, una lista de los colaboradores más activos y más. 
+- [ ] Repository Insights es una funcionalidad que te permite ver las alertas de secret y análisis de código del repository.
+- [ ] Es una lista de mejores prácticas para seguir al administrar un repository.
+- [ ] Es una funcionalidad que te permite ver la vista general de seguridad del repository.
