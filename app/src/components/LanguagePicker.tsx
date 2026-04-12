@@ -82,7 +82,7 @@ export function LanguagePicker({ className }: { className?: string }) {
                 aria-selected={isActive}
                 onClick={() => handleSelect(loc)}
                 className={cn(
-                  "flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm transition-colors outline-none",
+                  "flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   isActive
                     ? "text-foreground"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground"

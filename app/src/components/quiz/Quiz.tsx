@@ -444,7 +444,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   const correct = isComplete ? isQuestionCorrect(q) : null;
                   const state = getQuestionState(q);
                   const btnClass = cn(
-                    "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative",
+                    "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                     // Active question highlight
                     i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
                     // Review mode: green/red + ring for active
@@ -473,7 +473,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <button
                     onClick={() => setManualMapPage(Math.max(0, mapPage - 1))}
                     disabled={mapPage === 0}
-                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                   >
                     <ChevronsLeft className="size-3.5" />
                   </button>
@@ -490,7 +490,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                         key={p}
                         onClick={() => setManualMapPage(p)}
                         className={cn(
-                          "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors",
+                          "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                           p === mapPage
                             ? "bg-primary text-primary-foreground"
                             : "text-muted-foreground hover:text-foreground hover:bg-muted",
@@ -503,7 +503,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <button
                     onClick={() => setManualMapPage(Math.min(mapTotalPages - 1, mapPage + 1))}
                     disabled={mapPage === mapTotalPages - 1}
-                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                   >
                     <ChevronsRight className="size-3.5" />
                   </button>

@@ -126,7 +126,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 key={i}
                 onClick={() => handleSetCurrentIndex(i)}
                 className={cn(
-                  "size-[30px] rounded-[7px] text-[11px] font-bold border flex-shrink-0 flex items-center justify-center cursor-pointer transition-colors",
+                  "size-[30px] rounded-[7px] text-[11px] font-bold border flex-shrink-0 flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   i === currentIndex
                     ? "bg-primary text-primary-foreground border-primary"
                     : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
@@ -146,7 +146,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                     key={i}
                     onClick={() => handleSetCurrentIndex(i)}
                     className={cn(
-                      "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors",
+                      "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                       i === currentIndex
                         ? "bg-primary text-primary-foreground border-primary"
                         : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
@@ -163,7 +163,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <button
                   onClick={() => setManualSidebarPage(Math.max(0, sidebarPage - 1))}
                   disabled={sidebarPage === 0}
-                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsLeft className="size-3.5" />
                 </button>
@@ -181,7 +181,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                       key={p}
                       onClick={() => setManualSidebarPage(p)}
                       className={cn(
-                        "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors",
+                        "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                         p === sidebarPage
                           ? "bg-primary text-primary-foreground"
                           : "text-muted-foreground hover:text-foreground hover:bg-muted",
@@ -194,7 +194,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <button
                   onClick={() => setManualSidebarPage(Math.min(totalPages - 1, sidebarPage + 1))}
                   disabled={sidebarPage === totalPages - 1}
-                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsRight className="size-3.5" />
                 </button>
@@ -251,7 +251,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               const isCorrectOpt = answer.isCorrect;
 
               const optionClass = cn(
-                "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left",
+                "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                 isRevealed && isCorrectOpt && "border-success bg-success-soft",
                 isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
                 isRevealed && !isCorrectOpt && !isSelected && "border-border bg-card",
