@@ -1,10 +1,9 @@
 ---
-title: "Pytanie 101"
 question: "Co się dzieje, gdy zdecydujesz się zamknąć Projekt?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects"
 ---
 
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects  
-1. [ ] Projekt jest trwale usuwany z platformy  
-1. [x] Zawartość jest zachowana i masz możliwość ponownego otwarcia go później.  
-1. [ ] Powiązane wartości i dane analityczne są usuwane  
-1. [ ] Projekt zostaje przeniesiony do oddzielnego folderu  
+- [ ] Projekt jest trwale usuwany z platformy
+- [x] Treść zostaje zachowana i możesz ponownie go otworzyć później.
+- [ ] Powiązane wartości i dane analityczne są usuwane
+- [ ] Projekt zostaje przeniesiony do osobnego folderu
