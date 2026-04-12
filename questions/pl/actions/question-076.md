@@ -1,13 +1,11 @@
 ---
-question: "Jaka jest maksymalna liczba wielokrotnego użytku workflows, które można wywołać z jednego pliku workflow?"
-title: "Pytanie 076"
+question: "Jaka jest maksymalna liczba wielokrotnego użycia workflowów, które można wywołać z jednego pliku workflow?"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations#limitations-of-reusable-workflows"
 ---
 
-
-> https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations#limitations-of-reusable-workflows
-1. [ ] 20
-1. [ ] 5
-1. [ ] 1
-1. [ ] 10
-1. [x] 50
+- [ ] 20
+- [ ] 5
+- [ ] 1
+- [ ] 10
+- [x] 50
 
