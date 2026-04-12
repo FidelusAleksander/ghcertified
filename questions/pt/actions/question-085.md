@@ -1,11 +1,10 @@
 ---
-title: "Pergunta 085"
 question: "Qual é o propósito da palavra-chave `with` em um workflow do GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
-1. [ ] Definir variáveis de ambiente  
-1. [x] Especificar parâmetros de entrada para uma ação  
-1. [ ] Configurar dependências  
-1. [ ] Disparar outro workflow  
+- [ ] Definir variáveis de ambiente
+- [x] Especificar parâmetros de entrada para uma action
+- [ ] Configurar dependências
+- [ ] Acionar outro workflow
+---
