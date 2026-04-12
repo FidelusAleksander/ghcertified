@@ -1,14 +1,12 @@
 ---
-title: "質問 053"
-question: "Organizationセキュリティマネージャーの役割は何ですか？"
+question: "組織のセキュリティマネージャーの役割は何ですか？"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] セキュリティアラートを閲覧し、Organization全体のコードセキュリティ設定を管理でき、すべてのRepositoryの読み取り権限を持つメンバー
-1. [ ] メンバーとしての権限に加え、非メンバーのコントリビューターをブロック/ブロック解除し、インタラクション制限を設定し、Organizationが所有する公開Repositoryのコメントを非表示にできるメンバー
+- [x] セキュリティマネージャーは、組織内のセキュリティアラートを表示し、コードセキュリティ設定を管理できる組織メンバーであり、組織内のすべてのリポジトリに対して閲覧権限を持ちます。
+- [ ] セキュリティマネージャーは、メンバーとしての権限に加えて、非メンバーのコントリビューターをブロックおよび解除し、対話制限を設定し、組織が所有する公開リポジトリ内のコメントを非表示にすることを許可された組織メンバーです。
 > それはモデレーターです
-1. [ ] Organizationへの完全なアクセス権を持つメンバー
-> それはOrganizationオーナーです
-1. [ ] 支払い情報などの請求設定を管理できるメンバー
-> それはBilling Managerです
+- [ ] セキュリティマネージャーは、組織への完全なアクセス権を持つ組織メンバーです。
+> それは組織のオーナーです
+- [ ] セキュリティマネージャーは、支払い情報などの請求設定を管理できる組織メンバーです。
+> それは請求マネージャーです
