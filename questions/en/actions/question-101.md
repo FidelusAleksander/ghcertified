@@ -1,9 +1,7 @@
 ---
 question: "How do you ensure that `Upload Failure test report` step is executed only if `Run Tests` step fails?"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions"
 ---
-
-
-> https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions
 
 - [x] 
 ```yaml

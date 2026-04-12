@@ -1,8 +1,8 @@
 ---
 question: "Which identity providers (IdPs) support GitHub Enterprise Cloud SCIM API for organizations?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations#supported-identity-providers"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations#supported-identity-providers
 - [x] Microsoft Entra ID
 - [x] Okta
 - [x] OneLogin

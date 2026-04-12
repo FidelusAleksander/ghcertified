@@ -1,8 +1,8 @@
 ---
 question: "Which endpoints does the GitHub API provide to administer your enterprise?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
 - [x] Admin stats
 - [x] Audit log
 - [x] Billing

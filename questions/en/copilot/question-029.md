@@ -1,9 +1,8 @@
 ---
 question: "Which of the following can be added as context for your prompt in GitHub Copilot Chat?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features
 - [x] Symbols
 - [x] Terminal command output
 - [x] Test failures

@@ -1,10 +1,8 @@
 ---
 question: "GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows"
 ---
 
-
-
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
 - [x] A commit is pushed to a branch
 - [x] A pull request is opened
 - [ ] A change is made to the repository settings

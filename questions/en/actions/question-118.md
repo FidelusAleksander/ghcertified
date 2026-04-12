@@ -1,5 +1,6 @@
 ---
 question: "How can you skip the following workflow run when you commit or create a PR?"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
 ---
 
 ```yaml
@@ -12,8 +13,6 @@ jobs:
     name: Extract artifact version
 ...
 ```
-
->https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
 
 - [x] By including any one of the following keywords in the commit message or in the title of the pull-request
 ```yaml

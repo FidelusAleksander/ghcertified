@@ -1,9 +1,8 @@
 ---
 question: "When will the GitHub Dependency graph for your repository be updated?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph
 - [x] When anyone pushes a change to the repository of one of your dependencies.
 - [x] When you push a commit to the repository's default branch, only if that changes or adds a supported manifest/lockfile.
 - [ ] When you push any commit to the repository's default branch.

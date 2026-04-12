@@ -1,9 +1,8 @@
 ---
 question: "What details can you find on a code scanning alert page?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts#about-alert-details"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts#about-alert-details
 - [x] Branches affected by the vulnerability
 - [x] Highlighted vulnerable code
 - [x] Severity of the vulnerability

@@ -1,9 +1,8 @@
 ---
 question: "Which of these is true about the GitHub secret scanning partner program?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program
 - [x] It is a program where service providers can provide GitHub with the regex patterns of secrets that they issue so GitHub secret scanning can recognize them.
 - [x] When GitHub identifies a secret from a partnered service provider, it notifies the service provider about the leaked secret.
 - [x] The partner can take actions upon receiving notification from GitHub about a leaked secret, such as revoking the secret and informing the owner of the compromised secret.

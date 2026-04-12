@@ -1,9 +1,8 @@
 ---
 question: "In a GitHub Actions workflow, how do you specify a specific version of Node.js to use in a job?"
+documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs#specifying-the-nodejs-version"
 ---
 
-
-> https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs#specifying-the-nodejs-version
 - [x] 
 ```yaml
 uses: actions/setup-node@v4

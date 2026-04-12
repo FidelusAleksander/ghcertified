@@ -1,9 +1,8 @@
 ---
 question: "What CodeQL CLI command is used to create a CodeQL database?"
+documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/preparing-your-code-for-codeql-analysis#running-codeql-database-create"
 ---
 
-
-> https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/preparing-your-code-for-codeql-analysis#running-codeql-database-create
 - [x] `codeql database create`
 - [ ] `gh codeql-database create`
 - [ ] `ql database generate`

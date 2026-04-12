@@ -1,5 +1,6 @@
 ---
 question: "What is true about the following workflow configuration if triggered against the `octo/my-dev-repo` repository?"
+documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
 ---
 
 ```yaml
@@ -16,7 +17,6 @@ jobs:
                   node-version: '14'
             - run: npm install -g bats
 ```
-> https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution
 - [x] the `production-deploy` job will be marked as skipped
 - [ ] the `production-deploy` job will error
 - [ ] the `production-deploy` job will execute three steps

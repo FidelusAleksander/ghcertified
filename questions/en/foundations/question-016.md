@@ -1,9 +1,8 @@
 ---
 question: "What are some actions you can do in regards to Repository Templates?"
+documentation: "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template"
 ---
 
-
-> https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 - [x] Create a repository template from an existing repository
 - [x] Create a new repository from a repository template
 - [ ] Create an organization from a repository template

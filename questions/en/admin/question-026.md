@@ -1,8 +1,8 @@
 ---
 question: "Which of the following are extra features provided by GitHub Enterprise Cloud over GitHub Free plan?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud
 - [x] SAML authentication
 - [x] Additional GitHub Actions minutes
 - [x] Privately published GitHub Pages sites

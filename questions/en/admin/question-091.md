@@ -1,8 +1,8 @@
 ---
 question: "How can you use 3rd party vaults to manage secrets for GitHub Actions?"
+documentation: "https://developer.hashicorp.com/vault/docs/platform/github-actions"
 ---
 
-> https://developer.hashicorp.com/vault/docs/platform/github-actions
 > https://bitwarden.com/help/github-actions-integration/
 > https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/github-actions
 - [x] Store secrets in the 3rd party vault and authenticate from your workflow (via the vendor action/CLI) using access credentials stored as GitHub Actions secrets to retrieve them at runtime.

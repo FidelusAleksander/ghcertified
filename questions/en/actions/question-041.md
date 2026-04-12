@@ -1,10 +1,7 @@
 ---
 question: "When should you use `caching`?"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching"
 ---
-
-
-
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
 
 - [x] When you want to reuse files that don't change often between jobs or workflow runs, such as build dependencies from a package management system.
 - [ ] When you want to reuse files that do change often between jobs or workflow runs, such as build dependencies from a package management system.

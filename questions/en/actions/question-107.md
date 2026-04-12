@@ -1,8 +1,8 @@
 ---
 question: "Which variable would you set to `true` in order to enable step debug logging?"
+documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging"
 ---
 
-> https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging
 - [x] `ACTIONS_STEP_DEBUG`
 - [ ] `ACTIONS_JOB_DEBUG`
 - [ ] `ACTIONS_RUNNER_DEBUG`

@@ -1,9 +1,8 @@
 ---
 question: "How do you reference a secret stored in GitHub Secrets in a workflow?"
+documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow"
 ---
 
-
-> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow
 - [x] ${{ secrets.SECRET_NAME }}
 - [ ] ${{ secret.SECRET_NAME }}
 - [ ] ${{ env.SECRET_NAME }}

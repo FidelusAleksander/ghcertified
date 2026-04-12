@@ -1,9 +1,8 @@
 ---
 question: "Which of the following statements about enabling CodeQL scanning default setup are true?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning
 - [x] You can enable default setup for all eligible repositories in an organization at once in the organization settings
 - [x] GitHub Actions need to be enabled as a prerequisite
 - [x] You can enable default setup on any repository, regardless of the contents of the repository

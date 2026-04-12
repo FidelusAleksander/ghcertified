@@ -1,9 +1,8 @@
 ---
 question: "What are some actions you can do in regards to Project Templates in your organization?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-project-templates-in-your-organization"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-project-templates-in-your-organization
 - [ ] With write permission, set an existing project as a template
 > You need admin permissions to set an existing project as a template
 - [x] Configure recommended templates to your organization's members

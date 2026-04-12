@@ -1,8 +1,8 @@
 ---
 question: "What are valid authentication methods available in GitHub?"
+documentation: "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github"
 ---
 
-> https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github
 - [x] Username and password (with optional 2FA)
 - [x] Personal access token (PAT)
 - [x] SSH KEY

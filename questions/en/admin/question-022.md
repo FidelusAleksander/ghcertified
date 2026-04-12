@@ -1,8 +1,8 @@
 ---
 question: "What is SCIM in the context of GitHub?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations
 - [x] SCIM, or System for Cross-domain Identity Management, is a protocol designed to automate identity provisioning and management. In GitHub, SCIM integrates with external Identity Providers (IdPs) to manage GitHub Enterprise Cloud organization memberships, using a base URL for SCIM endpoints to perform operations like listing, inviting, and updating user identities.
 - [ ] SCIM is a user management system exclusive to GitHub, allowing users to customize their profiles and repositories. In GitHub, SCIM works by providing a platform-specific interface for these customizations.
 - [ ] SCIM stands for System for Cross-domain Identity Management. It's a protocol that GitHub uses to manage internal database systems, focusing mainly on securing data and user information without integrating with any external systems.

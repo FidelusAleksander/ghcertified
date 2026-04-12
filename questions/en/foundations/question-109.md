@@ -1,8 +1,8 @@
 ---
 question: "What are the different forms of two-factor or multi-factor authentication supported by GitHub?"
+documentation: "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication"
 ---
 
-> https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication
 - [x] Passkey
 - [x] Text message
 - [ ] Phone call

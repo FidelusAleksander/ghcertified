@@ -27,6 +27,7 @@ export interface Question {
   isMultiSelect: boolean;
   hint?: string;
   codeBlock?: string;
+  documentation?: string;
 }
 
 export interface CertInfo {
@@ -89,6 +90,7 @@ function loadAll(locale: SupportedLocale): Question[] {
         isMultiSelect: q.isMultiSelect,
         hint: q.hint,
         codeBlock: q.codeBlock,
+        documentation: q.frontmatter.documentation as string | undefined,
       });
     }
   }

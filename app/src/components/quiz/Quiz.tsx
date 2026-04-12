@@ -357,10 +357,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
                   {isCurrentCorrectInReview ? t("correct") : t("incorrect")}
                 </AlertTitle>
-                {currentQuestion.hint && (
+                {currentQuestion.documentation && (
                   <AlertDescription className="text-sm leading-relaxed">
                     <a
-                      href={currentQuestion.hint}
+                      href={currentQuestion.documentation}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline underline-offset-4 hover:opacity-80"

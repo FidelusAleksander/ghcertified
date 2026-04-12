@@ -1,8 +1,8 @@
 ---
 question: "To run a `step` only if the secret `MY_SECRET` has been set, you can:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets
 - [x] Set the secret `MY_SECRET` as a job level environment variable, then reference that environment variable to conditionally run that step
 ```yaml
 my-job:

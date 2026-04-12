@@ -321,9 +321,9 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 {isCurrentCorrect() ? t("correct") : t("notQuite")}
               </AlertTitle>
               <AlertDescription className="text-sm leading-relaxed">
-                {currentQuestion.hint && (
+                {currentQuestion.documentation && (
                   <a
-                    href={currentQuestion.hint}
+                    href={currentQuestion.documentation}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline underline-offset-4 hover:opacity-80"

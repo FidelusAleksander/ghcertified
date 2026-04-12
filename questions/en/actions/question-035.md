@@ -1,8 +1,8 @@
 ---
 question: "To prevent a job from failure when one of the steps fails you can include:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
 - [x] `continue-on-error` flag in the failing step
 ```yaml
 steps:

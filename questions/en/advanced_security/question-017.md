@@ -1,9 +1,8 @@
 ---
 question: "Who will be notified when a NEW secret is pushed and detected in a repository?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/monitoring-alerts#incremental-scans"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/monitoring-alerts#incremental-scans
 - [x] Repository Administrators
 - [x] Security Managers
 - [x] Users with custom roles with read/write access

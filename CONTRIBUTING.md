@@ -64,9 +64,8 @@ All of the site content in this repository is stored in [questions/](https://git
 ```markdown
 ---
 question: "Which GitHub Actions syntax correctly defines a job that runs on Ubuntu?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions"
 ---
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 - [x] `runs-on: ubuntu-latest`
 - [ ] `os: ubuntu-latest`

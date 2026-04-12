@@ -1,8 +1,8 @@
 ---
 question: "You need GitHub Actions enabled for"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates
 - [x] Dependency Review
 - [ ] Dependabot Security Updates
 - [ ] Dependabot Version Updates

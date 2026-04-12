@@ -1,9 +1,8 @@
 ---
 question: "What is the meaning of the word `distributed` in distributed version control system?"
+documentation: "https://about.gitlab.com/topics/version-control/benefits-distributed-version-control-system/"
 ---
 
-
-> https://about.gitlab.com/topics/version-control/benefits-distributed-version-control-system/
 - [x] It means that developers can have a full copy of the repository and its history on their local machine.
 - [ ] It means that tasks among the team members using the system are easily distributed.
 - [ ] The term refers to the peer-to-peer sharing of code files among users.

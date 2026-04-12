@@ -1,10 +1,7 @@
 ---
 question: "When should you use `artifacts`?"
+documentation: "https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts"
 ---
-
-
-
-> https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
 
 - [x] Use artifacts to save files produced by a job to view after a workflow run has ended, such as test results or build logs.
 - [x] Use artifacts to save binaries produced by a build job to use in a subsequent deploy job to deploy a new version of an application

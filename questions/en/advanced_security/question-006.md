@@ -1,9 +1,8 @@
 ---
 question: "Which of these GitHub security features are available for FREE for both public and private personal repositories?"
+documentation: "https://docs.github.com/en/code-security/getting-started/github-security-features"
 ---
 
-
-> https://docs.github.com/en/code-security/getting-started/github-security-features
 - [x] Security Policy
 - [x] Security advisories
 - [x] Dependabot alerts and security updates

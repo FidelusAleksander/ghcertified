@@ -1,9 +1,8 @@
 ---
 question: "What are the different GitHub pricing plans for organization accounts?"
+documentation: "https://github.com/pricing"
 ---
 
-
-> https://github.com/pricing
 - [x] Free
 - [x] Team
 - [x] Enterprise

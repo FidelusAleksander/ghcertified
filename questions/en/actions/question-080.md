@@ -1,8 +1,7 @@
 ---
 question: "What is the correct syntax for setting the directory for all `run` commands in a workflow?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory"
 ---
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrunworking-directory
 
 - [x] set `working-directory` under `defaults.run`
 ```yaml

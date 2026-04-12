@@ -1,5 +1,6 @@
 ---
 question: "What must be added to `actions/checkout` if `my-org/my-private-repo` is a private repository differing from the one containing the current workflow?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow"
 ---
 
 ```yaml
@@ -15,8 +16,6 @@ jobs:
                repository: my-org/my-private-repo
                path: ./.github/actions/my-org/my-private-repo
 ```
-
-> https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow
 
 - [x] Create a GitHub secret `MY_ACCESS_TOKEN`
 ```yaml

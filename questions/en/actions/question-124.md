@@ -1,5 +1,6 @@
 ---
 question: "Given the following configuration, how many jobs will GitHub Actions run when this matrix is evaluated?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations"
 ---
 
 ```yaml
@@ -13,8 +14,6 @@ strategy:
       - os: ubuntu-latest
         node: 14
 ```
-
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
 
 - [ ] 4 jobs
 - [x] 5 jobs

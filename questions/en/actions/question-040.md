@@ -1,7 +1,7 @@
 ---
 question: "In the following example, `workflow A` passes all of its secrets to `workflow B`, by using the inherit keyword. Then `workflow B` calls `workflow C`. Which statement regarding `secrets` is true for that example?"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#passing-secrets-to-nested-workflows"
 ---
-
 
 ```yaml
 jobs:
@@ -15,7 +15,6 @@ jobs:
   workflowB-calls-workflowC:
     uses: different-org/example-repo/.github/workflows/C.yml@main
 ```
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#passing-secrets-to-nested-workflows
 - [x] All secrets available to `workflow A` will be also available to `workflow B`, but not to `workflow C`
 - [ ] All secrets from `octo-org` organization and `octo-org/example-repo` repository will be available to `workflow B`, but not to `workflow C`
 > Not all secrets from `octo-org` organization have to be made available to `octo-org/example-repo`.

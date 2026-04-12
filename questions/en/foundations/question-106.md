@@ -1,8 +1,8 @@
 ---
 question: "What are the different levels of GitHub organizational hierarchy?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration"
 ---
 
-> https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
 - [x] Team level
 - [x] Organization level
 - [ ] Personal level

@@ -1,8 +1,8 @@
 ---
 question: "What GitHub-hosted runner types are available to use?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners
 - [x] Windows
 - [x] Ubuntu Linux
 - [x] macOS

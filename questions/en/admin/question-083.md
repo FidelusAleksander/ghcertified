@@ -1,8 +1,8 @@
 ---
 question: "When an Enterprise IP allow list is in place, what happens when you try publish your GitHub Pages site from a branch instead of using a custom GitHub Actions workflow?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-pages-with-an-ip-allow-list"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-pages-with-an-ip-allow-list
 - [x] The build runner will have access to the repository for the GitHub Pages site by default
 - [ ] The build runner will be blocked from accessing the repository until manually added to the allow list
 - [ ] GitHub Pages cannot be built or updated until the IP allow list is disabled

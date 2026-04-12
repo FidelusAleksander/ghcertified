@@ -1,8 +1,7 @@
 ---
 question: "Which of the following are NOT recognized roles within a GitHub organization?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles"
 ---
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles
 
 - [ ] Organization owners
 - [ ] Organization members

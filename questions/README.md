@@ -18,9 +18,8 @@ This guide covers everything you need to write questions for [ghcertified](https
 ```markdown
 ---
 question: "Which GitHub Actions syntax correctly defines a job that runs on Ubuntu?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on"
 ---
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
 - [x] `runs-on: ubuntu-latest`
 - [ ] `os: ubuntu-latest`
@@ -28,19 +27,22 @@ question: "Which GitHub Actions syntax correctly defines a job that runs on Ubun
 - [ ] `environment: ubuntu-latest`
 ```
 
-That's it — frontmatter with `question`, a hint link, and answers. Everything else below is optional.
+That's it — frontmatter with `question`, a documentation link, and answers. Everything else below is optional.
 
 ## Features
 
 ### Frontmatter
 
-The `question` field is required. It holds the question text shown to the user.
+The `question` field is required. The `documentation` field is optional — use it for a link to official GitHub documentation.
 
 ```yaml
 ---
 question: "Your question text here"
+documentation: "https://docs.github.com/en/..."
 ---
 ```
+
+The documentation link shows as a "Learn more" link after the user answers the question.
 
 Do **not** include phrases like "Select 2" or "Choose 3" in the question text — the app handles answer count display automatically.
 
@@ -64,21 +66,21 @@ Use Markdown list items with checkboxes. Mark correct answers with `[x]`, incorr
 - [ ] Wrong answer
 ```
 
-The app automatically detects multi-select questions when there are multiple `[x]` entries.
+Aim for 2–6 answer options.
 
-### Hints
+### Answer explanations
 
-Add a blockquote (`>`) with a documentation URL. This shows as a "Hint" link in the UI.
-
-```markdown
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-```
-
-Prefer official GitHub documentation links. You can also use plain text hints:
+Add a blockquote (`>`) on the line immediately after an answer to explain why it's correct or incorrect. These are optional and help learners understand the reasoning.
 
 ```markdown
-> Think about the difference between `push` and `pull_request` events.
+- [ ] Scheduled workflows run on the specific commit on last modified branch.
+> incorrect, both specific commit and on last modified branch
+- [x] Scheduled workflows run on the latest commit on the repository default branch.
+- [ ] Scheduled workflows run on the latest commit on the main branch.
+> latest commit is correct but the main branch is not
 ```
+
+Keep explanations short — one line is ideal.
 
 ### Code blocks
 
@@ -87,6 +89,7 @@ Add a fenced code block between the frontmatter and the answers. It renders abov
 ````markdown
 ---
 question: "What is the effect of adding the `paths-ignore` keyword to this workflow?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
 ---
 
 ```yaml
@@ -97,8 +100,6 @@ on:
       - '**/*.md'
       - '**/*.txt'
 ```
-
-> https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning
 
 - [x] Avoids unnecessary scans when irrelevant files change
 - [ ] Tells CodeQL to omit all `.txt` and `.md` files from analysis
@@ -118,28 +119,12 @@ Code blocks can also appear inside individual answer options:
 - [ ] By setting `SKIP_WORKFLOW` in the commit message
 ````
 
-### Answer explanations
-
-Add a blockquote (`>`) on the line immediately after an answer to explain why it's correct or incorrect. These are optional and help learners understand the reasoning.
-
-```markdown
-- [ ] Scheduled workflows run on the specific commit on last modified branch.
-> incorrect, both specific commit and on last modified branch
-- [x] Scheduled workflows run on the latest commit on the repository default branch.
-- [ ] Scheduled workflows run on the latest commit on the main branch.
-> latest commit is correct but the main branch is not
-```
-
-Keep explanations short — one line is ideal.
-
-
-
 ## Quality guidelines
 
 ### ✅ Do
 
 - Write clear, specific questions that test one concept
-- Include a link to official GitHub documentation as a hint
+- Include a `documentation` link to official GitHub docs in frontmatter
 - Create plausible wrong answers based on common misconceptions
 - Use inline code formatting for technical terms (`` `runs-on` ``, `` `GITHUB_TOKEN` ``)
 - Keep the question text concise

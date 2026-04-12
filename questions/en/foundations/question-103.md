@@ -1,9 +1,8 @@
 ---
 question: "Which of the following Git commands allow you to create a new branch and start working on it in one line?"
+documentation: "https://git-scm.com/docs/git-switch"
 ---
 
-
-> https://git-scm.com/docs/git-switch
 - [x] git checkout -b `<new_branch_name>`
 - [ ] git branch -c `<new_branch_name>`
 - [x] git switch -c `<new_branch_name>`

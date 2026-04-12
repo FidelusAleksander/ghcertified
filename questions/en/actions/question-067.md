@@ -1,8 +1,8 @@
 ---
 question: "Which is the correct way of triggering a job only if configuration variable `MY_VAR` has the value of `MY_VALUE`?"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context
 - [x] By creating the following conditional on job level
 ```yaml
 my-job:

@@ -1,9 +1,7 @@
 ---
 question: "Which matrix job definition is syntactically correct?"
+documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy"
 ---
-
-
-> https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
 
 - [x] 
 ```yaml

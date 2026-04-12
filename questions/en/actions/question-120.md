@@ -1,9 +1,7 @@
 ---
 question: "What is the correct syntax for specifying a cleanup script in a container action?"
+documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runspost-entrypoint"
 ---
-
-
-> https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runspost-entrypoint
 
 - [x] 
 ```yaml

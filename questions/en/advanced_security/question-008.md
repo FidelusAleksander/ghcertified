@@ -1,9 +1,8 @@
 ---
 question: "Which parts of the repository are scanned by secret scanning?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning
 - [x] Entire git history on all branches in the repository
 - [x] Titles, descriptions and comments in open and closed historical issues 
 - [ ] GitHub Repository secrets

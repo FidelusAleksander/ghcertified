@@ -1,5 +1,6 @@
 ---
 question: "What `jobs.job_id.if` conditional will make sure that job `production-deploy` is triggered only on `my-org/my-repo` repository?"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/contexts#github-context"
 ---
 
 ```yaml
@@ -10,7 +11,6 @@ jobs:
     steps:
       ...
 ```
-> https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 - [x] `if: github.repository == 'my-org/my-repo'`
 - [x] `if: ${{ github.repository == 'my-org/my-repo' }}`
 - [ ] `if: ${{ github.organization == 'my-org' && github.repository == 'my-repo' }}`

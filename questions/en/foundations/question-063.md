@@ -1,9 +1,8 @@
 ---
 question: "How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?"
+documentation: "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates"
 ---
 
-
-> https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 - [x] Create issue templates
 - [ ] Add labels to issues that they create
 - [ ] Set up GitHub Projects

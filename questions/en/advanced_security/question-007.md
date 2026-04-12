@@ -1,8 +1,8 @@
 ---
 question: "Which of these best describes secret scanning?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
 ---
 
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
 - [x] Secret scanning scans your repository for secrets such as private keys or tokens.
 - [ ] Secret scanning scans your repository for potential code vulnerabilities that could expose secrets such as private keys or tokens.
 - [ ] Secret scanning is a tool for secure secret storage and management.

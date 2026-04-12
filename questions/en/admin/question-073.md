@@ -1,8 +1,8 @@
 ---
 question: "What steps should organization admins follow to access audit logs of actions performed within their GitHub organization?"
+documentation: "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization"
 ---
 
-> https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
 - [x] Go to the Organization settings > Archive > Logs > Audit log. Then, use the Export dropdown to export as JSON or CSV.
 - [ ] Directly email GitHub support to request an audit log be sent monthly to the organization's admin email.
 - [ ] Navigate to the main GitHub page, use the search bar to type "Organization audit logs" and expect GitHub to automatically download the log.

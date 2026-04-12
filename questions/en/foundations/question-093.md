@@ -1,8 +1,7 @@
 ---
 question: "You want to merge changes from branch `feature-a` into `main` and you are creating a pull request. Which branch should be the `base` branch and which branch should be the `compare` branch?"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests"
 ---
 
-
-> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests
 - [x] `main` is the base branch and `feature-a` is the compare branch.
 - [ ] `feature-a` is the base branch and `main` is the compare branch.

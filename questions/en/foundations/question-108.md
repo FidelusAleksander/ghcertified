@@ -1,9 +1,8 @@
 ---
 question: "What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
 - [ ] PATs can be managed by the organization and enterprise.
 > PAT's as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
 - [ ] PAT is an extra layer of security used when logging into websites or apps. With PAT, users have to sign in with their username and password and provide another form of authentication that only they have access to.

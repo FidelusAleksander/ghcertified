@@ -1,9 +1,8 @@
 ---
 question: "Which of these workflows are built-in automations in GitHub Projects?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations
 - [x] When issues or pull requests in your project are closed, their status is set to Done
 - [x] When pull requests in your project are merged, their status is set to Done.
 - [ ] When issues or pull requests are opened in your project, their status is set to Done.

@@ -1,5 +1,6 @@
 ---
 question: "This workflow will run on all pull requests where:"
+documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-branches"
 ---
 
 ```yaml
@@ -9,7 +10,6 @@ on:
       - 'release/**'
       - '!release/**-alpha'
 ```
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-branches
 - [x] the target branch name starts with `release` but does not end with `-alpha`
 - [ ] the target branch name starts with `release`
 - [ ] the source branch name starts with `release` but does not end with `-alpha`

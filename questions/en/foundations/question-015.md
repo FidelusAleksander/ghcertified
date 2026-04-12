@@ -1,9 +1,8 @@
 ---
 question: "Which of these statements about `saved replies` are true?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
 - [x] You can create, edit and delete them in your GitHub account settings in the `Saved replies` section.
 - [x] Saved replies are comments that you can reuse in issues and pull requests.
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.

@@ -1,9 +1,8 @@
 ---
 question: "What does `CWE` stand for?"
+documentation: "https://cwe.mitre.org/"
 ---
 
-
-> https://cwe.mitre.org/
 - [x] `Common Weakness Enumeration`
 - [ ] `Cybersecurity Weakness Enumeration`
 - [ ] `Code Wrapping Engine`

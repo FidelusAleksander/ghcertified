@@ -1,8 +1,8 @@
 ---
 question: "Which of these is true about code scanning?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code#scan-your-code-for-vulnerable-patterns"
 ---
 
-> https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code#scan-your-code-for-vulnerable-patterns
 - [x] Code scanning helps finding insecure code patterns which can be missed by manual code review.
 - [x] Code scanning can be integrated into the CI pipeline to find security issues early in the development process.
 - [ ] Code scanning is a replacement for manual code review.

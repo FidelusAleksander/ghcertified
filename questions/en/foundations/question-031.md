@@ -1,8 +1,8 @@
 ---
 question: "Which of these statements regarding GitHub Codespaces lifecycle are true?"
+documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
 ---
 
-> https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
 - [x] A Codespace's lifecycle begins when you create a Codespace and ends when you delete it.
 - [x] You can stop and restart a Codespace without losing the changes that you make to your project.
 - [x] You can disconnect and reconnect to an active Codespace without affecting its running processes.

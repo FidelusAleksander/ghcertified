@@ -1,8 +1,8 @@
 ---
 question: "Which of these is NOT a role in a GitHub Organization?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
 - [x] Organization architect
 - [ ] Organization owner
 - [ ] Organization member
