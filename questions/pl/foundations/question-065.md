@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 065"
-question: "Które z tych stwierdzeń najlepiej opisuje system kontroli wersji?"
+question: "Które z poniższych stwierdzeń najlepiej opisuje system kontroli wersji?"
+documentation: "https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git"
 ---
 
-
-> https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git
-1. [x] To system, który śledzi historię zmian wprowadzonych w zbiorze plików.
-1. [ ] To system, który wykorzystuje narzędzie wiersza poleceń git.
-1. [ ] To system, który pozwala utworzyć lokalną kopię kodu źródłowego projektu.
-1. [ ] To system, który umożliwia śledzenie tego, co ludzie instalują na swoich komputerach.
+- [x] Jest to system, który śledzi historię zmian dokonanych w zbiorze plików.
+- [ ] Jest to system, który wykorzystuje narzędzie wiersza poleceń git.
+- [ ] Jest to system, który pozwala na utworzenie lokalnej kopii kodu źródłowego projektu.
+- [ ] Jest to system, który pozwala śledzić, co ludzie instalują na swoich komputerach.
