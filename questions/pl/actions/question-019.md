@@ -1,11 +1,10 @@
 ---
-question: "Uzupełnij puste miejsce: Podczas korzystania z filtrów wyzwalania zdarzeń `push` możesz używać wzorców <____>, aby skierować działania na wiele gałęzi"
-title: "Pytanie 019"
+question: "Uzupełnij lukę: Korzystając z filtrów wyzwalaczy zdarzenia `push`, możesz użyć wzorców <____>, aby wycelować w wiele gałęzi"
+documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events
-1. [x] glob
-1. [ ] regex
-1. [ ] scheme
-1. [ ] action
-
+- [x] glob
+- [ ] regex
+- [ ] scheme
+- [ ] action
+---
