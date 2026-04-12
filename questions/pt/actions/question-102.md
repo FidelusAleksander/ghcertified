@@ -1,11 +1,10 @@
 ---
 question: "Qual contexto contém informações sobre o evento que acionou a execução de um workflow?"
-title: "Pergunta 102"
+documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-event-information"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-event-information
-1. [x] `github.event`
-1. [ ] `github.repository`
-1. [ ] `github.job`
-1. [ ] `jobs.<job_id>.result`
+- [x] `github.event`
+- [ ] `github.repository`
+- [ ] `github.job`
+- [ ] `jobs.<job_id>.result`
 
