@@ -1,12 +1,10 @@
 ---
-title: "Pytanie 029"
-question: "Które z poniższych elementów można dodać jako kontekst do Twojego promptu w GitHub Copilot Chat? (Wybierz trzy.)"
+question: "Które z poniższych elementów mogą zostać dodane jako kontekst dla Twojego polecenia w GitHub Copilot Chat?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features
 - [x] Symbole
 - [x] Wyjście poleceń terminala
-- [x] Niepowodzenia testów
+- [x] Błędy testów
 - [ ] Zewnętrzne repozytoria
 - [ ] Zmienne środowiskowe (takie jak PATH)
