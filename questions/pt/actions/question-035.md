@@ -1,30 +1,29 @@
 ---
-question: "Para evitar que um job falhe quando uma das etapas falhar, você pode incluir:"
-title: "Pergunta 035"
+question: "Para evitar que um job falhe quando um dos steps falhar, você pode incluir:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
-1. [x] Flag `continue-on-error` na etapa com falha
+- [x] Flag `continue-on-error` no step que falhou
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        continue-on-error: true
+steps:
+    - uses: my-org/failing-action@v1
+      continue-on-error: true
 ```
-1. [ ] Flag `ignore-error` na etapa com falha
+- [ ] Flag `ignore-error` no step que falhou
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        ignore-error: true
+steps:
+    - uses: my-org/failing-action@v1
+      ignore-error: true
 ```
-1. [ ] Condicional `failure()` na etapa com falha
+- [ ] Condicional `failure()` no step que falhou
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        if: failure()
+steps:
+    - uses: my-org/failing-action@v1
+      if: failure()
 ```
-1. [ ] Condicional `always()` na etapa com falha
+- [ ] Condicional `always()` no step que falhou
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        if: always()
+steps:
+    - uses: my-org/failing-action@v1
+      if: always()
 ```
