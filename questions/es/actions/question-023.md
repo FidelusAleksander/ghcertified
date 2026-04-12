@@ -1,10 +1,9 @@
 ---
-question: "Para detener temporalmente la ejecución de un workflow sin modificar el código fuente, deberías"
-title: "Pregunta 023"
+question: "Para detener temporalmente la ejecución de un workflow sin modificar el código fuente, debes"
+documentation: "https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow
-1. [x] Usar la opción `Disable workflow` en GitHub Actions  
-1. [ ] Eliminar los secretos requeridos para este workflow  
-1. [ ] Eliminar el entorno requerido para este workflow  
-1. [ ] Evitar nuevos commits en la rama principal  
+- [x] Usar la opción `Disable workflow` en GitHub Actions
+- [ ] Eliminar secrets requeridos para este workflow
+- [ ] Borrar el entorno requerido para este workflow
+- [ ] Impedir nuevos commits en la rama main
