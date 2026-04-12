@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" fill="none">
+  <!-- Rounded square background -->
+  <rect x="3" y="3" width="34" height="34" rx="9" fill="#0f0f10"/>
+  <!-- Lucide CheckCircle icon (scaled to fit the square) -->
+  <g transform="translate(8.5,8.5) scale(1.04)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+    <path d="m9 11 3 3L22 4"/>
+  </g>
+  <!-- "gh" text (dark) -->
+  <text x="45" y="28" font-family="'Mona Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3" fill="#0f0f10">gh</text>
+  <!-- "certified" text (primary blue) -->
+  <text x="68" y="28" font-family="'Mona Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3" fill="#0974f1">certified</text>
+</svg>

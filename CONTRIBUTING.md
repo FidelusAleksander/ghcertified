@@ -4,12 +4,13 @@
 
 
 <!-- MarkdownTOC autolink="true" -->
-- [Setting up the project](#setting-up-the-project)
-  - [Option 1: GitHub Codespaces](#option-1-github-codespaces)
-  - [Option 2: Local setup (traditional)](#option-2-local-setup-traditional)
-- [Content Changes](#content-changes)
-  - [Adding new question](#adding-new-question)
-  - [Updating existing content](#updating-existing-content)
+- [Contributing to ghcertified](#contributing-to-ghcertified)
+  - [Setting up the project](#setting-up-the-project)
+    - [Option 1: GitHub Codespaces](#option-1-github-codespaces)
+    - [Option 2: Local setup (traditional)](#option-2-local-setup-traditional)
+  - [Content Changes](#content-changes)
+    - [Adding new question](#adding-new-question)
+    - [Updating existing content](#updating-existing-content)
 
 <!-- /MarkdownTOC -->
 
@@ -62,7 +63,6 @@ All of the site content in this repository is stored in [questions/](https://git
 
 ```markdown
 ---
-title: "Question XXX"
 question: "<Fill in the Question>"
 ---
 
