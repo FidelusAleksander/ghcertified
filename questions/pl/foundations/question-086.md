@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 086"
 question: "Czym jest GitHub Desktop?"
+documentation: "https://docs.github.com/en/desktop"
 ---
 
-
-> https://docs.github.com/en/desktop
-1. [x] To aplikacja GUI do pracy z Git i GitHub na twoim komputerze.
-1. [ ] To samodzielnie hostowana wersja GitHub, którą możesz zainstalować na własnych serwerach lub komputerze osobistym.
-1. [ ] To plan cenowy GitHub dla kont osobistych, oferujący dodatkowe funkcje w porównaniu do darmowego planu.
-1. [ ] To edytor online, który pozwala pracować nad repozytorium w przeglądarce.
+- [x] To aplikacja GUI do pracy z Git i GitHub na komputerze.
+- [ ] To samo-hostowana wersja GitHub, którą możesz zainstalować na swoich własnych serwerach lub komputerze osobistym.
+- [ ] To plan cenowy GitHub dla kont osobistych, który oferuje dodatkowe funkcje w porównaniu do darmowego planu.
+- [ ] To edytor online, który pozwala pracować nad swoim repository w przeglądarce.
