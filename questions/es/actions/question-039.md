@@ -1,10 +1,9 @@
 ---
-question: "¿Es esta afirmación verdadera? `Los Workflows pueden ser reutilizados, pero un Workflow reutilizable no puede llamar a otro Workflow reutilizable.`"
-title: "Pregunta 039"
+question: "¿Es verdadera esta afirmación? `Los workflows pueden ser reutilizados, pero un workflow reutilizable no puede llamar a otro workflow reutilizable.`"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows"
 ---
 
+- [x] Falso
+- [ ] Verdadero
+> Los workflows reutilizables pueden ser anidados, pero existen limitaciones https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
 
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows
-1. [x] Falso  
-1. [ ] Verdadero  
-> Los Workflows reutilizables pueden anidarse, pero existen limitaciones https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
