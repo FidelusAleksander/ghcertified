@@ -1,12 +1,12 @@
 ---
-title: "Pytanie 028"
-question: "Które funkcje GitHub umożliwiają współtwórcom repozytoriów pracę nad prostymi zmianami kodu bezpośrednio przez przeglądarkę internetową? (Wybierz dwie.)"
+question: "Jakie funkcje GitHub pozwalają współpracownikom repozytorium na wprowadzanie prostych zmian w kodzie bezpośrednio poprzez przeglądarkę internetową?"
+documentation: "https://docs.github.com/en/codespaces/the-githubdev-web-based-editor"
 ---
 
-> https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
 - [x] GitHub Codespaces
-- [x] Edytor github.dev
+- [x] github.dev editor
 - [ ] GitHub Projects
 - [ ] GitHub Dependabot
 - [ ] GitHub Remote
 - [ ] GitHub Online
+---
