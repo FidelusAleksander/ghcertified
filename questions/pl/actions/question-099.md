@@ -1,10 +1,9 @@
 ---
 question: "Jakie jest zalecane podejście do przechowywania sekretów większych niż 48 KB?"
-title: "Pytanie 099"
+documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#limits-for-secrets"
 ---
 
-> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#limits-for-secrets
-1. [ ] unikać całkowitego przechowywania dużych sekretów w celu zapewnienia bezpieczeństwa
-1. [ ] sekrety większe niż 48 KB nie mogą być przechowywane
-1. [x] zaszyfruj i przechowuj sekrety w repozytorium, ale frazę deszyfrującą zachowaj jako sekret
-1. [ ] przechowywać duże sekrety bezpośrednio jako sekrety repozytorium, aby uniknąć ograniczeń
+- [ ] unikaj całkowitego przechowywania dużych sekretów w celu zapewnienia bezpieczeństwa
+- [ ] sekrety większe niż 48 KB nie mogą być przechowywane
+- [x] zaszyfruj i przechowuj sekrety w repository, ale klucz deszyfrujący trzymaj jako sekret
+- [ ] przechowuj duże sekrety bezpośrednio jako sekrety repository, aby uniknąć ograniczeń
