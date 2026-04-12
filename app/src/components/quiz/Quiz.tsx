@@ -20,7 +20,6 @@ import { localePath } from "@/lib/locales";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Dialog,
@@ -30,10 +29,11 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert, BookOpen } from "lucide-react";
-import { Alert, AlertTitle } from "@/components/ui/alert";
+import { Flag, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle } from "lucide-react";
 import { renderCodeSpans } from "@/lib/render-code-spans";
-import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
+import { QuestionCard } from "@/components/quiz/QuestionCard";
+import { AnswerList } from "@/components/quiz/AnswerList";
+import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
 
 interface QuizProps {
   questions: Question[];
@@ -217,218 +217,138 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       {/* Two-column layout */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6 items-start">
         {/* Question card */}
-        <Card className="overflow-hidden shadow-sm border-[1.5px] pt-0 gap-0">
-          <CardHeader className="bg-foreground px-4 sm:px-7 pt-4 sm:pt-5 pb-3 sm:pb-4 flex flex-col gap-3 space-y-0">
-            <div className="flex items-center justify-between gap-3 w-full">
-              <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
-                {t("questionOf", { current: currentIndex + 1, total: quizQuestions.length })}
-              </span>
-              <div className="flex items-center gap-2.5 ml-auto">
-                {!isComplete && (
-                  <button
-                    type="button"
-                    onClick={handleToggleFlag}
-                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
-                    title={isFlagged ? t("unflag") : t("flagForReview")}
-                  >
-                    <Flag className={cn("size-3.5", isFlagged && "text-warning fill-warning")} />
-                    <span className={cn("hidden sm:inline", isFlagged && "text-warning")}>{isFlagged ? t("flagged") : t("flag")}</span>
-                  </button>
-                )}
-                {currentQuestion.documentation && (
-                  <a
-                    href={currentQuestion.documentation}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
-                    title={t("learnMore")}
-                  >
-                    <BookOpen className="size-3.5" />
-                    <span className="hidden sm:inline">{t("learnMore")}</span>
-                  </a>
-                )}
-                <a
-                  href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
-                  title={t("reportTooltip")}
-                >
-                  <CircleAlert className="size-3.5" />
-                  <span className="hidden sm:inline">{t("report")}</span>
-                </a>
-              </div>
-            </div>
-            {!isComplete && (
+        <QuestionCard
+          headerLabel={t("questionOf", { current: currentIndex + 1, total: quizQuestions.length })}
+          headerActions={
+            !isComplete ? (
+              <button
+                type="button"
+                onClick={handleToggleFlag}
+                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+                title={isFlagged ? t("unflag") : t("flagForReview")}
+              >
+                <Flag className={cn("size-3.5", isFlagged && "text-warning fill-warning")} />
+                <span className={cn("hidden sm:inline", isFlagged && "text-warning")}>{isFlagged ? t("flagged") : t("flag")}</span>
+              </button>
+            ) : undefined
+          }
+          progressBar={
+            !isComplete ? (
               <div className="h-1 w-full rounded-full bg-card/10 overflow-hidden">
                 <div
                   className="h-full rounded-full bg-primary transition-all duration-300 ease-out"
                   style={{ width: `${((currentIndex + 1) / quizQuestions.length) * 100}%` }}
                 />
               </div>
+            ) : undefined
+          }
+          documentationHref={currentQuestion.documentation}
+          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
+          learnMoreLabel={t("learnMore")}
+          reportLabel={t("report")}
+          reportTooltip={t("reportTooltip")}
+          footer={
+            <>
+              {/* Mobile question strip */}
+              <div className="px-4 py-3 lg:hidden overflow-x-auto">
+                <div className="flex gap-1.5 w-max">
+                  {quizQuestions.map((q, i) => {
+                    const correct = isComplete ? isQuestionCorrect(q) : null;
+                    const state = getQuestionState(q);
+                    const dotClass = cn(
+                      "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                      i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
+                      isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
+                      isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
+                      isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
+                      isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
+                      !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
+                      !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                      !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground",
+                    );
+                    return (
+                      <button key={i} onClick={() => goToQuestion(i)} className={dotClass}>
+                        {i + 1}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Navigation footer */}
+              <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end gap-2 flex-wrap">
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    onClick={handlePrev}
+                    disabled={currentIndex === 0}
+                  >
+                    <ChevronLeft data-icon="inline-start" />
+                    {t("previous")}
+                  </Button>
+                  {currentIndex < quizQuestions.length - 1 ? (
+                    <Button
+                      onClick={handleNext}
+                      className="bg-foreground text-card hover:bg-foreground/90"
+                    >
+                      {t("nextQuestion")}
+                      <ChevronRight data-icon="inline-end" />
+                    </Button>
+                  ) : !isComplete ? (
+                    <Button
+                      onClick={handleSubmitExam}
+                      className="bg-foreground text-card hover:bg-foreground/90"
+                    >
+                      <Send data-icon="inline-start" className="size-4" />
+                      {t("submitExam")}
+                    </Button>
+                  ) : null}
+                </div>
+              </div>
+            </>
+          }
+        >
+          <div
+            key={transitionKey}
+            className={cn(
+              "motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200",
+              slideDirection === "right"
+                ? "motion-safe:slide-in-from-right-2"
+                : "motion-safe:slide-in-from-left-2",
             )}
-          </CardHeader>
-          <CardContent className="p-4 sm:p-7 text-left">
-            <div
-              key={transitionKey}
-              className={cn(
-                "motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200",
-                slideDirection === "right"
-                  ? "motion-safe:slide-in-from-right-2"
-                  : "motion-safe:slide-in-from-left-2",
-              )}
-            >
+          >
             {/* Question text */}
             <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
               {renderCodeSpans(currentQuestion.question)}
               {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
             </div>
-            {currentQuestion.isMultiSelect && !isComplete && (
-              <div className="flex items-center gap-2 text-[13.5px] font-semibold text-primary mb-4 bg-primary-soft border border-primary/20 rounded-lg px-3.5 py-2">
-                <Info className="size-4 flex-shrink-0" />
-                {t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length })}
-              </div>
-            )}
 
-            {/* Answer options */}
-            <div
-              role={currentQuestion.isMultiSelect ? "group" : "radiogroup"}
-              aria-label={t("answerGroup")}
-              className="flex flex-col gap-2.5"
-            >
-              {currentQuestion.answers.map((answer, answerIdx) => {
-                const isSelected = currentSelected.has(answer.id);
-                const isCorrectOpt = answer.isCorrect;
+            <AnswerList
+              question={currentQuestion}
+              selectedIds={currentSelected}
+              showResults={isComplete}
+              isDisabled={isComplete}
+              showSelectionHint={!isComplete}
+              dimUnselected
+              onToggle={handleToggleAnswer}
+              labels={{
+                answerGroup: t("answerGroup"),
+                answerOption: (num, text) => t("answerOption", { number: num, text }),
+                selectExactly: t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length }),
+                yourAnswer: t("yourAnswer"),
+              }}
+            />
 
-                const optionClass = cn(
-                  "w-full flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all duration-150 text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-                  !isComplete && "cursor-pointer motion-safe:active:scale-[0.98]",
-                  isComplete && isCorrectOpt && "border-success bg-success-soft",
-                  isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
-                  isComplete && !isSelected && !isCorrectOpt && "border-border bg-card opacity-60",
-                  !isComplete && isSelected && "border-primary bg-primary-soft",
-                  !isComplete && !isSelected && "border-border bg-card hover:border-primary hover:bg-primary-soft",
-                );
-
-                const shape = currentQuestion.isMultiSelect ? "rounded-[5px]" : "rounded-full";
-                const selectorClass = cn(
-                  "size-5 border-2 flex-shrink-0 mt-0.5 flex items-center justify-center",
-                  shape,
-                  isComplete && isCorrectOpt && "border-success bg-success",
-                  isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive",
-                  isComplete && !isSelected && !isCorrectOpt && "border-border-dark",
-                  !isComplete && isSelected && "border-primary bg-primary",
-                  !isComplete && !isSelected && "border-border-dark",
-                );
-
-                return (
-                  <div key={answer.id}>
-                    <button
-                      type="button"
-                      role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
-                      aria-checked={isSelected}
-                      aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
-                      onClick={() => handleToggleAnswer(answer.id)}
-                      className={optionClass}
-                      disabled={isComplete}
-                    >
-                      <div className={selectorClass}>
-                        {((isSelected && !isComplete) || (isComplete && (isCorrectOpt || isSelected))) && (
-                          <div className="size-2 rounded-full bg-card" />
-                        )}
-                      </div>
-                      <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
-                      {isComplete && isSelected && (
-                        <span className={cn(
-                          "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",
-                          isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
-                        )}>
-                          {t("yourAnswer")}
-                        </span>
-                      )}
-                    </button>
-                    {isComplete && answer.explanation && (
-                      <AnswerExplanation text={answer.explanation} />
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Review feedback */}
             {isComplete && (
-              <Alert className={cn(
-                "mt-5 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200",
-                isCurrentCorrectInReview ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive",
-              )}>
-                <AlertTitle className="flex items-center gap-2">
-                  <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
-                  {isCurrentCorrectInReview ? t("correct") : t("incorrect")}
-                </AlertTitle>
-              </Alert>
+              <FeedbackAlert
+                isCorrect={isCurrentCorrectInReview}
+                correctLabel={t("correct")}
+                incorrectLabel={t("incorrect")}
+                className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
+              />
             )}
-            </div>
-          </CardContent>
-
-          <Separator />
-
-          {/* Mobile question strip (hidden on desktop where sidebar has the map) */}
-          <div className="px-4 py-3 lg:hidden overflow-x-auto">
-            <div className="flex gap-1.5 w-max">
-              {quizQuestions.map((q, i) => {
-                const correct = isComplete ? isQuestionCorrect(q) : null;
-                const state = getQuestionState(q);
-                const dotClass = cn(
-                  "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-                  i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
-                  isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
-                  isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
-                  isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
-                  isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
-                  !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
-                  !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
-                  !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground",
-                );
-                return (
-                  <button key={i} onClick={() => goToQuestion(i)} className={dotClass}>
-                    {i + 1}
-                  </button>
-                );
-              })}
-            </div>
           </div>
-
-          {/* Navigation footer */}
-          <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end gap-2 flex-wrap">
-            <div className="flex gap-2">
-              <Button
-                variant="outline"
-                onClick={handlePrev}
-                disabled={currentIndex === 0}
-              >
-                <ChevronLeft data-icon="inline-start" />
-                {t("previous")}
-              </Button>
-              {currentIndex < quizQuestions.length - 1 ? (
-                <Button
-                  onClick={handleNext}
-                  className="bg-foreground text-card hover:bg-foreground/90"
-                >
-                  {t("nextQuestion")}
-                  <ChevronRight data-icon="inline-end" />
-                </Button>
-              ) : !isComplete ? (
-                <Button
-                  onClick={handleSubmitExam}
-                  className="bg-foreground text-card hover:bg-foreground/90"
-                >
-                  <Send data-icon="inline-start" className="size-4" />
-                  {t("submitExam")}
-                </Button>
-              ) : null}
-            </div>
-          </div>
-        </Card>
+        </QuestionCard>
 
         {/* Sidebar */}
         <div className="flex flex-col gap-4 lg:sticky lg:top-6">
