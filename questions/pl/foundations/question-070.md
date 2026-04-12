@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 070"
-question: "Czym jest repozytorium na GitHubie?"
+question: "Czym jest repository na GitHub?"
+documentation: "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories"
 ---
 
-
-> https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
-1. [x] To miejsce, w którym możesz przechowywać swój kod, pliki i historię ich wersji.
-1. [ ] To miejsce, w którym możesz przechowywać obrazy Docker lub paczki NPM.
-1. [ ] To wizualny edytor kodu, który pozwala edytować kod źródłowy w przeglądarce.
-1. [ ] Repozytorium na GitHubie to pokój rozmów, w którym programiści mogą dyskutować o problemach związanych z kodem.
+- [x] Jest to miejsce, w którym możesz przechowywać swój kod, swoje pliki oraz historię wersji każdego pliku.
+- [ ] Jest to miejsce, w którym możesz przechowywać swoje obrazy Docker lub pakiety NPM.
+- [ ] Jest to wizualny edytor kodu, który pozwala edytować kod źródłowy w przeglądarce.
+- [ ] Repository na GitHub to pokój rozmów, w którym deweloperzy mogą omawiać kwestie związane z kodem.
