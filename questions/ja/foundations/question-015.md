@@ -1,11 +1,9 @@
 ---
-title: "質問 015"
-question: "`saved replies` に関する正しい記述はどれですか？（2つ選択してください）"
+question: "次のうち、「`saved replies`」に関する記述で正しいものはどれですか？"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
-- [x] GitHubアカウント設定の `Saved replies` セクションで作成・編集・削除できる
-- [x] Saved repliesは、IssueやPull Requestで再利用できるコメントである
-- [ ] 他の人が自分のIssueやPull Requestにコメントしたとき、その返信を保存し、後で返信するリマインダー通知を設定できる
-- [ ] Saved repliesは、Repositoryのオーナーのみが利用でき、IssueやPull Requestへの自動返信を設定できる
+- [x] GitHubアカウントの設定内にある「Saved replies」セクションで作成、編集、削除が可能です。
+- [x] Saved repliesは、IssueやPull Requestで再利用できるコメントです。
+- [ ] 他の人が自分のIssueやPull Requestにコメントした場合、その返信を保存し、後で返信することを通知でリマインドするように設定できます。
+- [ ] Saved repliesは、リポジトリのオーナーのみが利用可能で、IssueやPull Requestに対して自動返信を設定できます。
