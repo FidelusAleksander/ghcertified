@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 013"
-question: "Jak przypisać osobę do zgłoszenia lub pull requesta?"
+question: "Jak można przypisać osobę do issue lub pull request?"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users"
 ---
 
-
-> https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
-1. [x] Używając pola Assignees w pasku bocznym
-1. [ ] Dodając etykietę z ich nazwą użytkownika GitHub do zgłoszenia lub pull requesta
-1. [ ] Wspominając ich w opisie zgłoszenia lub pull requesta
-1. [ ] Nie można przypisać osoby do zgłoszenia lub pull requesta.
+- [x] Korzystając z pola Assignees w pasku bocznym
+- [ ] Dodając etykietę z nazwą użytkownika GitHub do tego issue lub pull request
+- [ ] Wspominając ją w opisie issue lub pull request
+- [ ] Nie jest możliwe przypisanie osoby do issue lub pull request.
