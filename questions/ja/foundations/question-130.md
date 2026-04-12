@@ -1,14 +1,13 @@
 ---
-title: "質問 130"  
-question: "GitHubにおけるPersonalアカウントとOrganizationアカウントの違いを正しく説明しているのはどれですか？"  
+question: "次のうち、GitHubの個人アカウントと組織アカウントの違いを正しく説明している文はどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts"
 ---
 
-> **詳細**: [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
+- [x] 組織アカウントは複数のオーナーやメンバーを持つことができますが、個人アカウントは1人のユーザーのみに属します。  
+> **正解**: 組織は複数の人による共同管理が可能であるのに対し、個人アカウントは個人に紐付いています。  
+- [ ] 個人アカウントでは無制限のプライベートリポジトリを利用できますが、組織アカウントではパブリックリポジトリのみ利用できます。  
+- [ ] 個人アカウントはSSHキー経由でのみアクセスでき、組織アカウントはパスワード経由でのみアクセスできます。  
+- [ ] 組織アカウントは、GitHub Enterpriseプランを契約している場合にのみ作成できます。  
+> 組織はFree、Team、またはEnterpriseプランで利用可能です。
 
-1. [x] Organizationアカウントには複数のOwnerやメンバーを持てるが、Personalアカウントは単一のユーザーにのみ属する。  
-  > **正解**。Organizationは複数人による共同管理が可能だが、Personalアカウントは個人に紐づく。  
-1. [ ] Personalアカウントは無制限のPrivate Repositoryを作成できるが、OrganizationアカウントはPublic Repositoryのみ作成できる。  
-1. [ ] PersonalアカウントはSSHキーのみでアクセスでき、Organizationアカウントはパスワードのみでアクセスできる。  
-1. [ ] OrganizationアカウントはGitHub Enterpriseプランを持っている場合のみ作成できる。  
-  > OrganizationはFree、Team、Enterpriseプランで利用可能。
