@@ -1,10 +1,9 @@
 ---
-question: "ステップにおける`timeout-minutes`キーワードの目的は何ですか？"
-title: "質問 109"
+question: "ステップ内の `timeout-minutes` キーワードの目的は何ですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepstimeout-minutes"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepstimeout-minutes
-1. [x] 個々のステップの実行時間を制限する
-1. [ ] ステップ内の個々のコマンドの実行間隔を定義する
-1. [ ] 次のステップに進む前に外部イベントを待つタイムアウトを設定する
-1. [ ] ジョブ全体の最大実行時間を指定する
+- [x] 個々のステップの実行時間を制限する
+- [ ] ステップ内の個別のコマンドに対する時間間隔を定義する
+- [ ] 次のステップに進む前に外部イベントを待機するためのタイムアウトを設定する
+- [ ] ジョブの最大実行時間を指定する
