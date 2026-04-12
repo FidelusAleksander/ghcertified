@@ -1,11 +1,10 @@
 ---
-title: "質問 037"
-question: "個人アカウントが所有するRepositoryの権限レベルにはどのようなものがありますか？（2つ選択してください）"
+question: "個人アカウントが所有するリポジトリの異なる権限レベルとは何ですか？"
+documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository"
 ---
 
-> https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository
-- [x] Repositoryオーナー
-- [x] Collaborator
-- [ ] 請求マネージャー
-- [ ] セキュリティマネージャー
-- [ ] プロジェクトオーナー
+- [x] repository owner（リポジトリオーナー）
+- [x] collaborator（コラボレーター）
+- [ ] billing manager（請求管理者）
+- [ ] security manager（セキュリティ管理者）
+- [ ] project owner（プロジェクトオーナー）
