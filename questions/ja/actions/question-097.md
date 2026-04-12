@@ -1,10 +1,9 @@
 ---
-question: "GitHub Actionsの`actions/cache` Actionは、キャッシュミスが発生した場合にどのように処理しますか？"
-title: "質問 097"
+question: "GitHub Actions の `actions/cache` アクションは、キャッシュミスをどのように処理しますか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches
-1. [ ] 新しいキャッシュを作成するために手動対応を要求する
-1. [ ] 他のRepository内のキャッシュを検索する
-1. [x] ジョブが正常に完了した場合、自動的に新しいキャッシュを作成する
-1. [ ] キャッシュミスが発生した場合、Workflowを終了する
+- [ ] 新しいキャッシュを作成するために手動で介入を要求する
+- [ ] 他のリポジトリでキャッシュを検索する
+- [x] ジョブが正常に完了した場合に新しいキャッシュを自動的に作成する
+- [ ] キャッシュミスが発生した場合にワークフローを終了する
