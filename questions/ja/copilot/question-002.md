@@ -1,12 +1,9 @@
 ---
-title: "質問 002"
-question: "組織のメンバーに対してCopilotのアクセス権を付与する方法として正しくないものはどれですか？"
+question: "以下のオプションのうち、組織のメンバーにCopilotへのアクセスを許可する方法として該当しないものはどれですか？"
+documentation: "https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization"
 ---
 
-> Article Grant access to Copilot for members of an organization -https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization
-
-
-1. [x] 組織のメンバーとして、自分のアカウント設定から直接Copilotを有効にできる。
-1. [ ] Enterprise設定を通じて、特定の組織またはすべての組織でGitHub Copilotを有効にする。
-1. [ ] 組織設定を通じて、特定のチームまたはユーザー、あるいは組織全体にGitHub Copilotを有効にする。
-1. [ ] GitHubのREST APIを使用して、組織内のチームまたは特定のユーザーにGitHub Copilotへのアクセスを付与する。
+- [x] 組織のメンバーとして、アカウント設定から直接Copilotを有効にできます。
+- [ ] Enterprise設定を通じて、GitHub Copilotを選択した組織またはすべての組織で有効にします。
+- [ ] Organizations設定を通じて、GitHub Copilotを選択したチームまたはユーザー、あるいは組織全体に対して有効にします。
+- [ ] GitHubのREST APIを使用して、組織内のチームまたは特定のユーザーにGitHub Copilotへのアクセスを許可できます。
