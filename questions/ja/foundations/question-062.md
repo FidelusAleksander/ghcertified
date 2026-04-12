@@ -1,13 +1,11 @@
 ---
-title: "質問 062"
-question: "Repositoryをより見つけやすくする方法はどれですか？（3つ選択してください）"
+question: "どれがリポジトリの発見性を高める要因となりますか？"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository"
 ---
 
-
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository
-- [x] `README.md`、`CONTRIBUTING.md`などのMarkdownドキュメントを適切に整備する
-- [x] 説明的なRepository名を付ける
-- [x] Repositoryにトピックを設定する
+- [x] `README.md`、`CONTRIBUTING.md`などのMarkdownドキュメントを適切に作成する
+- [x] リポジトリに説明的な名前を付ける
+- [x] リポジトリのトピックを設定する
 - [ ] 適切なCI/CDパイプラインを定義する
-- [ ] ソフトウェアにテストを十分に実装する
-- [ ] 多様なGitHub AppsやGitHub Actionsを使用する
+- [ ] リポジトリのソフトウェアをテストでカバーする
+- [ ] 多種多様なGitHub AppsやGitHub Actionsを使用する
