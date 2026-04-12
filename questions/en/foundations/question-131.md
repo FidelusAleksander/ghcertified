@@ -1,9 +1,8 @@
 ---
 question: "Which statement best describes the difference between cloning a repository and forking a repository?"  
 draft: false  
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
 ---
-
-> **More info**: [About forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 
 - [ ] When you clone a repository, changes you push go directly to the original repository. Forking requires a separate local copy.  
 > Cloning and forking both result in separate local copies, but pushing to a clone requires the correct permission on the original repo.  

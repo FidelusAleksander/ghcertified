@@ -1,9 +1,8 @@
 ---
 question: "Which of the following actions can you perform on a GitHub Discussion?"  
 draft: false  
+documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 ---
-
-> **More info**: [About discussions](https://docs.github.com/en/discussions/quickstart#introduction)
 
 - [x] Pin a discussion  
 - [x] Transfer it to another repository discussion (if you have admin permissions)  

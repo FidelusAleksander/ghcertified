@@ -1,9 +1,8 @@
 ---
 question: "Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file?"  
 draft: false  
+documentation: "https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers"
 ---
-
-> **More info**: [Introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 
 - [x] Operating system or base image  
 - [x] Shell configuration  

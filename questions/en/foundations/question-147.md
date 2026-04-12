@@ -1,8 +1,8 @@
 ---
 question: "Which of the following capabilities are available in GitHub Copilot Business but not available in individual Copilot plans?"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
-> **More info**: [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)
 - [x] Centralized billing and seat management for an organization
 > Copilot Business provides centralized billing and seat management for organizations.
 - [x] Organization-wide policy controls (e.g., enable/disable features for all users)

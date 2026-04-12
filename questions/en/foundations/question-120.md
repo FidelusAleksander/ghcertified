@@ -1,9 +1,8 @@
 ---
 question: "Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?"  
 draft: false  
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
-
-> **More info**: [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
 - [x] They can configure which actions are allowed or blocked across the organization.  
 - [ ] They can delete all workflow runs from private repositories that are over 90 days old.  

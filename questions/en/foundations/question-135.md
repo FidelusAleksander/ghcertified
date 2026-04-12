@@ -1,9 +1,8 @@
 ---
 question: "Which of these statements about GitHub Pages is correct?"  
 draft: false  
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
 ---
-
-> **More info**: [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
 - [ ] GitHub Pages allows you to host a private website for free, accessible only by organization members.  
 > GitHub Pages sites are always publicly accessible, unless you use a project site with enterprise firewall rules on GitHub Enterprise Server.  

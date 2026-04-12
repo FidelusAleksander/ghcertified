@@ -1,11 +1,7 @@
 ---
 question: "What feature is unique to GitHub Desktop compared to github.com?"
+documentation: "https://docs.github.com/en/desktop/making-changes-in-a-branch/viewing-the-branch-history-in-github-desktop"
 ---
-
-> GitHub Desktop provides a graphical interface for visualizing branch histories, which is unique compared to the website
-> - https://docs.github.com/en/desktop/making-changes-in-a-branch/viewing-the-branch-history-in-github-desktop
-> - https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/using-the-activity-view-to-see-changes-to-a-repository
-
 
 - [ ] Clone repositories to local machine
 - [ ] Create new repositories
