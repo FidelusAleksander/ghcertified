@@ -1,6 +1,6 @@
 ---
 title: "Question 054"
-question: "How can you configure your GitHub repository to run CodeQL analysis on a schedule? (Choose two.)"
+question: "How can you configure your GitHub repository to run CodeQL analysis on a schedule?"
 ---
 
 

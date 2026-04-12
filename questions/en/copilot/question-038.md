@@ -1,6 +1,6 @@
 ---
 title: "Question 038"
-question: "Which statements are correct regarding the usage of @workspace and #codebase? (Select two.)"
+question: "Which statements are correct regarding the usage of @workspace and #codebase?"
 ---
 
 > https://learn.microsoft.com/en-us/training/modules/generate-documentation-using-github-copilot-tools/3-examine-github-copilot-prompts-keywords

@@ -1,6 +1,6 @@
 ---
 title: "Question 032"
-question: "Which of the sentences is correct? (Select two.)"
+question: "Which of the sentences is correct?"
 ---
 
 > https://learn.microsoft.com/en-us/training/modules/develop-code-features-using-github-copilot-tools/3-examine-github-copilot-best-practices

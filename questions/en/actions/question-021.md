@@ -1,5 +1,5 @@
 ---
-question: "What are the possible types of an input variable for a manually triggered workflow? (Select five.)"
+question: "What are the possible types of an input variable for a manually triggered workflow?"
 title: "Question 021"
 ---
 

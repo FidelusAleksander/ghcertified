@@ -1,5 +1,5 @@
 ---
-question: "Which components are required for a workflow? (Select two.)"
+question: "Which components are required for a workflow?"
 title: "Question 007"
 ---
 

@@ -1,5 +1,5 @@
 ---
-question: "What are the valid use cases for using **defaults**? (Select two.)"
+question: "What are the valid use cases for using **defaults**?"
 title: "Question 027"
 ---
 

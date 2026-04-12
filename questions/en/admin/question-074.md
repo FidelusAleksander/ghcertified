@@ -1,5 +1,5 @@
 ---
-question: "Which of the following are types of access tokens supported by GitHub? (Choose three.)"
+question: "Which of the following are types of access tokens supported by GitHub?"
 title: "Question 074"
 ---
 

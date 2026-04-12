@@ -1,6 +1,6 @@
 ---
 title: "Question 128"  
-question: "Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file? (Choose three.)"  
+question: "Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file?"  
 draft: false  
 ---
 

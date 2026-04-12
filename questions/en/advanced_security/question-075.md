@@ -1,6 +1,6 @@
 ---
 title: "Question 075"
-question: "How can you customize your advanced CodeQL scanning setup with additional CodeQL query suites? (Choose two.)"
+question: "How can you customize your advanced CodeQL scanning setup with additional CodeQL query suites?"
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning

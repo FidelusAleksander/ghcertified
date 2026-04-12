@@ -1,5 +1,5 @@
 ---
-question: "Secrets and configuration variables can be scoped to: (Select three.)"
+question: "Secrets and configuration variables can be scoped to:"
 title: "Question 050"
 ---
 

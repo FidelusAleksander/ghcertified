@@ -1,5 +1,5 @@
 ---
-question: "Which of the following are NOT recognized roles within a GitHub organization? (Choose three.)"
+question: "Which of the following are NOT recognized roles within a GitHub organization?"
 title: "Question 047"
 ---
 

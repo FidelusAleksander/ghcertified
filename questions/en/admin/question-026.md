@@ -1,5 +1,5 @@
 ---
-question: "Which of the following are extra features provided by GitHub Enterprise Cloud over GitHub Free plan? (choose four.)"
+question: "Which of the following are extra features provided by GitHub Enterprise Cloud over GitHub Free plan?"
 title: "Question 026"
 ---
 

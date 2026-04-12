@@ -1,5 +1,5 @@
 ---
-question: "Which of the following issues can GitHub Support help resolve? (Choose four.)"
+question: "Which of the following issues can GitHub Support help resolve?"
 title: "Question 004"
 ---
 

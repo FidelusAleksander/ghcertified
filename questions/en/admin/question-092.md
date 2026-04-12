@@ -1,5 +1,5 @@
 ---
-question: "Which package managers and formats are supported by GitHub Packages? (Choose five.)"
+question: "Which package managers and formats are supported by GitHub Packages?"
 title: "Question 092"
 ---
 

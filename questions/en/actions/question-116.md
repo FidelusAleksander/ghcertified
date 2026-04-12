@@ -1,5 +1,5 @@
 ---
-question: "When can you delete workflow runs? (select two)"
+question: "When can you delete workflow runs?"
 title: "Question 116"
 ---
 

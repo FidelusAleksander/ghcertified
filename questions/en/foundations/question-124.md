@@ -1,6 +1,6 @@
 ---
 title: "Question 124"  
-question: "Which of the following actions can you perform on a GitHub Discussion? (Choose three.)"  
+question: "Which of the following actions can you perform on a GitHub Discussion?"  
 draft: false  
 ---
 

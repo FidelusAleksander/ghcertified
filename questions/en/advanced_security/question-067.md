@@ -1,6 +1,6 @@
 ---
 title: "Question 067"
-question: "What are the different types of CodeQL packs? (Choose three.)"
+question: "What are the different types of CodeQL packs?"
 ---
 
 > https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs

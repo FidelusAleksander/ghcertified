@@ -1,5 +1,5 @@
 ---
-question: "When should you use `artifacts`? (Select two.)"
+question: "When should you use `artifacts`?"
 title: "Question 042"
 ---
 

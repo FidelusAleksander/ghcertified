@@ -1,5 +1,5 @@
 ---
-question: "Which endpoints does the GitHub API provide to administer your enterprise? (Choose six.)"
+question: "Which endpoints does the GitHub API provide to administer your enterprise?"
 title: "Question 007"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Question 007"
-question: "Which is true about Copilot's Content exclusions? (Choose two)"
+question: "Which is true about Copilot's Content exclusions?"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Question 034"
-question: "Which statements are correct about GitHub Copilot CLI? (Select three.)"
+question: "Which statements are correct about GitHub Copilot CLI?"
 ---
 
 

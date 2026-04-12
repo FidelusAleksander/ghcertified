@@ -1,5 +1,5 @@
 ---
-question: "Which is true about `Starter Workflows` ? (Select three.)"
+question: "Which is true about `Starter Workflows` ?"
 title: "Question 049"
 ---
 

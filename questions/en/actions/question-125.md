@@ -1,6 +1,6 @@
 ---
 title: "Question 125"
-question: "At what levels can environment variables be defined ? (Choose three)"
+question: "At what levels can environment variables be defined ?"
 ---
 
 

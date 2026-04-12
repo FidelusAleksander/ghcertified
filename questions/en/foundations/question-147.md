@@ -1,6 +1,6 @@
 ---
 title: "Question 147"
-question: "Which of the following capabilities are available in GitHub Copilot Business but not available in individual Copilot plans? (Choose two)"
+question: "Which of the following capabilities are available in GitHub Copilot Business but not available in individual Copilot plans?"
 ---
 
 > **More info**: [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)

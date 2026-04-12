@@ -1,5 +1,5 @@
 ---
-question: "What components can be reused within a GitHub Organization? (Select four.)"
+question: "What components can be reused within a GitHub Organization?"
 title: "Question 072"
 ---
 

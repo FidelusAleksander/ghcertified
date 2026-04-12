@@ -1,5 +1,5 @@
 ---
-question: "Which identity providers (IdPs) support GitHub Enterprise Cloud SCIM API for organizations? (Choose three.)"
+question: "Which identity providers (IdPs) support GitHub Enterprise Cloud SCIM API for organizations?"
 title: "Question 016"
 ---
 

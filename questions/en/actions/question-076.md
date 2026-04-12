@@ -1,5 +1,5 @@
 ---
-question: "What's the maximum amount of reusable workflows that can be called from a single workflow file? "
+question: "What's the maximum amount of reusable workflows that can be called from a single workflow file?"
 title: "Question 076"
 ---
 

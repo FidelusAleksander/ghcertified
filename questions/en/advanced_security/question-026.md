@@ -1,6 +1,6 @@
 ---
 title: "Question 026"
-question: "How does GitHub Dependency graph know what dependencies your project is using? (Choose two.)"
+question: "How does GitHub Dependency graph know what dependencies your project is using?"
 ---
 
 

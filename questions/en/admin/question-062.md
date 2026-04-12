@@ -1,5 +1,5 @@
 ---
-question: "What are the repository roles available in a GitHub organization? (Choose five.)"
+question: "What are the repository roles available in a GitHub organization?"
 title: "Question 062"
 ---
 

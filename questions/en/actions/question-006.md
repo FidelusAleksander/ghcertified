@@ -1,5 +1,5 @@
 ---
-question: "Which is true about workflows? (Select three.)"
+question: "Which is true about workflows?"
 title: "Question 006"
 ---
 

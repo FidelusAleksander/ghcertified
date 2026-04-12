@@ -1,6 +1,6 @@
 ---
 title: "Question 008"
-question: "Which parts of the repository are scanned by secret scanning? (Choose two.)"
+question: "Which parts of the repository are scanned by secret scanning?"
 ---
 
 

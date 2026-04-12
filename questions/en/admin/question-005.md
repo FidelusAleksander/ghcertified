@@ -1,5 +1,5 @@
 ---
-question: "Which of the following are correct methods to generate and share a diagnostic file for GitHub Enterprise Server? (Choose two.)"
+question: "Which of the following are correct methods to generate and share a diagnostic file for GitHub Enterprise Server?"
 title: "Question 005"
 ---
 

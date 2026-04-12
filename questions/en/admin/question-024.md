@@ -1,5 +1,5 @@
 ---
-question: "What are valid authentication methods available in GitHub? (Choose six.)"
+question: "What are valid authentication methods available in GitHub?"
 title: "Question 024"
 ---
 

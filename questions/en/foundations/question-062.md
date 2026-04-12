@@ -1,6 +1,6 @@
 ---
 title: "Question 062"
-question: "Which of these can make a repository more discoverable? (Choose three.)"
+question: "Which of these can make a repository more discoverable?"
 ---
 
 

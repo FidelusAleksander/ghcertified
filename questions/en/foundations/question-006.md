@@ -1,6 +1,6 @@
 ---
 title: "Question 006"
-question: "Which of these layouts are available in GitHub Projects? (Choose three.)"
+question: "Which of these layouts are available in GitHub Projects?"
 ---
 
 

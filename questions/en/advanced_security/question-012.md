@@ -1,6 +1,6 @@
 ---
 title: "Question 012"
-question: "Which of these is true about the GitHub secret scanning partner program? (Choose three.)"
+question: "Which of these is true about the GitHub secret scanning partner program?"
 ---
 
 

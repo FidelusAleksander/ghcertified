@@ -1,6 +1,6 @@
 ---
 title: "Question 031"
-question: "Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)"
+question: "Which of these statements regarding GitHub Codespaces lifecycle are true?"
 ---
 
 > https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle

@@ -1,5 +1,5 @@
 ---
-question: "What GitHub-hosted runner types are available to use? (Select three.)"
+question: "What GitHub-hosted runner types are available to use?"
 title: "Question 032"
 ---
 

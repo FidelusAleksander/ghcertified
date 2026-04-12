@@ -1,6 +1,6 @@
 ---
 title: "Question 106"
-question: "What are the different levels of GitHub organizational hierarchy? (Choose three.)"
+question: "What are the different levels of GitHub organizational hierarchy?"
 ---
 
 > https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration

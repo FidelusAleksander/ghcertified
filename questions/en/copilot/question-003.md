@@ -1,6 +1,6 @@
 ---
 title: "Question 003"
-question: "What IDEs does GitHub Copilot support? (Choose two.)"
+question: "What IDEs does GitHub Copilot support?"
 ---
 
 > https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot

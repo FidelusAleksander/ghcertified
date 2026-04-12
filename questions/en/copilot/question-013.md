@@ -1,6 +1,6 @@
 ---
 title: "Question 013"
-question: "What happens when you exclude content from GitHub Copilot? (Choose two)"
+question: "What happens when you exclude content from GitHub Copilot?"
 ---
 
 > https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot

@@ -1,5 +1,5 @@
 ---
-question: "What are some potential abuse vectors of enabling self-hosted runners on public repositories? (Choose four.)"
+question: "What are some potential abuse vectors of enabling self-hosted runners on public repositories?"
 title: "Question 084"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Question 121"
-question: "What’s true about default variables? (choose three)"
+question: "What’s true about default variables?"
 ---
 
 

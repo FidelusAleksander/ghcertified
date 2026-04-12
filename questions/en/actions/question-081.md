@@ -1,6 +1,6 @@
 ---
 title: "Question 081"
-question: "How can you reuse a defined workflow in multiple repositories? (Choose two.)"
+question: "How can you reuse a defined workflow in multiple repositories?"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Question 142"
-question: "Why might a team choose GitHub Issues over Discussions for managing bug reports? "
+question: "Why might a team choose GitHub Issues over Discussions for managing bug reports?"
 ---
 
 > **More info**: [About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
