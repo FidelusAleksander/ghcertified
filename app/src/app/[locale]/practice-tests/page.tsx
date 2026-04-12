@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "PracticeTests" });
-  const title = t("title");
+  const title = `${t("title1")} ${t("title2")}`;
   const description = t("description");
 
   return {
