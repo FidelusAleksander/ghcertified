@@ -1,13 +1,11 @@
 ---
-title: "質問 132"  
-question: "GitHubプロフィールにピン留めできる項目について正しい記述はどれですか？"  
+question: "GitHub プロフィールに固定できる項目について、正しい記述はどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
 ---
 
-> **詳細**: [Pinning items to your profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
-
-1. [ ] プロフィールには最大10個のRepositoryをピン留めできる。  
-1. [x] プロフィールには最大6つのRepositoryまたはGistをピン留めでき、すぐにアクセスできるようにできる。  
-  > **正解**。GitHubでは最大6つの項目（RepositoryまたはGist）をピン留め可能。  
-1. [ ] Public Repositoryのみピン留めでき、Private Repositoryはできない。  
-1. [ ] 項目をピン留めすると、Repository一覧から削除される。
+- [ ] プロフィールに最大10個のリポジトリを固定できます。  
+- [x] プロフィールに最大6つのリポジトリまたは Gist を固定して、すばやくアクセスできます。  
+> **正解**。GitHub では最大6つの項目（リポジトリまたは Gist）を固定できます。  
+- [ ] パブリックリポジトリのみ固定でき、プライベートリポジトリは固定できません。  
+- [ ] 項目を固定すると、そのリポジトリリストから削除されます。  
