@@ -1,33 +1,30 @@
 ---
-question: "Qual configuração é apropriada para acionar um workflow para ser executado em eventos de webhook relacionados a ações check_run?"
-title: "Pergunta 108"
+question: "Qual configuração é apropriada para acionar um workflow em eventos de webhook relacionados a ações check_run?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#check_run"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#check_run
-
-1. [x] 
+- [x] 
 ```yaml
 on:
     check_run:
         types: [rerequested, completed]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
 on:
     check_run:
         types: [started]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
 on:
     check_run:
         type: [closed]
 ```
 
-1. [ ] 
+- [ ] 
 ```yaml
 on:
     check_run:
