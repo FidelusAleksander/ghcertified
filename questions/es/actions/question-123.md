@@ -1,6 +1,6 @@
 ---
-question: "¿Qué se debe agregar a `actions/checkout` si `my-org/my-private-repo` es un repositorio privado diferente al que contiene el flujo de trabajo actual?"
-title: "Pregunta 123"
+question: "¿Qué debe añadirse a `actions/checkout` si `my-org/my-private-repo` es un repositorio privado diferente del que contiene el flujo de trabajo actual?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow"
 ---
 
 ```yaml
@@ -17,9 +17,7 @@ jobs:
                path: ./.github/actions/my-org/my-private-repo
 ```
 
-> https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow
-
-1. [x] Crear un secreto de GitHub `MY_ACCESS_TOKEN`
+- [x] Crear un GitHub secret `MY_ACCESS_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -27,7 +25,7 @@ with:
     token: ${{ secrets.MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] Crear un input `MY_ACCESS_TOKEN`
+- [ ] Crear una entrada `MY_ACCESS_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -35,7 +33,7 @@ with:
     token: ${{ MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] La variable de entorno `GITHUB_TOKEN`
+- [ ] La variable de entorno `GITHUB_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -43,7 +41,7 @@ with:
     token: $GITHUB_TOKEN
 ```
 
-1. [ ] Dejarlo tal como está, ya que los tokens de acceso se pasarán automáticamente
+- [ ] Dejar tal como está, ya que los tokens de acceso se pasarán automáticamente
 ```yaml
 with:
     repository: my-org/my-private-repo
