@@ -1,9 +1,8 @@
 ---
-question: "Un flujo de trabajo que solo tiene el evento desencadenador `workflow_dispatch` puede ser activado usando la REST API de GitHub"
-title: "Pregunta 022"
+question: "Un flujo de trabajo que solo tiene el disparador de evento `workflow_dispatch` puede activarse utilizando la API REST de GitHub"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
-1. [x] Verdadero
-1. [ ] Falso
-
+- [x] Verdadero
+- [ ] Falso
+---
