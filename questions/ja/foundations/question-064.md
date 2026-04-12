@@ -1,11 +1,9 @@
 ---
-title: "質問 064"
-question: "Pull Requestテンプレートとは何ですか？"
+question: "プルリクエストテンプレートとは何ですか？"
+documentation: "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"
 ---
 
-
-> https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository
-1. [x] Pull Request作成時に、自動的に表示されるデフォルト構造を定義したファイル
-1. [ ] 新しいブランチ作成時に自動生成されるPull Request
-1. [ ] Repositoryオーナーが新規Pull Request作成時の参考用に選んだPull Request
-1. [ ] Pull Requestにおけるコード変更の例を示したもの
+- [x] プルリクエストテンプレートは、プロジェクトのコントリビューターがプルリクエストを作成するときに自動的に表示される、デフォルトのプルリクエスト構造を定義するファイルです。
+- [ ] プルリクエストテンプレートは、新しいブランチが作成されたときに自動的に生成されるプルリクエストです。
+- [ ] プルリクエストテンプレートは、新しいプルリクエストを作成する際にリポジトリの所有者が参照用に選択するプルリクエストです。
+- [ ] プルリクエストテンプレートは、特定のリポジトリ内でプルリクエスト内のコード変更がどのように見えるべきかの例です。
