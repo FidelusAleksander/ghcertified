@@ -1,6 +1,6 @@
 ---
-question: "¿Cómo puedes omitir la siguiente ejecución del workflow cuando haces un commit o creas un PR?"
-title: "Pregunta 118"
+question: "¿Cómo puedes omitir la siguiente ejecución del flujo de trabajo cuando realizas un commit o creas un PR?"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
 ---
 
 ```yaml
@@ -14,9 +14,7 @@ jobs:
 ...
 ```
 
->https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
-
-1. [x] Incluyendo cualquiera de las siguientes palabras clave en el mensaje del commit o en el título del pull-request:
+- [x] Incluyendo cualquiera de las siguientes palabras clave en el mensaje del commit o en el título del pull-request
 ```yaml
 [skip ci]
 [ci skip]
@@ -25,5 +23,5 @@ jobs:
 [actions skip]
 ```
 
-1. [ ] Proporcionar `SKIP_WORKFLOW` en el mensaje del commit
-1. [ ] El workflow anterior se ejecutará en cada evento de push o pull request en todos los casos
+- [ ] Proporcionar `SKIP_WORKFLOW` en el mensaje del commit
+- [ ] El flujo de trabajo anterior se ejecutará en cada evento de push o pull request en todos los casos
