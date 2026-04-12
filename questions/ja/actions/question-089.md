@@ -1,10 +1,10 @@
 ---
-title: "質問 089"
-question: "GitHub Actions Workflowで同時に実行されるジョブ数を制限するために使用できるものはどれですか？"
+question: "次のうち、GitHub Actions ワークフローで実行中の同時ジョブ数を制限するために使用できるのはどれですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency
-1. [x] concurrency
-1. [ ] limit
-1. [ ] max-jobs
-1. [ ] parallelism
+- [x] concurrency
+- [ ] limit
+- [ ] max-jobs
+- [ ] parallelism
+---
