@@ -1,14 +1,13 @@
 ---
-question: "Você deseja criar um workflow reutilizável `CI` que execute algumas verificações de qualidade, linting e testes em alterações no código. Qual gatilho de evento o workflow `CI` deve definir para permitir sua reutilização em outros workflows?"
-title: "Pergunta 025"
+question: "Você deseja criar um workflow reutilizável `CI` que execute algumas verificações de qualidade, linting e testes nas alterações do código. Qual gatilho de evento o workflow `CI` deve definir para permitir sua reutilização em outros workflows?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-1. [x] workflow_call
-1. [ ] workflow_trigger
-> Não existe tal gatilho de evento
-1. [ ] workflow_dispatch
-> Este é usado para gatilhos manuais
-1. [ ] workflow_run
+- [x] workflow_call
+- [ ] workflow_trigger
+> Esse gatilho de evento não existe
+- [ ] workflow_dispatch
+> É usado para gatilhos manuais
+- [ ] workflow_run
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run
 
