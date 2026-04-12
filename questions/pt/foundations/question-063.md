@@ -1,10 +1,9 @@
 ---
-title: "Pergunta 063"
-question: "Como você pode definir protocolos orientadores para usuários que pretendem enviar relatórios de bugs ou propor novos recursos no seu repositório, para que eles saibam quais informações preencher?"
+question: "Como você pode definir protocolos orientadores para usuários que pretendem relatar bugs ou propor novos recursos no seu repositório, para que saibam quais informações preencher?"
+documentation: "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates"
 ---
 
-> https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates  
-1. [x] Criar templates de issues  
-1. [ ] Adicionar labels às issues que eles criam  
-1. [ ] Configurar GitHub Projects  
-1. [ ] Ter uma issue de exemplo no repositório que seja fácil de copiar e que nunca seja fechada  
+- [x] Criar modelos de issue
+- [ ] Adicionar labels às issues que eles criam
+- [ ] Configurar GitHub Projects
+- [ ] Ter um exemplo de issue no repositório que seja fácil de copiar e que nunca seja fechado
