@@ -1,10 +1,10 @@
 ---
-title: "Pergunta 029"
-question: "Quais são as diferentes fases possíveis do ciclo de vida de um GitHub Codespace?"
+pergunta: "Quais são as diferentes fases possíveis do ciclo de vida de um GitHub Codespace?"
+documentação: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
 ---
 
-> https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
-1. [x] Create, Rebuild, Stop, Delete
-1. [ ] Create, Delete
-1. [ ] Create, Stop, Delete
-1. [ ] Create, Rebuild, Delete
+- [x] Criar, Reconstruir, Parar, Excluir
+- [ ] Criar, Excluir
+- [ ] Criar, Parar, Excluir
+- [ ] Criar, Reconstruir, Excluir
+
