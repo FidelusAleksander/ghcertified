@@ -1,10 +1,10 @@
 ---
-title: "Pergunta 027"
-question: "Qual das opções a seguir NÃO é um modo selecionável no GitHub Copilot Chat?"
+question: "Qual das seguintes opções NÃO é um modo selecionável no GitHub Copilot Chat?"
+documentation: "https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes#_builtin-chat-modes"
 ---
 
-> https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes#_builtin-chat-modes
-1. [ ] Ask
-1. [ ] Edit
-1. [x] Translate
-1. [ ] Agent
+- [ ] Perguntar
+- [ ] Editar
+- [x] Traduzir
+- [ ] Agente
+
