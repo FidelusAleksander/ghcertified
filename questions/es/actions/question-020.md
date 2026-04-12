@@ -1,11 +1,10 @@
 ---
-question: "¿Qué evento te permite activar manualmente un workflow desde la interfaz de GitHub?"
-title: "Pregunta 020"
+question: "¿Qué evento te permite activar manualmente un flujo de trabajo desde la interfaz de usuario de GitHub?"
+documentation: "https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
-1. [x] workflow_dispatch
-1. [ ] manual_dispatch
-1. [ ] workflow_trigger
-1. [ ] manual_trigger
-
+- [x] workflow_dispatch
+- [ ] manual_dispatch
+- [ ] workflow_trigger
+- [ ] manual_trigger
+---
