@@ -1,8 +1,7 @@
 ---
-title: "Pergunta 075"
-question: "Existe uma versão gratuita do GitHub para organizações?"
+pergunta: "Existe uma versão gratuita do GitHub para organizações?"
+documentação: "https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-free-for-organizations"
 ---
 
-> https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-free-for-organizations
-1. [x] Sim  
-1. [ ] Não  
+- [x] Sim  
+- [ ] Não  
