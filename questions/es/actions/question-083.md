@@ -1,10 +1,10 @@
 ---
-title: "Pregunta 083"
-question: "¿Qué hace la palabra clave `needs` en un workflow de GitHub Actions?"
+question: "¿Qué hace la palabra clave `needs` en un flujo de trabajo de GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
-1. [x] Especifica las dependencias de un job
-1. [ ] Define variables de entorno
-1. [ ] Configura el entorno
-1. [ ] Desencadena un job basado en un evento
+- [x] Especifica las dependencias de un trabajo
+- [ ] Define variables de entorno
+- [ ] Configura el entorno
+- [ ] Activa un trabajo basado en un evento
+
