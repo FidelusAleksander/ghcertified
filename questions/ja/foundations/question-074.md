@@ -1,11 +1,9 @@
 ---
-title: "質問 074"
-question: "GitHub Proプランとは何ですか？"
+question: "GitHub Pro プランとは何ですか？"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-pro"
 ---
 
-
-> https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-pro
-1. [x] 無料プランに加えて追加機能を提供する、個人アカウント向けの有料プラン
-1. [ ] 無料のOrganizationプランに加えて追加機能を提供する、Organization向けの有料プラン
-1. [ ] 最終的にGitHub Proになるための認定パス
-1. [ ] GitHubを自社サーバーにセルフホストするためのEnterprise向け有料プラン
+- [x] GitHub Pro は、個人アカウント向けの有料プランで、無料プランに加えて追加機能を提供します。
+- [ ] GitHub Pro は、組織向けの有料プランで、無料の組織プランに加えて追加機能を提供します。
+- [ ] GitHub Pro は、GitHub Pro になる認証パスです。
+- [ ] GitHub Pro は、エンタープライズ向けの有料プランで、自社サーバーに GitHub をセルフホストするためのものです。
