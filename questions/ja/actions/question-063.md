@@ -1,10 +1,9 @@
 ---
 question: "デバッグメッセージを出力する正しい方法はどれですか？"
-title: "質問 063"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-setting-a-debug-message"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-setting-a-debug-message
-1. [x] `echo "::debug::Watch out here!"`
-1. [ ] `echo ":debug:Watch out here!"`
-1. [ ] `echo "::debug::message=Watch out here!"`
-1. [ ] `echo "Watch out here!" >> $GITHUB_DEBUG`
+- [x] `echo "::debug::Watch out here!"`
+- [ ] `echo ":debug:Watch out here!"`
+- [ ] `echo "::debug::message=Watch out here!"`
+- [ ] `echo "Watch out here!" >> $GITHUB_DEBUG`
