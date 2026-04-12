@@ -1,14 +1,11 @@
 ---
-title: "Pytanie 020"
-question: "Workflows GitHub Actions są uruchamiane przez zdarzenia. Które z poniższych są prawidłowymi zdarzeniami obsługiwanymi przez GitHub Actions? (Wybierz dwa.)"
+question: "Workflows GitHub Actions są uruchamiane przez zdarzenia. Które z nich są poprawnymi zdarzeniami obsługiwanymi przez GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows"
 ---
 
-
-
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
-- [x] Commit zostaje wysłany do gałęzi
-- [x] Pull request zostaje otwarty
-- [ ] Wprowadzono zmianę w ustawieniach repozytorium
-- [ ] Wykryto nową podatność w zależności
-> To nie jest prawidłowe zdarzenie, które mogłoby uruchomić workflow. To funkcja Dependabot.
-- [ ] Do repozytorium dodano nowego członka
+- [x] Dodano commit do gałęzi
+- [x] Otworzono pull request
+- [ ] Wprowadzono zmianę w ustawieniach repository
+- [ ] Wykryto nową lukę w zabezpieczeniach zależności  
+> To nie jest prawidłowe zdarzenie, które mogłoby uruchomić workflow. Jest to funkcja Dependabot.
+- [ ] Dodano nowego członka do repository
