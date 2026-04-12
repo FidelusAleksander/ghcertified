@@ -384,7 +384,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           )}
 
           {/* Question Map */}
-          <Card className="shadow-sm border-[1.5px]">
+          <Card className="hidden lg:block shadow-sm border-[1.5px]">
             <CardHeader className="p-5 pb-0">
               <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
                 {mapTotalPages > 1 ? t("mapRange", { start: mapStart + 1, end: mapEnd, total: quizQuestions.length }) : t("questionMap")}
@@ -586,4 +586,3 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
     </div>
   );
 }
-
