@@ -13,6 +13,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
 import { shuffle, cn } from "@/lib/utils";
+import { useCountUp } from "@/hooks/useCountUp";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { localePath } from "@/lib/locales";
@@ -61,6 +62,16 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const [isComplete, setIsComplete] = useState(false);
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
   const [manualMapPage, setManualMapPage] = useState<number | null>(null);
+
+  // Direction tracking for question transition animation
+  const [slideDirection, setSlideDirection] = useState<"right" | "left">("right");
+  const [transitionKey, setTransitionKey] = useState(0);
+
+  const goToQuestion = useCallback((next: number) => {
+    setSlideDirection(next >= currentIndex ? "right" : "left");
+    setCurrentIndex(next);
+    setTransitionKey((k) => k + 1);
+  }, [currentIndex]);
 
   // Question map pagination
   const MAP_PAGE_SIZE = 60;
@@ -115,7 +126,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       if (Math.floor(next / MAP_PAGE_SIZE) !== Math.floor(currentIndex / MAP_PAGE_SIZE)) {
         setManualMapPage(null);
       }
-      setCurrentIndex(next);
+      goToQuestion(next);
     }
   };
 
@@ -125,7 +136,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       if (Math.floor(next / MAP_PAGE_SIZE) !== Math.floor(currentIndex / MAP_PAGE_SIZE)) {
         setManualMapPage(null);
       }
-      setCurrentIndex(next);
+      goToQuestion(next);
     }
   };
 
@@ -154,6 +165,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   };
 
   const score = isComplete ? quizQuestions.filter(isQuestionCorrect).length : 0;
+  const scorePercent = quizQuestions.length > 0 ? Math.round((score / quizQuestions.length) * 100) : 0;
+  const animatedPercent = useCountUp(isComplete ? scorePercent : 0);
   const isCurrentCorrectInReview = isComplete && currentQuestion ? isQuestionCorrect(currentQuestion) : false;
 
   const handleSubmitExam = () => {
@@ -247,6 +260,15 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             )}
           </CardHeader>
           <CardContent className="p-4 sm:p-7 text-left">
+            <div
+              key={transitionKey}
+              className={cn(
+                "motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200",
+                slideDirection === "right"
+                  ? "motion-safe:slide-in-from-right-2"
+                  : "motion-safe:slide-in-from-left-2",
+              )}
+            >
             {/* Question text */}
             <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
               {renderCodeSpans(currentQuestion.question)}
@@ -270,8 +292,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const isCorrectOpt = answer.isCorrect;
 
                 const optionClass = cn(
-                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-                  !isComplete && "cursor-pointer",
+                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all duration-150 text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  !isComplete && "cursor-pointer motion-safe:active:scale-[0.98]",
                   isComplete && isCorrectOpt && "border-success bg-success-soft",
                   isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
                   isComplete && !isSelected && !isCorrectOpt && "border-border bg-card opacity-60",
@@ -309,7 +331,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
                     {isComplete && isSelected && (
                       <span className={cn(
-                        "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
+                        "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",
                         isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
                       )}>
                         {t("yourAnswer")}
@@ -322,7 +344,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
 
             {/* Review feedback */}
             {isComplete && (
-              <Alert className={`mt-5 ${isCurrentCorrectInReview ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive"}`}>
+              <Alert className={cn(
+                "mt-5 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200",
+                isCurrentCorrectInReview ? "bg-success-soft border-success/40 text-success" : "bg-destructive-soft border-destructive/40 text-destructive",
+              )}>
                 <AlertTitle className="flex items-center gap-2">
                   <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
                   {isCurrentCorrectInReview ? t("correct") : t("incorrect")}
@@ -341,6 +366,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 )}
               </Alert>
             )}
+            </div>
           </CardContent>
 
           <Separator />
@@ -363,7 +389,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground",
                 );
                 return (
-                  <button key={i} onClick={() => setCurrentIndex(i)} className={dotClass}>
+                  <button key={i} onClick={() => goToQuestion(i)} className={dotClass}>
                     {i + 1}
                   </button>
                 );
@@ -406,7 +432,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         {/* Sidebar */}
         <div className="flex flex-col gap-4 lg:sticky lg:top-6">
           {isComplete && (
-            <Card className="shadow-sm border-[1.5px]">
+            <Card className="shadow-sm border-[1.5px] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300">
               <CardHeader className="p-5 pb-0">
                 <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
                   {t("results")}
@@ -414,8 +440,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               </CardHeader>
               <CardContent className="p-5 pt-3">
                 <div className="text-center mb-3">
-                  <span className="font-display text-[36px] font-extrabold text-foreground leading-none">
-                    {Math.round((score / quizQuestions.length) * 100)}%
+                  <span className="font-display text-[36px] font-extrabold text-foreground leading-none tabular-nums">
+                    {animatedPercent}%
                   </span>
                   <div className="text-[13px] text-muted-foreground mt-1">
                     {t("scoreOf", { score, total: quizQuestions.length })}
@@ -465,7 +491,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
                   );
                   return (
-                    <button key={i} onClick={() => setCurrentIndex(i)} className={btnClass}>
+                    <button key={i} onClick={() => goToQuestion(i)} className={btnClass}>
                       {i + 1}
                       {isQuestionFlagged && (
                         <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-[14px] leading-none drop-shadow-sm">🚩</span>

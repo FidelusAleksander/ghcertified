@@ -207,7 +207,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       </Card>
 
       {/* Question card */}
-      <Card className="overflow-hidden shadow-sm border-[1.5px]">
+      <Card className="overflow-hidden shadow-sm border-[1.5px] pt-0 gap-0">
         <CardHeader className="bg-foreground px-4 sm:px-7 py-4 sm:py-5 flex flex-row items-center justify-between gap-3 space-y-0">
           <span className="font-display text-[13px] font-bold text-card/50 tracking-wide">
             {t("questionOf", { current: currentIndex + 1, total: questions.length })}
@@ -293,6 +293,14 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                     )}
                   </div>
                   <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
+                  {isRevealed && isSelected && (
+                    <span className={cn(
+                      "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
+                      isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
+                    )}>
+                      {t("yourAnswer")}
+                    </span>
+                  )}
                 </button>
               );
             })}

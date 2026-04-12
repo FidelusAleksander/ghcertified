@@ -109,6 +109,7 @@
     "selectExactly": "Select exactly {count} answers",
     "correct": "Correct!",
     "notQuite": "Not quite!",
+    "yourAnswer": "Your answer",
     "learnMore": "Learn more in the docs",
     "checkAnswer": "Check Answer",
     "previous": "Previous",
