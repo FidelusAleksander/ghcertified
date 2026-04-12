@@ -1,10 +1,9 @@
 ---
-title: "Pergunta 084"
-question: "O que são os comandos de barra do GitHub?"
+question: "O que são os comandos de barra (slash commands) do GitHub?"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands"
 ---
 
-> https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands
-1. [x] É uma maneira rápida de inserir Markdown complexo em seus comentários e descrições de pull request ou issue.
-1. [ ] É uma forma de automatizar o GitHub Actions.
-1. [ ] É outro nome para o GitHub CLI.
-1. [ ] É uma maneira de corrigir rapidamente problemas de formatação de código nas alterações de código do seu pull request.
+- [x] É uma forma de inserir rapidamente Markdown complexo nos comentários e descrições do seu pull request ou issue.
+- [ ] É uma forma de automatizar o GitHub Actions.
+- [ ] É outro nome para o GitHub CLI.
+- [ ] É uma forma de corrigir rapidamente problemas de formatação de código nas alterações de código do seu pull request.
