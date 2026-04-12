@@ -1,9 +1,8 @@
 ---
-question: "手動でトリガーされるWorkflowの入力変数の型として可能なのはどれですか？（5つ選択）"
-title: "質問 021"
+question: "手動でトリガーされるワークフローの入力変数の可能なタイプは何ですか？"
+documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputsinput_idtype"
 ---
 
-> https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputsinput_idtype
 - [x] choice
 - [x] boolean
 - [x] string
@@ -11,3 +10,4 @@ title: "質問 021"
 - [x] environment
 - [ ] dropdown
 - [ ] select
+
