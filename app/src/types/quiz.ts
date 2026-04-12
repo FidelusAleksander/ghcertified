@@ -15,6 +15,7 @@ export type AnswerOption = {
   id: string;
   text: string;
   isCorrect: boolean;
+  explanation?: string;
 };
 
 export interface QuizState {

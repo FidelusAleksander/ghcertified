@@ -23,7 +23,7 @@ export interface Question {
   id: string;
   cert: CertificationType;
   question: string;
-  answers: { id: string; text: string; isCorrect: boolean }[];
+  answers: { id: string; text: string; isCorrect: boolean; explanation?: string }[];
   isMultiSelect: boolean;
   hint?: string;
   codeBlock?: string;

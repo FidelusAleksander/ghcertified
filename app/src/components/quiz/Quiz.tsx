@@ -34,6 +34,7 @@ import {
 import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { renderCodeSpans } from "@/lib/render-code-spans";
+import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
 
 interface QuizProps {
   questions: Question[];
@@ -313,31 +314,35 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 );
 
                 return (
-                  <button
-                    key={answer.id}
-                    type="button"
-                    role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
-                    aria-checked={isSelected}
-                    aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
-                    onClick={() => handleToggleAnswer(answer.id)}
-                    className={optionClass}
-                    disabled={isComplete}
-                  >
-                    <div className={selectorClass}>
-                      {((isSelected && !isComplete) || (isComplete && (isCorrectOpt || isSelected))) && (
-                        <div className="size-2 rounded-full bg-card" />
+                  <div key={answer.id}>
+                    <button
+                      type="button"
+                      role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
+                      aria-checked={isSelected}
+                      aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
+                      onClick={() => handleToggleAnswer(answer.id)}
+                      className={optionClass}
+                      disabled={isComplete}
+                    >
+                      <div className={selectorClass}>
+                        {((isSelected && !isComplete) || (isComplete && (isCorrectOpt || isSelected))) && (
+                          <div className="size-2 rounded-full bg-card" />
+                        )}
+                      </div>
+                      <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
+                      {isComplete && isSelected && (
+                        <span className={cn(
+                          "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",
+                          isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
+                        )}>
+                          {t("yourAnswer")}
+                        </span>
                       )}
-                    </div>
-                    <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
-                    {isComplete && isSelected && (
-                      <span className={cn(
-                        "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",
-                        isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
-                      )}>
-                        {t("yourAnswer")}
-                      </span>
+                    </button>
+                    {isComplete && answer.explanation && (
+                      <AnswerExplanation text={answer.explanation} />
                     )}
-                  </button>
+                  </div>
                 );
               })}
             </div>

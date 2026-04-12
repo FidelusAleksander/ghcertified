@@ -21,6 +21,7 @@ import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CircleAlert } from "lucide-react";
 import { renderCodeSpans } from "@/lib/render-code-spans";
+import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
 
 interface QuestionBrowserProps {
   questions: Question[];
@@ -277,31 +278,35 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               );
 
               return (
-                <button
-                  key={answer.id}
-                  type="button"
-                  role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
-                  aria-checked={isSelected}
-                  aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
-                  onClick={() => handleToggleAnswer(answer.id)}
-                  disabled={isRevealed}
-                  className={optionClass}
-                >
-                  <div className={selectorClass}>
-                    {(isSelected || (isRevealed && isCorrectOpt)) && (
-                      <div className="size-2 rounded-full bg-card" />
+                <div key={answer.id}>
+                  <button
+                    type="button"
+                    role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
+                    aria-checked={isSelected}
+                    aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
+                    onClick={() => handleToggleAnswer(answer.id)}
+                    disabled={isRevealed}
+                    className={optionClass}
+                  >
+                    <div className={selectorClass}>
+                      {(isSelected || (isRevealed && isCorrectOpt)) && (
+                        <div className="size-2 rounded-full bg-card" />
+                      )}
+                    </div>
+                    <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
+                    {isRevealed && isSelected && (
+                      <span className={cn(
+                        "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
+                        isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
+                      )}>
+                        {t("yourAnswer")}
+                      </span>
                     )}
-                  </div>
-                  <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
-                  {isRevealed && isSelected && (
-                    <span className={cn(
-                      "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md",
-                      isCorrectOpt ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive",
-                    )}>
-                      {t("yourAnswer")}
-                    </span>
+                  </button>
+                  {isRevealed && answer.explanation && (
+                    <AnswerExplanation text={answer.explanation} />
                   )}
-                </button>
+                </div>
               );
             })}
           </div>
