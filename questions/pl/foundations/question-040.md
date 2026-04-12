@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 040"
-question: "Gdzie można wyłączyć funkcje repozytorium, takie jak zgłoszenia (issues), wiki lub projekty w repozytorium, którego jesteś właścicielem?"
+question: "Gdzie można wyłączyć funkcje repozytorium, takie jak issues, wikis czy projects w repozytorium, które posiadasz?"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository"
 ---
 
+- [x] W ustawieniach repozytorium
+- [ ] W pliku konfiguracyjnym `.github/settings.yml`
+- [ ] Te funkcje nie mogą być wyłączone
+- [ ] W ustawieniach konta
 
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository
-1. [x] W ustawieniach repozytorium
-1. [ ] W pliku konfiguracyjnym `.github/settings.yml`
-1. [ ] Tych funkcji nie można wyłączyć
-1. [ ] W ustawieniach Twojego konta
