@@ -1,11 +1,10 @@
 ---
-question: "Twój publicznie dostępny repozytorium open-source zawiera workflow z wyzwalaczem zdarzenia `pull_request`. Jak możesz wymagać zatwierdzeń dla uruchomień workflow wyzwalanych z forków Twojego repozytorium?"
-title: "Pytanie 059"
+question: "Twoja publicznie dostępna repozytorium open-source zawiera workflow z wyzwalaczem zdarzeń `pull_request`. Jak można wymagać zatwierdzeń dla workflow uruchamianych z forków twojego repozytorium?"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks#about-workflow-runs-from-public-forks"
 ---
 
-> https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks#about-workflow-runs-from-public-forks
-1. [x] Skonfiguruj wymagane zatwierdzenia dla uruchomień forków w repozytorium
-1. [ ] Skonfiguruj zasady ochrony wdrożeń dla repozytorium
-> Zasady ochrony wdrożeń są używane do ochrony środowisk
-1. [ ] Skonfiguruj zasady ochrony gałęzi dla repozytorium
-1. [ ] Workflow nie zostanie wyzwolony dla forków, jeśli używasz zdarzenia `pull_request`. Jeśli chcesz to zrobić, powinieneś użyć wyzwalacza zdarzenia `fork_pull_request` z flagą `require-approval`.
+- [x] Ustaw wymaganą zgodę dla uruchomień workflow z forków w repozytorium
+- [ ] Ustaw zasady ochrony przy wdrażaniu dla repozytorium  
+> Zasady ochrony wdrażania są używane do ochrony środowisk  
+- [ ] Ustaw zasady ochrony branch dla repozytorium
+- [ ] Workflow nie uruchomi się dla forków, jeśli używany jest wyzwalacz zdarzeń `pull_request`. Jeśli chcesz to zrobić, powinieneś użyć wyzwalacza zdarzeń `fork_pull_request` z flagą `require-approval`.
