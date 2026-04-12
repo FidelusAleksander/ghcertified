@@ -1,6 +1,5 @@
 ---
 question: "This workflow will run on all pull requests where:"
-title: "Question 018"
 ---
 
 ```yaml

@@ -1,6 +1,5 @@
 ---
 question: "Which GitHub plan allows to use secret scanning in private repositories?"
-title: "Question 044"
 ---
 
 > https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security

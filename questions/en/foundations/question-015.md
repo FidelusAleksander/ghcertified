@@ -1,5 +1,4 @@
 ---
-title: "Question 015"
 question: "Which of these statements about `saved replies` are true?"
 ---
 

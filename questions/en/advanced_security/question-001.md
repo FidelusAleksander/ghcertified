@@ -1,6 +1,5 @@
 ---
 question: "What is CodeQL?"
-title: "Question 001"
 ---
 
 > https://codeql.github.com/

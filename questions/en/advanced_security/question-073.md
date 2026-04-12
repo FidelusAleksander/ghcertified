@@ -1,5 +1,4 @@
 ---
-title: "Question 073"
 question: "Where can you see when the last CodeQL analysis was run when using the default code scanning setup?"
 ---
 

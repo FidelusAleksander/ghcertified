@@ -1,5 +1,4 @@
 ---
-title: "Question 146"
 question: "What’s the difference between Git and GitHub?"
 ---
 

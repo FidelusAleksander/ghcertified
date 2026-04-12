@@ -1,5 +1,4 @@
 ---
-title: "Question 095"
 question: "What are the possible statuses for a pull request review?"
 ---
 

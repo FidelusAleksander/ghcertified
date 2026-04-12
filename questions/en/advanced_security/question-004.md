@@ -1,5 +1,4 @@
 ---
-title: "Question 004"
 question: "Which tool helps you keep the repository dependencies up to date?"
 ---
 

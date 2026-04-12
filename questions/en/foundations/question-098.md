@@ -1,5 +1,4 @@
 ---
-title: "Question 098"
 question: "What are GitHub Wikis?"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "How can GitHub Apps react to specific events, and what are some examples of these events?"
-title: "Question 077"
 ---
 
 > https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/using-webhooks-with-github-apps#subscribing-to-webhook-events

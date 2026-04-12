@@ -1,6 +1,5 @@
 ---
 question: "How can you use 3rd party vaults to manage secrets for GitHub Actions?"
-title: "Question 091"
 ---
 
 > https://developer.hashicorp.com/vault/docs/platform/github-actions

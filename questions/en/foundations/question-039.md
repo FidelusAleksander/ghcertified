@@ -1,5 +1,4 @@
 ---
-title: "Question 039"
 question: "Can you disable the issues tab on a repository?"
 ---
 

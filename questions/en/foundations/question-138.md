@@ -1,5 +1,4 @@
 ---
-title: "Question 138"
 question: "What Git command gives information about how to use Git?"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "How can an organization admin search the audit log for events related to webhook modifications?"
-title: "Question 065"
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization

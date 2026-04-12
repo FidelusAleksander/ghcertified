@@ -1,5 +1,4 @@
 ---
-title: "Question 035"
 question: "Who should have 2 Factor Authentication enabled on GitHub?"
 ---
 

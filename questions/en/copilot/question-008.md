@@ -1,5 +1,4 @@
 ---
-title: "Question 008"
 question: "Which of the following describes the GitHub Copilot Editor configuration file?"
 ---
 

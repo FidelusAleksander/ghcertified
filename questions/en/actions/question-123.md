@@ -1,6 +1,5 @@
 ---
 question: "What must be added to `actions/checkout` if `my-org/my-private-repo` is a private repository differing from the one containing the current workflow?"
-title: "Question 123"
 ---
 
 ```yaml

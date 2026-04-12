@@ -1,6 +1,5 @@
 ---
 question: "How can enterprises track their usage of GitHub Actions?"
-title: "Question 078"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage

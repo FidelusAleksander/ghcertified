@@ -1,6 +1,5 @@
 ---
 question: "What is the main purpose of using the CodeQL CLI?"
-title: "Question 038"
 ---
 
 > https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/about-the-codeql-cli#about-the-codeql-cli

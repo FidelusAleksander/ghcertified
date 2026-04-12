@@ -1,5 +1,4 @@
 ---
-title: "Question 102"
 question: "Who can enable Dependabot alerts on a repository?"
 ---
 

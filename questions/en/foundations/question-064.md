@@ -1,5 +1,4 @@
 ---
-title: "Question 064"
 question: "What is a pull request template?"
 ---
 

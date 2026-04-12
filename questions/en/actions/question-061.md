@@ -1,6 +1,5 @@
 ---
 question: "Which of the following are default environment variables in GitHub Actions?"
-title: "Question 061"
 ---
 
 

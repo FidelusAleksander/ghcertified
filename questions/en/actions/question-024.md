@@ -1,6 +1,5 @@
 ---
 question: "What are `activity types` of an event used for ?"
-title: "Question 024"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows

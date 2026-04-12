@@ -1,6 +1,5 @@
 ---
 question: "How are minutes calculated for jobs that run on different operating systems in GitHub Actions?"
-title: "Question 036"
 ---
 
 > https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions

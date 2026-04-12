@@ -1,6 +1,5 @@
 ---
 question: "What are the key features and functionalities of teams within a GitHub organization?"
-title: "Question 054"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

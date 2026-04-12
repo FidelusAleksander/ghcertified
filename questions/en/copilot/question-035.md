@@ -1,5 +1,4 @@
 ---
-title: "Question 035"
 question: "You are developing an application in Kotlin. What do you have to keep in mind when using GitHub Copilot?"
 ---
 

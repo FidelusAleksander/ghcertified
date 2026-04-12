@@ -1,6 +1,5 @@
 ---
 question: "When should you use `artifacts`?"
-title: "Question 042"
 ---
 
 

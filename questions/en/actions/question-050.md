@@ -1,6 +1,5 @@
 ---
 question: "Secrets and configuration variables can be scoped to:"
-title: "Question 050"
 ---
 
 

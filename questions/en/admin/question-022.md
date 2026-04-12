@@ -1,6 +1,5 @@
 ---
 question: "What is SCIM in the context of GitHub?"
-title: "Question 022"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations

@@ -1,6 +1,5 @@
 ---
 question: "What are the possible GitHub account types?"
-title: "Question 001"
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 question: "What is the primary purpose of a GitHub organization?"
-title: "Question 041"
 ---
 
 > https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations#about-organizations

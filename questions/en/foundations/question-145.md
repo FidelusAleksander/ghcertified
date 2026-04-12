@@ -1,5 +1,4 @@
 ---
-title: "Question 145"
 question: "Which action is necessary for adding a file to a GitHub repository?"
 ---
 

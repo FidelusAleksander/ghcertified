@@ -1,5 +1,4 @@
 ---
-title: "Question 142"
 question: "Why might a team choose GitHub Issues over Discussions for managing bug reports?"
 ---
 

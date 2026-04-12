@@ -1,6 +1,5 @@
 ---
 question: "Which of the following are extra features provided by GitHub Enterprise Cloud over GitHub Free plan?"
-title: "Question 026"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

@@ -1,5 +1,4 @@
 ---
-title: "Question 036"
 question: "Where can you find information about concerns related to security, intellectual property and privacy regarding the usage of GitHub Copilot?"
 ---
 

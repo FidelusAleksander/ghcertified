@@ -1,5 +1,4 @@
 ---
-title: "Question 033"
 question: "What is an alias used for when using GitHub Copilot?"
 ---
 

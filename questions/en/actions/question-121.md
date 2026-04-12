@@ -1,5 +1,4 @@
 ---
-title: "Question 121"
 question: "What’s true about default variables?"
 ---
 

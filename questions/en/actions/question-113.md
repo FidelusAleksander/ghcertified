@@ -1,6 +1,5 @@
 ---
 question: "What is true about the following workflow configuration if triggered against the `octo/my-dev-repo` repository?"
-title: "Question 113"
 ---
 
 ```yaml

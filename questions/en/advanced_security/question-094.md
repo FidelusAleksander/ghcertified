@@ -1,5 +1,4 @@
 ---
-title: "Question 094"
 question: "What is a GitHub security policy?"
 ---
 

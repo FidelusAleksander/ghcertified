@@ -1,6 +1,5 @@
 ---
 question: "Which event is triggered by a webhook action from outside of the repository?"
-title: "Question 008"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows

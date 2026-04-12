@@ -1,6 +1,5 @@
 ---
 question: "What are the three types of Actions?"
-title: "Question 051"
 ---
 
 > https://docs.github.com/en/actions/creating-actions/about-custom-actions#types-of-actions

@@ -1,6 +1,5 @@
 ---
 question: "How do you change which repositories can access a specific runner group in an organization?"
-title: "Question 090"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups

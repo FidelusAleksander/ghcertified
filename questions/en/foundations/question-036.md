@@ -1,5 +1,4 @@
 ---
-title: "Question 036"
 question: "What are Enterprise Managed Users?"
 ---
 

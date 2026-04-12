@@ -1,5 +1,4 @@
 ---
-title: "Question 110"
 question: "What are the different GitHub pricing plans for personal accounts?"
 ---
 

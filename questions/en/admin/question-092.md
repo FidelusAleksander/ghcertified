@@ -1,6 +1,5 @@
 ---
 question: "Which package managers and formats are supported by GitHub Packages?"
-title: "Question 092"
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages

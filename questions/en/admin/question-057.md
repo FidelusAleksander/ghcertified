@@ -1,6 +1,5 @@
 ---
 question: "What can be found on a team’s page within a GitHub organization?"
-title: "Question 057"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

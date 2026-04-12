@@ -1,6 +1,5 @@
 ---
 question: "Which of these best defines GitHub Enterprise Policies?"
-title: "Question 071"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise

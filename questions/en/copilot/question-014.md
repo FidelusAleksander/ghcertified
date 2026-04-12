@@ -1,5 +1,4 @@
 ---
-title: "Question 014"
 question: "What is the easiest way to get started with GitHub Copilot?"
 ---
 

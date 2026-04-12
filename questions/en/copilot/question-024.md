@@ -1,5 +1,4 @@
 ---
-title: "Question 024"
 question: "How does GitHub Copilot's matching public code feature work?"
 ---
 

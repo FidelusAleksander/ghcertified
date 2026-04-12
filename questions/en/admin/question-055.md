@@ -1,6 +1,5 @@
 ---
 question: "What distinguishes a visible team from a secret team in a GitHub organization?"
-title: "Question 055"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

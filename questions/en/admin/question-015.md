@@ -1,6 +1,5 @@
 ---
 question: "How do you require two-factor authentication (2FA) for an organization?"
-title: "Question 015"
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization#requiring-two-factor-authentication-in-your-organization

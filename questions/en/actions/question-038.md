@@ -1,6 +1,5 @@
 ---
 question: "Which of these is a way of using `action_state` in `step_two`?"
-title: "Question 038"
 ---
 
 ```yaml

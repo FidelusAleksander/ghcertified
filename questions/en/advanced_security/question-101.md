@@ -1,5 +1,4 @@
 ---
-title: "Question 101"
 question: "Dependabot Alerts are enabled by default on:"
 ---
 

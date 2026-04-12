@@ -1,5 +1,4 @@
 ---
-title: "Question 017"
 question: "Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?"
 ---
 

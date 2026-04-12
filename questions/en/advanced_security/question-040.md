@@ -1,6 +1,5 @@
 ---
 question: "How does CodeQL analyze code in GitHub?"
-title: "Question 040"
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql

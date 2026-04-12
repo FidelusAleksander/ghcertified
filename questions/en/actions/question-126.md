@@ -1,5 +1,4 @@
 ---
-title: "Question 126"
 question: "How should a dependent job reference the `output1` value produced by a job named `job1` earlier in the same workflow?"
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Question 054"
 question: "Which of these definitions best describes open source software?"
 ---
 

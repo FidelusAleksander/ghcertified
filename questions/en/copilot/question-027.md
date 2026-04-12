@@ -1,5 +1,4 @@
 ---
-title: "Question 027"
 question: "Which of the following is NOT a selectable mode in GitHub Copilot Chat?"
 ---
 

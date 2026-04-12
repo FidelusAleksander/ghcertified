@@ -1,6 +1,5 @@
 ---
 question: "How does the `actions/cache` action in GitHub Actions handle a cache miss?"
-title: "Question 097"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches

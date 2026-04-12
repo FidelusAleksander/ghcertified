@@ -1,6 +1,5 @@
 ---
 question: "What is the recommended approach for storing secrets larger than 48 KB?"
-title: "Question 099"
 ---
 
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#limits-for-secrets

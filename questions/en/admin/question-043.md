@@ -1,6 +1,5 @@
 ---
 question: "How can access management and collaboration be simplified within a GitHub organization?"
-title: "Question 043"
 ---
 
 > https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations#about-organizations

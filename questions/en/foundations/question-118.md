@@ -1,5 +1,4 @@
 ---
-title: "Question 118"
 question: "Which of the following roles are available for a repository at the organization level on GitHub?"
 ---
 

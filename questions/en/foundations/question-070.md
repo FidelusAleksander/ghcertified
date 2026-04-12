@@ -1,5 +1,4 @@
 ---
-title: "Question 070"
 question: "What is a repository in GitHub?"
 ---
 

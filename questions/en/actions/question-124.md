@@ -1,6 +1,5 @@
 ---
 question: "Given the following configuration, how many jobs will GitHub Actions run when this matrix is evaluated?"
-title: "Question 124"
 ---
 
 ```yaml

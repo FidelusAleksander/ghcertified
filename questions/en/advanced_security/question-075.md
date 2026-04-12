@@ -1,5 +1,4 @@
 ---
-title: "Question 075"
 question: "How can you customize your advanced CodeQL scanning setup with additional CodeQL query suites?"
 ---
 

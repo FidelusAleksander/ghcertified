@@ -1,6 +1,5 @@
 ---
 question: "Which role in a GitHub organization has the highest level of access?"
-title: "Question 048"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

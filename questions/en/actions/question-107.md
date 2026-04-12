@@ -1,6 +1,5 @@
 ---
 question: "Which variable would you set to `true` in order to enable step debug logging?"
-title: "Question 107"
 ---
 
 > https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging

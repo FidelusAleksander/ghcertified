@@ -1,6 +1,5 @@
 ---
 question: "Which configuration is appropriate for triggering a workflow to run on webhook events related to check_run actions?"
-title: "Question 108"
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 question: "What permissions does a GitHub App manager have within an organization?"
-title: "Question 059"
 ---
 
 > https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#about-github-app-managers

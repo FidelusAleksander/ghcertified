@@ -1,5 +1,4 @@
 ---
-title: "Question 125"  
 question: "Which search query finds all open issues labeled `test` that mention 'fix' in their body text?"  
 draft: false  
 ---

@@ -1,6 +1,5 @@
 ---
 question: "If job B requires job A to be finished you have to:"
-title: "Question 012"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs

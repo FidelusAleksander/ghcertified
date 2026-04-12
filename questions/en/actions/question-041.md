@@ -1,6 +1,5 @@
 ---
 question: "When should you use `caching`?"
-title: "Question 041"
 ---
 
 

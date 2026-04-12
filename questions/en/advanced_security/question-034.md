@@ -1,6 +1,5 @@
 ---
 question: "What do Dependabot alerts indicate in GitHub?"
-title: "Question 034"
 ---
 
 > https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts

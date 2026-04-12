@@ -1,6 +1,5 @@
 ---
 question: "Which of these is not a valid event that could trigger a workflow?"
-title: "Question 005"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows

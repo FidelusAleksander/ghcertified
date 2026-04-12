@@ -1,6 +1,5 @@
 ---
 question: "What does GitHub recommend for safeguarding against data loss in GitHub Enterprise Server?"
-title: "Question 034"
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

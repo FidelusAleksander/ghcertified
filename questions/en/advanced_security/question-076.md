@@ -1,5 +1,4 @@
 ---
-title: "Question 076"
 question: "When running CodeQL analysis in GitHub Actions, what Actions should you use?"
 ---
 

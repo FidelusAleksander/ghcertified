@@ -1,6 +1,5 @@
 ---
 question: "What are the different permission levels you can assign to `GITHUB_TOKEN` in the `permissions` block?"
-title: "Question 002"
 ---
 
 

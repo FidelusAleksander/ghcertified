@@ -1,6 +1,5 @@
 ---
 question: "How does GitHub Enterprise Cloud differ from GitHub Enterprise Server?"
-title: "Question 025"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options

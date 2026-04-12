@@ -1,6 +1,5 @@
 ---
 question: "What is the primary responsibility of a billing manager in a GitHub organization?"
-title: "Question 050"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

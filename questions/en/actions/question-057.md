@@ -1,6 +1,5 @@
 ---
 question: "Which is true about environments?"
-title: "Question 057"
 ---
 
 > https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments

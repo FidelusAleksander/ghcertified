@@ -1,5 +1,4 @@
 ---
-title: "Question 139"
 question: "In what scenario would GitHub Issues be more effective than Discussions?"
 ---
 

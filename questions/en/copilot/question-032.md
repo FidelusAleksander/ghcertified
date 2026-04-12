@@ -1,5 +1,4 @@
 ---
-title: "Question 032"
 question: "Which of the sentences is correct?"
 ---
 

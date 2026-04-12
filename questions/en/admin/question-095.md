@@ -1,6 +1,5 @@
 ---
 question: "What are the differences and use cases between GitHub Packages and releases?"
-title: "Question 095"
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages

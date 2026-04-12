@@ -1,5 +1,4 @@
 ---
-title: "Question 078"
 question: "How can you use a custom CodeQL configuration file in a GitHub Actions workflow?"
 ---
 

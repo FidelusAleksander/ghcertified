@@ -1,5 +1,4 @@
 ---
-title: "Question 143"
 question: "When should a GitHub issue be used instead of a discussion?"
 ---
 

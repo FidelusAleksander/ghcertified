@@ -163,6 +163,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <button
                   onClick={() => setManualSidebarPage(Math.max(0, sidebarPage - 1))}
                   disabled={sidebarPage === 0}
+                  aria-label={t("previousSidebarPage")}
                   className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsLeft className="size-3.5" />
@@ -194,6 +195,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <button
                   onClick={() => setManualSidebarPage(Math.min(totalPages - 1, sidebarPage + 1))}
                   disabled={sidebarPage === totalPages - 1}
+                  aria-label={t("nextSidebarPage")}
                   className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsRight className="size-3.5" />
@@ -245,8 +247,12 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           )}
 
           {/* Answer options */}
-          <div className="flex flex-col gap-2.5">
-            {currentQuestion.answers.map((answer) => {
+          <div
+            role={currentQuestion.isMultiSelect ? "group" : "radiogroup"}
+            aria-label={t("answerGroup")}
+            className="flex flex-col gap-2.5"
+          >
+            {currentQuestion.answers.map((answer, answerIdx) => {
               const isSelected = currentSelected.has(answer.id);
               const isCorrectOpt = answer.isCorrect;
 
@@ -274,6 +280,9 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <button
                   key={answer.id}
                   type="button"
+                  role={currentQuestion.isMultiSelect ? "checkbox" : "radio"}
+                  aria-checked={isSelected}
+                  aria-label={t("answerOption", { number: answerIdx + 1, text: answer.text })}
                   onClick={() => handleToggleAnswer(answer.id)}
                   disabled={isRevealed}
                   className={optionClass}

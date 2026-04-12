@@ -1,5 +1,4 @@
 ---
-title: "Question 030"
 question: "What are smart actions?"
 ---
 

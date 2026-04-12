@@ -1,6 +1,5 @@
 ---
 question: "How are user accounts provisioned with Enterprise Managed Users?"
-title: "Question 018"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users

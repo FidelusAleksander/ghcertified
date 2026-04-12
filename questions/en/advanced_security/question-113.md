@@ -1,5 +1,4 @@
 ---
-title: "Question 113"
 question: "What does `CVE` stand for?"
 ---
 

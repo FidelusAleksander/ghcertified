@@ -1,6 +1,5 @@
 ---
 question: "How do you add a self-hosted runner to a GitHub repository?"
-title: "Question 086"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners

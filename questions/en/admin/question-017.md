@@ -1,6 +1,5 @@
 ---
 question: "What is the primary function of Enterprise Managed Users in GitHub?"
-title: "Question 017"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users

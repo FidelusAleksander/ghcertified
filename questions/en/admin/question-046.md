@@ -1,6 +1,5 @@
 ---
 question: "How can an organization enhance the security of their GitHub Actions workflows?"
-title: "Question 046"
 ---
 
 > https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions

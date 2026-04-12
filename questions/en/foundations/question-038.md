@@ -1,5 +1,4 @@
 ---
-title: "Question 038"
 question: "Which of these is NOT a role in a GitHub Organization?"
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Question 031"
 question: "Which of these statements regarding GitHub Codespaces lifecycle are true?"
 ---
 

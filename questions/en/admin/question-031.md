@@ -1,6 +1,5 @@
 ---
 question: "Which environments can GitHub Enterprise Server be deployed to?"
-title: "Question 031"
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

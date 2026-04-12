@@ -1,5 +1,4 @@
 ---
-title: "Question 009"
 question: "What are the different options that allow you to automate operations in your GitHub Project?"
 ---
 

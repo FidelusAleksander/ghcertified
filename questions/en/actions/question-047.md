@@ -1,6 +1,5 @@
 ---
 question: "In job `deploy`, if you want to access binaries (containing your application) that were created in job `build` you should"
-title: "Question 047"
 ---
 
 

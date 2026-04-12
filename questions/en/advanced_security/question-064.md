@@ -1,5 +1,4 @@
 ---
-title: "Question 064"
 question: "What are CodeQL queries used for?"
 ---
 

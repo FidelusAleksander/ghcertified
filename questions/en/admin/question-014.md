@@ -1,6 +1,5 @@
 ---
 question: "Which of the following identity providers (IdPs) is NOT officially supported and internally tested by GitHub Enterprise Cloud for SAML SSO?"
-title: "Question 014"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/configuring-saml-single-sign-on-for-your-enterprise#supported-identity-providers

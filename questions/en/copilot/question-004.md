@@ -1,5 +1,4 @@
 ---
-title: "Question 004"
 question: "What command is used to install the GitHub Copilot extension on the CLI?"
 ---
 

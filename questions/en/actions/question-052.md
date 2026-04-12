@@ -1,6 +1,5 @@
 ---
 question: "Is this statement true? `Docker container actions are usually slower than JavaScript actions`"
-title: "Question 052"
 ---
 
 > Docker container actions are slower than JavaScript actions

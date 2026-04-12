@@ -1,6 +1,5 @@
 ---
 question: "How can GitHub Enterprise Server's administration be handled?"
-title: "Question 033"
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

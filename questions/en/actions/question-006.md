@@ -1,6 +1,5 @@
 ---
 question: "Which is true about workflows?"
-title: "Question 006"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/about-workflows

@@ -1,6 +1,5 @@
 ---
 question: "What's the difference between GitHub Apps and OAuth apps?"
-title: "Question 076"
 ---
 
 > https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/differences-between-github-apps-and-oauth-apps

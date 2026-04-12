@@ -1,5 +1,4 @@
 ---
-title: "Question 002"
 question: "What does `shifting left` mean in the context of Security?"
 ---
 

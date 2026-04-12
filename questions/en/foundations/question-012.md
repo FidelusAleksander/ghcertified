@@ -1,5 +1,4 @@
 ---
-title: "Question 012"
 question: "Why would a repository owner want to use milestones?"
 ---
 

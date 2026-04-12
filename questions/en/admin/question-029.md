@@ -1,6 +1,5 @@
 ---
 question: "Which is the main restriction of Enterprise Managed User accounts in GitHub Enterprise Cloud?"
-title: "Question 029"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

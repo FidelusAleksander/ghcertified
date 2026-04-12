@@ -1,5 +1,4 @@
 ---
-title: "Question 024"
 question: "What are the differences between GitHub Copilot Individual and GitHub Copilot Business?"
 ---
 

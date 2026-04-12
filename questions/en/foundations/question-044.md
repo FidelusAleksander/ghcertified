@@ -1,5 +1,4 @@
 ---
-title: "Question 044"
 question: "Which of these actions will make sure that prior to any push to the `main` branch, the changes have been approved by at least two people?"
 ---
 

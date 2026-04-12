@@ -1,6 +1,5 @@
 ---
 question: "What are some actions you can do in regards to Project Templates in your organization?"
-title: "Question 116"
 ---
 
 

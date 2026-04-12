@@ -1,5 +1,4 @@
 ---
-title: "Question 029"
 question: "Which of the following can be added as context for your prompt in GitHub Copilot Chat?"
 ---
 

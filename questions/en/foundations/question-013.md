@@ -1,5 +1,4 @@
 ---
-title: "Question 013"
 question: "How can you assign a person to an issue or pull request?"
 ---
 

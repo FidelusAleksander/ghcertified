@@ -1,6 +1,5 @@
 ---
 question: "Which matrix job definition is syntactically correct?"
-title: "Question 015"
 ---
 
 

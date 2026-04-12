@@ -1,6 +1,5 @@
 ---
 question: "What is the purpose of enterprise accounts in GitHub Enterprise Cloud?"
-title: "Question 027"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

@@ -1,6 +1,5 @@
 ---
 question: "Which statement is true regarding usernames and profile information for Enterprise Managed Users?"
-title: "Question 020"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users

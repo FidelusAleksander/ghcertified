@@ -1,6 +1,5 @@
 ---
 question: "Which is the correct way of triggering a job only if configuration variable `MY_VAR` has the value of `MY_VALUE`?"
-title: "Question 067"
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/contexts#example-usage-of-the-vars-context

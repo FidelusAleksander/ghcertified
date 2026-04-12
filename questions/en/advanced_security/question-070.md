@@ -1,5 +1,4 @@
 ---
-title: "Question 070"
 question: "What is extraction in the context of CodeQL code analysis?"
 ---
 

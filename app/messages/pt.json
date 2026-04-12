@@ -91,7 +91,12 @@
     "submitDialogWarningPartial": "Você tem {count} questão(ões) parcialmente respondidas. Serão marcadas como incorretas.",
     "submitDialogWarningBoth": "Você tem {unanswered} sem resposta e {partial} parcialmente respondidas. Serão marcadas como incorretas.",
     "cancel": "Cancelar",
-    "mapRange": "{start}–{end} de {total}"
+    "mapRange": "{start}–{end} de {total}",
+    "previousMapPage": "Previous question page",
+    "nextMapPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "QuestionBrowser": {
     "questionOf": "QUESTÃO {current} DE {total}",
@@ -106,7 +111,12 @@
     "checkAnswer": "Verificar resposta",
     "previous": "Anterior",
     "nextQuestion": "Próxima questão",
-    "sidebarRange": "{start}–{end} de {total}"
+    "sidebarRange": "{start}–{end} de {total}",
+    "previousSidebarPage": "Previous question page",
+    "nextSidebarPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "CertDescriptions": {
     "actions": "Domine CI/CD, gatilhos de workflow, jobs, steps, secrets e runners do GitHub.",

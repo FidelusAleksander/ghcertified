@@ -1,5 +1,4 @@
 ---
-title: "Question 022"
 question: "What is the primary purpose of the '/tests' slash command in GitHub Copilot?"
 ---
 

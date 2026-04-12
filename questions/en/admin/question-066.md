@@ -1,6 +1,5 @@
 ---
 question: "Why might webhooks be considered an efficient alternative to the audit log or API polling in certain use cases within GitHub organizations?"
-title: "Question 066"
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization

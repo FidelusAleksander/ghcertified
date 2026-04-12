@@ -1,6 +1,5 @@
 ---
 question: "Which of the following default environment variables contains the name of the person or app that initiated the workflow run?"
-title: "Question 060"
 ---
 
 

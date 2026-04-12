@@ -1,6 +1,5 @@
 ---
 question: "What are the benefits and risks of using apps and actions from the GitHub Marketplace?"
-title: "Question 009"
 ---
 
 > https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions

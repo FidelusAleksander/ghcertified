@@ -1,5 +1,4 @@
 ---
-title: "Question 042"
 question: "What is the purpose of a `CODEOWNERS` file?"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "What components can be reused within a GitHub Organization?"
-title: "Question 072"
 ---
 
 - [x] Secrets

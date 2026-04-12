@@ -1,5 +1,4 @@
 ---
-title: "Question 087"
 question: "What is GitHub Mobile?"
 ---
 

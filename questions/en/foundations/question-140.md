@@ -1,5 +1,4 @@
 ---
-title: "Question 140"
 question: "Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "Which of the following are correct methods to generate and share a diagnostic file for GitHub Enterprise Server?"
-title: "Question 005"
 ---
 
 > https://docs.github.com/en/enterprise-server/support/contacting-github-support/providing-data-to-github-support#creating-and-sharing-diagnostic-files

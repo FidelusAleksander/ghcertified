@@ -1,6 +1,5 @@
 ---
 question: "What is CodeQL?"
-title: "Question 033"
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql

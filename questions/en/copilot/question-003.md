@@ -1,5 +1,4 @@
 ---
-title: "Question 003"
 question: "What IDEs does GitHub Copilot support?"
 ---
 

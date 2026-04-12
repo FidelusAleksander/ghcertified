@@ -1,6 +1,5 @@
 ---
 question: "Which of the following is a key feature of GitHub Enterprise Server?"
-title: "Question 032"
 ---
 
 > https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server

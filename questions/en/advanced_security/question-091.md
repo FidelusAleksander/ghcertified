@@ -1,5 +1,4 @@
 ---
-title: "Question 091"
 question: "How can you enable GitHub Advanced Security features on GitHub Enterprise Server?"
 ---
 

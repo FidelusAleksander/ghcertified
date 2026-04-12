@@ -1,6 +1,5 @@
 ---
 question: "What functionality does the audit log provide to organization admins within a GitHub organization?"
-title: "Question 063"
 ---
 
 > https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization

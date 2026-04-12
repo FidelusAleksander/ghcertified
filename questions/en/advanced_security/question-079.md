@@ -1,5 +1,4 @@
 ---
-title: "Question 079"
 question: "Where can you specify the CodeQL queries to run in a GitHub Actions workflow?"
 ---
 

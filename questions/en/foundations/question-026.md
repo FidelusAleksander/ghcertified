@@ -1,5 +1,4 @@
 ---
-title: "Question 026"
 question: "What is a GitHub Codespace?"
 ---
 

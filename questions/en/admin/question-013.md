@@ -1,6 +1,5 @@
 ---
 question: "What are the steps to enable and enforce SAML SSO for a single organization?"
-title: "Question 013"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enabling-and-testing-saml-single-sign-on-for-your-organization#enabling-and-testing-saml-single-sign-on-for-your-organization

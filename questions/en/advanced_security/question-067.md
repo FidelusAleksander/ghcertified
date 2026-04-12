@@ -1,5 +1,4 @@
 ---
-title: "Question 067"
 question: "What are the different types of CodeQL packs?"
 ---
 

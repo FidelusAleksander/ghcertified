@@ -1,6 +1,5 @@
 ---
 question: "Which context holds information about the event that triggered a workflow run?"
-title: "Question 102"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-event-information

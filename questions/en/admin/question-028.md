@@ -1,6 +1,5 @@
 ---
 question: "Which of the following is a management option exclusive to GitHub Enterprise Cloud?"
-title: "Question 028"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud

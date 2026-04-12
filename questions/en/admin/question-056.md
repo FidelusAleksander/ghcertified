@@ -1,6 +1,5 @@
 ---
 question: "How do nested teams benefit an organization's structure within GitHub?"
-title: "Question 056"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

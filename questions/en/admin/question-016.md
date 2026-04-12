@@ -1,6 +1,5 @@
 ---
 question: "Which identity providers (IdPs) support GitHub Enterprise Cloud SCIM API for organizations?"
-title: "Question 016"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations#supported-identity-providers

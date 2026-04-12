@@ -1,6 +1,5 @@
 ---
 question: "What should you do before running git filter-repo or BFG Repo-Cleaner to remove sensitive data from your repository?"
-title: "Question 068"
 ---
 
 > https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository

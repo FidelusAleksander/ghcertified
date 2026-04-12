@@ -1,5 +1,4 @@
 ---
-title: "Question 088"
 question: "What does it mean to dismiss a code scanning alert?"
 ---
 

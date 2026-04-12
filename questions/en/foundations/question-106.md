@@ -1,5 +1,4 @@
 ---
-title: "Question 106"
 question: "What are the different levels of GitHub organizational hierarchy?"
 ---
 

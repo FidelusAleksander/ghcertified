@@ -1,6 +1,5 @@
 ---
 question: "What are the valid use cases for using **defaults**?"
-title: "Question 027"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults

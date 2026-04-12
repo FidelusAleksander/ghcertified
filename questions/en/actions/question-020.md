@@ -1,6 +1,5 @@
 ---
 question: "Which event allows you to manually trigger a workflow from the GitHub UI?"
-title: "Question 020"
 ---
 
 > https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow

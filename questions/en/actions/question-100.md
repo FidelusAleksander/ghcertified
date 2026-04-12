@@ -1,6 +1,5 @@
 ---
 question: "Select status check functions in GitHub Actions"
-title: "Question 100"
 ---
 
 > https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions

@@ -1,5 +1,4 @@
 ---
-title: "Question 002"
 question: "Which option below is NOT a possible way to grant access to Copilot for members of an organization?"
 ---
 

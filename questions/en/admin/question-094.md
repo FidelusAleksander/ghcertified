@@ -1,6 +1,5 @@
 ---
 question: "What is required to download or publish a GitHub Package within workflows, such as with GitHub Actions or other CI/CD tools?"
-title: "Question 094"
 ---
 
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages

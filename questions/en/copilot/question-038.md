@@ -1,5 +1,4 @@
 ---
-title: "Question 038"
 question: "Which statements are correct regarding the usage of @workspace and #codebase?"
 ---
 

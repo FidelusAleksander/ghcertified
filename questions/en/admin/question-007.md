@@ -1,6 +1,5 @@
 ---
 question: "Which endpoints does the GitHub API provide to administer your enterprise?"
-title: "Question 007"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin

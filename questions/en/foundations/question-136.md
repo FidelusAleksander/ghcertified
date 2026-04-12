@@ -1,5 +1,4 @@
 ---
-title: "Question 136"  
 question: "Which of the following scenarios is a common use case for a version control system?"  
 ---
 

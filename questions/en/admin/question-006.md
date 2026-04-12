@@ -1,6 +1,5 @@
 ---
 question: "Which of the following is the correct procedure for generating a support bundle in GitHub Enterprise Server?"
-title: "Question 006"
 ---
 
 > https://docs.github.com/en/enterprise-server@3.15/support/contacting-github-support/providing-data-to-github-support#creating-and-sharing-support-bundles

@@ -72,14 +72,14 @@ export function LanguagePicker({ className }: { className?: string }) {
         sideOffset={8}
         className="w-44 gap-0 p-1"
       >
-        <div role="listbox" aria-label="Select language">
+        <div role="menu" aria-label="Select language">
           {SUPPORTED_LOCALES.map((loc) => {
             const isActive = loc === locale;
             return (
               <button
                 key={loc}
-                role="option"
-                aria-selected={isActive}
+                role="menuitem"
+                aria-current={isActive ? "true" : undefined}
                 onClick={() => handleSelect(loc)}
                 className={cn(
                   "flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",

@@ -1,5 +1,4 @@
 ---
-title: "Question 071"
 question: "What is a git commit?"
 ---
 

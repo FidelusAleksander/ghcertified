@@ -1,5 +1,4 @@
 ---
-title: "Question 013"
 question: "What happens when you exclude content from GitHub Copilot?"
 ---
 

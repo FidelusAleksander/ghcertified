@@ -1,5 +1,4 @@
 ---
-title: "Question 042"
 question: "Which of these statements isn't true about secret scanning on GitHub?"
 ---
 

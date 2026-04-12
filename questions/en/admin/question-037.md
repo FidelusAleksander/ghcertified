@@ -1,6 +1,5 @@
 ---
 question: "What is the default spending limit for GitHub Actions on monthly-billed accounts?"
-title: "Question 037"
 ---
 
 > https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions

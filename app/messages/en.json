@@ -93,7 +93,12 @@
     "cancel": "Cancel",
     "mapRange": "{start}–{end} of {total}",
     "reportIssueTitle": "[{cert}] Issue with {questionId}",
-    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question."
+    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question.",
+    "previousMapPage": "Previous question page",
+    "nextMapPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "QuestionBrowser": {
     "questionOf": "Question {current} of {total}",
@@ -110,7 +115,12 @@
     "nextQuestion": "Next question",
     "sidebarRange": "{start}–{end} of {total}",
     "reportIssueTitle": "[{cert}] Issue with {questionId}",
-    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question."
+    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question.",
+    "previousSidebarPage": "Previous question page",
+    "nextSidebarPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

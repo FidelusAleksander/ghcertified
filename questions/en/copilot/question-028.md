@@ -1,5 +1,4 @@
 ---
-title: "Question 028"
 question: "When adding context in the chat, it is possible to add single files, but not entire folders. This statement is:"
 ---
 

@@ -1,6 +1,5 @@
 ---
 question: "When will job3 run?"
-title: "Question 030"
 ---
 
 ```yaml

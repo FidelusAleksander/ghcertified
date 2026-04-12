@@ -1,5 +1,4 @@
 ---
-title: "Question 002"
 question: "What is the GitHub Dependabot dependency graph?"
 ---
 

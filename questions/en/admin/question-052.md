@@ -1,6 +1,5 @@
 ---
 question: "How can an organization owner change the role of a member within the organization?"
-title: "Question 052"
 ---
 
 > https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization

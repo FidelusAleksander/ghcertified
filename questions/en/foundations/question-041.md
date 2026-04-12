@@ -1,5 +1,4 @@
 ---
-title: "Question 041"
 question: "What are the different repository visibility options?"
 ---
 

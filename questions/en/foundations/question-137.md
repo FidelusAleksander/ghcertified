@@ -1,5 +1,4 @@
 ---
-title: "Question 137"
 question: "What is another name for a version control system?"
 ---
 

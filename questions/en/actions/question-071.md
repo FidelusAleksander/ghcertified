@@ -1,6 +1,5 @@
 ---
 question: "How can you override an organization-level GitHub Secret `API_KEY` with a different value when working within a repository?"
-title: "Question 071"
 ---
 
 > https://docs.github.com/en/actions/reference/security/secrets

@@ -1,6 +1,5 @@
 ---
 question: "You can only upload a single file at a time when using `actions/upload-artifact` action"
-title: "Question 046"
 ---
 
 

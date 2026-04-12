@@ -1,5 +1,4 @@
 ---
-title: "Question 045"
 question: "What can you find in the security tab of a repository?"
 ---
 

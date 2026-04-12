@@ -1,5 +1,4 @@
 ---
-title: "Question 112"
 question: "What does `CVSS` stand for?"
 ---
 

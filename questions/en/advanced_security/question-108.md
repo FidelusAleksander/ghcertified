@@ -1,5 +1,4 @@
 ---
-title: "Question 108"
 question: "How can you automate dismissing low severity Dependabot alerts?"
 ---
 

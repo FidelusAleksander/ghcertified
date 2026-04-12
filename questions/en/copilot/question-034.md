@@ -1,5 +1,4 @@
 ---
-title: "Question 034"
 question: "Which statements are correct about GitHub Copilot CLI?"
 ---
 

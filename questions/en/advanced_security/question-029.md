@@ -1,5 +1,4 @@
 ---
-title: "Question 029"
 question: "Can your repository use Dependency Graph without using Dependabot Alerts?"
 ---
 

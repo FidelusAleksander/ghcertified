@@ -1,5 +1,4 @@
 ---
-title: "Question 037"
 question: "Which of the GitHub Copilot subscription plans let you specify coding guidelines for code reviews?"
 ---
 

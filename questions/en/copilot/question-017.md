@@ -1,5 +1,4 @@
 ---
-title: "Question 017"
 question: "How does GitHub Copilot handle data retention for code suggestions in the IDE?"
 ---
 

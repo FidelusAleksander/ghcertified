@@ -1,5 +1,4 @@
 ---
-title: "Question 026"
 question: "Which elements can GitHub Copilot use as context when generating suggestions?"
 ---
 

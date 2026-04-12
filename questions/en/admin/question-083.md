@@ -1,6 +1,5 @@
 ---
 question: "When an Enterprise IP allow list is in place, what happens when you try publish your GitHub Pages site from a branch instead of using a custom GitHub Actions workflow?"
-title: "Question 083"
 ---
 
 > https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-pages-with-an-ip-allow-list

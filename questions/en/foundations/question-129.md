@@ -1,5 +1,4 @@
 ---
-title: "Question 129"  
 question: "Which roles in an organization can view and manage security alerts for private repositories?"  
 draft: false  
 ---

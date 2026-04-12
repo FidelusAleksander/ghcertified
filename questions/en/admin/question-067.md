@@ -1,6 +1,5 @@
 ---
 question: "Which tools can be used to remove sensitive data from a Git repository's history?"
-title: "Question 067"
 ---
 
 > https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository

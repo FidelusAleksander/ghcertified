@@ -1,5 +1,4 @@
 ---
-title: "Question 003"
 question: "How does the synchronization between GitHub projects, issues and pull requests work?"
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Question 031"
 question: "Which features are available in GitHub Copilot and GitHub Copilot Chat?"
 ---
 

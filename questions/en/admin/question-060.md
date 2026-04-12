@@ -1,6 +1,5 @@
 ---
 question: "What roles can a team member hold within a GitHub team?"
-title: "Question 060"
 ---
 
 > https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams

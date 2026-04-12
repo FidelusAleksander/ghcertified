@@ -1,6 +1,5 @@
 ---
 question: "How can an organization owner find statistics on license usage for their GitHub Enterprise Server?"
-title: "Question 038"
 ---
 
 > https://docs.github.com/en/enterprise-server/billing/managing-your-license-for-github-enterprise/viewing-license-usage-for-github-enterprise

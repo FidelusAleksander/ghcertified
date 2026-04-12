@@ -38,7 +38,7 @@ export function Footer() {
             {t("starOnGitHub")}
           </a>
         </p>
-        <p className="mt-1.5 text-xs text-muted-foreground/60">
+        <p className="mt-1.5 text-xs text-muted-foreground/80">
           {t("disclaimer")}
         </p>
       </div>

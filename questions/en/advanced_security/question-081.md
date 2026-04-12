@@ -1,5 +1,4 @@
 ---
-title: "Question 081"
 question: "What CodeQL CLI command is used to create a CodeQL database?"
 ---
 

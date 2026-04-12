@@ -91,7 +91,12 @@
     "submitDialogWarningPartial": "一部回答が{count}問あります。不正解として扱われます。",
     "submitDialogWarningBoth": "未回答が{unanswered}問、一部回答が{partial}問あります。これらは不正解として扱われます。",
     "cancel": "キャンセル",
-    "mapRange": "{start}–{end} / {total}"
+    "mapRange": "{start}–{end} / {total}",
+    "previousMapPage": "Previous question page",
+    "nextMapPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "QuestionBrowser": {
     "questionOf": "問題 {current} / {total}",
@@ -106,7 +111,12 @@
     "checkAnswer": "回答を確認",
     "previous": "前へ",
     "nextQuestion": "次の問題",
-    "sidebarRange": "{start}–{end} / {total}"
+    "sidebarRange": "{start}–{end} / {total}",
+    "previousSidebarPage": "Previous question page",
+    "nextSidebarPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "CertDescriptions": {
     "actions": "CI/CD、ワークフロートリガー、ジョブ、ステップ、シークレット、GitHubホステッドランナーを習得。",

@@ -1,5 +1,4 @@
 ---
-title: "Question 046"
 question: "What is CodeQL?"
 ---
 

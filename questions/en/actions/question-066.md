@@ -1,6 +1,5 @@
 ---
 question: "How can you validate that your GitHub self-hosted-runner can access all required GitHub services?"
-title: "Question 066"
 ---
 
 > https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners#checking-self-hosted-runner-network-connectivity

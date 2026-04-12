@@ -1,6 +1,5 @@
 ---
 question: "What is the purpose of code scanning in GitHub?"
-title: "Question 035"
 ---
 
 > https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning

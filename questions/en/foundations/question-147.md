@@ -1,5 +1,4 @@
 ---
-title: "Question 147"
 question: "Which of the following capabilities are available in GitHub Copilot Business but not available in individual Copilot plans?"
 ---
 

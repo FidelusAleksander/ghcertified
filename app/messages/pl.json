@@ -91,7 +91,12 @@
     "submitDialogWarningPartial": "Masz {count} częściowo odpowiedzianych pytań. Zostaną oznaczone jako niepoprawne.",
     "submitDialogWarningBoth": "Masz {unanswered} pytań bez odpowiedzi i {partial} częściowo odpowiedzianych. Zostaną oznaczone jako niepoprawne.",
     "cancel": "Anuluj",
-    "mapRange": "{start}–{end} z {total}"
+    "mapRange": "{start}–{end} z {total}",
+    "previousMapPage": "Previous question page",
+    "nextMapPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "QuestionBrowser": {
     "questionOf": "PYTANIE {current} Z {total}",
@@ -106,7 +111,12 @@
     "checkAnswer": "Sprawdź odpowiedź",
     "previous": "Poprzednie",
     "nextQuestion": "Następne pytanie",
-    "sidebarRange": "{start}–{end} z {total}"
+    "sidebarRange": "{start}–{end} z {total}",
+    "previousSidebarPage": "Previous question page",
+    "nextSidebarPage": "Next question page",
+    "goToQuestion": "Go to question {number}",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}"
   },
   "CertDescriptions": {
     "actions": "CI/CD, wyzwalacze przepływów, zadania, kroki, sekrety i runnery GitHub.",
