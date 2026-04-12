@@ -1,10 +1,8 @@
 ---
-title: "質問 110"
-question: "個人アカウント向けのGitHubの料金プランはどれですか？（2つ選択）"
+question: "個人アカウント向けのGitHubのさまざまな料金プランは何ですか？"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/githubs-plans"
 ---
 
-
-> https://docs.github.com/en/get-started/learning-about-github/githubs-plans
 - [x] Free
 - [ ] Team
 - [ ] Enterprise
@@ -12,3 +10,4 @@ question: "個人アカウント向けのGitHubの料金プランはどれです
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+---
