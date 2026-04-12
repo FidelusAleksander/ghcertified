@@ -1,11 +1,9 @@
 ---
 question: "Jaki jest cel parametru `restore-keys` w `actions/cache` w GitHub Actions?"
-title: "Pytanie 106"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches
-1. [x] podać alternatywne klucze do użycia w przypadku braku trafienia w pamięci podręcznej
-1. [ ] wskazać, czy wystąpiło trafienie w pamięci podręcznej
-1. [ ] określić lokalizację plików w pamięci podręcznej
-1. [ ] włączyć funkcję pamięci podręcznej między systemami operacyjnymi
+- [x] udostępnienie alternatywnych kluczy do użycia w przypadku braku trafienia w cache
+- [ ] wskazanie, czy wystąpiło trafienie w cache
+- [ ] określenie lokalizacji plików w cache
+- [ ] umożliwienie funkcjonalności cache między systemami operacyjnymi
