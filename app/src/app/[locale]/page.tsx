@@ -93,11 +93,11 @@ export default async function HomePage({ params }: Props) {
             <CardContent className="px-3.5 py-3 flex flex-col gap-2">
               <div className="flex items-center justify-between gap-4">
                 <div className="text-[10px] font-bold tracking-wide uppercase text-muted-foreground">Results</div>
-                <div className="font-display text-lg font-bold text-foreground">87%</div>
+                <div className="font-display text-lg font-bold text-foreground">90%</div>
               </div>
               <div className="grid grid-cols-5 gap-1.5">
-                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((n) => {
-                  const correct = [1,2,3,5,6,7,8,10,11,12,13,14,15].includes(n);
+                {[1,2,3,4,5,6,7,8,9,10].map((n) => {
+                  const correct = n !== 3;
                   return (
                     <div key={n} className={`size-6 rounded-md text-[9px] font-bold border flex items-center justify-center ${correct ? "bg-success/15 border-success/50 text-success" : "bg-destructive/15 border-destructive/50 text-destructive"}`}>{n}</div>
                   );
