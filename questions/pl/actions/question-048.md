@@ -1,12 +1,9 @@
 ---
-question: "Zadanie o nazwie `job2` używa artefaktów utworzonych w `job1`. Dlatego ważne jest, aby upewnić się, że `job1` zakończy się przed rozpoczęciem poszukiwania artefaktów przez `job2`. Jak należy utworzyć tę zależność?"
-title: "Pytanie 048"
+question: "Praca o nazwie `job2` korzysta z artefaktów stworzonych w `job1`. Dlatego ważne jest, aby upewnić się, że `job1` kończy się zanim `job2` zacznie szukać artefaktów. Jak należy stworzyć tę zależność?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
-
-1. [x] utwórz tę zależność, używając słowa kluczowego `needs` w `job2`
-1. [ ] ta zależność jest tworzona automatycznie podczas użycia `actions/download-artifact` do pobrania artefaktu z `job1`
-1. [ ] utwórz tę zależność, definiując `job2` po `job1` w definicji workflow `.yaml`
-1. [ ] utwórz tę zależność, używając słowa kluczowego `concurrency` w `job2`
+- [x] utwórz tę zależność za pomocą słowa kluczowego `needs` w `job2`
+- [ ] ta zależność jest tworzona domyślnie podczas używania `actions/download-artifact` do pobierania artefaktów z `job1`
+- [ ] utwórz tę zależność, definiując `job2` po `job1` w definicji pliku `.yaml` workflow
+- [ ] utwórz tę zależność za pomocą słowa kluczowego `concurrency` w `job2`
