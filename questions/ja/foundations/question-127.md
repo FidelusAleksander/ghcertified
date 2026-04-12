@@ -1,11 +1,9 @@
 ---
-title: "質問 127"
-question: "新しいGitHub ProjectsとGitHub Projects Classicの大きな違いを最もよく表している説明はどれですか？"
+question: "新しいGitHub ProjectsとGitHub Projects Classicの主な違いを最もよく表している説明はどれですか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic"
 ---
 
-> **詳細**: [About projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic)
-
-1. [x] 新しいGitHub Projectsでは、スプレッドシートのような柔軟なインターフェース、カスタムフィールド、双方向のIssue同期が可能で、Projects Classicでは利用できなかった機能がある。  
-1. [ ] GitHub Projects ClassicにはPull Requestを自動でクローズするAIが組み込まれているが、新しいGitHub Projectsにはない。  
-1. [ ] GitHub Projects ClassicはコードスキャンやSecretスキャンをサポートするが、新しいGitHub Projectsはサポートしない。  
-1. [ ] 新しいGitHub ProjectsはOpen Issueのみを管理でき、Pull Requestはサポートしない。
+- [x] 新しいGitHub Projectsは、柔軟なスプレッドシートのようなインターフェース、カスタムフィールド、双方向のIssue同期を提供しており、これはProjects Classicにはありませんでした。  
+- [ ] GitHub Projects Classicにはプルリクエストを自動的にクローズするAIが内蔵されていますが、新しいGitHub Projectsにはありません。  
+- [ ] GitHub Projects Classicはコードスキャンおよびシークレットスキャンをサポートしていますが、新しいGitHub Projectsはサポートしていません。  
+- [ ] 新しいGitHub Projectsはプルリクエストをサポートせず、オープンIssueのみを管理できます。  
