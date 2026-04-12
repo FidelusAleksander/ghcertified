@@ -1,6 +1,6 @@
 ---
-question: "Como você pode acessar os valores atuais das variáveis em uma matriz dentro de um job no exemplo abaixo:"
-title: "Pergunta 114"
+question: "Como você pode acessar os valores atuais das variáveis em uma matriz dentro de um trabalho no exemplo abaixo:"
+documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy"
 ---
 
 ```yaml
@@ -11,8 +11,7 @@ jobs:
                 version: [10, 12, 14]
                 os: [ubuntu-latest, windows-latest]
 ```
-> https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [x] referenciar variáveis através do contexto `matrix` com a sintaxe como `matrix.version` e `matrix.os`
-1. [ ] usando a sintaxe `matrix.property`
-1. [ ] usando a palavra-chave `context` dentro da configuração do job
-1. [ ] acessando as variáveis diretamente com a sintaxe `version` e `os`
+- [x] referencie as variáveis através do contexto `matrix` com a sintaxe como `matrix.version` e `matrix.os`
+- [ ] usando a sintaxe `matrix.property`
+- [ ] usando a palavra-chave `context` na configuração do trabalho
+- [ ] acessando as variáveis diretamente com a sintaxe `version` e `os`
