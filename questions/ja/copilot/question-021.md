@@ -1,10 +1,9 @@
 ---
-title: "質問 021"
-question: "GitHub CopilotのCLIコマンド機能について正しく説明しているのはどれですか？"
+question: "GitHub Copilot の CLI コマンド機能を正しく説明している文はどれですか？"
+documentation: "https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line"
 ---
 
-> https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line
-1. [x] `gh copilot explain`でコマンド説明を、`gh copilot suggest`でコマンド提案を得られる
-1. [ ] `gh copilot suggest`使用時にユーザー確認なしでコマンドが自動実行される
-1. [ ] `gh copilot explain`コマンドは説明を表示せずにシステムファイルを変更する
-1. [ ] 提案されたコマンドはクリップボードにコピーされずに直接実行される
+- [x] ユーザーは 'gh copilot explain' を使用してコマンドの説明を取得し、'gh copilot suggest' を使用してコマンドの提案を取得できます
+- [ ] 'gh copilot suggest' を使用すると、コマンドはユーザーの確認なしで自動的に実行されます
+- [ ] 'gh copilot explain' コマンドは、説明を表示せずにシステムファイルを変更します
+- [ ] 提案されたコマンドは、クリップボードにコピーされることなく直接実行されます
