@@ -1,14 +1,11 @@
 ---
-title: "質問 020"
-question: "GitHub Actionsのワークフローはイベントによってトリガーされます。次のうち、GitHub Actionsがサポートする有効なイベントはどれですか？（2つ選択してください）"
+question: "GitHub Action ワークフローはイベントによってトリガーされます。次のうち、GitHub Actions がサポートする有効なイベントはどれですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows"
 ---
 
-
-
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
-- [x] ブランチにCommitがプッシュされたとき
-- [x] Pull Requestがオープンされたとき
-- [ ] Repository設定が変更されたとき
-- [ ] 依存関係で新しい脆弱性が検出されたとき
-> これはワークフローをトリガーする有効なイベントではありません。Dependabotの機能です。
-- [ ] Repositoryに新しいメンバーが追加されたとき
+- [x] ブランチにコミットがプッシュされる
+- [x] Pull Request が作成される
+- [ ] リポジトリの設定が変更される
+- [ ] 依存関係に新たな脆弱性が検出される  
+> これはワークフローをトリガーする有効なイベントではありません。Dependabot の機能です。
+- [ ] リポジトリに新しいメンバーが追加される
