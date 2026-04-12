@@ -1,11 +1,10 @@
 ---
-title: "Pregunta 097"
-question: "¿Cuál de las funciones de GitHub sirve mejor como una forma sencilla de compartir pequeños fragmentos de código con otros?"
+question: "¿Cuál de las funciones de GitHub sirve mejor como una manera sencilla de compartir pequeños fragmentos de código con otros?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-1. [x] Gists  
-1. [ ] Wikis  
-1. [ ] Issues  
-1. [ ] Projects  
+- [x] Gists
+- [ ] Wikis
+- [ ] Issues
+- [ ] Projects
+---
