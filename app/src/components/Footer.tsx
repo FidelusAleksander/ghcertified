@@ -36,10 +36,20 @@ export function Footer() {
             className="text-primary no-underline hover:underline"
           >
             {t("starOnGitHub")}
-          </a>
-        </p>
-        <p className="mt-1.5 text-xs text-muted-foreground/80">
-          {t("disclaimer")}
+          </a>{" "}
+          ·{" "}
+          {t.rich("madeBy", {
+            link: (chunks) => (
+              <a
+                href="https://aleksanderfidelus.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary no-underline hover:underline"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </div>
     </footer>
