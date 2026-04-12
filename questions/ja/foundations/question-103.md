@@ -1,10 +1,8 @@
 ---
-title: "質問 103"
-question: "1行で新しいBranchを作成して作業を開始できるGitコマンドはどれですか？（2つ選択）"
+question: "次のうち、1行で新しいブランチを作成し作業を開始できるGitコマンドはどれですか？"
+documentation: "https://git-scm.com/docs/git-switch"
 ---
 
-
-> https://git-scm.com/docs/git-switch
 - [x] git checkout -b `<new_branch_name>`
 - [ ] git branch -c `<new_branch_name>`
 - [x] git switch -c `<new_branch_name>`
