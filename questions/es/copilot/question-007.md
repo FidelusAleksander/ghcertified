@@ -1,14 +1,12 @@
 ---
-title: "Pregunta 007"
-question: "¿Qué es cierto acerca de las exclusiones de contenido de Copilot? (Elige dos)"
+question: "¿Qué es cierto acerca de las exclusiones de contenido de Copilot?"
+documentation: "https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot"
 ---
 
-
-> https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
-- [x] Las exclusiones de contexto pueden configurarse a nivel de repositorio y organización
+- [x] Las exclusiones de contexto se pueden configurar a nivel de repository y organization
 - [x] Copilot ofrece diferentes planes con consideraciones de privacidad
 - [ ] Copilot ignora completamente los archivos excluidos
 > Copilot puede usar información de un archivo excluido si la información es proporcionada por el IDE.
-- [ ] Las exclusiones de contenido no afectan la autocompletación de código
-- [ ] Las exclusiones de contenido se aplican instantáneamente
-> Después de agregar o cambiar exclusiones de contenido, pueden tardar hasta 30 minutos en surtir efecto
+- [ ] Las exclusiones de contenido no afectan la autocompleción de código
+- [ ] Las exclusiones de contenido se aplican de inmediato
+> Después de agregar o cambiar exclusiones de contenido, puede tomar hasta 30 minutos para que surtan efecto
