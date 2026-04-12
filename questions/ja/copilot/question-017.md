@@ -1,10 +1,9 @@
 ---
-title: "質問 017"
-question: "GitHub CopilotはIDEでのコード提案のデータ保持をどのように扱いますか？"
+question: "GitHub Copilot は IDE 内でのコード提案に対するデータ保持をどのように処理しますか？"
+documentation: "https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/"
 ---
 
-> https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
-1. [x] 提案は一時的にメモリ上に保持され、使用後に破棄され、ディスクには保存されない
-1. [ ] すべての提案が将来参照用にローカルデータベースに永久保存される
-1. [ ] 提案はGitHubリポジトリに自動保存されバージョン管理される
-1. [ ] コードスニペットはディスクに30日間キャッシュされ、その後削除される
+- [x] 提案は一時的にメモリに保持され、使用後に破棄され、ディスクには書き込まれません
+- [ ] すべての提案は将来的に参照するためにローカルデータベースに永久保存されます
+- [ ] 提案はバージョン管理のために自動的に GitHub リポジトリに保存されます
+- [ ] コードスニペットはディスクに30日間キャッシュされ、その後削除されます
