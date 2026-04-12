@@ -1,8 +1,7 @@
 ---
-title: "Pregunta 093"
-question: "Quieres fusionar los cambios de la rama `feature-a` en `main` y estás creando un pull request. ¿Qué rama debería ser la rama `base` y cuál debería ser la rama `compare`?"
+question: "Quieres fusionar cambios del branch `feature-a` en `main` y estás creando un pull request. ¿Qué branch debe ser el branch `base` y cuál debe ser el branch `compare`?"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests"
 ---
 
-> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests  
-1. [x] `main` es la rama base y `feature-a` es la rama de comparación.  
-1. [ ] `feature-a` es la rama base y `main` es la rama de comparación.  
+- [x] `main` es el branch base y `feature-a` es el branch de comparación.
+- [ ] `feature-a` es el branch base y `main` es el branch de comparación.
