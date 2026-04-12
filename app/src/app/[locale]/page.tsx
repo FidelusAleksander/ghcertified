@@ -88,12 +88,20 @@ export default async function HomePage({ params }: Props) {
 
         {/* Right column: mock quiz card (hidden on mobile, stays English — decorative) */}
         <div className="relative hidden lg:block">
+          {/* Floating mini results map */}
           <Card className="absolute -top-4 -right-3 z-10 shadow-md rotate-3">
-            <CardContent className="px-4 py-3.5 flex items-center gap-2.5">
-              <div className="size-9 bg-success-soft rounded-[9px] flex items-center justify-center text-lg">🏆</div>
-              <div>
-                <div className="font-display text-xl font-bold text-foreground">87%</div>
-                <div className="text-xs text-muted-foreground">Latest score</div>
+            <CardContent className="px-3.5 py-3 flex flex-col gap-2">
+              <div className="flex items-center justify-between gap-4">
+                <div className="text-[10px] font-bold tracking-wide uppercase text-muted-foreground">Results</div>
+                <div className="font-display text-lg font-bold text-foreground">87%</div>
+              </div>
+              <div className="grid grid-cols-5 gap-1.5">
+                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((n) => {
+                  const correct = [1,2,3,5,6,7,8,10,11,12,13,14,15].includes(n);
+                  return (
+                    <div key={n} className={`size-6 rounded-md text-[9px] font-bold border flex items-center justify-center ${correct ? "bg-success/15 border-success/50 text-success" : "bg-destructive/15 border-destructive/50 text-destructive"}`}>{n}</div>
+                  );
+                })}
               </div>
             </CardContent>
           </Card>
