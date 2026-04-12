@@ -1,13 +1,12 @@
 ---
-title: "質問 007"
-question: "Copilotのコンテンツ除外について正しいものはどれですか？（2つ選択）"
+question: "Copilot のコンテンツ除外について正しいものはどれですか？"
+documentation: "https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot"
 ---
 
-> https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
-- [x] コンテキスト除外はリポジトリと組織レベルで設定できる
-- [x] Copilotはプライバシーを考慮した異なるプランを提供している
-- [ ] 除外されたファイルはCopilotに完全に無視される
-> IDEから情報が提供される場合、Copilotは除外ファイルの情報を使用することがある
-- [ ] コンテンツ除外はコード補完に影響しない
-- [ ] コンテンツ除外は即時に適用される
-> コンテンツ除外の追加や変更後、適用まで最大30分かかることがある
+- [x] コンテキスト除外はリポジトリおよび組織レベルで構成可能
+- [x] Copilot はプライバシーに配慮した異なるプランを提供
+- [ ] Copilot は除外されたファイルを完全に無視する
+> Copilot は、IDE によって提供される情報がある場合、除外されたファイルの情報を使用する可能性があります。
+- [ ] コンテンツ除外はコード補完に影響を与えない
+- [ ] コンテンツ除外は即座に適用される
+> コンテンツ除外を追加または変更した後、適用されるまで最大30分かかる場合があります。
