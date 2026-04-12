@@ -1,11 +1,9 @@
 ---
-question: "Como você pode especificar a programação de um workflow do GitHub Actions para ser executado apenas em dias úteis?"
-title: "Pergunta 098"
+question: "Como você pode especificar o agendamento de um workflow do GitHub Actions para ser executado apenas em dias úteis?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-1. [ ] adicionar uma condição no YAML do workflow para dias úteis
-1. [ ] não é possível no GitHub Actions
-1. [ ] usar o gatilho de evento on: schedule: weekdays
-1. [x] usar o gatilho de evento on: schedule: cron
-
+- [ ] adicionar uma condição no arquivo YAML do workflow para dias úteis
+- [ ] não é possível no GitHub Actions
+- [ ] usar o gatilho de evento on: schedule: weekdays
+- [x] usar o gatilho de evento on: schedule: cron
