@@ -1,12 +1,9 @@
 ---
 question: "Quais são os diferentes níveis de permissão que você pode atribuir ao `GITHUB_TOKEN` no bloco `permissions`?"
-title: "Pergunta 002"
+documentation: "https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs"
 ---
 
-
-> https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
-
-1. [x] none, write, read
-1. [ ] read, write, delete
-1. [ ] read, write
+- [x] none, write, read
+- [ ] read, write, delete
+- [ ] read, write
 
