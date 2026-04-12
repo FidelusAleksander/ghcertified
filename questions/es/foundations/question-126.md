@@ -1,10 +1,8 @@
 ---
-title: "Pregunta 126"  
-question: "¿Cuáles de los siguientes son estados válidos para un pull request en GitHub? (Elija cuatro)."  
+question: "¿Cuáles de los siguientes son estados válidos para un pull request en GitHub?"  
 draft: false  
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
 ---
-
-> **Más información**: [Acerca de los pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 - [x] Open  
 - [x] Draft  
@@ -12,3 +10,4 @@ draft: false
 - [x] Closed  
 - [ ] Pending  
 - [ ] Abandoned  
+
