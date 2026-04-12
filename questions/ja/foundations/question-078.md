@@ -1,13 +1,12 @@
 ---
-title: "質問 078"
-question: "無制限のPublic Repositoryを作成できるGitHubの料金プランはどれですか？"
+question: "どのGitHubの料金プランで、無制限のパブリックリポジトリを作成できますか？"
+documentation: "https://github.com/pricing"
 ---
 
+- [x] 全て
+- [ ] Enterprise
+- [ ] Pro
+- [ ] Team
+- [ ] Team と Enterprise
+- [ ] Free
 
-> https://github.com/pricing
-1. [x] 全て
-1. [ ] Enterprise
-1. [ ] Pro
-1. [ ] Team
-1. [ ] TeamとEnterprise
-1. [ ] Free
