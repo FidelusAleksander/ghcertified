@@ -1,11 +1,9 @@
 ---
-question: "Você pode usar `permissions` para modificar as permissões do `GITHUB_TOKEN` em: (Selecione duas.)"
-title: "Pergunta 003"
+question: "Você pode usar `permissions` para modificar as permissões de `GITHUB_TOKEN` em:"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token"
 ---
 
-
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
-- [x] Nível de Workflow
-- [x] Nível de Job
-- [ ] Nível de Step
+- [x] Nível de workflow
+- [x] Nível de job
+- [ ] Nível de etapa
 
