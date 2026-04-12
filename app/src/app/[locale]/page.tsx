@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, BookOpen } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import type { SupportedLocale } from "@/lib/questions";
@@ -59,11 +59,12 @@ export default async function HomePage({ params }: Props) {
             </Button>
             <Button
               variant="outline"
-              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
+              render={<Link href={`/${locale}/questions`} />}
               nativeButton={false}
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
-              {t("contributeQuestions")}
+              <BookOpen data-icon="inline-start" />
+              {t("browseQuestions")}
             </Button>
           </div>
 
