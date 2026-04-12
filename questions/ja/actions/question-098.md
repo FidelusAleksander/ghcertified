@@ -1,10 +1,10 @@
 ---
-question: "GitHub Actions Workflowを平日のみ実行するようスケジュールするにはどうしますか？"
-title: "質問 098"
+question: "GitHub Actions ワークフローのスケジュールを平日のみに設定するにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-1. [ ] 平日用の条件をWorkflow YAMLに追加する
-1. [ ] GitHub Actionsでは不可能
-1. [ ] on: schedule: weekdays イベントトリガーを使用する
-1. [x] on: schedule: cron イベントトリガーを使用する
+- [ ] 平日用の条件をワークフロー YAML に追加する
+- [ ] GitHub Actions では不可能
+- [ ] on: schedule: weekdays イベントトリガーを使用する
+- [x] on: schedule: cron イベントトリガーを使用する
+
