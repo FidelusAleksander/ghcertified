@@ -124,7 +124,7 @@ export function Navbar() {
               <LanguagePicker />
             </div>
             <div className="mt-3 pt-3 border-t border-border">
-              <GitHubStarButton className="text-xs px-3 py-1.5" />
+              <GitHubStarButton className="text-xs" />
             </div>
           </div>
         </div>

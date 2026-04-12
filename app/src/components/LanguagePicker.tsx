@@ -48,17 +48,16 @@ export function LanguagePicker({ className }: { className?: string }) {
       <PopoverTrigger
         render={
           <Button
-            variant="ghost"
-            size="sm"
+            variant="outline"
             className={cn(
-              "gap-1 px-2 text-muted-foreground hover:text-foreground",
+              "gap-1.5 rounded-xl px-3 py-2.5 h-auto border-border bg-card shadow-sm hover:shadow-lg text-muted-foreground hover:text-foreground transition-all duration-300",
               className
             )}
             aria-label={`Language: ${LOCALE_LABELS[locale]}`}
           />
         }
       >
-        <span className="text-base leading-none">{LOCALE_FLAGS[locale]}</span>
+        <span className="text-lg leading-none">{LOCALE_FLAGS[locale]}</span>
         <ChevronDown
           className={cn(
             "size-3 opacity-60 transition-transform duration-200",

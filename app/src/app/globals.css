@@ -100,6 +100,8 @@
   --color-cert-admin: var(--cert-admin);
   --color-cert-copilot: var(--cert-copilot);
   --color-hover-ring: var(--primary-soft);
+  --color-star: var(--star);
+  --color-star-glow: var(--star-glow);
 }
 
 /*
@@ -149,6 +151,8 @@
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --star: hsl(45 93% 47%);
+  --star-glow: hsl(45 93% 60%);
 }
 
 /*

@@ -262,7 +262,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           <FeedbackAlert
             isCorrect={isCurrentCorrect()}
             correctLabel={t("correct")}
-            incorrectLabel={t("notQuite")}
+            incorrectLabel={t("incorrect")}
           />
         )}
       </QuestionCard>

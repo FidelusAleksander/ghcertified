@@ -7,10 +7,10 @@ interface AnswerExplanationProps {
   text: string;
 }
 
-const URL_RE = /(https?:\/\/[^\s]+)/g;
+const URL_RE = /(https?:\/\/[^\s]+)/;
 
 export function AnswerExplanation({ text }: AnswerExplanationProps) {
-  const parts = text.split(URL_RE);
+  const parts = text.split(new RegExp(URL_RE.source, "g"));
 
   return (
     <div className="ml-[2.625rem] mt-1 mb-1 text-[13px] leading-relaxed text-muted-foreground motion-safe:animate-in motion-safe:fade-in motion-safe:duration-300">

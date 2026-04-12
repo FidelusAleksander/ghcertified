@@ -3,9 +3,10 @@
 import { cn } from "@/lib/utils";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
+import type { AnswerOption as AnswerOptionType } from "@/types/quiz";
 
 export interface AnswerOptionProps {
-  answer: { id: string; text: string; isCorrect: boolean; explanation?: string };
+  answer: AnswerOptionType;
   index: number;
   isMultiSelect: boolean;
   isSelected: boolean;
