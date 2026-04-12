@@ -50,7 +50,7 @@ import type { SupportedLocale } from "./locales";
 
 // ── Constants ───────────────────────────────────────────────────────
 
-const CERT_TITLES: Record<CertificationType, string> = {
+export const CERT_TITLES: Record<CertificationType, string> = {
   actions: "GitHub Actions",
   admin: "GitHub Administration",
   advanced_security: "GitHub Advanced Security",

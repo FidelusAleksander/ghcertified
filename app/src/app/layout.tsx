@@ -15,17 +15,26 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GitHub Certified — Practice Tests",
+  metadataBase: new URL("https://ghcertified.com"),
+  title: {
+    default: "GitHub Certified — Practice Tests",
+    template: "%s — GitHub Certified",
+  },
   description:
     "Master GitHub Certifications with community-created practice tests for Actions, Admin, Advanced Security, Foundations, and Copilot.",
   openGraph: {
     title: "GitHub Certified — Practice Tests",
     description:
       "Master GitHub Certifications with community-created practice tests for Actions, Admin, Advanced Security, Foundations, and Copilot.",
+    siteName: "GitHub Certified",
+    type: "website",
     images: [{ url: "/opengraph.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
+    title: "GitHub Certified — Practice Tests",
+    description:
+      "Master GitHub Certifications with community-created practice tests for Actions, Admin, Advanced Security, Foundations, and Copilot.",
     images: ["/opengraph.png"],
   },
 };

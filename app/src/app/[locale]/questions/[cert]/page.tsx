@@ -3,11 +3,13 @@
  * Server component loads data, mounts the client QuestionBrowser.
  */
 
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { CertificationType, SupportedLocale } from "@/lib/questions";
-import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES } from "@/lib/questions";
+import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES } from "@/lib/questions";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { QuestionBrowser } from "./question-browser";
 
 const VALID_CERTS: CertificationType[] = [
@@ -22,6 +24,28 @@ export function generateStaticParams() {
 
 interface Props {
   params: Promise<{ locale: string; cert: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale, cert } = await params;
+  const certName = CERT_TITLES[cert as CertificationType] ?? cert;
+  const questions = getQuestionsByCert(cert as CertificationType, locale as SupportedLocale);
+  const title = `${certName} Questions`;
+  const description = `Browse ${questions.length} practice questions for the ${certName} certification exam.`;
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, `/questions/${cert}`),
+    openGraph: {
+      title,
+      description,
+      locale,
+      images: [OG_IMAGE],
+    },
+  };
 }
 
 export default async function CertQuestionsPage({ params }: Props) {

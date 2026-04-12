@@ -5,13 +5,31 @@
  * passes them to the client CatalogCards for interactive inputs.
  */
 
+import type { Metadata } from "next";
 import { getCertCatalog } from "@/lib/questions";
 import type { SupportedLocale } from "@/lib/questions";
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { CatalogCards } from "./catalog-cards";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "PracticeTests" });
+  const title = t("title");
+  const description = t("description");
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, "/practice-tests"),
+    openGraph: { title, description, locale, images: [OG_IMAGE] },
+  };
 }
 
 export default async function PracticeTestsPage({ params }: Props) {

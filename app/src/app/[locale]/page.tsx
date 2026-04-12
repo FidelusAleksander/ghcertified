@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,9 +11,31 @@ import { getCertCatalog } from "@/lib/questions";
 import type { SupportedLocale } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
 import { getContributors } from "@/lib/contributors";
+import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Home" });
+  const title = "GitHub Certified — Practice Tests";
+  const description = t("heroDescription");
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, "/"),
+    openGraph: {
+      title,
+      description,
+      locale,
+      images: [OG_IMAGE],
+    },
+  };
 }
 
 /**
@@ -34,8 +57,23 @@ export default async function HomePage({ params }: Props) {
   }));
   const totalQuestions = certifications.reduce((sum, c) => sum + c.questions, 0);
   const contributors = await getContributors();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GitHub Certified",
+    url: `https://ghcertified.com/${locale}`,
+    description: t("heroDescription"),
+    inLanguage: locale,
+  };
+
   return (
-    <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-10 sm:pt-24 pb-8 sm:pb-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-10 sm:pt-24 pb-8 sm:pb-20">
       {/* Hero — two columns */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pb-14 sm:pb-20">
         {/* Left column: copy */}
@@ -229,5 +267,6 @@ export default async function HomePage({ params }: Props) {
         </div>
       )}
     </div>
+    </>
   );
 }
