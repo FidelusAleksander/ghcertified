@@ -1,38 +1,37 @@
 ---
-question: "Para executar um `step` somente se o segredo `MY_SECRET` tiver sido configurado, você pode:"
-title: "Pergunta 068"
+question: "Para executar um `step` apenas se o segredo `MY_SECRET` tiver sido configurado, você pode:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets
-1. [x] Configurar o segredo `MY_SECRET` como uma variável de ambiente no nível do job e, em seguida, referenciar essa variável de ambiente para condicionalmente executar esse step
+- [x] Definir o segredo `MY_SECRET` como uma variável de ambiente no nível do job e, em seguida, referenciar essa variável de ambiente para executar condicionalmente aquele step
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    env:
-      my_secret: ${{ secrets.MY_SECRET }}
-    steps:
-      - if: ${{ env.my_secret != '' }}
+my-job:
+  runs-on: ubuntu-latest
+  env:
+    my_secret: ${{ secrets.MY_SECRET }}
+  steps:
+    - if: ${{ env.my_secret != '' }}
 ```
-1. [ ] Criar a seguinte condicional no nível do job
+- [ ] Criando a seguinte condicional no nível do job
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    if: ${{ secrets.MY_SECRET == '' }}
+my-job:
+  runs-on: ubuntu-latest
+  if: ${{ secrets.MY_SECRET == '' }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais de if:
-1. [ ] Criar a seguinte condicional no nível do step
+> segredos não podem ser referenciados diretamente em condicionais if: 
+- [ ] Criando a seguinte condicional no nível do step
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET == '' }}
+my-job:
+  runs-on: ubuntu-latest
+  steps:
+    - if: ${{ secrets.MY_SECRET == '' }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais de if:
-1. [ ] Criar a seguinte condicional no nível do step
+> segredos não podem ser referenciados diretamente em condicionais if: 
+- [ ] Criando a seguinte condicional no nível do step
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET }}
+my-job:
+  runs-on: ubuntu-latest
+  steps:
+    - if: ${{ secrets.MY_SECRET }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais de if:
+> segredos não podem ser referenciados diretamente em condicionais if: 
