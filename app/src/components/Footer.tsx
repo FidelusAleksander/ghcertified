@@ -16,20 +16,23 @@ export function Footer() {
       <Separator />
       <div className="py-6 sm:py-8 px-4 sm:px-8 text-center text-[13px] text-muted-foreground">
         <p>
-          {t("tagline")}{" "}
-          <a
-            href="https://learn.github.com/certifications"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary no-underline hover:underline"
-          >
-            {t("officialCerts")}
-          </a>{" "}
+          {t.rich("tagline", {
+            link: (chunks) => (
+              <a
+                href="https://learn.github.com/certifications"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary no-underline hover:underline"
+              >
+                {chunks}
+              </a>
+            ),
+          })}{" "}
           ·{" "}
           <a
             href="https://github.com/FidelusAleksander/ghcertified"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-primary no-underline hover:underline"
           >
             {t("starOnGitHub")}

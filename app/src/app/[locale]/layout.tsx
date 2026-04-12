@@ -27,6 +27,11 @@ export default async function LocaleLayout({ params, children }: Props) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang="${locale}"`,
+        }}
+      />
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />

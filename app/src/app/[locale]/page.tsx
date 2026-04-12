@@ -59,7 +59,7 @@ export default async function HomePage({ params }: Props) {
             </Button>
             <Button
               variant="outline"
-              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
               nativeButton={false}
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
@@ -210,7 +210,7 @@ export default async function HomePage({ params }: Props) {
           <div className="mt-6">
             <Button
               variant="outline"
-              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+              render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
               nativeButton={false}
               className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-medium"
             >

@@ -56,6 +56,7 @@ export function CatalogCards({ certs, locale }: Props) {
                   </span>
                 </div>
                 <Slider
+                  aria-label={t("practiceWith")}
                   value={[count]}
                   min={1}
                   max={cert.questions}

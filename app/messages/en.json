@@ -7,7 +7,7 @@
     "closeMenu": "Close menu"
   },
   "Footer": {
-    "tagline": "ghcertified.com · Community-contributed questions for",
+    "tagline": "Community-contributed practice questions for <link>official GitHub Certifications</link>",
     "officialCerts": "official GitHub Certifications",
     "starOnGitHub": "⭐ Star on GitHub",
     "disclaimer": "Not affiliated with GitHub. All questions are original, community-created content. We do not condone copying from real certification exams."
@@ -16,7 +16,7 @@
     "heroTitle1": "Ace your",
     "heroTitle2": "GitHub",
     "heroTitle3": "Certifications.",
-    "heroDescription": "Practice with realistic, community-contributed questions across all GitHub certification tracks. Immediate feedback, randomized sessions, and zero fluff.",
+    "heroDescription": "Practice with realistic, community-contributed questions across all GitHub certification tracks. Instant feedback, randomized sessions, and focused study — no distractions.",
     "startPracticing": "Start Practicing",
     "contributeQuestions": "Contribute Questions",
     "statQuestions": "Practice questions",
@@ -43,7 +43,7 @@
   },
   "CatalogCard": {
     "questionsAvailable": "{count} questions available",
-    "practiceWith": "Practice with",
+    "practiceWith": "Number of questions",
     "start": "Start →"
   },
   "QuestionsLibrary": {
@@ -56,7 +56,7 @@
   },
   "Quiz": {
     "breadcrumbPracticeTests": "Practice Tests",
-    "questionOf": "QUESTION {current} OF {total}",
+    "questionOf": "Question {current} of {total}",
     "flag": "Flag",
     "flagged": "Flagged",
     "unflag": "Unflag this question",
@@ -68,8 +68,8 @@
     "selectExactly": "Select exactly {count} answers",
     "yourAnswer": "Your answer",
     "correct": "Correct!",
-    "incorrect": "Incorrect",
-    "learnMore": "📖 Learn more in the docs",
+    "incorrect": "Not quite",
+    "learnMore": "Learn more in the docs",
     "previous": "Previous",
     "nextQuestion": "Next question",
     "submitExam": "Submit Exam",
@@ -81,20 +81,22 @@
     "answered": "Answered",
     "partiallyAnswered": "Partially answered",
     "unanswered": "Unanswered",
-    "contributePrompt": "Found this useful? Help the community.",
+    "contributePrompt": "Enjoying these questions? Help grow the collection.",
     "contribute": "✍️ Contribute",
     "submitDialogTitle": "Submit Practice Test?",
-    "submitDialogDescription": "You won't be able to change your answers after submitting.",
+    "submitDialogDescription": "Once submitted, you'll see your score and can review each question.",
     "submitDialogFlagged": "Flagged for review",
-    "submitDialogWarning": "You have {unanswered} unanswered and {partial} partially answered question(s). These will be marked as incorrect.",
-    "submitDialogWarningUnanswered": "You have {count} unanswered question(s). These will be marked as incorrect.",
-    "submitDialogWarningPartial": "You have {count} partially answered question(s). These will be marked as incorrect.",
-    "submitDialogWarningBoth": "You have {unanswered} unanswered and {partial} partially answered question(s). These will be marked as incorrect.",
+    "submitDialogWarning": "You have {unanswered} unanswered and {partial} partially answered questions. These will count as incorrect.",
+    "submitDialogWarningUnanswered": "You have {count} unanswered questions. These will count as incorrect.",
+    "submitDialogWarningPartial": "You have {count} partially answered questions. These will count as incorrect.",
+    "submitDialogWarningBoth": "You have {unanswered} unanswered and {partial} partially answered questions. These will count as incorrect.",
     "cancel": "Cancel",
-    "mapRange": "{start}–{end} of {total}"
+    "mapRange": "{start}–{end} of {total}",
+    "reportIssueTitle": "[{cert}] Issue with {questionId}",
+    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question."
   },
   "QuestionBrowser": {
-    "questionOf": "QUESTION {current} OF {total}",
+    "questionOf": "Question {current} of {total}",
     "report": "Report",
     "reportTooltip": "Report an issue with this question",
     "multiSelect": "Multi-select",
@@ -102,11 +104,13 @@
     "selectExactly": "Select exactly {count} answers",
     "correct": "Correct!",
     "notQuite": "Not quite!",
-    "learnMore": "📖 Learn more in the docs",
+    "learnMore": "Learn more in the docs",
     "checkAnswer": "Check Answer",
     "previous": "Previous",
     "nextQuestion": "Next question",
-    "sidebarRange": "{start}–{end} of {total}"
+    "sidebarRange": "{start}–{end} of {total}",
+    "reportIssueTitle": "[{cert}] Issue with {questionId}",
+    "reportIssueBody": "**Question:** {question}\n\n**Issue:**\n\nPlease describe the problem with this question."
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

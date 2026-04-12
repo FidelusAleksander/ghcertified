@@ -32,6 +32,7 @@ import {
 } from "@/components/ui/dialog";
 import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { renderCodeSpans } from "@/lib/render-code-spans";
 
 interface QuizProps {
   questions: Question[];
@@ -214,7 +215,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <button
                     type="button"
                     onClick={handleToggleFlag}
-                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10"
+                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                     title={isFlagged ? t("unflag") : t("flagForReview")}
                   >
                     <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
@@ -222,7 +223,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   </button>
                 )}
                 <a
-                  href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(`[${cert}] Issue with ${currentQuestion.id}`)}&body=${encodeURIComponent(`**Question:** ${currentQuestion.question}\n\n**Issue:**\n\n<!-- Please describe the problem with this question -->`)}&labels=question-issue`}
+                  href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
@@ -265,7 +266,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const isCorrectOpt = answer.isCorrect;
 
                 const optionClass = cn(
-                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all text-[14.5px] leading-relaxed text-left",
+                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   !isComplete && "cursor-pointer",
                   isComplete && isCorrectOpt && "border-success bg-success-soft",
                   isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
@@ -327,7 +328,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                       rel="noopener noreferrer"
                       className="underline underline-offset-4 hover:opacity-80"
                     >
-                      {t("learnMore")}
+                      📖 {t("learnMore")}
                     </a>
                   </AlertDescription>
                 )}
@@ -344,7 +345,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const correct = isComplete ? isQuestionCorrect(q) : null;
                 const state = getQuestionState(q);
                 const dotClass = cn(
-                  "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors",
+                  "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
                   isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
                   isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
@@ -546,7 +547,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <CardContent className="px-4 py-3.5 flex items-center justify-between gap-3">
               <span className="text-[13px] text-card/65 leading-snug">{t("contributePrompt")}</span>
               <Button
-                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" />}
+                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
                 nativeButton={false}
                 className="bg-card text-foreground hover:bg-card/90 font-bold text-[12px] px-3 py-1.5 h-auto flex-shrink-0"
               >
@@ -630,35 +631,3 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   );
 }
 
-/** Simple parser: turns `backtick` text into <code> spans for technical content. */
-function renderCodeSpans(text: string): React.ReactNode[] {
-  // Split on fenced code blocks first (```lang\n...\n```), then inline backticks
-  const fencedRe = /(```\w*\n[\s\S]*?```)/g;
-  const segments = text.split(fencedRe);
-
-  return segments.flatMap((segment, i) => {
-    // Fenced code block
-    if (segment.startsWith("```")) {
-      const firstNewline = segment.indexOf("\n");
-      const code = segment.slice(firstNewline + 1, segment.lastIndexOf("```")).trimEnd();
-      return [
-        <pre key={`fence-${i}`} className="font-mono text-xs bg-muted/80 border border-border rounded-lg p-3 my-2 overflow-x-auto whitespace-pre">
-          <code>{code}</code>
-        </pre>,
-      ];
-    }
-
-    // Inline backticks within non-fenced text
-    const parts = segment.split(/(`[^`]+`)/g);
-    return parts.map((part, j) => {
-      if (part.startsWith("`") && part.endsWith("`")) {
-        return (
-          <code key={`${i}-${j}`} className="font-mono text-sm bg-muted px-1.5 py-0.5 rounded text-foreground">
-            {part.slice(1, -1)}
-          </code>
-        );
-      }
-      return <span key={`${i}-${j}`}>{part}</span>;
-    });
-  });
-}

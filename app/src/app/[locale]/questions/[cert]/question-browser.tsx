@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CircleAlert } from "lucide-react";
+import { renderCodeSpans } from "@/lib/render-code-spans";
 
 interface QuestionBrowserProps {
   questions: Question[];
@@ -211,7 +212,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
           </span>
           <div className="flex items-center gap-2.5">
             <a
-              href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(`[${currentQuestion.cert}] Issue with ${currentQuestion.id}`)}&body=${encodeURIComponent(`**Question:** ${currentQuestion.question}\n\n**Issue:**\n\n<!-- Please describe the problem with this question -->`)}&labels=question-issue`}
+              href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
@@ -305,7 +306,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                     rel="noopener noreferrer"
                     className="underline underline-offset-4 hover:opacity-80"
                   >
-                    {t("learnMore")}
+                    📖 {t("learnMore")}
                   </a>
                 )}
               </AlertDescription>
@@ -340,37 +341,4 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       </Card>
     </div>
   );
-}
-
-/** Turns `backtick` text into <code> spans and fenced blocks into <pre>. */
-function renderCodeSpans(text: string): React.ReactNode[] {
-  const fencedRe = /(```\w*\n[\s\S]*?```)/g;
-  const segments = text.split(fencedRe);
-
-  return segments.flatMap((segment, i) => {
-    if (segment.startsWith("```")) {
-      const firstNewline = segment.indexOf("\n");
-      const code = segment.slice(firstNewline + 1, segment.lastIndexOf("```")).trimEnd();
-      return [
-        <pre
-          key={`fence-${i}`}
-          className="font-mono text-xs bg-muted/80 border border-border rounded-lg p-3 my-2 overflow-x-auto whitespace-pre"
-        >
-          <code>{code}</code>
-        </pre>,
-      ];
-    }
-
-    const parts = segment.split(/(`[^`]+`)/g);
-    return parts.map((part, j) => {
-      if (part.startsWith("`") && part.endsWith("`")) {
-        return (
-          <code key={`${i}-${j}`} className="font-mono text-sm bg-muted px-1.5 py-0.5 rounded text-foreground">
-            {part.slice(1, -1)}
-          </code>
-        );
-      }
-      return <span key={`${i}-${j}`}>{part}</span>;
-    });
-  });
 }
