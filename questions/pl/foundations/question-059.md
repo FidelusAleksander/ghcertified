@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 059"
 question: "Czym jest InnerSource?"
+documentation: "https://resources.github.com/innersource/what-is-innersource/"
 ---
 
-
-> https://resources.github.com/innersource/what-is-innersource/
-1. [x] InnerSource odnosi się do praktyki stosowania zasad open source wewnątrz organizacji
-1. [ ] InnerSource odnosi się do praktyki stosowania zasad open source w projektach osobistych
-1. [ ] InnerSource odnosi się do wewnętrznej bazy wiedzy organizacji na temat projektu, nad którym pracują.
-1. [ ] InnerSource to narzędzie, które pozwala organizacjom zobaczyć, z jakich projektów open source korzystają w swoim kodzie.
+- [x] InnerSource odnosi się do praktyki stosowania zasad open source w organizacji
+- [ ] InnerSource odnosi się do praktyki stosowania zasad open source w projektach osobistych
+- [ ] InnerSource odnosi się do wewnętrznej bazy wiedzy organizacji na temat projektu, nad którym pracują.
+- [ ] InnerSource to narzędzie, które umożliwia organizacjom sprawdzanie, z jakich projektów open source korzystają w swoim kodzie.
