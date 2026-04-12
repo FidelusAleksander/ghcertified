@@ -1,11 +1,9 @@
 ---
-title: "質問 071"
 question: "git commitとは何ですか？"
+documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
 ---
 
-
-> https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits
-1. [x] ある時点のリポジトリのスナップショット
-1. [ ] リポジトリ内の新規または更新されたファイル
-1. [ ] Pull Request内で行われたコード変更
-1. [ ] リポジトリで行われた変更内容を記述した人間可読なテキスト
+- [x] コミットは、特定の時点におけるリポジトリのスナップショットです。
+- [ ] コミットは、リポジトリ内の新しいファイルまたは更新されたファイルを指します。
+- [ ] コミットは、Pull Request内で行われたリポジトリへのコード変更を指します。
+- [ ] コミットは、リポジトリに加えられた変更を説明する人間が読めるテキストを指します。
