@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 042"
 question: "Qual é o propósito de um arquivo `CODEOWNERS`?"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
 ---
 
-
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
-1. [x] O arquivo `CODEOWNERS` permite que você defina indivíduos ou equipes responsáveis por áreas específicas do código ou por sua totalidade.
-1. [ ] O arquivo `CODEOWNERS` contém informações sobre as taxas de licenciamento de software e as condições sob as quais o código pode ser usado.
-1. [ ] O arquivo `CODEOWNERS` inclui informações sobre a qualidade do código e a facilidade de manutenção do código.
-1. [ ] O arquivo `CODEOWNERS` contém detalhes de contato dos donos do repositório.
+- [x] O arquivo `CODEOWNERS` permite que você defina indivíduos ou equipes responsáveis por áreas específicas do código ou por sua totalidade.
+- [ ] O arquivo `CODEOWNERS` contém informações sobre as taxas e condições de licenciamento de software sob as quais o código pode ser utilizado.
+- [ ] O arquivo `CODEOWNERS` inclui informações sobre a qualidade do código e sua manutenibilidade.
+- [ ] O arquivo `CODEOWNERS` contém detalhes de contato dos proprietários do repositório.
