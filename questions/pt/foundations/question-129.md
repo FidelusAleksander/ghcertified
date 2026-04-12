@@ -1,15 +1,13 @@
 ---
-title: "Pergunta 129"  
 question: "Quais funções em uma organização podem visualizar e gerenciar alertas de segurança para repositórios privados?"  
 draft: false  
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> **Mais informações**: [Funções em uma organização](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
-
-1. [ ] Colaboradores externos  
-  > Colaboradores externos têm permissões específicas para repositórios apenas e não são membros da organização com privilégios de segurança.  
-1. [ ] Mantenedores de repositórios  
-  > Mantenedores podem gerenciar certas configurações de repositório, mas não têm acesso padrão aos alertas de segurança da organização.  
-1. [x] Proprietários da organização e Gerentes de segurança  
-  > **Correto**. Proprietários da organização e Gerentes de segurança podem visualizar e gerenciar alertas de segurança, incluindo para repositórios privados.  
-1. [ ] Gerentes de cobrança  
+- [ ] Colaboradores externos  
+> Colaboradores externos têm permissões específicas para repositórios apenas e não são membros da organização com privilégios de segurança.  
+- [ ] Mantenedores de repositório  
+> Os mantenedores podem gerenciar certas configurações do repositório, mas não têm acesso padrão a alertas de segurança a nível da organização.  
+- [x] Proprietários da organização e Gerentes de segurança  
+> **Correto**. Os proprietários da organização e os gerentes de segurança podem visualizar e gerenciar alertas de segurança, inclusive para repositórios privados.  
+- [ ] Gerentes de cobrança  
