@@ -1,11 +1,9 @@
 ---
-title: "質問 070"
-question: "GitHubにおけるRepositoryとは何ですか？"
+question: "GitHubにおけるリポジトリとは何ですか？"
+documentation: "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories"
 ---
 
-
-> https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
-1. [x] コードやファイル、その各ファイルのリビジョン履歴を保存できる場所
-1. [ ] DockerイメージやNPMパッケージを保存する場所
-1. [ ] ブラウザ上でソースコードを編集できるビジュアルコードエディタ
-1. [ ] 開発者がコードに関する問題を議論するチャットルーム
+- [x] コード、ファイル、および各ファイルのリビジョン履歴を保存できる場所です。
+- [ ] DockerイメージやNPMパッケージを保存できる場所です。
+- [ ] ブラウザでソースコードを編集できるビジュアルコードエディタです。
+- [ ] GitHubのリポジトリは、開発者がコード関連の問題について議論できるチャットルームです。
