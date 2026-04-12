@@ -1,12 +1,9 @@
 ---
-title: "Pregunta 119"
-question: "¿Cómo puedes determinar si una acción es una acción de contenedor observando su archivo action.yml?"
+question: "¿Cómo puedes determinar si una acción es una acción de contenedor al observar su archivo action.yml?"
+documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions"
 ---
 
-
-> https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions
-
-1. [x] `runs.using` tiene `docker` como valor
-1. [ ] `runs.using` tiene `container` como valor
-1. [ ] `runs.using` tiene `Dockerfile` como valor
-1. [ ] `runs.main` tiene `container` como valor
+- [x] `runs.using` tiene `docker` como valor
+- [ ] `runs.using` tiene `container` como valor
+- [ ] `runs.using` tiene `Dockerfile` como valor
+- [ ] `runs.main` tiene `container` como valor
