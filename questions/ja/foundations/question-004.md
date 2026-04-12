@@ -1,11 +1,9 @@
 ---
-title: "質問 004"
-question: "GitHub Projects内のアイテム用カスタムフィールドについて正しいのはどれですか？"
+question: "GitHub Projects のアイテムに関するカスタムフィールドについて正しいのは次のうちどれですか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#adding-metadata-to-your-items"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#adding-metadata-to-your-items
-1. [x] カスタムフィールドを使うことで、ターゲット日やイテレーションフィールドなど、組み込みオプション以外のメタデータを追加できます。
-1. [ ] カスタムフィールドはテキスト情報に限定され、数値や日付関連のメタデータは含められません。
-1. [ ] カスタムフィールドは見た目の変更専用であり、有用なメタデータは追加できません。
-1. [ ] カスタムフィールドは事前定義されたオプションに限定され、ユーザー定義のメタデータは含められません。
+- [x] カスタムフィールドを使用すると、ターゲット日やイテレーションフィールドなど、組み込みのオプションを超えたメタデータを追加できます。
+- [ ] カスタムフィールドはテキスト情報に限定されており、数値や日付に関連するメタデータを含めることはできません。
+- [ ] カスタムフィールドは外見上の変更のためだけで、意味のあるメタデータを追加することはできません。
+- [ ] カスタムフィールドは事前定義されたオプションに限定されており、ユーザー定義のメタデータを含めることはできません。
