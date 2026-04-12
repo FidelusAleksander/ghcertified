@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 019"
-question: "Które z tych zastosowań jest powszechne dla GitHub Actions?"
+question: "Które z poniższych jest powszechnym przypadkiem użycia dla GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration"
 ---
 
+- [x] Uruchamianie testów automatycznych przed scaleniem pull request
+- [ ] Dodawanie przycisku wsparcia do projektu
+- [ ] Przetwarzanie dużych zbiorów danych i analityka
+- [ ] Trenowanie modeli uczenia maszynowego
 
-> https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
-1. [x] Uruchamianie automatycznych testów przed scaleniem pull requesta
-1. [ ] Dodanie przycisku sponsoringu do Twojego projektu
-1. [ ] Przetwarzanie i analiza dużych zbiorów danych
-1. [ ] Trenowanie modeli uczenia maszynowego
