@@ -1,13 +1,11 @@
 ---
-title: "Pytanie 062"
-question: "Które z poniższych mogą sprawić, że repozytorium będzie łatwiejsze do znalezienia? (Wybierz trzy.)"
+question: "Które z poniższych mogą uczynić repozytorium bardziej widocznym?"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository"
 ---
 
-
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository
-- [x] Dobrze przygotowany zestaw dokumentów markdown, takich jak `README.md`, `CONTRIBUTING.md` i inne.
+- [x] Starannie przygotowany zestaw dokumentów markdown, takich jak `README.md`, `CONTRIBUTING.md` i inne.
 - [x] Nadanie repozytorium opisowej nazwy
-- [x] Ustawienie tematów (topics) dla repozytorium
-- [ ] Zdefiniowanie odpowiednich potoków CI/CD
+- [x] Ustawienie tematów dla repozytorium
+- [ ] Zdefiniowanie odpowiednich pipeline'ów CI/CD
 - [ ] Pokrycie oprogramowania repozytorium testami
-- [ ] Użycie szerokiego zakresu aplikacji GitHub i akcji GitHub
+- [ ] Wykorzystanie szerokiego zakresu GitHub Apps i GitHub Actions
