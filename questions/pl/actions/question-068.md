@@ -1,38 +1,37 @@
 ---
-question: "Aby uruchomić `step` tylko wtedy, gdy sekret `MY_SECRET` został ustawiony, możesz:"
-title: "Pytanie 068"
+question: "Aby uruchomić `step` tylko wtedy, gdy tajemnica `MY_SECRET` została ustawiona, możesz:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets
-1. [x] Ustawić sekret `MY_SECRET` jako zmienną środowiskową na poziomie zadania, a następnie odwołać się do tej zmiennej środowiskowej, aby warunkowo uruchomić ten krok
+- [x] Ustawić tajemnicę `MY_SECRET` jako zmienną środowiskową na poziomie zadania, a następnie odwołać się do tej zmiennej środowiskowej, aby warunkowo uruchomić krok
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    env:
-      my_secret: ${{ secrets.MY_SECRET }}
-    steps:
-      - if: ${{ env.my_secret != '' }}
+my-job:
+  runs-on: ubuntu-latest
+  env:
+    my_secret: ${{ secrets.MY_SECRET }}
+  steps:
+    - if: ${{ env.my_secret != '' }}
 ```
-1. [ ] Tworząc następujący warunek na poziomie zadania
+- [ ] Tworząc następujący warunek na poziomie zadania
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    if: ${{ secrets.MY_SECRET == '' }}
+my-job:
+  runs-on: ubuntu-latest
+  if: ${{ secrets.MY_SECRET == '' }}
 ```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
-1. [ ] Tworząc następujący warunek na poziomie kroku
+> secrets nie mogą być bezpośrednio odwoływane w warunkach if:
+- [ ] Tworząc następujący warunek na poziomie kroku
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET == '' }}
+my-job:
+  runs-on: ubuntu-latest
+  steps:
+    - if: ${{ secrets.MY_SECRET == '' }}
 ```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
-1. [ ] Tworząc następujący warunek na poziomie kroku
+> secrets nie mogą być bezpośrednio odwoływane w warunkach if:
+- [ ] Tworząc następujący warunek na poziomie kroku
 ```yaml
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - if: ${{ secrets.MY_SECRET }}
+my-job:
+  runs-on: ubuntu-latest
+  steps:
+    - if: ${{ secrets.MY_SECRET }}
 ```
-> sekrety nie mogą być bezpośrednio używane w warunkach `if:`
+> secrets nie mogą być bezpośrednio odwoływane w warunkach if:
