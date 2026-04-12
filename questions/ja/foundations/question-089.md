@@ -1,11 +1,9 @@
 ---
-title: "質問 089"
-question: "Issue FormsはIssue Templateに比べてどのような改善をもたらしますか？"
+question: "課題フォームは課題テンプレートに比べてどのような改善をもたらしますか？"
+documentation: "https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms"
 ---
 
-
-> https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
-1. [x] Issue作成時にユーザーへ情報入力を促し、その情報を自動的にIssueへ追加できる
-1. [ ] GitHubにIssue Formsというものは存在しない
-1. [ ] Issue Formは一定期間後に自動でIssueをクローズする機能で、Issue Templateより効率的な管理を可能にする
-1. [ ] Issue Formはタイトルと説明だけのフォームでIssueを作成するツールであり、情報の質を改善するとは限らない
+- [x] 課題フォームを使用すると、課題作成時にユーザーに情報を促し、その情報を自動的に課題に追加できます。
+- [ ] GitHubには課題フォームというものは存在しません。
+- [ ] 課題フォームは、課題テンプレートに比べて効率的な課題管理を提供するため、一定期間後に自動的に課題をクローズする機能です。
+- [ ] 課題フォームは、タイトルと説明のフォーム項目のみを含む課題を作成するためのツールであり、プロセスを簡素化しますが、課題テンプレートと比較して情報の質を必ずしも向上させるものではありません。
