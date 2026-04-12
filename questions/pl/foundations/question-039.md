@@ -1,9 +1,8 @@
 ---
-title: "Pytanie 039"
-question: "Czy można wyłączyć zakładkę 'Issues' w repozytorium?"
+question: "Czy można wyłączyć zakładkę Issues w repozytorium?"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues"
 ---
 
-> https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues  
-1. [x] Tak  
-1. [ ] Nie  
-> Funkcje, takie jak problemy ('issues'), wiki czy projekty, mogą być wyłączone w repozytorium w ustawieniach repozytorium.  
+- [x] Tak
+- [ ] Nie
+> Funkcje takie jak Issues, Wikis lub Projects można wyłączyć w repozytorium w ustawieniach repozytorium
