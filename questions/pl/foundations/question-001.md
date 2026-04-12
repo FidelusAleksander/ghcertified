@@ -1,12 +1,11 @@
 ---
-question: "Jakie są możliwe typy kont GitHub? (Wybierz trzy.)"
-title: "Pytanie 001"
+question: "Jakie są możliwe typy kont na GitHub?"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts"
 ---
 
-
-> https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts
 - [x] Konta osobiste
 - [x] Konta organizacji
-- [x] Konta przedsiębiorstw
+- [x] Konta Enterprise
 - [ ] Konta współdzielone
 - [ ] Konta firmowe
+---
