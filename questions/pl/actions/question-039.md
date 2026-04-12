@@ -1,11 +1,8 @@
 ---
 question: "Czy to stwierdzenie jest prawdziwe? `Workflows can be reused, but a reusable workflow cannot call another reusable workflow.`"
-title: "Pytanie 039"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#nesting-reusable-workflows
-1. [x] Fałsz
-1. [ ] Prawda
+- [x] False
+- [ ] True
 > Reusable workflows can be nested, but there are limitations https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
-
