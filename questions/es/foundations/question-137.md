@@ -1,9 +1,8 @@
 ---
-title: "Pregunta 137"
 question: "¿Cuál es otro nombre para un sistema de control de versiones?"
+documentation: "https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git"
 ---
 
-> **Más información**: [Sobre el control de versiones](https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git)  
-1. [ ] Software de gestión de versiones (VMS).  
-1. [ ] Sistema de gestión de control de software (SCM).  
-1. [x] Sistema de gestión de configuración de software (SCM).  
+- [ ] Software de gestión de versiones (VMS).
+- [ ] Sistema de gestión de control de software (SCM).
+- [x] Sistema de gestión de configuración de software (SCM).
