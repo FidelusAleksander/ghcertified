@@ -15,11 +15,10 @@ import { useTranslations } from "next-intl";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CircleAlert } from "lucide-react";
+import { Alert, AlertTitle } from "@/components/ui/alert";
+import { Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CircleAlert, BookOpen } from "lucide-react";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
 
@@ -214,6 +213,18 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
             {t("questionOf", { current: currentIndex + 1, total: questions.length })}
           </span>
           <div className="flex items-center gap-2.5">
+            {currentQuestion.documentation && (
+              <a
+                href={currentQuestion.documentation}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
+                title={t("learnMore")}
+              >
+                <BookOpen className="size-3.5" />
+                <span className="hidden sm:inline">{t("learnMore")}</span>
+              </a>
+            )}
             <a
               href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
               target="_blank"
@@ -222,14 +233,8 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               title={t("reportTooltip")}
             >
               <CircleAlert className="size-3.5" />
-              <span>{t("report")}</span>
+              <span className="hidden sm:inline">{t("report")}</span>
             </a>
-            <Badge
-              variant="secondary"
-              className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase"
-            >
-              {currentQuestion.isMultiSelect ? t("multiSelect") : t("singleChoice")}
-            </Badge>
           </div>
         </CardHeader>
 
@@ -320,18 +325,6 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 <span className="text-lg">{isCurrentCorrect() ? "✅" : "❌"}</span>
                 {isCurrentCorrect() ? t("correct") : t("notQuite")}
               </AlertTitle>
-              <AlertDescription className="text-sm leading-relaxed">
-                {currentQuestion.documentation && (
-                  <a
-                    href={currentQuestion.documentation}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-4 hover:opacity-80"
-                  >
-                    📖 {t("learnMore")}
-                  </a>
-                )}
-              </AlertDescription>
             </Alert>
           )}
         </CardContent>

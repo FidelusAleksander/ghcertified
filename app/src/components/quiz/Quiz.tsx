@@ -18,7 +18,6 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { localePath } from "@/lib/locales";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
@@ -31,8 +30,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert } from "lucide-react";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { Flag, Info, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle, CircleAlert, BookOpen } from "lucide-react";
+import { Alert, AlertTitle } from "@/components/ui/alert";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
 
@@ -229,12 +228,24 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <button
                     type="button"
                     onClick={handleToggleFlag}
-                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors hover:bg-card/10 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                     title={isFlagged ? t("unflag") : t("flagForReview")}
                   >
-                    <Flag className={isFlagged ? "text-warning fill-warning" : "text-card/50"} />
-                    <span className={isFlagged ? "text-warning" : "text-card/50"}>{isFlagged ? t("flagged") : t("flag")}</span>
+                    <Flag className={cn("size-3.5", isFlagged && "text-warning fill-warning")} />
+                    <span className={cn("hidden sm:inline", isFlagged && "text-warning")}>{isFlagged ? t("flagged") : t("flag")}</span>
                   </button>
+                )}
+                {currentQuestion.documentation && (
+                  <a
+                    href={currentQuestion.documentation}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
+                    title={t("learnMore")}
+                  >
+                    <BookOpen className="size-3.5" />
+                    <span className="hidden sm:inline">{t("learnMore")}</span>
+                  </a>
                 )}
                 <a
                   href={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
@@ -244,11 +255,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   title={t("reportTooltip")}
                 >
                   <CircleAlert className="size-3.5" />
-                  <span>{t("report")}</span>
+                  <span className="hidden sm:inline">{t("report")}</span>
                 </a>
-                <Badge variant="secondary" className="bg-card/10 text-card/70 hover:bg-card/10 text-[11px] font-semibold tracking-wide uppercase">
-                  {currentQuestion.isMultiSelect ? t("multiSelect") : t("singleChoice")}
-                </Badge>
               </div>
             </div>
             {!isComplete && (
@@ -357,18 +365,6 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                   <span className="text-lg">{isCurrentCorrectInReview ? "✅" : "❌"}</span>
                   {isCurrentCorrectInReview ? t("correct") : t("incorrect")}
                 </AlertTitle>
-                {currentQuestion.documentation && (
-                  <AlertDescription className="text-sm leading-relaxed">
-                    <a
-                      href={currentQuestion.documentation}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-4 hover:opacity-80"
-                    >
-                      📖 {t("learnMore")}
-                    </a>
-                  </AlertDescription>
-                )}
               </Alert>
             )}
             </div>
