@@ -6,31 +6,31 @@ question: "Your Pull Request analysis workflow uses multiple code analysis tools
 
 - [x] Use concurrency with cancel-in-progress
 ```yaml
-  concurrency:
-    group: ${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 ```
 - [ ] Use concurrency
 ```yaml
-  concurrency:
-    group: ${{ github.ref }}
+concurrency:
+  group: ${{ github.ref }}
 ```
 > This would queue runs on that github ref. It will not stop previous runs
 
 - [ ] Use activity types filter
 ```yaml
-  on:
-    pull_request:
-      branches:
-        - master
-      types: [latest]
+on:
+  pull_request:
+    branches:
+      - master
+    types: [latest]
 ```
 > There is no such activity type as `latest` for pull_request event
 - [ ] Use cancel-in-progress flag for `pull_request` event
 ```yaml
-  on:
-    pull_request:
-      branches:
-        - master
-      cancel-in-progress: true
+on:
+  pull_request:
+    branches:
+      - master
+    cancel-in-progress: true
 ```

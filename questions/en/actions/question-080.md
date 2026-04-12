@@ -6,31 +6,31 @@ question: "What is the correct syntax for setting the directory for all `run` co
 
 - [x] set `working-directory` under `defaults.run`
    ```yaml
-    defaults:
-        run:
-            shell: bash
-            working-directory: ./scripts
+defaults:
+    run:
+        shell: bash
+        working-directory: ./scripts
    ```
 - [ ] set `directory` under `defaults.run`
    ```yaml
-    defaults:
-        run:
-            shell: bash
-            directory: ./scripts
+defaults:
+    run:
+        shell: bash
+        directory: ./scripts
    ```
 - [ ] set `working-directory` under `job`
    ```yaml
-    defaults:
-        run:
-            shell: bash
-    job:
-        working-directory: ./scripts
+defaults:
+    run:
+        shell: bash
+job:
+    working-directory: ./scripts
    ```
 - [ ] set `directory` under `job`
    ```yaml
-    defaults:
-        run:
-            shell: bash
-    job:
-        directory: ./scripts
+defaults:
+    run:
+        shell: bash
+job:
+    directory: ./scripts
    ```

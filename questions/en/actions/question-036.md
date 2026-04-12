@@ -4,12 +4,12 @@ question: "You defined a matrix job `example_matrix`. How can you limit the matr
 
 
 ```yaml
-  jobs:
-    example_matrix:
-      strategy:
-        matrix:
-          version: [10, 12, 14]
-          os: [ubuntu-latest, windows-latest]
+jobs:
+  example_matrix:
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
 ```
 > https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategymax-parallel
 - [x] Set `jobs.example_matrix.strategy.max-parallel` to 2

@@ -4,16 +4,16 @@ question: "In the following example, `workflow A` passes all of its secrets to `
 
 
 ```yaml
-  jobs:
-    workflowA-calls-workflowB:
-      uses: octo-org/example-repo/.github/workflows/B.yml@main
-      secrets: inherit
+jobs:
+  workflowA-calls-workflowB:
+    uses: octo-org/example-repo/.github/workflows/B.yml@main
+    secrets: inherit
 ```
 
 ```yaml
-  jobs:
-    workflowB-calls-workflowC:
-      uses: different-org/example-repo/.github/workflows/C.yml@main
+jobs:
+  workflowB-calls-workflowC:
+    uses: different-org/example-repo/.github/workflows/C.yml@main
 ```
 > https://docs.github.com/en/actions/using-workflows/reusing-workflows#passing-secrets-to-nested-workflows
 - [x] All secrets available to `workflow A` will be also available to `workflow B`, but not to `workflow C`

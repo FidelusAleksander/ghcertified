@@ -3,12 +3,12 @@ question: "What `jobs.job_id.if` conditional will make sure that job `production
 ---
 
 ```yaml
-  jobs:
-    production-deploy:  
-      if: <CONDITION>
-      runs-on: ubuntu-latest
-      steps:
-        ...
+jobs:
+  production-deploy:  
+    if: <CONDITION>
+    runs-on: ubuntu-latest
+    steps:
+      ...
 ```
 > https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 - [x] `if: github.repository == 'my-org/my-repo'`

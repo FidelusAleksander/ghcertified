@@ -7,45 +7,45 @@ question: "What is the correct syntax for specifying a cleanup script in a conta
 
 - [x] 
 ```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      post-entrypoint: 'cleanup.sh'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'entrypoint.sh'
+  post-entrypoint: 'cleanup.sh'
 ```
 
 - [ ] 
 ```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      post: 'cleanup.sh'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'entrypoint.sh'
+  post: 'cleanup.sh'
 ```
 
 - [ ] 
 ```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      after: 'cleanup.sh'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'entrypoint.sh'
+  after: 'cleanup.sh'
 ```
 
 - [ ] 
 ```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      after-entrypoint: 'cleanup.sh'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'entrypoint.sh'
+  after-entrypoint: 'cleanup.sh'
 ```
 
 - [ ] 
 ```yaml
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      entrypoint: 'entrypoint.sh'
-      cleanup: 'cleanup.sh'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'entrypoint.sh'
+  cleanup: 'cleanup.sh'
 ```
