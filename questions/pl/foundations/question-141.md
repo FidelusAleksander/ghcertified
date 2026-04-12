@@ -1,9 +1,8 @@
 ---
-title: "Pytanie 141"
-question: "Jakie jest znaczenie 'wiadomości dołączonej do commita' w procesie GitHub flow?"
+question: "Jakie znaczenie ma 'commit message' w procesie GitHub flow?"
+documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
 ---
 
-> **Więcej informacji**: [O commitach](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
-1. [ ] Automatycznie scala zmiany z główną gałęzią.
-1. [ ] Tworzy kopię zapasową repozytorium.
-1. [x] Dostarcza podsumowanie wprowadzonych zmian w commicie, pomagając w śledzeniu historii projektu. 
+- [ ] Automatycznie scala zmiany z główną gałęzią.
+- [ ] Tworzy kopię zapasową repozytorium.
+- [x] Zapewnia podsumowanie wprowadzonych zmian w commicie, wspomagając śledzenie historii projektu.
