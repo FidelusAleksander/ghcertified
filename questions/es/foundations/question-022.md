@@ -1,12 +1,10 @@
 ---
-title: "Pregunta 022"
-question: "¿Cuál de estas herramientas sirve como un programador en pareja impulsado por IA que ofrece sugerencias de autocompletado mientras codificas?"
+question: "¿Cuál de estas herramientas funciona como un programador en pareja con IA que ofrece sugerencias de autocompletar mientras codificas?"
+documentation: "https://docs.github.com/en/copilot/quickstart#introduction"
 ---
 
-
-> https://docs.github.com/en/copilot/quickstart#introduction
-1. [x] GitHub Copilot
-1. [ ] GitHub AI Aid
-1. [ ] GitHub Partner
-1. [ ] GitHub Assistant
-
+- [x] GitHub Copilot
+- [ ] GitHub AI Aid
+- [ ] GitHub Partner
+- [ ] GitHub Assistant
+---
