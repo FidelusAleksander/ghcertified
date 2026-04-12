@@ -1,12 +1,9 @@
 ---
-title: "Pergunta 113"
-question: "Qual elemento Markdown não está corretamente pareado com sua sintaxe?"
+question: "Qual elemento do Markdown não está corretamente emparelhado com sua sintaxe?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
-
-1. [ ] Título - `# Título`
-1. [ ] Texto em negrito - `**negrito**`
-1. [x] Código embutido - `'''código'''`
-1. [ ] Hiperlink - `[título](https://)`
+- [ ] Título - `# Título`
+- [ ] Texto em negrito - `**negrito**`
+- [x] Código em linha - `'''código'''`
+- [ ] Hiperlink - `[título](https://)`
