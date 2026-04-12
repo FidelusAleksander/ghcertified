@@ -1,13 +1,11 @@
 ---
-title: "質問 011"
-question: "ラベルのユースケースはどれですか？"
+question: "ラベルの使用例は何ですか？"
+documentation: "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels"
 ---
 
-
-> https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels
-1. [x] IssueやPull Requestの分類
-1. [ ] Repository内のファイルの分類
-1. [ ] Releaseにラベルを割り当て、リリースノートに含める
-> ラベルをReleaseに割り当てることはできません
-1. [ ] Repositoryのコントリビューターにラベルを割り当て、その役割や権限を示す
-> ラベルをコントリビューターに割り当てることはできません
+- [x] Issues と Pull Request の分類
+- [ ] リポジトリ内のファイルの分類
+- [ ] リリースに割り当てて、リリースノートに含める
+> ラベルをリリースに割り当てることはできません
+- [ ] プロジェクトの貢献者にラベルを割り当てて、彼らの役割や権限を示す
+> 貢献者にラベルを割り当てることはできません
