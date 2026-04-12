@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 069"
-question: "Jaki jest związek między Git a GitHub?"
+question: "Jaka jest zależność między Git a GitHub?"
+documentation: "https://docs.github.com/en/get-started/using-git/about-git"
 ---
 
-
-> https://docs.github.com/en/get-started/using-git/about-git
-1. [x] Git to rozproszony system kontroli wersji, a GitHub to platforma, która wykorzystuje Git jako swoją technologię bazową.
-1. [ ] GitHub to rozproszony system kontroli wersji, a Git to platforma, która wykorzystuje GitHub jako swoją technologię bazową.
-1. [ ] Git to system udostępniania plików, a GitHub to platforma, która wykorzystuje Git jako swoją technologię bazową.
-1. [ ] GitHub to system udostępniania plików, a Git to platforma, która wykorzystuje GitHub jako swoją technologię bazową.
+- [x] Git jest rozproszonym systemem kontroli wersji, a GitHub to platforma, która wykorzystuje Git jako swoją główną technologię.
+- [ ] GitHub jest rozproszonym systemem kontroli wersji, a Git to platforma, która wykorzystuje GitHub jako swoją główną technologię.
+- [ ] Git jest systemem udostępniania plików, a GitHub to platforma, która wykorzystuje Git jako swoją główną technologię.
+- [ ] GitHub jest systemem udostępniania plików, a Git to platforma, która wykorzystuje GitHub jako swoją główną technologię.
