@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 091"
-question: "W jaki sposób można określić system operacyjny dla zadania w GitHub Actions?"
+question: "Jak można określić system operacyjny dla zadania w GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
-1. [ ] Za pomocą słowa kluczowego os
-1. [x] Za pomocą słowa kluczowego runs-on
-1. [ ] Za pomocą słowa kluczowego platform
-1. [ ] Za pomocą słowa kluczowego env
+- [ ] Korzystając ze słowa kluczowego os
+- [x] Korzystając ze słowa kluczowego runs-on
+- [ ] Korzystając ze słowa kluczowego platform
+- [ ] Korzystając ze słowa kluczowego env
+---
