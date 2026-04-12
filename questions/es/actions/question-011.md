@@ -1,10 +1,10 @@
 ---
-question: "En un workflow con múltiples jobs, el comportamiento predeterminado es:"
-title: "Pregunta 011"
+question: "En un flujo de trabajo con múltiples trabajos, el comportamiento predeterminado es:"
+documentation: "https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/about-workflows#creating-dependent-jobs
-1. [x] Todos los jobs se ejecutan en paralelo  
-1. [ ] Los jobs se ejecutan en secuencia  
-1. [ ] Los jobs se ejecutan según el orden en que están definidos en el archivo del workflow  
-1. [ ] Solo el primer job se ejecuta, los demás requieren aprobación manual  
+- [x] Todos los trabajos se ejecutan en paralelo
+- [ ] Los trabajos se ejecutan en secuencia
+- [ ] Los trabajos se ejecutan según el orden en que están definidos en el archivo del flujo de trabajo
+- [ ] Solo se ejecuta el primer trabajo, los demás requieren aprobación manual
+
