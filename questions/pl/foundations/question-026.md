@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 026"
-question: "Czym jest GitHub Codespace?"
+question: "Co to jest GitHub Codespace?"
+documentation: "https://docs.github.com/en/codespaces/overview"
 ---
 
-
-> https://docs.github.com/en/codespaces/overview
-1. [x] To prekonfigurowane środowisko deweloperskie specjalnie przygotowane dla danego repozytorium. Pozwala natychmiast rozpocząć pisanie kodu dla projektu bez konieczności konfiguracji lokalnego środowiska deweloperskiego.
-1. [ ] GitHub Codespace to interaktywne holograficzne środowisko programistyczne, które wymaga specjalnego sprzętu do użycia.
-1. [ ] GitHub Codespace to narzędzie programistyczne oparte na sztucznej inteligencji, które automatycznie generuje niemal bezbłędny kod.
-1. [ ] GitHub Codespace to coroczne wydarzenie organizowane przez GitHub, podczas którego deweloperzy mogą się spotkać i omówić tematy związane z kodowaniem.
+- [x] To wstępnie skonfigurowane środowisko programistyczne specjalnie przygotowane dla danego repository. Pozwala od razu rozpocząć pisanie kodu dla projektu bez konieczności konfiguracji lokalnego środowiska programistycznego.
+- [ ] GitHub Codespace to interaktywne holograficzne środowisko programistyczne, które wymaga specjalnego sprzętu do użycia.
+- [ ] GitHub Codespace to narzędzie do programowania wspomagane przez AI, które automatycznie generuje prawie bezbłędny kod.
+- [ ] GitHub Codespace to coroczne wydarzenie organizowane przez GitHub, na którym programiści mogą się spotkać i dyskutować na tematy związane z programowaniem.
