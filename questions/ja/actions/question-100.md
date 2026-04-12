@@ -1,10 +1,9 @@
 ---
-question: "GitHub Actionsのステータスチェック関数を選択してください"
-title: "質問 100"
+question: "GitHub Actionsでのステータスチェック関数を選択してください"
+documentation: "https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions"
 ---
 
-> https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions
-1. [x] `success()`, `always()`, `cancelled()`, `failure()`
-1. [ ] `completed()`, `always()`, `cancelled()`, `failure()`
-1. [ ] `status()`, `always()`, `cancelled()`, `failure()`
-1. [ ] `state()`, `always()`, `cancelled()`, `failure()`
+- [x] `success()`, `always()`, `cancelled()` and `failure()`
+- [ ] `completed()`, `always()`, `cancelled()` and `failure()`
+- [ ] `status()`, `always()`, `cancelled()` and `failure()`
+- [ ] `state()`, `always()`, `cancelled()` and `failure()`
