@@ -53,7 +53,8 @@
     "description": "Explore every question organized by certification track. Pick a category to study at your own pace.",
     "questions": "{count} questions",
     "browseQuestions": "Browse questions",
-    "questionsAvailable": "{count} questions available"
+    "questionsAvailable": "{count} questions available",
+    "contributePrompt": "Want to contribute? <link>Add your own questions →</link>"
   },
   "Quiz": {
     "breadcrumbPracticeTests": "Practice Tests",

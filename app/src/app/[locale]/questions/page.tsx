@@ -61,6 +61,20 @@ export default async function QuestionsPage({ params }: Props) {
           );
         })}
       </div>
+      <div className="mt-10 text-center text-[14px] text-muted-foreground">
+        {t.rich("contributePrompt", {
+          link: (chunks) => (
+            <a
+              href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium no-underline hover:underline"
+            >
+              {chunks}
+            </a>
+          ),
+        })}
+      </div>
     </div>
   );
 }
