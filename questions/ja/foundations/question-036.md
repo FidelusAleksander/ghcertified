@@ -1,11 +1,9 @@
 ---
-title: "質問 036"
-question: "Enterprise Managed Usersとは何ですか？"
+question: "Enterprise Managed Users とは何ですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#about-enterprise-managed-users"
 ---
 
-
-> https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#about-enterprise-managed-users
-1. [x] Azure ADやOktaなどの外部IDプロバイダーからユーザーアクセスを管理できるGitHub Enterpriseの機能
-1. [ ] GitHub Enterpriseの管理を依頼した場合に、GitHubサポートが使用できるGitHub Enterpriseのサポートユーザー
-1. [ ] Enterprise内で複数人が使用できる共有ユーザーアカウント
-1. [ ] GitHubのWeb UIにアクセスできず、GitHub Enterpriseでの自動化タスク専用に使用されるユーザーアカウント
+- [x] Azure AD や Okta などの外部 ID プロバイダーからユーザーアクセスを管理できる GitHub Enterprise 機能
+- [ ] GitHub Support にリクエストすることで、エンタープライズの管理を行うために使用できる GitHub Enterprise サポートユーザー
+- [ ] エンタープライズ内の複数のユーザーが使用できる共有ユーザーアカウント
+- [ ] GitHub ウェブ UI にアクセスできず、GitHub Enterprise での自動化タスクにのみ使用されるユーザーアカウント
