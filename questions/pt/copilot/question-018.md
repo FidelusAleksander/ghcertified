@@ -1,10 +1,9 @@
 ---
-title: "Pergunta 018"
-question: "Quais etapas ocorrem quando o serviço proxy do GitHub Copilot processa um prompt?"
+question: "Quais etapas ocorrem quando o serviço proxy do GitHub Copilot processa uma solicitação?"
+documentation: "https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/"
 ---
 
-> https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
-1. [x] Testes para linguagem tóxica, verificações de relevância e detecção de tentativas de hacking de prompt
-1. [ ] Tradução para múltiplas linguagens de programação e validação de sintaxe
-1. [ ] Compilação automática de código e execução em um ambiente sandbox
-1. [ ] Transmissão direta para repositórios públicos para verificação de referência
+- [x] Testes para linguagem tóxica, verificações de relevância e detecção de tentativas de manipulação de prompts
+- [ ] Tradução para múltiplas linguagens de programação e validação de sintaxe
+- [ ] Compilação automática de código e execução em um ambiente sandbox
+- [ ] Transmissão direta para repositórios públicos para verificação de referências
