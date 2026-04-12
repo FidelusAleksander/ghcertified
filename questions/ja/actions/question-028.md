@@ -1,23 +1,21 @@
 ---
-question: "`Deploy Prod` というWorkflowが常に同時に1つだけ実行されるようにするにはどうしますか？"
-title: "質問 028"
+question: "ワークフロー `Deploy Prod` が常に同時に1つだけ実行されるようにするにはどうすればよいですか?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
-
-1. [x] Workflowレベルで `concurrency` を使用する
+- [x] ワークフローレベルで `concurrency` を使用する
 ```yaml
 concurrency: ${{ github.workflow }}
 ```
-1. [ ] Workflowレベルで `queue` を使用する
+- [ ] ワークフローレベルで `queue` を使用する
 ```yaml
 queue: ${{ github.workflow }}
 ```
-1. [ ] Workflowレベルで `order` を使用する
+- [ ] ワークフローレベルで `order` を使用する
 ```yaml
 order: ${{ github.workflow }}
 ```
-1. [ ] Workflowレベルで `parallel` を使用する
+- [ ] ワークフローレベルで `parallel` を使用する
 ```yaml
 parallel: ${{ github.workflow }}
 ```
