@@ -1,10 +1,10 @@
 ---
-question: "Workflow実行のログファイルを削除するには、GitHub Repositoryでどのレベルのアクセス権が必要ですか？"
-title: "質問 112"
+question: "ワークフロー実行のログファイルを削除するには、GitHubリポジトリにどのレベルのアクセスが必要ですか？"
+documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs"
 ---
 
-> https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs
-1. [x] write 
-1. [ ] read
-1. [ ] admin
-1. [ ] owner
+- [x] write 
+- [ ] read
+- [ ] admin
+- [ ] owner
+---
