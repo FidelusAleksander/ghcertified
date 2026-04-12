@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 046"
 question: "Czym jest CodeQL?"
+documentation: "https://codeql.github.com/"
 ---
 
+- [x] Narzędzie do analizy kodu
+- [ ] Język programowania
+- [ ] Edytor tekstu
+- [ ] System kontroli wersji
 
-> https://codeql.github.com/
-1. [x] Narzędzie do analizy kodu
-1. [ ] Język programowania
-1. [ ] Edytor tekstu
-1. [ ] System kontroli wersji
