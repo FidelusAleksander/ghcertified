@@ -301,7 +301,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                 const isCorrectOpt = answer.isCorrect;
 
                 const optionClass = cn(
-                  "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all duration-150 text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  "w-full flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl transition-all duration-150 text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   !isComplete && "cursor-pointer motion-safe:active:scale-[0.98]",
                   isComplete && isCorrectOpt && "border-success bg-success-soft",
                   isComplete && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",

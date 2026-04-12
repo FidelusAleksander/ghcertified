@@ -263,7 +263,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               const isCorrectOpt = answer.isCorrect;
 
               const optionClass = cn(
-                "flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                "w-full flex items-start gap-3.5 p-3.5 border-[1.5px] rounded-xl cursor-pointer transition-all text-[14.5px] leading-relaxed text-left focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                 isRevealed && isCorrectOpt && "border-success bg-success-soft",
                 isRevealed && isSelected && !isCorrectOpt && "border-destructive bg-destructive-soft",
                 isRevealed && !isCorrectOpt && !isSelected && "border-border bg-card",
