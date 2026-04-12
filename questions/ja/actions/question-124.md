@@ -1,6 +1,6 @@
 ---
-question: "次の設定の場合、このmatrixが評価されるとGitHub Actionsは何個のジョブを実行しますか？"
-title: "質問 124"
+question: "次の構成に基づいて、このマトリックスが評価された場合、GitHub Actions はいくつのジョブを実行しますか？"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations"
 ---
 
 ```yaml
@@ -15,10 +15,9 @@ strategy:
         node: 14
 ```
 
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
+- [ ] 4 jobs
+- [x] 5 jobs
+- [ ] 6 jobs
+- [ ] 7 jobs
+- [ ] ジョブは実行されません。この構文は無効です。
 
-1. [ ] 4 ジョブ
-1. [x] 5 ジョブ
-1. [ ] 6 ジョブ
-1. [ ] 7 ジョブ
-1. [ ] 構文が無効なためジョブは実行されない
