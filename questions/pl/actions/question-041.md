@@ -1,15 +1,11 @@
 ---
-question: "Kiedy powinieneś używać `caching`?"
-title: "Pytanie 041"
+question: "Kiedy należy używać `caching`?"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching"
 ---
 
-
-
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
-
-1. [x] Gdy chcesz ponownie użyć plików, które nie zmieniają się często pomiędzy zadaniami lub uruchomieniami workflow, takich jak zależności budowania z systemu zarządzania pakietami.
-1. [ ] Gdy chcesz ponownie użyć plików, które zmieniają się często pomiędzy zadaniami lub uruchomieniami workflow, takich jak zależności budowania z systemu zarządzania pakietami.
-1. [ ] Gdy chcesz zapisać pliki wygenerowane przez zadanie, aby móc je zobaczyć po zakończeniu uruchomienia workflow, takie jak zbudowane pliki binarne lub dzienniki budowania.
-> Do tego celu należy używać artefaktów https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
-1. [ ] Gdy chcesz zapisać pliki binarne wygenerowane przez zadanie budowania, aby użyć ich w kolejnym zadaniu wdrożeniowym do wdrożenia nowej wersji aplikacji.
-> Do tego celu należy używać artefaktów https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
+- [x] Gdy chcesz ponownie użyć plików, które nie zmieniają się często między zadaniami lub uruchomieniami przepływów pracy, takich jak zależności kompilacji z systemu zarządzania pakietami.
+- [ ] Gdy chcesz ponownie użyć plików, które często zmieniają się między zadaniami lub uruchomieniami przepływów pracy, takich jak zależności kompilacji z systemu zarządzania pakietami.
+- [ ] Gdy chcesz zapisać pliki wytworzone przez zadanie do obejrzenia po zakończeniu przepływu pracy, takie jak skompilowane binaria lub logi kompilacji.
+> W tym celu należy używać Artifacts https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
+- [ ] Gdy chcesz zapisać binaria wytworzone przez zadanie kompilacji do użycia w następnym zadaniu wdrożeniowym, aby wdrożyć nową wersję aplikacji.
+> W tym celu należy używać Artifacts https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
