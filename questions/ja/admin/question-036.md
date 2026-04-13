@@ -1,10 +1,9 @@
 ---
-question: "GitHub Actionsで異なるOS上で実行されるジョブの分数はどのように計算されますか？"
-title: "質問 036"
+question: "GitHub Actionsで異なるオペレーティングシステムで実行されるジョブの使用時間はどのように計算されますか？"
+documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
 ---
 
-> https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions
-1. [x] WindowsジョブはLinuxランナーの2倍、macOSジョブは10倍の分数を消費する
-1. [ ] OSに関係なくすべてのジョブが同じレートで分数を消費する
-1. [ ] LinuxジョブはWindowsやmacOSランナーの2倍および10倍の分数を消費する
-1. [ ] macOSジョブのみが異なるレートで、LinuxやWindowsの5倍を消費する
+- [x] WindowsおよびmacOS上のジョブは、Linuxランナー上のジョブの使用時間の2倍および10倍の速さで消費します。
+- [ ] オペレーティングシステムに関わらず、すべてのジョブは同じ速度で使用時間を消費します。
+- [ ] Linux上のジョブは、WindowsおよびmacOSランナー上のジョブの使用時間の2倍および10倍の速さで消費します。
+- [ ] macOS上のジョブのみが異なる速度で使用時間を消費し、その消費量はLinuxおよびWindowsの5倍になります。
