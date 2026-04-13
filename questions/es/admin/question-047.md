@@ -1,9 +1,7 @@
 ---
-question: "¿Cuál de los siguientes NO son roles reconocidos dentro de una organización de GitHub? (Elige tres.)"
-title: "Pregunta 047"
+question: "¿Cuáles de los siguientes NO son roles reconocidos dentro de una organización de GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles"
 ---
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles
 
 - [ ] Organization owners
 - [ ] Organization members
