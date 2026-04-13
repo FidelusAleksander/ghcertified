@@ -1,10 +1,8 @@
 ---
-title: "Pregunta 019"
-question: "¿GitHub utiliza el mismo conjunto de patrones de escaneo de secretos tanto para alertas de usuario como para alertas de protección en push?"
+question: "¿GitHub utiliza el mismo conjunto de patrones de escaneo de secretos para las alertas de usuario y las alertas de protección contra pushes?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns
-1. [x] No, son diferentes conjuntos de patrones de secretos
-1. [ ] Sí, es el mismo conjunto de patrones de secretos
-> Existen tres conjuntos diferentes de patrones de escaneo de secretos. Se superponen, pero no son iguales. 
+- [x] No, son conjuntos diferentes de patrones de secretos.
+- [ ] Sí, es el mismo conjunto de patrones de secretos.
+> Existen tres conjuntos diferentes de patrones de escaneo de secretos. Se solapan pero no son iguales.
