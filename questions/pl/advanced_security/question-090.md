@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 090"
 question: "Jaki jest cel definiowania kategorii SARIF?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#uploading-more-than-one-sarif-file-for-a-commit"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#uploading-more-than-one-sarif-file-for-a-commit
-1. [x] Użyj kategorii, aby rozróżnić między wieloma analizami dla tego samego narzędzia lub commitu, ale wykonanymi na różnych językach lub różnych częściach kodu.
-1. [ ] Użyj kategorii, aby rozróżnić pliki, które zostały przeanalizowane, od plików, które nie zostały przeanalizowane.
-1. [ ] Użyj kategorii, aby rozróżnić pliki zawierające podatności od plików, które ich nie zawierają.
-1. [ ] Użyj innej kategorii dla każdego przeanalizowanego pliku, aby łatwo powiązać podatności z plikami, które je zawierają.
+- [x] Użyj kategorii, aby odróżnić między wieloma analizami dla tego samego narzędzia lub commita, ale wykonanych dla różnych języków lub różnych części kodu.
+- [ ] Użyj kategorii, aby odróżnić pliki, które zostały przeanalizowane od tych, które nie zostały przeanalizowane.
+- [ ] Użyj kategorii, aby odróżnić pliki zawierające luki w zabezpieczeniach od plików, które ich nie zawierają.
+- [ ] Użyj innej kategorii dla każdego przeanalizowanego pliku, aby łatwo powiązać luki w zabezpieczeniach z plikami, które je zawierają.
