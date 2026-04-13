@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 068"
-question: "Czym jest pakiet zapytań CodeQL?"
+question: "Co to jest CodeQL query pack?"
+documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs"
 ---
 
-> https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs  
-1. [x] To zestaw wstępnie skompilowanych zapytań wraz ze wszystkimi zależnościami przejściowymi, takimi jak biblioteki i modele  
-1. [ ] To biblioteka używana przez zapytania CodeQL  
-1. [ ] To zbiór zapytań CodeQL  
-> To jest zestaw zapytań CodeQL  
-1. [ ] To zestaw wyników wygenerowanych w procesie analizy bazy danych CodeQL  
+- [x] Jest to zestaw wstępnie skompilowanych zapytań wraz ze wszystkimi zależnościami tranzytywnymi, takimi jak biblioteki i modele
+- [ ] Jest to biblioteka używana przez zapytania CodeQL
+- [ ] Jest to kolekcja zapytań CodeQL  
+> To jest CodeQL query suite
+- [ ] Jest to zestaw wyników wygenerowanych w procesie analizy bazy danych CodeQL
