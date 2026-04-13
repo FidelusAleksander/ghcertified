@@ -1,10 +1,9 @@
 ---
-question: "GitHub Enterprise Serverの主な特徴はどれですか？"
-title: "質問 032"
+question: "次のうち、GitHub Enterprise Serverの主な機能はどれですか？"
+documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
 ---
 
-> https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] 自社インフラ上で稼働し、アクセスやセキュリティ制御は自社で定義できる
-1. [ ] GitHub.com上で無制限のPublicおよびPrivate Repositoryを利用できる
-1. [ ] GitHub ActionsおよびGitHub Packagesへの無料アクセス
-1. [ ] 任意のクラウドサービスプロバイダーへの自動デプロイ
+- [x] 自社のインフラ上で動作し、定義したアクセスおよびセキュリティ制御により管理される
+- [ ] GitHub.com上の無制限のパブリックおよびプライベートリポジトリ
+- [ ] GitHub ActionsおよびGitHub Packagesへの無料アクセス
+- [ ] 任意のクラウドサービスプロバイダーへの自動デプロイメント
