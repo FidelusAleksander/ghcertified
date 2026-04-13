@@ -1,10 +1,10 @@
 ---
-question: "¿Qué ocurre cuando se sube un segundo archivo de resultados SARIF a GitHub para un único commit?"
-title: "Pregunta 047"
+question: "¿Qué sucede cuando se carga un segundo archivo de resultados SARIF en GitHub para un solo commit?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#uploading-your-results-to-github"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#uploading-your-results-to-github
-1. [x] Reemplaza el conjunto original de datos.
-1. [ ] Añade los resultados al archivo existente.
-1. [ ] Crea una nueva rama en el repository.
-1. [ ] Es ignorado por GitHub.
+- [x] Reemplaza el conjunto de datos original.
+- [ ] Agrega los resultados al archivo existente.
+- [ ] Crea una nueva rama en el repositorio.
+- [ ] GitHub lo ignora.
+
