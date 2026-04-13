@@ -1,9 +1,7 @@
 ---
-title: "Pregunta 025"
-question: "¿El gráfico de dependencias de GitHub está disponible de forma gratuita para todos los repositorios?"
+question: "¿Está disponible el gráfico de dependencias de GitHub de forma gratuita para todos los repositorios?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#dependency-graph-availability"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#dependency-graph-availability
-1. [x] Sí, está disponible de forma gratuita para todos los repositorios.
-1. [ ] No, está disponible de forma gratuita solo para los repositorios públicos. Los repositorios privados pueden usarlo si tienen la licencia de GitHub Advanced Security.
+- [x] Sí, está disponible de forma gratuita para todos los repositorios.
+- [ ] No, está disponible de forma gratuita solo para repositorios públicos. Los repositorios privados pueden utilizarlo si tienen la licencia de GitHub Advanced Security.
