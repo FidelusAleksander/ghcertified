@@ -1,10 +1,9 @@
 ---
-question: "GitHubで秘密情報のスキャン（Secret scanning）はパブリックリポジトリとプライベートリポジトリの両方で利用可能ですか？"
-title: "質問 036"
+question: "GitHub のシークレット スキャンは、公開リポジトリとプライベートリポジトリの両方で利用可能ですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning"
 ---
 
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning
-1. [x] はい。ただしプライベートリポジトリではGitHub Advanced Securityライセンスが必要
-1. [ ] はい。追加の要件なしで利用可能
-1. [ ] いいえ。パブリックリポジトリのみ利用可能
-1. [ ] いいえ。プライベートリポジトリのみ利用可能
+- [x] はい。ただし、プライベートリポジトリの場合は、GitHub Advanced Security のライセンスが必要です
+- [ ] はい、追加要件はありません
+- [ ] いいえ、公開リポジトリでのみ利用可能です
+- [ ] いいえ、プライベートリポジトリでのみ利用可能です
