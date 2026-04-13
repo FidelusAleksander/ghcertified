@@ -1,10 +1,9 @@
 ---
 question: "Co można znaleźć na stronie zespołu w ramach organizacji GitHub?"
-title: "Pytanie 057"
+documentation: "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams"
 ---
 
-> https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams  
-1. [x] Członków zespołu, podzespoły, repozytoria zespołu oraz dostęp do ustawień zespołu, w tym możliwość aktualizacji opisu i zdjęcia profilowego zespołu.  
-1. [ ] Funkcję czatu na żywo umożliwiającą komunikację w czasie rzeczywistym między członkami zespołu.  
-1. [ ] Raporty finansowe związane z wykorzystaniem zasobów organizacji przez zespół.  
-1. [ ] Linki zewnętrzne do zasobów spoza GitHuba używanych przez zespół.  
+- [x] Członkowie zespołu, podrzędne zespoły, repozytoria zespołu oraz dostęp do ustawień zespołu, w tym możliwość aktualizacji opisu zespołu i zdjęcia profilowego.
+- [ ] Funkcja czatu na żywo umożliwiająca komunikację w czasie rzeczywistym między członkami zespołu.
+- [ ] Raporty finansowe dotyczące wykorzystania zasobów organizacji przez zespół.
+- [ ] Zewnętrzne linki do zasobów spoza GitHub używanych przez zespół.
