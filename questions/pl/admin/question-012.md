@@ -1,10 +1,9 @@
 ---
-question: "Który poziom wsparcia GitHub zapewnia SLA i pisemne wsparcie w języku angielskim 24/7?"
-title: "Pytanie 012"
+question: "Który poziom wsparcia GitHub zapewnia SLA oraz wsparcie pisemne w języku angielskim 24/7?"
+documentation: "https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support"
 ---
 
-> https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support
-1. [x] GitHub Premium Support
-1. [ ] GitHub Enterprise Support
-1. [ ] GitHub Standard Support
-1. [ ] GitHub Community Support
+- [x] GitHub Premium Support
+- [ ] GitHub Enterprise Support
+- [ ] GitHub Standard Support
+- [ ] GitHub Community Support
