@@ -1,10 +1,10 @@
 ---
-question: "GitHub Organization内で、書き込み権限なしにIssueやPull Requestを積極的に管理する必要があるコントリビューターに推奨されるRepositoryロールはどれですか？"
-title: "質問 061"
+question: "GitHub組織内のリポジトリで、書き込み権限を持たずに課題やPull Requestを積極的に管理する必要があるコントリビューターに推奨されるリポジトリロールはどれですか？"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization
-1. [x] Triage
-1. [ ] Read
-1. [ ] Write
-1. [ ] Maintain
+- [x] Triage
+- [ ] Read
+- [ ] Write
+- [ ] Maintain
+---
