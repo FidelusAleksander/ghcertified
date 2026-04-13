@@ -1,10 +1,9 @@
 ---
-question: "¿Cómo se puede utilizar CodeQL en un sistema CI externo junto con repositorios de GitHub?"
-title: "Pregunta 041"
+question: "¿Cómo puede utilizarse CodeQL en un sistema de CI externo junto con repositorios de GitHub?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system
-1. [x] Ejecutar CodeQL CLI en el sistema CI externo para escanear el código y subir los resultados al repositorio de GitHub
-1. [ ] CodeQL no puede usarse en sistemas CI externos; es exclusivo de GitHub Actions
-1. [ ] Subir el código fuente a GitHub para su análisis y luego descargar los resultados para su uso en el sistema CI
-1. [ ] Ejecutar CodeQL manualmente de forma local y enviar los resultados por correo electrónico a los administradores del repositorio de GitHub
+- [x] Ejecutar CodeQL CLI en el sistema de CI externo para analizar el código y cargar los resultados en el repositorio de GitHub
+- [ ] CodeQL no puede usarse en sistemas de CI externos; es exclusivo de GitHub Actions
+- [ ] Cargar el código fuente en GitHub para su análisis y luego descargar los resultados para utilizarlos en el sistema de CI
+- [ ] Ejecutar manualmente CodeQL localmente y enviar los resultados por correo electrónico a los administradores del repositorio de GitHub
