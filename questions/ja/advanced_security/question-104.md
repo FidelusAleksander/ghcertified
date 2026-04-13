@@ -1,10 +1,9 @@
 ---
-title: "質問 104"
-question: "組織内のすべてのリポジトリでDependabot Alertsを有効にするにはどうすればよいですか？"
+question: "組織内のすべてのリポジトリでDependabot Alertsを有効にする方法は次のうちどれですか："
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-dependabot-alerts#enabling-or-disabling-dependabot-alerts-for-all-existing-repositories"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-dependabot-alerts#enabling-or-disabling-dependabot-alerts-for-all-existing-repositories
-1. [x] 組織の「Code security and analysis」設定に行き、すべてのリポジトリで一括してDependabot Alertsを有効にする。
-1. [ ] 組織内のすべてのリポジトリを非公開にする。
-1. [ ] 組織内のすべてのリポジトリで `actions/enable-ghas` GitHub Actionを、`alerts`パラメーターを`true`に設定して実行する。
-1. [ ] 組織内のすべてのリポジトリでDependabot Alertsを有効にするスクリプトを作成する。
+- [x] 組織の`Code security and analysis`設定に移動し、すべてのリポジトリでDependabot Alertsを一括で有効にします。
+- [ ] 組織内のすべてのリポジトリをプライベートにします。
+- [ ] 組織内のすべてのリポジトリで、`alerts`パラメータを`true`に設定した`actions/enable-ghas` GitHub Actionを実行します。
+- [ ] 組織内のすべてのリポジトリでDependabot Alertsを有効にするスクリプトを作成します。
