@@ -1,12 +1,12 @@
 ---
-title: "質問 067"
-question: "CodeQLパックの種類にはどのようなものがありますか？（3つ選んでください）"
+question: "CodeQL パックにはどのような種類がありますか？"
+documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs"
 ---
 
-> https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs
-- [x] クエリパック
-- [x] ライブラリパック
-- [x] モデルパック
-- [ ] コードパック
-- [ ] 言語パック
-- [ ] 脆弱性パック
+- [x] Query packs
+- [x] Library packs
+- [x] Model packs
+- [ ] Code packs
+- [ ] Language packs
+- [ ] Vulnerability packs
+
