@@ -1,10 +1,9 @@
 ---
-question: "Jaką zaletę ma posiadanie konta Enterprise w GitHub Enterprise Cloud dla organizacji?"
-title: "Pytanie 045"
+question: "Jaką korzyść przynosi posiadanie konta enterprise na GitHub Enterprise Cloud dla organizacji?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises
-1. [x] Umożliwia właścicielom centralne zarządzanie polityką i rozliczeniami dla wielu organizacji.
-1. [ ] Zapewnia nieograniczoną liczbę prywatnych repozytoriów dla indywidualnych użytkowników.
-1. [ ] Oferuje darmową domenę do hostowania strony internetowej organizacji.
-1. [ ] Automatycznie zapisuje organizację do planu wsparcia premium.
+- [x] Umożliwia właścicielom centralne zarządzanie polityką i rozliczeniami dla wielu organizacji.
+- [ ] Zapewnia nieograniczoną ilość prywatnych repozytoriów dla indywidualnych użytkowników.
+- [ ] Oferuje darmową domenę do hostowania strony internetowej organizacji.
+- [ ] Automatycznie zapisuje organizację do planu wsparcia premium.
