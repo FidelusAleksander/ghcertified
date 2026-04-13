@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 052"
-question: "Która funkcja GitHub Advanced Security pozwala znaleźć, ocenić i priorytetyzować poprawki dla nowych i istniejących problemów w Twoim kodzie?"
+question: "Która funkcja GitHub Advanced Security pozwala na znajdowanie, priorytetyzowanie i rozwiązywanie nowych oraz istniejących problemów w kodzie?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning
-1. [x] Code scanning
-1. [ ] Alerty Dependabot
-1. [ ] Polityki bezpieczeństwa
-1. [ ] Porady dotyczące bezpieczeństwa
+- [x] Code scanning
+- [ ] Dependabot alerts
+- [ ] Security policies
+- [ ] Security advisories
+---
