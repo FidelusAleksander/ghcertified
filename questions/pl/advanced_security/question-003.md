@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 003"
-question: "Czym są Porady Bezpieczeństwa Repozytorium?"
+question: "Czym są Repository Security Advisories?"
+documentation: "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories"
 ---
 
-
-> https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories
-1. [x] Prywatne miejsce, gdzie utrzymujący repozytorium mogą omówić podatności i problemy związane z bezpieczeństwem w kodzie.
-1. [ ] Eksperci ds. bezpieczeństwa GitHub, którzy pomagają użytkownikom GitHub Enterprise w ich problemach z bezpieczeństwem.
-1. [ ] Lista problemów z bezpieczeństwem, dostępna publicznie dla każdego, aby ich unikać.
-1. [ ] Miejsce do zbierania i publicznego omawiania problemów związanych z bezpieczeństwem w społeczności open source.
+- [x] Prywatna przestrzeń, w której maintainerzy repository mogą omawiać podatności i kwestie związane z bezpieczeństwem w kodzie.
+- [ ] Eksperci ds. bezpieczeństwa GitHub, którzy pomagają użytkownikom GitHub Enterprise rozwiązywać problemy dotyczące bezpieczeństwa.
+- [ ] Lista problemów z bezpieczeństwem, która jest publicznie dostępna dla każdego, aby można było ich unikać.
+- [ ] Miejsce do gromadzenia i publicznego omawiania kwestii dotyczących bezpieczeństwa w społeczności open source.
