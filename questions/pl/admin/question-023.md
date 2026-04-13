@@ -1,10 +1,9 @@
 ---
-question: "Jakie jest przeznaczenie SCIM i synchronizacji zespołów w GitHub?"
-title: "Pytanie 023"
+question: "Jaki jest cel SCIM i synchronizacji zespołów w GitHub?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/managing-team-synchronization-for-your-organization"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/managing-team-synchronization-for-your-organization
-1. [x] Synchronizacja zespołów łączy zespoły GitHub z grupami IdP w celu zarządzania członkostwem, opierając się na SAML single sign-on, podczas gdy SCIM automatyzuje tworzenie i zarządzanie tożsamościami w różnych systemach, w tym tworzenie i aktualizację tożsamości użytkowników oraz dostępu.
-1. [ ] Synchronizacja zespołów to zautomatyzowany proces, który pozwala użytkownikom zarządzać ich publicznymi profilami i repozytoriami za pomocą interfejsu specyficznego dla GitHub.
-1. [ ] Synchronizacja zespołów służy do wewnętrznego zabezpieczenia danych i zarządzania informacjami o użytkownikach, a SCIM jest interfejsem do personalizacji profili użytkowników i repozytoriów.
-1. [ ] Zarówno synchronizacja zespołów, jak i SCIM w GitHub są wykorzystywane do usług aprowizacji użytkowników, zapraszania osób spoza organizacji oraz zarządzania publicznymi profilami i repozytoriami.
+- [x] Synchronizacja zespołów łączy zespoły GitHub z grupami IdP w celu zarządzania członkostwem, opierając się na jednokrotnym logowaniu SAML, podczas gdy SCIM automatyzuje provisionowanie tożsamości i zarządzanie nimi w różnych systemach, w tym tworzenie i aktualizację tożsamości użytkowników oraz dostępu.
+- [ ] Synchronizacja zespołów to zautomatyzowany proces umożliwiający użytkownikom zarządzanie swoimi publicznymi profilami i repozytoriami za pomocą interfejsu specyficznego dla GitHub.
+- [ ] Synchronizacja zespołów jest używana do wewnętrznego bezpieczeństwa danych i zarządzania informacjami użytkowników, podczas gdy SCIM jest interfejsem do personalizacji profilu użytkownika i repozytorium.
+- [ ] Zarówno synchronizacja zespołów, jak i SCIM w GitHub są wykorzystywane do usług provisionowania użytkowników, zapraszania osób spoza organizacji do dołączenia oraz zarządzania publicznymi profilami i repozytoriami.
