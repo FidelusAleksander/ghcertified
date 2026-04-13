@@ -1,10 +1,9 @@
 ---
-question: "Runnerグループを使用してOrganization内のSelf-hostedランナーへのアクセスを管理するにはどうしますか？"
-title: "質問 088"
+question: "組織内でランナーグループを使用してセルフホスト型ランナーへのアクセスをどのように管理できますか？"
+documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
 ---
 
-> https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups
-1. [x] ランナーのセットを収集するRunnerグループを作成し、Organization内のRepositoryへのアクセスルールを設定する
-1. [ ] Runnerグループを使わずに、各Self-hostedランナーを個別にRepositoryへ割り当てる
-1. [ ] すべてのランナーとRepositoryに単一のデフォルトRunnerグループを使用する
-1. [ ] Organization内のチームにRunnerグループを割り当て、そのチームがグループを管理し、担当RepositoryにRunnerグループを割り当てる
+- [x] ランナーグループを作成してランナーをまとめ、それから組織内のリポジトリに対するアクセスポリシーを構成します。
+- [ ] ランナーグループを使用せず、各セルフホスト型ランナーを個別にリポジトリに手動で割り当てます。
+- [ ] すべてのランナーとリポジトリに単一のデフォルトランナーグループを使用します。
+- [ ] 組織内の人々のチームに割り当てられるランナーグループを作成することにより。これらのチームはこれらのグループを管理し、管理するリポジトリにランナーグループを割り当てることができます。
