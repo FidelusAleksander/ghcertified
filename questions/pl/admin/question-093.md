@@ -1,10 +1,9 @@
 ---
-question: "Jak można uwierzytelnić się w GitHub Packages?"
-title: "Pytanie 093"
+question: "Jak można uwierzytelnić się wobec GitHub Packages?"
+documentation: "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages"
 ---
 
-> https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages
-1. [x] Uwierzytelniając się za pomocą PAT z odpowiednim zakresem
-1. [ ] GitHub Packages można uzyskać i udostępniać publicznie bez żadnego uwierzytelnienia.
-1. [ ] Dostęp do GitHub Packages jest ograniczony tylko do kont GitHub Enterprise.
-1. [ ] Korzystając z domyślnego logowania do GitHub bez potrzeby używania specjalnych tokenów uwierzytelniających.
+- [x] Poprzez uwierzytelnienie za pomocą PAT (Personal Access Token) z odpowiednim zakresem
+- [ ] GitHub Packages mogą być publicznie dostępne i udostępniane bez żadnej uwierzytelnienia.
+- [ ] Dostęp do GitHub Packages jest ograniczony wyłącznie do kont GitHub Enterprise.
+- [ ] Poprzez użycie domyślnego logowania na GitHub bez konieczności używania specjalnych tokenów uwierzytelniających.
