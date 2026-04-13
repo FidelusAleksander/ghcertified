@@ -1,11 +1,10 @@
 ---
-question: "Które z tych praktyk mogą pomóc uniknąć przypadkowego dodania wrażliwych danych lub plików do repozytorium git?"
-title: "Pytanie 070"
+question: "Które z tych praktyk mogą pomóc w uniknięciu przypadkowego dodania wrażliwych danych lub plików do repozytorium git?"
+documentation: "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#avoiding-accidental-commits-in-the-future"
 ---
 
-> https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#avoiding-accidental-commits-in-the-future
-1. [x] Dodanie wrażliwych plików lub wzorców do pliku `.gitignore`
-1. [ ] Regularna zmiana haseł
-1. [ ] Wyłączenie dostępu do przesyłania zmian (push) do repozytorium
-1. [ ] Używanie `git add .` przed każdym commitem
-1. [ ] Wyłączenie wszystkich reguł z `.gitignore` w celu zapewnienia śledzenia każdego pliku
+- [x] Dodanie wrażliwych plików lub wzorców do pliku `.gitignore`
+- [ ] Regularna zmiana haseł
+- [ ] Wyłączenie dostępu do przesyłania w repozytorium
+- [ ] Użycie polecenia `git add .` przed każdym zatwierdzeniem
+- [ ] Wyłączenie wszystkich reguł `.gitignore`, aby upewnić się, że każdy plik jest śledzony
