@@ -1,10 +1,9 @@
 ---
-title: "Pytanie 094"
-question: "Czym jest polityka bezpieczeństwa na GitHub?"
+question: "Czym jest polityka bezpieczeństwa GitHub?"
+documentation: "https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository#about-security-policies"
 ---
 
-> https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository#about-security-policies  
-1. [x] To dokument, który instruuje użytkowników, jak odpowiedzialnie zgłaszać luki bezpieczeństwa w projekcie. Zazwyczaj jest zdefiniowany w pliku `SECURITY.md` w repozytorium.  
-1. [ ] To narzędzie automatycznie naprawiające luki bezpieczeństwa w twoim kodzie.  
-1. [ ] To funkcja umożliwiająca szyfrowanie twojego repozytorium.  
-1. [ ] Polityka bezpieczeństwa na GitHub to usługa subskrypcyjna oferująca ochronę antywirusową dla twoich projektów.  
+- [x] Jest to dokument, który instruuje użytkowników, jak odpowiedzialnie zgłaszać luki bezpieczeństwa w projekcie. Zazwyczaj jest definiowany w pliku `SECURITY.md` w repository.
+- [ ] Jest to narzędzie do automatycznego naprawiania luk bezpieczeństwa w kodzie.
+- [ ] Jest to funkcja umożliwiająca szyfrowanie repository.
+- [ ] Polityka bezpieczeństwa GitHub to usługa subskrypcyjna zapewniająca ochronę antywirusową dla projektów.
