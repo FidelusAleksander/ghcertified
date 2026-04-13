@@ -1,10 +1,10 @@
 ---
-title: "Pytanie 116"
-question: "Zadania uruchamiane na runnerach macOS hostowanych przez GitHub zużywają minuty w __ tempie co runnery Linux"
+question: "Zadania uruchamiane na macOS runnerach hostowanych przez GitHub zużywają minuty w __ tempie co Linux runnery"
+documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers"
 ---
 
-> https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers
-1. [ ] takim samym
-1. [ ] 2x
-1. [ ] 5x
-1. [x] 10x
+- [ ] w takim samym
+- [ ] 2x
+- [ ] 5x
+- [x] 10x
+
