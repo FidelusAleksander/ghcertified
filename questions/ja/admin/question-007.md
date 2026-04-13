@@ -1,14 +1,14 @@
 ---
-question: "GitHub APIが提供するエンタープライズ管理用のエンドポイントはどれですか？（6つ選択してください）"
-title: "質問 007"
+question: "GitHub APIは、エンタープライズ管理のためにどのエンドポイントを提供していますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
-- [x] Admin stats
-- [x] Audit log
-- [x] Billing
-- [x] Code security and analysis
-- [x] License
+- [x] 管理統計
+- [x] 監査ログ
+- [x] 請求
+- [x] コードセキュリティと分析
+- [x] ライセンス
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Projects
+
