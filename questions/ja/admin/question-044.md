@@ -1,11 +1,10 @@
 ---
-question: "どのGitHubプランがプライベートリポジトリ内でのシークレットスキャンの使用を許可していますか？"
-title: "Question 044"
+question: "どのGitHubプランで秘密のスキャンをプライベートリポジトリで使用できますか？"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security"
 ---
 
-> https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security
-1. [x] GitHub EnterpriseプランでGHASライセンスを持つもの
-1. [ ] GitHub Enterprise Cloud
-1. [ ] GitHub Enterprise Server
-1. [ ] GitHub Pro
-1. [ ] GitHub Team
+- [x] GHASライセンスが付属した任意のGitHub Enterpriseプラン
+- [ ] GitHub Enterprise Cloud
+- [ ] GitHub Enterprise Server
+- [ ] GitHub Pro
+- [ ] GitHub Team
