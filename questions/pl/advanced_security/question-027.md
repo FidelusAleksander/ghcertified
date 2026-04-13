@@ -1,13 +1,11 @@
 ---
-title: "Pytanie 027"
-question: "Kiedy zostanie zaktualizowany wykres zależności GitHub dla Twojego repozytorium? (Wybierz dwie odpowiedzi.)"
+question: "Kiedy graf zależności GitHub dla Twojego repozytorium zostanie zaktualizowany?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph
-- [x] Gdy ktoś wypchnie zmianę do repozytorium jednej z Twoich zależności.
-- [x] Gdy wypchniesz commit do domyślnej gałęzi repozytorium, tylko jeśli zmienia lub dodaje on obsługiwany manifest/lockfile.
-- [ ] Gdy wypchniesz dowolny commit do domyślnej gałęzi repozytorium.
-- [ ] Gdy Twoje repozytorium opublikuje nowe wydanie.
+- [x] Gdy ktoś wprowadzi zmiany w repozytorium jednej z Twoich zależności.
+- [x] Gdy wykonasz commit do domyślnej gałęzi repozytorium, tylko jeśli zmienia ona lub dodaje obsługiwany plik manifestu/lockfile.
+- [ ] Gdy wykonasz dowolny commit do domyślnej gałęzi repozytorium.
+- [ ] Gdy Twoje repozytorium opublikuje nową wersję.
 - [ ] Gdy Twoje repozytorium opublikuje nowy tag git.
-- [ ] Gdy zostanie uruchomiony workflow GitHub Actions wykorzystujący akcję `actions/dependency-graph`.
+- [ ] Gdy GitHub Actions workflow, który używa GitHub Action `actions/dependency-graph`, zostanie uruchomiony.
