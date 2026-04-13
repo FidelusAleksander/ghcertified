@@ -1,10 +1,9 @@
 ---
 question: "組織向けにGitHub MarketplaceからGitHub Appをインストールする手順は何ですか？"
-title: "質問 008"
+documentation: "https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations"
 ---
 
-> https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations
-1. [x] GitHub Marketplaceを閲覧し、アプリを選択してプランを選び、組織を選択してからアプリを確認してインストールします。
-1. [ ] 組織設定に移動し、「Installed apps」を選択してから、手動でアプリのクライアントIDを追加してインストールします。
-1. [ ] GitHub CLIで`gh app install`コマンドを使用し、組織名を指定してアプリをインストールします。
-1. [ ] アプリのリポジトリをクローンし、インストールスクリプトをローカルで実行して組織に登録します。
+- [x] GitHub Marketplaceをブラウズし、アプリを選択し、プランを選択し、組織を選択してから、アプリを確認してインストールします。
+- [ ] 組織設定に移動し、「Installed apps」を選択して、手動でアプリのクライアントIDを追加してインストールします。
+- [ ] 組織名を指定して、GitHub CLIで`gh app install`コマンドを使用してアプリをインストールします。
+- [ ] アプリのリポジトリをクローンし、インストールスクリプトをローカルで実行して組織に登録します。
