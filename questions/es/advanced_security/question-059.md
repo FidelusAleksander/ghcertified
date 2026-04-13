@@ -1,9 +1,7 @@
 ---
-title: "Pregunta 059"
-question: "¿Puedes usar el análisis de CodeQL con sistemas de CI de terceros?"
+question: "¿Puedes usar análisis de CodeQL con sistemas CI de terceros?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system
-1. [x] Sí, solo necesitas usar la CLI de CodeQL
-1. [ ] No, porque requiere usar la GitHub Action `github/codeql-action`
+- [x] Sí, solo necesitas usar la CLI de CodeQL
+- [ ] No, porque requiere usar la acción de GitHub `github/codeql-action` GitHub Action
