@@ -1,10 +1,9 @@
 ---
-question: "Como autenticar-se no GitHub Packages?"
-title: "Pergunta 093"
+question: "Como alguém pode se autenticar no GitHub Packages?"
+documentation: "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages"
 ---
 
-> https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages
-1. [x] Autenticando-se usando um PAT com o escopo apropriado
-1. [ ] O GitHub Packages pode ser acessado e compartilhado publicamente sem qualquer autenticação.
-1. [ ] O acesso ao GitHub Packages é restrito apenas às contas do GitHub Enterprise.
-1. [ ] Usando o login padrão do GitHub sem a necessidade de tokens de autenticação especiais.
+- [x] Autenticando-se usando um PAT com o escopo apropriado
+- [ ] O GitHub Packages pode ser acessado e compartilhado publicamente sem qualquer autenticação.
+- [ ] O acesso ao GitHub Packages é restrito apenas a contas do GitHub Enterprise.
+- [ ] Utilizando o login padrão do GitHub sem necessidade de tokens de autenticação especiais.
