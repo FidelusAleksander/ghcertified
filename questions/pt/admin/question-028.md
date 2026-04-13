@@ -1,11 +1,9 @@
 ---
-question: "Qual das opções a seguir é exclusiva de gerenciamento do GitHub Enterprise Cloud?"
-title: "Pergunta 028"
+question: "Qual das opções a seguir é uma opção de gerenciamento exclusiva do GitHub Enterprise Cloud?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud
-1. [x] Usar Enterprise Managed Users para criar e gerenciar contas de usuário por meio do seu IdP
-1. [ ] Permitir que os usuários criem e gerenciem suas próprias contas pessoais sem restrições
-1. [ ] Forçar todos os usuários a adotar um padrão de codificação uniforme
-1. [ ] Exigir que todo o código seja revisado pelo GitHub antes de ser publicado
-
+- [x] Usar Enterprise Managed Users para criar e gerenciar contas de usuários por meio do seu IdP
+- [ ] Permitir que os usuários criem e gerenciem suas próprias contas pessoais sem restrições
+- [ ] Forçar todos os usuários a adotarem um padrão de codificação uniforme
+- [ ] Exigir que todo o código seja revisado pelo GitHub antes de ser publicado
