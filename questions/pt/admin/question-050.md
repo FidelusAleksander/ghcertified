@@ -1,10 +1,9 @@
 ---
-question: "Qual é a principal responsabilidade de um gerente de faturamento em uma organização no GitHub?"
-title: "Pergunta 050"
+question: "Qual é a principal responsabilidade de um gerente de cobrança em uma organização no GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Gerenciar as configurações de faturamento da organização, incluindo a atualização de métodos de pagamento e revisão de faturas.
-1. [ ] Eles podem gerenciar permissões de equipes e configurações de repositório.
-1. [ ] Criar e excluir todos os repositórios dentro da organização.
-1. [ ] Atribuir e remover proprietários da organização.
+- [x] Gerenciar as configurações de cobrança da organização, incluindo atualização de métodos de pagamento e revisão de faturas.
+- [ ] Eles podem gerenciar permissões de equipe e configurações de repositório.
+- [ ] Criar e excluir todos os repositórios dentro da organização.
+- [ ] Atribuir e remover proprietários da organização.
