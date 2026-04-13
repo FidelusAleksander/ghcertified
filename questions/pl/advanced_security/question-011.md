@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 011"
-question: "Jak można zapobiec wypychaniu do GitHub commitów zawierających dane uwierzytelniające dostawców chmury?"
+question: "Jak możesz zapobiec przesyłaniu commitów zawierających dane uwierzytelniające dostawcy usług w chmurze do GitHub?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations
-1. [x] Włącz regułę ochrony przed wypychaniem (secret scanning push protection rule) dla swojego repozytorium lub organizacji.
-1. [ ] Dodaj plik `.gitignore` do swojego repozytorium, aby ignorować pliki zawierające sekretne dane.
-1. [ ] Utwórz GitHub Action, który będzie skanował Twoje commity w poszukiwaniu sekretów przed ich wypchnięciem do GitHub.
-1. [ ] Włącz regułę ochrony gałęzi (branch protection rule) dla swojego repozytorium.
+- [x] Włącz regułę ochrony przed przesyłaniem z tajnym skanowaniem dla swojego repozytorium lub organizacji.
+- [ ] Uwzględnij plik `.gitignore` w swoim repozytorium, który będzie ignorować pliki zawierające tajne dane.
+- [ ] Utwórz GitHub Action, który przeskanuje twoje commity w poszukiwaniu tajnych danych, zanim zostaną przesłane do GitHub.
+- [ ] Włącz regułę ochrony gałęzi dla swojego repozytorium.
