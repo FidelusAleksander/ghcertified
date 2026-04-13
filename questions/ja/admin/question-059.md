@@ -1,10 +1,9 @@
 ---
-question: "Organization内におけるGitHub App managerの権限は何ですか？"
-title: "質問 059"
+question: "GitHub Appマネージャーは組織内でどのような権限を持っていますか？"
+documentation: "https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#about-github-app-managers"
 ---
 
-> https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#about-github-app-managers
-1. [x] GitHub App managerは、Organizationが所有するGitHub App登録の設定を管理できるが、GitHub Appのインストールやアンインストールを行う権限はない
-1. [ ] Organizationが所有する任意のGitHub Appのソースコードへアクセスし、変更できる
-1. [ ] GitHub App managerは、Organization内で新しいGitHub Appを作成できる唯一の役割である
-1. [ ] アプリのインストール権限をOutside collaboratorに付与できる
+- [x] GitHub Appマネージャーは、組織が所有するGitHub Appの登録設定を管理できますが、GitHub Appをインストールまたはアンインストールする権限はありません。
+- [ ] 組織が所有するGitHub Appのソースコードにアクセスし、変更することができます。
+- [ ] GitHub Appマネージャーは、組織内で新しいGitHub Appを作成できる唯一の役割です。
+- [ ] 外部コラボレーターにアプリインストール権限を付与する能力を持っています。
