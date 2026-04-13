@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 023"
-question: "Jakie informacje dostarczają alerty Dependabot?"
+question: "Jakie informacje zawierają alerty Dependabot?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts  
-1. [x] Alerty Dependabot informują, że Twoje repozytorium używa pakietu, który jest niebezpieczny.  
-1. [ ] Alerty Dependabot informują, że Twoje repozytorium jest używane przez inne publiczne repozytoria.  
-1. [ ] Alerty Dependabot informują, że Twoje repozytorium używa nietestowanej wersji pakietu.  
-1. [ ] Alerty Dependabot informują, że Twoje repozytorium używa nieaktualnej wersji pakietu.  
-> Dependabot zajmuje się tym w odniesieniu do aktualizacji wersji, ale nie poprzez alerty.
+- [x] Alerty Dependabot informują, że Twoje repozytorium używa pakietu, który jest niebezpieczny.
+- [ ] Alerty Dependabot informują, że Twoje repozytorium jest używane przez inne publiczne repozytoria.
+- [ ] Alerty Dependabot informują, że Twoje repozytorium używa nietestowanej wersji pakietu.
+- [ ] Alerty Dependabot informują, że Twoje repozytorium używa nieaktualnej wersji pakietu.
+> Dependabot zajmuje się tym poprzez aktualizacje wersji, ale nie przez alerty.
