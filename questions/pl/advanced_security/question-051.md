@@ -1,10 +1,10 @@
 ---
-title: "Pytanie 051"
-question: "Uzupełnij zdanie: `GitHub __________ to funkcja, której można używać do analizowania kodu w repozytorium GitHub, aby znaleźć podatności bezpieczeństwa i błędy w kodzie.`"
+question: "Uzupełnij lukę: `GitHub __________ jest funkcją, którą możesz użyć do analizowania kodu w repozytorium GitHub w celu znalezienia luk w zabezpieczeniach i błędów w kodzie.`"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning
-1. [x] Code Scanning
-1. [ ] Dependency Graph
-1. [ ] Security Advisories
-1. [ ] Vulnerability Detection
+- [x] Code Scanning
+- [ ] Dependency Graph
+- [ ] Security Advisories
+- [ ] Vulnerability Detection
+
