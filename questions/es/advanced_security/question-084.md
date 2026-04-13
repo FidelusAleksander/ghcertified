@@ -1,13 +1,11 @@
 ---
-title: "Pregunta 084"
-question: "¿Qué detalles puedes encontrar en una página de alerta de escaneo de código? (Elige tres.)"
+question: "¿Qué detalles se pueden encontrar en una página de alerta de análisis de código?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts#about-alert-details"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts#about-alert-details
 - [x] Ramas afectadas por la vulnerabilidad
-- [x] Código vulnerable destacado
+- [x] Código vulnerable resaltado
 - [x] Gravedad de la vulnerabilidad
 - [ ] Información sobre cuántas veces se ha explotado la vulnerabilidad
-- [ ] Desarrollador asignado para solucionar la vulnerabilidad
-- [ ] ID de la base de datos de CodeQL que se utilizó para encontrar la vulnerabilidad
+- [ ] Desarrollador asignado para corregir la vulnerabilidad
+- [ ] ID de la base de datos de CodeQL utilizada para encontrar la vulnerabilidad
