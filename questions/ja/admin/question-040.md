@@ -1,10 +1,9 @@
 ---
-question: "Microsoft Entra ID（旧Azure AD）とのTeam同期はGitHub Enterprise CloudのOrganizationにどのような利点をもたらしますか？"
-title: "質問 040"
+question: "Microsoft Entra ID（以前のAzure AD）を使用したチーム同期は、GitHub Enterprise Cloudの組織にどのようなメリットをもたらしますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise
-1. [x] IdPグループのメンバー変更をGitHubに自動反映し、GitHub OrganizationのTeamとIdPグループを同期することで手動更新やカスタムスクリプトの必要性を減らす
-1. [ ] GitHubがMicrosoft Entra IDのIdPとして機能し、ユーザー認証を効率化する
-1. [ ] Microsoft Entra IDグループのメンバーシップを対応するGitHub Repositoryに自動変換し、リソース割り当てを容易にする
-1. [ ] GitHub OrganizationのデータをMicrosoft Entra IDサーバーにバックアップし、冗長性を高める
+- [x] IdPグループ内のメンバーシップ変更がGitHub上で自動的に反映されるため、GitHub組織内のチームをIdPグループと同期することで手動更新やカスタムスクリプトの必要性を減らすことができます。
+- [ ] GitHubがMicrosoft Entra IDのアイデンティティプロバイダとして機能し、ユーザー認証プロセスを簡素化することを可能にします。
+- [ ] Microsoft Entra IDグループのメンバーシップを、対応するGitHubリポジトリに自動的に変換し、リソース配分を促進します。
+- [ ] GitHub組織データをMicrosoft Entra IDサーバーにバックアップし、データの冗長性を追加します。
