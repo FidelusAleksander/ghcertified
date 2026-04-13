@@ -1,11 +1,10 @@
 ---
-question: "Por qual cabeçalho você pode verificar o número de requisições que fez na janela atual de limite de taxa ao usar a GitHub REST API?"
-title: "Pergunta 096"
+question: "Por meio de qual cabeçalho você pode verificar o número de requisições feitas na janela de limite atual ao usar a GitHub REST API?"
+documentation: "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api#checking-the-status-of-your-rate-limit"
 ---
 
-> https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api#checking-the-status-of-your-rate-limit
-1. [x] `x-ratelimit-used`
-1. [ ] `x-ratelimit-limit`
-1. [ ] `x-ratelimit-remaining`
-1. [ ] `x-ratelimit-reset`
-1. [ ] `x-ratelimit-resource`
+- [x] `x-ratelimit-used`
+- [ ] `x-ratelimit-limit`
+- [ ] `x-ratelimit-remaining`
+- [ ] `x-ratelimit-reset`
+- [ ] `x-ratelimit-resource`
