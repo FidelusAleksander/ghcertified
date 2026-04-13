@@ -1,10 +1,10 @@
 ---
-title: "Pregunta 063"
-question: "El análisis con CodeQL es compatible con:"
+question: "CodeQL scanning admite:"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql
-1. [x] Tanto lenguajes compilados como interpretados  
-1. [ ] Solo lenguajes compilados  
-1. [ ] Solo lenguajes interpretados  
-1. [ ] Todos los lenguajes de programación  
+- [x] Tanto lenguajes compilados como interpretados
+- [ ] Solo lenguajes compilados
+- [ ] Solo lenguajes interpretados
+- [ ] Todos los lenguajes de programación
+
