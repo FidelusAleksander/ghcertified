@@ -1,10 +1,10 @@
 ---
-question: "Która rola w repozytorium organizacji GitHub jest zalecana dla współpracowników, którzy muszą proaktywnie zarządzać zgłoszeniami i pull requestami bez dostępu do zapisu?"
-title: "Pytanie 061"
+question: "Która rola w repozytorium w organizacji GitHub jest zalecana dla współtwórców, którzy muszą aktywnie zarządzać zgłoszeniami i pull requestami, ale nie mają dostępu do zapisu?"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization
-1. [x] Triage
-1. [ ] Read
-1. [ ] Write
-1. [ ] Maintain
+- [x] Triage
+- [ ] Read
+- [ ] Write
+- [ ] Maintain
+---
