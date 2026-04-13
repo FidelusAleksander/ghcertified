@@ -1,10 +1,9 @@
 ---
-question: "Które z poniższych najlepiej definiuje GitHub Enterprise Policies?"
-title: "Pytanie 071"
+question: "Która z tych najlepiej definiuje GitHub Enterprise Policies?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
-1. [x] Ustawienia zarządzane przez właścicieli przedsiębiorstwa w celu kontrolowania takich aspektów jak zarządzanie repository, dostęp zespołu i funkcje bezpieczeństwa w ramach organizacji GitHub.
-1. [ ] Polityki ustalane na poziomie przedsiębiorstwa, które określają szczegóły dotyczące rozliczeń i subskrypcji dla wszystkich organizacji w ramach konta przedsiębiorstwa.
-1. [ ] Wytyczne sugerowane przez GitHub w celu poprawy współpracy i produktywności we wszystkich organizacjach, bez możliwości egzekwowania.
-1. [ ] Domyślne ustawienia stosowane do wszystkich nowych repository w ramach organizacji, które mogą być nadpisane przez właścicieli organizacji.
+- [x] Ustawienia zarządzane przez właścicieli enterprise w celu kontrolowania takich aspektów jak zarządzanie repozytoriami, dostęp zespołów oraz funkcje bezpieczeństwa w ramach organizacji w GitHub.
+- [ ] Zasady ustalone na poziomie enterprise, które określają szczegóły rozliczeń i subskrypcji dla wszystkich organizacji w ramach konta enterprise.
+- [ ] Wytyczne sugerowane przez GitHub w celu poprawy współpracy i produktywności w różnych organizacjach, bez możliwości ich egzekwowania.
+- [ ] Domyślne ustawienia stosowane do wszystkich nowych repozytoriów w organizacji, które mogą zostać zmienione przez właścicieli organizacji.
