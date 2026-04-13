@@ -1,11 +1,10 @@
 ---
-title: "Pergunta 108"
-question: "Como você pode automatizar a suspensão de alertas de baixa gravidade do Dependabot?"
+question: "Como você pode automatizar a rejeição de alertas de baixa gravidade do Dependabot?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
 ---
 
+- [x] Usando as regras de auto-triagem do Dependabot.
+- [ ] Configurando o campo `severity` no arquivo `dependabot.yml` como alto
+- [ ] Removendo todas as dependências que causam alertas de baixa gravidade
+- [ ] Configurando o campo `dismiss-severity` no arquivo `dependabot.yml` como baixo
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules
-1. [x] Usando as regras de triagem automática do Dependabot.
-1. [ ] Definindo o campo `severity` no arquivo `dependabot.yml` como alto
-1. [ ] Removendo todas as dependências que causam alertas de baixa gravidade
-1. [ ] Definindo o campo `dismiss-severity` no arquivo `dependabot.yml` como baixo
