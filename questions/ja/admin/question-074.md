@@ -1,11 +1,11 @@
 ---
-question: "次のうち、GitHubがサポートするアクセストークンの種類はどれですか？（3つ選択）"
-title: "質問 074"
+question: "次のうち、GitHubでサポートされているアクセストークンの種類はどれですか？"
+documentation: "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats"
 ---
 
-> https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
 - [x] Personal Access Token (PAT)
-- [x] GitHub AppのInstallation Access Token
-- [x] GitHub AppのUser Access Token
-- [ ] IoTデバイス用IoT Token
-- [ ] 一時アクセス用のEphemeral Access Token
+- [x] Installation Access Token for a GitHub App
+- [x] User Access Token for a GitHub App
+- [ ] IoT Token for an IoT device
+- [ ] Ephemeral Access Token for temporary access
+
