@@ -1,10 +1,9 @@
 ---
-question: "Jak należy wybierać odpowiednie biegaczy, aby wspierać specyficzne obciążenia w swoim przepływie pracy?"
-title: "Pytanie 085"
+question: "Jak wybrać odpowiednie procesory obsługujące specyficzne obciążenia w Twoim workflow?"
+documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners#differences-between-github-hosted-and-self-hosted-runners"
 ---
 
-> https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners#differences-between-github-hosted-and-self-hosted-runners
-1. [x] Wybierz biegaczy hostowanych lokalnie dla dostosowanych środowisk lub biegaczy hostowanych przez GitHub dla automatycznych aktualizacji i czystych instancji.
-1. [ ] Zawsze preferuj biegaczy hostowanych przez GitHub dla wszystkich obciążeń, aby zapewnić maksymalne bezpieczeństwo.
-1. [ ] Korzystaj wyłącznie z biegaczy hostowanych lokalnie, niezależnie od złożoności obciążenia, aby zminimalizować koszty.
-1. [ ] Ogranicz się do korzystania z biegaczy hostowanych przez GitHub z niestandardowymi konfiguracjami sprzętowymi dla lepszej wydajności.
+- [x] Wybierz self-hosted runners dla dostosowanych środowisk lub GitHub-hosted dla automatycznych aktualizacji i czystych instancji.
+- [ ] Zawsze preferuj GitHub-hosted runners dla wszystkich obciążeń, aby zapewnić maksymalne bezpieczeństwo.
+- [ ] Używaj tylko self-hosted runners, niezależnie od złożoności obciążenia, aby zminimalizować koszty.
+- [ ] Ogranicz się do używania GitHub-hosted runners z niestandardowymi konfiguracjami sprzętowymi dla lepszej wydajności.
