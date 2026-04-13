@@ -1,12 +1,10 @@
 ---
-title: "Pytanie 054"
-question: "Jak skonfigurować repozytorium GitHub, aby uruchamiało analizę CodeQL według harmonogramu? (Wybierz dwie odpowiedzi.)"
+question: "Jak skonfigurować swoje repozytorium GitHub do uruchamiania analizy CodeQL zgodnie z harmonogramem?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning#about-default-setup"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning#about-default-setup
-- [x] Poprzez utworzenie przepływu pracy GitHub Actions z wyzwalaczem `schedule`. Przepływ pracy powinien korzystać z akcji z repozytorium `github/codeql-action`.
-- [x] Poprzez użycie domyślnej konfiguracji analizy CodeQL.
-- [ ] Poprzez ustawienie właściwości `codeql.trigger` w ustawieniach repozytorium na `schedule`.
-- [ ] Poprzez dodanie właściwości `schedule` do pliku `.github/codeql.yml`.
-- [ ] Poprzez złożenie wniosku do wsparcia technicznego GitHub o włączenie zaplanowanej analizy CodeQL dla repozytorium.
+- [x] Tworząc GitHub Actions workflow z wyzwalaczem `schedule`. Workflow powinien korzystać z akcji z repozytorium `github/codeql-action`.
+- [x] Korzystając z domyślnej konfiguracji analizy CodeQL.
+- [ ] Ustawiając właściwość `codeql.trigger` w ustawieniach repozytorium na `schedule`.
+- [ ] Dodając właściwość `schedule` do pliku konfiguracji `.github/codeql.yml`.
+- [ ] Składając żądanie do wsparcia technicznego GitHub o włączenie analizy CodeQL zgodnie z harmonogramem dla repozytorium.
