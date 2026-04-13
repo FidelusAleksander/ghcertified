@@ -1,10 +1,9 @@
 ---
-title: "Pregunta 002"
-question: "¿Qué significa `shifting left` en el contexto de la seguridad?"
+question: "¿Qué significa 'shifting left' en el contexto de Seguridad?"
+documentation: "https://github.com/readme/guides/github-advanced-security-telus"
 ---
 
-> https://github.com/readme/guides/github-advanced-security-telus
-1. [x] Adoptar prácticas de seguridad temprano en el ciclo de desarrollo
-1. [ ] Escribir código en un lenguaje que se utiliza comúnmente
-1. [ ] Incorporar prácticas de seguridad justo antes de llegar a producción
-1. [ ] Escribir código sin preocuparse por la seguridad
+- [x] Adoptar prácticas de seguridad temprano en el ciclo de desarrollo
+- [ ] Escribir código en un lenguaje que se use comúnmente
+- [ ] Incorporar prácticas de seguridad justo antes de pasar a producción
+- [ ] Escribir código sin preocuparse por la seguridad
