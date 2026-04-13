@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 099"
 question: "Które z tych stwierdzeń najlepiej definiuje podatną zależność?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts
-1. [x] Podatna zależność to zależność, od której projekt jest zależny, zawierająca luki bezpieczeństwa, które mogą potencjalnie zostać wykorzystane, zagrażając bezpieczeństwu projektu.
-1. [ ] Podatna zależność to zależność, od której projekt jest zależny, która nie była aktualizowana przez długi czas.
-1. [ ] Podatna zależność to zależność, od której projekt jest zależny, która nie jest powszechnie używana ani popularna.
-1. [ ] Podatna zależność to zależność, od której projekt jest zależny, która nie jest zweryfikowana przez GitHub.
+- [x] Podatna zależność to zależność, od której projekt zależy, zawierająca luki w zabezpieczeniach, które mogą zostać wykorzystane, zagrażając bezpieczeństwu projektu.
+- [ ] Podatna zależność to zależność, od której projekt zależy, która nie była aktualizowana przez długi czas.
+- [ ] Podatna zależność to zależność, od której projekt zależy, która nie jest szeroko używana ani popularna.
+- [ ] Podatna zależność to zależność, od której projekt zależy, która nie została zweryfikowana przez GitHub.
