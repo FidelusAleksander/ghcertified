@@ -1,12 +1,11 @@
 ---
-title: "Pytanie 060"
-question: "Które z poniższych stwierdzeń dotyczących skanowania kodu są prawdziwe? (Wybierz dwa.)"
+question: "Które z poniższych jest prawdą na temat skanowania kodu?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code#scan-your-code-for-vulnerable-patterns"
 ---
 
-> https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code#scan-your-code-for-vulnerable-patterns
 - [x] Skanowanie kodu pomaga znaleźć niebezpieczne wzorce kodu, które mogą zostać pominięte podczas ręcznego przeglądu kodu.
-- [x] Skanowanie kodu można zintegrować z pipeline'em CI, aby wykrywać problemy z bezpieczeństwem na wczesnym etapie procesu tworzenia oprogramowania.
+- [x] Skanowanie kodu może być zintegrowane z procesem CI w celu wykrywania problemów związanych z bezpieczeństwem na wczesnym etapie procesu rozwoju.
 - [ ] Skanowanie kodu zastępuje ręczny przegląd kodu.
-- [ ] Skanowanie kodu pomaga wykryć ujawnione dane uwierzytelniające w kodzie, takie jak klucze API lub dane uwierzytelniające do chmury.  
-> To dotyczy secret scanning
-- [ ] Skanowanie kodu analizuje Twój kod w celu wyszukania wszystkich zależności i ich wersji w celu wykrycia podatnych na zagrożenia zależności. 
+- [ ] Skanowanie kodu pomaga wykrywać wycieki poświadczeń w kodzie, takich jak klucze API czy poświadczenia do chmury. 
+> To jest skanowanie sekretów
+- [ ] Skanowanie kodu przeszukuje kod w celu znalezienia wszystkich zależności i ich wersji, aby wykryć wszelkie wrażliwe zależności.
