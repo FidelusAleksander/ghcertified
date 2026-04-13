@@ -1,10 +1,9 @@
 ---
-question: "GitHub Enterprise CloudにおけるEnterpriseアカウントの目的は何ですか？"
-title: "質問 027"
+question: "GitHub Enterprise Cloud におけるエンタープライズアカウントの目的は何ですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud
-1. [x] 複数のOrganizationを横断して管理者が一元的に可視化・管理できるようにする
-1. [ ] 個人ユーザーに無制限のPrivate Repositoryを提供する
-1. [ ] GitHub Enterprise Serverへの無料アクセスを提供する
-1. [ ] PublicとPrivateの貢献を個別に管理できるようにする
+- [x] 管理者に複数の Organization に対する単一の可視性と管理ポイントを提供すること
+- [ ] 個々のユーザーに無制限のプライベート Repository を提供すること
+- [ ] GitHub Enterprise Server への無料アクセスを提供すること
+- [ ] ユーザーがパブリックおよびプライベートの貢献を個別に管理できるようにすること
