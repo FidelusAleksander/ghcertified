@@ -1,10 +1,10 @@
 ---
-question: "GitHubのEnterpriseにおいて、IP許可リストを設定できるのは誰ですか？"
-title: "質問 079"
+question: "誰がGitHubのエンタープライズでIP許可リストを設定できますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list
-1. [x] Enterpriseオーナー
-1. [ ] Organizationオーナー
-1. [ ] Security Managers
-1. [ ] Organizationモデレーター
+- [x] エンタープライズ所有者
+- [ ] 組織所有者
+- [ ] セキュリティ管理者
+- [ ] 組織モデレーター
+---
