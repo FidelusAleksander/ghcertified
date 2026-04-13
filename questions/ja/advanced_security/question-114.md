@@ -1,10 +1,10 @@
 ---
-title: "質問 114"
-question: "`CWE` は何の略ですか？"
+question: "`CWE`は何の略ですか？"
+documentation: "https://cwe.mitre.org/"
 ---
 
-> https://cwe.mitre.org/
-1. [x] `Common Weakness Enumeration`
-1. [ ] `Cybersecurity Weakness Enumeration`
-1. [ ] `Code Wrapping Engine`
-1. [ ] `Critical Web Elements`
+- [x] `Common Weakness Enumeration`
+- [ ] `Cybersecurity Weakness Enumeration`
+- [ ] `Code Wrapping Engine`
+- [ ] `Critical Web Elements`
+---
