@@ -1,10 +1,10 @@
 ---
-question: "Jaki jest minimalny poziom wsparcia, który zapewnia pomoc w instalacji i korzystaniu z Advanced Security?"
-title: "Pytanie 003"
+question: "Jaki jest minimalny poziom wsparcia, który oferuje pomoc w instalacji i użytkowaniu Advanced Security?"
+documentation: "https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support"
 ---
 
-> https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support
-1. [x] GitHub Enterprise Support
-1. [ ] GitHub Premium Support
-1. [ ] GitHub Standard Support
-1. [ ] GitHub Community Support
+- [x] GitHub Enterprise Support
+- [ ] GitHub Premium Support
+- [ ] GitHub Standard Support
+- [ ] GitHub Community Support
+---
