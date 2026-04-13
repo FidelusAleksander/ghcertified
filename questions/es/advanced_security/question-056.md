@@ -1,9 +1,7 @@
 ---
-title: "Pregunta 056"
-question: "Si no deseas usar GitHub Actions, puedes ejecutar el análisis de código en un sistema de CI externo y luego subir los resultados a GitHub."
+question: "Si no deseas usar GitHub Actions, puedes ejecutar el escaneo de código en un sistema CI externo y luego cargar los resultados en GitHub."
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system
-1. [x] Verdadero  
-1. [ ] Falso  
+- [x] Verdadero
+- [ ] Falso
