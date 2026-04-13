@@ -1,10 +1,9 @@
 ---
-title: "質問 063"
-question: "CodeQLスキャンはどの言語をサポートしていますか？"
+question: "CodeQLスキャンは以下をサポートしています:"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql
-1. [x] コンパイル言語とインタプリタ言語の両方
-1. [ ] コンパイル言語のみ
-1. [ ] インタプリタ言語のみ
-1. [ ] すべてのプログラミング言語
+- [x] コンパイル言語とインタプリタ言語の両方
+- [ ] コンパイル言語のみ
+- [ ] インタプリタ言語のみ
+- [ ] すべてのプログラミング言語
