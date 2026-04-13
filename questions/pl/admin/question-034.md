@@ -1,10 +1,10 @@
 ---
-question: "Co zaleca GitHub w celu zabezpieczenia przed utratą danych w GitHub Enterprise Server?"
-title: "Pytanie 034"
+question: "Co zaleca GitHub w celu ochrony przed utratą danych w GitHub Enterprise Server?"
+documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
 ---
 
-> https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] Opracowanie planu odzyskiwania po awarii i skonfigurowanie kopii zapasowych
-1. [ ] Korzystanie z usług przechowywania danych w chmurze firm trzecich do tworzenia kopii zapasowych
-1. [ ] Poleganie na automatycznych usługach tworzenia kopii zapasowych GitHub w chmurze
-1. [ ] Ręczne tworzenie kopii zapasowych poprzez okresowy eksport danych do lokalnej pamięci masowej
+- [x] Opracowanie planu odzyskiwania danych po awarii i skonfigurowanie kopii zapasowych
+- [ ] Korzystanie z usług przechowywania danych w chmurze od zewnętrznych dostawców jako kopii zapasowej
+- [ ] Poleganie na automatycznych usługach kopii zapasowych w chmurze oferowanych przez GitHub
+- [ ] Ręczne tworzenie kopii zapasowych przez okresowy eksport danych do lokalnego magazynu danych
+
