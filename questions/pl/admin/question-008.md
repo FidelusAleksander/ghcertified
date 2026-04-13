@@ -1,10 +1,9 @@
 ---
 question: "Jakie są kroki instalacji aplikacji GitHub z GitHub Marketplace dla organizacji?"
-title: "Pytanie 008"
+documentation: "https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations"
 ---
 
-> https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations
-1. [x] Przeglądaj GitHub Marketplace, wybierz aplikację, wybierz plan, wybierz organizację, a następnie zrecenzuj i zainstaluj aplikację.
-1. [ ] Przejdź do ustawień organizacji, wybierz "Installed apps", a następnie ręcznie dodaj ID klienta aplikacji, aby ją zainstalować.
-1. [ ] Zainstaluj aplikację za pomocą GitHub CLI z komendą `gh app install`, podając nazwę organizacji.
-1. [ ] Sklonuj repozytorium aplikacji i uruchom skrypt instalacyjny lokalnie, aby zarejestrować ją w swojej organizacji.
+- [x] Przejrzyj GitHub Marketplace, wybierz aplikację, wybierz plan, wybierz organizację, a następnie przejrzyj i zainstaluj aplikację.
+- [ ] Przejdź do ustawień organizacji, wybierz „Zainstalowane aplikacje”, a następnie ręcznie dodaj identyfikator klienta aplikacji, aby ją zainstalować.
+- [ ] Zainstaluj aplikację za pomocą GitHub CLI, używając polecenia `gh app install`, określając nazwę organizacji.
+- [ ] Sklonuj repozytorium aplikacji i uruchom skrypt instalacyjny lokalnie, aby zarejestrować ją w swojej organizacji.
