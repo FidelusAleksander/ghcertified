@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 110"
-question: "Narzędzie, które sprawdza, czy pull request wprowadza zależności z lukami bezpieczeństwa, nazywa się:"
+question: "Narzędzie sprawdzające, czy pull request wprowadza jakiekolwiek zależności z lukami w zabezpieczeniach, nazywa się:"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review
-1. [x] Dependency Review
-1. [ ] Dependabot Alerts
-1. [ ] Dependabot Security Updates
-1. [ ] Dependabot Version Updates
+- [x] Dependency Review
+- [ ] Dependabot Alerts
+- [ ] Dependabot Security Updates
+- [ ] Dependabot Version Updates
+---
