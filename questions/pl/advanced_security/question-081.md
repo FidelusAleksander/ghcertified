@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 081"
-question: "Jakie polecenie CLI CodeQL służy do utworzenia bazy danych CodeQL?"
+question: "Jakie polecenie CodeQL CLI jest używane do utworzenia bazy danych CodeQL?"
+documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/preparing-your-code-for-codeql-analysis#running-codeql-database-create"
 ---
 
-
-> https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/preparing-your-code-for-codeql-analysis#running-codeql-database-create
-1. [x] `codeql database create`
-1. [ ] `gh codeql-database create`
-1. [ ] `ql database generate`
-1. [ ] `qlcli database create`
+- [x] `codeql database create`
+- [ ] `gh codeql-database create`
+- [ ] `ql database generate`
+- [ ] `qlcli database create`
