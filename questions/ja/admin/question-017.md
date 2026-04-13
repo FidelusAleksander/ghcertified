@@ -1,10 +1,9 @@
 ---
-question: "GitHubにおけるEnterprise Managed Usersの主な機能は何ですか？"
-title: "質問 017"
+question: "GitHub での Enterprise Managed Users の主な機能は何ですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users
-1. [x] IdP（アイデンティティプロバイダー）からGitHub上のEnterpriseメンバーのIDとアクセスを一元管理すること
-1. [ ] ユーザーが自身のプロフィール情報やRepositoryアクセスを独自に管理できるようにすること
-1. [ ] ユーザーがPublicコンテンツを作成し、他のユーザーとGitHub上でコラボレーションできるようにすること
-1. [ ] 個人開発者が自分のプライベートプロジェクトを管理するためのプラットフォームを提供すること
+- [x] Identity Provider (IdP) から GitHub 上の企業メンバーのアイデンティティとアクセスを一元管理すること。
+- [ ] ユーザーが自身のプロフィール情報やリポジトリへのアクセスを独自に管理できるようにすること。
+- [ ] ユーザーが公開コンテンツを作成し、GitHub 上で他のユーザーとコラボレーションできるようにすること。
+- [ ] 個々の開発者が自身のプライベートプロジェクトを管理するためのプラットフォームを提供すること。
