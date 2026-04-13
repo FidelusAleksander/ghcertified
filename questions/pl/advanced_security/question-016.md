@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 016"
-question: "Jakie jest zachowanie, gdy nowy wzorzec tajemnicy zostanie dodany lub zaktualizowany w programie partnerskim skanowania tajemnic GitHub?"
+question: "Jakie jest zachowanie po dodaniu lub zaktualizowaniu nowego wzorca sekretów w programie partnerskim skanowania sekretów GitHub?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts
-1. [x] GitHub przeprowadzi skanowanie całej historycznej zawartości kodu w publicznych repozytoriach, w których włączono skanowanie tajemnic
-1. [ ] GitHub będzie skanować nowy wzorzec tylko w nowo wciśniętych commitach w repozytoriach z włączonym skanowaniem tajemnic. Jeśli tajemnica tego wzorca była już obecna w repozytorium, nie zostanie wykryta.
-1. [ ] Partner GitHub musi poradzić sobie z historycznie wyciekłymi tajemnicami, a GitHub będzie skanować tylko nowe commity pod kątem nowego wzorca.
-1. [ ] GitHub utworzy zgłoszenie we wszystkich repozytoriach z włączonym skanowaniem tajemnic, aby utrzymujący mogli sprawdzić repozytorium pod kątem tajemnic dopasowanych do nowego wzorca.
+- [x] GitHub przeprowadzi skanowanie całej historii kodu w publicznych repozytoriach z włączonym skanowaniem sekretów
+- [ ] GitHub będzie skanować nowy wzorzec tylko w nowo wypchniętych commitach w repozytoriach z włączonym skanowaniem sekretów. Jeśli sekret o tym wzorcu był już obecny w repozytorium, nie zostanie wykryty.
+- [ ] Partner GitHub musi zająć się historycznie ujawnionymi sekretami, a GitHub będzie skanować tylko nowe commity pod kątem nowego wzorca
+- [ ] GitHub utworzy issue we wszystkich repozytoriach z włączonym skanowaniem sekretów, aby maintainerzy mogli sprawdzić repozytorium pod kątem sekretów pasujących do nowego wzorca
