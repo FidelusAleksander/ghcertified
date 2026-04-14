@@ -4,7 +4,7 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 ---
 
 - [ ] Definir variáveis de ambiente
-- [x] Especificar parâmetros de entrada para uma action
+- [x] Especificar parâmetros de entrada para uma ação
 - [ ] Configurar dependências
 - [ ] Acionar outro workflow
----
+
