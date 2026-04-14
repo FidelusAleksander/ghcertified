@@ -1,5 +1,5 @@
 ---
-question: "Dada a seguinte configuração, quantos jobs o GitHub Actions executará quando essa matriz for avaliada?"
+question: "Dada a seguinte configuração, quantos jobs o GitHub Actions executará quando esta matriz for avaliada?"
 documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations"
 ---
 
