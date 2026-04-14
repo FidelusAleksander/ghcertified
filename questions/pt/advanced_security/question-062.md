@@ -1,6 +1,6 @@
 ---
 question: "Qual é o efeito de adicionar a palavra-chave `paths-ignore` ao seu fluxo de trabalho de GitHub Actions para varredura de código?"
-documentation: "https://docs.github.com/pt/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#avoiding-unnecessary-scans-of-pull-requests"
+documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#avoiding-unnecessary-scans-of-pull-requests"
 ---
 
 ```yaml

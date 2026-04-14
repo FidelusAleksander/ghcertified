@@ -1,6 +1,6 @@
 ---
 question: "次のうち、CodeQL スキャンのデフォルトセットアップを有効にすることに関する記述で正しいものはどれですか？"
-documentation: "https://docs.github.com/ja/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
 ---
 
 - [x] 組織設定で、組織内のすべての適格なリポジトリに対してデフォルトセットアップを一括で有効にすることができる

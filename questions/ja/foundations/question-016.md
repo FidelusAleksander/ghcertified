@@ -1,6 +1,6 @@
 ---
 question: "リポジトリテンプレートに関してできるアクションにはどのようなものがありますか？"
-documentation: "https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template"
+documentation: "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template"
 ---
 
 - [x] 既存のリポジトリからリポジトリテンプレートを作成する

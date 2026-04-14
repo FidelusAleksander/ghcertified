@@ -1,6 +1,6 @@
 ---
 question: „Twoja organizacja definiuje sekret `SomeSecret`, jednak podczas odwoływania się do tego sekretu w ramach workflow za pomocą `${{ secrets.SomeSecret }}` otrzymujesz inną wartość niż oczekiwana. Co może być powodem tego problemu?”
-documentation: „https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets”
+documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets”
 ---
 
 - [x] Sekret `SomeSecret` jest również zadeklarowany w zakresie repozytorium

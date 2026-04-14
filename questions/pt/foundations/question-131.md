@@ -1,7 +1,7 @@
 ---
 question: "Qual afirmação descreve melhor a diferença entre clonar um repositório e fazer fork de um repositório?"  
 draft: false  
-documentation: "https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
 ---
 
 - [ ] Quando você clona um repositório, as alterações que você envia vão diretamente para o repositório original. Fazer fork exige uma cópia local separada.  

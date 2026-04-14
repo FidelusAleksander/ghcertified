@@ -1,6 +1,6 @@
 ---
 question: "課題フォームは課題テンプレートに比べてどのような改善をもたらしますか？"
-documentation: "https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms"
+documentation: "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms"
 ---
 
 - [x] 課題フォームを使用すると、課題作成時にユーザーに情報を促し、その情報を自動的に課題に追加できます。
