@@ -1,5 +1,5 @@
 ---
-question: "Este workflow será executado em todos os pull requests onde:"
+question: "Este fluxo de trabalho será executado em todos os pull requests onde:"
 documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-branches"
 ---
 
