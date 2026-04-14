@@ -1,10 +1,10 @@
 ---
-question: "CodeQLでコードスキャンに対応していない言語はどれですか？"
-title: "質問 039"
+question: "CodeQLによるコードスキャンでサポートされていない言語は次のうちどれですか？"
+documentation: "https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers"
 ---
 
-> https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers
-1. [x] PHP
-1. [ ] JavaScript/TypeScript
-1. [ ] C/C++
-1. [ ] Python
+- [x] PHP
+- [ ] JavaScript/TypeScript
+- [ ] C/C++
+- [ ] Python
+---
