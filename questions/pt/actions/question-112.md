@@ -3,7 +3,7 @@ question: "Qual nível de acesso é necessário em um repositório do GitHub par
 documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs"
 ---
 
-- [x] write
+- [x] write 
 - [ ] read
 - [ ] admin
 - [ ] owner
