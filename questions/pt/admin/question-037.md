@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é o limite de gastos padrão para o GitHub Actions em contas faturadas mensalmente?"
-documentação: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+question: "Qual é o limite de gastos padrão para o GitHub Actions em contas faturadas mensalmente?"
+documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
 ---
 
 - [x] O limite de gastos padrão é US$ 0, impedindo o uso adicional além das quantidades incluídas.

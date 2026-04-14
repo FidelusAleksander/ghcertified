@@ -1,6 +1,6 @@
 ---
-pergunta: "Quais das seguintes funcionalidades estão disponíveis no GitHub Copilot Business, mas não estão disponíveis nos planos individuais do Copilot?"
-documentação: "https://docs.github.com/en/copilot/get-started/plans"
+question: "Quais das seguintes funcionalidades estão disponíveis no GitHub Copilot Business, mas não estão disponíveis nos planos individuais do Copilot?"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [x] Gerenciamento centralizado de cobrança e assentos para uma organização  

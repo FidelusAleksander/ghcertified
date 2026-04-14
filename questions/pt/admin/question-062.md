@@ -1,6 +1,6 @@
 ---
-pergunta: "Quais são os papéis de repositório disponíveis em uma organização do GitHub?"
-documentação: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations"
+question: "Quais são os papéis de repositório disponíveis em uma organização do GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations"
 ---
 
 - [x] Read

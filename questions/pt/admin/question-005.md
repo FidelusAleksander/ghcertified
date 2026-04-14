@@ -1,6 +1,6 @@
 ---
-pergunta: "Quais dos seguintes são métodos corretos para gerar e compartilhar um arquivo de diagnóstico para o GitHub Enterprise Server?"
-documentação: "https://docs.github.com/en/enterprise-server/support/contacting-github-support/providing-data-to-github-support#creating-and-sharing-diagnostic-files"
+question: "Quais dos seguintes são métodos corretos para gerar e compartilhar um arquivo de diagnóstico para o GitHub Enterprise Server?"
+documentation: "https://docs.github.com/en/enterprise-server/support/contacting-github-support/providing-data-to-github-support#creating-and-sharing-diagnostic-files"
 ---
 
 - [x] Use o utilitário de linha de comando `ghe-diagnostics` para recuperar os diagnósticos da sua instância.

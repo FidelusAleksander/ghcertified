@@ -1,6 +1,6 @@
 ---
-pergunta: "Como você pode pular a execução do workflow ao fazer um commit ou criar um PR?"
-documentação: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
+question: "Como você pode pular a execução do workflow ao fazer um commit ou criar um PR?"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
 ---
 
 ```yaml

@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é a sintaxe correta para especificar um script de limpeza em uma ação de container?"
-documentação: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runspost-entrypoint"
+question: "Qual é a sintaxe correta para especificar um script de limpeza em uma ação de container?"
+documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runspost-entrypoint"
 ---
 
 - [x] 

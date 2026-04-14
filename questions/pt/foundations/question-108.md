@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é um dos principais benefícios de usar um Personal Access Token (PAT) em vez de um nome de usuário e senha padrão para autenticação no GitHub?"
-documentação: "https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works"
+question: "Qual é um dos principais benefícios de usar um Personal Access Token (PAT) em vez de um nome de usuário e senha padrão para autenticação no GitHub?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works"
 ---
 
 - [ ] Os PATs podem ser gerenciados pela organização e enterprise.  

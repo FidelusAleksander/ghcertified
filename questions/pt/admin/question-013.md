@@ -1,6 +1,6 @@
 ---
-pergunta: "Quais são as etapas para habilitar e aplicar SAML SSO para uma única organização?"
-documentação: "https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enabling-and-testing-saml-single-sign-on-for-your-organization#enabling-and-testing-saml-single-sign-on-for-your-organization"
+question: "Quais são as etapas para habilitar e aplicar SAML SSO para uma única organização?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/enabling-and-testing-saml-single-sign-on-for-your-organization#enabling-and-testing-saml-single-sign-on-for-your-organization"
 ---
 
 - [x] Navegue até as `Settings` da sua organização, clique em `Authentication security`, selecione `Enable SAML authentication`, configure as definições do IdP, teste a configuração SAML e aplique o SAML SSO.

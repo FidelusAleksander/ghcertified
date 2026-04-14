@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é o principal objetivo do comando de barra '/tests' no GitHub Copilot?"
-documentação: "https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot"
+question: "Qual é o principal objetivo do comando de barra '/tests' no GitHub Copilot?"
+documentation: "https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot"
 ---
 
 - [x] Ele gera um conjunto de testes unitários para o arquivo atualmente aberto, usando o contexto de arquivos de teste existentes, se disponíveis

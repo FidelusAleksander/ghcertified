@@ -1,6 +1,6 @@
 ---
-pergunta: "Como você pode gerenciar o acesso a runners auto-hospedados em uma organização usando grupos de runners?"
-documentação: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+question: "Como você pode gerenciar o acesso a runners auto-hospedados em uma organização usando grupos de runners?"
+documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
 ---
 
 - [x] Crie grupos de runners para coletar conjuntos de runners e, em seguida, configure políticas de acesso para repositórios dentro da organização.

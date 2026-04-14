@@ -1,6 +1,6 @@
 ---
-pregunta: "¿Cuál es la ventaja de tener una cuenta empresarial en GitHub Enterprise Cloud para una organización?"
-documentación: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises"
+question: "¿Cuál es la ventaja de tener una cuenta empresarial en GitHub Enterprise Cloud para una organización?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises"
 ---
 
 - [x] Permite a los propietarios gestionar centralmente la política y facturación para múltiples organizaciones.

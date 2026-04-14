@@ -1,6 +1,6 @@
 ---
-pergunta: "O GitHub Copilot é gratuito?"
-documentação: "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business"
+question: "O GitHub Copilot é gratuito?"
+documentation: "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business"
 ---
 
 - [ ] Não

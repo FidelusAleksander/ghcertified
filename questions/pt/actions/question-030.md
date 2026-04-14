@@ -1,6 +1,6 @@
 ---
-pergunta: "Quando o job3 será executado?"
-documentação: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-not-requiring-successful-dependent-jobs"
+question: "Quando o job3 será executado?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-not-requiring-successful-dependent-jobs"
 ---
 
 ```yaml

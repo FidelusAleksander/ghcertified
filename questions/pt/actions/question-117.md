@@ -1,6 +1,6 @@
 ---
-pergunta: "Quem pode ignorar as regras de proteção de implantação configuradas para forçar a implantação (por padrão)"
-documentação: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#allow-administrators-to-bypass-configured-protection-rules"
+question: "Quem pode ignorar as regras de proteção de implantação configuradas para forçar a implantação (por padrão)"
+documentation: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#allow-administrators-to-bypass-configured-protection-rules"
 ---
 
 - [x] Administradores do repositório

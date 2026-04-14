@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é a principal diferença entre habilitar o SAML Single Sign-On (SSO) para todas as organizações em uma conta enterprise versus habilitá-lo para uma única organização no GitHub Enterprise Cloud?"
-documentação: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
+question: "Qual é a principal diferença entre habilitar o SAML Single Sign-On (SSO) para todas as organizações em uma conta enterprise versus habilitá-lo para uma única organização no GitHub Enterprise Cloud?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
 ---
 
 - [x] O SAML SSO para uma única organização permite diferentes IdPs para cada organização, enquanto habilitá-lo para todas as organizações exige um único IdP para toda a conta enterprise.

@@ -1,6 +1,6 @@
 ---
-pergunta: "Qual é a prática recomendada para tratar variáveis de ambiente no GitHub Actions, independentemente do sistema operacional e shell utilizado?"
-documentação: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable"
+question: "Qual é a prática recomendada para tratar variáveis de ambiente no GitHub Actions, independentemente do sistema operacional e shell utilizado?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable"
 ---
 
 - [x] tratar variáveis de ambiente como sensíveis a maiúsculas e minúsculas

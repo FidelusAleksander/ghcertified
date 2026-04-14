@@ -1,6 +1,6 @@
 ---
-pergunta: "Como você pode usar cofres de terceiros para gerenciar segredos no GitHub Actions?"
-documentação: "https://developer.hashicorp.com/vault/docs/platform/github-actions"
+question: "Como você pode usar cofres de terceiros para gerenciar segredos no GitHub Actions?"
+documentation: "https://developer.hashicorp.com/vault/docs/platform/github-actions"
 ---
 
 > https://bitwarden.com/help/github-actions-integration/  
