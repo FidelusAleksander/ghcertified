@@ -1,10 +1,9 @@
 ---
-title: "Pytanie 086"
-question: "Kiedy przepływ pracy GitHub Actions z analizą CodeQL wykrywa nową podatność w pull requeście, gdzie można znaleźć informacje na temat tej podatności?"
+question: "Gdy GitHub Actions workflow analizy CodeQL wykryje nową podatność w pull request, gdzie można znaleźć informacje na temat tej podatności?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests#about-code-scanning-results-on-pull-requests"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests#about-code-scanning-results-on-pull-requests
-1. [x] Bezpośrednio w pull requeście w postaci komentarza PR oraz błędu sprawdzania
-1. [ ] W zakładce bezpieczeństwa repozytorium
-1. [ ] W logach uruchomienia przepływu pracy
-1. [ ] Przepływ pracy analizy CodeQL zakończy się niepowodzeniem i wygeneruje artefakt z wynikami
+- [x] Bezpośrednio w pull request w formie komentarza PR oraz błędu w sprawdzaniu
+- [ ] W zakładce bezpieczeństwa w repository
+- [ ] W logach uruchomienia workflow
+- [ ] Workflow analizy CodeQL zakończy się niepowodzeniem i wygeneruje artefakt z wynikami
