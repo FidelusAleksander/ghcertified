@@ -1,19 +1,18 @@
 ---
 question: "Kiedy uruchomi się job3?"
-title: "Pytanie 030"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-not-requiring-successful-dependent-jobs"
 ---
 
 ```yaml
-  jobs:
-    job1:
-    job2:
-      needs: job1
-    job3:
-      if: ${{ always() }}
-      needs: [job1, job2]
+jobs:
+  job1:
+  job2:
+    needs: job1
+  job3:
+    if: ${{ always() }}
+    needs: [job1, job2]
 ```
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-not-requiring-successful-dependent-jobs
-1. [x] job3 uruchomi się po zakończeniu job1 i job2, niezależnie od tego, czy zakończyły się pomyślnie
-1. [ ] Nie można używać `if: ${{ always() }}` i `needs` razem. Workflow zakończy się błędem przy uruchomieniu.
-1. [ ] job3 uruchomi się po pomyślnym zakończeniu job1 i job2
-1. [ ] job3 uruchomi się po niepowodzeniu zarówno job1, jak i job2
+- [x] job3 uruchomi się po zakończeniu job1 i job2, niezależnie od tego, czy zakończyły się sukcesem
+- [ ] Nie możesz używać `if: ${{ always() }}` razem z `needs`. Workflow zakończy się błędem podczas uruchamiania.
+- [ ] job3 uruchomi się po pomyślnym zakończeniu job1 i job2
+- [ ] job3 uruchomi się po tym, jak zarówno job1, jak i job2 zakończą się błędem

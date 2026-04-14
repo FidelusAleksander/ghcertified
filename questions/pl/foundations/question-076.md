@@ -1,10 +1,8 @@
 ---
-title: "Pytanie 076"
-question: "Jakie są różne plany cenowe GitHub dla kont organizacyjnych? (Wybierz trzy.)"
+question: "Jakie są różne plany cenowe GitHub dla kont organizacyjnych?"
+documentation: "https://github.com/pricing"
 ---
 
-
-> https://github.com/pricing
 - [x] Free
 - [x] Team
 - [x] Enterprise
@@ -12,3 +10,4 @@ question: "Jakie są różne plany cenowe GitHub dla kont organizacyjnych? (Wybi
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+---

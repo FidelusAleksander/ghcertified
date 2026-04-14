@@ -1,6 +1,6 @@
 ---
-question: "Biorąc pod uwagę następującą konfigurację, ile zadań uruchomi GitHub Actions, gdy ten matryca zostanie oceniona?"
-title: "Pytanie 124"
+question: "Biorąc pod uwagę poniższą konfigurację, ile zadań uruchomi GitHub Actions, gdy ta macierz zostanie oceniona?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations"
 ---
 
 ```yaml
@@ -15,10 +15,8 @@ strategy:
         node: 14
 ```
 
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
-
-1. [ ] 4 zadania
-1. [x] 5 zadań
-1. [ ] 6 zadań
-1. [ ] 7 zadań
-1. [ ] Żadne zadanie nie zostanie uruchomione, ponieważ składnia jest nieprawidłowa.
+- [ ] 4 zadania
+- [x] 5 zadań
+- [ ] 6 zadań
+- [ ] 7 zadań
+- [ ] Żadne zadanie nie zostanie uruchomione, ponieważ składnia jest nieprawidłowa.

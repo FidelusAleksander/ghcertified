@@ -1,8 +1,7 @@
 ---
-title: "Pytanie 030"
-question: "Czy jeśli zatrzymasz środowisko GitHub Codespace, możesz wrócić do zmian później, jeśli ich nie zatwierdziłeś?"
+question: "Jeśli zatrzymasz środowisko GitHub Codespace, czy możesz później powrócić do wprowadzonych zmian, jeśli ich nie zatwierdziłeś?"
+documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace"
 ---
 
-> https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace
-1. [x] Tak, to domyślne zachowanie podczas zatrzymywania, a następnie uruchamiania środowiska GitHub Codespace.
-1. [ ] Nie, te zmiany zostaną utracone. Musisz je zatwierdzić, zanim zatrzymasz Codespace.
+- [x] Tak, jest to domyślne zachowanie podczas zatrzymywania, a następnie uruchamiania GitHub Codespace
+- [ ] Nie, te zmiany zostaną utracone. Musisz je zatwierdzić przed zatrzymaniem Codespace.

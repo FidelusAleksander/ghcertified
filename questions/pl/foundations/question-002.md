@@ -1,10 +1,8 @@
 ---
-title: "Pytanie 002"
-question: "Która z tych funkcji GitHub służy jako elastyczny arkusz kalkulacyjny, tablica zadań i mapa drogowa, integrujący się z problemami i pull requestami na GitHub, aby efektywnie planować i śledzić pracę?"
+question: "Która z tych funkcji GitHub pełni rolę elastycznego arkusza kalkulacyjnego, tablicy zadań i planu, który integruje się z issues i pull requests na GitHub w celu efektywnego planowania i śledzenia pracy?"
 ---
 
-
-1. [x] GitHub Project
-1. [ ] GitHub Copilot
-1. [ ] GitHub Repository
-1. [ ] GitHub Organization
+- [x] GitHub Project
+- [ ] GitHub Copilot
+- [ ] GitHub Repository
+- [ ] GitHub Organization

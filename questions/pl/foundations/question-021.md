@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 021"
 question: "Gdzie można znaleźć publicznie dostępne GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace"
 ---
 
-
-> https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace
-1. [x] GitHub Marketplace  
-1. [ ] GitHub Public Action Storage  
-1. [ ] Prywatne repozytoria GitHub  
-1. [ ] Tablice projektowe GitHub Actions  
+- [x] GitHub Marketplace
+- [ ] GitHub Public Action Storage
+- [ ] GitHub private repositories
+- [ ] GitHub Actions Project Boards
+---

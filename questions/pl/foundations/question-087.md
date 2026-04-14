@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 087"
 question: "Czym jest GitHub Mobile?"
+documentation: "https://docs.github.com/en/get-started/using-github/github-mobile"
 ---
 
-
-> https://docs.github.com/en/get-started/using-github/github-mobile
-1. [x] To aplikacja mobilna na iOS i Androida, która pozwala korzystać z GitHub na telefonie.
-1. [ ] To usługa umożliwiająca testowanie aplikacji mobilnych na prawdziwych urządzeniach.
-1. [ ] To usługa transferu danych GitHub dla petabajtów danych, w której samochód należący do GitHub przyjedzie do Twojej lokalizacji i przeniesie dane do Twojej lokalnej sieci.
-1. [ ] To usługa telemetryczna GitHub, która pozwala śledzić aktywność użytkowników na Twojej stronie internetowej lub aplikacji mobilnej.
+- [x] To aplikacja mobilna na iOS i Android, która umożliwia pracę z GitHub z poziomu telefonu.
+- [ ] To usługa, która pozwala na testowanie aplikacji mobilnych na rzeczywistych urządzeniach.
+- [ ] To usługa transferu danych GitHub dla petabajtów danych, w której samochód należący do GitHub przyjeżdża pod wskazany adres i przesyła dane do lokalnej sieci.
+- [ ] To usługa telemetrii GitHub, która umożliwia śledzenie aktywności użytkowników na Twojej stronie internetowej lub w aplikacji mobilnej.

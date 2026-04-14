@@ -1,10 +1,10 @@
 ---
-question: "Jakie role może pełnić członek zespołu w ramach zespołu GitHub?"
-title: "Pytanie 060"
+question: "Jakie role może pełnić członek zespołu w zespole GitHub?"
+documentation: "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams"
 ---
 
-> https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams
-1. [x] Opiekun zespołu, Członek zespołu  
-1. [ ] Kierownik projektu, Współtwórca, Obserwator  
-1. [ ] Właściciel repozytorium, Współpracownik repozytorium  
-1. [ ] Menedżer rozliczeń, Menedżer bezpieczeństwa, Menedżer aplikacji  
+- [x] Team maintainer, Team member
+- [ ] Project manager, Contributor, Viewer
+- [ ] Repository owner, Repository collaborator
+- [ ] Billing manager, Security manager, App manager
+---

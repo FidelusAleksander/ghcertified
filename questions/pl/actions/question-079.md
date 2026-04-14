@@ -1,14 +1,12 @@
 ---
-title: "Pytanie 079"
-question: "Na którym commit i gałęzi uruchamiane są zaplanowane workflows w GitHub Actions?"
+question: "Na którym commicie i gałęzi uruchamiane są zaplanowane workflowy w GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-
-1. [ ] Zaplanowane workflows uruchamiane są na określonym commicie w ostatnio zmodyfikowanej gałęzi.
-   > niepoprawne, zarówno określony commit, jak i ostatnio zmodyfikowana gałąź
-1. [ ] Zaplanowane workflows uruchamiane są na określonym commicie w gałęzi main.
-   > niepoprawne, zarówno określony commit, jak i gałąź main
-1. [x] Zaplanowane workflows uruchamiane są na najnowszym commicie w domyślnej gałęzi repozytorium.
-1. [ ] Zaplanowane workflows uruchamiane są na najnowszym commicie w gałęzi main.
-   > najnowszy commit jest poprawny, ale gałąź main nie
+- [ ] Zaplanowane workflowy uruchamiane są na konkretnym commicie w ostatnio zmodyfikowanej gałęzi.
+> niepoprawne, zarówno konkretny commit, jak i ostatnio zmodyfikowana gałąź
+- [ ] Zaplanowane workflowy uruchamiane są na konkretnym commicie w gałęzi main.
+> niepoprawne, zarówno konkretny commit, jak i gałąź main
+- [x] Zaplanowane workflowy uruchamiane są na najnowszym commicie w domyślnej gałęzi repozytorium.
+- [ ] Zaplanowane workflowy uruchamiane są na najnowszym commicie w gałęzi main.
+> najnowszy commit jest poprawny, ale gałąź main już nie

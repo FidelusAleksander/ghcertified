@@ -1,6 +1,6 @@
 ---
-question: "Jak można pominąć uruchomienie poniższego workflow podczas commitowania lub tworzenia PR?"
-title: "Pytanie 118"
+question: "Jak można pominąć wykonywanie kolejnego uruchomienia workflow podczas commitowania lub tworzenia PR?"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
 ---
 
 ```yaml
@@ -14,9 +14,7 @@ jobs:
 ...
 ```
 
->https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
-
-1. [x] Poprzez dodanie dowolnego z poniższych słów kluczowych w wiadomości commitu lub w tytule pull-requesta
+- [x] Poprzez umieszczenie jednego z poniższych słów kluczowych w wiadomości commit lub w tytule pull-request
 ```yaml
 [skip ci]
 [ci skip]
@@ -25,5 +23,5 @@ jobs:
 [actions skip]
 ```
 
-1. [ ] Podając `SKIP_WORKFLOW` w wiadomości commitu
-1. [ ] Powyższy workflow uruchomi się za każdym razem w przypadku zdarzenia push lub pull request bez wyjątków
+- [ ] Umieszczenie `SKIP_WORKFLOW` w wiadomości commit
+- [ ] Powyższy workflow będzie uruchamiany przy każdym zdarzeniu push lub pull request w każdym przypadku

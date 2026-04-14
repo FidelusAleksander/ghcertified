@@ -1,12 +1,11 @@
 ---
-title: "Pytanie 097"
-question: "Który punkt końcowy API można użyć do pobrania listy wszystkich alertów skanowania sekretów dla organizacji?"
+question: "Który punkt końcowy API można wykorzystać do pobrania listy wszystkich alertów skanowania tajemnic dla organizacji?"
+documentation: "https://docs.github.com/en/rest/secret-scanning/secret-scanning?apiVersion=2022-11-28#list-secret-scanning-alerts-for-an-organization"
 ---
 
-> https://docs.github.com/en/rest/secret-scanning/secret-scanning?apiVersion=2022-11-28#list-secret-scanning-alerts-for-an-organization
-1. [x] `GET /orgs/{org}/secret-scanning/alerts`
-1. [ ] `GET /enterprises/{enterprise}/secret-scanning/alerts`
-> To jest poprawny punkt końcowy dla przedsiębiorstwa, ale nie dla organizacji
-1. [ ] `GET /repos/{owner}/{repo}/secret-scanning/alerts`
-> To jest poprawny punkt końcowy dla repozytorium, ale nie dla organizacji
-1. [ ] `GET /github/{org}/secret-scanning/alerts`
+- [x] `GET /orgs/{org}/secret-scanning/alerts`
+- [ ] `GET /enterprises/{enterprise}/secret-scanning/alerts`
+> Jest to poprawny punkt końcowy dla enterprise, ale nie dla organizacji
+- [ ] `GET /repos/{owner}/{repo}/secret-scanning/alerts`
+> Jest to poprawny punkt końcowy dla repozytorium, ale nie dla organizacji
+- [ ] `GET /github/{org}/secret-scanning/alerts`

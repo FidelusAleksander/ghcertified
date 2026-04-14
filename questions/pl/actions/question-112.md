@@ -1,11 +1,10 @@
 ---
-question: "Jakiego poziomu dostępu wymaga usunięcie plików dziennika z przebiegów workflow w repozytorium GitHub?"
-title: "Pytanie 112"
+question: "Jaki poziom dostępu jest wymagany w GitHub Repository, aby usunąć pliki logów z przebiegów workflow?"
+documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs"
 ---
 
-> https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs
-1. [x] write 
-1. [ ] read
-1. [ ] admin
-1. [ ] owner
-
+- [x] write 
+- [ ] read
+- [ ] admin
+- [ ] owner
+---

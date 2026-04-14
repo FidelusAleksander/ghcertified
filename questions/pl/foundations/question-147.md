@@ -1,16 +1,15 @@
 ---
-title: "Pytanie 147"
-question: "Które z poniższych funkcji są dostępne w GitHub Copilot Business, ale niedostępne w indywidualnych planach Copilot? (Wybierz dwa)"
+question: "Które z poniższych funkcji są dostępne w GitHub Copilot Business, lecz nie są dostępne w indywidualnych planach Copilot?"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
-> **Więcej informacji**: [Plany dla GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)
-- [x] Centralne rozliczanie i zarządzanie miejscami dla organizacji  
-> Copilot Business zapewnia centralne rozliczanie i zarządzanie miejscami dla organizacji.  
-- [x] Kontrole polityki dla całej organizacji (np. włączanie/wyłączanie funkcji dla wszystkich użytkowników)  
-> Copilot Business pozwala na kontrole polityki dla całej organizacji, umożliwiając administratorom zarządzanie dostępnością funkcji dla wszystkich użytkowników.  
-- [ ] Uzupełnienia kodu AI i Copilot Chat w obsługiwanych IDE  
-> Uzupełnienia AI i Copilot Chat są dostępne we wszystkich planach.  
-- [ ] Dostęp dla zweryfikowanych studentów i nauczycieli bez opłat  
-> Bezpłatny dostęp dla zweryfikowanych studentów/nauczycieli dotyczy planów indywidualnych, a nie Business.  
-- [ ] Integracja z wymogami zgodności i audytu w przedsiębiorstwach  
-> Jest to bardziej powiązane z Copilot Enterprise, a nie Business.  
+- [x] Centralne fakturowanie i zarządzanie licencjami dla organizacji  
+> Copilot Business umożliwia centralne fakturowanie i zarządzanie licencjami dla organizacji.
+- [x] Kontrole polityki na poziomie organizacji (np. włączanie/wyłączanie funkcji dla wszystkich użytkowników)  
+> Copilot Business pozwala na kontrolę polityki na poziomie organizacji, umożliwiając administratorom zarządzanie dostępnością funkcji dla wszystkich użytkowników.
+- [ ] Propozycje kodu oparte na AI i Copilot Chat w obsługiwanych IDE  
+> Propozycje kodu oparte na AI oraz Copilot Chat są dostępne we wszystkich planach.
+- [ ] Dostęp dla zweryfikowanych uczniów i nauczycieli bez opłat  
+> Bezpłatny dostęp dla zweryfikowanych uczniów/nauczycieli dotyczy planów indywidualnych, a nie Business.
+- [ ] Integracja z wymaganiami zgodności i audytu przedsiębiorstwa  
+> Jest to bardziej związane z Copilot Enterprise, a nie Business.

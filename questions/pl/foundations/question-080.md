@@ -1,13 +1,10 @@
 ---
-title: "Pytanie 080"
-question: "Które z tych stwierdzeń na temat opcji wdrożeń GitHub Enterprise są prawdziwe? (Wybierz dwa.)"
+question: "Które z poniższych stwierdzeń dotyczących opcji wdrożenia GitHub Enterprise są prawdziwe?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options"
 ---
 
-
-
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
-- [x] GitHub Enterprise Cloud to zestaw zaawansowanych funkcji dostępnych na GitHub.com
-- [x] GitHub Enterprise Server to platforma hostowana samodzielnie, która działa na infrastrukturze firmy
-- [ ] GitHub Enterprise Server to zestaw zaawansowanych funkcji dostępnych na GitHub.com
-- [ ] GitHub Enterprise Cloud to platforma hostowana w chmurze, która działa na infrastrukturze chmurowej firmy
-- [ ] GitHub Enterprise Cloud to platforma hostowana samodzielnie, która działa na infrastrukturze firmy
+- [x] GitHub Enterprise Cloud to zestaw zaawansowanych funkcji na GitHub.com
+- [x] GitHub Enterprise Server to platforma hostowana lokalnie, działająca na infrastrukturze firmy
+- [ ] GitHub Enterprise Server to zestaw zaawansowanych funkcji na GitHub.com
+- [ ] GitHub Enterprise Cloud to platforma hostowana w chmurze, działająca na infrastrukturze chmurowej firmy
+- [ ] GitHub Enterprise Cloud to platforma hostowana lokalnie, działająca na infrastrukturze firmy

@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 088"
-question: "Do czego służy słowo kluczowe `matrix` w przepływie pracy GitHub Actions?"
+question: "Co robi słowo kluczowe `matrix` w przepływie pracy GitHub Actions?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-a-matrix-for-your-jobs"
 ---
 
+- [x] Pozwala definiować wiele konfiguracji zadań do uruchomienia równolegle
+- [ ] Ustawia zmienne środowiskowe dla zadania
+- [ ] Wyzwala przepływy pracy na podstawie harmonogramu
+- [ ] Definiuje tajne dane dla przepływu pracy
 
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-a-matrix-for-your-jobs
-1. [x] Umożliwia definiowanie wielu konfiguracji zadań do uruchamiania równolegle
-1. [ ] Ustawia zmienne środowiskowe dla zadania
-1. [ ] Wyzwala przepływy pracy na podstawie harmonogramu
-1. [ ] Definiuje sekrety dla przepływu pracy

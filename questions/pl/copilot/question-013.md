@@ -1,10 +1,9 @@
 ---
-title: "Pytanie 013"
-question: "Co się dzieje, gdy wykluczysz treść z GitHub Copilot? (Wybierz dwie odpowiedzi)"
+question: "Co się dzieje, gdy wykluczysz zawartość z GitHub Copilot?"
+documentation: "https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot"
 ---
 
-> https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot
-- [x] Uzupełnianie kodu nie będzie dostępne w wykluczonych plikach.
-- [x] Zawartość wykluczonych plików nie będzie wpływać na sugestie uzupełniania kodu w innych plikach.
-- [ ] Zawartość wykluczonych plików nadal będzie wpływać na odpowiedzi GitHub Copilot Chat.
-- [ ] Uzupełnianie kodu nie zostanie zmienione w wykluczonych plikach.
+- [x] Uzupełnianie kodu nie będzie dostępne w dotkniętych plikach.
+- [x] Zawartość w dotkniętych plikach nie będzie wpływać na sugestie uzupełniania kodu w innych plikach.
+- [ ] Zawartość w dotkniętych plikach będzie nadal wpływać na odpowiedzi GitHub Copilot Chat.
+- [ ] Uzupełnianie kodu pozostanie bez zmian w dotkniętych plikach.

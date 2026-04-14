@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 085"
-question: "Jaki jest cel użycia słowa kluczowego `with` w workflow GitHub Actions?"
+question: "Jaki jest cel użycia słowa kluczowego `with` w przepływie pracy GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
-1. [ ] Do definiowania zmiennych środowiskowych  
-1. [x] Do określenia parametrów wejściowych dla akcji  
-1. [ ] Do konfiguracji zależności  
-1. [ ] Do uruchomienia innego workflow  
+- [ ] Zdefiniowanie zmiennych środowiskowych
+- [x] Określenie parametrów wejściowych dla akcji
+- [ ] Konfiguracja zależności
+- [ ] Wyzwolenie innego przepływu pracy

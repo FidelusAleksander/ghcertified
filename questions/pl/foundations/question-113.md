@@ -1,12 +1,9 @@
 ---
-title: "Pytanie 113"
-question: "Który element Markdown nie jest poprawnie sparowany ze swoją składnią?"
+question: "Który element Markdown nie jest poprawnie sparowany z jego składnią?"
+documentation: "https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
-
-1. [ ] Nagłówek - `# Nagłówek`
-1. [ ] Tekst pogrubiony - `**pogrubiony**`
-1. [x] Kod liniowy - `'''kod'''`
-1. [ ] Hiperłącze - `[tytuł](https://)`
+- [ ] Nagłówek - `# Heading`
+- [ ] Pogrubiony tekst - `**bold**`
+- [x] Kod inline - `'''code'''`
+- [ ] Hiperlink - `[title](https://)`

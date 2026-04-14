@@ -1,10 +1,9 @@
 ---
 question: "Co wskazują alerty Dependabot w GitHub?"
-title: "Pytanie 034"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts
-1. [x] Obecność podatnej zależności lub złośliwego oprogramowania w Twoim repozytorium  
-1. [ ] Nieaktualne zależności, które należy zaktualizować  
-1. [ ] Błędy w plikach konfiguracyjnych zależności  
-1. [ ] Konflikty między różnymi zależnościami  
+- [x] Obecność podatnej zależności lub złośliwego oprogramowania w Twoim repository
+- [ ] Nieaktualne zależności wymagające aktualizacji
+- [ ] Błędy w plikach konfiguracyjnych zależności
+- [ ] Konflikty między różnymi zależnościami

@@ -1,13 +1,12 @@
 ---
-title: "Pytanie 078"
-question: "W ramach którego planu cenowego GitHub możesz tworzyć nieograniczoną liczbę publicznych repozytoriów?"
+question: "W ramach którego planu cenowego GitHub można tworzyć nieograniczoną liczbę publicznych repozytoriów?"
+documentation: "https://github.com/pricing"
 ---
 
+- [x] Wszystkie
+- [ ] Enterprise
+- [ ] Pro
+- [ ] Team
+- [ ] Team i Enterprise
+- [ ] Free
 
-> https://github.com/pricing
-1. [x] Wszystkie
-1. [ ] Enterprise
-1. [ ] Pro
-1. [ ] Team
-1. [ ] Team i Enterprise
-1. [ ] Free

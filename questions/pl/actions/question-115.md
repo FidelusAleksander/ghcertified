@@ -1,11 +1,10 @@
 ---
-question: "Jakiego poziomu uprawnień wymaga ponowne uruchomienie workflowów"
-title: "Pytanie 115"
+question: "Jakie uprawnienia są wymagane do ponownego uruchomienia workflows"
+documentation: "https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs"
 ---
 
-> https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs
-1. [x] write 
-1. [ ] read
-1. [ ] admin
-1. [ ] owner
-
+- [x] write 
+- [ ] read
+- [ ] admin
+- [ ] owner
+---

@@ -1,12 +1,11 @@
 ---
-title: "Pytanie 121"  
-question: "Która funkcja dostarcza wbudowane wykresy lub wizualizacje dotyczące aktywności i kondycji repozytorium?"  
+question: "Która funkcja umożliwia przeglądanie wstępnie przygotowanych wykresów lub wizualizacji aktywności i kondycji repozytorium?"  
 draft: false  
+documentation: "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs"
 ---
 
-> **Więcej informacji**: [O narzędziu Repository Insights](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs)
+- [x] Insights tab  
+- [ ] GitHub Actions  
+- [ ] GitHub Projects  
+- [ ] GitHub Discussions  
 
-1. [x] Zakładka Insights  
-1. [ ] GitHub Actions  
-1. [ ] GitHub Projects  
-1. [ ] GitHub Discussions  

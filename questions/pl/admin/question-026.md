@@ -1,12 +1,11 @@
 ---
-question: "Które z poniższych są dodatkowymi funkcjami oferowanymi przez GitHub Enterprise Cloud w porównaniu do planu GitHub Free? (wybierz cztery.)"
-title: "Pytanie 026"
+question: "Które z poniższych funkcji dodatkowych są dostępne w GitHub Enterprise Cloud w porównaniu z planem GitHub Free?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud
 - [x] Uwierzytelnianie SAML
-- [x] Dodatkowe minuty dla GitHub Actions
-- [x] Prywatnie publikowane strony GitHub Pages
+- [x] Dodatkowe minuty GitHub Actions
+- [x] Prywatnie opublikowane witryny GitHub Pages
 - [x] Możliwość ograniczenia powiadomień e-mail do zweryfikowanych domen
-- [ ] Darmowe publiczne repozytoria dla wszystkich użytkowników
+- [ ] Darmowe repozytoria publiczne dla wszystkich użytkowników
 - [ ] Nieograniczone prywatne repozytoria dla indywidualnych użytkowników

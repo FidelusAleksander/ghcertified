@@ -1,10 +1,9 @@
 ---
-question: "Co robi domyślna konfiguracja analizy CodeQL w GitHubie?"
-title: "Pytanie 037"
+question: "Co robi domyślna konfiguracja analizy CodeQL w GitHub?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql
-1. [x] Automatycznie wybiera języki do analizy, zestaw zapytań do uruchomienia oraz zdarzenia wyzwalające skany
-1. [ ] Wymaga ręcznego określenia języków i zapytań dla każdego skanu
-1. [ ] Skanuje kod tylko raz w miesiącu
-1. [ ] Wymaga oddzielnej instalacji zewnętrznych narzędzi skanujących
+- [x] Automatycznie wybiera języki do analizy, zestaw zapytań do uruchomienia oraz zdarzenia, które wywołują skanowania
+- [ ] Wymaga ręcznego określenia języków i zapytań dla każdego skanowania
+- [ ] Skanuje kod tylko raz na miesiąc
+- [ ] Wymaga osobnej instalacji narzędzi do skanowania firm trzecich

@@ -1,10 +1,9 @@
 ---
-question: "Która z poniższych cech jest kluczową funkcją GitHub Enterprise Server?"
-title: "Pytanie 032"
+question: "Która z poniższych jest kluczową funkcją GitHub Enterprise Server?"
+documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
 ---
 
-> https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] Działa na Twojej infrastrukturze i jest zarządzany przez zdefiniowane przez Ciebie kontrole dostępu i bezpieczeństwa
-1. [ ] Nieograniczone publiczne i prywatne repozytoria na GitHub.com
-1. [ ] Darmowy dostęp do GitHub Actions i GitHub Packages
-1. [ ] Automatyczne wdrożenie do dowolnego dostawcy usług w chmurze
+- [x] Działa na Twojej infrastrukturze i podlega określonym przez Ciebie kontrolom dostępu i bezpieczeństwa
+- [ ] Nieograniczone publiczne i prywatne repositories na GitHub.com
+- [ ] Bezpłatny dostęp do GitHub Actions i GitHub Packages
+- [ ] Automatyczne wdrożenie do dowolnego dostawcy usług chmurowych

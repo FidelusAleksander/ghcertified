@@ -1,8 +1,7 @@
 ---
-title: "Pytanie 062"
-question: "Jaki jest efekt dodania słowa kluczowego `paths-ignore` do przepływu pracy GitHub Actions do skanowania kodu?"
+question: "Jakie jest działanie dodania słowa kluczowego `paths-ignore` do przepływu pracy skanowania kodu GitHub Actions?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#avoiding-unnecessary-scans-of-pull-requests"
 ---
-
 
 ```yaml
 .github/workflows/codeql-analysis.yml
@@ -15,8 +14,7 @@ on:
       - '**/*.txt'
 
 ```
-> https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#avoiding-unnecessary-scans-of-pull-requests
-1. [x] Unikanie niepotrzebnych skanowań w przypadku wprowadzania zmian w plikach nieistotnych dla analizy.
-1. [ ] Informuje CodeQL, aby pominąć wszystkie pliki `*.txt` i `*.md` w analizie.
-1. [ ] Zapobieganie wykonaniu analizy CodeQL na żądaniach ściągnięcia, które wprowadzają zmiany w plikach o określonych rozszerzeniach.
-1. [ ] Kontrole żądań ściągnięcia będą ignorować wszelkie podatności CodeQL znalezione w plikach `*.txt` i `*.md`.
+- [x] Unikanie niepotrzebnych skanów w przypadku zmiany plików, które nie są istotne dla analizy.
+- [ ] Informuje CodeQL, aby pominąć wszystkie pliki `*.txt` i `*.md` w analizie. 
+- [ ] Zapobieganie uruchamianiu analizy CodeQL w przypadku pull requestów zmieniających pliki o określonych rozszerzeniach.
+- [ ] Kontrole pull requestów ignorują wszelkie podatności CodeQL znalezione w plikach `*.txt` i `*.md`.

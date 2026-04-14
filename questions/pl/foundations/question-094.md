@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 094"
-question: "Czym są wersje robocze pull requestów?"
+question: "Czym są robocze pull requests?"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests"
 ---
 
-
-> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests  
-1. [x] Wersje robocze pull requestów to pull requesty, które nie są jeszcze gotowe do przeglądu.  
-1. [ ] Wersje robocze pull requestów to pull requesty, które zostały już przejrzane, ale nie zostały scalone.  
-1. [ ] Wersje robocze pull requestów to pull requesty, które zostały już przejrzane, ale nie zostały zatwierdzone.  
-1. [ ] Wersje robocze pull requestów to szablony do tworzenia nowych pull requestów.  
+- [x] Robocze pull requests to pull requests, które nie są jeszcze gotowe do przeglądu.
+- [ ] Robocze pull requests to pull requests, które zostały już przejrzane, ale nie zostały scalone.
+- [ ] Robocze pull requests to pull requests, które zostały już przejrzane, ale nie zostały zatwierdzone.
+- [ ] Robocze pull requests to szablony do tworzenia nowych pull requests.

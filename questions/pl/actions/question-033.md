@@ -1,9 +1,8 @@
 ---
-question: "Czy to stwierdzenie jest prawdziwe? `Not all steps run actions, but all actions run as a step`"
-title: "Pytanie 033"
+question: "Czy to zdanie jest prawdziwe? `Nie wszystkie kroki uruchamiają akcje, ale wszystkie akcje są uruchamiane jako krok`"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps
-1. [x] Prawda
-1. [ ] Fałsz
-> Kroki mogą, ale nie muszą uruchamiać actions (np. wykonując polecenie run)
+- [x] Prawda
+- [ ] Fałsz
+> Kroki mogą, ale nie muszą uruchamiać akcji (np. wykonanie polecenia run)

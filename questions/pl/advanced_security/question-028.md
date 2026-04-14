@@ -1,12 +1,11 @@
 ---
-title: "Pytanie 028"
-question: "W jakim formacie można wyeksportować wykres zależności GitHub swojego repozytorium?"
+question: "W jakim formacie możesz eksportować grafik zależności GitHub dla swojego repozytorium?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository
-1. [x] SPDX  
-1. [ ] YAML  
-1. [ ] JSON  
-1. [ ] XML  
-1. [ ] CSV  
+- [x] SPDX
+- [ ] YAML
+- [ ] JSON
+- [ ] XML
+- [ ] CSV
+---

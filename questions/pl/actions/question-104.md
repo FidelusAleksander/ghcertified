@@ -1,12 +1,9 @@
 ---
-question: "Jakie jest zalecane podejście do traktowania zmiennych środowiskowych w GitHub Actions, niezależnie od używanego systemu operacyjnego i powłoki?"
-title: "Pytanie 104"
+question: "Jakie są zalecane praktyki dotyczące traktowania zmiennych środowiskowych w GitHub Actions, niezależnie od używanego systemu operacyjnego i powłoki?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable"
 ---
 
-
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable
-1. [x] traktować zmienne środowiskowe jako rozróżniające wielkość liter
-1. [ ] używać wyłącznie wielkich liter w nazwach zmiennych środowiskowych
-1. [ ] ignorować rozróżnianie wielkości liter, ponieważ GitHub Actions obsługuje to automatycznie
-1. [ ] polegać na zachowaniu używanego systemu operacyjnego
-
+- [x] traktować zmienne środowiskowe jako rozróżniające wielkość liter
+- [ ] używać wyłącznie wielkich liter w nazwach zmiennych środowiskowych
+- [ ] ignorować rozróżnianie wielkości liter, ponieważ GitHub Actions obsługuje je automatycznie
+- [ ] polegać na zachowaniu używanego systemu operacyjnego

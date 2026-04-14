@@ -1,9 +1,9 @@
 ---
-title: "Pytanie 138"
-question: "Które polecenie Git daje informacje o tym, jak używać Gita?"
+question: "Które polecenie Git dostarcza informacji o tym, jak korzystać z Git?"
+documentation: "https://git-scm.com/docs/git#_getting_help"
 ---
 
-> **Więcej informacji**: [Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
-1. [ ] git status
-1. [ ] git init
-1. [x] git help
+- [ ] git status
+- [ ] git init
+- [x] git help
+---

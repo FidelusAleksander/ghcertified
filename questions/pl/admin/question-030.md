@@ -1,10 +1,9 @@
 ---
-question: "Do czego przede wszystkim służy GitHub Enterprise Server?"
-title: "Pytanie 030"
+question: "Do czego głównie zaprojektowano GitHub Enterprise Server?"
+documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
 ---
 
-> https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] Samodzielnie hostowana platforma do tworzenia oprogramowania w ramach przedsiębiorstwa
-1. [ ] Platforma chmurowa do tworzenia oprogramowania dla projektów open-source
-1. [ ] Platforma dla indywidualnych programistów do hostowania osobistych projektów
-1. [ ] Usługa do wdrażania i zarządzania aplikacjami konteneryzowanymi
+- [x] Platforma do tworzenia oprogramowania hostowana lokalnie w ramach przedsiębiorstwa
+- [ ] Platforma do tworzenia oprogramowania w chmurze dla projektów open source
+- [ ] Platforma dla indywidualnych programistów do hostowania projektów osobistych
+- [ ] Usługa do wdrażania i zarządzania aplikacjami konteneryzowanymi

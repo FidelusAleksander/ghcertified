@@ -1,10 +1,9 @@
 ---
-question: "Które punkty końcowe API GitHub umożliwiają zarządzanie Twoim przedsiębiorstwem? (Wybierz sześć.)"
-title: "Pytanie 007"
+question: "Jakie punkty końcowe API GitHub są dostępne do zarządzania Twoim Enterprise?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
-- [x] Statystyki administracyjne
+- [x] Statystyki administratora
 - [x] Dziennik audytu
 - [x] Rozliczenia
 - [x] Bezpieczeństwo kodu i analiza
@@ -12,3 +11,4 @@ title: "Pytanie 007"
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Projekty
+

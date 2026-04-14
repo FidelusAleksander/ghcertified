@@ -1,23 +1,21 @@
 ---
-question: "Jak możesz zapewnić, że workflow o nazwie `Deploy Prod` zawsze działa najwyżej jeden na raz?"
-title: "Pytanie 028"
+question: "Jak można upewnić się, że przepływ pracy o nazwie `Deploy Prod` zawsze działa najwyżej jeden na raz?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
-
-1. [x] Użyj `concurrency` na poziomie workflow
+- [x] Użyj `concurrency` na poziomie przepływu pracy
 ```yaml
 concurrency: ${{ github.workflow }}
 ```
-1. [ ] Użyj `queue` na poziomie workflow
+- [ ] Użyj `queue` na poziomie przepływu pracy
 ```yaml
 queue: ${{ github.workflow }}
 ```
-1. [ ] Użyj `order` na poziomie workflow
+- [ ] Użyj `order` na poziomie przepływu pracy
 ```yaml
 order: ${{ github.workflow }}
 ```
-1. [ ] Użyj `parallel` na poziomie workflow
+- [ ] Użyj `parallel` na poziomie przepływu pracy
 ```yaml
 parallel: ${{ github.workflow }}
 ```

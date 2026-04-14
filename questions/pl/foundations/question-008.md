@@ -1,12 +1,10 @@
 ---
-title: "Pytanie 008"
-question: "Które z tych przepływów pracy są wbudowanymi automatyzacjami w GitHub Projects? (Wybierz dwa.)"
+question: "Które z tych przepływów pracy są wbudowanymi automatyzacjami w GitHub Projects?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations
-- [x] Kiedy zgłoszenia lub pull requesty w Twoim projekcie są zamknięte, ich status zostaje ustawiony na Zrobione.
-- [x] Kiedy pull requesty w Twoim projekcie są scalone, ich status zostaje ustawiony na Zrobione.
-- [ ] Kiedy zgłoszenia lub pull requesty są otwierane w Twoim projekcie, ich status zostaje ustawiony na Zrobione.
-- [ ] Kiedy nowy współtwórca zostaje dodany do repozytorium, nieprzypisane zgłoszenia zostają mu przypisane.
-- [ ] Kiedy GitHub Action zostaje wyzwolony, tworzony jest nowy element w Twoim GitHub Project.
+- [x] Gdy Issues lub Pull Requests w Twoim projekcie zostaną zamknięte, ich status zostanie ustawiony na Done.
+- [x] Gdy Pull Requests w Twoim projekcie zostaną scalone, ich status zostanie ustawiony na Done.
+- [ ] Gdy Issues lub Pull Requests zostaną otwarte w Twoim projekcie, ich status zostanie ustawiony na Done.
+- [ ] Gdy nowy współtwórca zostanie dodany do Repository, nieprzypisane Issues zostają przypisane do niego.
+- [ ] Gdy GitHub Action zostanie uruchomione, utwórz nowy element w swoim GitHub Project.

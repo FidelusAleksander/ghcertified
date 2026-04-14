@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 082"
-question: "Jak możesz upewnić się, że zadanie uruchamia się tylko na określonej gałęzi?"
+question: "Jak można upewnić się, że zadanie będzie uruchamiane tylko na konkretnym branchu?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters"
 ---
 
+- [x] Poprzez użycie filtra branches
+- [ ] Poprzez użycie filtra runs-on
+- [ ] Poprzez użycie filtra jobs
+- [ ] Poprzez użycie słowa kluczowego branch
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters
-1. [x] Używając filtru branches
-1. [ ] Używając filtru runs-on
-1. [ ] Używając filtru jobs
-1. [ ] Używając słowa kluczowego branch

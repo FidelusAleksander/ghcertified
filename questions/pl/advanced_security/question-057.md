@@ -1,11 +1,9 @@
 ---
-title: "Pytanie 057"
-question: "Korzystając z zewnętrznego systemu CI do skanowania kodu, jakiego narzędzia GitHub potrzebujesz, aby przeanalizować bazę kodu?"
+question: "Podczas korzystania z zewnętrznego systemu CI do przeprowadzania skanowania kodu, jakiego narzędzia GitHub potrzebujesz, aby przeanalizować bazę kodu?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#about-using-code-scanning-with-your-existing-ci-system
-1. [x] Nie potrzebujesz konkretnego narzędzia GitHub, każde narzędzie do analizy statycznej, które może generować wyniki w formacie SARIF, będzie działać.
-1. [ ] Musisz zainstalować narzędzie GitHub Code Scanning.
-1. [ ] Musisz zainstalować CodeQL CLI.
-1. [ ] Musisz zainstalować GitHub CLI.
+- [x] Nie potrzebujesz konkretnego narzędzia GitHub, każdy program do analizy statycznej, który potrafi generować wyniki w formacie SARIF, będzie odpowiedni.
+- [ ] Musisz zainstalować narzędzie GitHub Code Scanning.
+- [ ] Musisz zainstalować CodeQL CLI.
+- [ ] Musisz zainstalować GitHub CLI.

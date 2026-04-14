@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 087"
-question: "Jak można buforować zależności, aby przyspieszyć wykonywanie workflow?"
+question: "Jak można buforować zależności w celu przyspieszenia wykonywania workflow?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies"
 ---
 
-
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies
-1. [ ] Używając słowa kluczowego cache
-1. [x] Używając akcji actions/cache
-1. [ ] Przechowując je w repository
-1. [ ] Używając słowa kluczowego store
+- [ ] Używając słowa kluczowego cache
+- [x] Korzystając z akcji actions/cache
+- [ ] Przechowując je w repository
+- [ ] Korzystając ze słowa kluczowego store
+---

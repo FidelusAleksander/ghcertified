@@ -1,13 +1,12 @@
 ---
-question: "Podczas tworzenia niestandardowych GitHub Actions - w jakim pliku musi być zdefiniowane całe `metadata` akcji?"
-title: "Pytanie 054"
+question: "Podczas tworzenia niestandardowych GitHub Actions - w jakim pliku należy zdefiniować wszystkie dane `metadata` akcji?"
+documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions"
 ---
 
-Przykłady metadata: nazwa, opis, wyjścia lub wymagane dane wejściowe  
-> https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions  
-1. [x] W pliku `action.yml` lub `action.yaml` w repozytorium akcji  
-1. [ ] W pliku `README` repozytorium  
-> Chociaż to dobra praktyka, nie jest to wymagane, aby akcja działała  
-1. [ ] Edytowane w interfejsie użytkownika GitHub Marketplace po opublikowaniu do udostępnienia  
-1. [ ] W pliku `action.yml` lub `action.yaml` w repozytorium akcji, ale nie jest to wymagane, jeśli akcja nie jest przeznaczona do udostępnienia publicznego  
-> Wszystkie akcje wymagają pliku metadata.  
+Przykłady danych: nazwa, opis, dane wyjściowe lub wymagane dane wejściowe
+- [x] W pliku `action.yml` lub `action.yaml` w repozytorium akcji
+- [ ] W pliku `README` repozytorium
+> Chociaż jest to dobra praktyka, nie jest to wymagane do działania akcji
+- [ ] Jest edytowany w interfejsie użytkownika GitHub Marketplace podczas publikacji w celu udostępnienia
+- [ ] W pliku `action.yml` lub `action.yaml` w repozytorium akcji, ale nie jest wymagany, jeśli akcja nie ma być udostępniana i wykorzystywana przez innych
+> Wszystkie akcje wymagają pliku z danymi metadata.

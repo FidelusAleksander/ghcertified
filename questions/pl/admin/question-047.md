@@ -1,9 +1,7 @@
 ---
-question: "Które z poniższych NIE są uznawanymi rolami w organizacji GitHub? (Wybierz trzy.)"
-title: "Pytanie 047"
+question: "Które z poniższych NIE są uznawanymi rolami w organizacji GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles"
 ---
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles
 
 - [ ] Organization owners
 - [ ] Organization members

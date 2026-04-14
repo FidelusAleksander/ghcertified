@@ -1,10 +1,9 @@
 ---
-question: "Jak przedsiębiorstwa mogą śledzić swoje wykorzystanie GitHub Actions?"
-title: "Pytanie 078"
+question: "Jak przedsiębiorstwa mogą śledzić wykorzystanie GitHub Actions?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage
-1. [x] Korzystając z webhooków, aby subskrybować informacje o zadaniach i uruchomieniach workflow, oraz potencjalnie używając systemu archiwizacji danych.
-1. [ ] Ręcznie licząc uruchomienia workflow i zadania w każdym repozytorium na koniec każdego miesiąca.
-1. [ ] Dzięki nieograniczonemu dostępowi do wewnętrznego pulpitu analitycznego GitHub bez dodatkowej konfiguracji.
-1. [ ] Wykorzystanie GitHub Actions nie może być śledzone; przedsiębiorstwa muszą oszacować wykorzystanie na podstawie opinii programistów.
+- [x] Korzystając z webhooków do subskrybowania informacji o zadaniach i uruchomieniach workflow, oraz potencjalnie wykorzystując system archiwizacji danych.
+- [ ] Poprzez ręczne zliczanie uruchomień workflow i zadań w każdym repository na koniec każdego miesiąca.
+- [ ] Dzięki nieograniczonemu dostępowi do wewnętrznego panelu analitycznego GitHub bez dodatkowej konfiguracji.
+- [ ] Wykorzystanie GitHub Actions nie może być śledzone; przedsiębiorstwa muszą oszacować użycie na podstawie opinii od programistów.

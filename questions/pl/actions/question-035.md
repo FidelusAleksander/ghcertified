@@ -1,30 +1,29 @@
 ---
-question: "Aby zapobiec niepowodzeniu zadania, gdy jeden z kroków zawiedzie, możesz użyć:"
-title: "Pytanie 035"
+question: "Aby zapobiec awarii zadania, gdy jeden z kroków zawodzi, możesz użyć:"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error
-1. [x] flagi `continue-on-error` w zawodzącym kroku
+- [x] flagi `continue-on-error` w zawodzącym kroku
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        continue-on-error: true
+steps:
+    - uses: my-org/failing-action@v1
+      continue-on-error: true
 ```
-1. [ ] flagi `ignore-error` w zawodzącym kroku
+- [ ] flagi `ignore-error` w zawodzącym kroku
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        ignore-error: true
+steps:
+    - uses: my-org/failing-action@v1
+      ignore-error: true
 ```
-1. [ ] warunku `failure()` w zawodzącym kroku
+- [ ] warunku `failure()` w zawodzącym kroku
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        if: failure()
+steps:
+    - uses: my-org/failing-action@v1
+      if: failure()
 ```
-1. [ ] warunku `always()` w zawodzącym kroku
+- [ ] warunku `always()` w zawodzącym kroku
 ```yaml
-  steps:
-      - uses: my-org/failing-action@v1
-        if: always()
+steps:
+    - uses: my-org/failing-action@v1
+      if: always()
 ```

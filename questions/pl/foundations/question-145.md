@@ -1,9 +1,8 @@
 ---
-title: "Pytanie 145"
-question: "Która czynność jest konieczna do dodania pliku do repozytorium GitHub?"
+question: "Jakie działanie jest konieczne, aby dodać plik do repozytorium GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization"
 ---
 
-> **Więcej informacji**: [Poziomy uprawnień do repozytorium w organizacji](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization)
-1. [x] Bycie właścicielem repozytorium.
-1. [ ] Posiadanie dostępu tylko do odczytu do repozytorium.
-1. [ ] Posiadanie dostępu do zapisu do repozytorium.
+- [ ] Bycie właścicielem repozytorium.
+- [ ] Posiadanie dostępu do repozytorium w trybie tylko do odczytu.
+- [x] Posiadanie dostępu do repozytorium w trybie zapisu.

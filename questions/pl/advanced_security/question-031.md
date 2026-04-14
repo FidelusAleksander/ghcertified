@@ -1,13 +1,11 @@
 ---
-title: "Pytanie 031"
-question: "Które z tych stwierdzeń dotyczących Alertów Dependabot są prawdziwe? (Wybierz trzy.)"
+question: "Które z poniższych stwierdzeń dotyczących Dependabot Alerts są prawdziwe?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts
-- [x] Częściowo polegają na bazie danych GitHub Advisory Database
-- [x] Aby włączyć Alerty Dependabot, najpierw musisz włączyć Dependency Graph w swoim repozytorium
-- [x] Gdy GitHub wykryje podatną zależność, generuje alert Dependabot i wyświetla go na karcie Bezpieczeństwo w repozytorium
-- [ ] Alerty Dependabot są domyślnie włączone dla wszystkich repozytoriów
-- [ ] Alerty Dependabot są domyślnie włączone dla wszystkich publicznych repozytoriów
-- [ ] Alerty Dependabot informują, że Twoje repozytorium używa nieaktualnej wersji pakietu
+- [x] Częściowo opierają się na GitHub Advisory Database
+- [x] Aby włączyć Dependabot Alerts, najpierw musisz mieć włączony Dependency Graph w swoim repozytorium
+- [x] Gdy GitHub wykryje podatną na zagrożenia zależność, generuje alert Dependabot i wyświetla go na karcie Security dla repozytorium 
+- [ ] Dependabot Alerts są domyślnie włączone we wszystkich repozytoriach
+- [ ] Dependabot Alerts są domyślnie włączone we wszystkich publicznych repozytoriach
+- [ ] Dependabot Alerts informują Cię, że Twoje repozytorium używa nieaktualnej wersji pakietu

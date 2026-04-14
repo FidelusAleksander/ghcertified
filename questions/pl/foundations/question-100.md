@@ -1,10 +1,8 @@
 ---
-title: "Pytanie 100"
-question: "Czy można zmienić gista z publicznego na tajny po jego utworzeniu?"
+question: "Czy można zmienić status gist z publicznego na tajny po jego utworzeniu?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-1. [ ] Tak
-1. [x] Nie
-> Po utworzeniu gista nie można go zmienić z publicznego na tajny.
+- [ ] Tak
+- [x] Nie
+> Po utworzeniu gist nie można zmienić jego statusu z publicznego na tajny.

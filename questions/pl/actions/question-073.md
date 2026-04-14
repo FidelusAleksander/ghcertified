@@ -1,6 +1,6 @@
 ---
 question: "Ile zadań zostanie wykonanych w poniższym workflow?"
-title: "Pytanie 073"
+documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy"
 ---
 
 ```yaml
@@ -17,9 +17,7 @@ jobs:
     steps:
       - run: echo "Hello ${{ matrix.color }} ${{ matrix.pet }}"
 ```
-> https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [x] 5
-1. [ ] 4
-1. [ ] 6
-1. [ ] 7
-
+- [x] 5
+- [ ] 4
+- [ ] 6
+- [ ] 7

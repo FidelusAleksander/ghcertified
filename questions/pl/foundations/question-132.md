@@ -1,13 +1,11 @@
 ---
-title: "Pytanie 132"  
-question: "Które z tych stwierdzeń dotyczących przypiętych elementów na Twoim profilu GitHub jest prawdziwe?"  
+question: "Które z poniższych stwierdzeń dotyczących przypiętych elementów na Twoim profilu GitHub jest prawdziwe?"  
 draft: false  
+documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
 ---
 
-> **Więcej informacji**: [Przypinanie elementów do profilu](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
-
-1. [ ] Możesz przypiąć maksymalnie 10 repozytoriów na swoim profilu.  
-1. [x] Możesz przypiąć maksymalnie sześć repozytoriów lub gistów na swoim profilu dla szybkiego dostępu.  
-  > **Poprawne**. GitHub pozwala przypiąć maksymalnie sześć elementów (repozytoriów lub gistów).  
-1. [ ] Możesz przypinać tylko repozytoria publiczne, ale nie prywatne.  
-1. [ ] Przypięcie elementu usuwa go z listy repozytoriów.  
+- [ ] Możesz przypiąć do 10 repozytoriów na swoim profilu.  
+- [x] Możesz przypiąć do sześciu repozytoriów lub gists na swoim profilu dla szybkiego dostępu.  
+> **Poprawne**. GitHub umożliwia przypięcie do sześciu elementów (repozytoriów lub gists).  
+- [ ] Możesz przypiąć tylko publiczne repozytoria, a nie prywatne.  
+- [ ] Przypięcie elementu usuwa go z listy repozytoriów.  

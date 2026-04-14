@@ -1,11 +1,9 @@
 ---
-question: "Dave tworzy szablonowy workflow dla swojej organizacji. Gdzie Dave musi przechowywać pliki workflow i powiązane pliki metadata dla szablonowego workflow?"
-title: "Pytanie 110"
+question: "Dave tworzy szablonowy workflow dla swojej organizacji. Gdzie Dave musi przechowywać pliki workflow oraz powiązane pliki metadanych dla szablonowego workflow?"
+documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
-1. [x] wewnątrz katalogu o nazwie `workflow-templates` w repozytorium o nazwie `.github`
-1. [ ] wewnątrz katalogu o nazwie `workflow-templates` w bieżącym repozytorium
-1. [ ] wewnątrz katalogu o nazwie `.github/org-templates`
-1. [ ] wewnątrz katalogu o nazwie `.github/workflow-templates`
+- [x] w katalogu o nazwie `workflow-templates` w repozytorium nazwanym `.github`
+- [ ] w katalogu o nazwie `workflow-templates` w bieżącym repozytorium
+- [ ] w katalogu o nazwie `.github/org-templates`
+- [ ] w katalogu o nazwie `.github/workflow-templates`

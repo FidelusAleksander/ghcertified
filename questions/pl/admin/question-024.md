@@ -1,14 +1,13 @@
 ---
-question: "Jakie są dostępne metody uwierzytelniania w GitHub? (Wybierz sześć.)"
-title: "Pytanie 024"
+question: "Jakie są dostępne metody uwierzytelniania w GitHub?"
+documentation: "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github"
 ---
 
-> https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github
 - [x] Nazwa użytkownika i hasło (z opcjonalnym 2FA)
 - [x] Personal access token (PAT)
-- [x] Klucz SSH
-- [x] SAML SSO dla kont enterprise
-- [x] Uwierzytelnianie za pomocą klucza dostępu (Passkey authentication)
-- [x] Tokeny OAuth dla integracji z aplikacjami zewnętrznymi
-- [ ] System kodów QR powiązanych z urządzeniem mobilnym
-- [ ] Uwierzytelnianie przez konta w mediach społecznościowych, takich jak Facebook czy Google
+- [x] SSH KEY
+- [x] SAML SSO dla kont Enterprise
+- [x] Passkey authentication
+- [x] OAuth tokens do integracji aplikacji zewnętrznych
+- [ ] System kodów QR powiązany z urządzeniem mobilnym
+- [ ] Uwierzytelnianie przez konta w mediach społecznościowych, takich jak Facebook lub Google

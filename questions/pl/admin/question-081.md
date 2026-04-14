@@ -1,10 +1,9 @@
 ---
-question: "Których runnerów musisz używać z GitHub Actions, gdy na twoim przedsiębiorstwie jest włączona lista dozwolonych adresów IP?"
-title: "Pytanie 081"
+question: "Których runnerów należy używać z GitHub Actions, gdy na Twoim Enterprise jest włączona lista dozwolonych adresów IP?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-actions-with-an-ip-allow-list"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#using-github-actions-with-an-ip-allow-list
-1. [x] Self-hosted runners lub GitHub-hosted larger runners ze statycznymi zakresami adresów IP
-1. [ ] Tylko GitHub-hosted standard runners
-1. [ ] Dowolny runner bez uwzględniania adresu IP
-1. [ ] Tylko runnerów w sieci organizacji bez ograniczeń adresów IP
+- [x] Self-hosted runners lub GitHub-hosted larger runners ze statycznymi zakresami adresów IP
+- [ ] Tylko GitHub-hosted standard runners
+- [ ] Dowolny runner bez uwzględnienia adresu IP
+- [ ] Tylko runnerzy w sieci organizacji bez ograniczeń IP

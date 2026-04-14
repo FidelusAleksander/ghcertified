@@ -1,14 +1,13 @@
 ---
-title: "Pytanie 009"
-question: "Jakie są różne opcje umożliwiające automatyzację operacji w Twoim projekcie na GitHubie? (Wybierz trzy.)"
+question: "Jakie są różne opcje umożliwiające automatyzację operacji w Twoim Projekcie GitHub?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/
-- [x] Przepływy pracy projektu (Project workflows)
+- [x] Project workflows
 - [x] GitHub GraphQL API
 - [x] GitHub Actions
 - [ ] GitHub Copilot
 - [ ] GitHub Charts
 - [ ] GitHub Dependabot
-- [ ] Elementy projektu (Project items)
+- [ ] Project items
+---

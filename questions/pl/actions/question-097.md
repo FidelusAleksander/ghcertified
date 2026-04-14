@@ -1,10 +1,9 @@
 ---
-question: "W jaki sposób `actions/cache` w GitHub Actions obsługuje brak pamięci podręcznej (cache miss)?"
-title: "Pytanie 097"
+question: "Jak działanie `actions/cache` w GitHub Actions radzi sobie z brakiem pamięci podręcznej?"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches
-1. [ ] wymagając ręcznej interwencji w celu utworzenia nowej pamięci podręcznej
-1. [ ] wyszukując pamięć podręczną w innych repozytoriach
-1. [x] automatycznie tworząc nową pamięć podręczną, jeśli zadanie zostanie pomyślnie ukończone
-1. [ ] przerywając workflow w przypadku braku pamięci podręcznej (cache miss)
+- [ ] poprzez wymaganie ręcznej interwencji w celu utworzenia nowej pamięci podręcznej
+- [ ] poprzez wyszukiwanie pamięci podręcznej w innych repozytoriach
+- [x] poprzez automatyczne utworzenie nowej pamięci podręcznej, jeśli zadanie zakończy się pomyślnie
+- [ ] poprzez zakończenie przebiegu workflow w przypadku braku pamięci podręcznej

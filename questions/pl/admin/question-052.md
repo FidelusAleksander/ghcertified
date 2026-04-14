@@ -1,10 +1,9 @@
 ---
-question: "W jaki sposób właściciel organizacji może zmienić rolę członka w organizacji?"
-title: "Pytanie 052"
+question: "Jak właściciel organizacji może zmienić rolę członka w organizacji?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Przechodząc do zakładki `People` w Organizacji i dostosowując rolę członka na liście.
-1. [ ] Członkowie mogą zmieniać własne role w ustawieniach organizacji.
-1. [ ] Usuwając i ponownie zapraszając członka z pożądaną rolą.
-1. [ ] Zmiany ról w organizacji nie są możliwe; konieczne jest utworzenie nowej organizacji.
+- [x] Przechodząc do zakładki `People` w Organizacji i dostosowując rolę członka z listy.
+- [ ] Członkowie mogą zmienić swoje role w ustawieniach organizacji.
+- [ ] Usuwając i ponownie zapraszając członka z żądaną rolą.
+- [ ] Zmiana ról w organizacji nie jest możliwa; trzeba utworzyć nową organizację.

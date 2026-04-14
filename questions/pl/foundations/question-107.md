@@ -1,13 +1,11 @@
 ---
-title: "Pytanie 107"
-question: "Kto może skonfigurować rozliczenia lub przypisać menedżerów ds. rozliczeń do organizacji? (Wybierz trzy.)"
+question: "Kto może skonfigurować płatności lub przydzielić menadżerów ds. płatności dla organizacji?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization"
 ---
 
-
-> Oficjalna dokumentacja GitHub: https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, Przewodnik szkoleniowy Microsoft Learn: https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
 - [ ] Właściciel repozytorium
 - [ ] Opiekun zespołu na poziomie zespołu
 - [ ] Administrator na poziomie zespołu
-- [x] Menedżerowie ds. rozliczeń na poziomie organizacji
-- [x] Właściciel na poziomie organizacji 
-- [x] Właściciel na poziomie przedsiębiorstwa
+- [x] Menadżer ds. płatności na poziomie organizacji
+- [x] Właściciel na poziomie organizacji
+- [x] Właściciel na poziomie enterprise

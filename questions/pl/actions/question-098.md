@@ -1,10 +1,9 @@
 ---
-question: "Jak można określić harmonogram działania workflow GitHub Actions, aby uruchamiał się tylko w dni powszednie?"
-title: "Pytanie 098"
+question: "Jak można określić harmonogram działania workflow GitHub Actions, aby uruchamiał się tylko w dni robocze?"
+documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-1. [ ] dodać warunek w pliku YAML workflow dla dni powszednich
-1. [ ] nie jest to możliwe w GitHub Actions
-1. [ ] użyć wyzwalacza zdarzeń on: schedule: weekdays
-1. [x] użyć wyzwalacza zdarzeń on: schedule: cron
+- [ ] dodaj warunek w YAML workflow dla dni roboczych
+- [ ] nie jest to możliwe w GitHub Actions
+- [ ] użyj wyzwalacza zdarzeń on: schedule: weekdays
+- [x] użyj wyzwalacza zdarzeń on: schedule: cron

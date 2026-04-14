@@ -1,10 +1,9 @@
 ---
-question: "Jakie są kluczowe cechy i funkcjonalności zespołów w ramach organizacji na GitHubie?"
-title: "Pytanie 054"
+question: "Jakie są kluczowe cechy i funkcjonalności zespołów w ramach organizacji GitHub?"
+documentation: "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams"
 ---
 
-> https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams
-1. [x] Zespoły w organizacjach na GitHubie umożliwiają zarządzanie dostępem i powiadomieniami dla grup odzwierciedlających strukturę firmy, z możliwością nadania uprawnień administracyjnych, do odczytu lub zapisu do repozytoriów, wzmiankami w celu powiadomień oraz korzystaniem z zagnieżdżonych zespołów do zarządzania hierarchicznego.
-1. [ ] Zespoły służą wyłącznie do nawiązywania kontaktów towarzyskich w ramach GitHuba, umożliwiając członkom organizacji komunikację i udostępnianie aktualności bez wpływu na dostęp do repozytoriów czy powiadomień organizacyjnych.
-1. [ ] Zespoły na GitHubie są identyczne z członkami organizacji, bez żadnych odrębnych cech lub funkcjonalności, takich jak zarządzanie dostępem czy powiadomienia.
-1. [ ] Zespoły w ramach GitHuba mogą obejmować współpracowników zewnętrznych i są głównie wykorzystywane do komunikacji zewnętrznej, bez żadnej wewnętrznej struktury organizacyjnej czy uprawnień dostępu do repozytoriów.
+- [x] Zespoły w organizacjach GitHub umożliwiają zarządzanie dostępem i powiadomieniami dla grup odzwierciedlających strukturę firmy, z możliwością administrowania, odczytu lub zapisu w repozytoriach, wspominania w powiadomieniach oraz stosowania zagnieżdżonych zespołów w celu hierarchicznego zarządzania.
+- [ ] Zespoły służą wyłącznie do celów społecznościowych w ramach GitHub, pozwalając członkom organizacji na komunikację i udostępnianie aktualizacji bez wpływu na dostęp do repozytoriów czy powiadomienia organizacyjne.
+- [ ] Zespoły GitHub są identyczne z członkami organizacji, bez wyraźnych cech czy funkcjonalności, takich jak zarządzanie dostępem czy powiadomienia.
+- [ ] Zespoły w GitHub mogą obejmować zewnętrznych współpracowników i są głównie wykorzystywane do komunikacji zewnętrznej, bez żadnej wewnętrznej struktury organizacyjnej czy uprawnień dostępu do repozytoriów.

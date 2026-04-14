@@ -1,10 +1,9 @@
 ---
-question: "Co jest prawdą o środowiskach?"
-title: "Pytanie 057"
+question: "Co jest prawdą na temat środowisk?"
+documentation: "https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments"
 ---
 
-> https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments
-1. [x] Każde zadanie w workflow może odwoływać się do jednego środowiska.
-1. [ ] Każdy workflow może odwoływać się do jednego środowiska.
-1. [ ] Każde zadanie w workflow może odwoływać się maksymalnie do dwóch środowisk.
-1. [ ] Każdy workflow może odwoływać się maksymalnie do dwóch środowisk.
+- [x] Każde zadanie w workflow może odwoływać się do pojedynczego środowiska.
+- [ ] Każdy workflow może odwoływać się do pojedynczego środowiska.
+- [ ] Każde zadanie w workflow może odwoływać się maksymalnie do dwóch środowisk.
+- [ ] Każdy workflow może odwoływać się maksymalnie do dwóch środowisk.
