@@ -263,7 +263,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                       isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
                       isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
                       !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
-                      !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                      !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600",
                       !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground",
                     );
                     return (
@@ -408,7 +408,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
                     // Exam mode (not submitted)
                     !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
-                    !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400",
+                    !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600",
                     !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
                   );
                   return (
@@ -485,7 +485,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                       {t("answered")}
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50 dark:bg-amber-950/30" />
+                      <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50" />
                       {t("partiallyAnswered")}
                     </div>
                     <div className="flex items-center gap-2">
@@ -559,7 +559,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               )}
             </div>
             {(unansweredCount > 0 || partialCount > 0) && (
-              <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-[13.5px] text-amber-700 dark:text-amber-400">
+              <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-[13.5px] text-amber-700">
                 <TriangleAlert className="size-4 mt-0.5 flex-shrink-0" />
                 <span>
                   {unansweredCount > 0 && partialCount > 0
