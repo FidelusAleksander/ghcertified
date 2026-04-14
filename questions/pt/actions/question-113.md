@@ -1,5 +1,5 @@
 ---
-question: "O que é verdadeiro sobre a seguinte configuração de workflow se acionada contra o repositório `octo/my-dev-repo`?"
+question: "O que é verdadeiro sobre a seguinte configuração de workflow se acionada no repositório `octo/my-dev-repo`?"
 documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
 ---
 
@@ -20,4 +20,4 @@ jobs:
 - [x] o job `production-deploy` será marcado como ignorado
 - [ ] o job `production-deploy` apresentará erro
 - [ ] o job `production-deploy` executará três etapas
-- [ ] o job `production-deploy` será executado se o `node-version` for `14`
+- [ ] o job `production-deploy` será executado se a `node-version` for `14`
