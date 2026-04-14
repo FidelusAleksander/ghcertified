@@ -1,11 +1,10 @@
 ---
-title: "質問 085"
-question: "CodeQL解析結果の閲覧に関する正しい記述はどれですか？（2つ選んでください）"
+question: "CodeQL分析の結果を表示することに関する次の記述のうち、正しいものはどれですか？"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository
-- [x] リポジトリのセキュリティタブでアラートの概要を閲覧するには書き込み権限が必要
-- [x] リポジトリの読み取り権限があれば誰でもプルリクエストでコードスキャン注釈を閲覧可能
-- [ ] プルリクエストのコードスキャン注釈を閲覧するには書き込み権限が必要
-- [ ] リポジトリの読み取り権限があれば誰でもセキュリティタブのコードスキャンアラートを閲覧可能
-- [ ] セキュリティタブのコードスキャンアラートはリポジトリ所有者のみが閲覧可能
+- [x] リポジトリのセキュリティタブで、すべてのアラートの概要を表示するには書き込み権限が必要です。
+- [x] リポジトリへの読み取り権限を持つ人は、プルリクエスト上のコードスキャン注釈を見ることができます。
+- [ ] プルリクエスト上のコードスキャン注釈を表示するには書き込み権限が必要です。
+- [ ] リポジトリへの読み取り権限を持つ人は、セキュリティタブでコードスキャンアラートを表示できます。
+- [ ] リポジトリの所有者のみがセキュリティタブでコードスキャンアラートを見ることができます。
