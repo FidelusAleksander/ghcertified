@@ -1,11 +1,10 @@
 ---
-title: "質問 089"
-question: "CodeQL解析ワークフローの完了時間を短縮するために適切でない方法はどれですか？"
+question: "CodeQL分析ワークフローの完了にかかる時間を短縮するための有効なアプローチではないものは次のうちどれですか？" 
+documentation: "https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long
-1. [x] すべてのpushイベントで解析を実行する
-1. [ ] CPUやRAMリソースの多いランナーを使う
-1. [ ] 複数言語のコードベースで解析を並列化する
-1. [ ] 関係ないファイルやディレクトリを解析から除外する
-1. [ ] 実行するクエリの数を減らす
+- [x] Pushイベントごとに分析を実行する
+- [ ] より多くのCPU/RAMリソースを持つランナーを使用する
+- [ ] マルチ言語コードベースの分析を並列化する
+- [ ] 分析から無関係なファイルやディレクトリを除外する
+- [ ] 実行されるクエリの数を減らす
