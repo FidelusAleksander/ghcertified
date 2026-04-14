@@ -1,5 +1,5 @@
 ---
-question: "Como você pode usar a API do GitHub para baixar os logs de execução do workflow?"
+question: "Como você pode usar a API do GitHub para baixar os logs de execução de workflows?"
 documentation: "https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28#download-workflow-run-logs"
 ---
 
