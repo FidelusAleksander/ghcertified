@@ -5,6 +5,7 @@
 import { describe, it, expect } from "vitest";
 import { shuffle } from "@/lib/utils";
 import { isValidLocale, localePath, SUPPORTED_LOCALES, DEFAULT_LOCALE } from "@/lib/locales";
+import { normalizeDocUrl } from "./test-utils";
 
 describe("shuffle", () => {
   it("returns array of same length", () => {
@@ -62,5 +63,36 @@ describe("localePath", () => {
 describe("DEFAULT_LOCALE", () => {
   it("is English", () => {
     expect(DEFAULT_LOCALE).toBe("en");
+  });
+});
+
+describe("normalizeDocUrl", () => {
+  it("returns undefined for undefined input", () => {
+    expect(normalizeDocUrl(undefined)).toBeUndefined();
+  });
+
+  it("normalizes locale prefix in docs.github.com URLs", () => {
+    expect(
+      normalizeDocUrl("https://docs.github.com/pt/code-security/foo"),
+    ).toBe("https://docs.github.com/en/code-security/foo");
+  });
+
+  it("keeps English URLs unchanged", () => {
+    const url = "https://docs.github.com/en/actions/overview";
+    expect(normalizeDocUrl(url)).toBe(url);
+  });
+
+  it("strips leading non-URL characters from translation artifacts", () => {
+    expect(
+      normalizeDocUrl("„https://docs.github.com/en/actions/foo"),
+    ).toBe("https://docs.github.com/en/actions/foo");
+  });
+
+  it("handles enterprise-cloud locale prefix", () => {
+    expect(
+      normalizeDocUrl(
+        "https://docs.github.com/ja/enterprise-cloud@latest/auth",
+      ),
+    ).toBe("https://docs.github.com/en/enterprise-cloud@latest/auth");
   });
 });
