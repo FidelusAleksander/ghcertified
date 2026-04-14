@@ -1,5 +1,5 @@
 ---
-question: "Como você pode determinar se uma ação é uma container action ao olhar para seu arquivo action.yml?"
+question: "Como você pode determinar se uma action é uma container action ao observar seu arquivo action.yml?"
 documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions"
 ---
 
