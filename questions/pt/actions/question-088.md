@@ -6,5 +6,5 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 - [x] Permite definir várias configurações de trabalho para serem executadas em paralelo
 - [ ] Define variáveis de ambiente para o trabalho
 - [ ] Aciona workflows com base em um cronograma
-- [ ] Define secrets para o workflow
+- [ ] Define segredos para o workflow
 
