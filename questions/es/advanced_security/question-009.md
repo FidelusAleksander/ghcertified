@@ -1,10 +1,9 @@
 ---
-title: "Pregunta 009"
-question: "¿Cuál es el propósito del programa de socios de escaneo de secretos?"
+question: "¿Cuál es el propósito del programa de socios de Secret scanning?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
 ---
 
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program
-1. [x] Los proveedores de servicios pueden asociarse con GitHub para que el formato de sus secretos pueda ser reconocido por el escaneo de secretos de GitHub.
-1. [ ] El programa de socios de GitHub permite a empresas y organizaciones con licencia de GitHub Advanced Security utilizar el escaneo de secretos de GitHub para escanear sus repositorios.
-1. [ ] GitHub se asocia con empresas de seguridad externas para proporcionar escaneo de secretos para los repositorios de GitHub.
-1. [ ] Es un programa donde los profesionales de seguridad registrados pueden, de buena fe, informar a GitHub sobre cualquier secreto que encuentren en los repositorios de GitHub y recibir recompensas por ello.
+- [x] Los proveedores de servicios pueden asociarse con GitHub para que el formato de sus secretos pueda ser reconocido por GitHub secret scanning.
+- [ ] El programa de socios de GitHub permite a las empresas y organizaciones con licencia de GitHub Advanced Security usar GitHub secret scanning para escanear sus repositorios.
+- [ ] GitHub se asocia con empresas de seguridad externas para proporcionar secret scanning para repositorios de GitHub.
+- [ ] Es un programa en el que los profesionales de seguridad registrados pueden reportar de buena fe a GitHub cualquier secreto que encuentren en repositorios de GitHub y recibir recompensas por ello.
