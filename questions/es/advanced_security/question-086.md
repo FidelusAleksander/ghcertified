@@ -1,11 +1,9 @@
 ---
-title: "Pregunta 086"
-question: "Cuando un flujo de trabajo de GitHub Actions de análisis de CodeQL detecta una nueva vulnerabilidad en un pull request, ¿dónde puedes encontrar la información sobre esa vulnerabilidad?"
+question: "Cuando un flujo de trabajo de GitHub Actions de análisis de CodeQL detecta una nueva vulnerabilidad en una pull request, ¿dónde puedes encontrar la información sobre esa vulnerabilidad?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests#about-code-scanning-results-on-pull-requests"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests#about-code-scanning-results-on-pull-requests
-1. [x] Directamente en el pull request en forma de un comentario en el PR y un fallo en la verificación
-1. [ ] En la pestaña de seguridad del repository
-1. [ ] En los registros de ejecución del flujo de trabajo
-1. [ ] El flujo de trabajo de análisis de CodeQL fallará y generará un artefacto con los resultados
+- [x] Directamente en la pull request en forma de un comentario de PR y un error de verificación
+- [ ] En la pestaña de seguridad del repository
+- [ ] En los registros de ejecución del flujo de trabajo
+- [ ] El flujo de trabajo de análisis de CodeQL fallará y producirá un artefacto con los resultados

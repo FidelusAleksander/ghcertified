@@ -1,10 +1,8 @@
 ---
-title: "Pregunta 028"
-question: "Al agregar contexto en el chat, es posible agregar archivos individuales, pero no carpetas enteras. Esta afirmación es:"
+question: "Al agregar contexto en el chat, es posible añadir archivos individuales, pero no carpetas completas. Esta afirmación es:"
+documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/10-examine-chat-view-features
-1. [x] Falsa
-1. [ ] Verdadera
-
+- [x] Falso
+- [ ] Verdadero
+---

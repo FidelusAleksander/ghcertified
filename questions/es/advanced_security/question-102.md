@@ -1,11 +1,9 @@
 ---
-title: "Pregunta 102"
-question: "¿Quién puede habilitar las alertas de Dependabot en un repositorio?"
+question: "¿Quién puede habilitar las alertas de Dependabot en un repository?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts
-1. [x] Propietarios del repositorio y personas con acceso de administrador
-1. [ ] Solo el propietario del repositorio
-1. [ ] Las alertas de Dependabot están habilitadas en todos los repositorios por GitHub y no pueden ser deshabilitadas o habilitadas por ningún individuo.
-1. [ ] Las alertas de Dependabot se habilitan añadiendo una GitHub Action al repositorio, por lo que cualquiera con acceso de escritura al repositorio puede habilitarlas.
+- [x] Los propietarios del repository y las personas con acceso de administrador
+- [ ] Solo el propietario del repository
+- [ ] Las alertas de Dependabot están habilitadas en todos los repositories por GitHub y no pueden ser deshabilitadas ni habilitadas por ningún individuo.
+- [ ] Las alertas de Dependabot se habilitan agregando una GitHub Action al repository, por lo que cualquier persona con acceso de escritura al repository puede habilitarlas.

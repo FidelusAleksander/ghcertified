@@ -1,12 +1,11 @@
 ---
 question: "¿Qué rol en una organización de GitHub tiene el nivel más alto de acceso?"
-title: "Pregunta 048"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Owner
-1. [ ] Member
-1. [ ] Admin
-1. [ ] Billing manager
-1. [ ] Outside collaborator
-
+- [x] Owner
+- [ ] Member
+- [ ] Admin
+- [ ] Billing manager
+- [ ] Outside collaborator
+---

@@ -1,13 +1,11 @@
 ---
-title: "Pregunta 121"  
-question: "¿Qué función proporciona gráficos o visualizaciones preconstruidas para la actividad y el estado del repository?"  
+question: "¿Qué función proporciona gráficos o visualizaciones predefinidos para la actividad y el estado del repositorio?"  
 draft: false  
+documentation: "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs"
 ---
 
-> **Más información**: [Sobre los gráficos del repository](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs)
-
-1. [x] Pestaña Insights  
-1. [ ] GitHub Actions  
-1. [ ] GitHub Projects  
-1. [ ] GitHub Discussions  
-
+- [x] Insights tab  
+- [ ] GitHub Actions  
+- [ ] GitHub Projects  
+- [ ] GitHub Discussions  
+---

@@ -1,13 +1,9 @@
 ---
-title: "Pregunta 026"
-question: "¿Cómo sabe GitHub Dependency graph qué dependencias está utilizando tu proyecto? (Elige dos.)"
+question: "¿Cómo sabe GitHub Dependency graph qué dependencias está utilizando tu proyecto?"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
 ---
 
-
-
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems
-- [x] GitHub deriva las dependencias automáticamente a partir de los manifiestos y archivos lock comprometidos en el repository
-- [x] Las dependencias pueden añadirse manualmente usando la Dependency submission API
-- [ ] GitHub escanea el código del repository en busca de declaraciones de importación de paquetes externos
-- [ ] Es necesario agregar un GitHub Actions workflow que use el `actions/dependency-graph` GitHub Action oficial para añadir dependencias al gráfico siempre que se realice un nuevo commit en el repository
+- [x] GitHub deriva automáticamente las dependencias a partir de los manifiestos y archivos de bloqueo comprometidos en el repositorio
+- [x] Las dependencias se pueden agregar manualmente utilizando la Dependency submission API
+- [ ] GitHub escanea el código del repositorio en busca de declaraciones de importación de paquetes externos
+- [ ] Es necesario agregar un workflow de GitHub Actions que utilice la GitHub Action oficial `actions/dependency-graph` para agregar dependencias al gráfico cada vez que se realiza un nuevo commit al repositorio

@@ -1,14 +1,12 @@
 ---
-title: "Pregunta 077"
-question: "¿Qué plan de precios de GitHub ofrece una implementación autohospedada de GitHub?"
+question: "¿Qué plan de precios de GitHub ofrece la implementación autoalojada de GitHub?"
+documentation: "https://docs.github.com/en/enterprise-server@3.8/admin/overview/about-github-enterprise-server"
 ---
 
-
-> https://docs.github.com/en/enterprise-server@3.8/admin/overview/about-github-enterprise-server
-1. [x] Enterprise
-1. [ ] Pro
-1. [ ] Team
-1. [ ] Free
-1. [ ] Todos ellos
-1. [ ] Ninguno de ellos
+- [x] Enterprise
+- [ ] Pro
+- [ ] Team
+- [ ] Free
+- [ ] Todos ellos
+- [ ] Ninguno de ellos
 

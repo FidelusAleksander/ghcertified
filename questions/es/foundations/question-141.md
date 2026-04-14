@@ -1,9 +1,8 @@
 ---
-title: "Pregunta 141"
-question: "¿Cuál es la importancia del 'mensaje de commit' en el proceso de flujo de GitHub?"
+question: "¿Cuál es la importancia del 'commit message' en el proceso de flujo de GitHub?"
+documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
 ---
 
-> **Más información**: [Sobre commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
-1. [ ] Fusiona automáticamente los cambios en la rama principal.
-1. [ ] Crea una copia de seguridad del repository.
-1. [x] Proporciona un resumen de los cambios realizados en un commit, ayudando a rastrear el historial del proyecto. 
+- [ ] Fusiona automáticamente los cambios en la rama principal.
+- [ ] Crea una copia de seguridad del repositorio.
+- [x] Proporciona un resumen de los cambios realizados en un commit, ayudando al seguimiento del historial del proyecto.

@@ -1,10 +1,8 @@
 ---
-question: "¿Cuáles son los posibles tipos de cuentas de GitHub? (Seleccione tres.)"
-title: "Pregunta 001"
+question: "¿Cuáles son los posibles tipos de cuentas de GitHub?"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts"
 ---
 
-
-> https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts
 - [x] Cuentas personales
 - [x] Cuentas de organización
 - [x] Cuentas Enterprise

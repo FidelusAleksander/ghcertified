@@ -1,13 +1,11 @@
 ---
-title: "Pregunta 124"  
-question: "¿Cuál de las siguientes acciones puedes realizar en un GitHub Discussion? (Elige tres)."  
+question: "¿Cuál de las siguientes acciones puedes realizar en una Discusión de GitHub?"  
 draft: false  
+documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 ---
 
-> **Más información**: [Acerca de las discusiones](https://docs.github.com/en/discussions/quickstart#introduction)
-
 - [x] Fijar una discusión  
-- [x] Transferirla a otra discusión de repositorio (si tienes permisos de administrador)  
+- [x] Transferirla a la discusión de otro repositorio (si tienes permisos de administrador)  
 - [ ] Convertir la discusión en un gist secreto  
 - [x] Convertirla en un issue  
-- [ ] Fusionarla en un pull request existente  
+- [ ] Fusionarla en una pull request existente  

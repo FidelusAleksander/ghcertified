@@ -1,8 +1,7 @@
 ---
-title: "Pregunta 088"
 question: "¿Qué significa descartar una alerta de análisis de código?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/managing-code-scanning-alerts-for-your-repository#dismissing--alerts"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/managing-code-scanning-alerts-for-your-repository#dismissing--alerts
-1. [x] Cerrar una alerta que no crees que necesite ser corregida
-1. [ ] Cerrar la alerta después de solucionar la vulnerabilidad en el código
+- [x] Cerrar una alerta que consideras que no necesita ser corregida
+- [ ] Cerrar la alerta después de corregir la vulnerabilidad en el código

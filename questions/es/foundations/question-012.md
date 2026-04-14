@@ -1,15 +1,13 @@
 ---
-title: "Pregunta 012"
-question: "¿Por qué querría un propietario de un repository usar milestones? (Elija dos)."
+question: "¿Por qué querría un propietario de un repositorio utilizar hitos?"
+documentation: "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones"
 ---
 
-
-> https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones
 - [x] Para asociar issues y pull requests con fases específicas del proyecto
-- [x] Para tener una visión general de cuánto trabajo queda para completar una fase del proyecto
-- [ ] Para automatizar el repository
-> Para eso están las GitHub Actions
-- [ ] Para comunicar que el repository está en un estado estable
-- [ ] Para rastrear las dependencias del repository
-> Para eso están el Dependency graph y Dependabot
-- [ ] Para listar los contributors del repository
+- [x] Para tener una visión general de cuánto trabajo falta por completar en una fase del proyecto
+- [ ] Para automatizar el repositorio  
+> Para eso está GitHub Actions
+- [ ] Para comunicar que el repositorio está en un estado estable  
+- [ ] Para rastrear las dependencias del repositorio  
+> Para eso está Dependency graph y Dependabot
+- [ ] Para listar los colaboradores del repositorio  

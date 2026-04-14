@@ -1,15 +1,14 @@
 ---
-question: "¿Qué endpoints proporciona la API de GitHub para administrar tu enterprise? (Elige seis.)"
-title: "Pregunta 007"
+question: "¿Qué puntos finales proporciona la API de GitHub para administrar tu enterprise?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
 - [x] Estadísticas de administración
 - [x] Registro de auditoría
 - [x] Facturación
-- [x] Seguridad de código y análisis
+- [x] Seguridad y análisis de código
 - [x] Licencia
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Proyectos
-
+---

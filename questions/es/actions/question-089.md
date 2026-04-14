@@ -1,10 +1,10 @@
 ---
-title: "Pregunta 089"
-question: "¿Cuál de los siguientes puede utilizarse para limitar el número de trabajos concurrentes que se ejecutan en un flujo de trabajo de GitHub Actions?"
+question: "¿Cuál de las siguientes opciones puede usarse para limitar la cantidad de trabajos concurrentes que se ejecutan en un flujo de trabajo de GitHub Actions?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency
-1. [x] concurrency  
-1. [ ] limit  
-1. [ ] max-jobs  
-1. [ ] parallelism  
+- [x] concurrency
+- [ ] limit
+- [ ] max-jobs
+- [ ] parallelism
+---

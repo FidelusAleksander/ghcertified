@@ -1,12 +1,10 @@
 ---
-title: "Pregunta 098"
-question: "¿Qué son las Wikis de GitHub?"
+question: "¿Qué son los Wikis de GitHub?"
+documentation: "https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis"
 ---
 
-
-> https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis
-1. [x] Las Wikis son una característica del repository para alojar documentación.
-1. [ ] Las Wikis son la documentación oficial de GitHub.
-1. [ ] Las Wikis son una característica para alojar fragmentos de código.
-> Eso es Gists
-1. [ ] Las Wikis son un lugar donde se almacena el archivo `README.md` del proyecto.
+- [x] Los Wikis son una función del repository para alojar documentación.
+- [ ] Los Wikis son la documentación oficial de GitHub.
+- [ ] Los Wikis son una función para alojar fragmentos de código.
+> Eso son los Gists
+- [ ] Los Wikis son un lugar donde se guarda el archivo `README.md` del proyecto.

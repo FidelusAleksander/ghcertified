@@ -1,10 +1,8 @@
 ---
-title: "Pregunta 110"
-question: "¿Cuáles son los diferentes planes de precios de GitHub para cuentas personales? (Seleccione dos)"
+question: "¿Cuáles son los diferentes planes de precios de GitHub para cuentas personales?"
+documentation: "https://docs.github.com/en/get-started/learning-about-github/githubs-plans"
 ---
 
-
-> https://docs.github.com/en/get-started/learning-about-github/githubs-plans
 - [x] Free
 - [ ] Team
 - [ ] Enterprise
@@ -12,3 +10,4 @@ question: "¿Cuáles son los diferentes planes de precios de GitHub para cuentas
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+---

@@ -1,10 +1,10 @@
 ---
-question: "¿Cómo puedes requerir aprobaciones manuales por parte de un mantenedor si la ejecución del workflow está dirigida al entorno `production`?"
-title: "Pregunta 056"
+question: "¿Cómo puedes requerir aprobaciones manuales por un mantenedor si la ejecución del workflow está dirigida al entorno `production`?"
+documentation: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment"
 ---
 
-> https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment
-1. [x] Usando reglas de protección de despliegue  
-1. [ ] Configurando los revisores requeridos en el workflow de `production`  
-1. [ ] Usando reglas de protección de rama  
-1. [ ] Las aprobaciones manuales no son compatibles con GitHub Actions  
+- [x] Usando reglas de protección de implementación
+- [ ] Estableciendo los revisores requeridos en el workflow de `production`
+- [ ] Usando reglas de protección de rama
+- [ ] Las aprobaciones manuales no son compatibles con GitHub Actions
+

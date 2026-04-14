@@ -1,10 +1,8 @@
 ---
-title: "Pregunta 103"
-question: "¿Cuál de los siguientes comandos de Git te permite crear una nueva branch y empezar a trabajar en ella en una sola línea? (Selecciona dos.)"
+question: "¿Cuál de los siguientes comandos de Git te permite crear una nueva rama y comenzar a trabajar en ella en una sola línea?"
+documentation: "https://git-scm.com/docs/git-switch"
 ---
 
-
-> https://git-scm.com/docs/git-switch
 - [x] git checkout -b `<new_branch_name>`
 - [ ] git branch -c `<new_branch_name>`
 - [x] git switch -c `<new_branch_name>`

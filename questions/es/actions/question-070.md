@@ -1,10 +1,9 @@
 ---
-question: "¿Cómo puedes usar la API de GitHub para crear o actualizar un secret del repository?"
-title: "Pregunta 070"
+question: "¿Cómo puedes usar la API de GitHub para crear o actualizar un secreto de repositorio?"
+documentation: "https://docs.github.com/en/rest/actions/secrets?create-or-update-a-repository-secret=&apiVersion=2022-11-28#create-or-update-a-repository-secret"
 ---
 
-> https://docs.github.com/en/rest/actions/secrets?create-or-update-a-repository-secret=&apiVersion=2022-11-28#create-or-update-a-repository-secret
-1. [x] `PUT /repos/{owner}/{repo}/actions/secrets/{secret_name}`
-1. [ ] `POST /repos/{owner}/{repo}/actions/secrets/{secret_name}`
-1. [ ] `HEAD /repos/{owner}/{repo}/actions/secrets/{secret_name}`
-1. [ ] `GET /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+- [x] `PUT /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+- [ ] `POST /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+- [ ] `HEAD /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+- [ ] `GET /repos/{owner}/{repo}/actions/secrets/{secret_name}`

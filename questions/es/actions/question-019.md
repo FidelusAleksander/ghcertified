@@ -1,11 +1,10 @@
 ---
-question: "Completa el espacio en blanco: Al usar filtros de activación de eventos `push`, puedes usar patrones de <____> para dirigir múltiples ramas"
-title: "Pregunta 019"
+question: "Complete el espacio en blanco: Al utilizar filtros de activación de eventos `push`, puedes usar patrones de <____> para apuntar a múltiples ramas."
+documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-filters-to-target-specific-branches-or-tags-for-push-events
-1. [x] glob
-1. [ ] regex
-1. [ ] scheme
-1. [ ] action
-
+- [x] glob
+- [ ] regex
+- [ ] scheme
+- [ ] action
+---

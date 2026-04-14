@@ -1,11 +1,10 @@
 ---
-question: "¿Cuál de los siguientes lenguajes NO es compatible con CodeQL para el escaneo de código?"
-title: "Pregunta 039"
+question: "¿Cuál de los siguientes lenguajes NO es compatible con CodeQL para el análisis de código?"
+documentation: "https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers"
 ---
 
-> https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/#languages-and-compilers
-1. [x] PHP
-1. [ ] JavaScript/TypeScript
-1. [ ] C/C++
-1. [ ] Python
-
+- [x] PHP
+- [ ] JavaScript/TypeScript
+- [ ] C/C++
+- [ ] Python
+---

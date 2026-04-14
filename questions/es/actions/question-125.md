@@ -1,12 +1,10 @@
 ---
-title: "Pregunta 125"
-question: "¿A qué niveles se pueden definir las variables de entorno? (Elija tres)"
+question: "¿En qué niveles se pueden definir las variables de entorno?"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables"
 ---
 
-
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
-- [x] Nivel de Workflow
-- [x] Nivel de Job
-- [x] Nivel de Step
-- [ ] Nivel de Action
-
+- [x] Nivel de flujo de trabajo
+- [x] Nivel de trabajo
+- [x] Nivel de paso
+- [ ] Nivel de acción
+---

@@ -1,6 +1,6 @@
 ---
 question: "Dada la siguiente configuración, ¿cuántos trabajos ejecutará GitHub Actions cuando se evalúe esta matriz?"
-title: "Pregunta 124"
+documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations"
 ---
 
 ```yaml
@@ -15,10 +15,8 @@ strategy:
         node: 14
 ```
 
-> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow#expanding-or-adding-matrix-configurations
-
-1. [ ] 4 trabajos  
-1. [x] 5 trabajos  
-1. [ ] 6 trabajos  
-1. [ ] 7 trabajos  
-1. [ ] No se ejecutará ningún trabajo porque la sintaxis es inválida.
+- [ ] 4 trabajos
+- [x] 5 trabajos
+- [ ] 6 trabajos
+- [ ] 7 trabajos
+- [ ] No se ejecutarán trabajos porque la sintaxis es inválida.

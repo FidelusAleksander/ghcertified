@@ -1,11 +1,10 @@
 ---
-title: "Pregunta 035"
-question: "¿Quién debe tener habilitada la Autenticación en Dos Factores en GitHub?"
+question: "¿Quién debería tener habilitada la autenticación de dos factores en GitHub?"
+documentation: "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication"
 ---
 
-
-> https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
-1. [x] Todos los usuarios de GitHub  
-1. [ ] No se recomienda usar 2FA en GitHub para nadie  
-1. [ ] Propietarios de GitHub Organization  
-1. [ ] Usuarios de GitHub Enterprise Server  
+- [x] Todos los usuarios de GitHub
+- [ ] No se recomienda usar 2FA en GitHub para nadie
+- [ ] Propietarios de GitHub Organization
+- [ ] Usuarios de GitHub Enterprise Server
+---

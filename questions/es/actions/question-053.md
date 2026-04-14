@@ -1,12 +1,11 @@
 ---
-question: "Al crear una GitHub Action personalizada debes almacenar el código fuente en el directorio `.github/workflows`"
-title: "Pregunta 053"
+question: "Al crear una acción personalizada de GitHub debes almacenar el código fuente en el directorio `.github/workflows`"
+documentation: "https://docs.github.com/en/actions/creating-actions/about-custom-actions#choosing-a-location-for-your-action"
 ---
 
-> https://docs.github.com/en/actions/creating-actions/about-custom-actions#choosing-a-location-for-your-action
-1. [x] Falso
-1. [ ] Verdadero
-> Esto es cierto para los `workflows`, no para las `actions`
-1. [ ] Solo si la action es reutilizable
-1. [ ] Solo para Docker container actions
+- [x] Falso
+- [ ] Verdadero
+> Esto es cierto para `workflows`, no para `actions`
+- [ ] Solo si la acción es reutilizable
+- [ ] Solo para acciones de contenedor Docker
 

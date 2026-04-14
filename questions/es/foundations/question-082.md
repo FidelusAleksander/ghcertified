@@ -1,10 +1,9 @@
 ---
-title: "Pregunta 082"
 question: "¿Cuál de estos archivos puede personalizar tu perfil de GitHub?"
+documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme"
 ---
 
+- [x] un archivo `README.md` de perfil
+- [ ] un archivo `CONTRIBUTING.md` de perfil
+- [ ] el perfil no se puede personalizar mediante archivos, solo a través de la configuración de la cuenta
 
-> https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme
-1. [x] un archivo `README.md` del perfil
-1. [ ] un archivo `CONTRIBUTING.md` del perfil
-1. [ ] el perfil no se puede personalizar mediante archivos, sino mediante la configuración de la cuenta

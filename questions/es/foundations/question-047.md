@@ -1,11 +1,10 @@
 ---
-title: "Pregunta 047"
-question: "¿Qué herramienta te ayuda a mantener actualizadas las dependencias del repositorio?"
+question: "¿Qué herramienta te ayuda a mantener las dependencias del repositorio actualizadas?"
+documentation: "https://docs.github.com/en/code-security/dependabot"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot
-1. [x] Dependabot  
-1. [ ] GitHub Copilot  
-1. [ ] CodeQL  
-1. [ ] GitHub Actions  
+- [x] Dependabot
+- [ ] GitHub Copilot
+- [ ] CodeQL
+- [ ] GitHub Actions
+---

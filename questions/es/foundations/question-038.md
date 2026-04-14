@@ -1,14 +1,14 @@
 ---
-title: "Pregunta 038"
-question: "¿Cuál de estos NO es un rol en una GitHub Organization?"
+question: "¿Cuál de estos NO es un rol en una Organización de GitHub?"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Organization architect
-1. [ ] Organization owner
-1. [ ] Organization member
-1. [ ] Organization moderator
-1. [ ] Billing manager
-1. [ ] Security manager
-1. [ ] GitHub App manager
-1. [ ] Outside collaborator
+- [x] Organization architect
+- [ ] Organization owner
+- [ ] Organization member
+- [ ] Organization moderator
+- [ ] Billing manager
+- [ ] Security manager
+- [ ] GitHub App manager
+- [ ] Outside collaborator
+

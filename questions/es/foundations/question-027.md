@@ -1,12 +1,10 @@
 ---
-title: "Pregunta 027"
-question: "¿Qué función de GitHub permite la creación de entornos de desarrollo preconfigurados donde se instalan todas las herramientas y dependencias necesarias para contribuir a un repositorio?"
+question: "¿Qué funcionalidad de GitHub permite la creación de entornos de desarrollo preconfigurados donde se instalan todas las herramientas y dependencias necesarias para contribuir a un repository?"
+documentation: "https://docs.github.com/en/codespaces/overview#benefits-of-github-codespaces"
 ---
 
-
-> https://docs.github.com/en/codespaces/overview#benefits-of-github-codespaces
-1. [x] GitHub Codespaces
-1. [ ] GitHub Docker
-1. [ ] GitHub Copilot
-1. [ ] GitHub DevEnv
+- [x] GitHub Codespaces
+- [ ] GitHub Docker
+- [ ] GitHub Copilot
+- [ ] GitHub DevEnv
 

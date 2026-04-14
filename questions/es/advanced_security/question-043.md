@@ -1,11 +1,10 @@
 ---
-question: "¿Qué claves de nivel superior son necesarias en el archivo `dependabot.yml`?"
-title: "Pregunta 043"
+question: "¿Qué claves de nivel superior son requeridas en el archivo `dependabot.yml`?"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file
-1. [x] `version` y `updates`
-1. [ ] `version` y `package-ecosystem`
-1. [ ] `assignees` y `directory`
-1. [ ] `updates` y `directory`
+- [x] `version` y `updates`
+- [ ] `version` y `package-ecosystem`
+- [ ] `assignees` y `directory`
+- [ ] `updates` y `directory`
 
