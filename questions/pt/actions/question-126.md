@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-wh
 - [ ] `${{job1.outputs.output1}}`
 - [ ] `${{needs.job1.output1}}`
 - [ ] `${{depends.job1.output1}}`
-
