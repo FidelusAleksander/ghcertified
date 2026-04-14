@@ -1,5 +1,5 @@
 ---
-question: "Qual definição de trabalho de matriz é sintaticamente correta?"
+question: "Qual definição de job de matriz é sintaticamente correta?"
 documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy"
 ---
 
