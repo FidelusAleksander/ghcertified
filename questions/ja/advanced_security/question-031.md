@@ -1,13 +1,11 @@
 ---
-title: "質問 031"
-question: "Dependabot Alertsについて正しい説明はどれですか？（3つ選択）"
+question: "Dependabot Alertsに関する次の記述のうち正しいものはどれですか？"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts
-- [x] GitHub Advisory Databaseに部分的に依存している
-- [x] Dependabot Alertsを有効にするには、リポジトリでDependency Graphが有効である必要がある
-- [x] GitHubが脆弱な依存関係を検出すると、Dependabot Alertを生成し、リポジトリのSecurityタブに表示する
-- [ ] Dependabot Alertsはすべてのリポジトリでデフォルトで有効ではない
-- [ ] Dependabot Alertsはすべてのパブリックリポジトリでデフォルトで有効ではない
-- [ ] Dependabot Alertsはリポジトリが古いパッケージバージョンを使っていることを知らせる
+- [x] GitHub Advisory Database に部分的に依存しています
+- [x] Dependabot Alerts を有効にするには、まずリポジトリで Dependency Graph を有効にする必要があります
+- [x] GitHub が脆弱な依存関係を特定すると、Dependabot alert を生成し、リポジトリのセキュリティタブに表示します
+- [ ] Dependabot Alerts はすべてのリポジトリでデフォルトで有効になっています
+- [ ] Dependabot Alerts はすべての公開リポジトリでデフォルトで有効になっています
+- [ ] Dependabot alerts は、リポジトリが古いバージョンのパッケージを使用していることを知らせます
