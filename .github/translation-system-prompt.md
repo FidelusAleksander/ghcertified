@@ -16,7 +16,11 @@ You will receive the text to translate in the user message.
 
 ### Content Preservation
 - Preserve the meaning, tone, formatting, structure, and style of the original text
-- Keep frontmatter keys unchanged (translate only values)
+
+### Frontmatter
+Frontmatter is the YAML block between `---` delimiters at the top of each file. It contains key-value pairs like `question:`, `documentation:`, and `explanation:`. When translating:
+- **Keys must stay in English exactly as-is** — only translate the values
+- **Use only ASCII double quotes (`"`)** — never use smart/typographic quotes like `„` `"` `"` `«` `»`
 
 ### Technical Elements
 - Keep technical terms, code blocks, and code examples in their original form
