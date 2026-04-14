@@ -1,10 +1,9 @@
 ---
-title: "質問 080"
-question: "`github/codeql-action/init` GitHubアクションの`external-repository-token`パラメータの目的は何ですか？"
+question: "GitHub Action内の`github/codeql-action/init`における`external-repository-token`パラメーターの目的は何ですか？"
+documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-queries-in-ql-packs"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-queries-in-ql-packs
-1. [x] このアクションが、解析に必要な設定ファイル、クエリ、パックを含むプライベートGitHubリポジトリにアクセスできるようにするため。
-1. [ ] このアクションが解析結果をプライベートGitHubリポジトリにアップロードできるようにするため。
-1. [ ] このアクションが解析対象のソースコードを含むプライベートGitHubリポジトリにアクセスできるようにするため。
-1. [ ] このアクションが生成されたCodeQLデータベースをプライベートGitHubリポジトリにアップロードできるようにするため。
+- [x] アクションが分析に必要な構成ファイル、クエリ、またはパックを含むプライベートGitHubリポジトリにアクセスできるようにします。
+- [ ] アクションが分析結果をプライベートGitHubリポジトリにアップロードできるようにします。
+- [ ] アクションが分析対象となるソースコードを含むプライベートGitHubリポジトリにアクセスできるようにします。
+- [ ] アクションが生成されたCodeQLデータベースをプライベートGitHubリポジトリにアップロードできるようにします。
