@@ -12,8 +12,6 @@ import { join } from "node:path";
 import { readdirSync, existsSync } from "node:fs";
 import { parseDirectory } from "mdquiz";
 
-import { normalizeDocUrl } from "./test-utils";
-
 const QUESTIONS_ROOT = join(__dirname, "../../../../questions");
 
 const CERTS = [
@@ -91,9 +89,9 @@ describe("cross-locale consistency", () => {
             // Both must have or both must lack a documentation link
             if (enDoc && localeDoc) {
               expect(
-                normalizeDocUrl(localeDoc),
+                localeDoc,
                 `documentation link mismatch`,
-              ).toBe(normalizeDocUrl(enDoc));
+              ).toBe(enDoc);
             } else {
               // If one has it the other should too
               expect(

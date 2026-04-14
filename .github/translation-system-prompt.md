@@ -21,6 +21,7 @@ You will receive the text to translate in the user message.
 ### Technical Elements
 - Keep technical terms, code blocks, and code examples in their original form
 - Keep URLs, file paths, and image references unchanged
+- **URLs must be copied exactly as-is** — never modify any part of a URL, including locale codes like `/en/`
 
 ### GitHub Nomenclature (NEVER TRANSLATE)
 **CRITICAL:** The following GitHub-specific terms and exam titles must ALWAYS remain in their original English form. Do NOT translate, localize, or adapt these terms under any circumstances:
