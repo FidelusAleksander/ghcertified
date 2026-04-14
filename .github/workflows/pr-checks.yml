@@ -50,3 +50,26 @@ jobs:
         working-directory: app
       - run: npm test
         working-directory: app
+  e2e-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        with:
+          node-version-file: '.node-version'
+      - run: npm ci
+        working-directory: app
+      - run: npm run build
+        working-directory: app
+      - run: npx playwright install chromium --with-deps
+        working-directory: app
+      - run: npm run test:e2e
+        working-directory: app
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: app/playwright-report/
+          retention-days: 7
