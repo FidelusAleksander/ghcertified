@@ -3,3 +3,4 @@ app/.next/
 app/out/
 .DS_Store
 nohup.out
+.playwright-mcp/
