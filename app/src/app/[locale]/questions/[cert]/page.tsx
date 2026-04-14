@@ -8,13 +8,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { CertificationType, SupportedLocale } from "@/lib/questions";
-import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES } from "@/lib/questions";
+import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { QuestionBrowser } from "./question-browser";
-
-const VALID_CERTS: CertificationType[] = [
-  "actions", "admin", "advanced_security", "copilot", "foundations",
-];
 
 export function generateStaticParams() {
   return SUPPORTED_LOCALES.flatMap((locale) =>

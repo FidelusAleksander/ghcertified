@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import { getQuestionsByCert, SUPPORTED_LOCALES, CERT_TITLES } from "@/lib/questions";
+import { getQuestionsByCert, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS } from "@/lib/questions";
 import type { CertificationType, SupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { QuizWrapper } from "./quiz-wrapper";
-
-const VALID_CERTS: CertificationType[] = [
-  "actions", "admin", "advanced_security", "copilot", "foundations",
-];
 
 export function generateStaticParams() {
   return SUPPORTED_LOCALES.flatMap((locale) =>

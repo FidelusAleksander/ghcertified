@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 /**
- * JetBrains Mono — monospace font for code snippets.
- * Loaded via next/font/google for optimal performance.
- * Mona Sans (body + headings) is loaded via @font-face in globals.css.
+ * Mona Sans — GitHub's variable font (weight 200–900, optical size 12–14).
+ * Self-hosted via next/font/local for zero external requests and automatic preload.
  */
+const monaSans = localFont({
+  src: "../../public/fonts/MonaSansVF.woff2",
+  variable: "--font-mona-sans",
+  display: "swap",
+  weight: "200 900",
+});
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -47,7 +53,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jetbrainsMono.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${monaSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

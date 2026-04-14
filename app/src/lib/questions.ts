@@ -62,6 +62,8 @@ const VALID_CERTS: CertificationType[] = [
   "actions", "admin", "advanced_security", "copilot", "foundations",
 ];
 
+export { VALID_CERTS };
+
 function contentDir(locale: SupportedLocale): string {
   return join(process.cwd(), "..", "questions", locale);
 }
@@ -118,9 +120,6 @@ export function getCertCatalog(
     questionCount: all.filter((q) => q.cert === cert).length,
   }));
 }
-
-/** @deprecated Use getCertCatalog(locale) instead */
-export const CERT_CATALOG: CertInfo[] = getCertCatalog(DEFAULT_LOCALE);
 
 export function getCertInfo(
   cert: CertificationType,

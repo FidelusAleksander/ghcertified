@@ -20,7 +20,6 @@ export interface AnswerOptionProps {
 
 export function AnswerOption({
   answer,
-  index,
   isMultiSelect,
   isSelected,
   showResults,

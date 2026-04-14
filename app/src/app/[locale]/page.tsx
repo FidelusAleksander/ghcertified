@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -242,12 +243,12 @@ export default async function HomePage({ params }: Props) {
                 title={t("contributorTooltip", { login: c.login, count: c.contributions })}
                 className="group relative"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={`${c.avatarUrl}&s=72`}
                   alt={c.login}
                   width={36}
                   height={36}
+                  unoptimized
                   className="size-9 rounded-full border-2 border-border bg-muted transition-all group-hover:scale-110 group-hover:border-primary group-hover:shadow-md"
                   loading="lazy"
                 />
