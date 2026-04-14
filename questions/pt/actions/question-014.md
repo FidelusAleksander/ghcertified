@@ -1,5 +1,5 @@
 ---
-question: "Este código executará 6 jobs diferentes em paralelo usando a estratégia de matriz. Você pode usar a estratégia de matriz para paralelizar fluxos de trabalho inteiros?"
+question: "Este código lançará 6 empregos diferentes em paralelo usando a estratégia de matriz. Você pode usar a estratégia de matriz para paralelizar fluxos de trabalho inteiros?"
 documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-a-matrix-strategy-with-a-reusable-workflow"
 ---
 
@@ -15,4 +15,4 @@ jobs:
 - [x] Sim
 - [ ] Não
 - [ ] Somente se os fluxos de trabalho estiverem no mesmo repositório
-- [ ] Somente com runners hospedados por conta própria
+- [ ] Somente com runners auto-hospedados
