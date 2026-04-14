@@ -89,11 +89,17 @@ describe("cross-locale consistency", () => {
             const localeDoc = localeQ.frontmatter.documentation as string | undefined;
 
             // Both must have or both must lack a documentation link
-            if (enDoc || localeDoc) {
+            if (enDoc && localeDoc) {
               expect(
                 normalizeDocUrl(localeDoc),
                 `documentation link mismatch`,
               ).toBe(normalizeDocUrl(enDoc));
+            } else {
+              // If one has it the other should too
+              expect(
+                !!localeDoc,
+                `documentation link presence mismatch`,
+              ).toBe(!!enDoc);
             }
           });
         }
