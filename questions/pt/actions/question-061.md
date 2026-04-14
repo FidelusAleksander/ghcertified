@@ -1,5 +1,5 @@
 ---
-question: "Quais das seguintes são variáveis de ambiente padrão no GitHub Actions?"
+question: "Quais dos seguintes são variáveis de ambiente padrão no GitHub Actions?"
 documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/variables#default-environment-variables"
 ---
 
@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 - [ ] `GITHUB_USER`
 - [ ] `GITHUB_ORGANIZATION`
 - [ ] `GITHUB_TOKEN`
-
