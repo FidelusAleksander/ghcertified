@@ -4,8 +4,8 @@ documentation: "https://docs.github.com/en/actions/learn-github-actions/variable
 ---
 
 - [x] Todo o workflow, usando `env` no nível superior do arquivo de workflow
-- [x] O conteúdo de um job dentro de um workflow, usando `jobs.<job_id>.env`
-- [x] Uma etapa específica dentro de um job, usando `jobs.<job_id>.steps[*].env`
-- [ ] Todos os jobs dentro de um workflow, usando `jobs.env`
+- [x] O conteúdo de um trabalho dentro de um workflow, usando `jobs.<job_id>.env`
+- [x] Uma etapa específica dentro de um trabalho, usando `jobs.<job_id>.steps[*].env`
+- [ ] Todos os trabalhos dentro de um workflow, usando `jobs.env`
 - [ ] Todo o workflow, usando `custom.env` no nível superior do arquivo de workflow
 - [ ] Um ambiente específico no repositório, usando `environment.<environment_id>.env` no nível superior do arquivo de workflow
