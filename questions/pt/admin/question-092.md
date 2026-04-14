@@ -1,9 +1,8 @@
 ---
-question: "Quais gerenciadores de pacotes e formatos são suportados pelo GitHub Packages? (Escolha cinco.)"
-title: "Pergunta 092"
+question: "Quais gerenciadores de pacotes e formatos são compatíveis com o GitHub Packages?"
+documentation: "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages"
 ---
 
-> https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages
 - [x] npm para JavaScript
 - [x] RubyGems para Ruby
 - [x] Maven e Gradle para Java

@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 090"
 question: "Qual é o propósito de definir uma categoria SARIF?"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#uploading-more-than-one-sarif-file-for-a-commit"
 ---
 
-
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#uploading-more-than-one-sarif-file-for-a-commit
-1. [x] Usar a categoria para distinguir entre várias análises para a mesma ferramenta ou commit, mas realizadas em linguagens diferentes ou em partes diferentes do código.
-1. [ ] Usar a categoria para distinguir arquivos que foram analisados de arquivos que não foram analisados.
-1. [ ] Usar a categoria para distinguir arquivos que contêm vulnerabilidades de arquivos que não contêm vulnerabilidades.
-1. [ ] Usar uma categoria diferente para cada arquivo analisado para rastrear facilmente as vulnerabilidades de volta aos arquivos que as contêm.
+- [x] Usar a categoria para distinguir entre várias análises para a mesma ferramenta ou commit, mas realizadas em diferentes linguagens ou em diferentes partes do código.
+- [ ] Usar a categoria para distinguir arquivos que foram analisados de arquivos que não foram analisados.
+- [ ] Usar a categoria para distinguir arquivos que contêm vulnerabilidades de arquivos que não contêm vulnerabilidades.
+- [ ] Usar uma categoria diferente para cada arquivo analisado para rastrear facilmente as vulnerabilidades até os arquivos que as contêm.

@@ -1,12 +1,10 @@
 ---
-title: "Pergunta 115"
-question: "Qual das seguintes ações não pode ser executada diretamente do GitHub Desktop?"
+question: "Qual das seguintes ações não pode ser realizada diretamente no GitHub Desktop?"
+documentation: "https://docs.github.com/en/actions/quickstart#prerequisites"
 ---
 
-> Gerenciar GitHub Actions não é um recurso disponível no GitHub Desktop e deve ser feito via github.com ou integração CI/CD
-> - https://docs.github.com/en/actions/quickstart#prerequisites
+- [ ] Armazenar mudanças em espera (Stashing changes)
+- [x] Gerenciar GitHub Actions
+- [ ] Alternar entre branches
+- [ ] Confirmar mudanças (Committing changes)
 
-1. [ ] Armazenar alterações temporariamente (Stashing changes)
-1. [x] Gerenciar GitHub Actions
-1. [ ] Alternar entre branches
-1. [ ] Realizar commits de alterações (Committing changes)

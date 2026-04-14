@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 015"
-question: "Quais destas afirmações sobre `respostas salvas` são verdadeiras? (Escolha duas.)"
+question: "Quais dessas afirmações sobre `saved replies` são verdadeiras?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
-- [x] Você pode criá-las, editá-las e excluí-las nas configurações da sua conta GitHub na seção `Respostas salvas`.
-- [x] Respostas salvas são comentários que você pode reutilizar em issues e pull requests.
-- [ ] Quando alguém comenta na sua issue ou pull request, você pode salvar a resposta dessa pessoa e definir uma notificação para lembrar-se de respondê-la mais tarde.
-- [ ] Respostas salvas estão disponíveis apenas para proprietários de repositórios, que podem configurar respostas automáticas para issues e pull requests.
+- [x] Você pode criar, editar e excluir no seu perfil do GitHub na seção `Saved replies`.
+- [x] Saved replies são comentários que você pode reutilizar em issues e pull requests.
+- [ ] Quando alguém comenta em sua issue ou pull request, você pode salvar a resposta deles e configurar uma notificação para lembrar de responder mais tarde.
+- [ ] Saved replies estão disponíveis apenas para proprietários de repositórios, que podem configurar respostas automatizadas para issues e pull requests.

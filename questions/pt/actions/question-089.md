@@ -1,12 +1,10 @@
 ---
-title: "Pergunta 089"
-question: "Qual das alternativas a seguir pode ser usada para limitar o número de jobs concorrentes em execução em um workflow do GitHub Actions?"
+question: "Qual das opções a seguir pode ser usada para limitar o número de jobs simultâneos em execução em um workflow do GitHub Actions?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency"
 ---
 
-
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-concurrency
-1. [x] concurrency
-1. [ ] limit
-1. [ ] max-jobs
-1. [ ] parallelism
+- [x] concurrency
+- [ ] limit
+- [ ] max-jobs
+- [ ] parallelism
 

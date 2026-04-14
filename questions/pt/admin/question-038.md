@@ -1,10 +1,9 @@
 ---
-question: "Como um proprietário da organização pode encontrar estatísticas sobre o uso de licenças no GitHub Enterprise Server?"
-title: "Pergunta 038"
+question: "Como o proprietário de uma organização pode encontrar estatísticas sobre o uso de licenças para o GitHub Enterprise Server?"
+documentation: "https://docs.github.com/en/enterprise-server/billing/managing-your-license-for-github-enterprise/viewing-license-usage-for-github-enterprise"
 ---
 
-> https://docs.github.com/en/enterprise-server/billing/managing-your-license-for-github-enterprise/viewing-license-usage-for-github-enterprise
-1. [x] Navegando até o painel `Site admin` para visualizar o uso de licenças nas configurações da conta `Enterprise account`.
-1. [ ] Por meio de solicitações de e-mail diretas para o Suporte do GitHub.
-1. [ ] Verificando a página de perfil público da organização para obter estatísticas em tempo real.
-1. [ ] Usando a API do GitHub para buscar dados em tempo real sobre o uso de licenças no GitHub Enterprise Server.
+- [x] Navegando até o painel `Site admin` para visualizar o uso de licenças nas configurações da conta `Enterprise account`.
+- [ ] Através de solicitações diretas por e-mail ao GitHub Support.
+- [ ] Verificando a página de perfil público da organização para estatísticas em tempo real.
+- [ ] Usando a GitHub API para obter dados em tempo real sobre o uso de licenças para o GitHub Enterprise Server.

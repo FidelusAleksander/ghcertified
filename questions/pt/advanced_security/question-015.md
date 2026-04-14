@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 015"
-question: "Você acidentalmente cometeu seu token de acesso pessoal do GitHub em um repositório público. Quais ações você deve tomar para impedir que sua conta seja comprometida?"
+question: "Você acidentalmente comprometeu seu token de acesso pessoal do GitHub em um repositório público. Quais ações você deve tomar para evitar que sua conta seja comprometida?"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning#securing-compromised-secrets"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning#securing-compromised-secrets
-1. [x] Considere o token comprometido e exclua-o imediatamente
-1. [ ] Altere as permissões do token para somente leitura
-1. [ ] Substitua o histórico do git para mascarar o token
-1. [ ] Verifique se esse token é usado em alguma de suas aplicações, se sim - exclua-o.
+- [x] Considere o token comprometido e exclua-o imediatamente
+- [ ] Altere as permissões do token para somente leitura
+- [ ] Substitua o histórico do git para mascarar o token
+- [ ] Verifique se este token é usado em algum de seus aplicativos, se sim - exclua-o.

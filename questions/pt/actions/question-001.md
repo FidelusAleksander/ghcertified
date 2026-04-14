@@ -1,11 +1,9 @@
 ---
-question: "Qual declaração está correta em relação à passagem de permissões para workflows reutilizáveis?"
-title: "Pergunta 001"
+question: "Qual declaração está correta em relação ao repasse de permissões para workflows reutilizáveis?"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#access-and-permissions"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#access-and-permissions
-
-1. [x] As permissões do `GITHUB_TOKEN` passadas do workflow chamador só podem ser rebaixadas pelo workflow chamado.
-1. [ ] As permissões do `GITHUB_TOKEN` passadas do workflow chamador só podem ser elevadas pelo workflow chamado.
-1. [ ] As permissões do `GITHUB_TOKEN` passadas do workflow chamador podem ser tanto rebaixadas quanto elevadas pelo workflow chamado.
-1. [ ] As permissões do `GITHUB_TOKEN` passadas do workflow chamador não podem ser nem rebaixadas nem elevadas pelo workflow chamado.
+- [x] As permissões do `GITHUB_TOKEN` repassadas do workflow chamador só podem ser reduzidas pelo workflow chamado.
+- [ ] As permissões do `GITHUB_TOKEN` repassadas do workflow chamador só podem ser elevadas pelo workflow chamado.
+- [ ] As permissões do `GITHUB_TOKEN` repassadas do workflow chamador podem ser tanto reduzidas quanto elevadas pelo workflow chamado.
+- [ ] As permissões do `GITHUB_TOKEN` repassadas do workflow chamador não podem ser nem reduzidas nem elevadas pelo workflow chamado.

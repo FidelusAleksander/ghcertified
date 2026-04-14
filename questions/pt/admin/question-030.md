@@ -1,10 +1,10 @@
 ---
 question: "Para que o GitHub Enterprise Server é principalmente projetado?"
-title: "Pergunta 030"
+documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
 ---
 
-> https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
-1. [x] Uma plataforma auto-hospedada para desenvolvimento de software dentro da sua empresa  
-1. [ ] Uma plataforma de desenvolvimento de software baseada em nuvem para projetos open-source  
-1. [ ] Uma plataforma para desenvolvedores individuais hospedarem projetos pessoais  
-1. [ ] Um serviço para implantar e gerenciar aplicativos containerizados  
+- [x] Uma plataforma autohospedada para desenvolvimento de software dentro da sua empresa
+- [ ] Uma plataforma de desenvolvimento de software baseada em nuvem para projetos de código aberto
+- [ ] Uma plataforma para desenvolvedores individuais hospedarem projetos pessoais
+- [ ] Um serviço para implementar e gerenciar aplicativos containerizados
+

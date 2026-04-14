@@ -1,11 +1,10 @@
 ---
-title: "Pergunta 065"
-question: "O que é QL?"
+question: "O que é o QL?"
+documentation: "https://codeql.github.com/docs/ql-language-reference/about-the-ql-language/"
 ---
 
+- [x] QL é uma linguagem de consulta que fundamenta o CodeQL
+- [ ] QL significa Nível de Qualidade e é uma métrica usada pelo CodeQL
+- [ ] QL é um produto semelhante ao CodeQL, mas é usado para escanear arquivos de texto em vez de código
+- [ ] QL é um pacote npm usado pelo CodeQL para escanear código
 
-> https://codeql.github.com/docs/ql-language-reference/about-the-ql-language/
-1. [x] QL é uma linguagem de consulta que fundamenta o CodeQL
-1. [ ] QL significa Nível de Qualidade e é uma métrica usada pelo CodeQL
-1. [ ] QL é um produto similar ao CodeQL, mas é usado para escanear arquivos de texto em vez de código
-1. [ ] QL é um pacote npm usado pelo CodeQL para escanear código

@@ -1,13 +1,11 @@
 ---
 question: "O que você deve usar para armazenar relatórios de cobertura ou capturas de tela geradas durante um workflow que executa testes automatizados para um repositório?"
-title: "Pergunta 045"
+documentation: "https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#comparing-artifacts-and-dependency-caching"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#comparing-artifacts-and-dependency-caching
-1. [x] Artifacts
-1. [ ] Caches
-1. [ ] Packages
+- [x] Artifacts
+- [ ] Caches
+- [ ] Packages
 > https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
-1. [ ] Releases
+- [ ] Releases
 > https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases

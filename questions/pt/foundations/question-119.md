@@ -1,13 +1,12 @@
 ---
-title: "Pergunta 119"  
-question: "Qual é a permissão mínima que um usuário deve ter para enviar commits diretamente para um repositório de uma organização?"  
+question: "Qual é a permissão mínima que um usuário deve ter para enviar commits diretamente para um repositório pertencente a uma organização?"  
 draft: false  
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
-> **Mais informações**: [Funções de repositório para organizações](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
+- [ ] Push commits  
+- [x] Gerenciar issues e pull requests  
+- [ ] Excluir o repositório  
+- [ ] Alterar as configurações do repositório  
+- [ ] Criar novos repositórios
 
-1. [ ] Push commits  
-1. [x] Gerenciar issues e pull requests  
-1. [ ] Excluir o repositório  
-1. [ ] Alterar as configurações do repositório  
-1. [ ] Criar novos repositórios  

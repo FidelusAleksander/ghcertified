@@ -1,8 +1,7 @@
 ---
-question: "O GitHub Copilot é gratuito para uso por todos?"
-title: "Pergunta 001"
+question: "O GitHub Copilot é gratuito para todos utilizarem?"
+documentation: "https://github.com/features/copilot/plans"
 ---
 
-> https://github.com/features/copilot/plans
-1. [ ] Não  
-1. [X] Sim  
+- [ ] Não  
+- [x] Sim  

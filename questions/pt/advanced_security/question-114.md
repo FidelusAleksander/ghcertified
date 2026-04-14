@@ -1,11 +1,10 @@
 ---
-title: "Pergunta 114"
 question: "O que significa `CWE`?"
+documentation: "https://cwe.mitre.org/"
 ---
 
+- [x] `Common Weakness Enumeration`
+- [ ] `Cybersecurity Weakness Enumeration`
+- [ ] `Code Wrapping Engine`
+- [ ] `Critical Web Elements`
 
-> https://cwe.mitre.org/
-1. [x] `Common Weakness Enumeration`
-1. [ ] `Cybersecurity Weakness Enumeration`
-1. [ ] `Code Wrapping Engine`
-1. [ ] `Critical Web Elements`

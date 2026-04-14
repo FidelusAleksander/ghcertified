@@ -1,9 +1,8 @@
 ---
-question: "Quais tipos de runners hospedados pelo GitHub estão disponíveis para uso? (Selecione três.)"
-title: "Pergunta 032"
+question: "Quais tipos de runners hospedados pelo GitHub estão disponíveis para uso?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners
 - [x] Windows
 - [x] Ubuntu Linux
 - [x] macOS

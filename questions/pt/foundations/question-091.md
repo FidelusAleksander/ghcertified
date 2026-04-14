@@ -1,12 +1,10 @@
 ---
-title: "Pergunta 091"
-question: "Qual é o efeito de adicionar a linha `Closes #11` na descrição do pull request?"
+question: "Qual é o efeito de adicionar a linha `Closes #11` à descrição do pull request?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests#linking-a-pull-request-to-an-issue"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests#linking-a-pull-request-to-an-issue
-1. [x] Assim que o pull request for mesclado, a issue #11 será fechada automaticamente.
-1. [ ] Assim que o pull request for mesclado, o pull request #11 será excluído automaticamente.
-1. [ ] Assim que o pull request for mesclado, a 11ª branch será excluída automaticamente.
-1. [ ] Esse pull request será mesclado automaticamente assim que a issue #11 for fechada.
-1. [ ] Esse pull request será mesclado automaticamente no dia 11 daquele mês.
+- [x] Assim que esse pull request for mesclado, o issue #11 será fechado automaticamente.
+- [ ] Assim que esse pull request for mesclado, o pull request #11 será excluído automaticamente.
+- [ ] Assim que esse pull request for mesclado, o 11º branch será excluído automaticamente.
+- [ ] Esse pull request será automaticamente mesclado assim que o issue #11 for fechado.
+- [ ] Esse pull request será automaticamente mesclado no 11º dia desse mês.

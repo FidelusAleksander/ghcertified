@@ -1,15 +1,14 @@
 ---
-question: "Quais componentes podem ser reutilizados dentro de uma GitHub Organization? (Selecione quatro.)"
-title: "Pergunta 072"
+question: "Quais componentes podem ser reutilizados dentro de uma Organização no GitHub?"
 ---
 
 - [x] Secrets
 - [x] Variáveis de Configuração
 - [x] Self Hosted Runners
-- [x] Workflow Templates
+- [x] Modelos de Workflow
 - [ ] Artifacts  
-> Artifacts são usados para preservar dados após a conclusão de um job e/ou compartilhar esses dados com outro job dentro do mesmo workflow.  
+> Artifacts são utilizados para preservar dados após a conclusão de um job e/ou compartilhar esses dados com outro job dentro do mesmo workflow.  
 - [ ] Cache  
-> Cache pode ser reutilizado entre workflows dentro de um único repository.  
+> O Cache pode ser reutilizado entre workflows dentro de um único repositório.  
 - [ ] Variáveis de Ambiente  
-> Variáveis de ambiente podem ser atribuídas a um step, job ou workflow. Elas não podem ser compartilhadas entre workflows/repositories ou organizações.  
+> Variáveis de ambiente podem ser escopadas para um passo, job ou workflow. Elas não podem ser compartilhadas entre workflows/repositórios ou organizações.

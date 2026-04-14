@@ -1,12 +1,10 @@
 ---
-title: "Pergunta 097"
-question: "Qual das funcionalidades do GitHub serve melhor como uma maneira simples de compartilhar pequenos trechos de código com outras pessoas?"
+question: "Qual dos recursos do GitHub serve melhor como uma maneira simples de compartilhar pequenos trechos de código com outras pessoas?"
+documentation: "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists"
 ---
 
-
-> https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-1. [x] Gists
-1. [ ] Wikis
-1. [ ] Issues
-1. [ ] Projects
+- [x] Gists
+- [ ] Wikis
+- [ ] Issues
+- [ ] Projects
 

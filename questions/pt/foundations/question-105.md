@@ -1,12 +1,11 @@
 ---
-title: "Pergunta 105"
-question: "Quais informações podem ser encontradas na seção Pulse na aba Insights de um repositório? (Escolha quatro)"
+question: "Quais informações podem ser encontradas na seção Pulse na aba Insights de um repositório?"
+documentation: "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/using-pulse-to-view-a-summary-of-repository-activity"
 ---
 
-> https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/using-pulse-to-view-a-summary-of-repository-activity
-- [x] Relação entre Pull requests abertos/mesclados
+- [x] Proporção de Pull Requests abertos/mesclados
 - [x] Resumo da atividade do repositório
-- [x] Quantidade de adições e deleções de linhas de código
+- [x] Quantidade de adições e exclusões de linhas de código
 - [ ] Lista de discussões de issues
 - [x] Lista de conversas não resolvidas
 - [ ] Quantidade de forks do repositório

@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 055"
 question: "O que é o programa GitHub Sponsors?"
+documentation: "https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors"
 ---
 
-
-> https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors
-1. [x] É uma maneira de apoiar financeiramente os desenvolvedores de projetos de código aberto
-1. [ ] É um grupo de empresas que financiam o GitHub
-1. [ ] É um programa que ajuda pessoas a encontrar um emprego na indústria de tecnologia
-1. [ ] É um programa onde desenvolvedores altamente qualificados se voluntariam para ajudar estudantes a aprender a usar o GitHub
+- [x] É uma forma de apoiar financeiramente os desenvolvedores de projetos de código aberto
+- [ ] É um grupo de empresas que financiam o GitHub
+- [ ] É um programa que ajuda as pessoas a encontrar um emprego na indústria de tecnologia
+- [ ] É um programa onde desenvolvedores altamente qualificados se voluntariam para ajudar os estudantes a aprenderem a usar o GitHub

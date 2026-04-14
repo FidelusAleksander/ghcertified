@@ -1,9 +1,8 @@
 ---
-title: "Pergunta 142"
 question: "Por que uma equipe pode escolher GitHub Issues em vez de Discussions para gerenciar relatórios de bugs?"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
 ---
 
-> **Mais informações**: [Sobre issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-1. [ ] Discussions oferecem melhor visibilidade e acompanhamento para relatórios de bugs.
-1. [x] Issues oferecem um formato estruturado para acompanhar e resolver bugs.
-1. [ ] Issues são automaticamente resolvidos quando vinculados a pull requests.
+- [ ] Discussions oferecem melhor visibilidade e acompanhamento de relatórios de bugs.
+- [x] Issues oferecem um formato estruturado para acompanhar e resolver bugs.
+- [ ] Issues são automaticamente resolvidas quando vinculadas a pull requests.

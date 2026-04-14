@@ -1,11 +1,9 @@
 ---
-question: "No GitHub Actions, se você definir tanto o filtro de branches quanto de paths, qual é o efeito na execução do workflow?"
-title: "Pergunta 103"
+question: "No GitHub Actions, se você definir filtros de `branches` e `paths`, qual será o efeito na execução do workflow?"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore"
 ---
 
-
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore
-1. [x] o workflow será executado somente quando ambos `branches` e `paths` forem satisfeitos
-1. [ ] o workflow será executado quando `branches` ou `paths` forem satisfeitos, mas aplicará somente o filtro correspondente
-1. [ ] o workflow será executado quando `branches` ou `paths` forem satisfeitos
-1. [ ] o workflow não será executado quando ambos `branches` e `paths` forem satisfeitos
+- [x] o workflow será executado apenas quando ambos os filtros `branches` e `paths` forem satisfeitos
+- [ ] o workflow será executado quando qualquer um dos filtros `branches` ou `paths` forem satisfeitos, mas só aplicará o filtro correspondente
+- [ ] o workflow será executado quando qualquer um dos filtros `branches` ou `paths` forem satisfeitos
+- [ ] o workflow não será executado quando ambos os filtros `branches` e `paths` forem satisfeitos

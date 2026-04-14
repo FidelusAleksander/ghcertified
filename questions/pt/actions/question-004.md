@@ -1,10 +1,10 @@
 ---
-question: "As GitHub Actions gratuitas para repositórios públicos?"
-title: "Pergunta 004"
+question: "Os GitHub Actions são gratuitos para repositórios públicos?"
+documentation: "https://docs.github.com/en/billing/concepts/product-billing/github-actions#how-use-of-github-actions-is-measured"
 ---
 
-> https://docs.github.com/en/billing/concepts/product-billing/github-actions#how-use-of-github-actions-is-measured
-1. [x] Sim, ao usar runners padrão hospedados no GitHub
-1. [ ] Não, todo o uso de GitHub Actions é cobrado
-1. [ ] Sim, mas apenas para os primeiros 2.000 minutos por mês
-1. [ ] Não, apenas runners auto-hospedados são gratuitos para repositórios públicos
+- [x] Sim, ao usar os runners padrão hospedados pelo GitHub
+- [ ] Não, todo uso dos GitHub Actions é cobrado
+- [ ] Sim, mas apenas para os primeiros 2.000 minutos por mês
+- [ ] Não, somente os runners auto-hospedados são gratuitos para repositórios públicos
+

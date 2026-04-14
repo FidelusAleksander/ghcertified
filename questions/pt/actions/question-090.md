@@ -1,11 +1,9 @@
 ---
-title: "Pergunta 090"
-question: "Qual é o tempo limite padrão para um job do GitHub Actions?"
+question: "Qual é o tempo limite padrão para um trabalho do GitHub Actions?"
+documentation: "https://docs.github.com/en/actions/reference/limits#existing-system-limits"
 ---
 
-
-> https://docs.github.com/en/actions/reference/limits#existing-system-limits
-1. [ ] 30 minutos
-1. [ ] 60 minutos
-1. [ ] 120 minutos
-1. [x] 360 minutos
+- [ ] 30 minutos  
+- [ ] 60 minutos  
+- [ ] 120 minutos  
+- [x] 360 minutos  

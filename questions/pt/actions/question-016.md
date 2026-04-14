@@ -1,11 +1,10 @@
 ---
-question: "Como você acessa variáveis de matriz em um job de estratégia de matriz?"
-title: "Pergunta 016"
+question: "Como você acessa variáveis de matriz em um trabalho de estratégia de matriz?"
+documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy"
 ---
 
+- [ ] Usando o contexto `vars`
+- [x] Usando o contexto `matrix`
+- [ ] Usando o contexto `job`
+- [ ] Usando o contexto `jobs`
 
-> https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#using-a-matrix-strategy
-1. [ ] Usando o contexto `vars`
-1. [x] Usando o contexto `matrix`
-1. [ ] Usando o contexto `job`
-1. [ ] Usando o contexto `jobs`
