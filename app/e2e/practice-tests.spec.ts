@@ -31,15 +31,13 @@ test.describe("Practice Test Quiz", () => {
     await page.waitForLoadState("networkidle");
     // Click an answer option (radio or checkbox buttons)
     const options = page.locator('[role="radio"], [role="checkbox"]');
-    if ((await options.count()) > 0) {
-      await options.first().click();
-    }
+    await expect(options.first()).toBeVisible();
+    await options.first().click();
     // Find and click submit/next button
     const submitButton = page.getByRole("button", {
       name: /submit|check|next/i,
     });
-    if (await submitButton.isVisible()) {
-      await submitButton.click();
-    }
+    await expect(submitButton).toBeVisible();
+    await submitButton.click();
   });
 });

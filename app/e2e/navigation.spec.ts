@@ -1,11 +1,12 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Navigation", () => {
-  test("navbar links work correctly", async ({ page }) => {
+  test("navbar links are visible", async ({ page }) => {
     await page.goto("/en");
-    // Click practice tests nav link
     const navLinks = page.getByRole("navigation").getByRole("link");
     await expect(navLinks.first()).toBeVisible();
+    const count = await navLinks.count();
+    expect(count).toBeGreaterThan(0);
   });
 
   test("footer is visible on all pages", async ({ page }) => {
