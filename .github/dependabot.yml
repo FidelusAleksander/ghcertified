@@ -8,3 +8,11 @@ updates:
       github-actions:
         patterns:
           - '*'
+  - package-ecosystem: 'npm'
+    directory: '/app'
+    schedule:
+      interval: 'weekly'
+    groups:
+      npm-dependencies:
+        patterns:
+          - '*'
