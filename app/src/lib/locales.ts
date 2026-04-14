@@ -27,6 +27,15 @@ export const LOCALE_FLAGS: Record<SupportedLocale, string> = {
   pt: "🇧🇷",
 };
 
+/**
+ * Validate and narrow a string to SupportedLocale.
+ * Throws if the value is not a supported locale.
+ */
+export function parseSupportedLocale(value: string): SupportedLocale {
+  if (isValidLocale(value)) return value;
+  throw new Error(`Unsupported locale: "${value}"`);
+}
+
 /** Build a locale-prefixed path. */
 export function localePath(locale: string, path: string): string {
   const clean = path.startsWith("/") ? path : `/${path}`;

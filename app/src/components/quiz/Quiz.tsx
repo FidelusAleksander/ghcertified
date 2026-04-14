@@ -17,23 +17,17 @@ import { useCountUp } from "@/hooks/useCountUp";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { localePath } from "@/lib/locales";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { Flag, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Send, TriangleAlert, CheckCircle2, XCircle } from "lucide-react";
+import { Flag, ChevronLeft, ChevronRight, Send } from "lucide-react";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
+import { QuizResults } from "@/components/quiz/QuizResults";
+import { QuizQuestionMap } from "@/components/quiz/QuizQuestionMap";
+import { SubmitDialog } from "@/components/quiz/SubmitDialog";
 
 interface QuizProps {
   questions: Question[];
@@ -353,150 +347,44 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         {/* Sidebar */}
         <div className="flex flex-col gap-4 lg:sticky lg:top-6">
           {isComplete && (
-            <Card className="shadow-sm border-[1.5px] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300">
-              <CardHeader className="p-5 pb-0">
-                <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-                  {t("results")}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-5 pt-3">
-                <div className="text-center mb-3">
-                  <span className="font-display text-[36px] font-extrabold text-foreground leading-none tabular-nums">
-                    {animatedPercent}%
-                  </span>
-                  <div className="text-[13px] text-muted-foreground mt-1">
-                    {t("scoreOf", { score, total: quizQuestions.length })}
-                  </div>
-                </div>
-                <Progress value={(score / quizQuestions.length) * 100} className="h-2.5" />
-                <div className="mt-3 flex justify-between text-[12px] text-muted-foreground">
-                  <span className="flex items-center gap-1.5">
-                    <CheckCircle2 className="size-3.5 text-success" />
-                    {t("correctCount", { count: score })}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <XCircle className="size-3.5 text-destructive" />
-                    {t("incorrectCount", { count: quizQuestions.length - score })}
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+            <QuizResults
+              animatedPercent={animatedPercent}
+              score={score}
+              total={quizQuestions.length}
+              labels={{
+                results: t("results"),
+                scoreOf: t("scoreOf", { score, total: quizQuestions.length }),
+                correctCount: t("correctCount", { count: score }),
+                incorrectCount: t("incorrectCount", { count: quizQuestions.length - score }),
+              }}
+            />
           )}
 
-          {/* Question Map */}
-          <Card className="hidden lg:block shadow-sm border-[1.5px]">
-            <CardHeader className="p-5 pb-0">
-              <CardTitle className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-                {mapTotalPages > 1 ? t("mapRange", { start: mapStart + 1, end: mapEnd, total: quizQuestions.length }) : t("questionMap")}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-5 pt-3.5">
-              <div className="flex flex-wrap gap-x-1.5 gap-y-3.5 pt-2">
-                {quizQuestions.slice(mapStart, mapEnd).map((q, offset) => {
-                  const i = mapStart + offset;
-                  const isQuestionFlagged = flaggedSet.has(i);
-                  const correct = isComplete ? isQuestionCorrect(q) : null;
-                  const state = getQuestionState(q);
-                  const btnClass = cn(
-                    "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-                    // Active question highlight
-                    i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
-                    // Review mode: green/red + ring for active
-                    isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
-                    isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
-                    isComplete && !correct && i === currentIndex && "bg-destructive text-white border-destructive ring-2 ring-destructive/50 ring-offset-1",
-                    isComplete && !correct && i !== currentIndex && "bg-destructive/15 border-destructive/50 text-destructive",
-                    // Exam mode (not submitted)
-                    !isComplete && i !== currentIndex && state === "answered" && "bg-foreground/10 border-foreground/30 text-foreground",
-                    !isComplete && i !== currentIndex && state === "partial" && "bg-amber-50 border-amber-500/50 text-amber-600",
-                    !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
-                  );
-                  return (
-                    <button key={i} onClick={() => goToQuestion(i)} className={btnClass}>
-                      {i + 1}
-                      {isQuestionFlagged && (
-                        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-[14px] leading-none drop-shadow-sm">🚩</span>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-              {/* Map pagination */}
-              {mapTotalPages > 1 && (
-                <div className="flex items-center justify-center gap-1 mt-3 pt-3 border-t border-border">
-                  <button
-                    onClick={() => setManualMapPage(Math.max(0, mapPage - 1))}
-                    disabled={mapPage === 0}
-                    aria-label={t("previousMapPage")}
-                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
-                  >
-                    <ChevronsLeft className="size-3.5" />
-                  </button>
-                  {Array.from({ length: mapTotalPages }, (_, p) => {
-                    const show = p === 0 || p === mapTotalPages - 1 || Math.abs(p - mapPage) <= 1;
-                    const showEllipsis = !show && (p === 1 || p === mapTotalPages - 2) &&
-                      Math.abs(p - mapPage) === 2;
-                    if (showEllipsis) {
-                      return <span key={p} className="text-[10px] text-muted-foreground px-0.5">…</span>;
-                    }
-                    if (!show) return null;
-                    return (
-                      <button
-                        key={p}
-                        onClick={() => setManualMapPage(p)}
-                        className={cn(
-                          "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-                          p === mapPage
-                            ? "bg-primary text-primary-foreground"
-                            : "text-muted-foreground hover:text-foreground hover:bg-muted",
-                        )}
-                      >
-                        {p + 1}
-                      </button>
-                    );
-                  })}
-                  <button
-                    onClick={() => setManualMapPage(Math.min(mapTotalPages - 1, mapPage + 1))}
-                    disabled={mapPage === mapTotalPages - 1}
-                    aria-label={t("nextMapPage")}
-                    className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
-                  >
-                    <ChevronsRight className="size-3.5" />
-                  </button>
-                </div>
-              )}
-              {/* Legend */}
-              <div className="mt-3 pt-3 border-t border-border flex flex-col gap-1.5 text-[11px] text-muted-foreground">
-                {isComplete ? (
-                  <>
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-success/15 border border-success/50" />
-                      {t("correct")}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-destructive/15 border border-destructive/50" />
-                      {t("incorrect")}
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-foreground/10 border border-foreground/30" />
-                      {t("answered")}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-amber-50 border border-amber-500/50" />
-                      {t("partiallyAnswered")}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block size-3 rounded-[3px] bg-card border border-border" />
-                      {t("unanswered")}
-                    </div>
-                  </>
-                )}
-              </div>
-            </CardContent>
-          </Card>
+          <QuizQuestionMap
+            questions={quizQuestions}
+            currentIndex={currentIndex}
+            isComplete={isComplete}
+            flaggedSet={flaggedSet}
+            getQuestionState={getQuestionState}
+            isQuestionCorrect={isQuestionCorrect}
+            goToQuestion={goToQuestion}
+            mapPage={mapPage}
+            mapTotalPages={mapTotalPages}
+            mapStart={mapStart}
+            mapEnd={mapEnd}
+            setManualMapPage={setManualMapPage}
+            labels={{
+              mapRange: mapTotalPages > 1 ? t("mapRange", { start: mapStart + 1, end: mapEnd, total: quizQuestions.length }) : "",
+              questionMap: t("questionMap"),
+              previousMapPage: t("previousMapPage"),
+              nextMapPage: t("nextMapPage"),
+              correct: t("correct"),
+              incorrect: t("incorrect"),
+              answered: t("answered"),
+              partiallyAnswered: t("partiallyAnswered"),
+              unanswered: t("unanswered"),
+            }}
+          />
 
           {/* Contribute CTA */}
           <Card className="bg-foreground text-card border-foreground shadow-sm">
@@ -514,75 +402,28 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
         </div>
       </div>
 
-      {/* Submit confirmation dialog */}
-      <Dialog open={showConfirmDialog} onOpenChange={setShowConfirmDialog}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle className="font-display text-xl font-extrabold">{t("submitDialogTitle")}</DialogTitle>
-            <DialogDescription className="text-muted-foreground">
-              {t("submitDialogDescription")}
-            </DialogDescription>
-          </DialogHeader>
-          <div className="py-4">
-            <div className="flex flex-col gap-2.5 text-[14px]">
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="inline-block size-2.5 rounded-full bg-foreground/30" />
-                  {t("answered")}
-                </span>
-                <span className="font-semibold text-foreground tabular-nums">{fullyAnsweredCount}</span>
-              </div>
-              {partialCount > 0 && (
-                <div className="flex justify-between items-center">
-                  <span className="flex items-center gap-2">
-                    <span className="inline-block size-2.5 rounded-full bg-amber-500" />
-                    {t("partiallyAnswered")}
-                  </span>
-                  <span className="font-semibold text-foreground tabular-nums">{partialCount}</span>
-                </div>
-              )}
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="inline-block size-2.5 rounded-full bg-border-dark" />
-                  {t("unanswered")}
-                </span>
-                <span className="font-semibold text-foreground tabular-nums">{unansweredCount}</span>
-              </div>
-              {flaggedSet.size > 0 && (
-                <div className="flex justify-between items-center">
-                  <span className="flex items-center gap-2">
-                    <span className="text-sm">🚩</span>
-                    {t("submitDialogFlagged")}
-                  </span>
-                  <span className="font-semibold text-foreground tabular-nums">{flaggedSet.size}</span>
-                </div>
-              )}
-            </div>
-            {(unansweredCount > 0 || partialCount > 0) && (
-              <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-[13.5px] text-amber-700">
-                <TriangleAlert className="size-4 mt-0.5 flex-shrink-0" />
-                <span>
-                  {unansweredCount > 0 && partialCount > 0
-                    ? t("submitDialogWarningBoth", { unanswered: unansweredCount, partial: partialCount })
-                    : unansweredCount > 0
-                      ? t("submitDialogWarningUnanswered", { count: unansweredCount })
-                      : t("submitDialogWarningPartial", { count: partialCount })
-                  }
-                </span>
-              </div>
-            )}
-          </div>
-          <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setShowConfirmDialog(false)}>
-              {t("cancel")}
-            </Button>
-            <Button onClick={handleConfirmSubmit} className="bg-foreground text-card hover:bg-foreground/90">
-              <Send className="size-4" />
-              {t("submitExam")}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <SubmitDialog
+        open={showConfirmDialog}
+        onOpenChange={setShowConfirmDialog}
+        onConfirm={handleConfirmSubmit}
+        fullyAnsweredCount={fullyAnsweredCount}
+        partialCount={partialCount}
+        unansweredCount={unansweredCount}
+        flaggedCount={flaggedSet.size}
+        labels={{
+          title: t("submitDialogTitle"),
+          description: t("submitDialogDescription"),
+          answered: t("answered"),
+          partiallyAnswered: t("partiallyAnswered"),
+          unanswered: t("unanswered"),
+          flagged: t("submitDialogFlagged"),
+          warningBoth: t("submitDialogWarningBoth", { unanswered: unansweredCount, partial: partialCount }),
+          warningUnanswered: t("submitDialogWarningUnanswered", { count: unansweredCount }),
+          warningPartial: t("submitDialogWarningPartial", { count: partialCount }),
+          cancel: t("cancel"),
+          submitExam: t("submitExam"),
+        }}
+      />
     </div>
   );
 }

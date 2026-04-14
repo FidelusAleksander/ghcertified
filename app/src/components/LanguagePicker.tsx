@@ -15,6 +15,7 @@ import {
   SUPPORTED_LOCALES,
   LOCALE_LABELS,
   LOCALE_FLAGS,
+  parseSupportedLocale,
   type SupportedLocale,
 } from "@/lib/locales";
 
@@ -30,14 +31,15 @@ function stripLocale(pathname: string): string {
 export function LanguagePicker({ className }: { className?: string }) {
   const pathname = usePathname();
   const router = useRouter();
-  const locale = useLocale() as SupportedLocale;
+  const locale = useLocale();
+  const typedLocale = parseSupportedLocale(locale);
   const [open, setOpen] = useState(false);
 
   const pathWithoutLocale = stripLocale(pathname);
 
   function handleSelect(newLocale: SupportedLocale) {
     setOpen(false);
-    if (newLocale === locale) return;
+    if (newLocale === typedLocale) return;
     router.push(
       `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`
     );
@@ -53,11 +55,11 @@ export function LanguagePicker({ className }: { className?: string }) {
               "gap-1.5 rounded-xl px-3 py-2.5 h-auto border-border bg-card shadow-sm hover:shadow-lg text-muted-foreground hover:text-foreground transition-all duration-300",
               className
             )}
-            aria-label={`Language: ${LOCALE_LABELS[locale]}`}
+            aria-label={`Language: ${LOCALE_LABELS[typedLocale]}`}
           />
         }
       >
-        <span className="text-lg leading-none">{LOCALE_FLAGS[locale]}</span>
+        <span className="text-lg leading-none">{LOCALE_FLAGS[typedLocale]}</span>
         <ChevronDown
           className={cn(
             "size-3 opacity-60 transition-transform duration-200",
@@ -73,7 +75,7 @@ export function LanguagePicker({ className }: { className?: string }) {
       >
         <div role="menu" aria-label="Select language">
           {SUPPORTED_LOCALES.map((loc) => {
-            const isActive = loc === locale;
+            const isActive = loc === typedLocale;
             return (
               <button
                 key={loc}

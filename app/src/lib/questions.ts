@@ -44,6 +44,7 @@ export {
   isValidLocale,
 } from "./locales";
 export type { SupportedLocale } from "./locales";
+export { parseSupportedLocale } from "./locales";
 
 import { DEFAULT_LOCALE } from "./locales";
 import type { SupportedLocale } from "./locales";
