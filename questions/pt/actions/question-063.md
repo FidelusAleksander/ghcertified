@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-comm
 - [ ] `echo ":debug:Watch out here!"`
 - [ ] `echo "::debug::message=Watch out here!"`
 - [ ] `echo "Watch out here!" >> $GITHUB_DEBUG`
-
