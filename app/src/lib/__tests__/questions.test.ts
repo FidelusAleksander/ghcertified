@@ -33,7 +33,7 @@ describe("question parsing", () => {
         if (!existsSync(dir)) continue;
 
         it(`parses all ${cert} questions`, () => {
-          const questions = parseDirectory(dir, { filePrefix: "question-" });
+          const questions = parseDirectory(dir, { filePrefix: "question-", strict: true });
 
           expect(questions.length).toBeGreaterThan(0);
 

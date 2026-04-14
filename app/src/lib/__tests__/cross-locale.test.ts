@@ -44,7 +44,7 @@ function loadQuestions(locale: string, cert: string): Map<string, ParsedQuestion
   const dir = join(QUESTIONS_ROOT, locale, cert);
   if (!existsSync(dir)) return new Map();
 
-  const raw = parseDirectory(dir, { filePrefix: "question-" }) as ParsedQuestion[];
+  const raw = parseDirectory(dir, { filePrefix: "question-", strict: true }) as ParsedQuestion[];
   const map = new Map<string, ParsedQuestion>();
   for (const q of raw) {
     map.set(q.id, q);
