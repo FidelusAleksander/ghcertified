@@ -5,5 +5,5 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-wh
 
 - [x] tratar variáveis de ambiente como sensíveis a maiúsculas e minúsculas
 - [ ] usar apenas letras maiúsculas para nomes de variáveis de ambiente
-- [ ] ignorar a sensibilidade a maiúsculas e minúsculas, já que o GitHub Actions lida com isso automaticamente
+- [ ] ignorar a sensibilidade a maiúsculas e minúsculas, pois o GitHub Actions lida com isso automaticamente
 - [ ] depender do comportamento do sistema operacional em uso
