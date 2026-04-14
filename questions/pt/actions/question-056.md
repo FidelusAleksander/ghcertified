@@ -4,7 +4,7 @@ documentation: "https://docs.github.com/en/actions/deployment/targeting-differen
 ---
 
 - [x] Usando regras de proteção de implantação
-- [ ] Definindo os revisores obrigatórios no workflow `production`
+- [ ] Configurando os revisores necessários no workflow de `production`
 - [ ] Usando regras de proteção de branch
 - [ ] Aprovações manuais não são suportadas pelo GitHub Actions
 
