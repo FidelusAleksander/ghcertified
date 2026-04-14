@@ -1,5 +1,5 @@
 ---
-question: "O que deve ser adicionado ao `actions/checkout` se `my-org/my-private-repo` for um repositório privado diferente do que contém o workflow atual?"
+question: "O que deve ser adicionado ao `actions/checkout` se `my-org/my-private-repo` for um repositório privado diferente daquele que contém o workflow atual?"
 documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow"
 ---
 
@@ -33,7 +33,7 @@ with:
     token: ${{ MY_ACCESS_TOKEN }}
 ```
 
-- [ ] A variável de ambiente `GITHUB_TOKEN`
+- [ ] Utilizar a variável de ambiente `GITHUB_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
