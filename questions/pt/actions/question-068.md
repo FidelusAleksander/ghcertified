@@ -1,9 +1,9 @@
 ---
-question: "Para executar um `step` apenas se o segredo `MY_SECRET` tiver sido configurado, você pode:"
+question: "Para executar um `step` somente se o segredo `MY_SECRET` tiver sido configurado, você pode:"
 documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets"
 ---
 
-- [x] Definir o segredo `MY_SECRET` como uma variável de ambiente no nível do job e, em seguida, referenciar essa variável de ambiente para executar condicionalmente aquele step
+- [x] Configurar o segredo `MY_SECRET` como uma variável de ambiente no nível do job e, em seguida, referenciar essa variável de ambiente para executar condicionalmente esse step
 ```yaml
 my-job:
   runs-on: ubuntu-latest
@@ -12,26 +12,26 @@ my-job:
   steps:
     - if: ${{ env.my_secret != '' }}
 ```
-- [ ] Criando a seguinte condicional no nível do job
+- [ ] Criar a seguinte condicional no nível do job
 ```yaml
 my-job:
   runs-on: ubuntu-latest
   if: ${{ secrets.MY_SECRET == '' }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais if: 
-- [ ] Criando a seguinte condicional no nível do step
+> segredos não podem ser referenciados diretamente em condicionais if:
+- [ ] Criar a seguinte condicional no nível do step
 ```yaml
 my-job:
   runs-on: ubuntu-latest
   steps:
     - if: ${{ secrets.MY_SECRET == '' }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais if: 
-- [ ] Criando a seguinte condicional no nível do step
+> segredos não podem ser referenciados diretamente em condicionais if:
+- [ ] Criar a seguinte condicional no nível do step
 ```yaml
 my-job:
   runs-on: ubuntu-latest
   steps:
     - if: ${{ secrets.MY_SECRET }}
 ```
-> segredos não podem ser referenciados diretamente em condicionais if: 
+> segredos não podem ser referenciados diretamente em condicionais if:
