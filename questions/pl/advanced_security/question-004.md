@@ -1,11 +1,10 @@
 ---
-title: "Pytanie 004"
-question: "Które narzędzie pomaga utrzymać zależności repozytorium w aktualności?"
+question: "Które narzędzie pomaga aktualizować zależności w repozytorium?"
+documentation: "https://docs.github.com/en/code-security/dependabot"
 ---
 
-
-> https://docs.github.com/en/code-security/dependabot
-1. [x] Dependabot
-1. [ ] Security Advisories
-1. [ ] CodeQL
-1. [ ] GitHub Actions
+- [x] Dependabot
+- [ ] Security Advisories
+- [ ] CodeQL
+- [ ] GitHub Actions
+---
