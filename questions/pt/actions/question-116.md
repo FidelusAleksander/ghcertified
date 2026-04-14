@@ -4,7 +4,6 @@ documentation: "https://docs.github.com/en/actions/managing-workflow-runs/deleti
 ---
 
 - [x] Quando a execução do workflow foi concluída
-- [x] Quando a execução do workflow tem duas semanas
-- [ ] Quando a execução do workflow tem 10 dias
+- [x] Quando a execução do workflow tem duas semanas de idade
+- [ ] Quando a execução do workflow tem 10 dias de idade
 - [ ] Quando a execução do workflow está em andamento
-
