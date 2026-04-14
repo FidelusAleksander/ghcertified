@@ -1,5 +1,5 @@
 ---
-question: "Como você garante que a etapa `Upload Failure test report` seja executada apenas se a etapa `Run Tests` falhar?"
+question: "Como garantir que a etapa `Upload Failure test report` seja executada apenas se a etapa `Run Tests` falhar?"
 documentation: "https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions"
 ---
 
