@@ -7,4 +7,4 @@ documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-
 - [ ] `github.repository`
 - [ ] `github.job`
 - [ ] `jobs.<job_id>.result`
-
+---
