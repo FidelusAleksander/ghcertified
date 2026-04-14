@@ -1,5 +1,5 @@
 ---
-question: "Qual dessas é uma forma correta de definir um parâmetro de saída `PET` com o valor `DOG` em um `step`."
+question: "Qual das seguintes opções é uma maneira correta de definir um parâmetro de saída `PET` com o valor `DOG` em um `step`."
 documentation: "https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter"
 ---
 
@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-comm
 - [ ] `echo "DOG=PET" >> "$GITHUB_OUTPUT"`
 - [ ] `gh set-output "DOG=PET"`
 - [ ] `gh set-output "PET=DOG"`
-
