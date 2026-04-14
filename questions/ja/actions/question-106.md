@@ -1,10 +1,9 @@
 ---
-question: "GitHub Actionsの`actions/cache`における`restore-keys`パラメータの目的は何ですか？"
-title: "質問 106"
+question: "GitHub Actions における `actions/cache` の `restore-keys` パラメーターの目的は何ですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches
-1. [x] キャッシュミス時に使用する代替キーを指定する
-1. [ ] キャッシュヒットが発生したかどうかを示す
-1. [ ] キャッシュされたファイルの場所を指定する
-1. [ ] クロスOSでのキャッシュ機能を有効にする
+- [x] キャッシュが見つからなかった場合に使用する代替キーを指定する
+- [ ] キャッシュヒットが発生したかどうかを示す
+- [ ] キャッシュされたファイルの場所を指定する
+- [ ] クロスOSキャッシュ機能を有効にする

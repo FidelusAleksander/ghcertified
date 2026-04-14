@@ -1,14 +1,12 @@
 ---
-title: "質問 012"
-question: "GitHub Secret scanningパートナープログラムについて正しいものはどれですか？（3つ選択）"
+question: "GitHub 秘密スキャンパートナープログラムについて正しいものはどれですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program
-- [x] サービスプロバイダーは発行するシークレットの正規表現パターンをGitHubに提供し、GitHub Secret scanningがそれらを認識できるようにするプログラム
-- [x] GitHubがパートナーサービスのシークレットを検知すると、サービスプロバイダーに漏洩したシークレットを通知する
-- [x] パートナーはGitHubから漏洩通知を受けると、シークレットの無効化や所有者への通知などの対応を行う
-- [ ] パートナーがGitHubのSecret scanning APIにアクセスして、自社のフォーマットに合致するシークレットをGitHubリポジトリ内でスキャンできるようにする
-> GitHubがSecret scanningを実行し、パートナーは実行しない
-- [ ] GitHubが漏洩したシークレットを自動無効化し、サービスプロバイダーに通知する
-> GitHubはシークレットの無効化には関与せず、サービスプロバイダーが対応可能
+- [x] サービスプロバイダーが発行する秘密の正規表現パターンを GitHub に提供するプログラムで、GitHub 秘密スキャンがそれらを認識できるようにします。
+- [x] GitHub が提携しているサービスプロバイダーの秘密を特定した場合、漏洩した秘密についてサービスプロバイダーに通知します。
+- [x] パートナーは、GitHub から漏洩した秘密に関する通知を受け取った場合、秘密を取り消し、その秘密が侵害されたことを所有者に通知するなどの措置を講じることができます。
+- [ ] 提携先に秘密 GitHub スキャン API へのアクセスを付与し、サービスプロバイダーが GitHub リポジトリ内の自社形式に一致する秘密をスキャンできるようにします。
+> GitHub が秘密スキャンを実行する責任を常に負い、パートナーは実行しません。
+- [ ] GitHub が漏洩した秘密を自動的に取り消し、サービスプロバイダーにその秘密が GitHub によって無効化されたことを通知する能力を持っています。
+> GitHub は漏洩した秘密の取り消しには関与せず、そのオプションを持つのはサービスプロバイダーです。

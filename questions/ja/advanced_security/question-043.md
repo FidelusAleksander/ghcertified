@@ -1,10 +1,10 @@
 ---
-question: "`dependabot.yml` ファイルで必要なトップレベルキーはどれですか？"
-title: "質問 043"
+question: "「dependabot.yml」ファイルに必要なトップレベルキーはどれですか？"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file
-1. [x] `version` と `updates`
-1. [ ] `version` と `package-ecosystem`
-1. [ ] `assignees` と `directory`
-1. [ ] `updates` と `directory`
+- [x] `version` と `updates`
+- [ ] `version` と `package-ecosystem`
+- [ ] `assignees` と `directory`
+- [ ] `updates` と `directory`
+

@@ -1,15 +1,13 @@
 ---
-title: "質問 129"  
-question: "Organization内でPrivate Repositoryのセキュリティアラートを閲覧および管理できるロールはどれですか？"  
+question: "組織内でプライベートリポジトリのセキュリティアラートを閲覧および管理できるロールはどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> **詳細**: [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
-
-1. [ ] 外部Collaborator  
-  > 外部CollaboratorはRepository固有の権限しか持たず、セキュリティ権限を持つOrganizationメンバーではない。  
-1. [ ] Repository Maintainer  
-  > Maintainerは一部のRepository設定を管理できるが、Organization全体のセキュリティアラートへのデフォルトアクセスは持たない。  
-1. [x] Organization OwnerおよびSecurity Manager  
-  > **正解**。Organization OwnerとSecurity Managerは、Private Repositoryを含むセキュリティアラートを閲覧および管理できる。  
-1. [ ] Billing Manager
+- [ ] 外部コラボレーター  
+> 外部コラボレーターはリポジトリ固有の権限のみを持ち、セキュリティ権限を持つ組織メンバーではありません。  
+- [ ] リポジトリ管理者  
+> リポジトリ管理者は特定のリポジトリ設定を管理できますが、組織全体のセキュリティアラートへのデフォルトアクセス権はありません。  
+- [x] 組織所有者およびセキュリティ管理者  
+> **正解**。組織所有者およびセキュリティ管理者は、プライベートリポジトリを含むセキュリティアラートを閲覧および管理できます。  
+- [ ] 請求管理者  

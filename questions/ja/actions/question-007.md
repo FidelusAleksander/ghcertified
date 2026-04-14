@@ -1,10 +1,9 @@
 ---
-question: "Workflowに必要なコンポーネントはどれですか？（2つ選択）"
-title: "質問 007"
+question: "ワークフローに必要なコンポーネントはどれですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/about-workflows#workflow-basics"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/about-workflows#workflow-basics
-- [x] Workflowをトリガーする1つ以上のイベント
-- [x] 1つ以上のJob
-- [ ] Workflow名
-- [ ] Workflowが実行されるBranchの定義
+- [x] ワークフローをトリガーする1つ以上のイベント
+- [x] 1つ以上のジョブ
+- [ ] ワークフロー名
+- [ ] ワークフローが実行されるブランチの定義

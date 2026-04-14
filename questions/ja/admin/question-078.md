@@ -1,10 +1,9 @@
 ---
-question: "EnterpriseはGitHub Actionsの使用状況をどのように追跡できますか？"
-title: "質問 078"
+question: "企業はどのようにしてGitHub Actionsの使用状況を追跡できますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/introducing-github-actions-to-your-enterprise#tracking-usage
-1. [x] Webhookを使ってWorkflowジョブや実行に関する情報を購読し、必要に応じてデータアーカイブシステムを利用する
-1. [ ] 月末に各RepositoryでWorkflowの実行回数とジョブ数を手動で数える
-1. [ ] GitHubの内部分析ダッシュボードに無制限アクセスし、追加設定なしで確認する
-1. [ ] GitHub Actionsの使用状況は追跡できないため、開発者のフィードバックに基づいて推定する必要がある
+- [x] ワークフローのジョブと実行に関する情報を購読するためにWebhookを使用し、データアーカイブシステムを使用する可能性があります。
+- [ ] 毎月末に各Repositoryでのワークフロー実行とジョブの数を手動で数えることで。
+- [ ] GitHubの内部分析ダッシュボードに追加の設定なしで無制限にアクセスすることで。
+- [ ] GitHub Actionsの使用状況を追跡することはできません。企業は開発者のフィードバックに基づいて使用状況を推定する必要があります。

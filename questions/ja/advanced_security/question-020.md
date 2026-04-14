@@ -1,13 +1,12 @@
 ---
-title: "質問 020"
-question: "GitHubが管理する3種類の異なるシークレットスキャンパターンは何ですか？（3つ選択）"
+question: "GitHubが管理する3つの異なる秘密スキャンパターンセットは何ですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns
-- [x] パートナーパターン
-- [x] ユーザーアラートパターン
-- [x] プッシュ保護パターン
-- [ ] エンタープライズアラートパターン
-- [ ] オープンソースアラートパターン
-- [ ] クラウドプロバイダーパターン
+- [x] Partner patterns 
+- [x] User alert patterns
+- [x] Push protection patterns
+- [ ] Enterprise alert patterns
+- [ ] Open source alert patterns
+- [ ] Cloud provider patterns
+---

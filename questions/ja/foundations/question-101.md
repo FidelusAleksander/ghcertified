@@ -1,11 +1,9 @@
 ---
-title: "質問 101"
-question: "ProjectをCloseするとどうなりますか？"
+question: "プロジェクトを閉じることを選択するとどうなりますか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects
-1. [ ] プロジェクトがプラットフォームから完全に削除される
-1. [x] 内容は保持され、後で再オープンできる
-1. [ ] 関連する値やインサイトデータが削除される
-1. [ ] プロジェクトが別フォルダに移動される
+- [ ] プロジェクトはプラットフォームから完全に削除されます
+- [x] コンテンツは保持され、後で再度開くことができます。
+- [ ] 関連する値やインサイトデータは削除されます
+- [ ] プロジェクトは別のフォルダーに移動されます

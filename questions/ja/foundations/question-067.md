@@ -1,11 +1,9 @@
 ---
-title: "質問 067"
-question: "gitを最も適切に説明しているのはどれですか？"
+question: "次のうち、git を最もよく説明しているのはどれですか？"
+documentation: "https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git"
 ---
 
-
-> https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git
-1. [x] Gitは分散型バージョン管理システム
-1. [ ] Gitは集中型バージョン管理システム
-1. [ ] GitはGitHubが提供するバージョン管理製品
-1. [ ] Gitはファイル共有システム
+- [x] Git は分散型バージョン管理システムです。
+- [ ] Git は集中型バージョン管理システムです。
+- [ ] Git はバージョン管理を可能にする GitHub の製品です。
+- [ ] Git はファイル共有システムです。

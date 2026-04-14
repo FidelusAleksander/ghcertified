@@ -1,14 +1,12 @@
 ---
-title: "質問 108"
-question: "GitHub認証で標準的なユーザー名とパスワードの代わりにPersonal Access Token（PAT）を使用する主な利点の1つは何ですか？"
+question: "GitHub認証において、標準的なユーザー名とパスワードの代わりにPersonal Access Token (PAT) を使用する主な利点の1つは何ですか？"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
-1. [ ] PATはOrganizationやEnterpriseによって管理できる
-> PATはその名の通り個人用。OrganizationやEnterpriseはLDAP、SAML、SSHキーなど他の認証手段を管理できる
-1. [ ] PATはWebサイトやアプリにログインする際の追加認証層。ユーザー名とパスワードに加え、ユーザーだけが持つ別の認証を要求する
-> これは多要素認証や二要素認証の説明
-1. [x] PATはGitHub APIやコマンドラインを使用する際の認証に使える。ユーザーはGitHubの設定からトークンを生成し、その権限をRepositoryやOrganizationに紐付けることができる
-1. [ ] PATは既存アカウントでGitHub Enterprise Serverを認証し、Repositoryアクセスを一元管理できる
-> これはPATではなくLDAPの利点の説明
+- [ ] PATは、OrganizationやEnterpriseによって管理することができる。
+> PATはその名の通り個人的なものであり、OrganizationやEnterpriseは、LDAP、SAML、SSHキーなどの他の認証形式を管理することができます。
+- [ ] PATは、ウェブサイトやアプリにログインする際に使用する追加のセキュリティ層です。PATを使用すると、ユーザーはユーザー名とパスワードでサインインしたうえで、さらに自身しかアクセスできない認証手段を提供する必要があります。
+> これは多要素認証または二要素認証の説明です。
+- [x] PATは、GitHub APIやコマンドラインを使用したGitHubの認証に使用できます。ユーザーはGitHubの設定オプションからトークンを生成し、RepositoryまたはOrganizationにトークンの権限を関連付けます。
+- [ ] PATを使用すると、既存のアカウントに対してGitHub Enterprise Serverを認証し、Repositoryのアクセスを集中管理できます。
+> これはLDAPのGitHubにおける利点についての説明であり、PATに関するものではありません。

@@ -1,9 +1,7 @@
 ---
-title: "質問 093"
-question: "Branch `feature-a` の変更を `main` にマージするPull Requestを作成するとき、`base` Branchと`compare` Branchはそれぞれどれですか？"
+question: "ブランチ `feature-a` の変更を `main` にマージしたい場合、Pull Request を作成しています。どのブランチを `base` ブランチにし、どのブランチを `compare` ブランチにすべきですか？"
+documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests"
 ---
 
-
-> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests
-1. [x] `main` がbase Branchで、`feature-a` がcompare Branch
-1. [ ] `feature-a` がbase Branchで、`main` がcompare Branch
+- [x] `main` が base ブランチで、`feature-a` が compare ブランチです。  
+- [ ] `feature-a` が base ブランチで、`main` が compare ブランチです。  

@@ -1,11 +1,9 @@
 ---
-title: "質問 005"
-question: "GitHub ProjectボードにIssueやPull Requestを追加する際の利用可能な方法はどれですか？"
+question: "GitHubプロジェクトボードにIssuesおよびPull Requestsを追加するための利用可能なオプションは何ですか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
-1. [x] 個別、 自動、 または一括で追加
-1. [ ] 手動で1件ずつのみ追加
-1. [ ] 個別または一括のみ
-1. [ ] プロジェクトワークフローを使った自動追加のみ
+- [x] 個別に、自動的に、または一括で。
+- [ ] 手動で、1つずつのみ。
+- [ ] 個別または一括のみ。
+- [ ] プロジェクトワークフローを使用して自動的にのみ。

@@ -1,11 +1,9 @@
 ---
-title: "質問 013"
-question: "IssueやPull Requestに人を割り当てるにはどうすればよいですか？"
+question: "どのようにしてイシューまたはプルリクエストに担当者を割り当てることができますか？"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users"
 ---
 
-
-> https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
-1. [x] サイドバーのAssigneesフィールドを使用する
-1. [ ] 該当するIssueやPull Requestにその人のGitHubユーザー名のラベルを追加する
-1. [ ] IssueやPull Requestの説明文でその人をメンションする
-1. [ ] IssueやPull Requestに人を割り当てることはできない
+- [x] サイドバーの「Assignees」フィールドを使用する
+- [ ] 該当のイシューまたはプルリクエストに、その人のGitHubユーザー名でラベルを追加する
+- [ ] イシューまたはプルリクエストの説明でその人にメンションを付ける
+- [ ] イシューまたはプルリクエストに担当者を割り当てることはできない。

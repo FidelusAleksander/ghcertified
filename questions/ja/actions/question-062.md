@@ -1,11 +1,10 @@
 ---
-question: "Organizationで定義されたSecret `SomeSecret` を`${{ secrets.SomeSecret }}`で参照したところ、Organizationスコープで設定した値ではなく、別の値が取得されました。原因として最も考えられるのはどれですか？"
-title: "質問 062"
+question: "あなたのOrganizationでは、シークレット `SomeSecret` を定義していますが、そのシークレットを `${{ secrets.SomeSecret }}` を使用してワークフローで参照すると、予期しない値が返されます。その理由として考えられるものは何ですか？"
+documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets"
 ---
 
-> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#naming-your-secrets
-1. [x] 同名のSecret `SomeSecret` がRepositoryスコープでも定義されている
-1. [ ] 同名のSecret `SomeSecret` がEnterpriseスコープでも定義されている  
-> 同じ名前のSecretが複数のレベルに存在する場合、最も低いレベルのSecretが優先される
-1. [ ] `${{ secrets.SomeSecret }}` 式はRepositoryスコープのSecret専用である
-1. [ ] OrganizationスコープのSecretにアクセスするにはGitHub APIを使用する必要がある
+- [x] シークレット `SomeSecret` がリポジトリスコープでも宣言されています
+- [ ] シークレット `SomeSecret` がエンタープライズスコープでも宣言されています
+> 同じ名前のシークレットが複数のレベルで存在する場合、最も低いレベルのシークレットが優先されます。
+- [ ] `${{ secrets.SomeSecret }}` 式はリポジトリスコープのシークレットでのみ使用されます
+- [ ] OrganizationスコープのシークレットにアクセスするにはGitHub APIを使用する必要があります

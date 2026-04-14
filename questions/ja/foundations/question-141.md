@@ -1,9 +1,8 @@
 ---
-title: "質問 141"
-question: "GitHub Flowにおいて『Commitメッセージ』の重要性は何ですか？"
+question: "GitHub フロー プロセスにおける 'commit message' の重要性は何ですか？"
+documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
 ---
 
-> **詳細**: [About commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
-1. [ ] 変更を自動的にMain BranchへMergeする  
-1. [ ] Repositoryのバックアップを作成する  
-1. [x] Commitで行った変更の概要を提供し、プロジェクト履歴の追跡を容易にする
+- [ ] 変更を自動的に main ブランチにマージします。
+- [ ] リポジトリのバックアップを作成します。
+- [x] コミットで行われた変更の概要を提供し、プロジェクト履歴の追跡に役立ちます。

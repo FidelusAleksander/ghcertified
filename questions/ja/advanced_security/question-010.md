@@ -1,9 +1,8 @@
 ---
-title: "質問 010"
-question: "個人ユーザー所有のパブリックリポジトリと組織所有のパブリックリポジトリは、Secret scanningを無料で利用できますか？"
+question: "個人ユーザーが所有するパブリックリポジトリおよび組織が所有するパブリックリポジトリでは、無料で秘密のスキャンを利用できます。"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning
-1. [x] はい
-1. [ ] いいえ
+- [x] True
+- [ ] False
+---

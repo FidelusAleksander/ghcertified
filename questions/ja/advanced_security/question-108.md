@@ -1,10 +1,9 @@
 ---
-title: "質問 108"
-question: "低重大度のDependabot alertsを自動で却下するにはどうすればよいですか？"
+question: "低優先度のDependabotアラートを自動で却下するにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules
-1. [x] Dependabotのauto-triageルールを使う。
-1. [ ] `dependabot.yml`の`severity`フィールドをhighに設定する。
-1. [ ] 低重大度のアラートを出すすべての依存関係を削除する。
-1. [ ] `dependabot.yml`の`dismiss-severity`フィールドをlowに設定する。
+- [x] Dependabotの自動トリアージルールを使用する
+- [ ] `dependabot.yml`ファイルの`severity`フィールドをhighに設定する
+- [ ] 低優先度のアラートを引き起こすすべての依存関係を削除する
+- [ ] `dependabot.yml`ファイルの`dismiss-severity`フィールドをlowに設定する

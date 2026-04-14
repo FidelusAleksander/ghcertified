@@ -1,10 +1,10 @@
 ---
-question: "英語によるSLA付きの24時間365日のサポートを提供するGitHubのサポートレベルはどれですか？"
-title: "質問 012"
+question: "どのGitHubサポートレベルがSLAを提供し、24時間年中無休で英語による書面サポートを提供しますか？"
+documentation: "https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support"
 ---
 
-> https://docs.github.com/en/enterprise-server/support/learning-about-github-support/about-github-support#about-github-support
-1. [x] GitHub Premium Support
-1. [ ] GitHub Enterprise Support
-1. [ ] GitHub Standard Support
-1. [ ] GitHub Community Support
+- [x] GitHub Premium Support
+- [ ] GitHub Enterprise Support
+- [ ] GitHub Standard Support
+- [ ] GitHub Community Support
+

@@ -1,11 +1,9 @@
 ---
-title: "質問 024"
-question: "GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか？"
+question: "GitHub Copilot Individual と GitHub Copilot Business の違いは何ですか？"
+documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
 ---
 
-
-> https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot
-1. [x] GitHub Copilot Individualは個人アカウントのみが利用でき、GitHub Copilot BusinessはOrganizationやEnterpriseで利用される
-1. [ ] GitHub Copilot Individualは公開ソースコードで学習したAIモデルを使用し、GitHub Copilot Businessは非公開ソースコードで学習したAIモデルを使用する
-1. [ ] GitHub Copilot Individualは無料で、GitHub Copilot Businessは有料機能である
-1. [ ] GitHub Copilot Individualは公開Repositoryで作業するときのみ利用でき、GitHub Copilot BusinessはOrganization内の公開および非公開Repositoryで利用できる
+- [x] GitHub Copilot Individual は個人アカウントでのみ使用でき、GitHub Copilot Business は組織や企業で使用されます
+- [ ] GitHub Copilot Individual は公開ソースコードでトレーニングされた AI モデルを使用し、GitHub Copilot Business は非公開ソースコードでトレーニングされた AI モデルを使用します
+- [ ] GitHub Copilot Individual は無料であり、GitHub Copilot Business は有料機能です
+- [ ] GitHub Copilot Individual は公開リポジトリで作業する場合にのみ使用でき、GitHub Copilot Business は組織内の公開および非公開リポジトリで作業する場合に使用できます

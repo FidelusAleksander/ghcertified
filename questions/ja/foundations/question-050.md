@@ -1,11 +1,9 @@
 ---
-title: "質問 050"
-question: "個人のGitHubアカウントで作成したRepositoryを友人と共同で作業するにはどうすればよいですか？"
+question: "自分の個人GitHubアカウントで作成したRepositoryで、友人と一緒に作業するにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository"
 ---
 
-
-> https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository
-1. [x] Repository設定に移動し、Collaboratorとして招待する
-1. [ ] `CODEOWNERS` ファイルに追加する
-1. [ ] 個人Repositoryでは共同作業はできず、Organization所有のRepositoryでのみ可能
-1. [ ] GitHubの認証情報を友人に教える
+- [x] Repositoryの設定に移動し、Collaboratorとして招待します
+- [ ] `CODEOWNERS`ファイルに追加します
+- [ ] 個人のRepositoryでは一緒に作業することはできません。これはOrganizationsに所有されているRepositoryでのみ可能です。
+- [ ] 自分のGitHubの資格情報を友人に提供します

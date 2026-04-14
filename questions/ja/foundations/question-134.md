@@ -1,15 +1,14 @@
 ---
-title: "質問 134"  
-question: "GitHub Secret Scanningを最もよく表している説明はどれですか？"  
+question: "次のうち、GitHubのシークレットスキャンを最もよく表しているのはどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
 ---
 
-> **詳細**: [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
+- [ ] 認証されていない資格情報を検出して自動的に削除する機能。  
+> シークレットスキャンは、何かを自動的に削除するわけではなく、潜在的に漏洩したシークレットを検出します。  
+- [ ] リポジトリシークレットを暗号化してGitHubにプッシュする前の機能。  
+> GitHub Actions Encrypted Secretsは暗号化を処理しますが、これはシークレットスキャンとは異なります。  
+- [ ] サードパーティのパスワードマネージャーをコード上で実行し、シークレットを安全に保存する機能。  
+- [x] 既知のシークレット形式を検索して、機密データの意図しない漏洩を防ぐ機能。  
+> **正解**。シークレットスキャンはトークン、キー、その他の資格情報を検出して、漏洩を防ぐのに役立ちます。  
 
-1. [ ] 未検証の認証情報をIssueからスキャンして自動削除する機能。  
-  > Secret Scanningは何も自動削除せず、漏洩の可能性があるSecretを検出する。  
-1. [ ] Repository SecretをGitHubにPushする前に暗号化する機能。  
-  > GitHub ActionsのEncrypted Secretsが暗号化を行うが、これはSecret Scanningとは異なる。  
-1. [ ] コード上でサードパーティ製パスワードマネージャーを実行し、Secretを安全に保管する機能。  
-1. [x] 既知のSecret形式をRepository内で検索し、機密データの誤露出を防ぐ機能。  
-  > **正解**。Secret Scanningはトークンやキーなどの認証情報を検出し、漏洩防止を支援する。

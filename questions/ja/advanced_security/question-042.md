@@ -1,10 +1,9 @@
 ---
-title: "質問 042"
-question: "GitHubのSecret scanningについて、以下のうち正しくないものはどれですか？"
+question: "GitHub でのシークレットスキャンについて、これらの記述のうち正しくないものはどれですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
 ---
 
-> https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
-1. [x] Secret scanningは秘密情報の安全な保存と管理のためのツールである。
-1. [ ] Secret scanningはGitHubリポジトリ内の全ブランチのGit履歴を秘密情報についてスキャンする。
-1. [ ] Secret scanningはオープンおよびクローズ済みの過去のIssueのタイトル、説明、コメントを秘密情報についてスキャンする。
-1. [ ] Secret scanningはサポートされた秘密情報がエンタープライズ、組織、リポジトリにプッシュされるのを防ぐことができる。
+- [x] シークレットスキャンは、シークレットの安全な保存と管理のためのツールです。
+- [ ] シークレットスキャンは、GitHub リポジトリ内のすべてのブランチで存在する Git 履歴全体をスキャンしてシークレットを検出します。
+- [ ] シークレットスキャンは、オープンおよびクローズされた履歴の Issue のタイトル、説明、コメントをスキャンしてシークレットを検出します。
+- [ ] シークレットスキャンは、サポートされているシークレットが Enterprise、Organization、またはリポジトリにプッシュされるのを防ぐことができます。

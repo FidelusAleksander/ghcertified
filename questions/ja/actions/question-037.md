@@ -1,11 +1,10 @@
 ---
-question: "`step` 内で値 `DOG` を持つ出力パラメータ `PET` を設定する正しい方法はどれですか？"
-title: "質問 037"
+question: "次のうち、`step` で出力パラメーター `PET` に値 `DOG` を設定する適切な方法はどれですか。"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter"
 ---
 
+- [x] `echo "PET=DOG" >> "$GITHUB_OUTPUT"`
+- [ ] `echo "DOG=PET" >> "$GITHUB_OUTPUT"`
+- [ ] `gh set-output "DOG=PET"`
+- [ ] `gh set-output "PET=DOG"`
 
-> https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter
-1. [x] `echo "PET=DOG" >> "$GITHUB_OUTPUT"`
-1. [ ] `echo "DOG=PET" >> "$GITHUB_OUTPUT"`
-1. [ ] `gh set-output "DOG=PET"`
-1. [ ] `gh set-output "PET=DOG"`

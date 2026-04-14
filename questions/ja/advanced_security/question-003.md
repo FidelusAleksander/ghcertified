@@ -1,11 +1,9 @@
 ---
-title: "質問 003"
-question: "Repository Security Advisoriesとは何ですか？"
+question: "Repository Security Advisories とは何ですか？"
+documentation: "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories"
 ---
 
-
-> https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories
-1. [x] リポジトリのメンテナがコードベースの脆弱性やセキュリティ問題について議論するためのプライベート空間
-1. [ ] GitHubのセキュリティ専門家がGitHub Enterpriseユーザーを支援するサービス
-1. [ ] 公開され誰でも閲覧できる脆弱性のリスト
-1. [ ] オープンソースコミュニティでセキュリティ問題を公開討論する場
+- [x] リポジトリのメンテナーがコードベース内の脆弱性やセキュリティ問題について議論するための非公開スペース。
+- [ ] GitHub Enterprise ユーザーのセキュリティ問題をサポートする GitHub のセキュリティ専門家。
+- [ ] 誰でも確認して避けることができる公開セキュリティ問題のリスト。
+- [ ] オープンソースコミュニティ内のセキュリティ問題を収集し、公に議論する場所。

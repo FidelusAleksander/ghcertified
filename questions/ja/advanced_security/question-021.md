@@ -1,11 +1,9 @@
 ---
-title: "質問 021"
-question: "複数のパブリックリポジトリに貢献しているが、それらにSecret scanningのプッシュ保護が有効でない場合、誤ってシークレットをプッシュしないようにするためには？"
+question: "複数の協力しているパブリックリポジトリで、シークレットスキャンのプッシュ保護オプションが有効になっていない場合、これらのリポジトリにシークレットを誤ってプッシュすることから自分を保護するにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-users#about-push-protection-for-users"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/push-protection-for-users#about-push-protection-for-users
-1. [x] 個人のGitHubアカウント設定で「Push protection for yourself」を有効にする
-1. [ ] GitHubプッシュ保護のWebプラグインをダウンロードする
-1. [ ] リポジトリ、組織、またはエンタープライズレベルでプッシュ保護を有効にしなければならないため不可能
-1. [ ] すべてのリポジトリでシークレットを含むファイルを`.gitignore`に追加する
+- [x] 自分の個人GitHubアカウント設定で`Push protection for yourself`を有効にする
+- [ ] GitHubプッシュ保護ウェブプラグインをダウンロードする
+- [ ] 不可能である。プッシュ保護はリポジトリ、組織、またはエンタープライズレベルで有効にする必要がある
+- [ ] シークレットを含むファイルをすべてのリポジトリの`.gitignore`ファイルに追加する

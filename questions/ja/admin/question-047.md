@@ -1,9 +1,7 @@
 ---
-question: "次のうち、GitHub組織内で認識されていない役割はどれですか？（3つ選択してください）"
-title: "Question 047"
+question: "次のうち、GitHub組織内で認識されていない役割はどれですか？"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles"
 ---
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#about-organization-roles
 
 - [ ] Organization owners
 - [ ] Organization members

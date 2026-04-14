@@ -1,10 +1,9 @@
 ---
-question: "GitHub Marketplace で公開されている任意の Action について、複数のバージョンで使用できる場合、最も安定かつ安全な方法はどれですか？"
-title: "質問 034"
+question: "GitHub Marketplaceで公開されている任意のアクションについて、複数のバージョンで使用できることがよくありますが、最も安定して安全なアプローチはどれですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
+- [x] Commit SHA を参照する
+- [ ] バージョンタグを参照する
+- [ ] main ブランチを参照する
 
-1. [x] コミット SHA を参照する
-1. [ ] バージョンタグを参照する
-1. [ ] main ブランチを参照する

@@ -1,11 +1,9 @@
 ---
-title: "質問 086"
 question: "GitHub Desktopとは何ですか？"
+documentation: "https://docs.github.com/en/desktop"
 ---
 
-
-> https://docs.github.com/en/desktop
-1. [x] コンピューター上でGitやGitHubを操作するためのGUIアプリケーション
-1. [ ] 自分のサーバーやPCにインストールできるGitHubのセルフホスト版
-1. [ ] 無料プランに加えて追加機能を提供する、個人アカウント向けのGitHub料金プラン
-1. [ ] ブラウザ上でRepositoryを編集できるオンラインエディター
+- [x] コンピュータ上でGitとGitHubを操作するためのGUIアプリケーションです。
+- [ ] サーバーや個人用コンピュータにインストールできる、GitHubのセルフホスト版です。
+- [ ] 無料プランに加えて追加機能を提供する、個人アカウント向けのGitHubの料金プランです。
+- [ ] ブラウザ内でリポジトリを操作できるオンラインエディタです。

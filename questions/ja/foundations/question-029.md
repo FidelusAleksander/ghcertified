@@ -1,10 +1,10 @@
 ---
-title: "質問 029"
-question: "GitHub Codespaceのライフサイクルにおける可能なフェーズはどれですか？"
+question: "GitHub Codespace における異なる可能性のあるライフサイクルフェーズは何ですか？"
+documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
 ---
 
-> https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
-1. [x] 作成（Create）、再構築（Rebuild）、停止（Stop）、削除（Delete）
-1. [ ] 作成（Create）、削除（Delete）
-1. [ ] 作成（Create）、停止（Stop）、削除（Delete）
-1. [ ] 作成（Create）、再構築（Rebuild）、削除（Delete）
+- [x] Create, Rebuild, Stop, Delete
+- [ ] Create, Delete
+- [ ] Create, Stop, Delete
+- [ ] Create, Rebuild, Delete
+---

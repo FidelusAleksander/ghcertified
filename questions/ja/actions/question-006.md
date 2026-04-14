@@ -1,14 +1,13 @@
 ---
-question: "Workflowについて正しいのはどれですか？（3つ選択）"
-title: "質問 006"
+question: "ワークフローについて正しいのはどれですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/about-workflows"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/about-workflows
-- [x] Workflowは1つまたは複数のJobを同時に実行できる
-- [x] Workflowは手動、イベント、またはスケジュールによってトリガーできる
-- [x] Workflowは `.github/workflows` ディレクトリに定義する必要がある
-- [ ] Workflowはスケジュールでのみ実行できる
-- [ ] Workflowは1度に1つのJobしか実行できない
-- [ ] Workflowは `.yaml`、`.json`、`.toml` のいずれかの形式で記述できる
-- [ ] WorkflowはGitHub Marketplaceで共有できる
-  > GitHub Marketplaceで共有できるのはActions（Workflowではない）
+- [x] ワークフローは一度に1つまたは複数のジョブを実行できます
+- [x] ワークフローは手動、イベント、またはスケジュールでトリガーすることができます
+- [x] ワークフローは`.github/workflows`ディレクトリで定義する必要があります
+- [ ] ワークフローはスケジュールでのみ実行できます
+- [ ] ワークフローは一度に1つのジョブしか実行できません
+- [ ] ワークフローは`.yaml`、`.json`、または`.toml`形式のいずれかで記述できます
+- [ ] ワークフローはGitHub Marketplaceで共有できます
+> Actions（ワークフローではありません）はGitHub Marketplaceで共有できます

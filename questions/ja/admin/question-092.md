@@ -1,13 +1,12 @@
 ---
-question: "GitHub Packagesがサポートするパッケージマネージャーやフォーマットはどれですか？（5つ選択）"
-title: "質問 092"
+question: "GitHub Packagesによってサポートされているパッケージマネージャーとフォーマットはどれですか？"
+documentation: "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages"
 ---
 
-> https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages
-- [x] JavaScript向けnpm
-- [x] Ruby向けRubyGems
-- [x] Java向けMavenおよびGradle
-- [x] .NET向けNuget
+- [x] npm（JavaScript用）
+- [x] RubyGems（Ruby用）
+- [x] MavenおよびGradle（Java用）
+- [x] Nuget（.NET用）
 - [x] DockerおよびOCIイメージ
-- [ ] Python向けPoetry
-- [ ] Rust向けCargo
+- [ ] Poetry（Python用）
+- [ ] Cargo（Rust用）

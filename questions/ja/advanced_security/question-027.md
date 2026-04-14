@@ -1,13 +1,11 @@
 ---
-title: "質問 027"
-question: "GitHub Dependency graphはいつ更新されますか？（2つ選択）"
+question: "リポジトリのGitHub Dependency graphはいつ更新されますか？"
+documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph"
 ---
 
-
-> https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph
-- [x] 依存するリポジトリの誰かが変更をプッシュしたとき
-- [x] 依存するリポジトリのデフォルトブランチにサポート対象のマニフェストやロックファイルが追加または変更されてコミットされたとき
-- [ ] 依存するリポジトリのデフォルトブランチにコミットがプッシュされるたび
-- [ ] リポジトリで新しいリリースが公開されたとき
-- [ ] リポジトリで新しいgitタグが作成されたとき
-- [ ] actions/dependency-graph GitHub Actionを使うワークフローがトリガーされたとき
+- [x] あなたの依存関係の1つのリポジトリに変更がプッシュされたとき。
+- [x] サポートされているマニフェスト/ロックファイルを変更または追加する場合にのみ、リポジトリのデフォルトブランチにコミットをプッシュしたとき。
+- [ ] リポジトリのデフォルトブランチに任意のコミットをプッシュしたとき。
+- [ ] リポジトリが新しいリリースを公開したとき。
+- [ ] リポジトリが新しいGitタグを公開したとき。
+- [ ] `actions/dependency-graph` GitHub Actionを使用するGitHub Actionsワークフローがトリガーされたとき。

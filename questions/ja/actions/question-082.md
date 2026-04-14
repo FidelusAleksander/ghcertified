@@ -1,10 +1,10 @@
 ---
-title: "質問 082"
-question: "特定のBranchでのみジョブを実行するにはどうすればよいですか？"
+question: "ジョブを特定のブランチでのみ実行されるようにするにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-filters
-1. [x] branchesフィルターを使用する
-1. [ ] runs-onフィルターを使用する
-1. [ ] jobsフィルターを使用する
-1. [ ] branchキーワードを使用する
+- [x] branches フィルターを使用する
+- [ ] runs-on フィルターを使用する
+- [ ] jobs フィルターを使用する
+- [ ] branch キーワードを使用する
+

@@ -1,11 +1,10 @@
 ---
-title: "質問 047"
-question: "Repositoryの依存関係を最新に保つのに役立つツールはどれですか？"
+question: "どのツールがリポジトリの依存関係を最新の状態に保つのに役立ちますか？"
+documentation: "https://docs.github.com/en/code-security/dependabot"
 ---
 
+- [x] Dependabot
+- [ ] GitHub Copilot
+- [ ] CodeQL
+- [ ] GitHub Actions
 
-> https://docs.github.com/en/code-security/dependabot
-1. [x] Dependabot
-1. [ ] GitHub Copilot
-1. [ ] CodeQL
-1. [ ] GitHub Actions

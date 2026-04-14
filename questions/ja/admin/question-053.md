@@ -1,10 +1,9 @@
 ---
-question: "GitHub Organization内で特定のRepositoryにアクセスするために必要最小限の権限をユーザーに与えるにはどうしますか？"
-title: "質問 053"
+question: "GitHub組織内の特定のリポジトリにアクセスするために、最低限必要な権限をユーザーに付与する方法は？"
+documentation: "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams"
 ---
 
-> https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams
-1. [x] ユーザーをそのRepositoryのOutside collaboratorとして`Read`アクセス権で追加し、クローンはできるが変更のプッシュはできないようにする
-1. [ ] Organization設定やRepositoryアクセスを管理できるようにするため、自動的に'Owner'権限を与える
-1. [ ] プロジェクトに貢献できるようにOrganization内のすべてのRepositoryに'Write'権限を与える
-1. [ ] 特定のRepositoryへのアクセス権を与えることはできず、Organization全体へのアクセスを与える必要がある
+- [x] ユーザーをリポジトリの外部コラボレーターとして追加し、`Read`アクセス権を付与します。これにより、リポジトリのクローンを作成できるようになりますが、変更をプッシュすることはできません。
+- [ ] 組織の設定とリポジトリアクセスを管理できるようにするために、自動的に「Owner」アクセスを付与します。
+- [ ] 組織内のすべてのリポジトリに「Write」アクセスを付与して、プロジェクトに貢献できるようにします。
+- [ ] 特定のリポジトリにアクセス権を付与することはできません。そのため、組織全体へのアクセス権を付与する必要があります。

@@ -1,10 +1,8 @@
 ---
-title: "質問 019"
-question: "GitHubはユーザーアラートとプッシュ保護アラートの両方で同じシークレットスキャンパターンを使っていますか？"
+question: "GitHubはユーザーアラートとプッシュプロテクションアラートの両方に同じ秘密スキャンパターンのセットを使用していますか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#about-secret-scanning-patterns
-1. [x] いいえ、それぞれ異なるパターンセットを使用している
-1. [ ] はい、同じパターンセットを使っている
-> シークレットスキャンパターンは3種類あり、一部重複はあるが同じではない。
+- [x] いいえ、これらは異なる秘密パターンのセットです
+- [ ] はい、同じ秘密パターンのセットです
+> 秘密スキャンパターンには3つの異なるセットがあります。これらは重複していますが、同じではありません。

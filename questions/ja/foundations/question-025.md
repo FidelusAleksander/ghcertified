@@ -1,11 +1,9 @@
 ---
-title: "質問 025"
-question: "GitHub Copilotのサブスクリプションを有効化した後、どのようにして利用を開始できますか？"
+question: "GitHub Copilot のサブスクリプションを有効化した後、GitHub Copilot を使い始めるにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot"
 ---
 
-
-> https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot
-1. [x] Visual Studio Code や JetBrains などの対応IDEでGitHub Copilotをセットアップし、コーディングを開始する
-1. [ ] GitHub Copilotが自動的にRepository内のPull RequestやIssueで提案を開始する
-1. [ ] RepositoryにGitHub CopilotをセットアップするGitHub Actionを設定する必要がある
-1. [ ] Repository設定を編集し、そのRepositoryに対してGitHub Copilotを有効化する必要がある
+- [x] Visual Studio Code や JetBrains などのサポートされている IDE のいずれかで GitHub Copilot をセットアップし、コーディングを開始します
+- [ ] GitHub Copilot は、リポジトリ内のプルリクエストや Issue に対する提案を自動的に行います
+- [ ] GitHub Copilot をリポジトリでセットアップする GitHub Action を設定する必要があります
+- [ ] リポジトリ設定を編集し、そのリポジトリで GitHub Copilot を有効にする必要があります

@@ -1,13 +1,12 @@
 ---
-title: "質問 095"
-question: "GitHub Actionsにセルフホストランナーを追加する際に正しい記述はどれですか？（3つ選択してください）"
+question: "GitHub Actionsでセルフホストランナーを追加する際に、以下の記述のうち正しいものはどれですか？"
+documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners#adding-a-self-hosted-runner-to-a-repository"
 ---
 
-> https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners#adding-a-self-hosted-runner-to-a-repository
-- [x] Repositoryにセルフホストランナーを追加できる
-- [x] Organizationにセルフホストランナーを追加できる
-- [x] Enterpriseにセルフホストランナーを追加できる
-- [ ] Workflowにセルフホストランナーを追加できる
-> Workflowレベルには追加できない
-- [ ] ステップにセルフホストランナーを追加できる
-> ステップレベルには追加できない
+- [x] セルフホストランナーをRepositoryに追加できる
+- [x] セルフホストランナーをOrganizationに追加できる
+- [x] セルフホストランナーをEnterpriseに追加できる
+- [ ] セルフホストランナーをWorkflowに追加できる
+> Workflow単位では追加できません
+- [ ] セルフホストランナーをStepに追加できる
+> Step単位では追加できません

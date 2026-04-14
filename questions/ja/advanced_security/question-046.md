@@ -1,10 +1,9 @@
 ---
-question: "CIサーバーがSARIF結果をGitHubにアップロードするために必要なものは何ですか？"
-title: "質問 046"
+question: "CI サーバーが SARIF 結果を GitHub にアップロードするために必要なものは何ですか？"
+documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#generating-a-token-for-authentication-with-github"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#generating-a-token-for-authentication-with-github
-1. [x] `security_events` 書き込み権限を持つGitHub Appまたは個人アクセストークン
-1. [ ] GitHub Advisory Databaseへの直接接続
-1. [ ] GitHubリポジトリの管理者権限
-1. [ ] CIシステムにインストールされた特別なプラグイン
+- [x] `security_events` の書き込み権限を持つ GitHub App または個人アクセストークン。
+- [ ] GitHub Advisory Database への直接接続。
+- [ ] GitHub リポジトリへの管理者アクセス。
+- [ ] CI システムにインストールされた特別なプラグイン。

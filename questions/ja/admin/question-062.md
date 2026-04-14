@@ -1,9 +1,8 @@
 ---
-question: "GitHub Organizationで利用可能なRepositoryロールはどれですか？（5つ選択）"
-title: "質問 062"
+question: "GitHub 組織で利用可能なリポジトリの役割は何ですか？"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations"
 ---
 
-> https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations
 - [x] Read
 - [x] Triage
 - [x] Write
@@ -11,3 +10,4 @@ title: "質問 062"
 - [x] Admin
 - [ ] Owner
 - [ ] Moderator
+---

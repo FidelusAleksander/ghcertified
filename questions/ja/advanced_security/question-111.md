@@ -1,13 +1,12 @@
 ---
-title: "質問 111"
 question: "GitHub Actionsを有効にする必要があるのはどれですか？"
+documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates"
 ---
 
-> https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates
-1. [x] Dependency Review
-1. [ ] Dependabot Security Updates
-1. [ ] Dependabot Version Updates
-1. [ ] すべて
-> Dependabot version updatesやDependabot security updatesの実行にGitHub Actionsは不要。ただし、Dependabotが作成したプルリクエストはActionsをトリガーできる。
-1. [ ] なし
-> Dependency reviewは`actions/dependency-review-action` GitHub Actionを使用
+- [x] 依存関係レビュー
+- [ ] Dependabot Security Updates
+- [ ] Dependabot Version Updates
+- [ ] すべて
+> Dependabotバージョン更新とDependabotセキュリティ更新がGitHubで実行されるためにGitHub Actionsは必要ありません。ただし、Dependabotによって作成されたプルリクエストは、アクションを実行するワークフローをトリガーすることがあります。
+- [ ] どれも該当しない
+> 依存関係レビューは`actions/dependency-review-action` GitHub Actionを使用します。

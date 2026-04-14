@@ -1,15 +1,13 @@
 ---
-title: "質問 135"  
-question: "GitHub Pagesに関する正しい記述はどれですか？"  
+question: "次のうち、GitHub Pagesに関する正しい記述はどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
 ---
 
-> **詳細**: [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
-
-1. [ ] GitHub Pagesでは、OrganizationメンバーのみがアクセスできるPrivateサイトを無料でホストできる。  
-  > GitHub Pagesサイトは常に公開されており、GitHub Enterprise Serverでエンタープライズファイアウォールを使う場合を除く。  
-1. [x] GitHub Pagesでは、GitHub Repositoryから静的サイトをホストできる。  
-  > **正解**。GitHub PagesはRepositoryから静的サイトをホストするための機能。  
-1. [ ] GitHub PagesはJavaファイルを自動で動的Webアプリに変換する。  
-1. [ ] GitHub PagesはOrganizationアカウントのみ利用できる。  
-  > PersonalアカウントとOrganizationアカウントの両方で利用可能。
+- [ ] GitHub Pagesを使用すると、組織メンバーのみがアクセス可能なプライベートウェブサイトを無料でホストできます。  
+> GitHub Pagesサイトは常に公にアクセス可能ですが、GitHub Enterprise Serverでプロジェクトサイトをエンタープライズファイアウォールルールと共に使用する場合を除きます。  
+- [x] GitHub Pagesを使用すると、GitHubリポジトリから静的サイトをホストできます。  
+> **正解です**。GitHub Pagesは、リポジトリから静的サイトをホストするためのものです。  
+- [ ] GitHub PagesはJavaファイルを自動的に動的Webアプリに変換します。  
+- [ ] GitHub Pagesは組織アカウントでのみ使用できます。  
+> パーソナルアカウントと組織アカウントの両方でPagesを使用できます。  

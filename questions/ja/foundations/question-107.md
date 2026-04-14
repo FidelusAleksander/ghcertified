@@ -1,13 +1,11 @@
 ---
-title: "質問 107"
-question: "Organizationの請求情報の設定やBilling Managerの割り当てができるのは誰ですか？（3つ選択）"
+question: "組織の請求を設定したり、請求管理者を割り当てることができるのは誰ですか？"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization"
 ---
 
-
-> Official GitHub documentation: https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, Microsoft Learn study guide: https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
-- [ ] RepositoryのOwner
-- [ ] TeamレベルのTeam maintainer
-- [ ] TeamレベルのAdmin
-- [x] OrganizationレベルのBilling Manager
-- [x] OrganizationレベルのOwner
-- [x] EnterpriseレベルのOwner
+- [ ] リポジトリのオーナー
+- [ ] チームレベルのチームメンテナー
+- [ ] チームレベルの管理者
+- [x] 組織レベルの請求管理者
+- [x] 組織レベルのオーナー
+- [x] エンタープライズレベルのオーナー  

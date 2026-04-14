@@ -1,10 +1,9 @@
 ---
-question: "GitHub Packagesに認証する方法はどれですか？"
-title: "質問 093"
+question: "GitHub Packages への認証方法を教えてください。"
+documentation: "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages"
 ---
 
-> https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages
-1. [x] 適切なスコープを持つPATを使って認証する
-1. [ ] GitHub Packagesは認証なしで公開アクセス・共有が可能
-1. [ ] GitHub PackagesへのアクセスはGitHub Enterpriseアカウントに限定されている
-1. [ ] 特別な認証TokenなしでデフォルトのGitHubログインを使用する
+- [x] 適切なスコープを持つ PAT を使用して認証する
+- [ ] GitHub Packages は認証なしで公開され、共有可能です。
+- [ ] GitHub Packages へのアクセスは GitHub Enterprise アカウントに限定されています。
+- [ ] 特別な認証トークンを必要とせず、デフォルトの GitHub ログインを使用してアクセスします。

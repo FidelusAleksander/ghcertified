@@ -1,10 +1,8 @@
 ---
-title: "質問 076"
-question: "Organizationアカウント向けのGitHub料金プランにはどのようなものがありますか？（3つ選択）"
+question: "組織アカウント向けのGitHubのさまざまな料金プランは何ですか？"
+documentation: "https://github.com/pricing"
 ---
 
-
-> https://github.com/pricing
 - [x] Free
 - [x] Team
 - [x] Enterprise
@@ -12,3 +10,4 @@ question: "Organizationアカウント向けのGitHub料金プランにはどの
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+---

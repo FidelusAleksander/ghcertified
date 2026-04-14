@@ -1,11 +1,10 @@
 ---
-question: "`build` という名前の再利用可能なWorkflowがzipファイルの成果物を作成します。`build` Workflowを呼び出す呼び出し元Workflowにzipファイルの場所を渡すにはどうしますか？（3つ選択）"
-title: "質問 026"
+question: "再利用可能なワークフロー `build` がZIPファイルのアーティファクトを作成します。このZIPファイルの場所を、`build` ワークフローを呼び出す呼び出し元ワークフローへどのように渡しますか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow
+- [x] `build` ワークフロー内でワークフローレベルの出力を定義します
+- [x] `build` ワークフロー内でジョブレベルの出力を定義します
+- [x] `build` ワークフロー内のステップの1つで、出力を `$GITHUB_OUTPUT` に書き込みます
+- [ ] すべての出力は自動的に呼び出し元ワークフローに渡されます
 
-- [x] `build` WorkflowでWorkflowレベルのoutputを定義する
-- [x] `build` WorkflowでJobレベルのoutputを定義する
-- [x] `build` Workflow内のステップで `$GITHUB_OUTPUT` にoutputを書き込む
-- [ ] すべてのoutputは自動的に呼び出し元Workflowに渡される

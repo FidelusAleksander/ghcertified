@@ -1,6 +1,6 @@
 ---
-question: "`my-org/my-private-repo` が現在のWorkflowを含むRepositoryとは異なるプライベートRepositoryの場合、`actions/checkout`に何を追加する必要がありますか？"
-title: "質問 123"
+question: "現在のワークフローを含むリポジトリとは異なるプライベートリポジトリ `my-org/my-private-repo` を使用する場合、`actions/checkout` に何を追加する必要がありますか？"
+documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow"
 ---
 
 ```yaml
@@ -17,9 +17,7 @@ jobs:
                path: ./.github/actions/my-org/my-private-repo
 ```
 
-> https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow
-
-1. [x] GitHub Secret `MY_ACCESS_TOKEN` を作成する
+- [x] GitHub Secret `MY_ACCESS_TOKEN` を作成する
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -27,7 +25,7 @@ with:
     token: ${{ secrets.MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] 入力`MY_ACCESS_TOKEN`を作成する
+- [ ] 入力値 `MY_ACCESS_TOKEN` を作成する
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -35,7 +33,7 @@ with:
     token: ${{ MY_ACCESS_TOKEN }}
 ```
 
-1. [ ] 環境変数`GITHUB_TOKEN`
+- [ ] 環境変数 `GITHUB_TOKEN`
 ```yaml
 with:
     repository: my-org/my-private-repo
@@ -43,7 +41,7 @@ with:
     token: $GITHUB_TOKEN
 ```
 
-1. [ ] アクセストークンは自動的に渡されるため、そのままにする
+- [ ] トークンが自動的に渡されるのでそのままにしておく
 ```yaml
 with:
     repository: my-org/my-private-repo

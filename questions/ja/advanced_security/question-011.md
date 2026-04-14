@@ -1,11 +1,9 @@
 ---
-title: "質問 011"
 question: "クラウドプロバイダーの資格情報を含むコミットがGitHubにプッシュされるのを防ぐにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations
-1. [x] リポジトリまたは組織に対してSecret scanningのプッシュ保護ルールを有効化する
-1. [ ] シークレットを含むファイルを無視する`.gitignore`ファイルをリポジトリに含める
-1. [ ] プッシュ前にコミット内のシークレットをスキャンするGitHub Actionsを作成する
-1. [ ] リポジトリにブランチ保護ルールを有効にする
+- [x] リポジトリまたは組織でシークレットスキャニングのプッシュ保護ルールを有効にする。
+- [ ] シークレットを含むファイルを無視する`.gitignore`ファイルをリポジトリに含める。
+- [ ] シークレットをスキャンするGitHub Actionを作成し、GitHubにプッシュする前にコミットをスキャンする。
+- [ ] リポジトリのブランチ保護ルールを有効にする。

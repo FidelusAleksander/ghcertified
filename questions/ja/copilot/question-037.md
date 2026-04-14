@@ -1,11 +1,9 @@
 ---
-title: "質問 037"
-question: "コードレビューのためのコーディングガイドラインを指定できるGitHub Copilotのサブスクリプションプランはどれですか？"
+question: "どのGitHub Copilotサブスクリプションプランでコードレビューのためのコーディングガイドラインを指定できますか？"
+documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/3-compare-github-copilot-plans"
 ---
 
-
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/3-compare-github-copilot-plans
-1. [x] Copilot Enterprise
-1. [ ] Copilot Business と Copilot Enterprise
-1. [ ] Copilot Pro+、Copilot Business、Copilot Enterprise
-1. [ ] Copilot Pro、Copilot Pro+、Copilot Business、Copilot Enterprise
+- [x] Copilot Enterprise
+- [ ] Copilot Business and Copilot Enterprise
+- [ ] Copilot Pro+, Copilot Business and Copilot Enterprise
+- [ ] Copilot Pro, Copilot Pro+, Copilot Business and Copilot Enterprise

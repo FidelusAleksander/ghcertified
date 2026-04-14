@@ -1,9 +1,8 @@
 ---
-question: "この記述は正しいですか？ ステップは必ずしもアクションを実行するとは限りませんが、アクションは必ずステップとして実行されます。"
-title: "質問 033"
+question: "この文は正しいですか？`Not all steps run actions, but all actions run as a step`"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps
-1. [x] 正しい
-1. [ ] 誤り
-> ステップは必ずしも Actions を実行する必要はありません（例: run コマンドの実行）
+- [x] 正しい
+- [ ] 間違い  
+> ステップはアクションを実行することがありますが、必ずしもアクションを実行する必要はありません（例: run コマンドの実行）。

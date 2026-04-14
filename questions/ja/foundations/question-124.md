@@ -1,13 +1,12 @@
 ---
-title: "質問 124"  
-question: "GitHub Discussionで実行できる操作はどれですか？（3つ選択）"  
+question: "次のうち、GitHub Discussionで実行できるアクションはどれですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 ---
 
-> **詳細**: [About discussions](https://docs.github.com/en/discussions/quickstart#introduction)
+- [x] ディスカッションをピン留めする  
+- [x] 別のリポジトリのディスカッションに転送する（管理者権限がある場合）  
+- [ ] ディスカッションをシークレットGistに変換する  
+- [x] ディスカッションをIssueに変換する  
+- [ ] 既存のPull Requestにマージする  
 
-- [x] Discussionをピン留めする  
-- [x] （Admin権限があれば）別のRepositoryのDiscussionに移動する  
-- [ ] DiscussionをSecret Gistに変換する  
-- [x] Issueに変換する  
-- [ ] 既存のPull Requestにマージする

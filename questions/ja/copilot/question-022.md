@@ -1,10 +1,9 @@
 ---
-title: "質問 022"
-question: "GitHub Copilotの `/tests` スラッシュコマンドの主な目的は何ですか？"
+question: "GitHub Copilotの'/tests'スラッシュコマンドの主な目的は何ですか？"
+documentation: "https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot"
 ---
 
-> https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot
-1. [x] 現在開いているファイルの単体テストスイートを生成し、既存のテストファイルがあればそのコンテキストを利用する
-1. [ ] 新しいテストを生成せずにプロジェクト内のすべての単体テストを実行する
-1. [ ] 新しいテストを作成せず既存テストファイルの構文だけを検証する
-1. [ ] 既存のすべてのテストファイルを完全に削除して新規開始する
+- [x] 現在開いているファイルに対して単体テストのスイートを生成し、可能であれば既存のテストファイルのコンテキストを使用します
+- [ ] プロジェクト内の既存の単体テストをすべて実行しますが、新しいテストは生成しません
+- [ ] 既存のテストファイルの構文のみを検証し、新しいテストは作成しません
+- [ ] 既存のテストファイルをすべて完全に削除して最初から開始します

@@ -1,10 +1,9 @@
 ---
-question: "GitHub OrganizationにおけるTeamの主な機能と特徴は何ですか？"
-title: "質問 054"
+question: "GitHub組織内のチームの主な機能と特徴は何ですか？"
+documentation: "https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams"
 ---
 
-> https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams
-1. [x] GitHub OrganizationのTeamは、企業構造を反映したグループのアクセスや通知を管理でき、Repositoryへの管理・読み取り・書き込み権限の付与、通知のためのメンション、階層管理のためのネストされたTeamの利用が可能
-1. [ ] TeamはGitHub内でのソーシャルネットワーキング専用で、組織メンバー間のやり取りや更新共有のみを行い、Repositoryアクセスや通知には影響しない
-1. [ ] GitHubのTeamはOrganizationメンバーと同一で、アクセス管理や通知などの独自機能はない
-1. [ ] GitHubのTeamはOutside collaboratorを含めることができ、外部とのコミュニケーション専用で内部組織構造やRepositoryアクセス権限は持たない
+- [x] GitHubの組織内のチームは、会社の構造を反映したグループのアクセスと通知を管理することを可能にし、リポジトリへの管理、読み取り、書き込み権限、通知のためのメンション、および階層的な管理のためのネストされたチームの使用などの機能を備えています。
+- [ ] チームはGitHub内でのソーシャルネットワーキング専用であり、組織のメンバーがリポジトリのアクセスや組織の通知に影響を与えることなくコミュニケーションを取り、更新を共有することを可能にします。
+- [ ] GitHubチームは組織のメンバーと同一であり、アクセス管理や通知などの特徴や機能を持たない。
+- [ ] GitHub内のチームには外部コラボレーターを含めることができ、主に外部コミュニケーションに使用され、内部組織構造やリポジトリのアクセス権限を持たない。

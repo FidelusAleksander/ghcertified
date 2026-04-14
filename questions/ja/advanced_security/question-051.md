@@ -1,10 +1,10 @@
 ---
-title: "質問 051"
-question: "空欄を埋めてください：`GitHub __________ はGitHubリポジトリ内のコードを解析し、セキュリティの脆弱性やコーディングエラーを発見するための機能です。`"
+question: "空欄を埋めてください：`GitHub __________ は、GitHub リポジトリ内のコードを分析してセキュリティ脆弱性やコーディングエラーを見つけるために使用できる機能です。`"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning
-1. [x] Code Scanning
-1. [ ] Dependency Graph
-1. [ ] Security Advisories
-1. [ ] Vulnerability Detection
+- [x] Code Scanning
+- [ ] Dependency Graph
+- [ ] Security Advisories
+- [ ] Vulnerability Detection
+

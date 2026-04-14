@@ -1,11 +1,9 @@
 ---
-title: "質問 003"
-question: "GitHub Projects、Issue、Pull Request間の同期はどのように機能しますか？"
+question: "GitHub プロジェクト、Issue、Pull Request の同期はどのように機能しますか？"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#staying-up-to-date"
 ---
 
-
-> https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#staying-up-to-date
-1. [x] IssueやPull Requestの更新は自動的にGitHub Projectsに反映されます。この統合は双方向に動作するため、プロジェクト内でPull RequestやIssueの情報を変更すると、それらにも変更が反映されます。
-1. [ ] IssueやPull Requestの更新は自動的にGitHub Projectsに反映されず、ユーザーが手動でトリガーする必要があります。
-1. [ ] 情報の同期はプロジェクトからIssueやPull Requestへの一方向のみで行われます。IssueやPull Requestの更新はGitHub Projectアイテムに自動的に反映されません。
-1. [ ] 情報の同期はIssueやPull Requestからプロジェクトへの一方向のみで行われます。プロジェクトアイテムの更新はIssueやPull Requestに自動的に反映されません。
+- [x] Issue および Pull Request への更新は GitHub プロジェクトに自動的に反映されます。この統合は双方向で機能するため、プロジェクト内で Pull Request または Issue に関する情報を変更すると、それが Pull Request または Issue に反映されます。
+- [ ] Issue および Pull Request への更新は GitHub プロジェクトに自動的に反映されず、ユーザーが手動でトリガーする必要があります。
+- [ ] 情報の同期は片方向、つまりプロジェクトから Issue および Pull Request のみに機能します。Issue および Pull Request への更新は GitHub プロジェクトアイテムには自動的に反映されません。
+- [ ] 情報の同期は片方向、つまり Issue および Pull Request からプロジェクトのみに機能します。プロジェクトアイテムへの更新は Issue および Pull Request には自動的に反映されません。

@@ -1,13 +1,12 @@
 ---
-title: "質問 077"
-question: "GitHubをセルフホストでデプロイできる料金プランはどれですか？"
+question: "どのGitHubの料金プランがGitHubのセルフホスティングデプロイを提供していますか？"
+documentation: "https://docs.github.com/en/enterprise-server@3.8/admin/overview/about-github-enterprise-server"
 ---
 
+- [x] Enterprise
+- [ ] Pro
+- [ ] Team
+- [ ] Free
+- [ ] All of them
+- [ ] None of them
 
-> https://docs.github.com/en/enterprise-server@3.8/admin/overview/about-github-enterprise-server
-1. [x] Enterprise
-1. [ ] Pro
-1. [ ] Team
-1. [ ] Free
-1. [ ] 全て
-1. [ ] なし

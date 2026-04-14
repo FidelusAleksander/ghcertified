@@ -1,10 +1,9 @@
 ---
-question: "GitHub OrganizationにおけるOutside collaboratorとMemberの役割の違いは何ですか？"
-title: "質問 051"
+question: "GitHub組織内での外部コラボレーターの役割は、メンバーの役割とどのように異なりますか？"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] Outside collaboratorはRepository単位でアクセス権が付与されるが、Memberは役割に応じてOrganization全体でより広い権限を持つ場合がある
-1. [ ] Outside collaboratorはOrganization設定を変更できる
-1. [ ] Outside collaboratorとMemberの間にアクセスレベルの違いはない
-1. [ ] Outside collaboratorはOrganizationのメンバーを追加または削除できる
+- [x] 外部コラボレーターは、リポジトリ単位でアクセス権を割り当てられるのに対し、メンバーは役割に応じて組織内でより広範な権限を持つ場合があります。
+- [ ] 外部コラボレーターは組織設定を変更する能力を持っています。
+- [ ] 外部コラボレーターとメンバーの間にはアクセスレベルの違いがありません。
+- [ ] 外部コラボレーターは組織のメンバーの追加や削除が可能です。

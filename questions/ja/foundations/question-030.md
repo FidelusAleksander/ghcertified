@@ -1,8 +1,7 @@
 ---
-title: "質問 030"
-question: "GitHub Codespace環境を停止した場合、変更をCommitしていなくても後で作業を再開できますか？"
+question: "GitHub Codespace の環境を停止した場合、変更をコミットしていなければ後で変更に戻ることはできますか？"
+documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace"
 ---
 
-> https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace
-1. [x] はい。停止後に再開するとき、これがデフォルトの動作です
-1. [ ] いいえ。変更は失われるため、停止する前にCommitする必要があります
+- [x] はい、それが GitHub Codespace を停止してから再開する際のデフォルトの動作です。
+- [ ] いいえ、これらの変更は失われます。Codespace を停止する前に変更をコミットする必要があります。

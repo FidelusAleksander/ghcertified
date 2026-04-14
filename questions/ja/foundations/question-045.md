@@ -1,11 +1,9 @@
 ---
-title: "質問 045"
-question: "RepositoryのSecurityタブでは何が確認できますか？"
+question: "リポジトリのセキュリティタブで何を見つけることができますか？"
+documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
 ---
 
-
-> https://docs.github.com/en/code-security/getting-started/securing-your-repository
-1. [x] 依存関係の脆弱性、コードスキャン結果、Secretスキャンのアラートなど、そのRepositoryのセキュリティ概要
-1. [ ] セキュリティ上の理由でRepository内に作成されたすべてのGitHub Issueの一覧
-1. [ ] ソフトウェアを安全に保つためにGitHubが推奨するベストプラクティスの一覧
-1. [ ] GitHubのセキュリティチームの連絡先情報
+- [x] 依存関係の脆弱性、コードスキャンの結果、シークレットスキャンアラートなど、そのリポジトリのセキュリティ概要  
+- [ ] セキュリティ上の理由でリポジトリで開かれたすべてのGitHub Issuesのリスト  
+- [ ] ソフトウェアを保護するためにGitHubが推奨するベストプラクティスのリスト  
+- [ ] GitHubのセキュリティチームへの連絡先情報  

@@ -1,10 +1,9 @@
 ---
-question: "GitHubでのCodeQL分析のデフォルト設定は何をしますか？"
-title: "質問 037"
+question: "GitHub のデフォルトの CodeQL 分析設定は何を行いますか？"
+documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql"
 ---
 
-> https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql
-1. [x] 自動的に解析対象の言語、実行するクエリスイート、スキャンをトリガーするイベントを選択する
-1. [ ] 各スキャンでユーザーが言語とクエリを手動指定する必要がある
-1. [ ] コードを月1回のみスキャンする
-1. [ ] サードパーティ製スキャンツールの別途インストールが必要
+- [x] 分析する言語、実行するクエリスイート、スキャンをトリガーするイベントを自動的に選択します
+- [ ] 各スキャンのために、言語とクエリを手動で指定する必要があります
+- [ ] 月に一度だけコードをスキャンします
+- [ ] サードパーティのスキャンツールを別途インストールする必要があります

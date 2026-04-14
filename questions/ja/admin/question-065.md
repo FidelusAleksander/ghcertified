@@ -1,10 +1,9 @@
 ---
-question: "Organization管理者がWebhookの変更に関連するイベントを監査ログで検索するにはどうすればよいですか？"
-title: "質問 065"
+question: "組織管理者は、Webhookの変更に関連するイベントを監査ログでどのように検索できますか？"
+documentation: "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization"
 ---
 
-> https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
-1. [x] 検索クエリで`operation`修飾子を使用し、`operation:modify`のように指定してWebhookなど既存リソースが変更されたイベントを検索する
-1. [ ] 監査ログの検索バーに「webhook modifications」と直接入力する
-1. [ ] 日付範囲のみで監査ログをフィルタリングし、イベント種別は指定できない
-1. [ ] 音声コマンドでWebhook変更イベントの検索を依頼する
+- [x] 既存のリソース（Webhookなど）が変更されたイベントを見つけるために、検索クエリ内で`operation`修飾子を使用します。例: `operation:modify`
+- [ ] 監査ログの検索バーに直接「Webhook modifications」を入力する。
+- [ ] イベントタイプを指定することなく、日付範囲で監査ログをフィルタリングする。
+- [ ] Webhook変更イベントの検索を音声コマンドを使用して口頭で要求する。

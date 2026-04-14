@@ -1,11 +1,9 @@
 ---
-title: "質問 013"
-question: "Secret scanningから特定のディレクトリやファイルを除外するにはどうすればよいですか？"
+question: "特定のディレクトリやファイルをSecret Scanningから除外するにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users"
 ---
 
-
-> https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users
-1. [x] `secret_scanning.yml`ファイルを作成し、スキャン対象から除外したいパスを記述する
-1. [ ] 特定のファイルやディレクトリをスキャンから除外することはできません。Secret scanningを有効にすると全ファイル・ディレクトリがスキャン対象になります。
-1. [ ] `.gitignore`ファイルに除外したいファイルを記述する
-1. [ ] `dependabot.yml`ファイルを作成し、スキャン対象から除外したいパスを記述する
+- [x] `secret_scanning.yml`ファイルを作成し、スキャン対象外とするパスを含める
+- [ ] 特定のファイルやディレクトリをスキャン対象から除外することはできません。リポジトリでSecret Scanningを有効にすると、すべてのファイルとディレクトリがスキャンされます。
+- [ ] これらのファイルを`.gitignore`ファイルに含める
+- [ ] `dependabot.yml`ファイルを作成し、スキャン対象外とするパスを含める

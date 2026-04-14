@@ -1,10 +1,10 @@
 ---
-question: "Workflow実行をトリガーしたイベントに関する情報を保持するコンテキストはどれですか？"
-title: "質問 102"
+question: "ワークフローの実行をトリガーしたイベントに関する情報を保持するコンテキストはどれですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-event-information"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#using-event-information
-1. [x] `github.event`
-1. [ ] `github.repository`
-1. [ ] `github.job`
-1. [ ] `jobs.<job_id>.result`
+- [x] `github.event`
+- [ ] `github.repository`
+- [ ] `github.job`
+- [ ] `jobs.<job_id>.result`
+---

@@ -1,6 +1,5 @@
 ---
-question: "GitHub Organization内で再利用できるコンポーネントはどれですか？（4つ選択）"
-title: "質問 072"
+question: "GitHub Organization内で再利用可能なコンポーネントは何ですか？"
 ---
 
 - [x] Secrets
@@ -8,8 +7,8 @@ title: "質問 072"
 - [x] Self Hosted Runners
 - [x] Workflow Templates
 - [ ] Artifacts  
-> Artifactsは、ジョブ完了後にデータを保持したり、同じWorkflow内の別のジョブとデータを共有するために使用される
+> Artifactsは、ジョブが完了した後のデータを保存したり、同じワークフロー内の別のジョブとそのデータを共有したりするために使用されます。  
 - [ ] Cache  
-> Cacheは、1つのRepository内のWorkflows間で再利用できる
+> Cacheは1つのリポジトリ内でワークフロー間で再利用できます。  
 - [ ] Environment Variables  
-> 環境変数はステップ、ジョブ、またはWorkflowにスコープできるが、Workflows/Repositories/Organizations間で共有することはできない
+> 環境変数はステップ、ジョブ、またはワークフローにスコープを限定できますが、ワークフロー/リポジトリやOrganizationをまたいで共有することはできません。

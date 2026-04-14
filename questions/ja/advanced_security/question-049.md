@@ -1,10 +1,10 @@
 ---
-question: "GitHubでSecret scanningアラートからディレクトリを除外するために`secret_scanning.yml`ファイルで使用すべきキーはどれですか？"
-title: "質問 049"
+question: "GitHubの`secret_scanning.yml`ファイルでディレクトリをシークレットスキャンアラートから除外するために使用するキーはどれですか？"
+documentation: "https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users"
 ---
 
-> https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users
-1. [x] `paths-ignore:`
-1. [ ] `paths-exclude:`
-1. [ ] `ignore-directories`
-1. [ ] `exclude-paths:`
+- [x] `paths-ignore:`
+- [ ] `paths-exclude:`
+- [ ] `ignore-directories`
+- [ ] `exclude-paths:`
+

@@ -1,10 +1,9 @@
 ---
-question: "GitHub Organizationにおいて、監査ログはOrganization管理者にどのような機能を提供しますか？"
-title: "質問 063"
+question: "監査ログはGitHub組織内の組織管理者にどのような機能を提供しますか？"
+documentation: "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization"
 ---
 
-> https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
-1. [x] 監査ログにより、誰が・何を・いつ行ったかといった詳細を含むメンバーの操作履歴を確認でき、セキュリティやコンプライアンスの監視に役立つ
-1. [ ] Organization管理者がRepository設定を直接変更し、Branch保護ルールを適用できる
-1. [ ] 監査アクセスにより、コード変更をマージ前に承認または拒否できる
-1. [ ] Repository内で管理アクションを行うための一時的な権限セットを提供する
+- [x] 監査ログは組織管理者に、メンバーによって実行されたアクションを確認する機能を提供します。これには、誰がアクションを行ったか、アクションの内容、アクションが行われた日時が含まれ、セキュリティおよびコンプライアンスの監視に役立ちます。
+- [ ] 組織管理者が直接リポジトリ設定を変更し、ブランチ保護ルールを適用できるようにします。
+- [ ] 監査アクセスにより、コード変更がマージされる前に承認または拒否する機能を提供します。
+- [ ] 一時的な権限セットを使用してリポジトリ内で管理者アクションを実行する機能を提供します。

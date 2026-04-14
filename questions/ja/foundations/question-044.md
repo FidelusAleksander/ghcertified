@@ -1,14 +1,13 @@
 ---
-title: "質問 044"
-question: "`main` ブランチにプッシュする前に、変更が少なくとも2人に承認されていることを保証するには、どのアクションを実行すればよいですか？（3つ選択してください）"
+question: "次のアクションのうち、`main` ブランチへのプッシュの前に変更が少なくとも2人によって承認されていることを確認できるものはどれですか？"
+documentation: "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging"
 ---
 
+- [x] `main` ブランチに対するブランチ保護ルールを作成する
+- [x] ブランチ保護ルールで、マージする前にプルリクエストを要求する
+- [x] ブランチ保護ルールで、プルリクエストをマージする前に少なくとも2人の承認を要求する
+- [ ] `main` ブランチに対するデプロイ保護ルールを作成する
+- [ ] デプロイ保護ルールで、プルリクエストをマージする前に少なくとも2人の承認を要求する
+- [ ] リポジトリに CODEOWNERS ファイルを設定する
+- [ ] `main` ブランチへのプルリクエストをマージする前にステータスチェックが合格していることを強制する
 
-> https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging
-- [x] `main` ブランチにブランチ保護ルールを作成する
-- [x] ブランチ保護ルールで、マージ前にPull Requestを必須にする
-- [x] ブランチ保護ルールで、Pull Requestマージ前に少なくとも2件の承認を必須にする
-- [ ] `main` ブランチにデプロイ保護ルールを作成する
-- [ ] デプロイ保護ルールで、Pull Requestマージ前に少なくとも2件の承認を必須にする
-- [ ] RepositoryにCODEOWNERSファイルを設定する
-- [ ] `main` ブランチへのPull Requestマージ前にステータスチェック合格を必須にする

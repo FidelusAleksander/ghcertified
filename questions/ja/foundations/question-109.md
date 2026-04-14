@@ -1,14 +1,13 @@
 ---
-title: "質問 109"
-question: "GitHubがサポートする二要素または多要素認証の形式はどれですか？（5つ選択）"
+question: "GitHub でサポートされている 2 要素または多要素認証のさまざまな形式は何ですか？"
+documentation: "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication"
 ---
 
-> https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication
 - [x] Passkey
 - [x] テキストメッセージ
-- [ ] 電話
-> 一部の国ではテキストメッセージはサポートされるが、電話はサポートされない
-- [ ] Email
+- [ ] 電話通話  
+> テキストメッセージは一部の国でサポートされていますが、電話通話はサポートされていません
+- [ ] Eメール
 - [x] セキュリティキー
-- [x] GitHubモバイル
-- [x] 時間ベースのワンタイムパスワード（TOTP）
+- [x] GitHub モバイル
+- [x] 時間ベースのワンタイムパスワード (TOTP)

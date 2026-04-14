@@ -1,10 +1,9 @@
 ---
-question: "GitHub Enterprise CloudでEnterpriseアカウントを持つことによるOrganizationの利点は何ですか？"
-title: "質問 045"
+question: "組織がGitHub Enterprise Cloudでエンタープライズアカウントを持つ利点は何ですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-github-for-enterprises
-1. [x] 複数のOrganizationに対してポリシーや課金を一元的に管理できる
-1. [ ] 個人ユーザーに無制限のPrivate Repositoryを提供する
-1. [ ] OrganizationのWebサイトをホスティングするための無料ドメインを提供する
-1. [ ] Organizationを自動的にプレミアムサポートプランに登録する
+- [x] 複数の組織に対するポリシーと支払いを中央管理できるようになります。
+- [ ] 個人ユーザー向けに無制限のプライベートリポジトリを提供します。
+- [ ] 組織のウェブサイトをホスティングするための無料ドメインを提供します。
+- [ ] 組織がプレミアムサポートプランに自動的に登録されます。

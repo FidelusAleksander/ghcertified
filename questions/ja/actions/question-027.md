@@ -1,15 +1,13 @@
 ---
-question: "**defaults** を使用する有効なユースケースはどれですか？（2つ選択）"
-title: "質問 027"
+question: "有効な **defaults** の使用例は何ですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults
-
-- [x] Workflowレベルでdefaults.runを使用して、Workflow全体のデフォルトシェル（例: bash）を設定する
-- [x] Jobレベルでdefaults.runを使用して、そのJob内のすべてのステップのデフォルト作業ディレクトリを設定する
-- [ ] Stepレベルでdefaults.runを使用して、そのステップのみのデフォルトシェル（例: bash）を設定する  
-> defaults.runはWorkflowまたはJobレベルでのみ設定可能
-- [ ] Workflowレベルでdefaults.envを使用して、Workflow全体のデフォルト環境変数を設定する  
-> defaults.envは存在しない
-- [ ] Jobレベルでdefaults.envを使用して、そのJob内のすべてのステップのデフォルト環境変数を設定する  
-> defaults.envは存在しない
+- [x] ワークフロー全体に対してデフォルトのシェル（例えば bash）を設定するために、workflow レベルで defaults.run を使用する
+- [x] 単一のジョブ内のすべてのステップに対してデフォルトの作業ディレクトリを設定するために、job レベルで defaults.run を使用する
+- [ ] 単一のステップに対してデフォルトのシェル（例えば bash）を設定するために、step レベルで defaults.run を使用する  
+> defaults.run は workflow レベルまたは job レベルでのみ設定できます
+- [ ] ワークフロー全体に対してデフォルトの環境変数を設定するために、workflow レベルで defaults.env を使用する  
+> defaults.env というものは存在しません
+- [ ] 単一のジョブ内のすべてのステップに対してデフォルトの環境変数を設定するために、job レベルで defaults.env を使用する  
+> defaults.env というものは存在しません

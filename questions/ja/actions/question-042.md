@@ -1,15 +1,11 @@
 ---
-question: "`artifacts` を使用すべきなのはどのような場合ですか？（2つ選択）"
-title: "質問 042"
+question: "`artifacts`をいつ使用しますか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts"
 ---
 
-
-
-> https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#about-workflow-artifacts
-
-- [x] テスト結果やビルドログなど、Workflow実行後に確認するためにJobが生成したファイルを保存する場合
-- [x] アプリケーションの新バージョンをデプロイするために、ビルドJobで生成されたバイナリを後続のデプロイJobで使用する場合
-- [ ] パッケージ管理システムのビルド依存関係など、JobやWorkflowの実行間であまり変化しないファイルを再利用する場合  
-> その場合はCachingを使用する https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
-- [ ] リリースノートやメンション、コントリビューター情報と共にアプリケーションの新バージョンを作成する場合  
-> それはArtifactsではなくReleasesのユースケース
+- [x] `artifacts`を使用して、テスト結果やビルドログなど、ワークフロー実行が終了した後に表示するためにジョブで生成されたファイルを保存します。
+- [x] `artifacts`を使用して、ビルドジョブで生成されたバイナリを保存し、次のデプロイジョブで新しいアプリケーションバージョンをデプロイするために使用します。
+- [ ] ジョブ間やワークフロー実行間であまり変更されないファイル、例えばパッケージ管理システムのビルド依存関係などを再利用するために`artifacts`を使用します。
+> その場合はキャッシュを使用するべきです https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching
+- [ ] アプリケーションの新しいバージョンをリリースノート、言及、および/またはコントリビューターとともに作成するために`artifacts`を使用します。
+> これは`artifacts`ではなく`releases`の使用例です。

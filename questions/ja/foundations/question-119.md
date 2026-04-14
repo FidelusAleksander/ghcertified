@@ -1,13 +1,12 @@
 ---
-title: "質問 119"  
-question: "Organizationが所有するRepositoryに直接CommitをPushするために必要な最小権限はどれですか？"  
+question: "ユーザーが組織が所有するリポジトリに直接コミットをプッシュするために必要な最低限の権限は何ですか？"  
 draft: false  
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
-> **詳細**: [Repository roles for organizations](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
+- [ ] コミットをプッシュ  
+- [x] IssueとPull Requestを管理  
+- [ ] リポジトリを削除  
+- [ ] リポジトリ設定を変更  
+- [ ] 新しいリポジトリを作成  
 
-1. [ ] CommitのPush  
-1. [x] IssueとPull Requestの管理  
-1. [ ] Repositoryの削除  
-1. [ ] Repository設定の変更  
-1. [ ] 新規Repositoryの作成

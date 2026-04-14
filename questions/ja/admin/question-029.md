@@ -1,10 +1,9 @@
 ---
-question: "GitHub Enterprise CloudにおけるEnterprise Managed Userアカウントの主な制限は何ですか？"
-title: "質問 029"
+question: "GitHub Enterprise Cloud における Enterprise Managed User アカウントの主な制限は何ですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud
-1. [x] Enterprise外のPublic Repositoryとやり取りできない
-1. [ ] GitHub Enterpriseアカウント内の単一Organizationに制限される
-1. [ ] Enterprise外のOrganizationを作成・参加するには管理者承認が必要
-1. [ ] サードパーティ統合へのアクセスは制限され、Enterprise管理者の承認が必要
+- [x] 自身のエンタープライズ外のパブリックリポジトリと対話することはできません。
+- [ ] GitHub Enterprise アカウント内の単一の Organization に制限されます。
+- [ ] エンタープライズ外の Organization を作成したり参加したりするには管理者の承認が必要です。
+- [ ] サードパーティの統合へのアクセスは制限されており、エンタープライズ管理者の承認が必要です。

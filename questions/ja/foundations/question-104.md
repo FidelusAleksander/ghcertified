@@ -1,10 +1,8 @@
 ---
-title: "質問 104"
-question: "GitHub DiscussionをIssueに変換し、そのIssueがクローズされたり#番号で参照された場合、Discussionは変更されますか？"
+question: "GitHub Discussion が Issue に変換され、その Issue がクローズされたり、対応する # 番号が使用された場合、Discussion は変更されますか？"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion"
 ---
 
-
-> https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion
-1. [x] No
-1. [ ] Yes
-> DiscussionをIssueに「変換」すると、Discussionにソフトリンクされた新しいIssueが作成され、情報が事前入力されるだけで、それ以上の強い関連はない
+- [x] いいえ
+- [ ] はい
+> Discussion を Issue に「変換」すると、基本的に新しい Issue が作成され、その Issue が Discussion とソフトリンクされ、Issue 情報が自動入力されます。それ以上の強い関連性はありません。

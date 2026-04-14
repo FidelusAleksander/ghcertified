@@ -1,10 +1,9 @@
 ---
-title: "質問 086"
-question: "1つのステップで複数のコマンドを実行するために使用されるGitHub Actionsの構文はどれですか？"
+question: "次のうち、複数のコマンドを単一のステップで実行するために使用される正しいGitHub Actionsの構文はどれですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-commands-for-github-actions#example-of-a-multiline-string"
 ---
 
-> https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-commands-for-github-actions#example-of-a-multiline-string
-1. [ ] コマンドを `&&` で連結する
-1. [ ] コマンドを配列で定義する
-1. [x] `|` を使った複数行文字列を使用する
-1. [ ] コマンドをセミコロン `;` で区切る
+- [ ] && を使用してコマンドを連結する
+- [ ] 配列内でコマンドを定義する
+- [x] | を使用した複数行文字列
+- [ ] ; でコマンドを区切る

@@ -1,10 +1,9 @@
 ---
-title: "質問 085"
-question: "GitHub Actions Workflowにおける `with` キーワードの目的は何ですか？"
+question: "GitHub Actions ワークフローで `with` キーワードの目的は何ですか？"
+documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith"
 ---
 
-> https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepswith
-1. [ ] 環境変数を定義する
-1. [x] Actionの入力パラメータを指定する
-1. [ ] 依存関係を設定する
-1. [ ] 別のWorkflowをトリガーする
+- [ ] 環境変数を定義するため
+- [x] アクションの入力パラメーターを指定するため
+- [ ] 依存関係を設定するため
+- [ ] 他のワークフローをトリガーするため

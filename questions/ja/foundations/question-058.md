@@ -1,12 +1,10 @@
 ---
-title: "質問 058"
-question: "GitHub Marketplaceとは何ですか？"
+question: "GitHub Marketplace とは何ですか？"
+documentation: "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps"
 ---
 
-
-> https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps
-1. [x] 開発者がコードと一緒にソフトウェア構築を支援するツールを見つけられる場所
-1. [ ] 企業が採用する開発者を探す場所
-1. [ ] 開発者が自分のRepositoryの所有権を販売する場所
-1. [ ] オープンソース開発者をサブスクリプション形式で支援できる場所
-> それはGitHub Sponsorsです
+- [x] GitHub Marketplace は、開発者がコードと並行してソフトウェアを構築するために役立つツールを見つける場所です。
+- [ ] GitHub Marketplace は、企業が雇用する開発者を見つける場所です。
+- [ ] GitHub Marketplace は、開発者がリポジトリの所有権を販売する場所です。
+- [ ] GitHub Marketplace は、オープンソース開発者をサブスクリプションベースで支援する場所です。
+> これは GitHub Sponsors の説明です。

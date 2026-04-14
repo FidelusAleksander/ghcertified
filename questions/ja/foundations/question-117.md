@@ -1,11 +1,9 @@
 ---
-title: "質問 117"
-question: "GitHub wikisについて正しいものはどれですか？"
+question: "GitHubのWikiについて正しい記述はどれですか？"
+documentation: "https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis"
 ---
 
-> https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis
-
-1. [ ] Private RepositoryのWikiはGitHubアカウントを持つ全員がアクセスできる
-1. [ ] WikiはGitHub上で直接編集のみ可能で、ローカル編集はできない
-1. [x] Public RepositoryのWikiは誰でもアクセスでき、Private RepositoryのWikiはRepositoryのCollaboratorのみがアクセスできる
-1. [ ] WikiではMarkdownを使って数式、図、地図、3Dモデルを表示することはできない
+- [ ] プライベートリポジトリのWikiはGitHubアカウントを持っている全員がアクセスできます。
+- [ ] WikiはGitHub上で直接編集することしかできず、ローカルでの編集はサポートされていません。
+- [x] パブリックリポジトリのWikiは誰でもアクセスでき、プライベートリポジトリのWikiはリポジトリのコラボレーターのみがアクセスできます。
+- [ ] WikiにMarkdownを使用して、描画された数学式、図、マップ、および3Dモデルを追加することはできません。

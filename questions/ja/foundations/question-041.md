@@ -1,11 +1,10 @@
 ---
-title: "質問 041"
-question: "Repositoryの可視性オプションにはどのような種類がありますか？"
+question: "リポジトリの可視性オプションにはどのようなものがありますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility"
 ---
 
+- [x] Private、Public、Internal（Enterprise のみ）
+- [ ] Personal、Public、Internal（Enterprise のみ）
+- [ ] Private、Public
+- [ ] Personal、Public
 
-> https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility
-1. [x] Private、Public、Internal（Enterpriseのみ）
-1. [ ] Personal、Public、Internal（Enterpriseのみ）
-1. [ ] Private と Public
-1. [ ] Personal と Public

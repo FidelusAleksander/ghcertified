@@ -1,9 +1,8 @@
 ---
-title: "質問 030"
 question: "スマートアクションとは何ですか？"
+documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/11-examine-inline-chat-smart-actions-quick-chat"
 ---
 
-> https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/11-examine-inline-chat-smart-actions-quick-chat
-1. [x] スマートアクションは、コードの説明、修正、テストやドキュメントの生成など、GitHub Copilot Chatがプロンプトを作成せずに実行できる一般的かつ定義済みのタスクです。
-1. [ ] スマートアクションは、失敗したテストのデバッグや修正に使われるGitHub Copilotの高度なモードです。
-1. [ ] スマートアクションは、組織内で一般的なコーディング作業を支援するために設計され、リポジトリや組織レベルで設定できる定義済みタスクです。
+- [x] スマートアクションは、コードの説明、コード修正、テストやドキュメントの生成など、GitHub Copilot Chatがプロンプトを作成する必要なく実行できる一般的で事前定義されたタスクです。
+- [ ] スマートアクションは、失敗するテストのデバッグや修正に使用される高度なGitHub Copilotのモダリティです。
+- [ ] スマートアクションは、組織内での一般的なコーディングタスクを支援するよう設計された事前定義タスクであり、リポジトリや組織レベルで設定できます。

@@ -1,14 +1,12 @@
 ---
-title: "質問 052"
-question: "Organizationモデレーターの役割は何ですか？"
+question: "組織モデレーターの役割は何ですか？"
+documentation: "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization"
 ---
 
-
-> https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
-1. [x] メンバーとしての権限に加え、非メンバーのコントリビューターをブロック/ブロック解除し、インタラクション制限を設定し、Organizationが所有する公開Repositoryのコメントを非表示にできる
-1. [ ] Organizationへの完全なアクセス権を持つメンバー
-> それはOrganizationオーナーです
-1. [ ] 支払い情報などの請求設定を管理できるメンバー
-> それはBilling Managerです
-1. [ ] セキュリティアラートを閲覧し、Organization全体のコードセキュリティ設定を管理でき、すべてのRepositoryの読み取り権限を持つメンバー
-> それはSecurity Managerです
+- [x] モデレーターは、メンバーとしての権限に加えて、非メンバーのコントリビューターをブロックおよびブロック解除したり、対話制限を設定したり、組織が所有する公開リポジトリのコメントを非表示にすることができます。
+- [ ] モデレーターは、組織に完全なアクセス権を持つ組織メンバーです。
+> それは組織所有者です
+- [ ] モデレーターは、支払い情報など、組織の請求設定を管理できる組織メンバーです。
+> それは請求管理者です
+- [ ] モデレーターは、セキュリティアラートを表示し、組織全体でコードセキュリティの設定を管理でき、さらに組織内のすべてのリポジトリへの読み取り権限を持つメンバーです。
+> それはセキュリティ管理者です

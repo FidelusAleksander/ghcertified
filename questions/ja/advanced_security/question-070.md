@@ -1,10 +1,9 @@
 ---
-title: "質問 070"
-question: "CodeQLコード解析における抽出（Extraction）とは何ですか？"
+question: "CodeQLコード分析の文脈での抽出とは何ですか？"
+documentation: "https://codeql.github.com/docs/codeql-overview/about-codeql/#database-creation"
 ---
 
-> https://codeql.github.com/docs/codeql-overview/about-codeql/#database-creation
-1. [x] 抽出はコードベース内の各ソースファイルの関係表現を作成するプロセスである。
-1. [ ] 抽出はCodeQLクエリをCodeQLデータベースに対して実行し結果を抽出する行為である。
-1. [ ] 抽出はコードベースに特化したCodeQLクエリを作成するプロセスである。
-1. [ ] 抽出はCodeQLデータベースからデータをエクスポートするプロセスである。
+- [x] 抽出は、コードベース内の各ソースファイルのリレーショナル表現を作成するプロセスです。
+- [ ] 抽出は、CodeQLデータベースに対してCodeQLクエリを実行し、結果を抽出する行為です。
+- [ ] 抽出は、コードベースに特化したCodeQLクエリを作成するプロセスです。
+- [ ] 抽出は、CodeQLデータベースからデータをエクスポートするプロセスです。
