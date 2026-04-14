@@ -503,7 +503,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <CardContent className="px-4 py-3.5 flex items-center justify-between gap-3">
               <span className="text-[13px] text-card/65 leading-snug">{t("contributePrompt")}</span>
               <Button
-                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
+                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
                 nativeButton={false}
                 className="bg-card text-foreground hover:bg-card/90 font-bold text-[12px] px-3 py-1.5 h-auto flex-shrink-0"
               >

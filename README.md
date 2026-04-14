@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://ghcertified.com/">
-    <img src="https://github.com/FidelusAleksander/ghcertified/blob/master/app/public/images/logo.svg?raw=true" style="width: 50%;" />
+    <img src="https://github.com/FidelusAleksander/ghcertified/blob/main/app/public/images/logo.svg?raw=true" style="width: 50%;" />
   </a>
 </p>
 
@@ -15,7 +15,7 @@ This project is meant to be used through the website @ https://ghcertified.com/
 
 You can solidify your knowledge and help others pass the exams at the same time by submitting mock exam questions that you have created.
 
-Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md)
+Make sure to follow the guidelines outlined in [CONTRIBUTING](https://github.com/FidelusAleksander/ghcertified/blob/main/CONTRIBUTING.md)
 
 
 ## Contributors

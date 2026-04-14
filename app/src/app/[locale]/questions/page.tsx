@@ -83,7 +83,7 @@ export default async function QuestionsPage({ params }: Props) {
         {t.rich("contributePrompt", {
           link: (chunks) => (
             <a
-              href="https://github.com/FidelusAleksander/ghcertified/blob/master/CONTRIBUTING.md"
+              href="https://github.com/FidelusAleksander/ghcertified/blob/main/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium no-underline hover:underline"

@@ -4,7 +4,7 @@ run-name: Auto translate UI strings from ${{ github.sha }}
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "app/messages/en.json"
 
@@ -73,5 +73,5 @@ jobs:
           gh pr create \
             --title "i18n: auto-translate UI strings" \
             --body "This PR updates UI translations for all locales based on changes to \`app/messages/en.json\` from commit ${{ github.sha }}." \
-            --base master \
+            --base main \
             --head i18n/auto-translate-ui-${{ github.sha }}

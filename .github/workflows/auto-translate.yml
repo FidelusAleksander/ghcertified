@@ -4,7 +4,7 @@ run-name: Auto translate content changes from ${{ github.sha }}
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "questions/en/**"
 
@@ -64,5 +64,5 @@ jobs:
           gh pr create \
             --title "i18n: auto-translate content changes" \
             --body "This PR updates translations for recently changed content from commit ${{ github.sha }}." \
-            --base master \
+            --base main \
             --head i18n/auto-translate-${{ github.sha }}
