@@ -15,6 +15,6 @@ steps:
 ```
 - [x] `run: echo "$action_state"`
 - [ ] `run: echo "${{ steps.step_one.outputs.action_state }}"`
-> Isso seria o caso se `action_state` fosse escrito em `$GITHUB_OUTPUT`
+> Isso seria o caso se `action_state` fosse escrito para `$GITHUB_OUTPUT`
 - [ ] `run: echo "$steps.step_one.outputs.action_state"`
 - [ ] `run: echo "${{ action_state }}"`
