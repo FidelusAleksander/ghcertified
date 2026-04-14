@@ -1,5 +1,5 @@
 ---
-question: "Como você pode usar a API do GitHub para criar ou atualizar um segredo do repositório?"
+question: "Como você pode usar a API do GitHub para criar ou atualizar um segredo de repositório?"
 documentation: "https://docs.github.com/en/rest/actions/secrets?create-or-update-a-repository-secret=&apiVersion=2022-11-28#create-or-update-a-repository-secret"
 ---
 
