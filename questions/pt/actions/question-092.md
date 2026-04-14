@@ -1,5 +1,5 @@
 ---
-question: "Em um workflow do GitHub Actions, como você especifica uma versão específica do Node.js para usar em um job?"
+question: "Em um fluxo de trabalho do GitHub Actions, como você especifica uma versão específica do Node.js para usar em um job?"
 documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs#specifying-the-nodejs-version"
 ---
 
