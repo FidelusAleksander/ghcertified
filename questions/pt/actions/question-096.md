@@ -1,5 +1,5 @@
 ---
-question: "Selecione a variável de ambiente padrão que contém o sistema operacional do runner que está executando o trabalho"
+question: "Selecione a variável de ambiente padrão que contém o sistema operacional do executor que está executando o trabalho"
 documentation: "https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables"
 ---
 
