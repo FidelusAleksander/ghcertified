@@ -5,8 +5,8 @@ documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/mana
 
 - [x] Você pode adicionar um runner auto-hospedado a um repositório
 - [x] Você pode adicionar um runner auto-hospedado a uma organização
-- [x] Você pode adicionar um runner auto-hospedado a uma enterprise
+- [x] Você pode adicionar um runner auto-hospedado a uma empresa
 - [ ] Você pode adicionar um runner auto-hospedado a um workflow
-> Não é possível adicionar no nível de workflow
-- [ ] Você pode adicionar um runner auto-hospedado a um step
-> Não é possível adicionar no nível de step
+> Você não pode adicionar ao nível de workflow
+- [ ] Você pode adicionar um runner auto-hospedado a um passo
+> Você não pode adicionar ao nível de passo
