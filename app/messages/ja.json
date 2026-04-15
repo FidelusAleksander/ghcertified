@@ -4,7 +4,10 @@
     "practiceTests": "練習テスト",
     "questions": "質問",
     "openMenu": "メニューを開く",
-    "closeMenu": "メニューを閉じる"
+    "closeMenu": "メニューを閉じる",
+    "signIn": "サインイン",
+    "signOut": "サインアウト",
+    "signedInAs": "{name} としてサインイン中"
   },
   "Footer": {
     "tagline": "コミュニティが貢献した <link>公式GitHub認定資格</link> の練習問題",

@@ -4,7 +4,10 @@
     "practiceTests": "Exámenes de Práctica",
     "questions": "Preguntas",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "signedInAs": "Conectado como {name}"
   },
   "Footer": {
     "tagline": "Preguntas de práctica contribuidas por la comunidad para <link>Certificaciones Oficiales de GitHub</link>",

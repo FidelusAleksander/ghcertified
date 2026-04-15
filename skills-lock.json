@@ -36,6 +36,11 @@
       "sourceType": "github",
       "computedHash": "42877142fcc51dcc6be696349aa7df8887eb29510e2a5868beac913f5f84de31"
     },
+    "cloudflare": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "computedHash": "9f7a0866bc627b095f738558b594ac4246bda6ff895f1feb78037f8bd98a01d9"
+    },
     "colorize": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
@@ -96,6 +101,16 @@
       "sourceType": "github",
       "computedHash": "8edad33758f2461f51afdb51741bfcc4cc57d84ea42e2751a84be2c6a2d48f69"
     },
+    "supabase": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "computedHash": "cb675a889c60172febe84740e7c22b600c8241c390deaff3d368c408f10dffdf"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "computedHash": "f4cd7570115d97af6bcb2946eb891a958c8d04a43b479871c9ccadbc670ad058"
+    },
     "typeset": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
@@ -105,6 +120,16 @@
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    },
+    "workers-best-practices": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "computedHash": "420e1ad3eaeb8ed2016e6b34fff3757de6aa39899ec2bd6e9784a29c38e70f9a"
+    },
+    "wrangler": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "computedHash": "a27fded44ce73b7ef69b1b52fcdf0cdde9c2b17f345b761bf11ca32d37da2220"
     }
   }
 }

@@ -4,7 +4,10 @@
     "practiceTests": "Testy próbne",
     "questions": "Pytania",
     "openMenu": "Otwórz menu",
-    "closeMenu": "Zamknij menu"
+    "closeMenu": "Zamknij menu",
+    "signIn": "Zaloguj się",
+    "signOut": "Wyloguj się",
+    "signedInAs": "Zalogowano jako {name}"
   },
   "Footer": {
     "tagline": "Pytania próbne dodane przez społeczność dla <link>oficjalnych certyfikacji GitHub</link>",

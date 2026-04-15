@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { CheckCircle, Menu, X } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
 import { LanguagePicker } from "@/components/LanguagePicker";
+import { UserMenu } from "@/components/UserMenu";
 
 /** Check if a nav link is active based on current pathname. */
 function isLinkActive(href: string, pathname: string, locale: string): boolean {
@@ -77,6 +78,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-3 ml-auto">
           <LanguagePicker />
           <GitHubStarButton />
+          <UserMenu />
         </div>
 
         {/* Mobile hamburger */}
@@ -125,6 +127,9 @@ export function Navbar() {
             </div>
             <div className="mt-3 pt-3 border-t border-border">
               <GitHubStarButton className="text-xs" />
+            </div>
+            <div className="mt-3 pt-3 border-t border-border">
+              <UserMenu />
             </div>
           </div>
         </div>

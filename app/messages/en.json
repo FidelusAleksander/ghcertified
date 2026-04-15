@@ -4,7 +4,10 @@
     "practiceTests": "Practice Tests",
     "questions": "Questions",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signedInAs": "Signed in as {name}"
   },
   "Footer": {
     "tagline": "Community-contributed practice questions for <link>official GitHub Certifications</link>",
