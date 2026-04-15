@@ -237,7 +237,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             ) : undefined
           }
           documentationHref={currentQuestion.documentation}
-          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
+          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question, fileLink: `<a href="https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${cert}/question-${currentQuestion.id.replace(`${cert}-`, "")}.md">${currentQuestion.id}</a>` }))}&labels=question-issue`}
           learnMoreLabel={t("learnMore")}
           reportLabel={t("report")}
           reportTooltip={t("reportTooltip")}

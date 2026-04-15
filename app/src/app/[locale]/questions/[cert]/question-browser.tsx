@@ -210,7 +210,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       <QuestionCard
         headerLabel={t("questionOf", { current: currentIndex + 1, total: questions.length })}
         documentationHref={currentQuestion.documentation}
-        reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question }))}&labels=question-issue`}
+        reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question, fileLink: `<a href="https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${currentQuestion.cert}/question-${currentQuestion.id.replace(`${currentQuestion.cert}-`, "")}.md">${currentQuestion.id}</a>` }))}&labels=question-issue`}
         learnMoreLabel={t("learnMore")}
         reportLabel={t("report")}
         reportTooltip={t("reportTooltip")}
