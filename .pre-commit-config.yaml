@@ -5,4 +5,9 @@ repos:
     rev: v5.0.0
     hooks:
       - id: check-yaml
-      - id: check-toml
+      - id: check-json
+        exclude: '^\.devcontainer/' # devcontainer.json uses JSONC (comments)
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-added-large-files
