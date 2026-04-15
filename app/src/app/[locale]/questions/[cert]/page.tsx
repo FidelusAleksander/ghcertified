@@ -7,8 +7,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import type { CertificationType, SupportedLocale } from "@/lib/questions";
-import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS } from "@/lib/questions";
+import type { CertificationType } from "@/lib/questions";
+import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS, parseSupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { QuestionBrowser } from "./question-browser";
 
@@ -27,7 +27,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { locale, cert } = await params;
   const certName = CERT_TITLES[cert as CertificationType] ?? cert;
-  const questions = getQuestionsByCert(cert as CertificationType, locale as SupportedLocale);
+  const questions = getQuestionsByCert(cert as CertificationType, parseSupportedLocale(locale));
   const title = `${certName} Questions`;
   const description = `Browse ${questions.length} practice questions for the ${certName} certification exam.`;
 
@@ -48,13 +48,13 @@ export default async function CertQuestionsPage({ params }: Props) {
   const { locale, cert } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("QuestionsLibrary");
-  const certInfo = getCertInfo(cert as CertificationType, locale as SupportedLocale);
+  const certInfo = getCertInfo(cert as CertificationType, parseSupportedLocale(locale));
 
   if (!certInfo) {
     notFound();
   }
 
-  const questions = getQuestionsByCert(cert as CertificationType, locale as SupportedLocale);
+  const questions = getQuestionsByCert(cert as CertificationType, parseSupportedLocale(locale));
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">

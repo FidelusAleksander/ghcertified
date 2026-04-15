@@ -9,7 +9,7 @@ import { Separator } from "@/components/ui/separator";
 import { Play, ArrowRight, BookOpen } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
-import type { SupportedLocale } from "@/lib/questions";
+import { parseSupportedLocale } from "@/lib/questions";
 import { CERT_META } from "@/lib/cert-meta";
 import { getContributors } from "@/lib/contributors";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
@@ -48,7 +48,7 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("Home");
   const tCert = await getTranslations("CertDescriptions");
-  const catalog = getCertCatalog(locale as SupportedLocale);
+  const catalog = getCertCatalog(parseSupportedLocale(locale));
   const certifications = catalog.map((c) => ({
     id: c.cert,
     name: c.title,

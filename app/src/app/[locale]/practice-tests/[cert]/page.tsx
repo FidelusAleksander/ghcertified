@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import { getQuestionsByCert, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS } from "@/lib/questions";
-import type { CertificationType, SupportedLocale } from "@/lib/questions";
+import { getQuestionsByCert, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS, parseSupportedLocale } from "@/lib/questions";
+import type { CertificationType } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { QuizWrapper } from "./quiz-wrapper";
 
@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { locale, cert } = await params;
   const certName = CERT_TITLES[cert as CertificationType] ?? cert;
-  const questions = getQuestionsByCert(cert as CertificationType, locale as SupportedLocale);
+  const questions = getQuestionsByCert(cert as CertificationType, parseSupportedLocale(locale));
   const title = `${certName} Practice Test`;
   const description = `Practice ${questions.length} questions for the ${certName} certification exam. Free, open-source, community-created.`;
 
@@ -47,7 +47,7 @@ export default async function PracticeTestPage({ params }: Props) {
   }
 
   const certType = cert as CertificationType;
-  const questions = getQuestionsByCert(certType, locale as SupportedLocale);
+  const questions = getQuestionsByCert(certType, parseSupportedLocale(locale));
   const certName = CERT_TITLES[certType] ?? certType;
 
   const jsonLd = {

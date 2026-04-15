@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCertCatalog } from "@/lib/questions";
-import type { SupportedLocale } from "@/lib/questions";
+import { parseSupportedLocale } from "@/lib/questions";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { CERT_META } from "@/lib/cert-meta";
 import { Card, CardContent } from "@/components/ui/card";
@@ -33,7 +33,7 @@ export default async function QuestionsPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("QuestionsLibrary");
   const tCert = await getTranslations("CertDescriptions");
-  const catalog = getCertCatalog(locale as SupportedLocale);
+  const catalog = getCertCatalog(parseSupportedLocale(locale));
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">

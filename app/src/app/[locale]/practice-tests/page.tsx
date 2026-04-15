@@ -7,7 +7,7 @@
 
 import type { Metadata } from "next";
 import { getCertCatalog } from "@/lib/questions";
-import type { SupportedLocale } from "@/lib/questions";
+import { parseSupportedLocale } from "@/lib/questions";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { CatalogCards } from "./catalog-cards";
@@ -36,7 +36,7 @@ export default async function PracticeTestsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("PracticeTests");
-  const certs = getCertCatalog(locale as SupportedLocale).map((c) => ({
+  const certs = getCertCatalog(parseSupportedLocale(locale)).map((c) => ({
     id: c.cert,
     name: c.title,
     questions: c.questionCount,
