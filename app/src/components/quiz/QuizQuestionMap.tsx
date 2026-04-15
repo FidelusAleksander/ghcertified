@@ -74,7 +74,14 @@ export function QuizQuestionMap({
               !isComplete && i !== currentIndex && state === "unanswered" && "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
             );
             return (
-              <button key={i} onClick={() => goToQuestion(i)} className={btnClass}>
+              <button
+                key={i}
+                type="button"
+                onClick={() => goToQuestion(i)}
+                className={btnClass}
+                aria-label={`Go to question ${i + 1}`}
+                aria-current={i === currentIndex ? "true" : undefined}
+              >
                 {i + 1}
                 {isQuestionFlagged && (
                   <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-[14px] leading-none drop-shadow-sm">🚩</span>
@@ -87,6 +94,7 @@ export function QuizQuestionMap({
         {mapTotalPages > 1 && (
           <div className="flex items-center justify-center gap-1 mt-3 pt-3 border-t border-border">
             <button
+              type="button"
               onClick={() => setManualMapPage(Math.max(0, mapPage - 1))}
               disabled={mapPage === 0}
               aria-label={labels.previousMapPage}
@@ -105,7 +113,9 @@ export function QuizQuestionMap({
               return (
                 <button
                   key={p}
+                  type="button"
                   onClick={() => setManualMapPage(p)}
+                  aria-label={`Go to page ${p + 1}`}
                   className={cn(
                     "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                     p === mapPage
@@ -118,6 +128,7 @@ export function QuizQuestionMap({
               );
             })}
             <button
+              type="button"
               onClick={() => setManualMapPage(Math.min(mapTotalPages - 1, mapPage + 1))}
               disabled={mapPage === mapTotalPages - 1}
               aria-label={labels.nextMapPage}
