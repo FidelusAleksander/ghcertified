@@ -7,4 +7,3 @@ documentation: "https://github.com/readme/guides/github-advanced-security-telus"
 - [ ] Pisanie kodu w języku, który jest powszechnie używany
 - [ ] Wprowadzanie praktyk bezpieczeństwa tuż przed wdrożeniem produkcyjnym
 - [ ] Pisanie kodu bez przejmowania się bezpieczeństwem
-

@@ -64,4 +64,3 @@ Include a concise report:
   - Evidence: URL + quote/paraphrase
 - If Edited: list exactly what changed (e.g., which options flipped) and why.
 - If No change: state whether it was already correct or blocked by undetermined evidence.
-

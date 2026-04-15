@@ -5,4 +5,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-g
 
 - [x] Falsa
 - [ ] Verdadeira
-

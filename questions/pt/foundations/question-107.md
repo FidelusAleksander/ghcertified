@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 - [x] Gerentes de cobrança no nível da organização
 - [x] Proprietário no nível da organização
 - [x] Proprietário no nível da enterprise
-

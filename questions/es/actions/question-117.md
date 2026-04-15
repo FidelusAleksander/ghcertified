@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/deployment/targeting-differen
 - [x] Administradores del repository
 - [ ] Cualquier persona con permiso de escritura en el repository
 - [ ] Cualquier persona con permiso de lectura en el repository
-

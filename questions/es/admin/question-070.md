@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/authentication/keeping-your-account-a
 - [ ] Desactivar el acceso de push al repositorio
 - [ ] Usar `git add .` antes de todos los commits
 - [ ] Desactivar todas las reglas de `.gitignore` para asegurar que cada archivo sea rastreado
-

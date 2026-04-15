@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [x] Commit SHA を参照する
 - [ ] バージョンタグを参照する
 - [ ] main ブランチを参照する
-

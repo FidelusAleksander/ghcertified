@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/authentication/keeping-your-account-a
 - [x] User Access Token for a GitHub App
 - [ ] IoT Token for an IoT device
 - [ ] Ephemeral Access Token for temporary access
-

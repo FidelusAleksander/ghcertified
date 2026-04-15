@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choos
 - [x] los trabajos que dependen del trabajo A se omiten
 - [ ] los trabajos que dependen del trabajo A fallan
 - [ ] el flujo de trabajo cancela inmediatamente todos los demás trabajos
-

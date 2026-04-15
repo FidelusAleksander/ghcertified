@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/quickstart#introduction"
 - [ ] GitHub AI Aid
 - [ ] GitHub Partner
 - [ ] GitHub Assistant
-

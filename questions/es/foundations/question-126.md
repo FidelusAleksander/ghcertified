@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull
 - [x] Closed  
 - [ ] Pending  
 - [ ] Abandoned  
-

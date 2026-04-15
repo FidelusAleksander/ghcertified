@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/organizations/managing-access-to-your
 - [ ] Colaboradores externos podem gerenciar as configurações de faturamento, enquanto os membros não podem.  
 - [ ] Membros nunca podem contribuir para repositórios privados, enquanto colaboradores externos podem.  
 - [ ] Colaboradores externos se tornam automaticamente mantenedores de equipes na organização.  
-

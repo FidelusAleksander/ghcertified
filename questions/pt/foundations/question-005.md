@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 - [ ] Apenas manualmente, uma de cada vez.
 - [ ] Apenas individualmente ou em massa.
 - [ ] Apenas automaticamente usando workflows de projeto.
-

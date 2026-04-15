@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/getting-started/adding-
 - [ ] `CONTRIBUTING.md` ファイル内
 - [ ] `README.md` ファイル内
 - [ ] `CODE_OF_CONDUCT.md` ファイル内
-

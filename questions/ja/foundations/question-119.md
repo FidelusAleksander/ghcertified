@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/organizations/managing-user-access-to
 - [ ] リポジトリを削除  
 - [ ] リポジトリ設定を変更  
 - [ ] 新しいリポジトリを作成  
-

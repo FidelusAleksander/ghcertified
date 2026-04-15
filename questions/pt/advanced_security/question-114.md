@@ -7,4 +7,3 @@ documentation: "https://cwe.mitre.org/"
 - [ ] `Cybersecurity Weakness Enumeration`
 - [ ] `Code Wrapping Engine`
 - [ ] `Critical Web Elements`
-

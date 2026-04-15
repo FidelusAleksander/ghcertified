@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for
 - [x] `matrix` コンテキストを使用
 - [ ] `job` コンテキストを使用
 - [ ] `jobs` コンテキストを使用
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configu
 - [ ] Proprietários da organização
 - [ ] Gerentes de segurança
 - [ ] Moderadores da organização
-

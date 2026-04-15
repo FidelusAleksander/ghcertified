@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/reference/environment-variabl
 - [ ] `GITHUB_REPOSITORY`
 - [ ] `GITHUB_WORKFLOW`
 - [x] `GITHUB_ACTOR`
-

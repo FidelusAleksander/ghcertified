@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/git
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
-

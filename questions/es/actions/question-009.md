@@ -6,4 +6,3 @@ question: "¿En qué formato se definen los Workflows?"
 - [ ] toml
 - [ ] json
 - [ ] xml
-

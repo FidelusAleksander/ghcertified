@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/about-workflo
 - [ ] Os jobs são executados em sequência
 - [ ] Os jobs são executados com base na ordem em que estão definidos no arquivo do workflow
 - [ ] Apenas o primeiro job é executado, os outros requerem aprovação manual
-

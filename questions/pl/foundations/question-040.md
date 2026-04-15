@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/repositories/managing-your-repository
 - [ ] W pliku konfiguracyjnym `.github/settings.yml`
 - [ ] Te funkcje nie mogą być wyłączone
 - [ ] W ustawieniach konta
-

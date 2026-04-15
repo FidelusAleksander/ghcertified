@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/organizations/managing-user-access-to
 - [x] Admin
 - [x] Write
 - [x] Maintain
-

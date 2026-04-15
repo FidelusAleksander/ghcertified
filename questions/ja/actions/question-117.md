@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/deployment/targeting-differen
 - [x] Repository administrators
 - [ ] リポジトリの書き込み権限を持つユーザー全員
 - [ ] リポジトリの読み取り権限を持つユーザー全員
-

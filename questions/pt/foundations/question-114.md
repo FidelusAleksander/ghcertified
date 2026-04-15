@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/desktop/making-changes-in-a-branch/vi
 - [ ] Criar novos repositórios
 - [ ] Visualizar insights do repositório
 - [x] Visualizar históricos de branch em uma interface gráfica
-

@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/search-github/searching-on-github/sea
 > Isso está faltando o operador de intervalo (`>`) para estrelas, e `name:docker` não é uma sintaxe válida.  
 - [ ] `topic:docker stars:>100 in:readme`  
 > Isso pesquisa dentro de tópicos ou readmes, e não no nome do repositório.  
-

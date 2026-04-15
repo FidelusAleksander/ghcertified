@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-
 - [ ] Wzorce alertów dla Enterprise  
 - [ ] Wzorce alertów dla open source  
 - [ ] Wzorce dostawców chmurowych  
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/a
 - [ ] Adicionar um botão de patrocínio ao seu projeto
 - [ ] Processamento de grandes volumes de dados e análises
 - [ ] Treinamento de modelos de aprendizado de máquina
-

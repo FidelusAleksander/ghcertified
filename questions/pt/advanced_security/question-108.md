@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-a
 - [ ] Configurando o campo `severity` no arquivo `dependabot.yml` como alto
 - [ ] Removendo todas as dependências que causam alertas de baixa gravidade
 - [ ] Configurando o campo `dismiss-severity` no arquivo `dependabot.yml` como baixo
-

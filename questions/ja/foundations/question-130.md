@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/typ
 - [ ] 個人アカウントはSSHキー経由でのみアクセスでき、組織アカウントはパスワード経由でのみアクセスできます。  
 - [ ] 組織アカウントは、GitHub Enterpriseプランを契約している場合にのみ作成できます。  
 > 組織はFree、Team、またはEnterpriseプランで利用可能です。
-

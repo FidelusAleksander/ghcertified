@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 - [ ] Agrega los resultados al archivo existente.
 - [ ] Crea una nueva rama en el repositorio.
 - [ ] GitHub lo ignora.
-

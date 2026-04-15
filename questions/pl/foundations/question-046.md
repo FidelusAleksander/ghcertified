@@ -7,4 +7,3 @@ documentation: "https://codeql.github.com/"
 - [ ] Język programowania
 - [ ] Edytor tekstu
 - [ ] System kontroli wersji
-

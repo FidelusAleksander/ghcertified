@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/billing/managing-billing-for-github-a
 - [ ] GitHub Actions は、公開リポジトリで使用される分単位で料金が発生します。
 - [ ] 公開リポジトリは、プライベートリポジトリの半分の無料分が提供されます。
 - [ ] GitHub Actions は公開リポジトリでは利用できません。
-

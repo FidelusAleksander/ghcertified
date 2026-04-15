@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workf
 - [x] Defines una salida a nivel de trabajo en el flujo de trabajo `build`
 - [x] En el flujo de trabajo `build` escribes la salida en `$GITHUB_OUTPUT` en uno de los pasos
 - [ ] Todas las salidas se pasan automáticamente a los flujos de trabajo que los llaman
-

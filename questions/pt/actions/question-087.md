@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 - [x] Usando a action actions/cache
 - [ ] Armazenando-as no repositório
 - [ ] Usando a palavra-chave store
-

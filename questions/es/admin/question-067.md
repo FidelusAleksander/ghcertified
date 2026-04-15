@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/github/authenticating-to-github/remov
 - [ ] git revert & git reset --hard
 - [ ] git clean & git prune
 - [ ] git gc & git reflog expire
-

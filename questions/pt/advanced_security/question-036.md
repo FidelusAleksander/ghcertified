@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/about-s
 - [ ] Sim, sem requisitos adicionais
 - [ ] Não, está disponível apenas para repositórios públicos
 - [ ] Não, está disponível apenas para repositórios privados
-

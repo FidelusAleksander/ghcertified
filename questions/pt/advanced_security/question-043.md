@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-v
 - [ ] `version` e `package-ecosystem`
 - [ ] `assignees` e `directory`
 - [ ] `updates` e `directory`
-

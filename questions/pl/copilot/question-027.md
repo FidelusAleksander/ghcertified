@@ -7,4 +7,3 @@ documentation: "https://code.visualstudio.com/docs/copilot/customization/custom-
 - [ ] Edit
 - [x] Translate
 - [ ] Agent
-

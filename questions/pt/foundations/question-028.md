@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/codespaces/the-githubdev-web-based-ed
 - [ ] GitHub Dependabot
 - [ ] GitHub Remote
 - [ ] GitHub Online
-

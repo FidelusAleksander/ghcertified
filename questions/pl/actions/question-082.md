@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [ ] Poprzez użycie filtra runs-on
 - [ ] Poprzez użycie filtra jobs
 - [ ] Poprzez użycie słowa kluczowego branch
-

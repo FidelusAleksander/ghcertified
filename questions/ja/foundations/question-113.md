@@ -7,4 +7,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/communicate-u
 - [ ] 太字 - `**太字**`
 - [x] インラインコード - `'''コード'''`
 - [ ] ハイパーリンク - `[タイトル](https://)`
-

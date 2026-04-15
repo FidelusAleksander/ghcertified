@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/repositories/
 - [ ] Personal, Public e Internal (Enterprise only)
 - [ ] Private e Public
 - [ ] Personal e Public
-

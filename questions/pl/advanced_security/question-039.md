@@ -7,4 +7,3 @@ documentation: "https://codeql.github.com/docs/codeql-overview/supported-languag
 - [ ] JavaScript/TypeScript
 - [ ] C/C++
 - [ ] Python
-

@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/repositories/viewing-activity-and-dat
 - [ ] GitHub Actions  
 - [ ] GitHub Projects  
 - [ ] GitHub Discussions  
-

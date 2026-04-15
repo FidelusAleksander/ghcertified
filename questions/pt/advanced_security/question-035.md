@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] Verificar formatação e estilo do código
 - [ ] Revisar pull requests automaticamente
 - [ ] Sincronizar o código com servidores de produção
-

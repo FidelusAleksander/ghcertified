@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/repositories/viewing-activity-and-dat
 - [ ] Issueディスカッションの一覧
 - [x] 未解決の会話の一覧
 - [ ] リポジトリのフォークの数
-

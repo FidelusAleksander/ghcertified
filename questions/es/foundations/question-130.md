@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/typ
 - [ ] Una cuenta personal solo se puede acceder mediante claves SSH, mientras que una cuenta de organización solo se puede acceder mediante contraseñas.  
 - [ ] Una cuenta de organización solo se puede crear si tienes un plan GitHub Enterprise.  
 > Las organizaciones están disponibles en los planes Free, Team o Enterprise.
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 - [ ] Define variáveis de ambiente para o trabalho
 - [ ] Aciona workflows com base em um cronograma
 - [ ] Define secrets para o workflow
-

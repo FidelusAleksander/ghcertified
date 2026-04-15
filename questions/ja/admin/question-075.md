@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-f
 - [ ] 60 requests per hour
 - [ ] 15,000 requests per hour
 - [ ] 1,000 requests per hour
-

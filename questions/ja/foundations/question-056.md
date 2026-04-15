@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-ma
 - [ ] 最近 `octocat` のユーザープロフィールを訪問したため
 - [ ] `octocat/my-repo` リポジトリに貢献したため
 - [ ] `octocat/my-repo` リポジトリにスターを付けたため
-

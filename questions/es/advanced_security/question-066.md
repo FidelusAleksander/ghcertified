@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/managing-
 - [ ] El conjunto de CodeQL es una colección de bases de datos de CodeQL
 - [ ] El conjunto de CodeQL es una colección de resultados de CodeQL
 - [ ] El conjunto de CodeQL es una colección de lenguajes compatibles con CodeQL
-

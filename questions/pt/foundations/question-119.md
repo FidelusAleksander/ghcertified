@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/organizations/managing-user-access-to
 - [ ] Excluir o repositório  
 - [ ] Alterar as configurações do repositório  
 - [ ] Criar novos repositórios
-

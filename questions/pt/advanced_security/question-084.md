@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/managing-
 - [ ] Informação sobre quantas vezes a vulnerabilidade foi explorada
 - [ ] Desenvolvedor designado para corrigir a vulnerabilidade
 - [ ] ID do banco de dados CodeQL que foi usado para encontrar a vulnerabilidade
-

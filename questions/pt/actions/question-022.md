@@ -5,4 +5,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 
 - [x] Verdadeiro
 - [ ] Falso
-

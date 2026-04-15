@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 > No existe algo como defaults.env
 - [ ] Usar defaults.env a nivel de job para establecer variables de entorno predeterminadas para todos los pasos en un solo job  
 > No existe algo como defaults.env
-

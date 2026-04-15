@@ -10,4 +10,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/github-introd
 - [ ] Nível Pro
 > GitHub Pro é um tipo de conta e não uma hierarquia organizacional no GitHub.
 - [x] Nível de Enterprise
-

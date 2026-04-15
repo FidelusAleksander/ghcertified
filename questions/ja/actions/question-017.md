@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-
 - [ ] `branch` フィルターを使用する
 - [ ] `prod` ブランチでのみワークフローを作成する
 - [ ] グロブパターンを使用する
-

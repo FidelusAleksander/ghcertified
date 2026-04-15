@@ -13,4 +13,3 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 - [x] Project managers
 - [x] External Contributors
 - [x] Project Codeowners
-

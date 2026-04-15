@@ -16,4 +16,3 @@ jobs:
 - [ ] No
 - [ ] Only if the workflows are in the same repository
 - [ ] Only with self-hosted runners
-

@@ -10,4 +10,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/github-introd
 - [ ] Proレベル  
 > GitHub Proはアカウントの一種であり、GitHubの組織階層には含まれません。
 - [x] エンタープライズレベル
-

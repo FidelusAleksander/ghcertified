@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/managing-
 - [ ] `Code Verification Security System`
 - [ ] `Critical Vulnerability Scanning Service`
 - [ ] `Cybersecurity Validation Scoring Scheme`
-

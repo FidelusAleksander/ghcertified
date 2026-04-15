@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [ ] define o intervalo de tempo para comandos individuais dentro de um step
 - [ ] define o tempo limite para aguardar eventos externos antes de prosseguir para o próximo step
 - [ ] especifica a duração máxima que um job pode ser executado
-

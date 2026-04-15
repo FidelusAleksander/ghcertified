@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/actions/security-guides/using-secrets
 > Se um segredo com o mesmo nome existir em múltiplos níveis, o segredo no nível mais baixo terá precedência.
 - [ ] A expressão `${{ secrets.SomeSecret }}` é usada apenas para segredos no escopo do repositório
 - [ ] Você precisa usar a API do GitHub para acessar segredos no escopo da organização
-

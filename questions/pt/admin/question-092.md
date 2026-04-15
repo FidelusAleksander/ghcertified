@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/packages/learn-github-packages/introd
 - [x] Docker e imagens OCI
 - [ ] Poetry para Python
 - [ ] Cargo para Rust
-

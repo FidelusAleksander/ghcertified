@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/using
 - [ ] GitHub Copilot Marketplace
 - [ ] GitHub Copilot Integrations
 - [ ] GitHub Copilot Open
-

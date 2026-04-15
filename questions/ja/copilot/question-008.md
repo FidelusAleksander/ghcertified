@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-cu
 - [x] Copilot Chat の応答をカスタマイズするための自然言語指示を含む Markdown ファイル
 - [ ] ビルド指示を含む YAML ファイル
 - [ ] デプロイ設定を含む XML ファイル
-

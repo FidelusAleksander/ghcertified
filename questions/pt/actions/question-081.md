@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/creating-star
 - [x] Usando templates de workflow
 - [ ] Criando uma action reutilizável
 - [x] Definindo o workflow em um repositório central
-

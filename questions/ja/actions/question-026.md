@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workf
 - [x] `build` ワークフロー内でジョブレベルの出力を定義します
 - [x] `build` ワークフロー内のステップの1つで、出力を `$GITHUB_OUTPUT` に書き込みます
 - [ ] すべての出力は自動的に呼び出し元ワークフローに渡されます
-

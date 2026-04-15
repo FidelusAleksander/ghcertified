@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/using-jobs/assigning-permissi
 - [x] none, write, read
 - [ ] read, write, delete
 - [ ] read, write
-

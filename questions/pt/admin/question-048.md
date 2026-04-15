@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 - [ ] Admin
 - [ ] Billing manager
 - [ ] Outside collaborator
-

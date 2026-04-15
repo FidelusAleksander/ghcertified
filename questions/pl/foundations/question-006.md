@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 - [ ] Układ scrum
 - [ ] Układ agile
 - [ ] Układ projektu
-

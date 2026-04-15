@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/get-started/using-git/about-git#about
 - [ ] バージョン管理ソフトウェア (VMS)。
 - [ ] ソフトウェア制御管理 (SCM) システム。
 - [x] ソフトウェア構成管理 (SCM) システム。
-

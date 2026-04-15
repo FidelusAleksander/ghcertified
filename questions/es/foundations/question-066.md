@@ -7,4 +7,3 @@ documentation: "https://about.gitlab.com/topics/version-control/benefits-distrib
 - [ ] Significa que las tareas entre los miembros del equipo que utilizan el sistema se distribuyen fácilmente.
 - [ ] El término se refiere al intercambio peer-to-peer de archivos de código entre usuarios.
 - [ ] Significa que la base de código se distribuye entre múltiples servidores para el balanceo de carga.
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overvi
 - [ ] Uma plataforma de desenvolvimento de software baseada em nuvem para projetos de código aberto
 - [ ] Uma plataforma para desenvolvedores individuais hospedarem projetos pessoais
 - [ ] Um serviço para implementar e gerenciar aplicativos containerizados
-

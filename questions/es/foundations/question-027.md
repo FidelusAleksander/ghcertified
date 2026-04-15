@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/codespaces/overview#benefits-of-githu
 - [ ] GitHub Docker
 - [ ] GitHub Copilot
 - [ ] GitHub DevEnv
-

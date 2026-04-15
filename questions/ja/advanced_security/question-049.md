@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/configu
 - [ ] `paths-exclude:`
 - [ ] `ignore-directories`
 - [ ] `exclude-paths:`
-

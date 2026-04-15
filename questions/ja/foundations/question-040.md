@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/repositories/managing-your-repository
 - [ ] `.github/settings.yml` 設定ファイル内
 - [ ] これらの機能は無効化できません
 - [ ] アカウント設定内
-

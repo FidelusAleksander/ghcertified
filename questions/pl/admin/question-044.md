@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/abo
 - [ ] GitHub Enterprise Server
 - [ ] GitHub Pro
 - [ ] GitHub Team
-

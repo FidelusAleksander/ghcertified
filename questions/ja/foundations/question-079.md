@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 - [ ] GitHub Enterprise Team
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
-

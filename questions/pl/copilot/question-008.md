@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-cu
 - [x] Plik Markdown z instrukcjami w języku naturalnym do dostosowywania odpowiedzi Copilot Chat
 - [ ] Plik YAML z instrukcjami budowy
 - [ ] Plik XML z ustawieniami wdrożenia
-

@@ -7,4 +7,3 @@ documentation: "https://codeql.github.com/docs/ql-language-reference/about-the-q
 - [ ] QL significa Nível de Qualidade e é uma métrica usada pelo CodeQL
 - [ ] QL é um produto semelhante ao CodeQL, mas é usado para escanear arquivos de texto em vez de código
 - [ ] QL é um pacote npm usado pelo CodeQL para escanear código
-

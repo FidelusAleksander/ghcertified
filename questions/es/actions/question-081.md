@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/creating-star
 - [x] Usando plantillas de flujo de trabajo
 - [ ] Creando una acción reutilizable
 - [x] Definiendo el flujo de trabajo en un repositorio central
-

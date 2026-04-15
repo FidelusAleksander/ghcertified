@@ -5,4 +5,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 
 - [x] Verdadeiro
 - [ ] Falso
-

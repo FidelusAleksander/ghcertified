@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/repositories/managing-your-repository
 - [ ] No arquivo de configuração `.github/settings.yml`
 - [ ] Esses recursos não podem ser desativados
 - [ ] Nas configurações da sua conta
-

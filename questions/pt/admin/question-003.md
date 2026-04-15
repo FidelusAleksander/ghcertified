@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-server/support/learning-ab
 - [ ] GitHub Premium Support
 - [ ] GitHub Standard Support
 - [ ] GitHub Community Support
-

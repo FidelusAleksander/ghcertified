@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/mana
 - [ ] ジョブ実行後の環境の自動クリーンアップによるデータ損失
 - [ ] セキュリティ対策による計算効率の低下
 - [ ] GitHubホスト型サービスとの統合の制約
-

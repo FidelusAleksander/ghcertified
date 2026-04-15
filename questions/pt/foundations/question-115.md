@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/quickstart#prerequisites"
 - [x] Gerenciar GitHub Actions
 - [ ] Alternar entre branches
 - [ ] Confirmar mudanças (Committing changes)
-

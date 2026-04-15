@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/caching-depen
 - [ ] busca un caché en otros repositorios
 - [x] crea automáticamente un nuevo caché si el trabajo se completa exitosamente
 - [ ] termina el flujo de trabajo si ocurre una falta de caché
-

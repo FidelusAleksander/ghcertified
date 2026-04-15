@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/events-that-t
 - [ ] GitHub Actions では不可能
 - [ ] on: schedule: weekdays イベントトリガーを使用する
 - [x] on: schedule: cron イベントトリガーを使用する
-

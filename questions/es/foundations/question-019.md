@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/a
 - [ ] Agregar un botón de patrocinio a tu proyecto
 - [ ] Procesamiento y análisis de grandes datos
 - [ ] Entrenamiento de modelos de aprendizaje automático
-

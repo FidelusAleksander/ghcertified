@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot/working-with
 - [x] `@dependabot merge`
 - [ ] `@dependabot cancel merge`
 - [ ] `@dependabot rebase`
-

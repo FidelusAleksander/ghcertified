@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/managing-copilot/configure-pe
 - [ ] gh copilot install
 - [ ] gh copilot setup
 - [ ] gh extension add copilot
-

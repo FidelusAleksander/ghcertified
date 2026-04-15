@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/security-guides/using-secrets
 - [ ] ${{ secret.SECRET_NAME }}
 - [ ] ${{ env.SECRET_NAME }}
 - [ ] ${{ config.SECRET_NAME }}
-

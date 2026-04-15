@@ -5,4 +5,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 
 - [x] Sim, você só precisa usar o CodeQL CLI  
 - [ ] Não, porque requer o uso do GitHub Action `github/codeql-action`  
-

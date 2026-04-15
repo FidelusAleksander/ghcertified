@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/learn-github-actions/expressi
 - [ ] `completed()`, `always()`, `cancelled()` e `failure()`
 - [ ] `status()`, `always()`, `cancelled()` e `failure()`
 - [ ] `state()`, `always()`, `cancelled()` e `failure()`
-

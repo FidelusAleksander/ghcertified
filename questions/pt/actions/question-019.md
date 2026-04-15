@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-
 - [ ] regex
 - [ ] scheme
 - [ ] action
-

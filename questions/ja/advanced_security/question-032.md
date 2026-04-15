@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/security-overview/about
 - [ ] すべてのプッシュに対する自動コードレビュー
 - [ ] リアルタイムの脅威検出
 - [ ] 自動化された依存関係の更新
-

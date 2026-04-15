@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 - [ ] Security manager
 - [ ] GitHub App manager
 - [ ] Outside collaborator
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overvi
 - [ ] Apenas por meio de acesso direto ao console do servidor
 - [ ] Exclusivamente pela interface web do GitHub.com
 - [ ] Somente através de ferramentas de gerenciamento de terceiros
-

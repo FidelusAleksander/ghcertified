@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/desktop/making-changes-in-a-branch/vi
 - [ ] Tworzenie nowych repozytoriów
 - [ ] Przeglądanie statystyk repozytorium
 - [x] Wizualizacja historii gałęzi w graficznym interfejsie
-

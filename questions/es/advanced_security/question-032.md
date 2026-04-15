@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/security-overview/about
 - [ ] Revisión automática de código en cada push
 - [ ] Detección de amenazas en tiempo real
 - [ ] Actualizaciones automáticas de dependencias
-

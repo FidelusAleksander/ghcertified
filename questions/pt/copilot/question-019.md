@@ -7,4 +7,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/responsible-a
 - [ ] Eficiência, Velocidade, Precisão, Inovação, Confiabilidade e Segurança
 - [ ] Privacidade, Desempenho, Acessibilidade, Escalabilidade, Manutenibilidade e Teste
 - [ ] Segurança, Desenvolvimento, Operações, Manutenção, Suporte e Documentação
-

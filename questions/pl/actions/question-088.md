@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 - [ ] Ustawia zmienne środowiskowe dla zadania
 - [ ] Wyzwala przepływy pracy na podstawie harmonogramu
 - [ ] Definiuje tajne dane dla przepływu pracy
-

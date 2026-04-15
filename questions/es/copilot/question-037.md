@@ -7,4 +7,3 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-g
 - [ ] Copilot Business and Copilot Enterprise
 - [ ] Copilot Pro+, Copilot Business and Copilot Enterprise
 - [ ] Copilot Pro, Copilot Pro+, Copilot Business and Copilot Enterprise
-

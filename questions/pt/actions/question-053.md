@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/actions/creating-actions/about-custom
 > Isso é válido para `workflows`, não para `actions`
 - [ ] Apenas se a action for reutilizável
 - [ ] Apenas para actions de contêiner Docker
-

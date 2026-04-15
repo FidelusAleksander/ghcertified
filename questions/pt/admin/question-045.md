@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 - [ ] Oferece repositórios privados ilimitados para usuários individuais.
 - [ ] Fornece um domínio gratuito para hospedar o site da organização.
 - [ ] Inscreve automaticamente a organização em um plano de suporte premium.
-

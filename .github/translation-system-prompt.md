@@ -65,4 +65,3 @@ Frontmatter is the YAML block between `---` delimiters at the top of each file. 
 - Collaborator
 
 These terms are official GitHub nomenclature and must be preserved exactly as written in English regardless of the target language.
-

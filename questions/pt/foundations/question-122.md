@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscrip
 - [ ] Isenção de todas as taxas de uso pagas  
 - [ ] Suporte telefônico 24/7 da equipe do GitHub Copilot  
 - [ ] Hospedagem local do modelo de IA por trás do GitHub Copilot  
-

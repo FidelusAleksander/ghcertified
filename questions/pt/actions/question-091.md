@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [x] Usando a palavra-chave runs-on
 - [ ] Usando a palavra-chave platform
 - [ ] Usando a palavra-chave env
-

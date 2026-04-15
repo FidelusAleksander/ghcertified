@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-
 - [ ] Em insights do repositório
 - [ ] Na aba do Dependabot
 - [ ] Você não pode ver essa informação com a configuração padrão
-

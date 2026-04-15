@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 - [ ] Ele adiciona os resultados ao arquivo existente.
 - [ ] Ele cria um novo branch no repositório.
 - [ ] Ele é ignorado pelo GitHub.
-

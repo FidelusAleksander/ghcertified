@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/authenticatio
 - [ ] Chaves SSH corporativas 
 - [ ] Configurar OAuth SSO
 - [ ] Configurar MFA
-

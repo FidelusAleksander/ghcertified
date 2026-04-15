@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identit
 - [ ] Microsoft Entra ID
 - [ ] Shibboleth
 - [ ] Okta
-

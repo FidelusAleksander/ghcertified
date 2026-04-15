@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/get-started/using-git/about-git#about
 - [ ] Es un sistema que utiliza la herramienta de línea de comandos git.
 - [ ] Es un sistema que te permite crear una copia local del código fuente de un proyecto.
 - [ ] Es un sistema que permite rastrear lo que las personas instalan en sus computadoras.
-

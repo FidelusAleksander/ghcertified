@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-wh
 - [x] Nível do job
 - [x] Nível do step
 - [ ] Nível da action
-

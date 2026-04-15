@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/creating-actions/publishing-a
 - [ ] GitHub Public Action Storage
 - [ ] Repositórios privados do GitHub
 - [ ] Quadros de Projetos do GitHub Actions
-

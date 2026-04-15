@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-jobs/using-a-matrix-for
 - [x] Korzystając z kontekstu `matrix`
 - [ ] Korzystając z kontekstu `job`
 - [ ] Korzystając z kontekstu `jobs`
-

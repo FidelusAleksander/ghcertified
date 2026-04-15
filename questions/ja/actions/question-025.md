@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/events-that-t
 > 手動トリガーに使用されます
 - [ ] workflow_run
 > https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run
-

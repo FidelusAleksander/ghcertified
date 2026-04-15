@@ -5,4 +5,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/about-s
 
 - [x] Verdadero
 - [ ] Falso
-

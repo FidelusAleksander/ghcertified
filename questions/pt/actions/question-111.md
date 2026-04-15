@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/events-that-t
 - [ ] `issues.comment`
 - [ ] `issues`
 - [ ] `comment`
-

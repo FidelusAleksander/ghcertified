@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 - [x] Capacidade de restringir notificações por e-mail a domínios verificados
 - [ ] Repositórios públicos gratuitos para todos os usuários
 - [ ] Repositórios privados ilimitados para usuários individuais
-

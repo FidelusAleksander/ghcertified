@@ -9,4 +9,3 @@ documentation: "https://github.com/pricing"
 - [ ] Team
 - [ ] Team と Enterprise
 - [ ] Free
-

@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/troublesh
 - [ ] Paralelizar el análisis para bases de código multilenguaje
 - [ ] Ignorar archivos y directorios irrelevantes en el análisis
 - [ ] Reducir la cantidad de consultas que se ejecutan
-

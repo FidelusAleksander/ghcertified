@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [ ] Definiuje zmienne środowiskowe
 - [ ] Ustawia środowisko
 - [ ] Wyzwala zadanie na podstawie zdarzenia
-

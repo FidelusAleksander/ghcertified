@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/code-security/supply-chain-security/u
 - [ ] JSON
 - [ ] XML
 - [ ] CSV
-

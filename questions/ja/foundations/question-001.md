@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/typ
 - [x] Enterpriseアカウント
 - [ ] 共有アカウント
 - [ ] 会社アカウント
-

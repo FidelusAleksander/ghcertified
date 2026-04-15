@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/managing-
 - [ ] Zestaw CodeQL to kolekcja baz danych CodeQL
 - [ ] Zestaw CodeQL to kolekcja wyników CodeQL
 - [ ] Zestaw CodeQL to kolekcja obsługiwanych języków CodeQL
-

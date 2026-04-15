@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot"
 - [ ] GitHub Copilot
 - [ ] CodeQL
 - [ ] GitHub Actions
-

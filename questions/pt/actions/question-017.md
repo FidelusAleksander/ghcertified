@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/triggering-a-
 - [ ] Usando o filtro `branch`
 - [ ] Você cria o workflow apenas na branch `prod`
 - [ ] Usando padrões globais
-

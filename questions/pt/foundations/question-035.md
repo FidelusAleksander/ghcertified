@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/authentication/securing-your-account-
 - [ ] Não é recomendado usar 2FA no GitHub para ninguém
 - [ ] Proprietários de GitHub Organization
 - [ ] Usuários do GitHub Enterprise Server
-

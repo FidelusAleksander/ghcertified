@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 - [ ] ディスカッションをシークレットGistに変換する  
 - [x] ディスカッションをIssueに変換する  
 - [ ] 既存のPull Requestにマージする  
-

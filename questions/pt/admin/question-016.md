@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/organizations
 - [ ] Google Identity Platform
 - [ ] Auth0
 - [ ] Keycloak
-

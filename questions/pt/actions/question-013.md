@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choos
 - [x] os jobs que dependem do job A são ignorados
 - [ ] os jobs que dependem do job A falham
 - [ ] o workflow cancela imediatamente todos os outros jobs
-

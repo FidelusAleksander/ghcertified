@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/workflow-sy
 - [x] environment
 - [ ] dropdown
 - [ ] select
-

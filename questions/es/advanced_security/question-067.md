@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-star
 - [ ] Paquetes de código
 - [ ] Paquetes de lenguaje
 - [ ] Paquetes de vulnerabilidades
-

@@ -7,4 +7,3 @@ documentation: "https://github.blog/changelog/2019-10-17-github-actions-default-
 - [ ] sh
 - [x] powershell
 - [ ] cmd
-

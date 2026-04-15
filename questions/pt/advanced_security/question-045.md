@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 - [ ] CodeQL API
 - [ ] GitHub Actions `github/codeql-action`
 - [ ] GitHub CLI
-

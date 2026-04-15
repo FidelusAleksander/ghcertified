@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/storing-workf
 - [ ] `deploy` でバイナリをアーティファクトとしてアップロードし、`build` でそれをダウンロードする
 - [ ] `build` でバイナリをキャッシュし、`deploy` でキャッシュからファイルを読み取る
 - [ ] `deploy` でバイナリをキャッシュし、`build` でキャッシュからファイルを読み取る
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 - [ ] Permitir que los usuarios creen y gestionen sus propias cuentas personales sin restricciones
 - [ ] Obligar a todos los usuarios a adoptar un estándar de codificación uniforme
 - [ ] Requerir que todo el código sea revisado por GitHub antes de ser publicado
-

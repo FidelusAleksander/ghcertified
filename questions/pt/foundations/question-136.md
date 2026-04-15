@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull
 - [x] Fazer alterações experimentais no seu projeto em um branch isolado.
 - [ ] Reunir requisitos de funcionalidades para um grande projeto e comunicá-los às partes interessadas.
 - [ ] Agendar reuniões de equipe e rastrear a presença para atualizações do projeto.
-

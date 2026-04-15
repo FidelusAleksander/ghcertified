@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 - [ ] Converter a discussão em um gist secreto  
 - [x] Convertê-la em um issue  
 - [ ] Mesclá-la em um pull request existente  
-

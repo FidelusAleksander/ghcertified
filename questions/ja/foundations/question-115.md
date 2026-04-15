@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/quickstart#prerequisites"
 - [x] GitHub Actionsを管理する
 - [ ] ブランチ間を切り替える
 - [ ] 変更をコミットする
-

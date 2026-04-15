@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/discussions/quickstart#introduction"
 - [ ] Wikis
 - [ ] Gists
 - [ ] Pull requests
-

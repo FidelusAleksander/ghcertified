@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-comm
 - [ ] `echo "DOG=PET" >> "$GITHUB_OUTPUT"`
 - [ ] `gh set-output "DOG=PET"`
 - [ ] `gh set-output "PET=DOG"`
-

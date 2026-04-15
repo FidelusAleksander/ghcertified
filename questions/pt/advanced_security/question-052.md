@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] Dependabot alerts
 - [ ] Security policies
 - [ ] Security advisories
-

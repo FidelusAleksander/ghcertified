@@ -7,4 +7,3 @@ documentation: "https://resources.github.com/learn/pathways/copilot/essentials/h
 - [ ] Tylko walidacja składni i sprawdzenie formatowania kodu
 - [ ] Testy wydajności i optymalizacja wykorzystania pamięci
 - [ ] Tylko sprawdzanie błędów kompilacji i wyjątków podczas wykonywania kodu
-

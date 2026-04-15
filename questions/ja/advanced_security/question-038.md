@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-star
 - [ ] リポジトリの設定と権限を管理するため
 - [ ] リポジトリ内の定期的なメンテナンス タスクをスケジュールするため
 - [ ] Pull Request を自動的にマージするため
-

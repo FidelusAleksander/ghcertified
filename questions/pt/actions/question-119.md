@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syn
 - [ ] `runs.using` tem `container` como valor
 - [ ] `runs.using` tem `Dockerfile` como valor
 - [ ] `runs.main` tem `container` como valor
-

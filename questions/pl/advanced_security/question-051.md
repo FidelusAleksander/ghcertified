@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] Dependency Graph
 - [ ] Security Advisories
 - [ ] Vulnerability Detection
-

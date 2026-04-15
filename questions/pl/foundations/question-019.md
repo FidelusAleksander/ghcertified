@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/a
 - [ ] Dodawanie przycisku wsparcia do projektu
 - [ ] Przetwarzanie dużych zbiorów danych i analityka
 - [ ] Trenowanie modeli uczenia maszynowego
-

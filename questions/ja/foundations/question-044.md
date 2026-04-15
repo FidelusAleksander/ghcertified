@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/repositories/configuring-branches-and
 - [ ] デプロイ保護ルールで、プルリクエストをマージする前に少なくとも2人の承認を要求する
 - [ ] リポジトリに CODEOWNERS ファイルを設定する
 - [ ] `main` ブランチへのプルリクエストをマージする前にステータスチェックが合格していることを強制する
-

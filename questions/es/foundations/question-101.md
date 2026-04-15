@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 - [x] El contenido se conserva y tienes la posibilidad de reabrirlo más tarde.
 - [ ] Los valores asociados y los datos de análisis se eliminan
 - [ ] El Proyecto se mueve a una carpeta separada
-

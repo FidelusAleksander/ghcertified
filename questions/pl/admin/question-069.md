@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/authentication/keeping-your-account-a
 - [ ] Poinformuj wszystkich użytkowników, którzy wykonali fork na repozytorium
 - [ ] Zmień widoczność repozytorium na prywatną
 - [ ] Zmień nazwę repozytorium
-

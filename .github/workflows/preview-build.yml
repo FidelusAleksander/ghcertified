@@ -36,4 +36,3 @@ jobs:
           name: nextjs-build
           path: app/out/
           retention-days: 1
-

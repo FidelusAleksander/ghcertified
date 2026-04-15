@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overvi
 - [ ] Wyłącznie w prywatnych środowiskach chmurowych
 - [ ] Tylko na serwerach zarządzanych przez GitHub
 - [ ] Bezpośrednio na urządzeniach osobistych
-

@@ -128,4 +128,3 @@ export function getCertInfo(
 ): CertInfo | undefined {
   return getCertCatalog(locale).find((c) => c.cert === cert);
 }
-

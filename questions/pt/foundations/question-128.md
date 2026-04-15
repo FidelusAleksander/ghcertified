@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/codespaces/setting-up-your-project-fo
 - [x] Nome de exibição do Codespace  
 - [ ] Regras de proteção de branch do repositório  
 - [ ] Políticas no nível da Organização  
-

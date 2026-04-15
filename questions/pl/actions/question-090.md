@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/reference/limits#existing-sys
 - [ ] 60 minut
 - [ ] 120 minut
 - [x] 360 minut
-

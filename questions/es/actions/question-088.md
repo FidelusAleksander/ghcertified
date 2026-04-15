@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 - [ ] Establece variables de entorno para el trabajo
 - [ ] Activa flujos de trabajo basados en un horario
 - [ ] Define secretos para el flujo de trabajo
-

@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-wh
 - [x] Nível de workflow
 - [x] Nível de job
 - [ ] Nível de etapa
-

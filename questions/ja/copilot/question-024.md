@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/using-github-copilot/finding-
 - [ ] すべての GitHub リポジトリ（プライベートリポジトリを含む）に対してリアルタイム検索を実行します
 - [ ] 過去24時間以内に作成されたリポジトリのコードのみを一致させます
 - [ ] GitHub 以外の外部コードホスティングプラットフォームのコードをチェックします
-

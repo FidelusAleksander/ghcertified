@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/deployment/targeting-differen
 - [ ] los trabajos del flujo de trabajo comenzarán inmediatamente y las reglas de protección se evaluarán durante la ejecución
 - [ ] los trabajos del flujo de trabajo comenzarán si al menos una regla de protección se cumple
 - [ ] los trabajos del flujo de trabajo fallarán si se configuran las reglas de protección
-

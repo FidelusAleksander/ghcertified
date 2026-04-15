@@ -7,4 +7,3 @@ documentation: "https://resources.github.com/innersource/what-is-innersource/"
 - [ ] OpenSource
 - [ ] Continuous Integration
 - [ ] Git Flow
-

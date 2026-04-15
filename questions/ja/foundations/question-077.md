@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/enterprise-server@3.8/admin/overview/
 - [ ] Free
 - [ ] All of them
 - [ ] None of them
-

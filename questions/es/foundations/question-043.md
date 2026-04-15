@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/repositories/configuring-branches-and
 - [ ] Usando GitHub Actions
 - [ ] Ejecutando pruebas localmente antes de enviar al repositorio remoto
 - [ ] Haciendo el repositorio privado
-

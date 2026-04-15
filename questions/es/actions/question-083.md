@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 - [ ] Define variables de entorno
 - [ ] Configura el entorno
 - [ ] Activa un trabajo basado en un evento
-

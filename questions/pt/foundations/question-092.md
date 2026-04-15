@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull
 - [ ] Issue
 - [ ] Commit
 - [ ] A merge branch
-

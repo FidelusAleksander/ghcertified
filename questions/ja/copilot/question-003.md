@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-
 - [x] Azure Data Studio, Visual Studio, IntelliJ IDEA
 - [ ] Visual Studio, NetBeans, Eclipse
 - [ ] Visual Studio, BlueJ, NetBeans
-

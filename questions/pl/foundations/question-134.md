@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/about-s
 - [ ] Funkcja, która uruchamia na Twoim kodzie menedżery haseł innych firm w celu bezpiecznego przechowywania sekretów.  
 - [x] Funkcja, która przeszukuje repozytoria w poszukiwaniu znanych formatów sekretów, aby zapobiec przypadkowemu ujawnieniu wrażliwych danych.  
 > **Poprawne**. Secret scanning wykrywa tokeny, klucze i inne dane uwierzytelniające, aby pomóc w uniknięciu wycieków.  
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/supply-chain-security/u
 - [ ] Dependabot Alerts
 - [ ] Dependabot Security Updates
 - [ ] Dependabot Version Updates
-

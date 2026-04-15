@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/learn-github-actions/variable
 - [ ] `GITHUB_RUNNER_OS`
 - [ ] `RUNNER_ARCH`
 - [ ] `RUNNER_NAME`
-

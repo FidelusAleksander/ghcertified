@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-wh
 - [x] Poziom job
 - [x] Poziom step
 - [ ] Poziom action
-

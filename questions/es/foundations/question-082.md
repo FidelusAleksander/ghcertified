@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-ma
 - [x] un archivo `README.md` de perfil
 - [ ] un archivo `CONTRIBUTING.md` de perfil
 - [ ] el perfil no se puede personalizar mediante archivos, solo a través de la configuración de la cuenta
-

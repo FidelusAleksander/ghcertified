@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/security-advisories/wor
 - [ ] `Common Virus Elimination`
 - [ ] `Cybersecurity Verification Entity`
 - [ ] `Code Validation and Enumeration`
-

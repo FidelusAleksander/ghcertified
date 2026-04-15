@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/organizations/managing-access-to-your
 - [ ] 外部コラボレーターは請求設定を管理でき、メンバーはできません。  
 - [ ] メンバーはプライベートリポジトリに決して貢献できませんが、外部コラボレーターは可能です。  
 - [ ] 外部コラボレーターは自動的に組織でチームメンテナーになります。  
-

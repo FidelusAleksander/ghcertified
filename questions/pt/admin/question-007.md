@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/rest/enterpri
 - [x] SCIM
 - [ ] Marketplace
 - [ ] Projetos
-

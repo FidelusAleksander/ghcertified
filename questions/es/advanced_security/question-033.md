@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] Un nuevo lenguaje de programación para análisis de seguridad
 - [ ] Una base de datos utilizada para almacenar resultados de análisis de código
 - [ ] Una herramienta de terceros para análisis estático de código
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-star
 - [ ] `gh codeql-database create`
 - [ ] `ql database generate`
 - [ ] `qlcli database create`
-

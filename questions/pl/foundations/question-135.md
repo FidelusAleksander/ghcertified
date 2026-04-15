@@ -11,4 +11,3 @@ documentation: "https://docs.github.com/en/pages/getting-started-with-github-pag
 - [ ] GitHub Pages automatycznie konwertuje pliki Java na dynamiczne aplikacje webowe.  
 - [ ] GitHub Pages mogą być używane wyłącznie przez konta organizacji.  
 > Zarówno konta osobiste, jak i organizacji mogą korzystać z Pages.
-

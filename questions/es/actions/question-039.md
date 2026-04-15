@@ -6,4 +6,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/reusing-workf
 - [x] Falso
 - [ ] Verdadero
 > Los workflows reutilizables pueden ser anidados, pero existen limitaciones https://docs.github.com/en/actions/using-workflows/reusing-workflows#limitations
-

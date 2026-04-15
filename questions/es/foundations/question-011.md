@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/issues/using-labels-and-milestones-to
 > No se pueden asignar etiquetas a las releases
 - [ ] Asignar etiquetas a los colaboradores del repository para indicar su papel y permisos en el proyecto
 > No se pueden asignar etiquetas a los colaboradores
-

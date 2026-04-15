@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/actions/creating-actions/about-custom
 > それは `workflows` に該当し、`actions` には該当しません
 - [ ] アクションが再利用可能な場合のみ
 - [ ] Docker コンテナアクションの場合のみ
-

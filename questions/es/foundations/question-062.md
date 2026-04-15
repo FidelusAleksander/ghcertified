@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/repositories/managing-your-repository
 - [ ] Definir pipelines de CI/CD adecuados
 - [ ] Cubrir el software del repositorio con pruebas
 - [ ] Usar una amplia variedad de GitHub Apps y GitHub Actions
-

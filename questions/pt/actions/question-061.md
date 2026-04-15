@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 - [ ] `GITHUB_USER`
 - [ ] `GITHUB_ORGANIZATION`
 - [ ] `GITHUB_TOKEN`
-

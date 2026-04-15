@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/about-workflo
 - [ ] usar a palavra-chave `needs` no job A para criar essa dependência
 - [ ] usar a palavra-chave `requires` no job B para criar essa dependência
 - [ ] usar a palavra-chave `requires` no job A para criar essa dependência
-

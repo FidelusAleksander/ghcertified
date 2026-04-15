@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] セキュリティ分析のための新しいプログラミング言語
 - [ ] コードスキャン結果を保存するためのデータベース
 - [ ] 静的コード分析のためのサードパーティツール
-

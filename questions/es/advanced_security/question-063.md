@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 - [ ] Solo lenguajes compilados
 - [ ] Solo lenguajes interpretados
 - [ ] Todos los lenguajes de programación
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 - [ ] `codeql-upload-sarif`
 - [ ] `github/codeql-action`
 - [ ] `actions/upload-sarif`
-

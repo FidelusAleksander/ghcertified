@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 - [ ] Table layout
 - [ ] Roadmap layout
 - [ ] Agile layout
-

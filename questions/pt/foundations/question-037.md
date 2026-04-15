@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-ma
 - [ ] gerente de cobrança
 - [ ] gerente de segurança
 - [ ] proprietário do projeto
-

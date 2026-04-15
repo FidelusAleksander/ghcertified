@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/creating-actions/about-custom
 - [ ] `Python Actions`, `JavaScript Actions`, `Custom Actions`
 - [ ] `Docker container Actions`, `JavaScript Actions`, `Custom Actions`
 - [ ] `Docker container actions`, `Java Actions`, `Composite Actions`
-

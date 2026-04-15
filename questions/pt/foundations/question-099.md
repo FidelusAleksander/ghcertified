@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 - [x] Fechar e excluir
 - [ ] Arquivar e fechar
 - [ ] Desativar e arquivar
-

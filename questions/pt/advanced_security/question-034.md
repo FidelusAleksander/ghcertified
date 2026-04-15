@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-a
 - [ ] Dependências desatualizadas que precisam ser atualizadas
 - [ ] Erros nos arquivos de configuração de dependências
 - [ ] Conflitos entre diferentes dependências
-

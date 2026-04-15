@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/organizations/keeping-your-organizati
 - [ ] PDFとDOCX。
 - [ ] TXTとRTF。
 - [ ] ZIP。
-

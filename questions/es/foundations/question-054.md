@@ -7,4 +7,3 @@ documentation: "https://opensource.com/resources/what-open-source"
 - [ ] Es gratuito para usar con cualquier propósito siempre que firmes la licencia de código abierto.
 - [ ] Es gratuito para usar con fines personales siempre que no obtengas beneficios de ello.
 - [ ] Es software con código fuente en el que cualquiera puede confiar.
-

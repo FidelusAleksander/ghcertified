@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/quickstart#prerequisites"
 - [x] Gestionar GitHub Actions
 - [ ] Cambiar entre ramas
 - [ ] Confirmar cambios
-

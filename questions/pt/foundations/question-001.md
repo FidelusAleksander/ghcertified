@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/get-started/learning-about-github/typ
 - [x] Contas Enterprise
 - [ ] Contas compartilhadas
 - [ ] Contas de empresa
-

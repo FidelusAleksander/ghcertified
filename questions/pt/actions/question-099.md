@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/security-guides/using-secrets
 - [ ] segredos maiores que 48 KB não podem ser armazenados
 - [x] criptografar e armazenar segredos no repositório, mas manter a frase de descriptografia como um segredo
 - [ ] armazenar segredos grandes diretamente como segredos do repositório para evitar limitações
-

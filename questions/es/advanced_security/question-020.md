@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-
 - [ ] Patrones de alerta de Enterprise
 - [ ] Patrones de alerta de código abierto
 - [ ] Patrones de proveedores de nube
-

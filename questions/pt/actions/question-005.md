@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/actions/using-workflows/events-that-t
 - [ ] Fazendo um commit em um arquivo na branch master
 - [ ] Uma branch é criada
 - [ ] Adicionando um rótulo a um pull request
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-
 - [ ] Solo la línea de código actual que se está editando sin ningún contexto adicional
 - [ ] Exclusivamente documentación externa de internet
 - [ ] Solo el archivo README del proyecto y nada más
-

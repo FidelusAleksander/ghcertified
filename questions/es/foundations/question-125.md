@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/search-github/searching-on-github/sea
 - [ ] `is:issue in:comments label:test "fix"`  
 - [x] `is:issue is:open label:test "fix"`  
 - [ ] `type:issue label:test is:open body:"fix"`
-

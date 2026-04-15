@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/code-security/security-advisories/wor
 - [ ] CodeQL
 - [ ] Dependabot
 - [ ] GitHub Security Journal
-

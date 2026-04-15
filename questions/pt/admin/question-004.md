@@ -10,4 +10,3 @@ documentation: "https://docs.github.com/en/enterprise-server/support/learning-ab
 - [ ] Orientação técnica sobre integrações de terceiros, como Jira
 - [ ] Ajuda com ferramentas CI/CD externas, como Jenkins
 - [ ] Orientação para escrever/depurar novas consultas para CodeQL
-

@@ -8,6 +8,7 @@ repos:
       - id: check-json
         exclude: '^\.devcontainer/' # devcontainer.json uses JSONC (comments)
       - id: trailing-whitespace
+        exclude: '\.md$' # md trailing spaces can be significant (parser, line breaks)
       - id: end-of-file-fixer
       - id: check-merge-conflict
       - id: check-added-large-files

@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-a
 - [ ] GitHub CLI
 > Las advertencias se muestran como callbacks cuando haces push a repositorios con cualquier dependencia insegura.
 - [ ] Email
-

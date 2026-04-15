@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/codespaces/getting-started/understand
 - [ ] Criar, Excluir
 - [ ] Criar, Parar, Excluir
 - [ ] Criar, Reconstruir, Excluir
-

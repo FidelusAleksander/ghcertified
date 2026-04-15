@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 - [ ] Fornecer aos usuários individuais repositórios privados ilimitados
 - [ ] Oferecer acesso gratuito ao GitHub Enterprise Server
 - [ ] Permitir que os usuários gerenciem suas contribuições públicas e privadas separadamente
-

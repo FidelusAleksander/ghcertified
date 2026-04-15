@@ -9,4 +9,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/code-security
 - [ ] Organization内のリポジトリに対して、これらの機密情報をスキャンするGitHub Actionsのカスタムワークフローを定義します。
 - [ ] すべてのリポジトリに`secret_scanning.yml`ファイルを含め、このカスタム機密情報をスキャンする内容を定義します。
 > `secret_scanning.yml`ファイルは、特定のファイルやディレクトリに対してSecret scanningを無効にする場合に使用できます。
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/manag
 - [ ] Całkowita liczba commitów × Liczba aktywnych programistów
 - [ ] Liczba sugestii kodu × Liczba zaakceptowanych podpowiedzi
 - [ ] Całkowity rozmiar repository × Liczba organizacji
-

@@ -8,4 +8,3 @@ documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscrip
 - [ ] すべての有料使用料の免除  
 - [ ] GitHub Copilotチームによる24時間365日対応の電話サポート  
 - [ ] GitHub CopilotのAIモデルのローカルホスティング  
-

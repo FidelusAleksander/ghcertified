@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/billing/concepts/product-billing/gith
 - [ ] Não, todo uso dos GitHub Actions é cobrado
 - [ ] Sim, mas apenas para os primeiros 2.000 minutos por mês
 - [ ] Não, somente os runners auto-hospedados são gratuitos para repositórios públicos
-

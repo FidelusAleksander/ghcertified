@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overvi
 - [ ] Korzystanie z usług przechowywania danych w chmurze od zewnętrznych dostawców jako kopii zapasowej
 - [ ] Poleganie na automatycznych usługach kopii zapasowych w chmurze oferowanych przez GitHub
 - [ ] Ręczne tworzenie kopii zapasowych przez okresowy eksport danych do lokalnego magazynu danych
-

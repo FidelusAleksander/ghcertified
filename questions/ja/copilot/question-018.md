@@ -7,4 +7,3 @@ documentation: "https://resources.github.com/learn/pathways/copilot/essentials/h
 - [ ] 複数のプログラミング言語への翻訳と構文の検証
 - [ ] サンドボックス環境での自動コードコンパイルと実行
 - [ ] 参照チェックのための公開リポジトリへの直接送信
-

@@ -7,4 +7,3 @@ documentation: "https://docs.github.com/en/billing/managing-billing-for-github-a
 - [ ] 2x
 - [ ] 5x
 - [x] 10x
-
