@@ -150,7 +150,14 @@
     "wrongCount": "{count} wrong",
     "remainingCount": "{count} remaining",
     "playAgain": "Play Again",
-    "backToGames": "Back to Games"
+    "backToGames": "Back to Games",
+    "pause": "Pause",
+    "pauseQueued": "Pausing…",
+    "pausingNext": "Pausing after this question…",
+    "paused": "Game Paused",
+    "pausedDescription": "Take your time. The timer will restart when you resume.",
+    "resume": "Resume",
+    "timeUp": "Time's up!"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",
