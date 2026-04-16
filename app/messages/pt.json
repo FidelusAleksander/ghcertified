@@ -4,7 +4,8 @@
     "practiceTests": "Testes Práticos",
     "questions": "Perguntas",
     "openMenu": "Abrir menu",
-    "closeMenu": "Fechar menu"
+    "closeMenu": "Fechar menu",
+    "games": "Games"
   },
   "Footer": {
     "tagline": "Perguntas práticas contribuidas pela comunidade para <link>Certificações oficiais do GitHub</link>",
@@ -127,5 +128,40 @@
     "advanced_security": "Escaneamento de segredos, análise de código com CodeQL, políticas de segurança e alertas do Dependabot.",
     "admin": "Gerenciamento de organizações, equipes, permissões, faturamento e GitHub em nível empresarial.",
     "copilot": "Programação em par com IA, engenharia de prompts, recursos do Copilot e uso responsável."
+  },
+  "Games": {
+    "label": "Games",
+    "title": "Game Modes",
+    "description": "Challenge yourself with game-style learning.",
+    "survivalTitle": "Survival Mode",
+    "survivalDescription": "One life, all questions. How far can you go?"
+  },
+  "SurvivalMode": {
+    "metaTitle": "Survival Mode",
+    "metaDescription": "Test your GitHub knowledge in Survival Mode.",
+    "title": "Survival Mode",
+    "questionNumber": "Q{number}",
+    "livesLabel": "{count, plural, one {# life remaining} other {# lives remaining}}",
+    "score": "Score",
+    "confirm": "Confirm",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "learnMore": "Learn more",
+    "report": "Report",
+    "reportTooltip": "Report an issue with this question",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}",
+    "selectExactly": "Select exactly {count} answers",
+    "yourAnswer": "Your answer",
+    "resultsCompleted": "Run Complete!",
+    "resultsGameOver": "Game Over",
+    "resultsScoreOf": "{score} of {total} correct",
+    "resultsCorrect": "Correct",
+    "resultsWrong": "Wrong",
+    "resultsUnanswered": "Unanswered",
+    "playAgain": "Play Again",
+    "backToGames": "Back to Games",
+    "completedMessage": "You answered every question correctly. Incredible!",
+    "gameOverMessage": "A wrong answer ended your run. Try again!"
   }
 }

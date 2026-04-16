@@ -34,6 +34,7 @@ export function Navbar() {
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/practice-tests`, label: t("practiceTests") },
     { href: `/${locale}/questions`, label: t("questions") },
+    { href: `/${locale}/games`, label: t("games") },
   ] as const;
 
   return (

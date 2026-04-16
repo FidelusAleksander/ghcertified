@@ -3,6 +3,7 @@
     "home": "Home",
     "practiceTests": "Practice Tests",
     "questions": "Questions",
+    "games": "Games",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -127,5 +128,40 @@
     "advanced_security": "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.",
     "admin": "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.",
     "copilot": "AI pair programming, prompt engineering, Copilot features, and responsible use."
+  },
+  "Games": {
+    "label": "Games",
+    "title": "Game Modes",
+    "description": "Challenge yourself with game-style learning. Test your knowledge under pressure.",
+    "survivalTitle": "Survival Mode",
+    "survivalDescription": "One life, all questions. How far can you go without a single mistake?"
+  },
+  "SurvivalMode": {
+    "metaTitle": "Survival Mode",
+    "metaDescription": "Test your GitHub knowledge in Survival Mode. One life, all certifications combined. One wrong answer ends your run.",
+    "title": "Survival Mode",
+    "questionNumber": "Q{number}",
+    "livesLabel": "{count, plural, one {# life remaining} other {# lives remaining}}",
+    "score": "Score",
+    "confirm": "Confirm",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "learnMore": "Learn more",
+    "report": "Report",
+    "reportTooltip": "Report an issue with this question",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}",
+    "selectExactly": "Select exactly {count} answers",
+    "yourAnswer": "Your answer",
+    "resultsCompleted": "Run Complete!",
+    "resultsGameOver": "Game Over",
+    "resultsScoreOf": "{score} of {total} correct",
+    "resultsCorrect": "Correct",
+    "resultsWrong": "Wrong",
+    "resultsUnanswered": "Unanswered",
+    "playAgain": "Play Again",
+    "backToGames": "Back to Games",
+    "completedMessage": "You answered every question correctly. Incredible!",
+    "gameOverMessage": "A wrong answer ended your run. Try again!"
   }
 }
