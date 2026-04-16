@@ -22,7 +22,7 @@ import { SurvivalResults } from "@/components/games/SurvivalResults";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Check, Pause, Play, Timer } from "lucide-react";
+import { Heart, Check, Pause, Play, Timer, ArrowRight } from "lucide-react";
 
 interface SurvivalModeProps {
   questions: Question[];
@@ -43,6 +43,10 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
     timeLimitSeconds,
     pauseRequested,
     togglePause,
+    failedQuestion,
+    failedAnswers,
+    failedByTimeout,
+    proceedToResults,
   } = useSurvivalMode(questions);
 
   // Loading state while questions shuffle
@@ -60,6 +64,64 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
     return (
       <div className="px-4 sm:px-8 py-6 sm:py-12">
         <SurvivalResults result={result} onRestart={restart} />
+      </div>
+    );
+  }
+
+  // Game over review — show the failed question with correct answers
+  if (state.phase === "game_over_review" && failedQuestion) {
+    return (
+      <div className="max-w-[800px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
+        <QuestionCard
+          headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
+          headerActions={
+            <span className="flex items-center gap-1.5 text-[11px] font-semibold text-card/50 tracking-wide uppercase">
+              <Heart className="size-3.5 text-card/30" />
+              {t("livesCount", { count: 0 })}
+            </span>
+          }
+          footer={
+            <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
+              <Button
+                onClick={proceedToResults}
+                className="bg-foreground text-card hover:bg-foreground/90"
+              >
+                <ArrowRight data-icon="inline-start" className="size-4" />
+                {t("continueToResults")}
+              </Button>
+            </div>
+          }
+        >
+          <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200">
+            <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
+              {renderCodeSpans(failedQuestion.question)}
+              {failedQuestion.codeBlock && renderCodeSpans(failedQuestion.codeBlock)}
+            </div>
+
+            <AnswerList
+              question={failedQuestion}
+              selectedIds={failedAnswers}
+              showResults={true}
+              isDisabled={true}
+              showSelectionHint={false}
+              dimUnselected={false}
+              onToggle={() => {}}
+              labels={{
+                answerGroup: t("answerGroup"),
+                answerOption: (num, text) => t("answerOption", { number: num, text }),
+                selectExactly: t("selectExactly", { count: failedQuestion.answers.filter((a) => a.isCorrect).length }),
+                yourAnswer: t("yourAnswer"),
+              }}
+            />
+
+            <FeedbackAlert
+              isCorrect={false}
+              correctLabel={t("correctFeedback")}
+              incorrectLabel={failedByTimeout ? t("timeUpFeedback") : t("incorrectFeedback")}
+              className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
+            />
+          </div>
+        </QuestionCard>
       </div>
     );
   }

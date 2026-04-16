@@ -158,7 +158,9 @@
     "paused": "Game Paused",
     "pausedDescription": "Take your time. The timer will restart when you resume.",
     "resume": "Resume",
-    "timeUp": "Time's up!"
+    "timeUp": "Time's up!",
+    "timeUpFeedback": "Time's up — here's what you missed",
+    "continueToResults": "Continue to Results"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

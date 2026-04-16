@@ -14,7 +14,7 @@ import type { Question } from "@/types/quiz";
 import type { GameResult } from "@/types/games";
 import { shuffle } from "@/lib/utils";
 
-type Phase = "loading" | "playing" | "feedback" | "paused" | "game_over" | "completed";
+type Phase = "loading" | "playing" | "feedback" | "paused" | "game_over_review" | "game_over" | "completed";
 
 interface SurvivalState {
   questions: Question[];
@@ -50,6 +50,9 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
   const [selectedAnswers, setSelectedAnswers] = useState<Set<string>>(new Set());
   const [timeRemaining, setTimeRemaining] = useState(timeLimitSeconds);
   const [pauseRequested, setPauseRequested] = useState(false);
+  const [failedQuestion, setFailedQuestion] = useState<Question | null>(null);
+  const [failedAnswers, setFailedAnswers] = useState<Set<string>>(new Set());
+  const [failedByTimeout, setFailedByTimeout] = useState(false);
 
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -80,14 +83,22 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
 
       if (timeRemainingRef.current <= 0) {
         stopCountdown();
-        // Time's up — game over
-        setState((prev) => ({
-          ...prev,
-          wrong: prev.wrong + 1,
-          lives: 0,
-          lastAnswerCorrect: false,
-          phase: "game_over",
-        }));
+        // Time's up — go to review
+        setState((prev) => {
+          const q = prev.questions[prev.currentIndex] ?? null;
+          if (q) {
+            setFailedQuestion(q);
+            setFailedAnswers(new Set()); // no selection on timeout
+            setFailedByTimeout(true);
+          }
+          return {
+            ...prev,
+            wrong: prev.wrong + 1,
+            lives: 0,
+            lastAnswerCorrect: false,
+            phase: "game_over_review",
+          };
+        });
       }
     }, 1000);
   }, [timeLimitSeconds, stopCountdown]);
@@ -97,6 +108,9 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
     clearAdvanceTimer();
     stopCountdown();
     setPauseRequested(false);
+    setFailedQuestion(null);
+    setFailedAnswers(new Set());
+    setFailedByTimeout(false);
     const shuffled = shuffle(allQuestions).map((q) => ({
       ...q,
       answers: shuffle(q.answers),
@@ -215,13 +229,16 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
         }
       }, CORRECT_ADVANCE_DELAY);
     } else {
-      // Wrong answer — game over
+      // Wrong answer — go to review
+      setFailedQuestion(currentQuestion);
+      setFailedAnswers(new Set(selectedAnswers));
+      setFailedByTimeout(false);
       setState((prev) => ({
         ...prev,
         wrong: 1,
         lives: 0,
         lastAnswerCorrect: false,
-        phase: "game_over",
+        phase: "game_over_review",
       }));
     }
   }, [state.phase, currentQuestion, selectedAnswers, isAnswerComplete, clearAdvanceTimer, stopCountdown, pauseRequested, advanceToNext]);
@@ -236,6 +253,13 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
       setPauseRequested((prev) => !prev);
     }
   }, [state.phase, advanceToNext]);
+
+  // Transition from review to results
+  const proceedToResults = useCallback(() => {
+    if (state.phase === "game_over_review") {
+      setState((prev) => ({ ...prev, phase: "game_over" }));
+    }
+  }, [state.phase]);
 
   const result: GameResult | null =
     state.phase === "game_over" || state.phase === "completed"
@@ -260,5 +284,9 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
     timeLimitSeconds,
     pauseRequested,
     togglePause,
+    failedQuestion,
+    failedAnswers,
+    failedByTimeout,
+    proceedToResults,
   };
 }
