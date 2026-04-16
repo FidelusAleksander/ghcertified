@@ -162,6 +162,12 @@
     "playAgain": "Play Again",
     "backToGames": "Back to Games",
     "completedMessage": "You answered every question correctly. Incredible!",
-    "gameOverMessage": "A wrong answer ended your run. Try again!"
+    "gameOverMessage": "A wrong answer ended your run. Try again!",
+    "timeRemaining": "{seconds} seconds remaining",
+    "pause": "Pause",
+    "pausePending": "Pausing…",
+    "paused": "Paused",
+    "pausedDescription": "Take a break. Press resume to continue with the next question.",
+    "resume": "Resume"
   }
 }

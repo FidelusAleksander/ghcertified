@@ -44,6 +44,8 @@ export interface UseSurvivalModeReturn {
   result: GameResult | null;
   /** Submit selected answers — returns true if correct. Does NOT advance. */
   submitAnswer: (answerIds: Set<string>) => boolean;
+  /** Called when the per-question timer expires — ends the run. */
+  timeUp: () => void;
   /** Advance to the next question (call after showing feedback) */
   nextQuestion: () => void;
   /** Restart with a fresh shuffle */
@@ -123,6 +125,13 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
     }
   }, [state, currentIndex, pool.length]);
 
+  const timeUp = useCallback(() => {
+    if (state !== "playing") return;
+    setLives(0);
+    setWrongCount(1);
+    setState("game_over");
+  }, [state]);
+
   const isLoading = pool.length === 0;
   const currentQuestion = pool[currentIndex] ?? null;
 
@@ -149,6 +158,7 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
     totalQuestions: pool.length,
     result,
     submitAnswer,
+    timeUp,
     nextQuestion,
     restart,
     isLoading,
