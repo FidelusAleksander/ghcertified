@@ -9,5 +9,6 @@ documentation: "https://docs.github.com/en/actions/using-workflows/about-workflo
 - [ ] Workflows can only be run on a schedule
 - [ ] Workflow can run only one job at a time
 - [ ] Workflows are written in any of `.yaml`, `.json` or `.toml` formats
+> Workflows can only be defined in `.yaml` format
 - [ ] Workflows can be shared in GitHub Marketplace
 > Actions (not workflows) can be shared in GitHub Marketplace
