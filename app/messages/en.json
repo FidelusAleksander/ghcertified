@@ -2,6 +2,7 @@
   "Nav": {
     "home": "Home",
     "practiceTests": "Practice Tests",
+    "games": "Games",
     "questions": "Questions",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -127,5 +128,17 @@
     "advanced_security": "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.",
     "admin": "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.",
     "copilot": "AI pair programming, prompt engineering, Copilot features, and responsible use."
+  },
+  "Games": {
+    "label": "Games",
+    "title": "Game Modes",
+    "description": "Challenge yourself with competitive, high-stakes game modes using real certification questions.",
+    "survivalMode": "Survival Mode",
+    "survivalDescription": "One life. Answer questions until you get one wrong. How far can you go?",
+    "selectCert": "Select a certification",
+    "questionsAvailable": "{count} questions available",
+    "play": "Play →",
+    "survivalTitle": "Survival Mode",
+    "comingSoon": "Game loading — check back soon."
   }
 }
