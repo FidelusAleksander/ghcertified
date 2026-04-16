@@ -188,7 +188,11 @@
     "timeUp": "Time's up!",
     "continueToResults": "Continue to Results",
     "continueNext": "Next Question",
-    "livesRemaining": "{count} lives remaining"
+    "livesRemaining": "{count} lives remaining",
+    "report": "Report",
+    "reportTooltip": "Report an issue with this question",
+    "reportIssueTitle": "[{cert}] Issue with {questionId}",
+    "reportIssueBody": "**Question:** {question}\n\n**File:** {fileLink}\n\n**Issue:**\n\nPlease describe the problem with this question.\n\n**Documentation / Changelog link:**\n\nPlease provide a link to official documentation or changelog that supports your report."
   },
   "TimeTrial": {
     "title": "Time Trial",
@@ -218,7 +222,11 @@
     "timeBonusLabel": "+{seconds}s",
     "timePenaltyLabel": "−{seconds}s",
     "comingSoonTitle": "Coming Soon",
-    "comingSoonDescription": "Time Trial mode is under development. Race the clock — correct answers add time, wrong answers drain it."
+    "comingSoonDescription": "Time Trial mode is under development. Race the clock — correct answers add time, wrong answers drain it.",
+    "report": "Report",
+    "reportTooltip": "Report an issue with this question",
+    "reportIssueTitle": "[{cert}] Issue with {questionId}",
+    "reportIssueBody": "**Question:** {question}\n\n**File:** {fileLink}\n\n**Issue:**\n\nPlease describe the problem with this question.\n\n**Documentation / Changelog link:**\n\nPlease provide a link to official documentation or changelog that supports your report."
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

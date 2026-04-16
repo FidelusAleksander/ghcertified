@@ -155,7 +155,6 @@ export function useTimeTrialMode(allQuestions: Question[]) {
   // Start/stop countdown based on phase (timer only ticks during "playing")
   useEffect(() => {
     if (state.phase === "playing") {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- countdown interval must update state from effect
       startCountdown();
     } else {
       stopCountdown();
