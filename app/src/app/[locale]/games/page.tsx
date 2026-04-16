@@ -1,14 +1,15 @@
 /**
  * Games landing page — pick a game mode to play.
  *
- * Server component that loads total question count and passes
- * to the client GamesCatalog for the game mode listing.
+ * Server component that loads total question count and leaderboard
+ * data, then passes to the client GamesCatalog.
  */
 
 import type { Metadata } from "next";
 import { getCertCatalog, parseSupportedLocale } from "@/lib/questions";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
+import { getLeaderboard } from "@/lib/leaderboard";
 import { GamesCatalog } from "./games-catalog";
 
 interface Props {
@@ -36,6 +37,11 @@ export default async function GamesPage({ params }: Props) {
   const totalQuestions = getCertCatalog(parseSupportedLocale(locale))
     .reduce((sum, c) => sum + c.questionCount, 0);
 
+  const [survivalLeaderboard, timeTrialLeaderboard] = await Promise.all([
+    getLeaderboard("survival"),
+    getLeaderboard("time-trial"),
+  ]);
+
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
@@ -52,7 +58,12 @@ export default async function GamesPage({ params }: Props) {
         </div>
       </div>
 
-      <GamesCatalog totalQuestions={totalQuestions} locale={locale} />
+      <GamesCatalog
+        totalQuestions={totalQuestions}
+        locale={locale}
+        survivalLeaderboard={survivalLeaderboard}
+        timeTrialLeaderboard={timeTrialLeaderboard}
+      />
     </div>
   );
 }

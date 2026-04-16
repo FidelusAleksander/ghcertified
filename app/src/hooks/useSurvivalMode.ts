@@ -28,8 +28,10 @@ interface SurvivalState {
 }
 
 const CORRECT_ADVANCE_DELAY = 1200;
-const DEFAULT_TIME_LIMIT = 60;
-const DEFAULT_LIVES = 3;
+/** Default time limit per question (seconds). Exported for reuse in UI. */
+export const DEFAULT_TIME_LIMIT = 60;
+/** Default number of lives. Exported for reuse in UI. */
+export const DEFAULT_LIVES = 3;
 
 export interface SurvivalModeOptions {
   timeLimitSeconds?: number;

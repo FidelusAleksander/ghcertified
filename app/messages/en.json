@@ -126,12 +126,31 @@
     "label": "Games",
     "title1": "Challenge",
     "title2": "yourself",
-    "description": "Put your certification knowledge to the test with high-stakes game modes. One life, no second chances.",
+    "description": "Put your certification knowledge to the test with high-stakes game modes. Compete for the top of the leaderboard.",
     "survivalMode": "Survival Mode",
     "survivalDescription": "One life. Every question matters. A wrong answer ends your run immediately. Questions from all certifications.",
+    "timeTrialMode": "Time Trial",
+    "timeTrialDescription": "Race the clock. Correct answers add time, wrong answers drain it. How many can you answer before time runs out?",
+    "suggestGame": "Suggest a Game",
+    "suggestGameDescription": "Have an idea for a new game mode? Head to GitHub to suggest it and vote on community ideas.",
+    "suggestGameButton": "Suggest on GitHub →",
     "play": "Play →",
+    "comingSoon": "Coming Soon",
     "questionsAvailable": "{count} questions",
-    "backToGames": "← Back to Games"
+    "backToGames": "← Back to Games",
+    "rules": "Rules",
+    "leaderboard": "Leaderboard",
+    "topPlayers": "Top Players",
+    "score": "Score",
+    "viewProfile": "View GitHub profile",
+    "survivalRule1": "You get {lives} lives — mess up and they're gone forever 💀",
+    "survivalRule2": "{seconds}s on the clock per question — tick tock!",
+    "survivalRule3": "Questions pulled from every cert track — no hiding",
+    "survivalRule4": "Your streak IS your score — survive or cry trying",
+    "timeTrialRule1": "You start with 60 seconds — that's it, good luck ⏱️",
+    "timeTrialRule2": "Nail it? +10 seconds. Keep the clock alive!",
+    "timeTrialRule3": "Wrong answer? −15 seconds. Ouch.",
+    "timeTrialRule4": "Clock hits zero = game over. No mercy 🪦"
   },
   "Survival": {
     "questionCounter": "Q{current}",
@@ -165,6 +184,12 @@
     "continueToResults": "Continue to Results",
     "continueNext": "Next Question",
     "livesRemaining": "{count} lives remaining"
+  },
+  "TimeTrial": {
+    "title": "Time Trial",
+    "comingSoonTitle": "Coming Soon",
+    "comingSoonDescription": "Time Trial mode is under development. Race the clock — correct answers add time, wrong answers drain it.",
+    "backToGames": "Back to Games"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

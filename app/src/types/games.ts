@@ -11,3 +11,13 @@ export interface GameResult {
   unanswered: number;
   totalQuestions: number;
 }
+
+/** Single row in a game leaderboard. */
+export interface LeaderboardEntry {
+  rank: number;
+  githubUsername: string;
+  score: number;
+}
+
+/** Identifies a game type for leaderboard queries. */
+export type GameType = "survival" | "time-trial";
