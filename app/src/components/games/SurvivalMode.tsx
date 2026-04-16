@@ -125,7 +125,11 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
             <FeedbackAlert
               isCorrect={false}
               correctLabel={t("correctFeedback")}
-              incorrectLabel={failedByTimeout ? t("timeUpFeedback") : t("incorrectFeedback")}
+              incorrectLabel={
+                failedByTimeout
+                  ? (isGameOver ? t("timeUpGameOver") : t("timeUpLifeLost"))
+                  : (isGameOver ? t("wrongGameOver") : t("wrongLifeLost"))
+              }
               className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
             />
           </div>
@@ -243,7 +247,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
             <FeedbackAlert
               isCorrect={state.lastAnswerCorrect}
               correctLabel={t("correctFeedback")}
-              incorrectLabel={t("incorrectFeedback")}
+              incorrectLabel={t("wrongLifeLost")}
               className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
             />
           )}
