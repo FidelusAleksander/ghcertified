@@ -13,7 +13,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, RotateCcw, ArrowLeft, Flame, Trophy, Zap, Target, Skull } from "lucide-react";
+import { Heart, RotateCcw, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -24,11 +24,11 @@ interface GauntletResultsProps {
 }
 
 function getTier(streak: number) {
-  if (streak >= 50) return { emoji: "🏆", icon: Trophy, title: "resultLegendary", color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/30", glow: true };
-  if (streak >= 30) return { emoji: "🔥", icon: Flame, title: "resultUnstoppable", color: "text-orange-500", bg: "bg-orange-500/10", border: "border-orange-500/30", glow: true };
-  if (streak >= 15) return { emoji: "⚡", icon: Zap, title: "resultOnFire", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30", glow: false };
-  if (streak >= 5) return { emoji: "💪", icon: Target, title: "resultSolid", color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/30", glow: false };
-  return { emoji: "💀", icon: Skull, title: "resultTough", color: "text-muted-foreground", bg: "bg-muted", border: "border-border", glow: false };
+  if (streak >= 50) return { emoji: "🏆", title: "resultLegendary", color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/30", glow: true };
+  if (streak >= 30) return { emoji: "🔥", title: "resultUnstoppable", color: "text-orange-500", bg: "bg-orange-500/10", border: "border-orange-500/30", glow: true };
+  if (streak >= 15) return { emoji: "⚡", title: "resultOnFire", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30", glow: false };
+  if (streak >= 5) return { emoji: "💪", title: "resultSolid", color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/30", glow: false };
+  return { emoji: "💀", title: "resultTough", color: "text-muted-foreground", bg: "bg-muted", border: "border-border", glow: false };
 }
 
 export function GauntletResults({ result, onRestart, saveAction }: GauntletResultsProps) {
@@ -36,7 +36,6 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
   const t = useTranslations("Gauntlet");
   const animatedStreak = useCountUp(result.correct);
   const tier = getTier(result.correct);
-  const TierIcon = tier.icon;
   const accuracy = result.correct + result.wrong > 0
     ? Math.round((result.correct / (result.correct + result.wrong)) * 100)
     : 0;
@@ -57,8 +56,8 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
         <CardContent className="p-8 sm:p-10">
           {/* Tier icon + title */}
           <div className="flex flex-col items-center mb-6">
-            <div className={cn("size-20 rounded-2xl flex items-center justify-center mb-4", tier.bg)}>
-              <TierIcon className={cn("size-10", tier.color)} />
+            <div className="size-20 rounded-2xl flex items-center justify-center mb-4 bg-destructive/10">
+              <Heart className="size-10 text-destructive" />
             </div>
             <div className="text-center">
               <span className="text-2xl">{tier.emoji}</span>

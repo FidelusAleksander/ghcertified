@@ -94,6 +94,8 @@ export function TimerBar({
 interface GameSidebarProps {
   /** Game mode name displayed at top. */
   title: string;
+  /** Icon next to game name. */
+  icon?: ReactNode;
   /** Lives display slot (Gauntlet). Omit for modes without lives. */
   livesSlot?: ReactNode;
   /** Timer display slot. */
@@ -109,6 +111,7 @@ interface GameSidebarProps {
 
 export function GameSidebar({
   title,
+  icon,
   livesSlot,
   timerSlot,
   timerExtra,
@@ -123,9 +126,12 @@ export function GameSidebar({
         <Card className="overflow-hidden shadow-sm border-[1.5px]">
           <CardContent className="p-4 flex flex-col gap-3">
             {/* Game name */}
-            <h3 className="font-display text-[15px] font-extrabold tracking-tight text-foreground text-center">
-              {title}
-            </h3>
+            <div className="flex items-center justify-center gap-2">
+              {icon}
+              <h3 className="font-display text-[15px] font-extrabold tracking-tight text-foreground">
+                {title}
+              </h3>
+            </div>
 
             <Separator />
 

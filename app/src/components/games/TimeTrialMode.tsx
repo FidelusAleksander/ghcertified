@@ -56,6 +56,7 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
       title={tGames("timeTrialMode")}
+      icon={<Timer className="size-4 text-primary" />}
       timerSlot={
         <div className="relative">
           <GlobalTimerDisplay timeRemaining={timeRemaining} />

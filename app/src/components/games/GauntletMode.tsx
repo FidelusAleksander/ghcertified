@@ -21,7 +21,7 @@ import { GameSidebar, LivesDisplay, TimerBar, PauseButton } from "@/components/g
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Pause, Play, ArrowRight } from "lucide-react";
+import { Check, Pause, Play, ArrowRight, Heart } from "lucide-react";
 
 interface GauntletModeProps {
   questions: Question[];
@@ -54,6 +54,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
       title={tGames("gauntletMode")}
+      icon={<Heart className="size-4 text-destructive" />}
       livesSlot={<LivesDisplay lives={state.lives} initialLives={state.initialLives} />}
       timerSlot={<TimerBar timeRemaining={frozen ? timeLimitSeconds : timeRemaining} timeLimitSeconds={timeLimitSeconds} />}
       scoreLabel={tGames("score")}
