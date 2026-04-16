@@ -131,9 +131,26 @@
     "survivalDescription": "One life. Every question matters. A wrong answer ends your run immediately. Questions from all certifications.",
     "play": "Play →",
     "questionsAvailable": "{count} questions",
-    "comingSoon": "Full gameplay coming soon.",
-    "comingSoonDescription": "Survival Mode is being built. Check back soon to try it.",
     "backToGames": "← Back to Games"
+  },
+  "Survival": {
+    "questionCounter": "Q{current}",
+    "livesCount": "{count} life",
+    "correct": "correct",
+    "confirm": "Confirm",
+    "nextQuestionIn": "Next question...",
+    "correctFeedback": "Correct! Keep going!",
+    "incorrectFeedback": "Wrong answer — run over!",
+    "answerGroup": "Answer options",
+    "answerOption": "Option {number}: {text}",
+    "selectExactly": "Select exactly {count} answers",
+    "yourAnswer": "Your answer",
+    "questionsSurvived": "questions survived",
+    "correctCount": "{count} correct",
+    "wrongCount": "{count} wrong",
+    "remainingCount": "{count} remaining",
+    "playAgain": "Play Again",
+    "backToGames": "Back to Games"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

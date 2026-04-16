@@ -10,10 +10,10 @@ export interface QuestionCardProps {
   headerActions?: ReactNode;
   progressBar?: ReactNode;
   documentationHref?: string;
-  reportHref: string;
-  learnMoreLabel: string;
-  reportLabel: string;
-  reportTooltip: string;
+  reportHref?: string;
+  learnMoreLabel?: string;
+  reportLabel?: string;
+  reportTooltip?: string;
   children: ReactNode;
   footer: ReactNode;
 }
@@ -39,7 +39,7 @@ export function QuestionCard({
           </span>
           <div className="flex items-center gap-2.5 ml-auto">
             {headerActions}
-            {documentationHref && (
+            {documentationHref && learnMoreLabel && (
               <a
                 href={documentationHref}
                 target="_blank"
@@ -51,16 +51,18 @@ export function QuestionCard({
                 <span className="hidden sm:inline">{learnMoreLabel}</span>
               </a>
             )}
-            <a
-              href={reportHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
-              title={reportTooltip}
-            >
-              <CircleAlert className="size-3.5" />
-              <span className="hidden sm:inline">{reportLabel}</span>
-            </a>
+            {reportHref && reportLabel && (
+              <a
+                href={reportHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase transition-colors text-card/50 hover:bg-card/10 hover:text-card/70"
+                title={reportTooltip}
+              >
+                <CircleAlert className="size-3.5" />
+                <span className="hidden sm:inline">{reportLabel}</span>
+              </a>
+            )}
           </div>
         </div>
         {progressBar}
