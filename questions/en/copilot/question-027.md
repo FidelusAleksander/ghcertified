@@ -4,6 +4,6 @@ documentation: "https://code.visualstudio.com/docs/copilot/customization/custom-
 ---
 
 - [ ] Ask
-- [ ] Edit
+- [ ] Plan
 - [x] Translate
 - [ ] Agent
