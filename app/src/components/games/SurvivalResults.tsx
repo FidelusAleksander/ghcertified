@@ -13,7 +13,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Heart, CheckCircle2, XCircle, RotateCcw, ArrowLeft } from "lucide-react";
+import { Heart, RotateCcw, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -27,7 +27,6 @@ export function SurvivalResults({ result, onRestart, saveAction }: SurvivalResul
   const locale = useLocale();
   const t = useTranslations("Survival");
   const animatedStreak = useCountUp(result.correct);
-  const remaining = result.totalQuestions - result.correct - result.wrong;
   const isFullClear = result.wrong === 0;
 
   return (
@@ -52,23 +51,7 @@ export function SurvivalResults({ result, onRestart, saveAction }: SurvivalResul
           </div>
 
           {/* Progress bar */}
-          <Progress value={(result.correct / result.totalQuestions) * 100} className="h-2.5 mb-5" />
-
-          {/* Breakdown */}
-          <div className="flex justify-between text-[13px] text-muted-foreground mb-8">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="size-4 text-success" />
-              {t("correctCount", { count: result.correct })}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <XCircle className="size-4 text-destructive" />
-              {t("wrongCount", { count: result.wrong })}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <span className="size-4 rounded-full border-2 border-muted-foreground/30 flex-shrink-0" />
-              {t("remainingCount", { count: remaining })}
-            </span>
-          </div>
+          <Progress value={(result.correct / result.totalQuestions) * 100} className="h-2.5 mb-8" />
 
           {/* Save action slot */}
           {saveAction}
