@@ -52,6 +52,13 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
     deltaKey,
   } = useTimeTrialMode(questions);
 
+  function buildReportHref(q: Question) {
+    const fileLink = `[${q.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
+    const title = encodeURIComponent(t("reportIssueTitle", { cert: q.cert, questionId: q.id }));
+    const body = encodeURIComponent(t("reportIssueBody", { question: q.question, fileLink }));
+    return `https://github.com/FidelusAleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
+  }
+
   // Shared sidebar reused across phases
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
@@ -128,7 +135,9 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
           <QuestionCard
             headerLabel={tGames("timeTrialMode")}
-            headerActions={<GlobalTimerDisplay timeRemaining={timeRemaining} compact />}
+            reportHref={buildReportHref(failedQuestion)}
+            reportLabel={t("report")}
+            reportTooltip={t("reportTooltip")}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
                 <Button
@@ -234,11 +243,9 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
         <QuestionCard
           headerLabel={tGames("timeTrialMode")}
-          headerActions={
-            <div className="flex items-center gap-3">
-              <GlobalTimerDisplay timeRemaining={timeRemaining} compact />
-            </div>
-          }
+          reportHref={buildReportHref(currentQuestion)}
+          reportLabel={t("report")}
+          reportTooltip={t("reportTooltip")}
           footer={
             <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
               {!isFeedback && (

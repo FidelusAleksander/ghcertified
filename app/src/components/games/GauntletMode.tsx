@@ -50,6 +50,13 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     continueAfterWrong,
   } = useGauntletMode(questions);
 
+  function buildReportHref(q: Question) {
+    const fileLink = `[${q.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
+    const title = encodeURIComponent(t("reportIssueTitle", { cert: q.cert, questionId: q.id }));
+    const body = encodeURIComponent(t("reportIssueBody", { question: q.question, fileLink }));
+    return `https://github.com/FidelusAleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
+  }
+
   // Shared sidebar element reused across phases
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
@@ -102,6 +109,9 @@ export function GauntletMode({ questions }: GauntletModeProps) {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
           <QuestionCard
             headerLabel={tGames("gauntletMode")}
+            reportHref={buildReportHref(failedQuestion)}
+            reportLabel={t("report")}
+            reportTooltip={t("reportTooltip")}
             headerActions={<LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
@@ -212,9 +222,11 @@ export function GauntletMode({ questions }: GauntletModeProps) {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
         <QuestionCard
           headerLabel={tGames("gauntletMode")}
+          reportHref={buildReportHref(currentQuestion)}
+          reportLabel={t("report")}
+          reportTooltip={t("reportTooltip")}
           headerActions={
             <div className="flex items-center gap-3">
-              <TimerBar timeRemaining={timeRemaining} timeLimitSeconds={timeLimitSeconds} compact />
               <LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />
             </div>
           }
