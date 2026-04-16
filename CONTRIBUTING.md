@@ -4,9 +4,6 @@
 
 ## Add a new question
 
-> [!NOTE]
-> You do **not** need to set up or run the project to add questions. Just create a Markdown file and open a pull request — that's it!
-
 > [!WARNING]
 > We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.
 
@@ -32,24 +29,29 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 ---
 
 - [x] `runs-on: ubuntu-latest`
+> (Optional) explanation why this is correct
 - [ ] `os: ubuntu-latest`
-- [ ] `platform: ubuntu-latest`
+> (Optional) explanation why this is wrong
+- [ ] Github Actions can't run on Ubuntu. Jobs always run on Windows Server machines
 - [ ] `environment: ubuntu-latest`
 ```
 
 - `question` — your question text (required)
-- `documentation` — link to relevant GitHub docs (optional, shown as "Learn more")
+- `documentation` — link to relevant GitHub docs (optional)
 - `[x]` — correct answer(s), `[ ]` — incorrect answers
+
+
+That's all! 🎉 The [Question Writing Guide](questions/README.md) covers advanced features like code blocks, multi-select, answer explanations, and quality tips.
+
 
 **4. Open a pull request.**
 
-That's all! 🎉 The [Question Writing Guide](questions/README.md) covers advanced features like code blocks, multi-select, answer explanations, and quality tips.
 
 ## Edit an existing question
 
 Find the file in the [questions/en/](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en) directory and edit the Markdown directly.
 
-## Running the project locally (optional)
+## Running the project
 
 Setting up the dev environment is **only needed if you want to work on the website itself** (components, styling, pages). It is not required for adding or editing questions.
 
