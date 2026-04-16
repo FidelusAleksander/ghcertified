@@ -103,6 +103,16 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
       {/* Status bar */}
       <StatusBar state={state} timeRemaining={timeRemaining} timeLimitSeconds={timeLimitSeconds} pauseRequested={pauseRequested} onTogglePause={togglePause} t={t} />
 
+      {/* Pause queued banner */}
+      {pauseRequested && (
+        <div className="flex items-center gap-2 rounded-lg bg-primary/10 border border-primary/20 px-4 py-2.5 mb-4 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200">
+          <Pause className="size-4 text-primary shrink-0" />
+          <span className="text-[13px] font-medium text-primary">
+            {t("pauseBanner")}
+          </span>
+        </div>
+      )}
+
       {/* Question card */}
       <QuestionCard
         headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}

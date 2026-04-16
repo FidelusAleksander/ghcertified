@@ -154,6 +154,7 @@
     "pause": "Pause",
     "pauseQueued": "Pausing…",
     "pausingNext": "Pausing after this question…",
+    "pauseBanner": "Finish this question — the game will pause before the next one.",
     "paused": "Game Paused",
     "pausedDescription": "Take your time. The timer will restart when you resume.",
     "resume": "Resume",
