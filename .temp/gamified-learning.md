@@ -4,7 +4,7 @@ A new way to interact with certification questions — competitive, high-stakes 
 
 ## Overview
 
-Gamified Learning introduces a dedicated **Games** section to the website, offering alternative experiences beyond standard practice tests. The first game mode is **Survival Mode**, with the architecture designed to support future additions like leaderboards and GitHub login.
+Gamified Learning introduces a dedicated **Games** section to the website, offering alternative experiences beyond standard practice tests. Game modes pull from **all certification questions combined** — there is no per-certification split. The first game mode is **Survival Mode**, with the architecture designed to support future game modes, leaderboards, and GitHub login.
 
 ## Survival Mode
 
@@ -12,7 +12,8 @@ The flagship game mode. One life. Every question matters.
 
 ### How It Works
 
-- User picks a certification and starts a Survival run.
+- User opens Survival Mode and starts a run.
+- Questions are drawn from **all certifications** combined into a single pool.
 - Questions are presented one at a time.
 - A correct answer advances to the next question. A wrong answer **ends the run immediately**.
 - When the run ends, all remaining unseen questions count as unanswered.
@@ -54,7 +55,7 @@ The flagship game mode. One life. Every question matters.
 ### Design
 
 - Public and global — no login required to **view**.
-- Shown per certification type only (no combined cross-certification board).
+- Single combined leaderboard (no per-certification split).
 - Default view: all-time rankings.
 - Supports a "last X days" filter for recency-based competition.
 
@@ -65,4 +66,3 @@ The flagship game mode. One life. Every question matters.
 3. Rewards economy (coins, unlockables, store).
 4. Non-GitHub authentication providers.
 5. Personal/private leaderboards.
-6. Combined cross-certification leaderboard.

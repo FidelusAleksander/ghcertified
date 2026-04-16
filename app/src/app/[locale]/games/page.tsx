@@ -1,8 +1,8 @@
 /**
- * Games landing page — pick a game mode and certification.
+ * Games landing page — pick a game mode to play.
  *
- * Server component that loads cert catalog and passes to client
- * GamesCatalog for interactive cert selection.
+ * Server component that loads total question count and passes
+ * to the client GamesCatalog for the game mode listing.
  */
 
 import type { Metadata } from "next";
@@ -33,11 +33,8 @@ export default async function GamesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Games");
-  const certs = getCertCatalog(parseSupportedLocale(locale)).map((c) => ({
-    id: c.cert,
-    name: c.title,
-    questions: c.questionCount,
-  }));
+  const totalQuestions = getCertCatalog(parseSupportedLocale(locale))
+    .reduce((sum, c) => sum + c.questionCount, 0);
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
@@ -55,7 +52,7 @@ export default async function GamesPage({ params }: Props) {
         </div>
       </div>
 
-      <GamesCatalog certs={certs} locale={locale} />
+      <GamesCatalog totalQuestions={totalQuestions} locale={locale} />
     </div>
   );
 }

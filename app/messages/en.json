@@ -128,12 +128,11 @@
     "title2": "yourself",
     "description": "Put your certification knowledge to the test with high-stakes game modes. One life, no second chances.",
     "survivalMode": "Survival Mode",
-    "survivalDescription": "One life. Every question matters. A wrong answer ends your run immediately.",
-    "selectCert": "Select a certification",
+    "survivalDescription": "One life. Every question matters. A wrong answer ends your run immediately. Questions from all certifications.",
     "play": "Play →",
     "questionsAvailable": "{count} questions",
     "comingSoon": "Full gameplay coming soon.",
-    "comingSoonDescription": "Survival Mode is being built. Pick a certification above to try it once it's live.",
+    "comingSoonDescription": "Survival Mode is being built. Check back soon to try it.",
     "backToGames": "← Back to Games"
   },
   "CertDescriptions": {
