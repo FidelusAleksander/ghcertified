@@ -11,6 +11,8 @@ import type { LeaderboardEntry } from "@/types/games";
 import { useTranslations } from "next-intl";
 import { Trophy } from "lucide-react";
 
+const MAX_ENTRIES = 5;
+
 interface LeaderboardProps {
   entries: LeaderboardEntry[];
   scoreLabel?: string;
@@ -26,7 +28,9 @@ export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
   const t = useTranslations("Games");
   const label = scoreLabel ?? t("score");
 
-  if (entries.length === 0) return null;
+  const topEntries = entries.slice(0, MAX_ENTRIES);
+
+  if (topEntries.length === 0) return null;
 
   return (
     <div className="space-y-0.5">
@@ -37,7 +41,7 @@ export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
       </div>
 
       {/* Entries */}
-      {entries.map((entry) => (
+      {topEntries.map((entry) => (
         <div
           key={entry.rank}
           className="flex items-center gap-2.5 rounded-lg px-2 py-1.5 transition-colors hover:bg-muted/50 group"
