@@ -20,6 +20,7 @@ import type { Question } from "@/types/quiz";
 export interface GameResult {
   correct: number;
   wrong: number;
+  timedOut: number;
   unanswered: number;
   total: number;
   scorePercent: number;
@@ -60,6 +61,7 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
   const [lives, setLives] = useState(1);
   const [score, setScore] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+  const [timedOutCount, setTimedOutCount] = useState(0);
   const [state, setState] = useState<RunState>("playing");
 
   // Shuffle on mount (client-only for hydration safety)
@@ -81,6 +83,7 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
     setLives(1);
     setScore(0);
     setWrongCount(0);
+    setTimedOutCount(0);
     setState("playing");
   }, [questions]);
 
@@ -128,7 +131,7 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
   const timeUp = useCallback(() => {
     if (state !== "playing") return;
     setLives(0);
-    setWrongCount(1);
+    setTimedOutCount(1);
     setState("game_over");
   }, [state]);
 
@@ -141,7 +144,8 @@ export function useSurvivalMode(questions: Question[]): UseSurvivalModeReturn {
       : {
           correct: score,
           wrong: wrongCount,
-          unanswered: pool.length - score - wrongCount,
+          timedOut: timedOutCount,
+          unanswered: pool.length - score - wrongCount - timedOutCount,
           total: pool.length,
           scorePercent:
             pool.length > 0

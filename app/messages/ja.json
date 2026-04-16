@@ -168,6 +168,7 @@
     "pausePending": "Pausing…",
     "paused": "Paused",
     "pausedDescription": "Take a break. Press resume to continue with the next question.",
-    "resume": "Resume"
+    "resume": "Resume",
+    "resultsTimedOut": "Timed out"
   }
 }

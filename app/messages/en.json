@@ -164,6 +164,7 @@
     "resultsScoreOf": "{score} of {total} correct",
     "resultsCorrect": "Correct",
     "resultsWrong": "Wrong",
+    "resultsTimedOut": "Timed out",
     "resultsUnanswered": "Unanswered",
     "playAgain": "Play Again",
     "backToGames": "Back to Games",

@@ -16,13 +16,14 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, XCircle, MinusCircle, RotateCcw, ArrowLeft } from "lucide-react";
+import { CheckCircle2, XCircle, MinusCircle, Timer, RotateCcw, ArrowLeft } from "lucide-react";
 
 export interface SurvivalResultsLabels {
   title: string;
   scoreOf: string;
   correct: string;
   wrong: string;
+  timedOut: string;
   unanswered: string;
   playAgain: string;
   backToGames: string;
@@ -93,6 +94,15 @@ export function SurvivalResults({
               </span>
               <span className="font-bold text-foreground tabular-nums">{result.wrong}</span>
             </div>
+            {result.timedOut > 0 && (
+              <div className="flex items-center justify-between text-sm">
+                <span className="flex items-center gap-2 text-muted-foreground">
+                  <Timer className="size-4 text-amber-500" />
+                  {labels.timedOut}
+                </span>
+                <span className="font-bold text-foreground tabular-nums">{result.timedOut}</span>
+              </div>
+            )}
             <div className="flex items-center justify-between text-sm">
               <span className="flex items-center gap-2 text-muted-foreground">
                 <MinusCircle className="size-4 text-muted-foreground" />

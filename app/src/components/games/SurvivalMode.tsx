@@ -231,6 +231,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
             scoreOf: t("resultsScoreOf", { score: result.correct, total: result.total }),
             correct: t("resultsCorrect"),
             wrong: t("resultsWrong"),
+            timedOut: t("resultsTimedOut"),
             unanswered: t("resultsUnanswered"),
             playAgain: t("playAgain"),
             backToGames: t("backToGames"),
@@ -364,7 +365,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
             <div className="h-1.5 w-full rounded-full bg-card/10 overflow-hidden">
               <div
                 className={cn(
-                  "h-full rounded-full transition-all duration-1000 linear",
+                  "h-full rounded-full transition-all duration-1000 ease-linear",
                   timerUrgent ? "bg-destructive" : "bg-amber-400",
                   showFeedback && "opacity-50",
                 )}
