@@ -135,7 +135,6 @@
     "description": "Challenge yourself with competitive, high-stakes game modes using real certification questions.",
     "survivalMode": "Survival Mode",
     "survivalDescription": "One life. Answer questions until you get one wrong. How far can you go?",
-    "selectCert": "Select a certification",
     "questionsAvailable": "{count} questions available",
     "play": "Play →",
     "survivalTitle": "Survival Mode",

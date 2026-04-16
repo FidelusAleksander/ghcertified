@@ -104,6 +104,12 @@ function loadAll(locale: SupportedLocale): Question[] {
 
 // ── Public API ──────────────────────────────────────────────────────
 
+export function getAllQuestions(
+  locale: SupportedLocale = DEFAULT_LOCALE,
+): Question[] {
+  return loadAll(locale);
+}
+
 export function getQuestionsByCert(
   cert: CertificationType,
   locale: SupportedLocale = DEFAULT_LOCALE,
