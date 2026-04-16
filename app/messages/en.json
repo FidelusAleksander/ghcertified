@@ -160,7 +160,9 @@
     "resume": "Resume",
     "timeUp": "Time's up!",
     "timeUpFeedback": "Time's up — here's what you missed",
-    "continueToResults": "Continue to Results"
+    "continueToResults": "Continue to Results",
+    "continueNext": "Next Question",
+    "livesRemaining": "{count} lives remaining"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

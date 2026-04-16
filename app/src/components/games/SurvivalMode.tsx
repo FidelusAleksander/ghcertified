@@ -47,6 +47,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
     failedAnswers,
     failedByTimeout,
     proceedToResults,
+    continueAfterWrong,
   } = useSurvivalMode(questions);
 
   // Loading state while questions shuffle
@@ -68,26 +69,33 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
     );
   }
 
-  // Game over review — show the failed question with correct answers
-  if (state.phase === "game_over_review" && failedQuestion) {
+  // Wrong answer review — show the failed question with correct answers
+  // game_over_review = last life lost (→ results), wrong_review = lives remaining (→ next question)
+  if ((state.phase === "game_over_review" || state.phase === "wrong_review") && failedQuestion) {
+    const isGameOver = state.phase === "game_over_review";
     return (
       <div className="max-w-[800px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
+        {/* Lives indicator above review card */}
+        <div className="flex items-center gap-2 mb-4">
+          <LivesDisplay lives={state.lives} initialLives={state.initialLives} />
+          {!isGameOver && (
+            <span className="text-[13px] text-muted-foreground">{t("livesRemaining", { count: state.lives })}</span>
+          )}
+        </div>
+
         <QuestionCard
           headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
           headerActions={
-            <span className="flex items-center gap-1.5 text-[11px] font-semibold text-card/50 tracking-wide uppercase">
-              <Heart className="size-3.5 text-card/30" />
-              {t("livesCount", { count: 0 })}
-            </span>
+            <LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />
           }
           footer={
             <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
               <Button
-                onClick={proceedToResults}
+                onClick={isGameOver ? proceedToResults : continueAfterWrong}
                 className="bg-foreground text-card hover:bg-foreground/90"
               >
                 <ArrowRight data-icon="inline-start" className="size-4" />
-                {t("continueToResults")}
+                {isGameOver ? t("continueToResults") : t("continueNext")}
               </Button>
             </div>
           }
@@ -182,10 +190,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
           <div className="flex items-center gap-3">
             {/* Timer in header */}
             <TimerDisplay timeRemaining={timeRemaining} timeLimitSeconds={timeLimitSeconds} compact />
-            <span className="flex items-center gap-1.5 text-[11px] font-semibold text-card/50 tracking-wide uppercase">
-              <Heart className={cn("size-3.5", state.lives > 0 ? "text-destructive fill-destructive" : "text-card/30")} />
-              {t("livesCount", { count: state.lives })}
-            </span>
+            <LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />
           </div>
         }
         footer={
@@ -299,7 +304,7 @@ function TimerDisplay({ timeRemaining, timeLimitSeconds, compact }: { timeRemain
 // ── Status bar ─────────────────────────────────────────────────────
 
 interface StatusBarProps {
-  state: { lives: number; correct: number; currentIndex: number; phase: string };
+  state: { lives: number; initialLives: number; correct: number; currentIndex: number; phase: string };
   timeRemaining: number;
   timeLimitSeconds: number;
   pauseRequested: boolean;
@@ -312,12 +317,7 @@ function StatusBar({ state, timeRemaining, timeLimitSeconds, pauseRequested, onT
     <div className="flex items-center justify-between mb-6 gap-4">
       <div className="flex items-center gap-4">
         {/* Lives */}
-        <div className="flex items-center gap-1.5">
-          <Heart className={cn("size-5", state.lives > 0 ? "text-destructive fill-destructive" : "text-muted-foreground")} />
-          <span className="font-display text-[14px] font-bold text-foreground tabular-nums">
-            {state.lives}
-          </span>
-        </div>
+        <LivesDisplay lives={state.lives} initialLives={state.initialLives} />
 
         {/* Score */}
         <div className="flex items-center gap-1.5 text-[14px] text-muted-foreground">
@@ -353,6 +353,27 @@ function StatusBar({ state, timeRemaining, timeLimitSeconds, pauseRequested, onT
           {t("questionCounter", { current: state.currentIndex + 1 })}
         </span>
       </div>
+    </div>
+  );
+}
+
+// ── Lives display (visual hearts) ──────────────────────────────────
+
+function LivesDisplay({ lives, initialLives, compact }: { lives: number; initialLives: number; compact?: boolean }) {
+  const size = compact ? "size-3.5" : "size-5";
+  return (
+    <div className="flex items-center gap-0.5">
+      {Array.from({ length: initialLives }, (_, i) => (
+        <Heart
+          key={i}
+          className={cn(
+            size,
+            i < lives
+              ? "text-destructive fill-destructive"
+              : compact ? "text-card/20" : "text-muted-foreground/30",
+          )}
+        />
+      ))}
     </div>
   );
 }
