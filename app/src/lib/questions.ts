@@ -52,11 +52,11 @@ import type { SupportedLocale } from "./locales";
 // ── Constants ───────────────────────────────────────────────────────
 
 export const CERT_TITLES: Record<CertificationType, string> = {
-  actions: "GitHub Actions",
-  admin: "GitHub Administration",
-  advanced_security: "GitHub Advanced Security",
-  copilot: "GitHub Copilot",
-  foundations: "GitHub Foundations",
+  actions: "GitHub Actions (GH-200)",
+  admin: "GitHub Administration (GH-100)",
+  advanced_security: "GitHub Advanced Security (GH-500)",
+  copilot: "GitHub Copilot (GH-300)",
+  foundations: "GitHub Foundations (GH-900)",
 };
 
 const VALID_CERTS: CertificationType[] = [
