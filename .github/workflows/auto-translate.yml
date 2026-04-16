@@ -57,9 +57,18 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
+      # Generate a GitHub App token for PR creation so that downstream workflows
+      # (e.g. pr-checks) are triggered. PRs created with the default GITHUB_TOKEN
+      # do not trigger subsequent workflow runs.
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
+        with:
+          client-id: ${{ secrets.AUTO_TRANSLATE_APP_CLIENT_ID }}
+          private-key: ${{ secrets.AUTO_TRANSLATE_APP_PRIVATE_KEY }}
       - name: Create Pull Request
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           gh pr create \
             --title "i18n: auto-translate content changes" \
