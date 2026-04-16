@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * SurvivalMode — main orchestrator for Survival Mode gameplay.
+ * GauntletMode — main orchestrator for Gauntlet gameplay.
  *
- * Wires the useSurvivalMode hook to QuestionCard, AnswerList,
- * FeedbackAlert, and SurvivalResults. Forward-only, no back nav.
+ * Wires the useGauntletMode hook to QuestionCard, AnswerList,
+ * FeedbackAlert, and GauntletResults. Forward-only, no back nav.
  * Includes per-question countdown timer and pause-between-questions.
  *
  * Questions from all certifications, shuffled client-side.
@@ -12,24 +12,24 @@
 
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
-import { useSurvivalMode } from "@/hooks/useSurvivalMode";
+import { useGauntletMode } from "@/hooks/useGauntletMode";
 import { useTranslations } from "next-intl";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
-import { SurvivalResults } from "@/components/games/SurvivalResults";
+import { GauntletResults } from "@/components/games/GauntletResults";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Check, Pause, Play, Timer, ArrowRight } from "lucide-react";
 
-interface SurvivalModeProps {
+interface GauntletModeProps {
   questions: Question[];
 }
 
-export function SurvivalMode({ questions }: SurvivalModeProps) {
-  const t = useTranslations("Survival");
+export function GauntletMode({ questions }: GauntletModeProps) {
+  const t = useTranslations("Gauntlet");
   const {
     state,
     currentQuestion,
@@ -48,7 +48,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
     failedByTimeout,
     proceedToResults,
     continueAfterWrong,
-  } = useSurvivalMode(questions);
+  } = useGauntletMode(questions);
 
   // Loading state while questions shuffle
   if (state.phase === "loading" || !currentQuestion) {
@@ -64,7 +64,7 @@ export function SurvivalMode({ questions }: SurvivalModeProps) {
   if (result) {
     return (
       <div className="px-4 sm:px-8 py-6 sm:py-12">
-        <SurvivalResults result={result} onRestart={restart} />
+        <GauntletResults result={result} onRestart={restart} />
       </div>
     );
   }

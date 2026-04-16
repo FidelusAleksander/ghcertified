@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * SurvivalResults — end-of-run results screen for Survival Mode.
+ * GauntletResults — end-of-run results screen for Gauntlet.
  *
  * Primary metric is streak (questions survived), not percentage.
  * Accepts optional saveAction prop for future auth/persistence.
@@ -17,15 +17,15 @@ import { Heart, RotateCcw, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-interface SurvivalResultsProps {
+interface GauntletResultsProps {
   result: GameResult;
   onRestart: () => void;
   saveAction?: ReactNode;
 }
 
-export function SurvivalResults({ result, onRestart, saveAction }: SurvivalResultsProps) {
+export function GauntletResults({ result, onRestart, saveAction }: GauntletResultsProps) {
   const locale = useLocale();
-  const t = useTranslations("Survival");
+  const t = useTranslations("Gauntlet");
   const animatedStreak = useCountUp(result.correct);
   const isFullClear = result.wrong === 0;
 

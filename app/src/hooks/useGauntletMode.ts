@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * useSurvivalMode — game engine hook for Survival Mode.
+ * useGauntletMode — game engine hook for Gauntlet mode.
  *
  * Manages shuffled question queue, configurable lives, scoring,
  * per-question countdown timer, and pause-between-questions.
@@ -16,7 +16,7 @@ import { shuffle } from "@/lib/utils";
 
 type Phase = "loading" | "playing" | "feedback" | "wrong_review" | "paused" | "game_over_review" | "game_over" | "completed";
 
-interface SurvivalState {
+interface GauntletState {
   questions: Question[];
   currentIndex: number;
   lives: number;
@@ -33,16 +33,16 @@ export const DEFAULT_TIME_LIMIT = 60;
 /** Default number of lives. Exported for reuse in UI. */
 export const DEFAULT_LIVES = 3;
 
-export interface SurvivalModeOptions {
+export interface GauntletModeOptions {
   timeLimitSeconds?: number;
   lives?: number;
 }
 
-export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeOptions = {}) {
+export function useGauntletMode(allQuestions: Question[], options: GauntletModeOptions = {}) {
   const timeLimitSeconds = options.timeLimitSeconds ?? DEFAULT_TIME_LIMIT;
   const initialLives = options.lives ?? DEFAULT_LIVES;
 
-  const makeInitialState = useCallback((): SurvivalState => ({
+  const makeInitialState = useCallback((): GauntletState => ({
     questions: [],
     currentIndex: 0,
     lives: initialLives,
@@ -53,7 +53,7 @@ export function useSurvivalMode(allQuestions: Question[], options: SurvivalModeO
     lastAnswerCorrect: null,
   }), [initialLives]);
 
-  const [state, setState] = useState<SurvivalState>(makeInitialState);
+  const [state, setState] = useState<GauntletState>(makeInitialState);
   const [selectedAnswers, setSelectedAnswers] = useState<Set<string>>(new Set());
   const [timeRemaining, setTimeRemaining] = useState(timeLimitSeconds);
   const [pauseRequested, setPauseRequested] = useState(false);

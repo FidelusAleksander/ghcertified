@@ -34,8 +34,8 @@ export default async function GamesPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("Games");
 
-  const [survivalLeaderboard, timeTrialLeaderboard] = await Promise.all([
-    getLeaderboard("survival"),
+  const [gauntletLeaderboard, timeTrialLeaderboard] = await Promise.all([
+    getLeaderboard("gauntlet"),
     getLeaderboard("time-trial"),
   ]);
 
@@ -57,7 +57,7 @@ export default async function GamesPage({ params }: Props) {
 
       <GamesCatalog
         locale={locale}
-        survivalLeaderboard={survivalLeaderboard}
+        gauntletLeaderboard={gauntletLeaderboard}
         timeTrialLeaderboard={timeTrialLeaderboard}
       />
     </div>

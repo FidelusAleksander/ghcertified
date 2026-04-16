@@ -8,7 +8,7 @@
 import type { GameType, LeaderboardEntry } from "@/types/games";
 
 const MOCK_SCORES: Record<GameType, number[]> = {
-  survival: [247, 189, 156, 134, 112, 98, 87, 73, 61, 52],
+  gauntlet: [247, 189, 156, 134, 112, 98, 87, 73, 61, 52],
   "time-trial": [42, 38, 35, 31, 28, 25, 22, 19, 16, 14],
 };
 

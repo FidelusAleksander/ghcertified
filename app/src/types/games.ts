@@ -20,4 +20,4 @@ export interface LeaderboardEntry {
 }
 
 /** Identifies a game type for leaderboard queries. */
-export type GameType = "survival" | "time-trial";
+export type GameType = "gauntlet" | "time-trial";

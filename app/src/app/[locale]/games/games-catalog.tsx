@@ -3,7 +3,7 @@
 /**
  * GamesCatalog — displays available game modes with rules and leaderboards.
  *
- * Three slots: Survival Mode, Time Trial, Suggest a Game.
+ * Three slots: Gauntlet, Time Trial, Suggest a Game.
  * Game modes are not split by certification — questions from all certs
  * are combined into a single pool.
  */
@@ -11,12 +11,12 @@
 import type { LeaderboardEntry } from "@/types/games";
 import { useTranslations } from "next-intl";
 import { GameCard } from "@/components/games/GameCard";
-import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useSurvivalMode";
+import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useGauntletMode";
 import { Heart, Timer, Lightbulb } from "lucide-react";
 
 interface Props {
   locale: string;
-  survivalLeaderboard: LeaderboardEntry[];
+  gauntletLeaderboard: LeaderboardEntry[];
   timeTrialLeaderboard: LeaderboardEntry[];
 }
 
@@ -25,31 +25,31 @@ const VOTE_URL = "https://github.com/FidelusAleksander/ghcertified/issues?q=stat
 
 export function GamesCatalog({
   locale,
-  survivalLeaderboard,
+  gauntletLeaderboard,
   timeTrialLeaderboard,
 }: Props) {
   const t = useTranslations("Games");
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      {/* Survival Mode */}
+      {/* Gauntlet */}
       <GameCard
         icon={<Heart className="size-6 text-destructive" />}
         iconBg="bg-destructive/10"
-        title={t("survivalMode")}
+        title={t("gauntletMode")}
         badges={[
           { label: `${DEFAULT_LIVES} Lives`, icon: <Heart className="size-3 mr-1 text-destructive" /> },
           { label: "All Certs" },
         ]}
         rules={[
-          t("survivalRule1", { lives: DEFAULT_LIVES }),
-          t("survivalRule2", { seconds: DEFAULT_TIME_LIMIT }),
-          t("survivalRule3"),
-          t("survivalRule4"),
+          t("gauntletRule1", { lives: DEFAULT_LIVES }),
+          t("gauntletRule2", { seconds: DEFAULT_TIME_LIMIT }),
+          t("gauntletRule3"),
+          t("gauntletRule4"),
         ]}
-        leaderboard={survivalLeaderboard}
+        leaderboard={gauntletLeaderboard}
         scoreLabel={t("score")}
-        href={`/${locale}/games/survival`}
+        href={`/${locale}/games/gauntlet`}
         buttonLabel={t("play")}
       />
 
