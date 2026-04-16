@@ -4,7 +4,7 @@
  * GauntletMode — main orchestrator for Gauntlet gameplay.
  *
  * Two-column layout: question card (left) + sticky sidebar (right).
- * Sidebar shows lives, per-question timer, score, pause.
+ * Sidebar shows game name, lives, per-question timer, score, pause.
  * Collapses to compact horizontal strip on mobile.
  */
 
@@ -29,6 +29,7 @@ interface GauntletModeProps {
 
 export function GauntletMode({ questions }: GauntletModeProps) {
   const t = useTranslations("Gauntlet");
+  const tGames = useTranslations("Games");
   const {
     state,
     currentQuestion,
@@ -52,11 +53,11 @@ export function GauntletMode({ questions }: GauntletModeProps) {
   // Shared sidebar element reused across phases
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
+      title={tGames("gauntletMode")}
       livesSlot={<LivesDisplay lives={state.lives} initialLives={state.initialLives} />}
       timerSlot={<TimerBar timeRemaining={frozen ? timeLimitSeconds : timeRemaining} timeLimitSeconds={timeLimitSeconds} />}
-      scoreLabel={t("correct")}
+      scoreLabel={tGames("score")}
       scoreValue={state.correct}
-      questionCounter={t("questionCounter", { current: state.currentIndex + 1 })}
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
           <PauseButton
@@ -64,8 +65,6 @@ export function GauntletMode({ questions }: GauntletModeProps) {
             onToggle={togglePause}
             label={t("pause")}
             queuedLabel={t("pauseQueued")}
-            title={t("pause")}
-            queuedTitle={t("pauseQueued")}
           />
         ) : undefined
       }
@@ -101,7 +100,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
           <QuestionCard
-            headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
+            headerLabel={tGames("gauntletMode")}
             headerActions={<LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
@@ -211,7 +210,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
         <QuestionCard
-          headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
+          headerLabel={tGames("gauntletMode")}
           headerActions={
             <div className="flex items-center gap-3">
               <TimerBar timeRemaining={timeRemaining} timeLimitSeconds={timeLimitSeconds} compact />

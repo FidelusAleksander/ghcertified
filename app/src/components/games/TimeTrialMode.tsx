@@ -4,7 +4,7 @@
  * TimeTrialMode — main orchestrator for Time Trial gameplay.
  *
  * Two-column layout: question card (left) + sticky sidebar (right).
- * Sidebar shows global countdown, time gained/lost, score, pause.
+ * Sidebar shows game name, global countdown, time gained/lost, score, pause.
  * Collapses to compact horizontal strip on mobile.
  */
 
@@ -18,7 +18,7 @@ import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
 import { TimeTrialResults } from "@/components/games/TimeTrialResults";
-import { GameSidebar, TimerBar, PauseButton } from "@/components/games/GameSidebar";
+import { GameSidebar, PauseButton } from "@/components/games/GameSidebar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +30,7 @@ interface TimeTrialModeProps {
 
 export function TimeTrialMode({ questions }: TimeTrialModeProps) {
   const t = useTranslations("TimeTrial");
+  const tGames = useTranslations("Games");
   const {
     state,
     currentQuestion,
@@ -54,9 +55,10 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
   // Shared sidebar reused across phases
   const sidebar = (frozen?: boolean) => (
     <GameSidebar
+      title={tGames("timeTrialMode")}
       timerSlot={
         <div className="relative">
-          <GlobalTimerDisplay timeRemaining={frozen ? timeRemaining : timeRemaining} />
+          <GlobalTimerDisplay timeRemaining={timeRemaining} />
           {!frozen && <TimeDeltaPopup delta={lastDelta} triggerKey={deltaKey} />}
         </div>
       }
@@ -74,9 +76,8 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
           )}
         </div>
       }
-      scoreLabel={t("correct")}
+      scoreLabel={tGames("score")}
       scoreValue={state.correct}
-      questionCounter={t("questionCounter", { current: state.currentIndex + 1 })}
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
           <PauseButton
@@ -84,8 +85,6 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
             onToggle={togglePause}
             label={t("pause")}
             queuedLabel={t("pauseQueued")}
-            title={t("pause")}
-            queuedTitle={t("pauseQueued")}
           />
         ) : undefined
       }
@@ -127,7 +126,7 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
           <QuestionCard
-            headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
+            headerLabel={tGames("timeTrialMode")}
             headerActions={<GlobalTimerDisplay timeRemaining={timeRemaining} compact />}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
@@ -233,7 +232,7 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
         <QuestionCard
-          headerLabel={t("questionCounter", { current: state.currentIndex + 1 })}
+          headerLabel={tGames("timeTrialMode")}
           headerActions={
             <div className="flex items-center gap-3">
               <GlobalTimerDisplay timeRemaining={timeRemaining} compact />

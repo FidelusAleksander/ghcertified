@@ -6,14 +6,15 @@
  * Renders as a sticky vertical card on desktop (lg+),
  * compact horizontal strip on mobile (< lg).
  *
- * Accepts slot-based props so each game mode controls what's shown.
+ * Shows game name, rules, lives, timer, score, and pause controls.
  */
 
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Heart, Timer, Pause } from "lucide-react";
+import { Heart, Timer, Pause, Play } from "lucide-react";
 
 // ── Shared display components ──────────────────────────────────────
 
@@ -91,28 +92,28 @@ export function TimerBar({
 // ── Sidebar ────────────────────────────────────────────────────────
 
 interface GameSidebarProps {
+  /** Game mode name displayed at top. */
+  title: string;
   /** Lives display slot (Gauntlet). Omit for modes without lives. */
   livesSlot?: ReactNode;
   /** Timer display slot. */
   timerSlot: ReactNode;
   /** Extra content below timer (e.g. Time Trial gain/loss counters). */
   timerExtra?: ReactNode;
-  /** Score / correct count. */
+  /** Label for the score row (e.g. "Score"). */
   scoreLabel: string;
   scoreValue: number;
-  /** Question counter text, e.g. "Q #8". */
-  questionCounter: string;
-  /** Pause button. */
+  /** Pause control — pass undefined when pausing isn't available. */
   pauseSlot?: ReactNode;
 }
 
 export function GameSidebar({
+  title,
   livesSlot,
   timerSlot,
   timerExtra,
   scoreLabel,
   scoreValue,
-  questionCounter,
   pauseSlot,
 }: GameSidebarProps) {
   return (
@@ -121,6 +122,13 @@ export function GameSidebar({
       <div className="hidden lg:flex flex-col gap-4 lg:sticky lg:top-6">
         <Card className="overflow-hidden shadow-sm border-[1.5px]">
           <CardContent className="p-4 flex flex-col gap-3">
+            {/* Game name */}
+            <h3 className="font-display text-[15px] font-extrabold tracking-tight text-foreground text-center">
+              {title}
+            </h3>
+
+            <Separator />
+
             {livesSlot && (
               <>
                 <div className="flex items-center justify-center py-1">
@@ -142,14 +150,14 @@ export function GameSidebar({
               <span className="font-display text-[18px] font-extrabold tabular-nums text-foreground">{scoreValue}</span>
             </div>
 
-            <Separator />
-
-            <div className="flex items-center justify-between">
-              <span className="font-display text-[13px] font-bold text-muted-foreground tracking-wide">
-                {questionCounter}
-              </span>
-              {pauseSlot}
-            </div>
+            {pauseSlot && (
+              <>
+                <Separator />
+                <div className="flex items-center justify-center">
+                  {pauseSlot}
+                </div>
+              </>
+            )}
           </CardContent>
         </Card>
       </div>
@@ -164,9 +172,6 @@ export function GameSidebar({
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="font-display text-[12px] font-bold text-muted-foreground tracking-wide">
-            {questionCounter}
-          </span>
           {pauseSlot}
         </div>
       </div>
@@ -174,37 +179,30 @@ export function GameSidebar({
   );
 }
 
-// ── Pause button ───────────────────────────────────────────────────
+// ── Pause button (full-width, prominent) ───────────────────────────
 
 export function PauseButton({
   pauseRequested,
   onToggle,
   label,
   queuedLabel,
-  title,
-  queuedTitle,
 }: {
   pauseRequested: boolean;
   onToggle: () => void;
   label: string;
   queuedLabel: string;
-  title: string;
-  queuedTitle: string;
 }) {
   return (
-    <button
-      type="button"
+    <Button
+      variant="outline"
       onClick={onToggle}
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-[12px] font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-        pauseRequested
-          ? "bg-primary/10 text-primary border border-primary/30"
-          : "text-muted-foreground hover:text-foreground hover:bg-muted",
+        "w-full gap-1.5 text-[13px] font-semibold",
+        pauseRequested && "border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary",
       )}
-      title={pauseRequested ? queuedTitle : title}
     >
       <Pause className="size-3.5" />
-      <span className="hidden sm:inline">{pauseRequested ? queuedLabel : label}</span>
-    </button>
+      {pauseRequested ? queuedLabel : label}
+    </Button>
   );
 }
