@@ -23,6 +23,8 @@ interface GameCardProps {
   iconBg: string;
   title: string;
   subtitle?: string;
+  /** Description text shown below badges */
+  description?: string;
   badges: { label: string; icon?: ReactNode }[];
   rules: string[];
   leaderboard?: LeaderboardEntry[];
@@ -31,6 +33,12 @@ interface GameCardProps {
   href?: string;
   /** Button label */
   buttonLabel: string;
+  /** Secondary link */
+  secondaryHref?: string;
+  /** Secondary button label */
+  secondaryButtonLabel?: string;
+  /** If true, secondary link opens in new tab */
+  secondaryExternal?: boolean;
   /** Extra class for the card wrapper */
   className?: string;
   /** If true, uses anchor tag (external link) instead of Next.js Link */
@@ -44,12 +52,16 @@ export function GameCard({
   iconBg,
   title,
   subtitle,
+  description,
   badges,
   rules,
   leaderboard,
   scoreLabel,
   href,
   buttonLabel,
+  secondaryHref,
+  secondaryButtonLabel,
+  secondaryExternal,
   className,
   external,
   variant = "default",
@@ -95,6 +107,13 @@ export function GameCard({
           </div>
         )}
 
+        {/* Description */}
+        {description && (
+          <p className="text-[13px] text-muted-foreground leading-relaxed">
+            {description}
+          </p>
+        )}
+
         {/* Rules */}
         {rules.length > 0 && (
           <div>
@@ -132,27 +151,50 @@ export function GameCard({
         <div className="flex-1" />
 
         {/* CTA */}
-        {href && (
-          external ? (
-            <Button
-              render={<a href={href} target="_blank" rel="noopener noreferrer" />}
-              nativeButton={false}
-              variant={variant === "dashed" ? "outline" : "default"}
-              className="w-full rounded-[9px] text-[13.5px] font-semibold"
-            >
-              {buttonLabel}
-            </Button>
-          ) : (
-            <Button
-              render={<Link href={href} />}
-              nativeButton={false}
-              variant={variant === "dashed" ? "outline" : "default"}
-              className="w-full rounded-[9px] text-[13.5px] font-semibold"
-            >
-              {buttonLabel}
-            </Button>
-          )
-        )}
+        <div className="flex flex-col gap-2">
+          {href && (
+            external ? (
+              <Button
+                render={<a href={href} target="_blank" rel="noopener noreferrer" />}
+                nativeButton={false}
+                variant={variant === "dashed" ? "outline" : "default"}
+                className="w-full rounded-[9px] text-[13.5px] font-semibold"
+              >
+                {buttonLabel}
+              </Button>
+            ) : (
+              <Button
+                render={<Link href={href} />}
+                nativeButton={false}
+                variant={variant === "dashed" ? "outline" : "default"}
+                className="w-full rounded-[9px] text-[13.5px] font-semibold"
+              >
+                {buttonLabel}
+              </Button>
+            )
+          )}
+          {secondaryHref && secondaryButtonLabel && (
+            secondaryExternal ? (
+              <Button
+                render={<a href={secondaryHref} target="_blank" rel="noopener noreferrer" />}
+                nativeButton={false}
+                variant="outline"
+                className="w-full rounded-[9px] text-[13.5px] font-semibold"
+              >
+                {secondaryButtonLabel}
+              </Button>
+            ) : (
+              <Button
+                render={<Link href={secondaryHref} />}
+                nativeButton={false}
+                variant="outline"
+                className="w-full rounded-[9px] text-[13.5px] font-semibold"
+              >
+                {secondaryButtonLabel}
+              </Button>
+            )
+          )}
+        </div>
       </CardContent>
     </Card>
   );

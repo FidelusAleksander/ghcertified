@@ -6,7 +6,6 @@
  */
 
 import type { Metadata } from "next";
-import { getCertCatalog, parseSupportedLocale } from "@/lib/questions";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { getLeaderboard } from "@/lib/leaderboard";
@@ -34,8 +33,6 @@ export default async function GamesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Games");
-  const totalQuestions = getCertCatalog(parseSupportedLocale(locale))
-    .reduce((sum, c) => sum + c.questionCount, 0);
 
   const [survivalLeaderboard, timeTrialLeaderboard] = await Promise.all([
     getLeaderboard("survival"),
@@ -59,7 +56,6 @@ export default async function GamesPage({ params }: Props) {
       </div>
 
       <GamesCatalog
-        totalQuestions={totalQuestions}
         locale={locale}
         survivalLeaderboard={survivalLeaderboard}
         timeTrialLeaderboard={timeTrialLeaderboard}

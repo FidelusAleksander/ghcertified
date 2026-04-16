@@ -1,0 +1,50 @@
+name: "🎮 Game Suggestion"
+description: Suggest a new game mode for the Games section
+title: "[Game Suggestion] "
+labels: ["game-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new game mode! The community votes on suggestions by reacting to them.
+        Browse and vote on existing suggestions: [View open suggestions](https://github.com/FidelusAleksander/ghcertified/issues?q=state%3Aopen+label%3Agame-suggestion)
+
+  - type: input
+    id: name
+    attributes:
+      label: Game Name
+      description: What would you call this game mode?
+      placeholder: e.g., "Speed Round", "Category Clash"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Briefly describe the game mode and how it works.
+      placeholder: "Players race to answer as many questions as possible in 5 minutes..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: rules
+    attributes:
+      label: Rules & Mechanics
+      description: How does scoring work? What are the win/lose conditions?
+      placeholder: |
+        - 5 minute total time limit
+        - +10 points per correct answer
+        - -5 points per wrong answer
+        - Bonus points for streaks
+    validations:
+      required: false
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why does this fit?
+      description: Why would this game mode be fun or useful for GitHub certification prep?
+      placeholder: "It encourages quick recall and would complement the slower-paced Survival Mode..."
+    validations:
+      required: false

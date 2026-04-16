@@ -12,19 +12,18 @@ import type { LeaderboardEntry } from "@/types/games";
 import { useTranslations } from "next-intl";
 import { GameCard } from "@/components/games/GameCard";
 import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useSurvivalMode";
-import { Heart, Timer, MessageSquarePlus } from "lucide-react";
+import { Heart, Timer, Lightbulb } from "lucide-react";
 
 interface Props {
-  totalQuestions: number;
   locale: string;
   survivalLeaderboard: LeaderboardEntry[];
   timeTrialLeaderboard: LeaderboardEntry[];
 }
 
-const REPO_URL = "https://github.com/FidelusAleksander/ghcertified/discussions";
+const SUGGEST_FORM_URL = "https://github.com/FidelusAleksander/ghcertified/issues/new?template=game_suggestion.yml";
+const VOTE_URL = "https://github.com/FidelusAleksander/ghcertified/issues?q=state%3Aopen+label%3Agame-suggestion";
 
 export function GamesCatalog({
-  totalQuestions,
   locale,
   survivalLeaderboard,
   timeTrialLeaderboard,
@@ -38,7 +37,6 @@ export function GamesCatalog({
         icon={<Heart className="size-6 text-destructive" />}
         iconBg="bg-destructive/10"
         title={t("survivalMode")}
-        subtitle={t("questionsAvailable", { count: totalQuestions })}
         badges={[
           { label: `${DEFAULT_LIVES} Lives`, icon: <Heart className="size-3 mr-1 text-destructive" /> },
           { label: "All Certs" },
@@ -60,7 +58,6 @@ export function GamesCatalog({
         icon={<Timer className="size-6 text-primary" />}
         iconBg="bg-primary/10"
         title={t("timeTrialMode")}
-        subtitle={t("comingSoon")}
         badges={[
           { label: "⏱ Timed", icon: <Timer className="size-3 mr-1 text-primary" /> },
           { label: "All Certs" },
@@ -74,19 +71,29 @@ export function GamesCatalog({
         leaderboard={timeTrialLeaderboard}
         scoreLabel={t("score")}
         href={`/${locale}/games/time-trial`}
-        buttonLabel={t("comingSoon")}
+        buttonLabel={t("play")}
       />
 
       {/* Suggest a Game */}
       <GameCard
-        icon={<MessageSquarePlus className="size-6 text-muted-foreground" />}
-        iconBg="bg-muted"
+        icon={<Lightbulb className="size-6 text-amber-500" />}
+        iconBg="bg-amber-500/10"
         title={t("suggestGame")}
-        badges={[]}
-        rules={[]}
-        href={REPO_URL}
+        description={t("suggestGameDescription")}
+        badges={[
+          { label: t("community") },
+        ]}
+        rules={[
+          t("suggestRule1"),
+          t("suggestRule2"),
+          t("suggestRule3"),
+        ]}
+        href={SUGGEST_FORM_URL}
         external
         buttonLabel={t("suggestGameButton")}
+        secondaryHref={VOTE_URL}
+        secondaryExternal
+        secondaryButtonLabel={t("voteOnIdeas")}
         variant="dashed"
       />
     </div>
