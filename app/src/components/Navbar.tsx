@@ -85,10 +85,10 @@ function SignInButton({ className }: { className?: string }) {
   return (
     <Button
       variant="outline"
-      size="sm"
+      size="lg"
       onClick={() => void signIn()}
       disabled={loading}
-      className={cn("gap-1.5 rounded-[9px] text-[13px] font-semibold", className)}
+      className={cn("rounded-[9px] text-[13px] font-semibold", className)}
     >
       <GitHubMark className="size-3.5" />
       {t("signIn")}
@@ -196,10 +196,10 @@ export function Navbar() {
             </div>
             {/* Mobile language switcher */}
             <div className="mt-3 pt-3 border-t border-border px-1">
-              <LanguagePicker />
+              <LanguagePicker className="w-full justify-between" />
             </div>
             <div className="mt-3 pt-3 border-t border-border">
-              <GitHubStarButton className="text-xs" />
+              <GitHubStarButton className="w-full justify-between" />
             </div>
             {/* Mobile auth */}
             {available && !loading && (
