@@ -103,13 +103,14 @@ That means Supabase must allow redirects back to the exact current page. Configu
 
 Recommended values:
 
-| Environment | Supabase URL setting |
-|-------------|----------------------|
-| Local development | `http://localhost:3000/**` |
-| Production | Exact production URL/path you want to allow |
-| Preview deployments | Add your preview domain pattern only if needed |
+| Setting | Value | Why |
+|---------|-------|-----|
+| **Site URL** | `https://ghcertified.com` | Primary production domain |
+| **Redirect URL** | `http://localhost:3000/**` | Local development — wildcard allows any page path |
+| **Redirect URL** | `https://ghcertified.com/**` | Production — wildcard needed because `redirectTo` uses `window.location.href` (any page) |
+| **Redirect URL** | `https://*.pages.dev/**` | Cloudflare Pages preview deployments (optional) |
 
-For production, prefer exact URLs over broad wildcards.
+The `/**` wildcard is required because the app redirects back to the exact page the user was on when they clicked "Sign in" (e.g. `/en/games/gauntlet`). Without it, Supabase will reject the redirect.
 
 ## Applying Migrations
 
