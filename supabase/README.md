@@ -132,6 +132,15 @@ Recommended local-only paths:
 
 These files are gitignored on purpose. Keep your own local copy there if you want versioned SQL without committing it.
 
+## Result save behavior
+
+- Results are only persisted when the score meets the app's minimum threshold for that game type
+- Current thresholds:
+  - `gauntlet`: `5` correct answers
+  - `time-trial`: `5` correct answers
+- Logged-in users save automatically on the results screen
+- Logged-out users can still sign in from the results screen, and eligible pending results are saved after OAuth redirect
+
 ## Environment Variables
 
 Add these to your `.env.local` in the `app/` directory:

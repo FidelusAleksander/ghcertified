@@ -1,16 +1,20 @@
 "use client";
 
 /**
- * SaveResultButton — save game result to Supabase.
+ * SaveResultButton — auto-save status and sign-in CTA for game results.
  *
- * Shows "Save Result" when logged in, "Sign in to save" when not.
- * Handles pending result persistence across OAuth redirect.
+ * Logged-in users get automatic save when the score is eligible.
+ * Logged-out users can still sign in and save eligible results after redirect.
  */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useAuth } from "@/components/AuthProvider";
 import { saveGameResult } from "@/lib/save-result";
+import {
+  getMinimumCorrectToSave,
+  isResultEligibleToSave,
+} from "@/lib/game-result-save-policy";
 import { Button } from "@/components/ui/button";
 import { LogIn, Save, Check, AlertCircle } from "lucide-react";
 import type { GameResult, GameType } from "@/types/games";
@@ -52,55 +56,47 @@ export function consumePendingResult(): {
 export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
   const { available, user, signIn, loading: authLoading } = useAuth();
   const t = useTranslations("Games");
-  const [saving, setSaving] = useState(false);
-  const [saved, setSaved] = useState(false);
+  const [saveResult, setSaveResult] = useState<Awaited<
+    ReturnType<typeof saveGameResult>
+  > | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const autoSaveStarted = useRef(false);
+  const minimumCorrectToSave = getMinimumCorrectToSave(gameType);
+  const isEligible = isResultEligibleToSave(gameType, result);
+
+  useEffect(() => {
+    if (!available || !user || !isEligible || autoSaveStarted.current) {
+      return;
+    }
+
+    autoSaveStarted.current = true;
+
+    void saveGameResult(gameType, result).then((response) => {
+      setSaveResult(response);
+      setError(response.success ? null : response.error ?? null);
+    });
+  }, [available, gameType, isEligible, result, user]);
 
   const handleSave = async () => {
-    setSaving(true);
+    autoSaveStarted.current = true;
+    setSaveResult(null);
     setError(null);
-    const res = await saveGameResult(gameType, result);
-    setSaving(false);
+    const response = await saveGameResult(gameType, result);
+    setSaveResult(response);
 
-    if (res.success) {
-      setSaved(true);
-    } else {
-      setError(res.error ?? t("saveFailed"));
+    if (!response.success) {
+      setError(response.error ?? t("saveFailed"));
     }
   };
 
   const handleSignIn = () => {
+    if (!isEligible) {
+      return;
+    }
+
     storePendingResult(gameType, result);
     void signIn();
   };
-
-  if (saved) {
-    return (
-      <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-emerald-600">
-        <Check className="size-4" />
-        {t("resultSaved")}
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="space-y-2">
-        <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-destructive">
-          <AlertCircle className="size-4" />
-          {error}
-        </div>
-        <Button
-          onClick={handleSave}
-          variant="outline"
-          className="w-full rounded-[9px] text-[14px] font-semibold"
-        >
-          <Save className="size-4" />
-          {t("saveResult")}
-        </Button>
-      </div>
-    );
-  }
 
   if (!available) {
     return (
@@ -112,6 +108,15 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
         <AlertCircle className="size-4" />
         {t("saveUnavailable")}
       </Button>
+    );
+  }
+
+  if (!isEligible) {
+    return (
+      <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-muted-foreground">
+        <AlertCircle className="size-4" />
+        {t("saveThresholdNotMet", { count: minimumCorrectToSave })}
+      </div>
     );
   }
 
@@ -129,15 +134,74 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
     );
   }
 
+  if (saveResult?.status === "saved") {
+    return (
+      <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-emerald-600">
+        <Check className="size-4" />
+        {t("resultSaved")}
+      </div>
+    );
+  }
+
+  if (saveResult?.status === "failed") {
+    return (
+      <div className="space-y-2">
+        <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-destructive">
+          <AlertCircle className="size-4" />
+          {error ?? t("saveFailed")}
+        </div>
+        <Button
+          onClick={handleSave}
+          variant="outline"
+          className="w-full rounded-[9px] text-[14px] font-semibold"
+        >
+          <Save className="size-4" />
+          {t("retrySave")}
+        </Button>
+      </div>
+    );
+  }
+
+  if (saveResult?.status === "requires-sign-in") {
+    return (
+      <Button
+        onClick={handleSignIn}
+        disabled={authLoading}
+        variant="outline"
+        className="w-full rounded-[9px] text-[14px] font-semibold"
+      >
+        <LogIn className="size-4" />
+        {t("signInToSave")}
+      </Button>
+    );
+  }
+
+  if (saveResult?.status === "unavailable") {
+    return (
+      <Button
+        disabled
+        variant="outline"
+        className="w-full rounded-[9px] text-[14px] font-semibold"
+      >
+        <AlertCircle className="size-4" />
+        {t("saveUnavailable")}
+      </Button>
+    );
+  }
+
+  if (saveResult?.status === "ineligible") {
+    return (
+      <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-muted-foreground">
+        <AlertCircle className="size-4" />
+        {t("saveThresholdNotMet", { count: minimumCorrectToSave })}
+      </div>
+    );
+  }
+
   return (
-    <Button
-      onClick={handleSave}
-      disabled={saving}
-      variant="outline"
-      className="w-full rounded-[9px] text-[14px] font-semibold"
-    >
+    <div className="flex items-center justify-center gap-1.5 text-sm font-medium text-muted-foreground">
       <Save className="size-4" />
-      {saving ? "…" : t("saveResult")}
-    </Button>
+      {t("savingResult")}
+    </div>
   );
 }

@@ -64,7 +64,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (event === "SIGNED_IN" && s?.user) {
         const pending = consumePendingResult();
         if (pending) {
-          saveGameResult(pending.gameType, pending.result);
+          void saveGameResult(pending.gameType, pending.result);
         }
       }
     });

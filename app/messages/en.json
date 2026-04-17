@@ -161,9 +161,12 @@
     "timeTrialRule4": "Clock hits zero = game over. No mercy 🪦",
     "saveResult": "Save Result",
     "signInToSave": "Sign in with GitHub to save",
+    "savingResult": "Saving result…",
     "resultSaved": "Result saved!",
     "saveFailed": "Failed to save result",
-    "saveUnavailable": "Configure Supabase to save results"
+    "retrySave": "Retry save",
+    "saveUnavailable": "Configure Supabase to save results",
+    "saveThresholdNotMet": "Score {count}+ required to save"
   },
   "Gauntlet": {
     "questionCounter": "Q{current}",
