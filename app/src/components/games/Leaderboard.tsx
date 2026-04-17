@@ -60,7 +60,7 @@ export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
           {/* Avatar + Username */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`https://github.com/${entry.githubUsername}.png?size=60`}
+            src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=60`}
             alt=""
             className="size-5 rounded-full shrink-0"
           />

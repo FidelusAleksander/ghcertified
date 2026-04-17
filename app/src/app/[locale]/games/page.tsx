@@ -1,14 +1,13 @@
 /**
  * Games landing page — pick a game mode to play.
  *
- * Server component that loads total question count and leaderboard
- * data, then passes to the client GamesCatalog.
+ * The page shell is rendered statically. Leaderboard data is loaded by the
+ * client after hydration because the app uses `output: "export"`.
  */
 
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
-import { getLeaderboard } from "@/lib/leaderboard";
 import { GamesCatalog } from "./games-catalog";
 
 interface Props {
@@ -34,11 +33,6 @@ export default async function GamesPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("Games");
 
-  const [gauntletLeaderboard, timeTrialLeaderboard] = await Promise.all([
-    getLeaderboard("gauntlet"),
-    getLeaderboard("time-trial"),
-  ]);
-
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
@@ -57,8 +51,6 @@ export default async function GamesPage({ params }: Props) {
 
       <GamesCatalog
         locale={locale}
-        gauntletLeaderboard={gauntletLeaderboard}
-        timeTrialLeaderboard={timeTrialLeaderboard}
       />
     </div>
   );

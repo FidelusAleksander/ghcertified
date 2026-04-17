@@ -28,6 +28,7 @@ interface GameCardProps {
   badges: { label: string; icon?: ReactNode }[];
   rules: string[];
   leaderboard?: LeaderboardEntry[];
+  leaderboardStatus?: "loading" | "ready" | "empty" | "error" | "unavailable";
   scoreLabel?: string;
   /** Link href for the play button */
   href?: string;
@@ -56,6 +57,7 @@ export function GameCard({
   badges,
   rules,
   leaderboard,
+  leaderboardStatus,
   scoreLabel,
   href,
   buttonLabel,
@@ -135,14 +137,22 @@ export function GameCard({
         )}
 
         {/* Leaderboard */}
-        {leaderboard && leaderboard.length > 0 && (
+        {(leaderboardStatus !== undefined || (leaderboard && leaderboard.length > 0)) && (
           <>
             <Separator />
             <div>
               <div className="text-[10px] font-bold tracking-[1px] uppercase text-muted-foreground mb-2">
                 {t("leaderboard")}
               </div>
-              <Leaderboard entries={leaderboard} scoreLabel={scoreLabel} />
+              {leaderboard && leaderboard.length > 0 ? (
+                <Leaderboard entries={leaderboard} scoreLabel={scoreLabel} />
+              ) : (
+                <p className="px-2 py-1.5 text-[13px] text-muted-foreground leading-relaxed">
+                  {leaderboardStatus === "loading" ? t("leaderboardLoading")
+                    : leaderboardStatus === "empty" ? t("leaderboardEmpty")
+                      : t("leaderboardUnavailable")}
+                </p>
+              )}
             </div>
           </>
         )}

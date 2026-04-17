@@ -1,31 +1,49 @@
 /**
  * Leaderboard data layer.
  *
- * Returns mock data now — swap to Supabase query later.
- * Interface is async to match future DB calls.
+ * Reads public best-score rows from Supabase. This module is client-safe: the
+ * app is statically exported, so leaderboard data must be fetched after
+ * hydration in the browser.
  */
 
+import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
 import type { GameType, LeaderboardEntry } from "@/types/games";
 
-const MOCK_SCORES: Record<GameType, number[]> = {
-  gauntlet: [247, 189, 156, 134, 112, 98, 87, 73, 61, 52],
-  "time-trial": [42, 38, 35, 31, 28, 25, 22, 19, 16, 14],
-};
-
-const MOCK_USERNAME = "FidelusAleksander";
+interface LeaderboardRow {
+  github_username: string;
+  avatar_url: string | null;
+  score: number;
+}
 
 /**
  * Fetch top-N leaderboard entries for a game type.
- * Currently returns mock data — will query Supabase later.
  */
 export async function getLeaderboard(
   gameType: GameType,
-  limit = 10,
+  limit = 5,
 ): Promise<LeaderboardEntry[]> {
-  const scores = MOCK_SCORES[gameType];
-  return scores.slice(0, limit).map((score, i) => ({
-    rank: i + 1,
-    githubUsername: MOCK_USERNAME,
-    score,
+  if (!hasSupabaseConfig()) {
+    return [];
+  }
+
+  const { data, error } = await getSupabase()
+    .from("game_leaderboard_entries")
+    .select("github_username, avatar_url, score")
+    .eq("game_type", gameType)
+    .order("score", { ascending: false })
+    .order("achieved_at", { ascending: true })
+    .order("github_username", { ascending: true })
+    .limit(limit)
+    .returns<LeaderboardRow[]>();
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return (data ?? []).map((entry, index) => ({
+    rank: index + 1,
+    githubUsername: entry.github_username,
+    avatarUrl: entry.avatar_url ?? undefined,
+    score: entry.score,
   }));
 }

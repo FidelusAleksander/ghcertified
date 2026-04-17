@@ -16,6 +16,7 @@ export interface GameResult {
 export interface LeaderboardEntry {
   rank: number;
   githubUsername: string;
+  avatarUrl?: string;
   score: number;
 }
 

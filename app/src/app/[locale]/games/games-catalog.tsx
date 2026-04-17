@@ -9,26 +9,77 @@
  */
 
 import type { LeaderboardEntry } from "@/types/games";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { GameCard } from "@/components/games/GameCard";
 import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useGauntletMode";
+import { getLeaderboard } from "@/lib/leaderboard";
+import { hasSupabaseConfig } from "@/lib/supabase";
 import { Heart, Timer, Lightbulb } from "lucide-react";
 
 interface Props {
   locale: string;
-  gauntletLeaderboard: LeaderboardEntry[];
-  timeTrialLeaderboard: LeaderboardEntry[];
+}
+
+type LeaderboardStatus = "loading" | "ready" | "empty" | "error" | "unavailable";
+
+interface LoadableLeaderboard {
+  entries: LeaderboardEntry[];
+  status: LeaderboardStatus;
 }
 
 const SUGGEST_FORM_URL = "https://github.com/FidelusAleksander/ghcertified/issues/new?template=game_suggestion.yml";
 const VOTE_URL = "https://github.com/FidelusAleksander/ghcertified/issues?q=state%3Aopen+label%3Agame-suggestion";
 
-export function GamesCatalog({
-  locale,
-  gauntletLeaderboard,
-  timeTrialLeaderboard,
-}: Props) {
+function toLoadableLeaderboard(
+  result: PromiseSettledResult<LeaderboardEntry[]>,
+): LoadableLeaderboard {
+  if (result.status === "rejected") {
+    return { entries: [], status: "error" };
+  }
+
+  return result.value.length > 0
+    ? { entries: result.value, status: "ready" }
+    : { entries: [], status: "empty" };
+}
+
+export function GamesCatalog({ locale }: Props) {
   const t = useTranslations("Games");
+  const [gauntletLeaderboard, setGauntletLeaderboard] = useState<LoadableLeaderboard>({
+    entries: [],
+    status: hasSupabaseConfig() ? "loading" : "unavailable",
+  });
+  const [timeTrialLeaderboard, setTimeTrialLeaderboard] = useState<LoadableLeaderboard>({
+    entries: [],
+    status: hasSupabaseConfig() ? "loading" : "unavailable",
+  });
+
+  useEffect(() => {
+    if (!hasSupabaseConfig()) {
+      return;
+    }
+
+    let cancelled = false;
+
+    void Promise.allSettled([
+      getLeaderboard("gauntlet"),
+      getLeaderboard("time-trial"),
+    ]).then(([gauntletResult, timeTrialResult]) => {
+      if (cancelled) {
+        return;
+      }
+
+      const gauntlet = toLoadableLeaderboard(gauntletResult);
+      const timeTrial = toLoadableLeaderboard(timeTrialResult);
+
+      setGauntletLeaderboard(gauntlet);
+      setTimeTrialLeaderboard(timeTrial);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -47,7 +98,8 @@ export function GamesCatalog({
           t("gauntletRule3"),
           t("gauntletRule4"),
         ]}
-        leaderboard={gauntletLeaderboard}
+        leaderboard={gauntletLeaderboard.entries}
+        leaderboardStatus={gauntletLeaderboard.status}
         scoreLabel={t("score")}
         href={`/${locale}/games/gauntlet`}
         buttonLabel={t("play")}
@@ -68,7 +120,8 @@ export function GamesCatalog({
           t("timeTrialRule3"),
           t("timeTrialRule4"),
         ]}
-        leaderboard={timeTrialLeaderboard}
+        leaderboard={timeTrialLeaderboard.entries}
+        leaderboardStatus={timeTrialLeaderboard.status}
         scoreLabel={t("score")}
         href={`/${locale}/games/time-trial`}
         buttonLabel={t("play")}
