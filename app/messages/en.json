@@ -5,7 +5,10 @@
     "games": "Games",
     "questions": "Questions",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "userMenu": "User menu"
   },
   "Footer": {
     "tagline": "Community-contributed practice questions for <link>official GitHub Certifications</link>",
@@ -155,7 +158,11 @@
     "timeTrialRule1": "You start with 60 seconds — that's it, good luck ⏱️",
     "timeTrialRule2": "Nail it? +10 seconds. Keep the clock alive!",
     "timeTrialRule3": "Wrong answer? −15 seconds. Ouch.",
-    "timeTrialRule4": "Clock hits zero = game over. No mercy 🪦"
+    "timeTrialRule4": "Clock hits zero = game over. No mercy 🪦",
+    "saveResult": "Save Result",
+    "signInToSave": "Sign in with GitHub to save",
+    "resultSaved": "Result saved!",
+    "saveFailed": "Failed to save result"
   },
   "Gauntlet": {
     "questionCounter": "Q{current}",

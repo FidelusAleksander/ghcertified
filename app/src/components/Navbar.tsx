@@ -6,6 +6,7 @@
  * "use client" because usePathname() and mobile menu state.
  * Sticky top with background, logo, nav links, and action buttons.
  * Collapses to hamburger menu on mobile with smooth animation.
+ * Shows user avatar + dropdown when authenticated, sign-in button when not.
  */
 
 import { useState } from "react";
@@ -13,9 +14,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { CheckCircle, Menu, X } from "lucide-react";
+import { CheckCircle, Menu, X, LogIn, LogOut } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
 import { LanguagePicker } from "@/components/LanguagePicker";
+import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 /** Check if a nav link is active based on current pathname. */
 function isLinkActive(href: string, pathname: string, locale: string): boolean {
@@ -24,10 +33,71 @@ function isLinkActive(href: string, pathname: string, locale: string): boolean {
     : pathname.startsWith(href);
 }
 
+/** User avatar dropdown — shown when authenticated. */
+function UserMenu() {
+  const { user, signOut } = useAuth();
+  const t = useTranslations("Nav");
+
+  if (!user) return null;
+
+  const avatarUrl = user.user_metadata?.avatar_url as string | undefined;
+  const username = (user.user_metadata?.user_name ?? user.email ?? "") as string;
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={
+          <button
+            type="button"
+            className="rounded-full focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+            aria-label={t("userMenu")}
+          />
+        }
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={avatarUrl ?? `https://github.com/${username}.png?size=64`}
+          alt=""
+          className="size-8 rounded-full border border-border"
+        />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="min-w-[160px]">
+        <div className="px-2 py-1.5 text-sm font-medium text-foreground truncate">
+          {username}
+        </div>
+        <DropdownMenuItem onClick={signOut} className="cursor-pointer">
+          <LogOut className="size-4 mr-2" />
+          {t("signOut")}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
+/** Sign-in button — shown when not authenticated. */
+function SignInButton({ className }: { className?: string }) {
+  const { signIn, loading } = useAuth();
+  const t = useTranslations("Nav");
+
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={signIn}
+      disabled={loading}
+      className={cn("gap-1.5 rounded-[9px] text-[13px] font-semibold", className)}
+    >
+      <LogIn className="size-3.5" />
+      {t("signIn")}
+    </Button>
+  );
+}
+
 export function Navbar() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("Nav");
+  const { user, loading } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
@@ -78,6 +148,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-3 ml-auto">
           <LanguagePicker />
           <GitHubStarButton />
+          {!loading && (user ? <UserMenu /> : <SignInButton />)}
         </div>
 
         {/* Mobile hamburger */}
@@ -127,6 +198,16 @@ export function Navbar() {
             <div className="mt-3 pt-3 border-t border-border">
               <GitHubStarButton className="text-xs" />
             </div>
+            {/* Mobile auth */}
+            {!loading && (
+              <div className="mt-3 pt-3 border-t border-border">
+                {user ? (
+                  <UserMenu />
+                ) : (
+                  <SignInButton className="w-full" />
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>

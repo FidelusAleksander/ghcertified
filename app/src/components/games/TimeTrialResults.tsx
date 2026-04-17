@@ -7,7 +7,7 @@
  * celebratory visuals for high scores.
  */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import type { GameResult } from "@/types/games";
 import { useCountUp } from "@/hooks/useCountUp";
 import { cn } from "@/lib/utils";
@@ -20,6 +20,7 @@ import { useLocale, useTranslations } from "next-intl";
 interface TimeTrialResultsProps {
   result: GameResult;
   onRestart: () => void;
+  saveAction?: ReactNode;
 }
 
 function getTier(correct: number) {
@@ -30,7 +31,7 @@ function getTier(correct: number) {
   return { emoji: "⏰", title: "resultOutOfTime", color: "text-muted-foreground", bg: "bg-muted", border: "border-border", glow: false };
 }
 
-export function TimeTrialResults({ result, onRestart }: TimeTrialResultsProps) {
+export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialResultsProps) {
   const locale = useLocale();
   const t = useTranslations("TimeTrial");
   const animatedCorrect = useCountUp(result.correct);
@@ -105,6 +106,9 @@ export function TimeTrialResults({ result, onRestart }: TimeTrialResultsProps) {
               </div>
             </div>
           </div>
+
+          {/* Save action slot */}
+          {saveAction}
 
           {/* Actions */}
           <div className="flex flex-col gap-2.5">
