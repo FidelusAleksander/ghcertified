@@ -18,6 +18,7 @@ import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
 import { TimeTrialResults } from "@/components/games/TimeTrialResults";
+import { SaveResultButton } from "@/components/games/SaveResultButton";
 import { GameSidebar, PauseButton } from "@/components/games/GameSidebar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -104,7 +105,11 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
     if (result) {
       return (
         <div className="px-4 sm:px-8 py-6 sm:py-12">
-          <TimeTrialResults result={result} onRestart={restart} />
+          <TimeTrialResults
+            result={result}
+            onRestart={restart}
+            saveAction={<SaveResultButton gameType="time-trial" result={result} />}
+          />
         </div>
       );
     }
@@ -123,7 +128,11 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
   if (result) {
     return (
       <div className="px-4 sm:px-8 py-6 sm:py-12">
-        <TimeTrialResults result={result} onRestart={restart} />
+        <TimeTrialResults
+          result={result}
+          onRestart={restart}
+          saveAction={<SaveResultButton gameType="time-trial" result={result} />}
+        />
       </div>
     );
   }

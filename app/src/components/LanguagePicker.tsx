@@ -51,19 +51,22 @@ export function LanguagePicker({ className }: { className?: string }) {
         render={
           <Button
             variant="outline"
+            size="sm"
             className={cn(
-              "gap-1.5 rounded-xl px-3 py-2.5 h-auto border-border bg-card shadow-sm hover:shadow-lg text-muted-foreground hover:text-foreground transition-all duration-300",
-              className
+              "h-9 rounded-[9px] border-border bg-card px-2.5 text-[13px] font-semibold text-foreground shadow-none hover:bg-muted",
+              "focus-visible:ring-2 focus-visible:ring-ring/50",
+              className,
             )}
             aria-label={`Language: ${LOCALE_LABELS[typedLocale]}`}
           />
         }
       >
-        <span className="text-lg leading-none">{LOCALE_FLAGS[typedLocale]}</span>
+        <span className="text-base leading-none">{LOCALE_FLAGS[typedLocale]}</span>
+        <span className="hidden sm:inline">{LOCALE_LABELS[typedLocale]}</span>
         <ChevronDown
           className={cn(
-            "size-3 opacity-60 transition-transform duration-200",
-            open && "rotate-180"
+            "size-3.5 text-muted-foreground transition-transform duration-200",
+            open && "rotate-180",
           )}
         />
       </PopoverTrigger>
@@ -71,7 +74,7 @@ export function LanguagePicker({ className }: { className?: string }) {
       <PopoverContent
         align="end"
         sideOffset={8}
-        className="w-44 gap-0 p-1"
+        className="w-48 gap-0 rounded-xl border-border p-1.5 shadow-sm"
       >
         <div role="menu" aria-label="Select language">
           {SUPPORTED_LOCALES.map((loc) => {
@@ -83,16 +86,16 @@ export function LanguagePicker({ className }: { className?: string }) {
                 aria-current={isActive ? "true" : undefined}
                 onClick={() => handleSelect(loc)}
                 className={cn(
-                  "flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  "flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   isActive
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    ? "bg-muted text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
                 <span className="text-base leading-none">
                   {LOCALE_FLAGS[loc]}
                 </span>
-                <span className="flex-1 text-left font-medium">
+                <span className="flex-1 text-left">
                   {LOCALE_LABELS[loc]}
                 </span>
                 {isActive && (
