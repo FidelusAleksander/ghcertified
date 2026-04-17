@@ -14,8 +14,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { CheckCircle, Menu, X, LogIn, LogOut } from "lucide-react";
+import { CheckCircle, Menu, X, LogOut } from "lucide-react";
 import { GitHubStarButton } from "@/components/GitHubStarButton";
+import { GitHubMark } from "@/components/GitHubMark";
 import { LanguagePicker } from "@/components/LanguagePicker";
 import { useAuth } from "@/components/AuthProvider";
 import { Button } from "@/components/ui/button";
@@ -89,7 +90,7 @@ function SignInButton({ className }: { className?: string }) {
       disabled={loading}
       className={cn("gap-1.5 rounded-[9px] text-[13px] font-semibold", className)}
     >
-      <LogIn className="size-3.5" />
+      <GitHubMark className="size-3.5" />
       {t("signIn")}
     </Button>
   );

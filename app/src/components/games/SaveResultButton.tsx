@@ -15,8 +15,9 @@ import {
   getMinimumCorrectToSave,
   isResultEligibleToSave,
 } from "@/lib/game-result-save-policy";
+import { GitHubMark } from "@/components/GitHubMark";
 import { Button } from "@/components/ui/button";
-import { LogIn, Save, Check, AlertCircle } from "lucide-react";
+import { Save, Check, AlertCircle } from "lucide-react";
 import type { GameResult, GameType } from "@/types/games";
 
 const PENDING_RESULT_KEY = "ghcertified_pending_result";
@@ -128,7 +129,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
         variant="outline"
         className="w-full rounded-[9px] text-[14px] font-semibold"
       >
-        <LogIn className="size-4" />
+        <GitHubMark />
         {t("signInToSave")}
       </Button>
     );
@@ -170,7 +171,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
         variant="outline"
         className="w-full rounded-[9px] text-[14px] font-semibold"
       >
-        <LogIn className="size-4" />
+        <GitHubMark />
         {t("signInToSave")}
       </Button>
     );
