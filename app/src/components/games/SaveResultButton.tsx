@@ -100,16 +100,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
   };
 
   if (!available) {
-    return (
-      <Button
-        disabled
-        variant="outline"
-        className="w-full rounded-[9px] text-[14px] font-semibold"
-      >
-        <AlertCircle className="size-4" />
-        {t("saveUnavailable")}
-      </Button>
-    );
+    return null;
   }
 
   if (!isEligible) {
@@ -178,16 +169,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
   }
 
   if (saveResult?.status === "unavailable") {
-    return (
-      <Button
-        disabled
-        variant="outline"
-        className="w-full rounded-[9px] text-[14px] font-semibold"
-      >
-        <AlertCircle className="size-4" />
-        {t("saveUnavailable")}
-      </Button>
-    );
+    return null;
   }
 
   if (saveResult?.status === "ineligible") {

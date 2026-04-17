@@ -165,7 +165,6 @@
     "resultSaved": "Result saved!",
     "saveFailed": "Failed to save result",
     "retrySave": "Retry save",
-    "saveUnavailable": "Configure Supabase to save results",
     "saveThresholdNotMet": "Score {count}+ required to save"
   },
   "Gauntlet": {
