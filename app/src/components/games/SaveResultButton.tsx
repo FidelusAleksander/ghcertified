@@ -50,7 +50,7 @@ export function consumePendingResult(): {
 }
 
 export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
-  const { user, signIn, loading: authLoading } = useAuth();
+  const { available, user, signIn, loading: authLoading } = useAuth();
   const t = useTranslations("Games");
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -71,7 +71,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
 
   const handleSignIn = () => {
     storePendingResult(gameType, result);
-    signIn();
+    void signIn();
   };
 
   if (saved) {
@@ -99,6 +99,19 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
           {t("saveResult")}
         </Button>
       </div>
+    );
+  }
+
+  if (!available) {
+    return (
+      <Button
+        disabled
+        variant="outline"
+        className="w-full rounded-[9px] text-[14px] font-semibold"
+      >
+        <AlertCircle className="size-4" />
+        {t("saveUnavailable")}
+      </Button>
     );
   }
 

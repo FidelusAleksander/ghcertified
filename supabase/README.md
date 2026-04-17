@@ -1,8 +1,8 @@
 # Supabase Database Setup
 
-This directory contains the database schema and migrations for the ghcertified app.
+This directory contains Supabase setup notes for the ghcertified app.
 
-All SQL is stored as code so any contributor can recreate the full database from scratch.
+Project-specific SQL files are intentionally kept in a local gitignored directory so they do not get committed with the open-source repo.
 
 ## Prerequisites
 
@@ -114,21 +114,23 @@ The `/**` wildcard is required because the app redirects back to the exact page 
 
 ## Applying Migrations
 
-Run migrations in order via the Supabase SQL Editor (Dashboard → SQL Editor) or using the Supabase CLI:
+Run your local SQL files in order via the Supabase SQL Editor (Dashboard → SQL Editor) or using the Supabase CLI:
 
 ```bash
-# Via SQL Editor: paste contents of each file
+# Via SQL Editor: paste contents of your local files
 
 # Via CLI (if using Supabase CLI locally):
 supabase db push
 ```
 
-### Migration files
+Recommended local-only paths:
 
 | File | Description |
 |------|-------------|
-| `migrations/001_game_results.sql` | Game results table, indexes, and RLS policies |
-| `seed.sql` | Optional sample data for local development |
+| `.local/supabase/migrations/001_game_results.sql` | Game results table, indexes, and RLS policies |
+| `.local/supabase/seed.sql` | Optional sample data for local development |
+
+These files are gitignored on purpose. Keep your own local copy there if you want versioned SQL without committing it.
 
 ## Environment Variables
 
@@ -138,6 +140,8 @@ Add these to your `.env.local` in the `app/` directory:
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_your-key-here
 ```
+
+If these values are missing, the site can still run locally for normal browsing and gameplay, but GitHub sign-in and result saving stay unavailable until Supabase is configured.
 
 ## Schema Overview
 

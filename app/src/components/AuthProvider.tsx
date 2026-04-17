@@ -17,11 +17,12 @@ import {
   type ReactNode,
 } from "react";
 import type { User, Session } from "@supabase/supabase-js";
-import { getSupabase } from "@/lib/supabase";
+import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
 import { consumePendingResult } from "@/components/games/SaveResultButton";
 import { saveGameResult } from "@/lib/save-result";
 
 interface AuthContextValue {
+  available: boolean;
   user: User | null;
   session: Session | null;
   loading: boolean;
@@ -32,11 +33,16 @@ interface AuthContextValue {
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
+  const available = hasSupabaseConfig();
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(available);
 
   useEffect(() => {
+    if (!available) {
+      return;
+    }
+
     const supabase = getSupabase();
 
     // Get initial session
@@ -64,23 +70,33 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
 
     return () => subscription.unsubscribe();
-  }, []);
+  }, [available]);
 
   const signIn = useCallback(async () => {
+    if (!available) {
+      return;
+    }
+
     await getSupabase().auth.signInWithOAuth({
       provider: "github",
       options: {
         redirectTo: window.location.href,
       },
     });
-  }, []);
+  }, [available]);
 
   const signOut = useCallback(async () => {
+    if (!available) {
+      return;
+    }
+
     await getSupabase().auth.signOut();
-  }, []);
+  }, [available]);
 
   return (
-    <AuthContext.Provider value={{ user, session, loading, signIn, signOut }}>
+    <AuthContext.Provider
+      value={{ available, user, session, loading, signIn, signOut }}
+    >
       {children}
     </AuthContext.Provider>
   );

@@ -6,7 +6,7 @@
  */
 
 import type { GameResult, GameType } from "@/types/games";
-import { getSupabase } from "@/lib/supabase";
+import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
 
 interface SaveResultResponse {
   success: boolean;
@@ -17,6 +17,13 @@ export async function saveGameResult(
   gameType: GameType,
   result: GameResult,
 ): Promise<SaveResultResponse> {
+  if (!hasSupabaseConfig()) {
+    return {
+      success: false,
+      error: "Saving is unavailable until Supabase is configured.",
+    };
+  }
+
   const supabase = getSupabase();
 
   const {

@@ -4,3 +4,16 @@ app/out/
 .DS_Store
 nohup.out
 .playwright-mcp/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+app/.env
+app/.env.*
+!app/.env.example
+
+# Local/private Supabase SQL artifacts
+.local/
+supabase/migrations/
+supabase/seed.sql

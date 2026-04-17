@@ -162,7 +162,8 @@
     "saveResult": "Save Result",
     "signInToSave": "Sign in with GitHub to save",
     "resultSaved": "Result saved!",
-    "saveFailed": "Failed to save result"
+    "saveFailed": "Failed to save result",
+    "saveUnavailable": "Configure Supabase to save results"
   },
   "Gauntlet": {
     "questionCounter": "Q{current}",

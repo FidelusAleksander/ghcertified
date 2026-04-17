@@ -76,14 +76,16 @@ function UserMenu() {
 
 /** Sign-in button — shown when not authenticated. */
 function SignInButton({ className }: { className?: string }) {
-  const { signIn, loading } = useAuth();
+  const { available, signIn, loading } = useAuth();
   const t = useTranslations("Nav");
+
+  if (!available) return null;
 
   return (
     <Button
       variant="outline"
       size="sm"
-      onClick={signIn}
+      onClick={() => void signIn()}
       disabled={loading}
       className={cn("gap-1.5 rounded-[9px] text-[13px] font-semibold", className)}
     >
@@ -97,7 +99,7 @@ export function Navbar() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("Nav");
-  const { user, loading } = useAuth();
+  const { available, user, loading } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
@@ -148,7 +150,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-3 ml-auto">
           <LanguagePicker />
           <GitHubStarButton />
-          {!loading && (user ? <UserMenu /> : <SignInButton />)}
+          {available && !loading && (user ? <UserMenu /> : <SignInButton />)}
         </div>
 
         {/* Mobile hamburger */}
@@ -199,7 +201,7 @@ export function Navbar() {
               <GitHubStarButton className="text-xs" />
             </div>
             {/* Mobile auth */}
-            {!loading && (
+            {available && !loading && (
               <div className="mt-3 pt-3 border-t border-border">
                 {user ? (
                   <UserMenu />
