@@ -157,7 +157,7 @@
     "suggestChallengeButton": "Suggest a Challenge →",
     "voteOnIdeas": "Vote on Ideas →",
     "community": "Community",
-    "suggestRule1": "Propose a new game mode via the issue form",
+    "suggestRule1": "Propose a new game mode via GitHub Discussions",
     "suggestRule2": "Vote on existing ideas with reactions",
     "suggestRule3": "Top-voted suggestions get built next",
     "play": "Play →",
