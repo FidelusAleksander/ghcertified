@@ -6,6 +6,7 @@
  */
 
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import { LeaderboardPage } from "./leaderboard-page";
@@ -44,7 +45,9 @@ export default async function FullLeaderboardRoute({ params }: Props) {
         </p>
       </div>
 
-      <LeaderboardPage locale={locale} />
+      <Suspense>
+        <LeaderboardPage locale={locale} />
+      </Suspense>
     </div>
   );
 }
