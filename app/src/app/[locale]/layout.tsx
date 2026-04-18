@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getMessages } from "next-intl/server";
 import { SUPPORTED_LOCALES } from "@/lib/locales";
 import { Navbar } from "@/components/Navbar";
+import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Footer } from "@/components/Footer";
 import { AuthProvider } from "@/components/AuthProvider";
 
@@ -34,6 +35,7 @@ export default async function LocaleLayout({ params, children }: Props) {
             __html: `document.documentElement.lang="${locale}"`,
           }}
         />
+        <AnnouncementBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

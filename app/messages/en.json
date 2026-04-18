@@ -1,4 +1,10 @@
 {
+  "AnnouncementBanner": {
+    "new": "New!",
+    "message": "Challenge Modes are here — compete in Gauntlet & Time Trial with global leaderboards.",
+    "cta": "Try it now →",
+    "dismiss": "Dismiss"
+  },
   "Nav": {
     "practiceTests": "Practice Tests",
     "openMenu": "Open menu",
