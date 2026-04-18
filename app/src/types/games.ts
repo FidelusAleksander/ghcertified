@@ -18,6 +18,7 @@ export interface LeaderboardEntry {
   githubUsername: string;
   avatarUrl?: string;
   score: number;
+  achievedAt?: string;
 }
 
 /** Identifies a game type for leaderboard queries. */

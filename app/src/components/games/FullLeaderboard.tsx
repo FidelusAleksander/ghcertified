@@ -5,6 +5,7 @@
  *
  * Top 3 get a visual podium section. Remaining entries (#4+) displayed
  * in a card with alternating row backgrounds and load-more pagination.
+ * Shows when each high score was achieved.
  */
 
 import { useCallback, useEffect, useState } from "react";
@@ -27,6 +28,18 @@ interface FullLeaderboardProps {
 }
 
 type Status = "idle" | "loading" | "ready" | "empty" | "error" | "unavailable";
+
+/* ── Date formatting ────────────────────────────────────────────────── */
+
+/** Format achieved_at as a short date (e.g. "Jan 5, 2026"). */
+function formatAchievedAt(iso: string | undefined): string {
+  if (!iso) return "";
+  return new Date(iso).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
 
 /* ── Podium ─────────────────────────────────────────────────────────── */
 
@@ -71,7 +84,6 @@ const PODIUM_CONFIG: Record<number, {
 function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; currentUsername?: string | null }) {
   if (entries.length === 0) return null;
 
-  // Pad to 3 so layout stays stable even with <3 entries
   const padded = [entries[0], entries[1] ?? null, entries[2] ?? null];
 
   return (
@@ -110,6 +122,11 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
                 <div className="text-[12px] font-bold tabular-nums text-muted-foreground">
                   {entry.score}
                 </div>
+                {entry.achievedAt && (
+                  <div className="text-[10px] text-muted-foreground/60 mt-0.5">
+                    {formatAchievedAt(entry.achievedAt)}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -129,7 +146,7 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
   return (
     <div
       className={cn(
-        "grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[3rem_1fr_4rem_2rem] items-center gap-3 px-4 py-2.5 transition-colors",
+        "grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[3rem_1fr_4rem_5.5rem_2rem] items-center gap-3 px-4 py-2.5 transition-colors",
         isCurrentUser
           ? "bg-primary/5 hover:bg-primary/10"
           : "even:bg-muted/30 hover:bg-muted/50",
@@ -172,6 +189,11 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
       {/* Score */}
       <span className="text-[14px] font-bold tabular-nums text-foreground text-right">
         {entry.score}
+      </span>
+
+      {/* Achieved date */}
+      <span className="hidden sm:block text-[12px] text-muted-foreground text-right tabular-nums">
+        {formatAchievedAt(entry.achievedAt)}
       </span>
 
       {/* GitHub link */}
@@ -265,10 +287,11 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
       {restEntries.length > 0 && (
         <Card className="overflow-hidden">
           {/* Table header */}
-          <div className="hidden sm:grid grid-cols-[3rem_1fr_4rem_2rem] items-center gap-3 px-4 py-2 text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground border-b bg-muted/40">
+          <div className="hidden sm:grid grid-cols-[3rem_1fr_4rem_5.5rem_2rem] items-center gap-3 px-4 py-2 text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground border-b bg-muted/40">
             <span>{t("rank")}</span>
             <span>{t("player")}</span>
             <span className="text-right">{t("score")}</span>
+            <span className="text-right">{t("achievedAt")}</span>
             <span />
           </div>
 
@@ -336,7 +359,7 @@ function LeaderboardSkeleton() {
         {Array.from({ length: 6 }).map((_, i) => (
           <div
             key={i}
-            className="grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[3rem_1fr_4rem_2rem] items-center gap-3 px-4 py-2.5"
+            className="grid grid-cols-[2.5rem_1fr_auto] sm:grid-cols-[3rem_1fr_4rem_5.5rem_2rem] items-center gap-3 px-4 py-2.5"
           >
             <Skeleton className="size-7 rounded-full mx-auto" />
             <div className="flex items-center gap-2.5">
@@ -344,6 +367,7 @@ function LeaderboardSkeleton() {
               <Skeleton className="h-4 w-24" />
             </div>
             <Skeleton className="h-4 w-8 ml-auto" />
+            <Skeleton className="hidden sm:block h-3 w-12 ml-auto" />
             <Skeleton className="hidden sm:block h-4 w-4" />
           </div>
         ))}

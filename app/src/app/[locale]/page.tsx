@@ -6,11 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, ArrowRight, Swords } from "lucide-react";
+import { Play, ArrowRight, Swords, BookOpen, Trophy, Timer, Flame, Check } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import { parseSupportedLocale } from "@/lib/questions";
-import { CERT_META } from "@/lib/cert-meta";
 import { getContributors } from "@/lib/contributors";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 
@@ -40,23 +39,14 @@ export async function generateMetadata({
 }
 
 /**
- * Homepage — hero section + certification tracks preview.
- * Two-column layout: left (copy + CTA) + right (mock quiz card).
+ * Homepage — hero, two paths (practice tests + challenge modes), and contributors.
  */
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
-  const tCert = await getTranslations("CertDescriptions");
   const catalog = getCertCatalog(parseSupportedLocale(locale));
-  const certifications = catalog.map((c) => ({
-    id: c.cert,
-    name: c.title,
-    questions: c.questionCount,
-    desc: tCert(c.cert),
-    ...CERT_META[c.cert],
-  }));
-  const totalQuestions = certifications.reduce((sum, c) => sum + c.questions, 0);
+  const totalQuestions = catalog.reduce((sum, c) => sum + c.questionCount, 0);
   const contributors = await getContributors();
 
   const jsonLd = {
@@ -116,8 +106,8 @@ export default async function HomePage({ params }: Props) {
               <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statQuestions")}</div>
             </div>
             <div className="text-center sm:text-left">
-              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">5</div>
-              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statTracks")}</div>
+              <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">2</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statChallengeModes")}</div>
             </div>
             <div className="text-center sm:text-left">
               <div className="font-display text-[24px] sm:text-[28px] font-bold text-primary tracking-tight">{t("statFree")}</div>
@@ -178,47 +168,81 @@ export default async function HomePage({ params }: Props) {
         </div>
       </div>
 
-      {/* Certification tracks section */}
-      <div className="mt-2 sm:mt-6">
+      {/* Two Paths section — Practice Tests & Challenge Modes */}
+      <div className="mt-12 sm:mt-16">
         <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
-          {t("tracksLabel")}
+          {t("twoPathsLabel")}
         </div>
-        <div className="flex items-end justify-between mb-8 sm:mb-10 gap-4 flex-wrap">
-          <div>
-            <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-              {t("tracksTitle1")}<br />{t("tracksTitle2")}
-            </h2>
-            <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
-              {t("tracksDescription")}
-            </p>
-          </div>
-        </div>
+        <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground mb-8 sm:mb-10">
+          {t("twoPathsTitle1")}<br />{t("twoPathsTitle2")}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Practice Tests card */}
+          <Card className="bg-primary-soft/40 border-primary/15">
+            <CardContent className="p-6 sm:p-7 flex flex-col gap-5 h-full">
+              <div className="flex items-center gap-3.5">
+                <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-primary">
+                  <BookOpen className="text-primary-foreground size-5" />
+                </div>
+                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("practiceTestsTitle")}</div>
+              </div>
+              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("practiceTestsDescription")}</p>
+              <ul className="flex flex-col gap-2 flex-1">
+                {(["practiceTestsHighlight1", "practiceTestsHighlight2", "practiceTestsHighlight3"] as const).map((key) => (
+                  <li key={key} className="flex items-center gap-2.5 text-[13.5px] text-foreground">
+                    <Check className="size-4 text-primary flex-shrink-0" />
+                    {t(key)}
+                  </li>
+                ))}
+              </ul>
+              <Button
+                variant="outline"
+                render={<Link href={`/${locale}/practice-tests`} />}
+                nativeButton={false}
+                className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-semibold w-fit"
+              >
+                {t("browseTests")}
+                <ArrowRight className="size-3.5" />
+              </Button>
+            </CardContent>
+          </Card>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {certifications.map((cert) => (
-            <Link key={cert.id} href={`/${locale}/practice-tests/${cert.id}`} className="group no-underline">
-              <Card className="transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5 cursor-pointer bg-card h-full">
-                <CardContent className="p-6 flex flex-col gap-4 h-full">
-                  <div className="flex items-center gap-3.5">
-                    <div className={`size-12 rounded-xl flex items-center justify-center flex-shrink-0 ${cert.colorClass}`}>
-                      {cert.icon}
-                    </div>
-                    <div>
-                      <div className="font-display text-[17px] font-bold text-foreground tracking-tight">{cert.name}</div>
-                      <div className="text-xs text-muted-foreground mt-0.5">{t("questionsCount", { count: cert.questions })}</div>
-                    </div>
-                  </div>
-                  <div className="text-[13.5px] text-muted-foreground leading-relaxed flex-1">{cert.desc}</div>
-                  <div className="flex items-center gap-1.5 text-[13px] font-semibold text-primary">
-                    {t("startPracticingCard")}
-                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+          {/* Challenge Modes card */}
+          <Card className="bg-destructive-soft/40 border-destructive/15">
+            <CardContent className="p-6 sm:p-7 flex flex-col gap-5 h-full">
+              <div className="flex items-center gap-3.5">
+                <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-foreground">
+                  <Swords className="text-card size-5" />
+                </div>
+                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("challengeModesTitle")}</div>
+              </div>
+              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("challengeModesDescription")}</p>
+              <ul className="flex flex-col gap-2 flex-1">
+                {([
+                  { key: "challengeModesHighlight1" as const, icon: <Flame className="size-4 text-destructive flex-shrink-0" /> },
+                  { key: "challengeModesHighlight2" as const, icon: <Timer className="size-4 text-warning flex-shrink-0" /> },
+                  { key: "challengeModesHighlight3" as const, icon: <Trophy className="size-4 text-primary flex-shrink-0" /> },
+                ]).map(({ key, icon }) => (
+                  <li key={key} className="flex items-center gap-2.5 text-[13.5px] text-foreground">
+                    {icon}
+                    {t(key)}
+                  </li>
+                ))}
+              </ul>
+              <Button
+                variant="outline"
+                render={<Link href={`/${locale}/games`} />}
+                nativeButton={false}
+                className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-semibold w-fit"
+              >
+                {t("playChallenges")}
+                <ArrowRight className="size-3.5" />
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
+
       {/* Contributors section */}
       {contributors.length > 0 && (
         <div className="mt-16 sm:mt-24">

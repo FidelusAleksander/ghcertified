@@ -13,6 +13,7 @@ interface LeaderboardRow {
   github_username: string;
   avatar_url: string | null;
   score: number;
+  achieved_at: string;
 }
 
 /**
@@ -28,7 +29,7 @@ export async function getLeaderboard(
 
   const { data, error } = await getSupabase()
     .from("game_leaderboard_entries")
-    .select("github_username, avatar_url, score")
+    .select("github_username, avatar_url, score, achieved_at")
     .eq("game_type", gameType)
     .order("score", { ascending: false })
     .order("achieved_at", { ascending: true })
@@ -45,6 +46,7 @@ export async function getLeaderboard(
     githubUsername: entry.github_username,
     avatarUrl: entry.avatar_url ?? undefined,
     score: entry.score,
+    achievedAt: entry.achieved_at,
   }));
 }
 
@@ -72,7 +74,7 @@ export async function getLeaderboardPage(
 
   const { data, error, count } = await getSupabase()
     .from("game_leaderboard_entries")
-    .select("github_username, avatar_url, score", { count: "exact" })
+    .select("github_username, avatar_url, score, achieved_at", { count: "exact" })
     .eq("game_type", gameType)
     .order("score", { ascending: false })
     .order("achieved_at", { ascending: true })
@@ -89,6 +91,7 @@ export async function getLeaderboardPage(
     githubUsername: entry.github_username,
     avatarUrl: entry.avatar_url ?? undefined,
     score: entry.score,
+    achievedAt: entry.achieved_at,
   }));
 
   return { entries, totalCount: count ?? 0 };
