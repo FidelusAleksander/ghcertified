@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, ArrowRight, Swords, BookOpen, Trophy, Timer, Flame, Check } from "lucide-react";
+import { Play, Swords, Trophy, Timer, Flame, Heart } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import { parseSupportedLocale } from "@/lib/questions";
@@ -116,128 +115,118 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
 
-        {/* Right column: mock quiz card (hidden on mobile, stays English — decorative) */}
-        <div className="relative hidden lg:block">
-          {/* Floating mini results map */}
-          <Card className="absolute -top-4 -right-3 z-10 shadow-md rotate-3">
-            <CardContent className="px-3.5 py-3 flex flex-col gap-2">
-              <div className="flex items-center justify-between gap-4">
-                <div className="text-[10px] font-bold tracking-wide uppercase text-muted-foreground">Results</div>
-                <div className="font-display text-lg font-bold text-foreground">90%</div>
+        {/* Right column: three layered cards — question, leaderboard, challenges (hidden on mobile, decorative) */}
+        <div className="relative hidden lg:block h-[440px]">
+          {/* Layer 1 (back, bottom-left): Challenge Modes compact */}
+          <Card className="absolute bottom-0 left-0 right-12 z-0 shadow-lg rounded-[20px] rotate-1 border-[1.5px]">
+            <CardContent className="px-5 py-4">
+              <div className="flex items-center gap-2 mb-3">
+                <Swords className="size-4 text-foreground" />
+                <span className="font-display text-[12px] font-extrabold tracking-tight text-foreground">{t("heroChallengeModes")}</span>
               </div>
-              <div className="grid grid-cols-5 gap-1.5">
-                {[1,2,3,4,5,6,7,8,9,10].map((n) => {
-                  const correct = n !== 3;
-                  return (
-                    <div key={n} className={`size-6 rounded-md text-[9px] font-bold border flex items-center justify-center ${correct ? "bg-success/15 border-success/50 text-success" : "bg-destructive/15 border-destructive/50 text-destructive"}`}>{n}</div>
-                  );
-                })}
+
+              <div className="flex flex-col gap-2">
+                {/* Gauntlet row */}
+                <div className="flex items-center gap-3 rounded-lg border border-destructive/20 bg-destructive/5 px-3 py-2">
+                  <Flame className="size-3.5 text-destructive shrink-0" />
+                  <span className="text-[11px] font-bold text-foreground">{t("heroGauntlet")}</span>
+                  <div className="flex items-center gap-0.5 ml-auto">
+                    {[1,2,3].map((i) => (
+                      <Heart key={i} className="size-2.5 text-destructive fill-destructive" />
+                    ))}
+                    {[4,5].map((i) => (
+                      <Heart key={i} className="size-2.5 text-muted-foreground/25" />
+                    ))}
+                  </div>
+                  <Separator orientation="vertical" className="h-3.5 mx-0.5" />
+                  <span className="text-[10px] text-muted-foreground">{t("heroStreak")}</span>
+                  <span className="font-display text-[13px] font-extrabold tabular-nums text-foreground">12</span>
+                </div>
+
+                {/* Time Trial row */}
+                <div className="flex items-center gap-3 rounded-lg border border-primary/20 bg-primary/5 px-3 py-2">
+                  <Timer className="size-3.5 text-primary shrink-0" />
+                  <span className="text-[11px] font-bold text-foreground">{t("heroTimeTrial")}</span>
+                  <div className="flex items-center gap-1.5 ml-auto flex-1 max-w-[80px]">
+                    <div className="flex-1 h-1.5 rounded-full bg-muted overflow-hidden">
+                      <div className="h-full w-[65%] rounded-full bg-primary" />
+                    </div>
+                    <span className="text-[10px] font-bold tabular-nums text-foreground">0:42</span>
+                  </div>
+                  <Separator orientation="vertical" className="h-3.5 mx-0.5" />
+                  <span className="text-[10px] text-muted-foreground">{t("heroScore")}</span>
+                  <span className="font-display text-[13px] font-extrabold tabular-nums text-foreground">8</span>
+                </div>
               </div>
             </CardContent>
           </Card>
-          <Card className="shadow-xl rounded-[20px] relative -rotate-1 transition-transform hover:rotate-0 hover:shadow-2xl">
-            <CardContent className="p-7">
-              <div className="flex items-center gap-3 mb-6">
-                <Badge className="bg-foreground text-card hover:bg-foreground font-display text-[11px] font-bold tracking-wide">ACTIONS</Badge>
-                <Progress value={42} className="flex-1 h-1.5" />
-                <span className="text-xs font-semibold text-muted-foreground whitespace-nowrap">Q3 of 15</span>
+
+          {/* Layer 2 (middle): Main question card */}
+          <Card className="absolute top-4 left-2 right-2 z-[5] shadow-xl rounded-[20px] -rotate-1 transition-transform hover:rotate-0 hover:shadow-2xl border-[1.5px]">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Badge className="bg-foreground text-card hover:bg-foreground font-display text-[10px] font-bold tracking-wide">ACTIONS</Badge>
+                <span className="text-[11px] font-semibold text-muted-foreground ml-auto">Q3 / 15</span>
               </div>
-              <p className="text-[14.5px] font-medium text-foreground leading-relaxed mb-4">
-                Q3: You can use <code className="font-mono text-[12.5px] bg-muted px-1.5 py-0.5 rounded">permissions</code> to modify the <code className="font-mono text-[12.5px] bg-muted px-1.5 py-0.5 rounded">GITHUB_TOKEN</code> permissions on: <em className="not-italic text-muted-foreground">(Select two.)</em>
+              <p className="text-[13px] font-medium text-foreground leading-relaxed mb-4">
+                {t("heroMockQuestion")}
               </p>
-              <div className="flex flex-col gap-2">
-                {["Workflow level", "Step level", "Job level"].map((opt, i) => (
-                  <div key={i} className={`flex items-center gap-3 px-3.5 py-2.5 border-[1.5px] rounded-[10px] text-sm ${i === 0 || i === 2 ? "border-success bg-success-soft" : "border-destructive bg-destructive-soft"}`}>
-                    <div className={`size-[18px] rounded-full border-2 flex items-center justify-center flex-shrink-0 ${i === 0 || i === 2 ? "border-success bg-success" : "border-destructive bg-destructive"}`}>
-                      <div className="size-2 rounded-full bg-card" />
+              <div className="flex flex-col gap-1.5 mb-4">
+                {[
+                  { label: t("heroMockAnswer1"), correct: true },
+                  { label: t("heroMockAnswer2"), correct: false },
+                  { label: t("heroMockAnswer3"), correct: true },
+                ].map((opt) => (
+                  <div key={opt.label} className={`flex items-center gap-2.5 px-3 py-2 border-[1.5px] rounded-[10px] text-[12px] font-medium ${opt.correct ? "border-success bg-success/10 text-success" : "border-destructive bg-destructive/10 text-destructive"}`}>
+                    <div className={`size-4 rounded-full border-[1.5px] flex items-center justify-center shrink-0 ${opt.correct ? "border-success bg-success" : "border-destructive bg-destructive"}`}>
+                      <div className="size-1.5 rounded-full bg-white" />
                     </div>
-                    {opt}
+                    {opt.label}
                   </div>
                 ))}
               </div>
-              <div className="mt-4 p-3 bg-destructive-soft border border-destructive/30 rounded-[10px] text-[13px] leading-relaxed text-destructive">
-                <strong>❌ Incorrect.</strong> The <code className="font-mono text-[12.5px] bg-destructive/10 px-1 rounded">permissions</code> key can be set at the workflow or job level — not the step level.
-              </div>
-              <Separator className="mt-5 mb-0" />
-              <div className="flex items-center justify-between pt-4">
-                <span className="text-[13px] font-semibold text-muted-foreground">← Back</span>
-                <span className="inline-flex items-center rounded-lg bg-foreground px-4 py-2 text-[13px] font-semibold text-card">Next question →</span>
+
+              {/* Result map strip */}
+              <div className="flex items-center gap-1">
+                {[true,true,false,true,true,true,true,true,true,false,true,true,true,true,true].map((correct, i) => (
+                  <div
+                    key={i}
+                    className={`size-4 rounded text-[7px] font-bold border flex items-center justify-center ${
+                      correct
+                        ? "bg-success/15 border-success/40 text-success"
+                        : "bg-destructive/15 border-destructive/40 text-destructive"
+                    }`}
+                  >
+                    {i + 1}
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
-        </div>
-      </div>
 
-      {/* Two Paths section — Practice Tests & Challenge Modes */}
-      <div className="mt-12 sm:mt-16">
-        <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
-          {t("twoPathsLabel")}
-        </div>
-        <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground mb-8 sm:mb-10">
-          {t("twoPathsTitle1")}<br />{t("twoPathsTitle2")}
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Practice Tests card */}
-          <Card className="bg-primary-soft/40 border-primary/15">
-            <CardContent className="p-6 sm:p-7 flex flex-col gap-5 h-full">
-              <div className="flex items-center gap-3.5">
-                <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-primary">
-                  <BookOpen className="text-primary-foreground size-5" />
-                </div>
-                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("practiceTestsTitle")}</div>
+          {/* Layer 3 (front, top-right): Leaderboard — always on top */}
+          <Card className="absolute -top-2 -right-1 z-10 shadow-2xl rounded-[16px] rotate-3 transition-transform hover:rotate-2 hover:shadow-2xl border-[1.5px]">
+            <CardContent className="px-4 py-3.5">
+              <div className="flex items-center gap-1.5 mb-2.5">
+                <Trophy className="size-3.5 text-amber-500" />
+                <span className="font-display text-[11px] font-extrabold tracking-tight text-foreground">{t("heroLeaderboard")}</span>
               </div>
-              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("practiceTestsDescription")}</p>
-              <ul className="flex flex-col gap-2 flex-1">
-                {(["practiceTestsHighlight1", "practiceTestsHighlight2", "practiceTestsHighlight3"] as const).map((key) => (
-                  <li key={key} className="flex items-center gap-2.5 text-[13.5px] text-foreground">
-                    <Check className="size-4 text-primary flex-shrink-0" />
-                    {t(key)}
-                  </li>
+              <div className="flex flex-col gap-1.5">
+                {[
+                  { rank: "🥇", name: "Mona", score: 47, color: "bg-amber-500" },
+                  { rank: "🥈", name: "Copilot", score: 38, color: "bg-violet-500" },
+                  { rank: "🥉", name: "Ducky", score: 31, color: "bg-amber-400" },
+                ].map((entry) => (
+                  <div key={entry.name} className="flex items-center gap-2 rounded-md border px-2 py-1">
+                    <span className="text-[11px]">{entry.rank}</span>
+                    <div className={`size-5 rounded-full ${entry.color} flex items-center justify-center text-[9px] font-bold text-white`}>
+                      {entry.name[0]}
+                    </div>
+                    <span className="text-[11px] font-semibold text-foreground flex-1">{entry.name}</span>
+                    <span className="font-display text-[12px] font-extrabold tabular-nums text-foreground">{entry.score}</span>
+                  </div>
                 ))}
-              </ul>
-              <Button
-                variant="outline"
-                render={<Link href={`/${locale}/practice-tests`} />}
-                nativeButton={false}
-                className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-semibold w-fit"
-              >
-                {t("browseTests")}
-                <ArrowRight className="size-3.5" />
-              </Button>
-            </CardContent>
-          </Card>
-
-          {/* Challenge Modes card */}
-          <Card className="bg-destructive-soft/40 border-destructive/15">
-            <CardContent className="p-6 sm:p-7 flex flex-col gap-5 h-full">
-              <div className="flex items-center gap-3.5">
-                <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-foreground">
-                  <Swords className="text-card size-5" />
-                </div>
-                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("challengesTitle")}</div>
               </div>
-              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("challengesDescription")}</p>
-              <ul className="flex flex-col gap-2 flex-1">
-                {([
-                  { key: "challengesHighlight1" as const, icon: <Flame className="size-4 text-destructive flex-shrink-0" /> },
-                  { key: "challengesHighlight2" as const, icon: <Timer className="size-4 text-warning flex-shrink-0" /> },
-                  { key: "challengesHighlight3" as const, icon: <Trophy className="size-4 text-primary flex-shrink-0" /> },
-                ]).map(({ key, icon }) => (
-                  <li key={key} className="flex items-center gap-2.5 text-[13.5px] text-foreground">
-                    {icon}
-                    {t(key)}
-                  </li>
-                ))}
-              </ul>
-              <Button
-                variant="outline"
-                render={<Link href={`/${locale}/challenges`} />}
-                nativeButton={false}
-                className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-semibold w-fit"
-              >
-                {t("playChallenges")}
-                <ArrowRight className="size-3.5" />
-              </Button>
             </CardContent>
           </Card>
         </div>
