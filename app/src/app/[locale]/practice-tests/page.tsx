@@ -42,6 +42,8 @@ export default async function PracticeTestsPage({ params }: Props) {
     questions: c.questionCount,
   }));
 
+  const totalQuestions = certs.reduce((sum, c) => sum + c.questions, 0);
+
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[1.2px] uppercase text-muted-foreground mb-4">
@@ -54,6 +56,9 @@ export default async function PracticeTestsPage({ params }: Props) {
           </h2>
           <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
             {t("description")}
+          </p>
+          <p className="text-[13px] text-muted-foreground/70 mt-1.5 tabular-nums">
+            {t("totalStat", { totalQuestions, certCount: certs.length })}
           </p>
         </div>
       </div>

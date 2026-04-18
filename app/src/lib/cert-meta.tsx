@@ -10,16 +10,22 @@ import type { CertificationType } from "./questions";
 
 export interface CertMeta {
   colorClass: string;
+  borderClass: string;
+  textClass: string;
   icon: React.ReactNode;
 }
 
 export const CERT_META: Record<CertificationType, CertMeta> = {
   actions: {
     colorClass: "bg-cert-actions",
+    borderClass: "border-cert-actions",
+    textClass: "text-cert-actions",
     icon: <Play className="text-primary-foreground" />,
   },
   foundations: {
     colorClass: "bg-cert-foundations",
+    borderClass: "border-cert-foundations",
+    textClass: "text-cert-foundations",
     icon: (
       <svg
         width="24"
@@ -38,14 +44,20 @@ export const CERT_META: Record<CertificationType, CertMeta> = {
   },
   advanced_security: {
     colorClass: "bg-cert-advanced-security",
+    borderClass: "border-cert-advanced-security",
+    textClass: "text-cert-advanced-security",
     icon: <Shield className="text-primary-foreground" />,
   },
   admin: {
     colorClass: "bg-cert-admin",
+    borderClass: "border-cert-admin",
+    textClass: "text-cert-admin",
     icon: <Users className="text-primary-foreground" />,
   },
   copilot: {
     colorClass: "bg-cert-copilot",
+    borderClass: "border-cert-copilot",
+    textClass: "text-cert-copilot",
     icon: <Bot className="text-primary-foreground" />,
   },
 };

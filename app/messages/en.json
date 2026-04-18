@@ -63,13 +63,15 @@
     "label": "Practice Tests",
     "title1": "Choose a",
     "title2": "certification track",
-    "description": "Set the number of questions you want, then jump in. Questions are randomized each session."
+    "description": "Set the number of questions you want, then jump in. Questions are randomized each session.",
+    "totalStat": "{totalQuestions} questions across {certCount} certifications"
   },
   "CatalogCard": {
-    "questionsAvailable": "{count} questions available",
+    "questionsAvailable": "{count} questions",
     "practiceWith": "Number of questions",
-    "start": "Start →",
-    "browseQuestions": "Browse Questions"
+    "start": "Start Practice Test",
+    "browseQuestions": "Browse questions individually",
+    "configure": "Configure & start"
   },
   "QuestionsLibrary": {
     "label": "Question Library",
