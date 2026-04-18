@@ -99,7 +99,7 @@ export function ChallengesCatalog({ locale }: Props) {
         ]}
         leaderboard={gauntletLeaderboard.entries}
         leaderboardStatus={gauntletLeaderboard.status}
-        leaderboardHref={`/${locale}/challenges/leaderboard#gauntlet`}
+        leaderboardHref={`/${locale}/challenges/leaderboard?tab=gauntlet`}
         scoreLabel={t("score")}
         href={`/${locale}/challenges/gauntlet`}
         buttonLabel={t("play")}
@@ -122,7 +122,7 @@ export function ChallengesCatalog({ locale }: Props) {
         ]}
         leaderboard={timeTrialLeaderboard.entries}
         leaderboardStatus={timeTrialLeaderboard.status}
-        leaderboardHref={`/${locale}/challenges/leaderboard#time-trial`}
+        leaderboardHref={`/${locale}/challenges/leaderboard?tab=time-trial`}
         scoreLabel={t("score")}
         href={`/${locale}/challenges/time-trial`}
         buttonLabel={t("play")}

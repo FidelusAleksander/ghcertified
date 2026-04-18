@@ -3,13 +3,14 @@
 /**
  * LeaderboardPage — client component that renders tabbed leaderboards.
  *
- * Reads URL hash on mount to select the correct tab when deep-linked
- * from game results screens (e.g. #time-trial).
+ * Reads `?tab=` search param to select the correct tab when deep-linked
+ * from game results screens (e.g. ?tab=time-trial).
  * Shows sign-in CTA for unauthenticated users to see their rank.
  */
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { FullLeaderboard } from "@/components/challenges/FullLeaderboard";
@@ -27,16 +28,12 @@ const VALID_TABS = ["gauntlet", "time-trial"] as const;
 export function LeaderboardPage({ locale }: Props) {
   const t = useTranslations("Challenges");
   const { available, user, signIn, loading: authLoading } = useAuth();
-  const [activeTab, setActiveTab] = useState<string>("gauntlet");
-
-  // Read URL hash after hydration to select correct tab from deep links
-  useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
-    if (VALID_TABS.includes(hash as (typeof VALID_TABS)[number])) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time init from browser state unavailable at SSR
-      setActiveTab(hash);
-    }
-  }, []);
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab");
+  const initialTab = VALID_TABS.includes(tabParam as (typeof VALID_TABS)[number])
+    ? tabParam!
+    : "gauntlet";
+  const [activeTab, setActiveTab] = useState<string>(initialTab);
 
   const currentUsername = user?.user_metadata?.user_name as string | undefined;
 

@@ -122,7 +122,7 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
               {t("playAgain")}
             </Button>
             <Button
-              render={<Link href={`/${locale}/challenges/leaderboard#gauntlet`} />}
+              render={<Link href={`/${locale}/challenges/leaderboard?tab=gauntlet`} />}
               nativeButton={false}
               variant="outline"
               className="w-full rounded-[9px] text-[14px] font-semibold"

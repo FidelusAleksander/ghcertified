@@ -121,7 +121,7 @@ export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialRes
               {t("playAgain")}
             </Button>
             <Button
-              render={<Link href={`/${locale}/challenges/leaderboard#time-trial`} />}
+              render={<Link href={`/${locale}/challenges/leaderboard?tab=time-trial`} />}
               nativeButton={false}
               variant="outline"
               className="w-full rounded-[9px] text-[14px] font-semibold"
