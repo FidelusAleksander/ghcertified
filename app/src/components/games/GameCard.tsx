@@ -40,6 +40,8 @@ interface GameCardProps {
   secondaryButtonLabel?: string;
   /** If true, secondary link opens in new tab */
   secondaryExternal?: boolean;
+  /** Link to the full leaderboard page */
+  leaderboardHref?: string;
   /** Extra class for the card wrapper */
   className?: string;
   /** If true, uses anchor tag (external link) instead of Next.js Link */
@@ -58,6 +60,7 @@ export function GameCard({
   rules,
   leaderboard,
   leaderboardStatus,
+  leaderboardHref,
   scoreLabel,
   href,
   buttonLabel,
@@ -145,7 +148,17 @@ export function GameCard({
                 {t("leaderboard")}
               </div>
               {leaderboard && leaderboard.length > 0 ? (
-                <Leaderboard entries={leaderboard} scoreLabel={scoreLabel} />
+                <>
+                  <Leaderboard entries={leaderboard} scoreLabel={scoreLabel} />
+                  {leaderboardHref && (
+                    <Link
+                      href={leaderboardHref}
+                      className="block text-center text-[12px] font-semibold text-primary hover:text-primary/80 transition-colors mt-2"
+                    >
+                      {t("viewFullLeaderboard")}
+                    </Link>
+                  )}
+                </>
               ) : (
                 <p className="px-2 py-1.5 text-[13px] text-muted-foreground leading-relaxed">
                   {leaderboardStatus === "loading" ? t("leaderboardLoading")

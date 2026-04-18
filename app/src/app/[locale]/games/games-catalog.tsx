@@ -100,6 +100,7 @@ export function GamesCatalog({ locale }: Props) {
         ]}
         leaderboard={gauntletLeaderboard.entries}
         leaderboardStatus={gauntletLeaderboard.status}
+        leaderboardHref={`/${locale}/games/leaderboard#gauntlet`}
         scoreLabel={t("score")}
         href={`/${locale}/games/gauntlet`}
         buttonLabel={t("play")}
@@ -122,6 +123,7 @@ export function GamesCatalog({ locale }: Props) {
         ]}
         leaderboard={timeTrialLeaderboard.entries}
         leaderboardStatus={timeTrialLeaderboard.status}
+        leaderboardHref={`/${locale}/games/leaderboard#time-trial`}
         scoreLabel={t("score")}
         href={`/${locale}/games/time-trial`}
         buttonLabel={t("play")}

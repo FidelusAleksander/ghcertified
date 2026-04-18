@@ -168,7 +168,16 @@
     "resultSaved": "Result saved!",
     "saveFailed": "Failed to save result",
     "retrySave": "Retry save",
-    "saveThresholdNotMet": "Score {count}+ required to save"
+    "saveThresholdNotMet": "Score {count}+ required to save",
+    "fullLeaderboard": "Leaderboard",
+    "fullLeaderboardDescription": "See who's on top across all game modes.",
+    "viewFullLeaderboard": "View full leaderboard →",
+    "viewLeaderboard": "View Leaderboard",
+    "showingEntries": "Showing {count} of {total}",
+    "loadMore": "Load More",
+    "noMoreEntries": "You've reached the end",
+    "rank": "Rank",
+    "player": "Player"
   },
   "Gauntlet": {
     "questionCounter": "Q{current}",

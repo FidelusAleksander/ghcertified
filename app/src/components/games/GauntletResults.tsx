@@ -13,7 +13,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, RotateCcw, ArrowLeft } from "lucide-react";
+import { Heart, RotateCcw, ArrowLeft, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -34,6 +34,7 @@ function getTier(streak: number) {
 export function GauntletResults({ result, onRestart, saveAction }: GauntletResultsProps) {
   const locale = useLocale();
   const t = useTranslations("Gauntlet");
+  const tGames = useTranslations("Games");
   const animatedStreak = useCountUp(result.correct);
   const tier = getTier(result.correct);
   const accuracy = result.correct + result.wrong > 0
@@ -119,6 +120,15 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
             >
               <RotateCcw data-icon="inline-start" className="size-4" />
               {t("playAgain")}
+            </Button>
+            <Button
+              render={<Link href={`/${locale}/games/leaderboard#gauntlet`} />}
+              nativeButton={false}
+              variant="outline"
+              className="w-full rounded-[9px] text-[14px] font-semibold"
+            >
+              <Trophy data-icon="inline-start" className="size-4" />
+              {tGames("viewLeaderboard")}
             </Button>
             <Button
               render={<Link href={`/${locale}/games`} />}

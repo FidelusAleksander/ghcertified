@@ -13,7 +13,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Timer, RotateCcw, ArrowLeft } from "lucide-react";
+import { Timer, RotateCcw, ArrowLeft, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -34,6 +34,7 @@ function getTier(correct: number) {
 export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialResultsProps) {
   const locale = useLocale();
   const t = useTranslations("TimeTrial");
+  const tGames = useTranslations("Games");
   const animatedCorrect = useCountUp(result.correct);
   const total = result.correct + result.wrong;
   const tier = getTier(result.correct);
@@ -118,6 +119,15 @@ export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialRes
             >
               <RotateCcw data-icon="inline-start" className="size-4" />
               {t("playAgain")}
+            </Button>
+            <Button
+              render={<Link href={`/${locale}/games/leaderboard#time-trial`} />}
+              nativeButton={false}
+              variant="outline"
+              className="w-full rounded-[9px] text-[14px] font-semibold"
+            >
+              <Trophy data-icon="inline-start" className="size-4" />
+              {tGames("viewLeaderboard")}
             </Button>
             <Button
               render={<Link href={`/${locale}/games`} />}
