@@ -28,8 +28,7 @@ interface LoadableLeaderboard {
   status: LeaderboardStatus;
 }
 
-const SUGGEST_FORM_URL = "https://github.com/FidelusAleksander/ghcertified/issues/new?template=game_suggestion.yml";
-const VOTE_URL = "https://github.com/FidelusAleksander/ghcertified/issues?q=state%3Aopen+label%3Agame-suggestion";
+const SUGGEST_DISCUSSION_URL = "https://github.com/FidelusAleksander/ghcertified/discussions/new?category=challenge-ideas";
 
 function toLoadableLeaderboard(
   result: PromiseSettledResult<LeaderboardEntry[]>,
@@ -143,12 +142,9 @@ export function ChallengesCatalog({ locale }: Props) {
           t("suggestRule2"),
           t("suggestRule3"),
         ]}
-        href={SUGGEST_FORM_URL}
+        href={SUGGEST_DISCUSSION_URL}
         external
         buttonLabel={t("suggestChallengeButton")}
-        secondaryHref={VOTE_URL}
-        secondaryExternal
-        secondaryButtonLabel={t("voteOnIdeas")}
         variant="dashed"
       />
     </div>

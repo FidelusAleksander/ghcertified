@@ -1,19 +1,17 @@
-name: "🎮 Game Suggestion"
-description: Suggest a new game mode for the Games section
-title: "[Game Suggestion] "
-labels: ["game-suggestion"]
+title: "[Challenge Idea] "
+labels: ["challenge-idea"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a new game mode! The community votes on suggestions by reacting to them.
-        Browse and vote on existing suggestions: [View open suggestions](https://github.com/FidelusAleksander/ghcertified/issues?q=state%3Aopen+label%3Agame-suggestion)
+        Thanks for suggesting a new challenge mode! The community votes on ideas by upvoting them.
+        Browse existing ideas in the [Challenge Ideas](https://github.com/FidelusAleksander/ghcertified/discussions/categories/challenge-ideas) discussions.
 
   - type: input
     id: name
     attributes:
-      label: Game Name
-      description: What would you call this game mode?
+      label: Challenge Name
+      description: What would you call this challenge mode?
       placeholder: e.g., "Speed Round", "Category Clash"
     validations:
       required: true
@@ -22,7 +20,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Briefly describe the game mode and how it works.
+      description: Briefly describe the challenge mode and how it works.
       placeholder: "Players race to answer as many questions as possible in 5 minutes..."
     validations:
       required: true
@@ -44,7 +42,7 @@ body:
     id: rationale
     attributes:
       label: Why does this fit?
-      description: Why would this game mode be fun or useful for GitHub certification prep?
-      placeholder: "It encourages quick recall and would complement the slower-paced Survival Mode..."
+      description: Why would this challenge mode be fun or useful for GitHub certification prep?
+      placeholder: "It encourages quick recall and would complement the existing Gauntlet mode..."
     validations:
       required: false
