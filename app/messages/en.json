@@ -1,14 +1,12 @@
 {
   "Nav": {
-    "home": "Home",
     "practiceTests": "Practice Tests",
-    "games": "Games",
-    "questions": "Questions",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "signIn": "Sign in",
     "signOut": "Sign out",
-    "userMenu": "User menu"
+    "userMenu": "User menu",
+    "challengeModes": "Challenge Modes"
   },
   "Footer": {
     "tagline": "Community-contributed practice questions for <link>official GitHub Certifications</link>",
@@ -22,7 +20,6 @@
     "heroTitle3": "Certifications.",
     "heroDescription": "Practice with realistic, community-contributed questions across all GitHub certification tracks. Instant feedback, randomized sessions, and focused study — no distractions.",
     "startPracticing": "Take a Practice Test",
-    "browseQuestions": "Browse Questions",
     "contributeQuestions": "Contribute Questions",
     "statQuestions": "Practice questions",
     "statTracks": "Cert tracks",
@@ -38,7 +35,8 @@
     "communityDescription": "This project is shaped by the community. Every question, fix, and improvement comes from people like you.",
     "joinContributors": "Join the contributors →",
     "questionsCount": "{count} questions",
-    "contributorTooltip": "{login} — {count} contributions"
+    "contributorTooltip": "{login} — {count} contributions",
+    "tryChallengeModes": "Try Challenge Modes"
   },
   "PracticeTests": {
     "label": "Practice Tests",
@@ -49,7 +47,8 @@
   "CatalogCard": {
     "questionsAvailable": "{count} questions available",
     "practiceWith": "Number of questions",
-    "start": "Start →"
+    "start": "Start →",
+    "browseQuestions": "Browse Questions"
   },
   "QuestionsLibrary": {
     "label": "Question Library",
@@ -177,7 +176,11 @@
     "loadMore": "Load More",
     "noMoreEntries": "You've reached the end",
     "rank": "Rank",
-    "player": "Player"
+    "player": "Player",
+    "signInToSeeRank": "Sign in with GitHub to see your rank",
+    "yourRank": "You",
+    "gauntletSubtitle": "Survive the longest streak",
+    "timeTrialSubtitle": "Race the clock"
   },
   "Gauntlet": {
     "questionCounter": "Q{current}",

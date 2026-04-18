@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Leaderboard } from "@/components/games/Leaderboard";
+import { Trophy } from "lucide-react";
 
 interface GameCardProps {
   /** Card icon rendered in a colored container */
@@ -153,8 +154,9 @@ export function GameCard({
                   {leaderboardHref && (
                     <Link
                       href={leaderboardHref}
-                      className="block text-center text-[12px] font-semibold text-primary hover:text-primary/80 transition-colors mt-2"
+                      className="mt-2 flex items-center justify-center gap-1 rounded-lg border border-dashed border-muted-foreground/25 py-1.5 text-[12px] font-semibold text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
                     >
+                      <Trophy className="size-3" />
                       {t("viewFullLeaderboard")}
                     </Link>
                   )}

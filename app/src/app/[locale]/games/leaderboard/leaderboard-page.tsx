@@ -5,13 +5,16 @@
  *
  * Reads URL hash on mount to select the correct tab when deep-linked
  * from game results screens (e.g. #time-trial).
+ * Shows sign-in CTA for unauthenticated users to see their rank.
  */
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { FullLeaderboard } from "@/components/games/FullLeaderboard";
 import { Button } from "@/components/ui/button";
+import { FullLeaderboard } from "@/components/games/FullLeaderboard";
+import { useAuth } from "@/components/AuthProvider";
+import { GitHubMark } from "@/components/GitHubMark";
 import { ArrowLeft, Heart, Timer } from "lucide-react";
 import Link from "next/link";
 
@@ -23,6 +26,7 @@ const VALID_TABS = ["gauntlet", "time-trial"] as const;
 
 export function LeaderboardPage({ locale }: Props) {
   const t = useTranslations("Games");
+  const { available, user, signIn, loading: authLoading } = useAuth();
   const [activeTab, setActiveTab] = useState<string>("gauntlet");
 
   // Read URL hash after hydration to select correct tab from deep links
@@ -34,8 +38,28 @@ export function LeaderboardPage({ locale }: Props) {
     }
   }, []);
 
+  const currentUsername = user?.user_metadata?.user_name as string | undefined;
+
   return (
     <div className="space-y-6">
+      {/* Sign-in CTA for unauthenticated users */}
+      {available && !user && !authLoading && (
+        <div className="flex items-center justify-between rounded-xl border border-dashed border-muted-foreground/25 bg-muted/30 px-4 py-3">
+          <span className="text-[13px] text-muted-foreground font-medium">
+            {t("signInToSeeRank")}
+          </span>
+          <Button
+            onClick={() => void signIn()}
+            variant="outline"
+            size="sm"
+            className="rounded-[9px] text-[13px] font-semibold gap-1.5"
+          >
+            <GitHubMark />
+            Sign in
+          </Button>
+        </div>
+      )}
+
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList variant="line" className="w-full">
           <TabsTrigger value="gauntlet" className="flex-1 gap-1.5">
@@ -49,11 +73,13 @@ export function LeaderboardPage({ locale }: Props) {
         </TabsList>
 
         <TabsContent value="gauntlet">
-          <FullLeaderboard gameType="gauntlet" />
+          <p className="text-[13px] text-muted-foreground mb-4 mt-1">{t("gauntletSubtitle")}</p>
+          <FullLeaderboard gameType="gauntlet" currentUsername={currentUsername} />
         </TabsContent>
 
         <TabsContent value="time-trial">
-          <FullLeaderboard gameType="time-trial" />
+          <p className="text-[13px] text-muted-foreground mb-4 mt-1">{t("timeTrialSubtitle")}</p>
+          <FullLeaderboard gameType="time-trial" currentUsername={currentUsername} />
         </TabsContent>
       </Tabs>
 
