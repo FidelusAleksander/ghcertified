@@ -37,12 +37,3 @@ body:
         - Bonus points for streaks
     validations:
       required: false
-
-  - type: textarea
-    id: rationale
-    attributes:
-      label: Why does this fit?
-      description: Why would this challenge mode be fun or useful for GitHub certification prep?
-      placeholder: "It encourages quick recall and would complement the existing Gauntlet mode..."
-    validations:
-      required: false

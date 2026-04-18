@@ -33,9 +33,9 @@ const FEEDBACK_ADVANCE_DELAY = 1200;
 /** Starting time in seconds. */
 export const INITIAL_TIME = 60;
 /** Seconds added for a correct answer. */
-export const CORRECT_BONUS = 10;
+export const CORRECT_BONUS = 15;
 /** Seconds subtracted for a wrong answer. */
-export const WRONG_PENALTY = 15;
+export const WRONG_PENALTY = 10;
 
 export function useTimeTrialMode(allQuestions: Question[]) {
   const makeInitialState = useCallback((): TimeTrialState => ({
