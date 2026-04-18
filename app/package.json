@@ -10,7 +10,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check-i18n": "node scripts/check-i18n.mjs",
     "test": "vitest run"
   },
   "dependencies": {
