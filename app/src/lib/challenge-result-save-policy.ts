@@ -1,8 +1,8 @@
 import type { ChallengeResult, ChallengeType } from "@/types/challenges";
 
 export const GAME_RESULT_MINIMUM_CORRECT_TO_SAVE = {
-  gauntlet: 5,
-  "time-trial": 5,
+  gauntlet: 3,
+  "time-trial": 3,
 } satisfies Record<ChallengeType, number>;
 
 export function getMinimumCorrectToSave(gameType: ChallengeType): number {
