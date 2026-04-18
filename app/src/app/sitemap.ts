@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   // Static paths (no cert param)
-  const staticPaths = ["/", "/practice-tests", "/questions"];
+  const staticPaths = ["/", "/practice-tests"];
 
   for (const path of staticPaths) {
     for (const locale of SUPPORTED_LOCALES) {

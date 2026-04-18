@@ -104,10 +104,8 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/practice-tests`, label: t("practiceTests") },
-    { href: `/${locale}/games`, label: t("games") },
-    { href: `/${locale}/questions`, label: t("questions") },
+    { href: `/${locale}/games`, label: t("challengeModes") },
   ] as const;
 
   return (

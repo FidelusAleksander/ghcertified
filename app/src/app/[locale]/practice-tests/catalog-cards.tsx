@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { CERT_META } from "@/lib/cert-meta";
 
 interface CertData {
@@ -74,6 +75,13 @@ export function CatalogCards({ certs, locale }: Props) {
               >
                 {t("start")}
               </Button>
+              <Link
+                href={`/${locale}/questions/${cert.id}`}
+                className="flex items-center justify-center gap-1.5 text-[13px] font-semibold text-primary no-underline hover:underline"
+              >
+                {t("browseQuestions")}
+                <ArrowRight className="size-3.5" />
+              </Link>
             </CardContent>
           </Card>
         );

@@ -1,8 +1,6 @@
 {
   "Nav": {
-    "home": "Strona główna",
     "practiceTests": "Testy próbne",
-    "questions": "Pytania",
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu"
   },
@@ -18,7 +16,6 @@
     "heroTitle3": "Certyfikacje.",
     "heroDescription": "Praktykuj z realistycznymi pytaniami stworzonymi przez społeczność dla wszystkich ścieżek certyfikacyjnych GitHub. Natychmiastowa informacja zwrotna, losowe sesje i skupiona nauka — bez rozpraszaczy.",
     "startPracticing": "Rozpocznij test próbny",
-    "browseQuestions": "Przeglądaj pytania",
     "contributeQuestions": "Dodaj pytania",
     "statQuestions": "Pytania próbne",
     "statTracks": "Ścieżki certyfikacyjne",

@@ -59,7 +59,7 @@ export default async function CertQuestionsPage({ params }: Props) {
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-4">
-        <Link href={`/${locale}/questions`} className="text-primary no-underline hover:underline">{t("label")}</Link>
+        <Link href={`/${locale}/practice-tests`} className="text-primary no-underline hover:underline">{t("label")}</Link>
         <span>›</span>
         <span>{certInfo.title}</span>
       </div>

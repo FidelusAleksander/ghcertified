@@ -1,8 +1,6 @@
 {
   "Nav": {
-    "home": "Inicio",
     "practiceTests": "Pruebas de práctica",
-    "questions": "Preguntas",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
@@ -18,7 +16,6 @@
     "heroTitle3": "GitHub.",
     "heroDescription": "Practica con preguntas realistas aportadas por la comunidad en todas las rutas de certificación de GitHub. Retroalimentación instantánea, sesiones aleatorias y estudio enfocado, sin distracciones.",
     "startPracticing": "Realizar una prueba de práctica",
-    "browseQuestions": "Explorar preguntas",
     "contributeQuestions": "Contribuir con preguntas",
     "statQuestions": "Preguntas prácticas",
     "statTracks": "Rutas de certificación",

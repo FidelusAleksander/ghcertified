@@ -1,8 +1,6 @@
 {
   "Nav": {
-    "home": "ホーム",
     "practiceTests": "模擬試験",
-    "questions": "質問",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる"
   },
@@ -18,7 +16,6 @@
     "heroTitle3": "認定資格。",
     "heroDescription": "リアルでコミュニティが提供する全GitHub認定資格トラックの問題で練習しましょう。即時のフィードバック、ランダムなセッション、集中勉強—雑念なし。",
     "startPracticing": "模擬試験を受ける",
-    "browseQuestions": "質問を見る",
     "contributeQuestions": "質問を投稿する",
     "statQuestions": "模擬問題",
     "statTracks": "認定トラック",

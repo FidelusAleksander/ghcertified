@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import { Play, ArrowRight, BookOpen } from "lucide-react";
+import { Play, ArrowRight, Swords } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import { parseSupportedLocale } from "@/lib/questions";
@@ -98,12 +98,12 @@ export default async function HomePage({ params }: Props) {
             </Button>
             <Button
               variant="outline"
-              render={<Link href={`/${locale}/questions`} />}
+              render={<Link href={`/${locale}/games`} />}
               nativeButton={false}
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
-              <BookOpen data-icon="inline-start" />
-              {t("browseQuestions")}
+              <Swords data-icon="inline-start" />
+              {t("tryChallengeModes")}
             </Button>
           </div>
 
