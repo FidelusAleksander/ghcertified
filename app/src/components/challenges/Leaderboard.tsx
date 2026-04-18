@@ -7,7 +7,7 @@
  * score, and a link to the user's GitHub profile.
  */
 
-import type { LeaderboardEntry } from "@/types/games";
+import type { LeaderboardEntry } from "@/types/challenges";
 import { useTranslations } from "next-intl";
 import { Trophy } from "lucide-react";
 
@@ -25,7 +25,7 @@ const TROPHY_STYLES: Record<number, string> = {
 };
 
 export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
-  const t = useTranslations("Games");
+  const t = useTranslations("Challenges");
   const label = scoreLabel ?? t("score");
 
   const topEntries = entries.slice(0, MAX_ENTRIES);

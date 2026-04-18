@@ -10,25 +10,25 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useAuth } from "@/components/AuthProvider";
-import { saveGameResult } from "@/lib/save-result";
+import { saveChallengeResult } from "@/lib/save-result";
 import {
   getMinimumCorrectToSave,
   isResultEligibleToSave,
-} from "@/lib/game-result-save-policy";
+} from "@/lib/challenge-result-save-policy";
 import { GitHubMark } from "@/components/GitHubMark";
 import { Button } from "@/components/ui/button";
 import { Save, Check, AlertCircle } from "lucide-react";
-import type { GameResult, GameType } from "@/types/games";
+import type { ChallengeResult, ChallengeType } from "@/types/challenges";
 
 const PENDING_RESULT_KEY = "ghcertified_pending_result";
 
 interface SaveResultButtonProps {
-  gameType: GameType;
-  result: GameResult;
+  gameType: ChallengeType;
+  result: ChallengeResult;
 }
 
 /** Store pending result in sessionStorage before OAuth redirect. */
-export function storePendingResult(gameType: GameType, result: GameResult) {
+export function storePendingResult(gameType: ChallengeType, result: ChallengeResult) {
   try {
     sessionStorage.setItem(
       PENDING_RESULT_KEY,
@@ -41,8 +41,8 @@ export function storePendingResult(gameType: GameType, result: GameResult) {
 
 /** Retrieve and clear pending result after OAuth redirect. */
 export function consumePendingResult(): {
-  gameType: GameType;
-  result: GameResult;
+  gameType: ChallengeType;
+  result: ChallengeResult;
 } | null {
   try {
     const raw = sessionStorage.getItem(PENDING_RESULT_KEY);
@@ -56,9 +56,9 @@ export function consumePendingResult(): {
 
 export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
   const { available, user, signIn, loading: authLoading } = useAuth();
-  const t = useTranslations("Games");
+  const t = useTranslations("Challenges");
   const [saveResult, setSaveResult] = useState<Awaited<
-    ReturnType<typeof saveGameResult>
+    ReturnType<typeof saveChallengeResult>
   > | null>(null);
   const [error, setError] = useState<string | null>(null);
   const autoSaveStarted = useRef(false);
@@ -72,7 +72,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
 
     autoSaveStarted.current = true;
 
-    void saveGameResult(gameType, result).then((response) => {
+    void saveChallengeResult(gameType, result).then((response) => {
       setSaveResult(response);
       setError(response.success ? null : response.error ?? null);
     });
@@ -82,7 +82,7 @@ export function SaveResultButton({ gameType, result }: SaveResultButtonProps) {
     autoSaveStarted.current = true;
     setSaveResult(null);
     setError(null);
-    const response = await saveGameResult(gameType, result);
+    const response = await saveChallengeResult(gameType, result);
     setSaveResult(response);
 
     if (!response.success) {

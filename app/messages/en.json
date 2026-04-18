@@ -1,7 +1,7 @@
 {
   "AnnouncementBanner": {
     "new": "New!",
-    "message": "Challenge Modes are here — compete in Gauntlet & Time Trial with global leaderboards.",
+    "message": "Challenges are here — compete in Gauntlet & Time Trial with global leaderboards.",
     "cta": "Try it now →",
     "dismiss": "Dismiss"
   },
@@ -12,7 +12,7 @@
     "signIn": "Sign in",
     "signOut": "Sign out",
     "userMenu": "User menu",
-    "challengeModes": "Challenge Modes"
+    "challenges": "Challenges"
   },
   "Footer": {
     "tagline": "Community-contributed practice questions for <link>official GitHub Certifications</link>",
@@ -28,7 +28,7 @@
     "startPracticing": "Take a Practice Test",
     "contributeQuestions": "Contribute Questions",
     "statQuestions": "Practice questions",
-    "statChallengeModes": "Challenge modes",
+    "statChallenges": "Challenges",
     "statFree": "Free",
     "statOpenSource": "Open source",
     "twoPathsLabel": "Two Ways to Prepare",
@@ -40,11 +40,11 @@
     "practiceTestsHighlight2": "Randomized sessions",
     "practiceTestsHighlight3": "Replicate real exam experience",
     "browseTests": "Browse Practice Tests",
-    "challengeModesTitle": "Challenge Modes",
-    "challengeModesDescription": "Put your knowledge to the test under pressure. Survive as long as you can or race the clock — then see where you rank.",
-    "challengeModesHighlight1": "Gauntlet — survive the streak",
-    "challengeModesHighlight2": "Time Trial — race the clock",
-    "challengeModesHighlight3": "Global leaderboards",
+    "challengesTitle": "Challenge Modes",
+    "challengesDescription": "Put your knowledge to the test under pressure. Survive as long as you can or race the clock — then see where you rank.",
+    "challengesHighlight1": "Gauntlet — survive the streak",
+    "challengesHighlight2": "Time Trial — race the clock",
+    "challengesHighlight3": "Global leaderboards",
     "playChallenges": "Play Challenge Modes",
     "tracksLabel": "Certification Tracks",
     "tracksTitle1": "Pick your",
@@ -57,7 +57,7 @@
     "joinContributors": "Join the contributors →",
     "questionsCount": "{count} questions",
     "contributorTooltip": "{login} — {count} contributions",
-    "tryChallengeModes": "Try Challenge Modes"
+    "tryChallenges": "Try Challenge Modes"
   },
   "PracticeTests": {
     "label": "Practice Tests",
@@ -147,8 +147,8 @@
     "answerGroup": "Answer options",
     "answerOption": "Option {number}: {text}"
   },
-  "Games": {
-    "label": "Games",
+  "Challenges": {
+    "label": "Challenges",
     "title1": "Challenge",
     "title2": "yourself",
     "description": "Put your certification knowledge to the test with high-stakes game modes. Compete for the top of the leaderboard.",
@@ -156,9 +156,9 @@
     "gauntletDescription": "One life. Every question matters. A wrong answer ends your run immediately. Questions from all certifications.",
     "timeTrialMode": "Time Trial",
     "timeTrialDescription": "Race the clock. Correct answers add time, wrong answers drain it. How many can you answer before time runs out?",
-    "suggestGame": "Suggest a Game",
-    "suggestGameDescription": "Have an idea for a new game mode? Propose it on GitHub and let the community vote. The most popular ideas get built.",
-    "suggestGameButton": "Suggest a Game →",
+    "suggestChallenge": "Suggest a Challenge",
+    "suggestChallengeDescription": "Have an idea for a new challenge mode? Propose it on GitHub and let the community vote. The most popular ideas get built.",
+    "suggestChallengeButton": "Suggest a Challenge →",
     "voteOnIdeas": "Vote on Ideas →",
     "community": "Community",
     "suggestRule1": "Propose a new game mode via the issue form",
@@ -167,7 +167,7 @@
     "play": "Play →",
     "comingSoon": "Coming Soon",
     "questionsAvailable": "{count} questions",
-    "backToGames": "← Back to Games",
+    "backToChallenges": "← Back to Challenges",
     "rules": "Rules",
     "leaderboard": "Leaderboard",
     "topPlayers": "Top Players",
@@ -192,7 +192,7 @@
     "retrySave": "Retry save",
     "saveThresholdNotMet": "Score {count}+ required to save",
     "fullLeaderboard": "Leaderboard",
-    "fullLeaderboardDescription": "See who's on top across all game modes.",
+    "fullLeaderboardDescription": "See who's on top across all challenge modes.",
     "viewFullLeaderboard": "View full leaderboard →",
     "viewLeaderboard": "View Leaderboard",
     "showingEntries": "Showing {count} of {total}",
@@ -226,7 +226,7 @@
     "wrongCount": "{count} wrong",
     "remainingCount": "{count} remaining",
     "playAgain": "Play Again",
-    "backToGames": "Back to Games",
+    "backToChallenges": "Back to Challenges",
     "pause": "Pause",
     "pauseQueued": "Pausing…",
     "pausingNext": "Pausing after this question…",
@@ -265,7 +265,7 @@
     "questionsAnswered": "questions answered correctly",
     "totalAttempted": "{count} questions attempted",
     "playAgain": "Play Again",
-    "backToGames": "Back to Games",
+    "backToChallenges": "Back to Challenges",
     "pause": "Pause",
     "pauseQueued": "Pausing…",
     "pausingNext": "Pausing after this question…",

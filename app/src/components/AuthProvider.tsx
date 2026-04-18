@@ -18,8 +18,8 @@ import {
 } from "react";
 import type { User, Session } from "@supabase/supabase-js";
 import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
-import { consumePendingResult } from "@/components/games/SaveResultButton";
-import { saveGameResult } from "@/lib/save-result";
+import { consumePendingResult } from "@/components/challenges/SaveResultButton";
+import { saveChallengeResult } from "@/lib/save-result";
 
 interface AuthContextValue {
   available: boolean;
@@ -64,7 +64,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (event === "SIGNED_IN" && s?.user) {
         const pending = consumePendingResult();
         if (pending) {
-          void saveGameResult(pending.gameType, pending.result);
+          void saveChallengeResult(pending.gameType, pending.result);
         }
       }
     });

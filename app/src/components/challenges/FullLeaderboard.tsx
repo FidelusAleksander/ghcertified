@@ -10,7 +10,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import type { GameType, LeaderboardEntry } from "@/types/games";
+import type { ChallengeType, LeaderboardEntry } from "@/types/challenges";
 import { getLeaderboardPage } from "@/lib/leaderboard";
 import { hasSupabaseConfig } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 const PAGE_SIZE = 20;
 
 interface FullLeaderboardProps {
-  gameType: GameType;
+  gameType: ChallengeType;
   /** GitHub username of the signed-in user, if any. */
   currentUsername?: string | null;
 }
@@ -141,7 +141,7 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
 function LeaderboardRow({ entry, isCurrentUser, t }: {
   entry: LeaderboardEntry;
   isCurrentUser: boolean;
-  t: ReturnType<typeof useTranslations<"Games">>;
+  t: ReturnType<typeof useTranslations<"Challenges">>;
 }) {
   return (
     <div
@@ -218,7 +218,7 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
 /* ── Main ───────────────────────────────────────────────────────────── */
 
 export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardProps) {
-  const t = useTranslations("Games");
+  const t = useTranslations("Challenges");
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [totalCount, setTotalCount] = useState(0);
   const [status, setStatus] = useState<Status>(

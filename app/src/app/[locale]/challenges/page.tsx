@@ -8,7 +8,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
-import { GamesCatalog } from "./games-catalog";
+import { ChallengesCatalog } from "./challenges-catalog";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -16,14 +16,14 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Games" });
+  const t = await getTranslations({ locale, namespace: "Challenges" });
   const title = `${t("title1")} ${t("title2")} — Games`;
   const description = t("description");
 
   return {
     title,
     description,
-    alternates: buildAlternates(locale, "/games"),
+    alternates: buildAlternates(locale, "/challenges"),
     openGraph: { title, description, locale, images: [OG_IMAGE] },
   };
 }
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GamesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Games");
+  const t = await getTranslations("Challenges");
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
@@ -49,7 +49,7 @@ export default async function GamesPage({ params }: Props) {
         </div>
       </div>
 
-      <GamesCatalog
+      <ChallengesCatalog
         locale={locale}
       />
     </div>

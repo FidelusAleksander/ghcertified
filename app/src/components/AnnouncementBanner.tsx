@@ -30,7 +30,7 @@ export function AnnouncementBanner() {
   return (
     <div className="relative bg-foreground text-card">
       <Link
-        href={`/${locale}/games`}
+        href={`/${locale}/challenges`}
         className="block px-10 py-2.5 text-center text-[13px] sm:text-sm font-medium no-underline hover:underline"
       >
         <Swords className="inline size-3.5 mr-1.5 -mt-0.5" />

@@ -11,7 +11,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import type { Question } from "@/types/quiz";
-import type { GameResult } from "@/types/games";
+import type { ChallengeResult } from "@/types/challenges";
 import { shuffle } from "@/lib/utils";
 
 type Phase = "loading" | "playing" | "feedback" | "wrong_review" | "paused" | "game_over_review" | "game_over" | "completed";
@@ -280,7 +280,7 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
     }
   }, [state.phase]);
 
-  const result: GameResult | null =
+  const result: ChallengeResult | null =
     state.phase === "game_over" || state.phase === "completed"
       ? {
           correct: state.correct,

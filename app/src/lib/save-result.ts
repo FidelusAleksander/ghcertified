@@ -5,12 +5,12 @@
  * RLS ensures only the authenticated user's own results are accepted.
  */
 
-import type { GameResult, GameType } from "@/types/games";
+import type { ChallengeResult, ChallengeType } from "@/types/challenges";
 import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
 import {
   getMinimumCorrectToSave,
   isResultEligibleToSave,
-} from "@/lib/game-result-save-policy";
+} from "@/lib/challenge-result-save-policy";
 
 export type SaveResultStatus =
   | "saved"
@@ -26,9 +26,9 @@ export interface SaveResultResponse {
   error?: string;
 }
 
-export async function saveGameResult(
-  gameType: GameType,
-  result: GameResult,
+export async function saveChallengeResult(
+  gameType: ChallengeType,
+  result: ChallengeResult,
 ): Promise<SaveResultResponse> {
   const minimumCorrectToSave = getMinimumCorrectToSave(gameType);
 

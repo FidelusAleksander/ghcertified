@@ -8,7 +8,7 @@
  */
 
 import { useState, useEffect, type ReactNode } from "react";
-import type { GameResult } from "@/types/games";
+import type { ChallengeResult } from "@/types/challenges";
 import { useCountUp } from "@/hooks/useCountUp";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
@@ -18,7 +18,7 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
 interface TimeTrialResultsProps {
-  result: GameResult;
+  result: ChallengeResult;
   onRestart: () => void;
   saveAction?: ReactNode;
 }
@@ -34,7 +34,7 @@ function getTier(correct: number) {
 export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialResultsProps) {
   const locale = useLocale();
   const t = useTranslations("TimeTrial");
-  const tGames = useTranslations("Games");
+  const tChallenges = useTranslations("Challenges");
   const animatedCorrect = useCountUp(result.correct);
   const total = result.correct + result.wrong;
   const tier = getTier(result.correct);
@@ -121,22 +121,22 @@ export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialRes
               {t("playAgain")}
             </Button>
             <Button
-              render={<Link href={`/${locale}/games/leaderboard#time-trial`} />}
+              render={<Link href={`/${locale}/challenges/leaderboard#time-trial`} />}
               nativeButton={false}
               variant="outline"
               className="w-full rounded-[9px] text-[14px] font-semibold"
             >
               <Trophy data-icon="inline-start" className="size-4" />
-              {tGames("viewLeaderboard")}
+              {tChallenges("viewLeaderboard")}
             </Button>
             <Button
-              render={<Link href={`/${locale}/games`} />}
+              render={<Link href={`/${locale}/challenges`} />}
               nativeButton={false}
               variant="outline"
               className="w-full rounded-[9px] text-[14px] font-semibold"
             >
               <ArrowLeft data-icon="inline-start" className="size-4" />
-              {t("backToGames")}
+              {t("backToChallenges")}
             </Button>
           </div>
         </CardContent>

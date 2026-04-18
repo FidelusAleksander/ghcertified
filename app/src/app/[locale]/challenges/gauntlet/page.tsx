@@ -1,8 +1,8 @@
 /**
- * Time Trial page — race the clock with certification questions.
+ * Gauntlet page — loads all questions and renders gameplay.
  *
- * Server component loads all questions, client TimeTrialMode handles gameplay.
- * Global countdown: correct answers add time, wrong answers subtract time.
+ * Questions come from ALL certifications combined into a single pool.
+ * Server component loads questions, client GauntletMode handles gameplay.
  */
 
 import type { Metadata } from "next";
@@ -10,7 +10,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getAllQuestions, getCertCatalog, parseSupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
 import Link from "next/link";
-import { TimeTrialMode } from "@/components/games/TimeTrialMode";
+import { GauntletMode } from "@/components/challenges/GauntletMode";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -20,22 +20,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const catalog = getCertCatalog(parseSupportedLocale(locale));
   const totalQuestions = catalog.reduce((sum, c) => sum + c.questionCount, 0);
-  const title = "Time Trial — Games";
-  const description = `Time Trial: ${totalQuestions} questions, race the clock. Correct answers add time, wrong answers drain it.`;
+  const title = "Gauntlet — Games";
+  const description = `Gauntlet: ${totalQuestions} questions from all certifications, 3 lives. How far can you go?`;
 
   return {
     title,
     description,
-    alternates: buildAlternates(locale, "/games/time-trial"),
+    alternates: buildAlternates(locale, "/challenges/gauntlet"),
     openGraph: { title, description, locale, images: [OG_IMAGE] },
   };
 }
 
-export default async function TimeTrialPage({ params }: Props) {
+export default async function GauntletPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const tGames = await getTranslations("Games");
-  const t = await getTranslations("TimeTrial");
+  const t = await getTranslations("Challenges");
   const questions = getAllQuestions(parseSupportedLocale(locale));
 
   return (
@@ -43,15 +42,15 @@ export default async function TimeTrialPage({ params }: Props) {
       {/* Breadcrumb */}
       <div className="max-w-[800px] mx-auto px-4 sm:px-8 pt-6 sm:pt-10">
         <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
-          <Link href={`/${locale}/games`} className="text-primary no-underline hover:underline">
-            {tGames("label")}
+          <Link href={`/${locale}/challenges`} className="text-primary no-underline hover:underline">
+            {t("label")}
           </Link>
           <span>›</span>
-          <span>{t("title")}</span>
+          <span>{t("gauntletMode")}</span>
         </div>
       </div>
 
-      <TimeTrialMode questions={questions} />
+      <GauntletMode questions={questions} />
     </div>
   );
 }

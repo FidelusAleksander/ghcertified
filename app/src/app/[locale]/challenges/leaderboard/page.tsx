@@ -16,14 +16,14 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Games" });
+  const t = await getTranslations({ locale, namespace: "Challenges" });
   const title = `${t("fullLeaderboard")} — Games`;
   const description = t("fullLeaderboardDescription");
 
   return {
     title,
     description,
-    alternates: buildAlternates(locale, "/games/leaderboard"),
+    alternates: buildAlternates(locale, "/challenges/leaderboard"),
     openGraph: { title, description, locale, images: [OG_IMAGE] },
   };
 }
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function FullLeaderboardRoute({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Games");
+  const t = await getTranslations("Challenges");
 
   return (
     <div className="max-w-[720px] mx-auto px-4 sm:px-8 py-12 sm:py-20">

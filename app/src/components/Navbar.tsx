@@ -105,7 +105,7 @@ export function Navbar() {
 
   const navLinks = [
     { href: `/${locale}/practice-tests`, label: t("practiceTests") },
-    { href: `/${locale}/games`, label: t("challengeModes") },
+    { href: `/${locale}/challenges`, label: t("challenges") },
   ] as const;
 
   return (

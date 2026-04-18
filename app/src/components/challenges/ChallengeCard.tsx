@@ -1,24 +1,24 @@
 "use client";
 
 /**
- * GameCard — rich card for the games catalog page.
+ * ChallengeCard — rich card for the challenges catalog page.
  *
  * Shows game icon, title, badges, rules, leaderboard, and CTA.
  * Reusable across all game types.
  */
 
 import type { ReactNode } from "react";
-import type { LeaderboardEntry } from "@/types/games";
+import type { LeaderboardEntry } from "@/types/challenges";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Leaderboard } from "@/components/games/Leaderboard";
+import { Leaderboard } from "@/components/challenges/Leaderboard";
 import { Trophy } from "lucide-react";
 
-interface GameCardProps {
+interface ChallengeCardProps {
   /** Card icon rendered in a colored container */
   icon: ReactNode;
   iconBg: string;
@@ -47,11 +47,11 @@ interface GameCardProps {
   className?: string;
   /** If true, uses anchor tag (external link) instead of Next.js Link */
   external?: boolean;
-  /** Variant: "default" for playable games, "dashed" for suggest-a-game */
+  /** Variant: "default" for playable challenges, "dashed" for suggest-a-challenge */
   variant?: "default" | "dashed";
 }
 
-export function GameCard({
+export function ChallengeCard({
   icon,
   iconBg,
   title,
@@ -71,8 +71,8 @@ export function GameCard({
   className,
   external,
   variant = "default",
-}: GameCardProps) {
-  const t = useTranslations("Games");
+}: ChallengeCardProps) {
+  const t = useTranslations("Challenges");
 
   const cardClass =
     variant === "dashed"

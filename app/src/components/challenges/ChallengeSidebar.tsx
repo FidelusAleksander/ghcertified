@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * GameSidebar — shared sidebar for game modes.
+ * ChallengeSidebar — shared sidebar for game modes.
  *
  * Renders as a sticky vertical card on desktop (lg+),
  * compact horizontal strip on mobile (< lg).
@@ -91,7 +91,7 @@ export function TimerBar({
 
 // ── Sidebar ────────────────────────────────────────────────────────
 
-interface GameSidebarProps {
+interface ChallengeSidebarProps {
   /** Game mode name displayed at top. */
   title: string;
   /** Icon next to game name. */
@@ -109,7 +109,7 @@ interface GameSidebarProps {
   pauseSlot?: ReactNode;
 }
 
-export function GameSidebar({
+export function ChallengeSidebar({
   title,
   icon,
   livesSlot,
@@ -118,7 +118,7 @@ export function GameSidebar({
   scoreLabel,
   scoreValue,
   pauseSlot,
-}: GameSidebarProps) {
+}: ChallengeSidebarProps) {
   return (
     <>
       {/* Desktop: vertical sticky sidebar */}

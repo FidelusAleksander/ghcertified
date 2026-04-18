@@ -1,17 +1,17 @@
 "use client";
 
 /**
- * GamesCatalog — displays available game modes with rules and leaderboards.
+ * ChallengesCatalog — displays available game modes with rules and leaderboards.
  *
  * Three slots: Gauntlet, Time Trial, Suggest a Game.
  * Game modes are not split by certification — questions from all certs
  * are combined into a single pool.
  */
 
-import type { LeaderboardEntry } from "@/types/games";
+import type { LeaderboardEntry } from "@/types/challenges";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { GameCard } from "@/components/games/GameCard";
+import { ChallengeCard } from "@/components/challenges/ChallengeCard";
 import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useGauntletMode";
 import { getLeaderboard } from "@/lib/leaderboard";
 import { hasSupabaseConfig } from "@/lib/supabase";
@@ -43,8 +43,8 @@ function toLoadableLeaderboard(
     : { entries: [], status: "empty" };
 }
 
-export function GamesCatalog({ locale }: Props) {
-  const t = useTranslations("Games");
+export function ChallengesCatalog({ locale }: Props) {
+  const t = useTranslations("Challenges");
   const [gauntletLeaderboard, setGauntletLeaderboard] = useState<LoadableLeaderboard>({
     entries: [],
     status: hasSupabaseConfig() ? "loading" : "unavailable",
@@ -84,7 +84,7 @@ export function GamesCatalog({ locale }: Props) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
       {/* Gauntlet */}
-      <GameCard
+      <ChallengeCard
         icon={<Heart className="size-6 text-destructive" />}
         iconBg="bg-destructive/10"
         title={t("gauntletMode")}
@@ -100,14 +100,14 @@ export function GamesCatalog({ locale }: Props) {
         ]}
         leaderboard={gauntletLeaderboard.entries}
         leaderboardStatus={gauntletLeaderboard.status}
-        leaderboardHref={`/${locale}/games/leaderboard#gauntlet`}
+        leaderboardHref={`/${locale}/challenges/leaderboard#gauntlet`}
         scoreLabel={t("score")}
-        href={`/${locale}/games/gauntlet`}
+        href={`/${locale}/challenges/gauntlet`}
         buttonLabel={t("play")}
       />
 
       {/* Time Trial */}
-      <GameCard
+      <ChallengeCard
         icon={<Timer className="size-6 text-primary" />}
         iconBg="bg-primary/10"
         title={t("timeTrialMode")}
@@ -123,18 +123,18 @@ export function GamesCatalog({ locale }: Props) {
         ]}
         leaderboard={timeTrialLeaderboard.entries}
         leaderboardStatus={timeTrialLeaderboard.status}
-        leaderboardHref={`/${locale}/games/leaderboard#time-trial`}
+        leaderboardHref={`/${locale}/challenges/leaderboard#time-trial`}
         scoreLabel={t("score")}
-        href={`/${locale}/games/time-trial`}
+        href={`/${locale}/challenges/time-trial`}
         buttonLabel={t("play")}
       />
 
       {/* Suggest a Game */}
-      <GameCard
+      <ChallengeCard
         icon={<Lightbulb className="size-6 text-amber-500" />}
         iconBg="bg-amber-500/10"
-        title={t("suggestGame")}
-        description={t("suggestGameDescription")}
+        title={t("suggestChallenge")}
+        description={t("suggestChallengeDescription")}
         badges={[
           { label: t("community") },
         ]}
@@ -145,7 +145,7 @@ export function GamesCatalog({ locale }: Props) {
         ]}
         href={SUGGEST_FORM_URL}
         external
-        buttonLabel={t("suggestGameButton")}
+        buttonLabel={t("suggestChallengeButton")}
         secondaryHref={VOTE_URL}
         secondaryExternal
         secondaryButtonLabel={t("voteOnIdeas")}

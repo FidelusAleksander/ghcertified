@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { FullLeaderboard } from "@/components/games/FullLeaderboard";
+import { FullLeaderboard } from "@/components/challenges/FullLeaderboard";
 import { useAuth } from "@/components/AuthProvider";
 import { GitHubMark } from "@/components/GitHubMark";
 import { ArrowLeft, Heart, Timer } from "lucide-react";
@@ -25,7 +25,7 @@ interface Props {
 const VALID_TABS = ["gauntlet", "time-trial"] as const;
 
 export function LeaderboardPage({ locale }: Props) {
-  const t = useTranslations("Games");
+  const t = useTranslations("Challenges");
   const { available, user, signIn, loading: authLoading } = useAuth();
   const [activeTab, setActiveTab] = useState<string>("gauntlet");
 
@@ -85,13 +85,13 @@ export function LeaderboardPage({ locale }: Props) {
 
       <div className="flex justify-center">
         <Button
-          render={<Link href={`/${locale}/games`} />}
+          render={<Link href={`/${locale}/challenges`} />}
           nativeButton={false}
           variant="outline"
           className="rounded-[9px] text-[14px] font-semibold"
         >
           <ArrowLeft data-icon="inline-start" className="size-4" />
-          {t("backToGames")}
+          {t("backToChallenges")}
         </Button>
       </div>
     </div>

@@ -7,7 +7,7 @@
  */
 
 import { getSupabase, hasSupabaseConfig } from "@/lib/supabase";
-import type { GameType, LeaderboardEntry } from "@/types/games";
+import type { ChallengeType, LeaderboardEntry } from "@/types/challenges";
 
 interface LeaderboardRow {
   github_username: string;
@@ -20,7 +20,7 @@ interface LeaderboardRow {
  * Fetch top-N leaderboard entries for a game type.
  */
 export async function getLeaderboard(
-  gameType: GameType,
+  gameType: ChallengeType,
   limit = 5,
 ): Promise<LeaderboardEntry[]> {
   if (!hasSupabaseConfig()) {
@@ -64,7 +64,7 @@ export interface LeaderboardPage {
  * github_username ASC)` covers this query shape efficiently.
  */
 export async function getLeaderboardPage(
-  gameType: GameType,
+  gameType: ChallengeType,
   from: number,
   to: number,
 ): Promise<LeaderboardPage> {

@@ -1,36 +1,37 @@
 "use client";
 
 /**
- * GauntletMode — main orchestrator for Gauntlet gameplay.
+ * TimeTrialMode — main orchestrator for Time Trial gameplay.
  *
  * Two-column layout: question card (left) + sticky sidebar (right).
- * Sidebar shows game name, lives, per-question timer, score, pause.
+ * Sidebar shows game name, global countdown, time gained/lost, score, pause.
  * Collapses to compact horizontal strip on mobile.
  */
 
+import { useEffect, useState } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
-import { useGauntletMode } from "@/hooks/useGauntletMode";
+import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
 import { useTranslations } from "next-intl";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
-import { GauntletResults } from "@/components/games/GauntletResults";
-import { SaveResultButton } from "@/components/games/SaveResultButton";
-import { GameSidebar, LivesDisplay, TimerBar, PauseButton } from "@/components/games/GameSidebar";
+import { TimeTrialResults } from "@/components/challenges/TimeTrialResults";
+import { SaveResultButton } from "@/components/challenges/SaveResultButton";
+import { ChallengeSidebar, PauseButton } from "@/components/challenges/ChallengeSidebar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Pause, Play, ArrowRight, Heart } from "lucide-react";
+import { Check, Pause, Play, Timer, ArrowRight } from "lucide-react";
 
-interface GauntletModeProps {
+interface TimeTrialModeProps {
   questions: Question[];
 }
 
-export function GauntletMode({ questions }: GauntletModeProps) {
-  const t = useTranslations("Gauntlet");
-  const tGames = useTranslations("Games");
+export function TimeTrialMode({ questions }: TimeTrialModeProps) {
+  const t = useTranslations("TimeTrial");
+  const tChallenges = useTranslations("Challenges");
   const {
     state,
     currentQuestion,
@@ -41,15 +42,16 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     restart,
     result,
     timeRemaining,
-    timeLimitSeconds,
     pauseRequested,
     togglePause,
     failedQuestion,
     failedAnswers,
-    failedByTimeout,
-    proceedToResults,
     continueAfterWrong,
-  } = useGauntletMode(questions);
+    totalGained,
+    totalLost,
+    lastDelta,
+    deltaKey,
+  } = useTimeTrialMode(questions);
 
   function buildReportHref(q: Question) {
     const fileLink = `[${q.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
@@ -58,14 +60,32 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     return `https://github.com/FidelusAleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
   }
 
-  // Shared sidebar element reused across phases
+  // Shared sidebar reused across phases
   const sidebar = (frozen?: boolean) => (
-    <GameSidebar
-      title={tGames("gauntletMode")}
-      icon={<Heart className="size-4 text-destructive" />}
-      livesSlot={<LivesDisplay lives={state.lives} initialLives={state.initialLives} />}
-      timerSlot={<TimerBar timeRemaining={frozen ? timeLimitSeconds : timeRemaining} timeLimitSeconds={timeLimitSeconds} />}
-      scoreLabel={tGames("score")}
+    <ChallengeSidebar
+      title={tChallenges("timeTrialMode")}
+      icon={<Timer className="size-4 text-primary" />}
+      timerSlot={
+        <div className="relative">
+          <GlobalTimerDisplay timeRemaining={timeRemaining} />
+          {!frozen && <TimeDeltaPopup delta={lastDelta} triggerKey={deltaKey} />}
+        </div>
+      }
+      timerExtra={
+        <div className="flex items-center gap-2.5 justify-center">
+          {totalGained > 0 && (
+            <span className="text-[12px] font-bold tabular-nums text-emerald-500">
+              +{totalGained}s
+            </span>
+          )}
+          {totalLost > 0 && (
+            <span className="text-[12px] font-bold tabular-nums text-destructive">
+              −{totalLost}s
+            </span>
+          )}
+        </div>
+      }
+      scoreLabel={tChallenges("score")}
       scoreValue={state.correct}
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
@@ -80,8 +100,19 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     />
   );
 
-  // Loading
+  // Loading state while questions shuffle
   if (state.phase === "loading" || !currentQuestion) {
+    if (result) {
+      return (
+        <div className="px-4 sm:px-8 py-6 sm:py-12">
+          <TimeTrialResults
+            result={result}
+            onRestart={restart}
+            saveAction={<SaveResultButton gameType="time-trial" result={result} />}
+          />
+        </div>
+      );
+    }
     return (
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
         <Skeleton className="h-8 w-48 mb-6" />
@@ -93,39 +124,37 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     );
   }
 
-  // Results screen (full-width, no sidebar)
+  // Results screen
   if (result) {
     return (
       <div className="px-4 sm:px-8 py-6 sm:py-12">
-        <GauntletResults
+        <TimeTrialResults
           result={result}
           onRestart={restart}
-          saveAction={<SaveResultButton gameType="gauntlet" result={result} />}
+          saveAction={<SaveResultButton gameType="time-trial" result={result} />}
         />
       </div>
     );
   }
 
   // Wrong answer review
-  if ((state.phase === "game_over_review" || state.phase === "wrong_review") && failedQuestion) {
-    const isGameOver = state.phase === "game_over_review";
+  if (state.phase === "wrong_review" && failedQuestion) {
     return (
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
           <QuestionCard
-            headerLabel={tGames("gauntletMode")}
+            headerLabel={tChallenges("timeTrialMode")}
             reportHref={buildReportHref(failedQuestion)}
             reportLabel={t("report")}
             reportTooltip={t("reportTooltip")}
-            headerActions={<LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
                 <Button
-                  onClick={isGameOver ? proceedToResults : continueAfterWrong}
+                  onClick={continueAfterWrong}
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
                   <ArrowRight data-icon="inline-start" className="size-4" />
-                  {isGameOver ? t("continueToResults") : t("continueNext")}
+                  {t("continueNext")}
                 </Button>
               </div>
             }
@@ -155,11 +184,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               <FeedbackAlert
                 isCorrect={false}
                 correctLabel={t("correctFeedback")}
-                incorrectLabel={
-                  failedByTimeout
-                    ? (isGameOver ? t("timeUpGameOver") : t("timeUpLifeLost"))
-                    : (isGameOver ? t("wrongGameOver") : t("wrongLifeLost"))
-                }
+                incorrectLabel={t("incorrectFeedback")}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />
             </div>
@@ -211,7 +236,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
       {/* Mobile-only: compact timer bar */}
       <div className="lg:hidden mb-2">
-        <TimerBar timeRemaining={timeRemaining} timeLimitSeconds={timeLimitSeconds} />
+        <GlobalTimerDisplay timeRemaining={timeRemaining} />
       </div>
 
       {/* Pause queued banner */}
@@ -226,15 +251,10 @@ export function GauntletMode({ questions }: GauntletModeProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
         <QuestionCard
-          headerLabel={tGames("gauntletMode")}
+          headerLabel={tChallenges("timeTrialMode")}
           reportHref={buildReportHref(currentQuestion)}
           reportLabel={t("report")}
           reportTooltip={t("reportTooltip")}
-          headerActions={
-            <div className="flex items-center gap-3">
-              <LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />
-            </div>
-          }
           footer={
             <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
               {!isFeedback && (
@@ -284,7 +304,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               <FeedbackAlert
                 isCorrect={state.lastAnswerCorrect}
                 correctLabel={t("correctFeedback")}
-                incorrectLabel={t("wrongLifeLost")}
+                incorrectLabel={t("incorrectFeedback")}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />
             )}
@@ -293,6 +313,85 @@ export function GauntletMode({ questions }: GauntletModeProps) {
 
         {sidebar()}
       </div>
+    </div>
+  );
+}
+
+// ── Floating delta popup ───────────────────────────────────────────
+
+function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKey: number }) {
+  const [visible, setVisible] = useState(false);
+  const [displayDelta, setDisplayDelta] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (triggerKey === 0 || delta === null) return;
+    setDisplayDelta(delta);
+    setVisible(true);
+    const timeout = setTimeout(() => setVisible(false), 1200);
+    return () => clearTimeout(timeout);
+  }, [triggerKey, delta]);
+
+  if (!visible || displayDelta === null) return null;
+
+  const isPositive = displayDelta > 0;
+
+  return (
+    <span
+      key={triggerKey}
+      className={cn(
+        "absolute -top-6 left-1/2 -translate-x-1/2 font-display text-[14px] font-extrabold tabular-nums pointer-events-none whitespace-nowrap",
+        "motion-safe:animate-out motion-safe:fade-out motion-safe:slide-out-to-top-4 motion-safe:duration-1000 motion-safe:fill-forwards",
+        isPositive ? "text-emerald-500" : "text-destructive",
+      )}
+    >
+      {isPositive ? `+${displayDelta}s` : `${displayDelta}s`}
+    </span>
+  );
+}
+
+// ── Global timer display ───────────────────────────────────────────
+
+function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number; compact?: boolean }) {
+  const isLow = timeRemaining <= 15;
+  const isCritical = timeRemaining <= 5;
+
+  const minutes = Math.floor(Math.max(0, timeRemaining) / 60);
+  const seconds = Math.max(0, timeRemaining) % 60;
+  const display = minutes > 0
+    ? `${minutes}:${seconds.toString().padStart(2, "0")}`
+    : `${seconds}s`;
+
+  if (compact) {
+    return (
+      <span className={cn(
+        "font-display text-[12px] font-bold tabular-nums tracking-wide",
+        isCritical ? "text-destructive animate-pulse" : isLow ? "text-warning" : "text-card/60",
+      )}>
+        {display}
+      </span>
+    );
+  }
+
+  const fraction = Math.min(timeRemaining / INITIAL_TIME, 1);
+
+  return (
+    <div className="flex items-center gap-2.5 w-full">
+      <Timer className={cn("size-4 shrink-0", isCritical ? "text-destructive" : isLow ? "text-warning" : "text-muted-foreground")} />
+      <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
+        <div
+          className={cn(
+            "h-full rounded-full transition-all duration-1000 ease-linear",
+            isCritical ? "bg-destructive" : isLow ? "bg-warning" : "bg-primary",
+          )}
+          style={{ width: `${Math.max(0, fraction) * 100}%` }}
+        />
+      </div>
+      <span className={cn(
+        "font-display text-[14px] font-bold tabular-nums min-w-[40px] text-right",
+        isCritical ? "text-destructive animate-pulse" : isLow ? "text-warning" : "text-foreground",
+      )}>
+        {display}
+      </span>
     </div>
   );
 }

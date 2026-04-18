@@ -88,12 +88,12 @@ export default async function HomePage({ params }: Props) {
             </Button>
             <Button
               variant="outline"
-              render={<Link href={`/${locale}/games`} />}
+              render={<Link href={`/${locale}/challenges`} />}
               nativeButton={false}
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-medium justify-center"
             >
               <Swords data-icon="inline-start" />
-              {t("tryChallengeModes")}
+              {t("tryChallenges")}
             </Button>
           </div>
 
@@ -107,7 +107,7 @@ export default async function HomePage({ params }: Props) {
             </div>
             <div className="text-center sm:text-left">
               <div className="font-display text-[24px] sm:text-[28px] font-bold text-foreground tracking-tight">2</div>
-              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statChallengeModes")}</div>
+              <div className="text-[12px] sm:text-[13px] text-muted-foreground mt-0.5">{t("statChallenges")}</div>
             </div>
             <div className="text-center sm:text-left">
               <div className="font-display text-[24px] sm:text-[28px] font-bold text-primary tracking-tight">{t("statFree")}</div>
@@ -214,14 +214,14 @@ export default async function HomePage({ params }: Props) {
                 <div className="size-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-foreground">
                   <Swords className="text-card size-5" />
                 </div>
-                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("challengeModesTitle")}</div>
+                <div className="font-display text-[19px] font-bold text-foreground tracking-tight">{t("challengesTitle")}</div>
               </div>
-              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("challengeModesDescription")}</p>
+              <p className="text-[14px] text-muted-foreground leading-relaxed">{t("challengesDescription")}</p>
               <ul className="flex flex-col gap-2 flex-1">
                 {([
-                  { key: "challengeModesHighlight1" as const, icon: <Flame className="size-4 text-destructive flex-shrink-0" /> },
-                  { key: "challengeModesHighlight2" as const, icon: <Timer className="size-4 text-warning flex-shrink-0" /> },
-                  { key: "challengeModesHighlight3" as const, icon: <Trophy className="size-4 text-primary flex-shrink-0" /> },
+                  { key: "challengesHighlight1" as const, icon: <Flame className="size-4 text-destructive flex-shrink-0" /> },
+                  { key: "challengesHighlight2" as const, icon: <Timer className="size-4 text-warning flex-shrink-0" /> },
+                  { key: "challengesHighlight3" as const, icon: <Trophy className="size-4 text-primary flex-shrink-0" /> },
                 ]).map(({ key, icon }) => (
                   <li key={key} className="flex items-center gap-2.5 text-[13.5px] text-foreground">
                     {icon}
@@ -231,7 +231,7 @@ export default async function HomePage({ params }: Props) {
               </ul>
               <Button
                 variant="outline"
-                render={<Link href={`/${locale}/games`} />}
+                render={<Link href={`/${locale}/challenges`} />}
                 nativeButton={false}
                 className="h-auto rounded-[10px] px-5 py-2.5 text-[13px] font-semibold w-fit"
               >

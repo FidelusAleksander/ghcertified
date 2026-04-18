@@ -1,17 +1,17 @@
-import type { GameResult, GameType } from "@/types/games";
+import type { ChallengeResult, ChallengeType } from "@/types/challenges";
 
 export const GAME_RESULT_MINIMUM_CORRECT_TO_SAVE = {
   gauntlet: 5,
   "time-trial": 5,
-} satisfies Record<GameType, number>;
+} satisfies Record<ChallengeType, number>;
 
-export function getMinimumCorrectToSave(gameType: GameType): number {
+export function getMinimumCorrectToSave(gameType: ChallengeType): number {
   return GAME_RESULT_MINIMUM_CORRECT_TO_SAVE[gameType];
 }
 
 export function isResultEligibleToSave(
-  gameType: GameType,
-  result: GameResult,
+  gameType: ChallengeType,
+  result: ChallengeResult,
 ): boolean {
   return result.correct >= getMinimumCorrectToSave(gameType);
 }
