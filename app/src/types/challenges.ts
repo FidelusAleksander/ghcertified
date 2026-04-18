@@ -8,8 +8,6 @@
 export interface ChallengeResult {
   correct: number;
   wrong: number;
-  unanswered: number;
-  totalQuestions: number;
 }
 
 /** Single row in a challenge leaderboard. */

@@ -64,13 +64,12 @@ export async function saveChallengeResult(
     };
   }
 
-  const { error } = await supabase.from("game_results").insert({
+  const { error } = await supabase.from("challenge_results").insert({
     user_id: user.id,
-    game_type: gameType,
+    challenge: gameType,
     correct: result.correct,
     wrong: result.wrong,
-    unanswered: result.unanswered,
-    total_questions: result.totalQuestions,
+    score: result.correct,
   });
 
   if (error) {

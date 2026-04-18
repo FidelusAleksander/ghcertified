@@ -284,8 +284,6 @@ export function useTimeTrialMode(allQuestions: Question[]) {
       ? {
           correct: state.correct,
           wrong: state.wrong,
-          unanswered: state.questions.length - state.correct - state.wrong,
-          totalQuestions: state.questions.length,
         }
       : null;
 

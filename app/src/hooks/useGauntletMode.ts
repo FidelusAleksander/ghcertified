@@ -285,8 +285,6 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
       ? {
           correct: state.correct,
           wrong: state.wrong,
-          unanswered: state.questions.length - state.correct - state.wrong,
-          totalQuestions: state.questions.length,
         }
       : null;
 

@@ -11,7 +11,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { ChallengeType, LeaderboardEntry } from "@/types/challenges";
-import { getLeaderboardPage } from "@/lib/leaderboard";
+import { getLeaderboardPage, type LeaderboardCursor } from "@/lib/leaderboard";
 import { hasSupabaseConfig } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -225,31 +225,46 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
     hasSupabaseConfig() ? "idle" : "unavailable"
   );
   const [loadingMore, setLoadingMore] = useState(false);
+  const [cursor, setCursor] = useState<LeaderboardCursor | undefined>(undefined);
 
-  const fetchPage = useCallback(async (from: number, to: number, append: boolean) => {
+  const fetchPage = useCallback(async (pageCursor: LeaderboardCursor | undefined, append: boolean) => {
     if (!append) {
       setStatus("loading");
       setEntries([]);
     }
     try {
-      const result = await getLeaderboardPage(gameType, from, to);
+      const result = await getLeaderboardPage(gameType, PAGE_SIZE, pageCursor);
       setTotalCount(result.totalCount);
-      setEntries((prev) => append ? [...prev, ...result.entries] : result.entries);
-      setStatus(result.entries.length === 0 && from === 0 ? "empty" : "ready");
+      setEntries((prev) => {
+        const next = append ? [...prev, ...result.entries] : result.entries;
+        // Fix ranks based on accumulated position
+        return next.map((e, i) => ({ ...e, rank: i + 1 }));
+      });
+      // Update cursor to last entry for next page
+      const lastEntry = result.entries[result.entries.length - 1];
+      if (lastEntry) {
+        setCursor({
+          score: lastEntry.score,
+          achievedAt: lastEntry.achievedAt ?? "",
+          githubUsername: lastEntry.githubUsername,
+        });
+      }
+      setStatus(result.entries.length === 0 && !append ? "empty" : "ready");
     } catch {
-      if (from === 0) setStatus("error");
+      if (!append) setStatus("error");
     }
   }, [gameType]);
 
   useEffect(() => {
     if (status === "unavailable") return;
+    setCursor(undefined);
     // eslint-disable-next-line react-hooks/set-state-in-effect -- data-fetch pattern: setState tracks async loading lifecycle
-    void fetchPage(0, PAGE_SIZE - 1, false);
+    void fetchPage(undefined, false);
   }, [gameType, fetchPage]); // eslint-disable-line react-hooks/exhaustive-deps -- status is a guard, not a trigger
 
   const handleLoadMore = async () => {
     setLoadingMore(true);
-    await fetchPage(entries.length, entries.length + PAGE_SIZE - 1, true);
+    await fetchPage(cursor, true);
     setLoadingMore(false);
   };
 
