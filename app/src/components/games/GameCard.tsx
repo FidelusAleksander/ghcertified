@@ -140,6 +140,9 @@ export function GameCard({
           </div>
         )}
 
+        {/* Spacer to push leaderboard + button to bottom */}
+        <div className="flex-1" />
+
         {/* Leaderboard */}
         {(leaderboardStatus !== undefined || (leaderboard && leaderboard.length > 0)) && (
           <>
@@ -171,9 +174,6 @@ export function GameCard({
             </div>
           </>
         )}
-
-        {/* Spacer to push button to bottom */}
-        <div className="flex-1" />
 
         {/* CTA */}
         <div className="flex flex-col gap-2">
