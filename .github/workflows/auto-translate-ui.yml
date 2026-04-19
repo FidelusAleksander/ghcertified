@@ -84,3 +84,5 @@ jobs:
             --body "This PR updates UI translations for all locales based on changes to \`app/messages/en.json\` from commit ${{ github.sha }}." \
             --base main \
             --head i18n/auto-translate-ui-${{ github.sha }}
+
+          gh pr merge --auto --squash i18n/auto-translate-ui-${{ github.sha }}
