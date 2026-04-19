@@ -397,7 +397,7 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
     return (
       <span className={cn(
         "font-display text-[12px] font-bold tabular-nums tracking-wide",
-        isCritical ? "text-destructive animate-pulse" : isLow ? "text-warning" : "text-card/60",
+        isCritical ? "text-destructive motion-safe:animate-pulse" : isLow ? "text-warning" : "text-card/60",
       )}>
         {display}
       </span>
@@ -412,7 +412,7 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
       <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
         <div
           className={cn(
-            "h-full rounded-full transition-all duration-1000 ease-linear",
+            "h-full rounded-full transition-[width] duration-1000 ease-linear",
             isCritical ? "bg-destructive" : isLow ? "bg-warning" : "bg-primary",
           )}
           style={{ width: `${Math.max(0, fraction) * 100}%` }}
@@ -420,7 +420,7 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
       </div>
       <span className={cn(
         "font-display text-[14px] font-bold tabular-nums min-w-[40px] text-right",
-        isCritical ? "text-destructive animate-pulse" : isLow ? "text-warning" : "text-foreground",
+        isCritical ? "text-destructive motion-safe:animate-pulse" : isLow ? "text-warning" : "text-foreground",
       )}>
         {display}
       </span>

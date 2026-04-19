@@ -38,17 +38,17 @@ export function CatalogCards({ certs, locale }: Props) {
           <div
             key={cert.id}
             className={`
-              group relative text-left w-full rounded-xl border-l-[3px] bg-card
-              transition-all duration-200 ease-out
+              group relative text-left w-full rounded-xl bg-card
+              transition-[box-shadow,background-color] duration-200 ease-out
               ${isExpanded
-                ? `${meta.borderClass} shadow-md`
-                : "border-transparent hover:border-border hover:shadow-sm"
+                ? "shadow-md"
+                : "hover:shadow-sm"
               }
             `}
           >
             {/* Card shell with right border + top/bottom border */}
             <div className={`
-              rounded-xl border border-l-0 transition-colors duration-200
+              rounded-xl border transition-colors duration-200
               ${isExpanded ? "border-border/60" : "border-border/40 group-hover:border-border/60"}
             `}>
               {/* Clickable header — toggles expand */}

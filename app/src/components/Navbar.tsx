@@ -58,7 +58,7 @@ function UserMenu() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={avatarUrl ?? `https://github.com/${username}.png?size=64`}
-          alt=""
+          alt={username}
           className="size-8 rounded-full border border-border"
         />
       </DropdownMenuTrigger>

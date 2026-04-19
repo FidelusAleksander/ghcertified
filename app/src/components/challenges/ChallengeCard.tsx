@@ -76,8 +76,8 @@ export function ChallengeCard({
 
   const cardClass =
     variant === "dashed"
-      ? "border-dashed border-2 bg-card/50 hover:border-primary/40 hover:bg-card transition-all"
-      : "bg-card transition-all hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5";
+      ? "border-dashed border-2 bg-card/50 hover:border-primary/40 hover:bg-card transition-colors"
+      : "bg-card transition-[border-color,box-shadow,transform] duration-200 hover:border-primary hover:shadow-[0_0_0_3px_hsl(var(--primary-soft))] hover:-translate-y-0.5";
 
   return (
     <Card className={`${cardClass} ${className ?? ""} flex flex-col`}>

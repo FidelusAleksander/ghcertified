@@ -19,15 +19,41 @@ function formatNumber(num: number): string {
   return num.toLocaleString();
 }
 
+const CACHE_KEY = "gh-stars-cache";
+const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
+
+interface StarCache {
+  count: number;
+  ts: number;
+}
+
 function useGitHubStars() {
   const [stars, setStars] = React.useState<number | null>(null);
 
   React.useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(CACHE_KEY);
+      if (raw) {
+        const cached: StarCache = JSON.parse(raw);
+        if (Date.now() - cached.ts < CACHE_TTL_MS) {
+          setStars(cached.count);
+          return;
+        }
+      }
+    } catch {
+      // ignore corrupt cache
+    }
+
     fetch(`https://api.github.com/repos/${OWNER}/${REPO}`)
       .then((r) => r.json())
       .then((data: { stargazers_count?: number }) => {
         if (typeof data.stargazers_count === "number") {
           setStars(data.stargazers_count);
+          try {
+            sessionStorage.setItem(CACHE_KEY, JSON.stringify({ count: data.stargazers_count, ts: Date.now() }));
+          } catch {
+            // storage full — ignore
+          }
         }
       })
       .catch(() => {

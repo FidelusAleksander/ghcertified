@@ -60,7 +60,7 @@ export function TimerBar({
     return (
       <span className={cn(
         "font-display text-[12px] font-bold tabular-nums tracking-wide",
-        isCritical ? "text-destructive animate-pulse" : isUrgent ? "text-warning" : "text-card/60",
+        isCritical ? "text-destructive motion-safe:animate-pulse" : isUrgent ? "text-warning" : "text-card/60",
       )}>
         {display}
       </span>
@@ -73,7 +73,7 @@ export function TimerBar({
       <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
         <div
           className={cn(
-            "h-full rounded-full transition-all duration-1000 ease-linear",
+            "h-full rounded-full transition-[width] duration-1000 ease-linear",
             isCritical ? "bg-destructive" : isUrgent ? "bg-warning" : "bg-primary",
           )}
           style={{ width: `${fraction * 100}%` }}
@@ -81,7 +81,7 @@ export function TimerBar({
       </div>
       <span className={cn(
         "font-display text-[14px] font-bold tabular-nums min-w-[40px] text-right",
-        isCritical ? "text-destructive animate-pulse" : isUrgent ? "text-warning" : "text-foreground",
+        isCritical ? "text-destructive motion-safe:animate-pulse" : isUrgent ? "text-warning" : "text-foreground",
       )}>
         {display}
       </span>

@@ -35,9 +35,15 @@ export default async function LocaleLayout({ params, children }: Props) {
             __html: `document.documentElement.lang="${locale}"`,
           }}
         />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:text-sm focus:font-semibold focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <AnnouncementBanner />
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
       </AuthProvider>
     </NextIntlClientProvider>

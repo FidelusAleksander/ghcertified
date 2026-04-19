@@ -225,5 +225,10 @@
     "advanced_security": "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.",
     "admin": "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.",
     "copilot": "AI pair programming, prompt engineering, Copilot features, and responsible use."
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred.",
+    "tryAgain": "Try again"
   }
 }

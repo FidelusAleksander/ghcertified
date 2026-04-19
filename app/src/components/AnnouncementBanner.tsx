@@ -5,26 +5,32 @@
  * app/[locale]/layout.tsx when the promotion is over.
  */
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { X, Swords } from "lucide-react";
 
 const STORAGE_KEY = "banner-challenge-modes-dismissed";
 
+const subscribe = () => () => {};
+function getSnapshot() {
+  return !sessionStorage.getItem(STORAGE_KEY);
+}
+function getServerSnapshot() {
+  return true;
+}
+
 export function AnnouncementBanner() {
   const locale = useLocale();
   const t = useTranslations("AnnouncementBanner");
-  const [visible, setVisible] = useState(() => {
-    if (typeof window === "undefined") return true;
-    return !sessionStorage.getItem(STORAGE_KEY);
-  });
+  const shouldShow = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const [dismissed, setDismissed] = useState(false);
 
-  if (!visible) return null;
+  if (!shouldShow || dismissed) return null;
 
   function dismiss() {
     sessionStorage.setItem(STORAGE_KEY, "1");
-    setVisible(false);
+    setDismissed(true);
   }
 
   return (
