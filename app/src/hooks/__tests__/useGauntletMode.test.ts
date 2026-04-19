@@ -229,6 +229,57 @@ describe("useGauntletMode", () => {
     expect(hook.result.current.pauseRequested).toBe(false);
   });
 
+  it("answering all questions correctly reaches completed phase with result", async () => {
+    // Use only 3 questions so we can exhaust the pool
+    const shortPool = questions.slice(0, 3);
+    const hook = renderHook(() => useGauntletMode(shortPool, {}));
+    await act(async () => {});
+
+    for (let i = 0; i < 3; i++) {
+      const { correctId } = answerIds(hook);
+      act(() => { hook.result.current.toggleAnswer(correctId); });
+      act(() => { hook.result.current.confirmAnswer(); });
+      expect(hook.result.current.state.phase).toBe("feedback");
+      act(() => { vi.advanceTimersByTime(CORRECT_ADVANCE_DELAY + 50); });
+    }
+
+    expect(hook.result.current.state.phase).toBe("completed");
+    expect(hook.result.current.state.correct).toBe(3);
+    expect(hook.result.current.state.wrong).toBe(0);
+    expect(hook.result.current.result).not.toBeNull();
+    expect(hook.result.current.result!.correct).toBe(3);
+  });
+
+  it("pause during wrong_review pauses on continue", async () => {
+    const hook = await setup();
+    const { wrongId } = answerIds(hook);
+
+    act(() => { hook.result.current.toggleAnswer(wrongId); });
+    act(() => { hook.result.current.confirmAnswer(); });
+    expect(hook.result.current.state.phase).toBe("wrong_review");
+
+    // Request pause while in wrong_review (togglePause only works in playing/feedback,
+    // so request it before answering wrong — but we need to test the continueAfterWrong path)
+    // Actually togglePause guards: playing | feedback. So we request pause before answering.
+    // Let's redo: start fresh, request pause during playing, then answer wrong.
+    const hook2 = await setup();
+    act(() => { hook2.result.current.togglePause(); });
+    expect(hook2.result.current.pauseRequested).toBe(true);
+
+    const ids2 = answerIds(hook2);
+    act(() => { hook2.result.current.toggleAnswer(ids2.wrongId); });
+    act(() => { hook2.result.current.confirmAnswer(); });
+    expect(hook2.result.current.state.phase).toBe("wrong_review");
+
+    // Continue should go to paused (not playing) since pause was requested
+    act(() => { hook2.result.current.continueAfterWrong(); });
+    expect(hook2.result.current.state.phase).toBe("paused");
+
+    // Resume
+    act(() => { hook2.result.current.togglePause(); });
+    expect(hook2.result.current.state.phase).toBe("playing");
+  });
+
   it("timeout on last life leads to game_over_review", async () => {
     const hook = await setup({ lives: 1 });
 

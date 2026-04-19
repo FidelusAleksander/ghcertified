@@ -187,6 +187,68 @@ describe("useTimeTrialMode", () => {
     expect(result.current.result).not.toBeNull();
   });
 
+  it("exhausting all questions triggers game over", () => {
+    // Use only 2 questions
+    const shortPool = questions.slice(0, 2);
+    const { result } = renderHook(() => useTimeTrialMode(shortPool));
+    act(() => {});
+
+    // Answer question 1 correctly
+    let correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    act(() => { vi.advanceTimersByTime(1200 + 50); }); // FEEDBACK_ADVANCE_DELAY
+
+    // Answer question 2 correctly
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+
+    expect(result.current.state.phase).toBe("game_over");
+    expect(result.current.state.correct).toBe(2);
+    expect(result.current.result).not.toBeNull();
+  });
+
+  it("pause after correct answer pauses instead of advancing", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    // Request pause during playing
+    act(() => { result.current.togglePause(); });
+    expect(result.current.pauseRequested).toBe(true);
+
+    // Answer correctly — after feedback delay should pause
+    const correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.state.phase).toBe("feedback");
+
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    expect(result.current.state.phase).toBe("paused");
+
+    // Resume
+    act(() => { result.current.togglePause(); });
+    expect(result.current.state.phase).toBe("playing");
+    expect(result.current.pauseRequested).toBe(false);
+  });
+
+  it("timer stops during wrong_review phase", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    const wrongId = getWrongId(result.current);
+    act(() => { result.current.toggleAnswer(wrongId); });
+    act(() => { result.current.confirmAnswer(); });
+
+    expect(result.current.state.phase).toBe("wrong_review");
+    const timeAtReview = result.current.timeRemaining;
+
+    // Tick several seconds — timer should NOT change during wrong_review
+    act(() => { vi.advanceTimersByTime(5000); });
+    expect(result.current.timeRemaining).toBe(timeAtReview);
+  });
+
   it("pause queues between questions", () => {
     const { result } = renderHook(() => useTimeTrialMode(questions));
     act(() => {});
