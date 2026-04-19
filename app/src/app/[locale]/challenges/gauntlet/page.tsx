@@ -40,7 +40,7 @@ export default async function GauntletPage({ params }: Props) {
   return (
     <div>
       {/* Breadcrumb */}
-      <div className="max-w-[800px] mx-auto px-4 sm:px-8 pt-6 sm:pt-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-6 sm:pt-10">
         <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
           <Link href={`/${locale}/challenges`} className="text-primary no-underline hover:underline">
             {t("label")}
