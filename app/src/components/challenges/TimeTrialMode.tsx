@@ -203,7 +203,6 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
 
               <WrongReviewCallout
                 pausedLabel={t("reviewPaused")}
-                encouragement={t("reportEncouragement")}
                 reportLabel={t("reportQuestion")}
                 reportHref={buildReportHref(failedQuestion)}
               />
