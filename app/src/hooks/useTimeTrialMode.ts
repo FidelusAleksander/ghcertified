@@ -36,6 +36,15 @@ export const INITIAL_TIME = 60;
 export const CORRECT_BONUS = 15;
 /** Score points deducted for a wrong answer (no time penalty). */
 export const SCORE_PENALTY = 1;
+/** Unit label for time values displayed in the UI. */
+export const TIME_UNIT = "s";
+/** Unit label for score point values displayed in the UI. */
+export const SCORE_UNIT = "pt";
+
+/** Computes the effective net score from raw correct/wrong counts. */
+export function computeScore(correct: number, wrong: number): number {
+  return Math.max(0, correct - wrong * SCORE_PENALTY);
+}
 
 export function useTimeTrialMode(allQuestions: Question[]) {
   const makeInitialState = useCallback((): TimeTrialState => ({
@@ -273,7 +282,7 @@ export function useTimeTrialMode(allQuestions: Question[]) {
     }
   }, [state.phase, advanceToNext]);
 
-  const score = Math.max(0, state.correct - state.wrong * SCORE_PENALTY);
+  const score = computeScore(state.correct, state.wrong);
 
   const result: ChallengeResult | null =
     state.phase === "game_over"

@@ -11,7 +11,7 @@
 import { useEffect, useState } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
-import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, SCORE_PENALTY } from "@/hooks/useTimeTrialMode";
+import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, SCORE_PENALTY, TIME_UNIT, SCORE_UNIT } from "@/hooks/useTimeTrialMode";
 import { useTranslations } from "next-intl";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
@@ -76,12 +76,12 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
         <div className="flex items-center gap-2.5 justify-center">
           {totalGained > 0 && (
             <span className="text-[12px] font-bold tabular-nums text-emerald-500">
-              +{totalGained}s
+              +{totalGained}{TIME_UNIT}
             </span>
           )}
           {totalLost > 0 && (
             <span className="text-[12px] font-bold tabular-nums text-destructive">
-              −{totalLost} pts
+              −{totalLost} {SCORE_UNIT}s
             </span>
           )}
         </div>
@@ -336,8 +336,8 @@ function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKe
 
   const isPositive = displayDelta > 0;
   const label = isPositive
-    ? `+${displayDelta}s`
-    : `−${Math.abs(displayDelta)} pt`;
+    ? `+${displayDelta}${TIME_UNIT}`
+    : `−${Math.abs(displayDelta)} ${SCORE_UNIT}`;
 
   return (
     <span
