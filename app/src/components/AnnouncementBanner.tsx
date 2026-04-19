@@ -52,7 +52,7 @@ export function AnnouncementBanner() {
           e.preventDefault();
           dismiss();
         }}
-        className="touch-target absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-md text-card/70 hover:text-card transition-colors"
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-3 rounded-md text-card/70 hover:text-card transition-colors"
         aria-label={t("dismiss")}
       >
         <X className="size-4" />
