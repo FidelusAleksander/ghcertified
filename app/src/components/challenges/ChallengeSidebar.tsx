@@ -105,6 +105,10 @@ interface ChallengeSidebarProps {
   /** Label for the score row (e.g. "Score"). */
   scoreLabel: string;
   scoreValue: number;
+  /** Question progress slot (e.g. "12 / 50"). */
+  progressSlot?: ReactNode;
+  /** Correct/incorrect counters slot. */
+  countersSlot?: ReactNode;
   /** Pause control — pass undefined when pausing isn't available. */
   pauseSlot?: ReactNode;
 }
@@ -117,6 +121,8 @@ export function ChallengeSidebar({
   timerExtra,
   scoreLabel,
   scoreValue,
+  progressSlot,
+  countersSlot,
   pauseSlot,
 }: ChallengeSidebarProps) {
   return (
@@ -156,6 +162,16 @@ export function ChallengeSidebar({
               <span className="font-display text-[18px] font-extrabold tabular-nums text-foreground">{scoreValue}</span>
             </div>
 
+            {(progressSlot || countersSlot) && (
+              <>
+                <Separator />
+                <div className="flex flex-col gap-1.5">
+                  {progressSlot}
+                  {countersSlot}
+                </div>
+              </>
+            )}
+
             {pauseSlot && (
               <>
                 <Separator />
@@ -176,6 +192,8 @@ export function ChallengeSidebar({
             <span className="font-display font-bold text-foreground tabular-nums">{scoreValue}</span>
             <span>{scoreLabel}</span>
           </div>
+          {progressSlot}
+          {countersSlot}
         </div>
         <div className="flex items-center gap-3">
           {pauseSlot}

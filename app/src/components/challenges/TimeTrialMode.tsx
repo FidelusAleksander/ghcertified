@@ -75,18 +75,30 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
         <div className="flex items-center gap-2.5 justify-center">
           {totalGained > 0 && (
             <span className="text-[12px] font-bold tabular-nums text-emerald-500">
-              +{totalGained}s
+              +{formatTimeDelta(totalGained)}
             </span>
           )}
           {totalLost > 0 && (
             <span className="text-[12px] font-bold tabular-nums text-destructive">
-              −{totalLost}s
+              −{formatTimeDelta(totalLost)}
             </span>
           )}
         </div>
       }
       scoreLabel={tChallenges("score")}
       scoreValue={state.correct}
+      progressSlot={
+        <div className="flex items-center justify-between text-[12px] text-muted-foreground tabular-nums">
+          <span>{tChallenges("progress")}</span>
+          <span className="font-bold text-foreground">{state.correct + state.wrong} / {state.questions.length}</span>
+        </div>
+      }
+      countersSlot={
+        <div className="flex items-center justify-between text-[12px] tabular-nums">
+          <span className="text-emerald-500 font-bold">✓ {state.correct}</span>
+          <span className="text-destructive font-bold">✗ {state.wrong}</span>
+        </div>
+      }
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
           <PauseButton
@@ -315,6 +327,17 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
       </div>
     </div>
   );
+}
+
+// ── Helpers ────────────────────────────────────────────────────────
+
+/** Format seconds as "Xm Ys" when ≥ 60, otherwise "Xs". */
+function formatTimeDelta(seconds: number): string {
+  const abs = Math.abs(seconds);
+  if (abs < 60) return `${abs}s`;
+  const m = Math.floor(abs / 60);
+  const s = abs % 60;
+  return s > 0 ? `${m}m ${s}s` : `${m}m`;
 }
 
 // ── Floating delta popup ───────────────────────────────────────────

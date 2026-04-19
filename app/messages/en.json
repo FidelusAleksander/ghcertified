@@ -171,6 +171,7 @@
     "leaderboardEmpty": "No scores yet — be first on the board.",
     "leaderboardUnavailable": "Leaderboard unavailable right now.",
     "score": "Score",
+    "progress": "Progress",
     "viewProfile": "View GitHub profile",
     "gauntletRule1": "You get {lives} lives — mess up and they're gone forever 💀",
     "gauntletRule2": "{seconds}s on the clock per question — tick tock!",

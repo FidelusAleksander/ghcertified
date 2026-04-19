@@ -67,6 +67,18 @@ export function GauntletMode({ questions }: GauntletModeProps) {
       timerSlot={<TimerBar timeRemaining={frozen ? timeLimitSeconds : timeRemaining} timeLimitSeconds={timeLimitSeconds} />}
       scoreLabel={tChallenges("score")}
       scoreValue={state.correct}
+      progressSlot={
+        <div className="flex items-center justify-between text-[12px] text-muted-foreground tabular-nums">
+          <span>{tChallenges("progress")}</span>
+          <span className="font-bold text-foreground">{state.correct + state.wrong} / {state.questions.length}</span>
+        </div>
+      }
+      countersSlot={
+        <div className="flex items-center justify-between text-[12px] tabular-nums">
+          <span className="text-emerald-500 font-bold">✓ {state.correct}</span>
+          <span className="text-destructive font-bold">✗ {state.wrong}</span>
+        </div>
+      }
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
           <PauseButton
