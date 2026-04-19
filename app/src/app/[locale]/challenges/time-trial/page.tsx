@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catalog = getCertCatalog(parseSupportedLocale(locale));
   const totalQuestions = catalog.reduce((sum, c) => sum + c.questionCount, 0);
   const title = "Time Trial — Games";
-  const description = `Time Trial: ${totalQuestions} questions, race the clock. Correct answers add 15s, wrong answers drain 10s.`;
+  const description = `Time Trial: ${totalQuestions} questions, race the clock. Correct answers add 15s, wrong answers drain 5s.`;
 
   return {
     title,

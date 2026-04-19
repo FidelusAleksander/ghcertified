@@ -24,10 +24,10 @@ interface TimeTrialResultsProps {
 }
 
 function getTier(correct: number) {
-  if (correct >= 40) return { emoji: "🏆", title: "resultLegendary", color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/30", glow: true };
-  if (correct >= 25) return { emoji: "🔥", title: "resultBlaze", color: "text-orange-500", bg: "bg-orange-500/10", border: "border-orange-500/30", glow: true };
-  if (correct >= 12) return { emoji: "⚡", title: "resultQuick", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30", glow: false };
-  if (correct >= 5) return { emoji: "⏱️", title: "resultSteady", color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/30", glow: false };
+  if (correct >= 50) return { emoji: "🏆", title: "resultLegendary", color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/30", glow: true };
+  if (correct >= 35) return { emoji: "🔥", title: "resultBlaze", color: "text-orange-500", bg: "bg-orange-500/10", border: "border-orange-500/30", glow: true };
+  if (correct >= 18) return { emoji: "⚡", title: "resultQuick", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30", glow: false };
+  if (correct >= 8) return { emoji: "⏱️", title: "resultSteady", color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/30", glow: false };
   return { emoji: "⏰", title: "resultOutOfTime", color: "text-muted-foreground", bg: "bg-muted", border: "border-border", glow: false };
 }
 
