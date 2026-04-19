@@ -70,7 +70,7 @@ jobs:
         working-directory: app
       - run: npm run test:e2e
         working-directory: app
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      - uses: actions/upload-artifact@043fb46d1ac8dc357dfe103e980d66bb9cc66911 # v7.0.1
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
