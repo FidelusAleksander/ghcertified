@@ -31,6 +31,7 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
   const locale = useLocale();
   const t = useTranslations("Gauntlet");
   const tChallenges = useTranslations("Challenges");
+  const tCC = useTranslations("ChallengeCommon");
   const tier = getTier(result.correct);
 
   return (
@@ -47,11 +48,11 @@ export function GauntletResults({ result, onRestart, saveAction }: GauntletResul
       statLabels={[
         t("correctCount", { count: result.correct }).replace(String(result.correct), "").trim(),
         t("wrongCount", { count: result.wrong }).replace(String(result.wrong), "").trim(),
-        t("accuracy"),
+        tCC("accuracy"),
       ]}
-      playAgainLabel={t("playAgain")}
+      playAgainLabel={tCC("playAgain")}
       viewLeaderboardLabel={tChallenges("viewLeaderboard")}
-      backLabel={t("backToChallenges")}
+      backLabel={tCC("backToChallenges")}
       locale={locale}
       leaderboardTab="gauntlet"
     />

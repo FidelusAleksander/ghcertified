@@ -39,6 +39,7 @@ interface QuizProps {
 export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
   const locale = useLocale();
   const t = useTranslations("Quiz");
+  const tQ = useTranslations("QuestionCommon");
   const [quizQuestions, setQuizQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -212,7 +213,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6 items-start">
         {/* Question card */}
         <QuestionCard
-          headerLabel={t("questionOf", { current: currentIndex + 1, total: quizQuestions.length })}
+          headerLabel={tQ("questionOf", { current: currentIndex + 1, total: quizQuestions.length })}
           headerActions={
             !isComplete ? (
               <button
@@ -237,10 +238,10 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             ) : undefined
           }
           documentationHref={currentQuestion.documentation}
-          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(t("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(t("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${cert}/question-${currentQuestion.id.replace(`${cert}-`, "")}.md)` }))}&labels=question-issue`}
-          learnMoreLabel={t("learnMore")}
-          reportLabel={t("report")}
-          reportTooltip={t("reportTooltip")}
+          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${cert}/question-${currentQuestion.id.replace(`${cert}-`, "")}.md)` }))}&labels=question-issue`}
+          learnMoreLabel={tQ("learnMore")}
+          reportLabel={tQ("report")}
+          reportTooltip={tQ("reportTooltip")}
           footer={
             <>
               {/* Mobile question strip */}
@@ -278,14 +279,14 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     disabled={currentIndex === 0}
                   >
                     <ChevronLeft data-icon="inline-start" />
-                    {t("previous")}
+                    {tQ("previous")}
                   </Button>
                   {currentIndex < quizQuestions.length - 1 ? (
                     <Button
                       onClick={handleNext}
                       className="bg-foreground text-card hover:bg-foreground/90"
                     >
-                      {t("nextQuestion")}
+                      {tQ("nextQuestion")}
                       <ChevronRight data-icon="inline-end" />
                     </Button>
                   ) : !isComplete ? (
@@ -326,18 +327,18 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               dimUnselected
               onToggle={handleToggleAnswer}
               labels={{
-                answerGroup: t("answerGroup"),
-                answerOption: (num, text) => t("answerOption", { number: num, text }),
-                selectExactly: t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length }),
-                yourAnswer: t("yourAnswer"),
+                answerGroup: tQ("answerGroup"),
+                answerOption: (num, text) => tQ("answerOption", { number: num, text }),
+                selectExactly: tQ("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length }),
+                yourAnswer: tQ("yourAnswer"),
               }}
             />
 
             {isComplete && (
               <FeedbackAlert
                 isCorrect={isCurrentCorrectInReview}
-                correctLabel={t("correct")}
-                incorrectLabel={t("incorrect")}
+                correctLabel={tQ("correct")}
+                incorrectLabel={tQ("incorrect")}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />
             )}
@@ -378,8 +379,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
               questionMap: t("questionMap"),
               previousMapPage: t("previousMapPage"),
               nextMapPage: t("nextMapPage"),
-              correct: t("correct"),
-              incorrect: t("incorrect"),
+              correct: tQ("correct"),
+              incorrect: tQ("incorrect"),
               answered: t("answered"),
               partiallyAnswered: t("partiallyAnswered"),
               unanswered: t("unanswered"),

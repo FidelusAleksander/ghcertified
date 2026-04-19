@@ -32,6 +32,8 @@ interface GauntletModeProps {
 export function GauntletMode({ questions }: GauntletModeProps) {
   const t = useTranslations("Gauntlet");
   const tChallenges = useTranslations("Challenges");
+  const tQ = useTranslations("QuestionCommon");
+  const tCC = useTranslations("ChallengeCommon");
   const {
     state,
     currentQuestion,
@@ -54,8 +56,8 @@ export function GauntletMode({ questions }: GauntletModeProps) {
 
   function buildReportHref(q: Question) {
     const fileLink = `[${q.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
-    const title = encodeURIComponent(t("reportIssueTitle", { cert: q.cert, questionId: q.id }));
-    const body = encodeURIComponent(t("reportIssueBody", { question: q.question, fileLink }));
+    const title = encodeURIComponent(tQ("reportIssueTitle", { cert: q.cert, questionId: q.id }));
+    const body = encodeURIComponent(tQ("reportIssueBody", { question: q.question, fileLink }));
     return `https://github.com/FidelusAleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
   }
 
@@ -85,8 +87,8 @@ export function GauntletMode({ questions }: GauntletModeProps) {
           <PauseButton
             pauseRequested={pauseRequested}
             onToggle={togglePause}
-            label={t("pause")}
-            queuedLabel={t("pauseQueued")}
+            label={tCC("pause")}
+            queuedLabel={tCC("pauseQueued")}
           />
         ) : undefined
       }
@@ -128,8 +130,8 @@ export function GauntletMode({ questions }: GauntletModeProps) {
           <QuestionCard
             headerLabel={tChallenges("gauntletMode")}
             reportHref={buildReportHref(failedQuestion)}
-            reportLabel={t("report")}
-            reportTooltip={t("reportTooltip")}
+            reportLabel={tQ("report")}
+            reportTooltip={tQ("reportTooltip")}
             headerActions={<LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />}
             footer={
               <div className="px-4 sm:px-7 py-4 sm:py-5 flex items-center justify-end">
@@ -138,7 +140,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
                   <ArrowRight data-icon="inline-start" className="size-4" />
-                  {isGameOver ? t("continueToResults") : t("continueNext")}
+                  {isGameOver ? t("continueToResults") : tCC("continueNext")}
                 </Button>
               </div>
             }
@@ -158,10 +160,10 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                 dimUnselected={false}
                 onToggle={() => {}}
                 labels={{
-                  answerGroup: t("answerGroup"),
-                  answerOption: (num, text) => t("answerOption", { number: num, text }),
-                  selectExactly: t("selectExactly", { count: failedQuestion.answers.filter((a) => a.isCorrect).length }),
-                  yourAnswer: t("yourAnswer"),
+                  answerGroup: tQ("answerGroup"),
+                  answerOption: (num, text) => tQ("answerOption", { number: num, text }),
+                  selectExactly: tQ("selectExactly", { count: failedQuestion.answers.filter((a) => a.isCorrect).length }),
+                  yourAnswer: tQ("yourAnswer"),
                 }}
               />
 
@@ -177,8 +179,8 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               />
 
               <WrongReviewCallout
-                pausedLabel={t("reviewPaused")}
-                reportLabel={t("reportQuestion")}
+                pausedLabel={tCC("reviewPaused")}
+                reportLabel={tCC("reportQuestion")}
                 reportHref={buildReportHref(failedQuestion)}
               />
             </div>
@@ -201,17 +203,17 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                 <Pause className="size-8 text-primary" />
               </div>
               <h2 className="font-display text-[24px] sm:text-[28px] font-extrabold tracking-tight text-foreground mb-2">
-                {t("paused")}
+                {tCC("paused")}
               </h2>
               <p className="text-[14px] text-muted-foreground mb-8 max-w-[360px] mx-auto">
-                {t("pausedDescription")}
+                {tCC("pausedDescription")}
               </p>
               <Button
                 onClick={togglePause}
                 className="bg-foreground text-card hover:bg-foreground/90 rounded-[9px] text-[14px] font-semibold px-8"
               >
                 <Play data-icon="inline-start" className="size-4" />
-                {t("resume")}
+                {tCC("resume")}
               </Button>
             </CardContent>
           </Card>
@@ -238,7 +240,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
         <div className="flex items-center gap-2 rounded-lg bg-primary/10 border border-primary/20 px-4 py-2.5 mb-4 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200">
           <Pause className="size-4 text-primary shrink-0" />
           <span className="text-[13px] font-medium text-primary">
-            {t("pauseBanner")}
+            {tCC("pauseBanner")}
           </span>
         </div>
       )}
@@ -247,8 +249,8 @@ export function GauntletMode({ questions }: GauntletModeProps) {
         <QuestionCard
           headerLabel={tChallenges("gauntletMode")}
           reportHref={buildReportHref(currentQuestion)}
-          reportLabel={t("report")}
-          reportTooltip={t("reportTooltip")}
+          reportLabel={tQ("report")}
+          reportTooltip={tQ("reportTooltip")}
           headerActions={
             <div className="flex items-center gap-3">
               <LivesDisplay lives={state.lives} initialLives={state.initialLives} compact />
@@ -263,12 +265,12 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
                   <Check data-icon="inline-start" className="size-4" />
-                  {t("confirm")}
+                  {tCC("confirm")}
                 </Button>
               )}
               {isFeedback && (
                 <span className="text-[13px] text-muted-foreground font-medium">
-                  {pauseRequested ? t("pausingNext") : t("nextQuestionIn")}
+                  {pauseRequested ? tCC("pausingNext") : tCC("nextQuestionIn")}
                 </span>
               )}
             </div>
@@ -292,10 +294,10 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               dimUnselected
               onToggle={toggleAnswer}
               labels={{
-                answerGroup: t("answerGroup"),
-                answerOption: (num, text) => t("answerOption", { number: num, text }),
-                selectExactly: t("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length }),
-                yourAnswer: t("yourAnswer"),
+                answerGroup: tQ("answerGroup"),
+                answerOption: (num, text) => tQ("answerOption", { number: num, text }),
+                selectExactly: tQ("selectExactly", { count: currentQuestion.answers.filter((a) => a.isCorrect).length }),
+                yourAnswer: tQ("yourAnswer"),
               }}
             />
 

@@ -31,6 +31,7 @@ export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialRes
   const locale = useLocale();
   const t = useTranslations("TimeTrial");
   const tChallenges = useTranslations("Challenges");
+  const tCC = useTranslations("ChallengeCommon");
   const tier = getTier(result.correct);
 
   return (
@@ -44,10 +45,10 @@ export function TimeTrialResults({ result, onRestart, saveAction }: TimeTrialRes
       tier={{ ...tier, title: t(tier.title) }}
       heroValue={result.correct}
       heroLabel={t("questionsAnswered")}
-      statLabels={[t("correct"), t("wrong"), t("accuracy")]}
-      playAgainLabel={t("playAgain")}
+      statLabels={[tCC("correctCounter"), t("wrong"), tCC("accuracy")]}
+      playAgainLabel={tCC("playAgain")}
       viewLeaderboardLabel={tChallenges("viewLeaderboard")}
-      backLabel={t("backToChallenges")}
+      backLabel={tCC("backToChallenges")}
       locale={locale}
       leaderboardTab="time-trial"
     />
