@@ -140,7 +140,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                   className="bg-foreground text-card hover:bg-foreground/90"
                 >
                   <ArrowRight data-icon="inline-start" className="size-4" />
-                  {isGameOver ? t("continueToResults") : tCC("continueNext")}
+                  {isGameOver ? t("continueToResults") : tCC("nextQuestionButton")}
                 </Button>
               </div>
             }
@@ -179,7 +179,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               />
 
               <WrongReviewCallout
-                pausedLabel={tCC("reviewPaused")}
+                pausedLabel={tCC("timerPausedLabel")}
                 reportLabel={tCC("reportQuestion")}
                 reportHref={buildReportHref(failedQuestion)}
               />
@@ -206,7 +206,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                 {tCC("paused")}
               </h2>
               <p className="text-[14px] text-muted-foreground mb-8 max-w-[360px] mx-auto">
-                {tCC("pausedDescription")}
+                {tCC("pausedHint")}
               </p>
               <Button
                 onClick={togglePause}
@@ -270,7 +270,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
               )}
               {isFeedback && (
                 <span className="text-[13px] text-muted-foreground font-medium">
-                  {pauseRequested ? tCC("pausingNext") : tCC("nextQuestionIn")}
+                  {pauseRequested ? tCC("pausingNext") : tCC("nextQuestionLoading")}
                 </span>
               )}
             </div>

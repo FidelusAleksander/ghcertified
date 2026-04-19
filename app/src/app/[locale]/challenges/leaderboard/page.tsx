@@ -18,7 +18,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Challenges" });
-  const title = `${t("fullLeaderboard")} — Games`;
+  const title = `${t("leaderboardPageTitle")} — Games`;
   const description = t("fullLeaderboardDescription");
 
   return {
@@ -38,7 +38,7 @@ export default async function FullLeaderboardRoute({ params }: Props) {
     <div className="max-w-[720px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
       <div className="mb-8">
         <h1 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-          {t("fullLeaderboard")}
+          {t("leaderboardPageTitle")}
         </h1>
         <p className="text-[15px] text-muted-foreground mt-2">
           {t("fullLeaderboardDescription")}

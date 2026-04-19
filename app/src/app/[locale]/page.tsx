@@ -83,7 +83,7 @@ export default async function HomePage({ params }: Props) {
               className="h-auto rounded-[10px] px-7 py-3.5 text-[15px] font-semibold bg-foreground text-card hover:bg-foreground/90 justify-center"
             >
               <Play data-icon="inline-start" />
-              {t("startPracticing")}
+              {t("ctaPracticeTest")}
             </Button>
             <Button
               variant="outline"

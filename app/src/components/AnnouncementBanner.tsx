@@ -34,11 +34,11 @@ export function AnnouncementBanner() {
         className="block px-10 py-2.5 text-center text-[13px] sm:text-sm font-medium no-underline hover:underline"
       >
         <Swords className="inline size-3.5 mr-1.5 -mt-0.5" />
-        <span className="font-semibold">{t("new")}</span>
+        <span className="font-semibold">{t("badge")}</span>
         {" "}
         {t("message")}
         {" "}
-        <span className="font-semibold">{t("cta")}</span>
+        <span className="font-semibold">{t("ctaLabel")}</span>
       </Link>
       <button
         type="button"

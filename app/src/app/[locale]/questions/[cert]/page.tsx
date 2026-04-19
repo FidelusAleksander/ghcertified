@@ -67,7 +67,7 @@ export default async function CertQuestionsPage({ params }: Props) {
         {certInfo.title}
       </h1>
       <p className="mt-2 text-muted-foreground mb-8">
-        {t("questions", { count: questions.length })}
+        {t("questionCount", { count: questions.length })}
       </p>
 
       <QuestionBrowser questions={questions} />

@@ -149,7 +149,7 @@ export function ChallengeCard({
             <Separator />
             <div>
               <div className="text-[10px] font-bold tracking-[1px] uppercase text-muted-foreground mb-2">
-                {t("leaderboard")}
+                {t("leaderboardSectionTitle")}
               </div>
               {leaderboard && leaderboard.length > 0 ? (
                 <>

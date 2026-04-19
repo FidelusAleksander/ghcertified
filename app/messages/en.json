@@ -1,9 +1,9 @@
 {
   "AnnouncementBanner": {
-    "new": "New!",
     "message": "Challenges are here — compete in Gauntlet & Time Trial with global leaderboards.",
-    "cta": "Try it now →",
-    "dismiss": "Dismiss"
+    "dismiss": "Dismiss",
+    "badge": "New!",
+    "ctaLabel": "Try it now →"
   },
   "Nav": {
     "practiceTests": "Practice Tests",
@@ -24,7 +24,6 @@
     "heroTitle2": "GitHub",
     "heroTitle3": "Certifications.",
     "heroDescription": "Practice with community-contributed questions across all GitHub certification tracks — or test your skills in competitive challenge modes with leaderboards.",
-    "startPracticing": "Take a Practice Test",
     "statQuestions": "Practice questions",
     "statChallenges": "Challenges",
     "statFree": "Free",
@@ -44,29 +43,30 @@
     "communityDescription": "This project is shaped by the community. Every question, fix, and improvement comes from people like you.",
     "joinContributors": "Join the contributors →",
     "contributorTooltip": "{login} — {count} contributions",
-    "tryChallenges": "Try Challenge Modes"
+    "tryChallenges": "Try Challenge Modes",
+    "ctaPracticeTest": "Take a Practice Test"
   },
   "PracticeTests": {
     "label": "Practice Tests",
-    "title1": "Choose a",
-    "title2": "certification track",
     "description": "Set the number of questions you want, then jump in. Questions are randomized each session.",
-    "totalStat": "{totalQuestions} questions across {certCount} certifications"
+    "totalStat": "{totalQuestions} questions across {certCount} certifications",
+    "headingPrefix": "Choose a",
+    "headingHighlight": "certification track"
   },
   "CatalogCard": {
     "questionsAvailable": "{count} questions",
-    "practiceWith": "Number of questions",
     "start": "Start Practice Test",
-    "browseQuestions": "Browse questions individually"
+    "browseQuestions": "Browse questions individually",
+    "questionCountLabel": "Number of questions"
   },
   "QuestionsLibrary": {
     "label": "Question Library",
     "title": "Browse all questions",
     "description": "Explore every question organized by certification track. Pick a category to study at your own pace.",
-    "questions": "{count} questions",
     "browseQuestions": "Browse questions",
     "questionsAvailable": "{count} questions available",
-    "contributePrompt": "Want to contribute? <link>Add your own questions →</link>"
+    "contributePrompt": "Want to contribute? <link>Add your own questions →</link>",
+    "questionCount": "{count} questions"
   },
   "QuestionCommon": {
     "report": "Report",
@@ -86,21 +86,21 @@
   },
   "ChallengeCommon": {
     "confirm": "Confirm",
-    "nextQuestionIn": "Next question...",
-    "continueNext": "Next Question",
-    "correct": "correct",
     "pause": "Pause",
     "pauseQueued": "Pausing…",
     "pausingNext": "Pausing after this question…",
     "paused": "Game Paused",
     "pauseBanner": "Finish this question — the game will pause before the next one.",
-    "pausedDescription": "Take your time. The timer will restart when you resume.",
     "resume": "Resume",
-    "reviewPaused": "Timer paused",
     "playAgain": "Play Again",
     "backToChallenges": "Back to Challenges",
     "reportQuestion": "Report this question",
-    "accuracy": "Accuracy"
+    "accuracy": "Accuracy",
+    "nextQuestionButton": "Next Question",
+    "nextQuestionLoading": "Next question...",
+    "timerPausedLabel": "Timer paused",
+    "pausedHint": "Take your time. The timer will restart when you resume.",
+    "correctCounter": "correct"
   },
   "Quiz": {
     "breadcrumbPracticeTests": "Practice Tests",
@@ -138,8 +138,6 @@
   },
   "Challenges": {
     "label": "Challenges",
-    "title1": "Challenge",
-    "title2": "yourself",
     "description": "Put your certification knowledge to the test with high-stakes game modes. Compete for the top of the leaderboard.",
     "gauntletMode": "Gauntlet",
     "timeTrialMode": "Time Trial",
@@ -154,7 +152,6 @@
     "questionsAvailable": "{count} questions",
     "backToChallenges": "← Back to Challenges",
     "rules": "Rules",
-    "leaderboard": "Leaderboard",
     "topPlayers": "Top Players",
     "leaderboardLoading": "Loading leaderboard...",
     "leaderboardEmpty": "No scores yet — be first on the board.",
@@ -176,7 +173,6 @@
     "saveFailed": "Failed to save result",
     "retrySave": "Retry save",
     "saveThresholdNotMet": "Score {count}+ required to save",
-    "fullLeaderboard": "Leaderboard",
     "fullLeaderboardDescription": "See who's on top across all challenge modes.",
     "viewFullLeaderboard": "View full leaderboard →",
     "viewLeaderboard": "View Leaderboard",
@@ -189,7 +185,11 @@
     "yourRank": "You",
     "gauntletSubtitle": "Survive the longest streak",
     "timeTrialSubtitle": "Race the clock",
-    "achievedAt": "Date"
+    "leaderboardPageTitle": "Leaderboard",
+    "dateColumnHeader": "Date",
+    "leaderboardSectionTitle": "Leaderboard",
+    "headingPrefix": "Challenge",
+    "headingHighlight": "yourself"
   },
   "Gauntlet": {
     "correctFeedback": "Correct! Keep going!",

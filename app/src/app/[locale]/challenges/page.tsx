@@ -17,7 +17,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Challenges" });
-  const title = `${t("title1")} ${t("title2")} — Games`;
+  const title = `${t("headingPrefix")} ${t("headingHighlight")} — Games`;
   const description = t("description");
 
   return {
@@ -41,7 +41,7 @@ export default async function GamesPage({ params }: Props) {
       <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
         <div>
           <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-            {t("title1")}<br />{t("title2")}
+            {t("headingPrefix")}<br />{t("headingHighlight")}
           </h2>
           <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
             {t("description")}

@@ -90,13 +90,13 @@ export function CatalogCards({ certs, locale }: Props) {
                     {/* Slider group */}
                     <div className="flex flex-col gap-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-[12.5px] text-muted-foreground">{t("practiceWith")}</span>
+                        <span className="text-[12.5px] text-muted-foreground">{t("questionCountLabel")}</span>
                         <span className="font-display text-sm font-bold text-foreground tabular-nums">
                           {count} <span className="font-normal text-muted-foreground">/ {cert.questions}</span>
                         </span>
                       </div>
                       <Slider
-                        aria-label={t("practiceWith")}
+                        aria-label={t("questionCountLabel")}
                         value={[count]}
                         min={1}
                         max={cert.questions}

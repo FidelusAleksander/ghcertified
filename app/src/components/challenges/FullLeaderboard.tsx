@@ -306,7 +306,7 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
             <span>{t("rank")}</span>
             <span>{t("player")}</span>
             <span className="text-right">{t("score")}</span>
-            <span className="text-right">{t("achievedAt")}</span>
+            <span className="text-right">{t("dateColumnHeader")}</span>
             <span />
           </div>
 

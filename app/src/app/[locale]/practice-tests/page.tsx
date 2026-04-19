@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "PracticeTests" });
-  const title = `${t("title1")} ${t("title2")}`;
+  const title = `${t("headingPrefix")} ${t("headingHighlight")}`;
   const description = t("description");
 
   return {
@@ -52,7 +52,7 @@ export default async function PracticeTestsPage({ params }: Props) {
       <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
         <div>
           <h2 className="font-display text-[clamp(26px,3vw,36px)] font-extrabold tracking-tight leading-[1.1] text-foreground">
-            {t("title1")}<br />{t("title2")}
+            {t("headingPrefix")}<br />{t("headingHighlight")}
           </h2>
           <p className="text-[15px] text-muted-foreground mt-2 max-w-[480px]">
             {t("description")}
