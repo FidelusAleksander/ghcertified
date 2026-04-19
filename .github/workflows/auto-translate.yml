@@ -75,3 +75,5 @@ jobs:
             --body "This PR updates translations for recently changed content from commit ${{ github.sha }}." \
             --base main \
             --head i18n/auto-translate-${{ github.sha }}
+
+          gh pr merge --auto --squash i18n/auto-translate-${{ github.sha }}
