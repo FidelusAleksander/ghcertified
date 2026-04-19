@@ -14,9 +14,9 @@ import { useState, useCallback, useEffect } from "react";
 import { Question } from "@/types/quiz";
 import { shuffle, cn } from "@/lib/utils";
 import { useCountUp } from "@/hooks/useCountUp";
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
 import { localePath } from "@/lib/locales";
+import { useLocale, useTranslations } from "next-intl";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -201,11 +201,13 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-6 sm:py-12">
       {/* Top bar with breadcrumb */}
       <div className="mb-6 sm:mb-9">
-        <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-1">
-          <Link href={localePath(locale, "/practice-tests")} className="text-primary no-underline hover:underline">{t("breadcrumbPracticeTests")}</Link>
-          <span>›</span>
-          <span>{certName}</span>
-        </div>
+        <PageBreadcrumb
+          className="mb-1"
+          items={[
+            { label: t("breadcrumbPracticeTests"), href: localePath(locale, "/practice-tests") },
+            { label: certName },
+          ]}
+        />
         <h1 className="font-display text-[24px] sm:text-[30px] font-extrabold text-foreground tracking-tight">{certName}</h1>
       </div>
 

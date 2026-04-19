@@ -5,8 +5,8 @@
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import type { CertificationType } from "@/lib/questions";
 import { getQuestionsByCert, getCertInfo, SUPPORTED_LOCALES, CERT_TITLES, VALID_CERTS, parseSupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
@@ -58,11 +58,13 @@ export default async function CertQuestionsPage({ params }: Props) {
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-12 sm:py-20">
-      <div className="flex items-center gap-2 text-[13px] text-muted-foreground mb-4">
-        <Link href={`/${locale}/practice-tests`} className="text-primary no-underline hover:underline">{t("label")}</Link>
-        <span>›</span>
-        <span>{certInfo.title}</span>
-      </div>
+      <PageBreadcrumb
+        className="mb-4"
+        items={[
+          { label: t("label"), href: `/${locale}/practice-tests` },
+          { label: certInfo.title },
+        ]}
+      />
       <h1 className="font-display text-[30px] font-extrabold text-foreground tracking-tight">
         {certInfo.title}
       </h1>

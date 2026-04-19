@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getAllQuestions, getCertCatalog, parseSupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
-import Link from "next/link";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { GauntletMode } from "@/components/challenges/GauntletMode";
 
 interface Props {
@@ -39,15 +39,13 @@ export default async function GauntletPage({ params }: Props) {
 
   return (
     <div>
-      {/* Breadcrumb */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-6 sm:pt-10">
-        <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
-          <Link href={`/${locale}/challenges`} className="text-primary no-underline hover:underline">
-            {t("label")}
-          </Link>
-          <span>›</span>
-          <span>{t("gauntletMode")}</span>
-        </div>
+        <PageBreadcrumb
+          items={[
+            { label: t("label"), href: `/${locale}/challenges` },
+            { label: t("gauntletMode") },
+          ]}
+        />
       </div>
 
       <GauntletMode questions={questions} />

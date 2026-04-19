@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getAllQuestions, getCertCatalog, parseSupportedLocale } from "@/lib/questions";
 import { buildAlternates, OG_IMAGE } from "@/lib/seo";
-import Link from "next/link";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { TimeTrialMode } from "@/components/challenges/TimeTrialMode";
 
 interface Props {
@@ -40,15 +40,13 @@ export default async function TimeTrialPage({ params }: Props) {
 
   return (
     <div>
-      {/* Breadcrumb */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-6 sm:pt-10">
-        <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
-          <Link href={`/${locale}/challenges`} className="text-primary no-underline hover:underline">
-            {tChallenges("label")}
-          </Link>
-          <span>›</span>
-          <span>{t("title")}</span>
-        </div>
+        <PageBreadcrumb
+          items={[
+            { label: tChallenges("label"), href: `/${locale}/challenges` },
+            { label: t("title") },
+          ]}
+        />
       </div>
 
       <TimeTrialMode questions={questions} />
