@@ -31,11 +31,11 @@ interface TimeTrialState {
 const FEEDBACK_ADVANCE_DELAY = 1200;
 
 /** Starting time in seconds. */
-export const INITIAL_TIME = 60;
+export const INITIAL_TIME = 90;
 /** Seconds added for a correct answer. */
 export const CORRECT_BONUS = 15;
 /** Seconds subtracted for a wrong answer. */
-export const WRONG_PENALTY = 10;
+export const WRONG_PENALTY = 5;
 
 export function useTimeTrialMode(allQuestions: Question[]) {
   const makeInitialState = useCallback((): TimeTrialState => ({
