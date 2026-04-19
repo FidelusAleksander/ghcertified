@@ -19,6 +19,7 @@ import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
 import { GauntletResults } from "@/components/challenges/GauntletResults";
 import { SaveResultButton } from "@/components/challenges/SaveResultButton";
 import { ChallengeSidebar, LivesDisplay, TimerBar, PauseButton } from "@/components/challenges/ChallengeSidebar";
+import { WrongReviewCallout } from "@/components/challenges/WrongReviewCallout";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -173,6 +174,13 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                     : (isGameOver ? t("wrongGameOver") : t("wrongLifeLost"))
                 }
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
+              />
+
+              <WrongReviewCallout
+                pausedLabel={t("reviewPaused")}
+                encouragement={t("reportEncouragement")}
+                reportLabel={t("reportQuestion")}
+                reportHref={buildReportHref(failedQuestion)}
               />
             </div>
           </QuestionCard>
