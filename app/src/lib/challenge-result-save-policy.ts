@@ -13,5 +13,6 @@ export function isResultEligibleToSave(
   gameType: ChallengeType,
   result: ChallengeResult,
 ): boolean {
-  return result.correct >= getMinimumCorrectToSave(gameType);
+  const score = result.score ?? result.correct;
+  return score >= getMinimumCorrectToSave(gameType);
 }

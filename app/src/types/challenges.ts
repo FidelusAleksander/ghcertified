@@ -8,6 +8,8 @@
 export interface ChallengeResult {
   correct: number;
   wrong: number;
+  /** Effective leaderboard score (may differ from raw correct count). */
+  score?: number;
 }
 
 /** Single row in a challenge leaderboard. */

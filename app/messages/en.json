@@ -252,7 +252,7 @@
     "confirm": "Confirm",
     "nextQuestionIn": "Next question...",
     "correctFeedback": "Correct! +15 seconds!",
-    "incorrectFeedback": "Wrong! −10 seconds!",
+    "incorrectFeedback": "Wrong! −1 point!",
     "timeUpFeedback": "Time's up!",
     "answerGroup": "Answer options",
     "answerOption": "Option {number}: {text}",
@@ -280,11 +280,12 @@
     "timeBonusLabel": "+{seconds}s",
     "timePenaltyLabel": "−{seconds}s",
     "comingSoonTitle": "Coming Soon",
-    "comingSoonDescription": "Time Trial mode is under development. Race the clock — correct answers add 15s, wrong answers drain 10s.",
+    "comingSoonDescription": "Time Trial mode is under development. Race the clock — correct answers add 15s, wrong answers cost 1 point from your score.",
     "report": "Report",
     "reportTooltip": "Report an issue with this question",
     "reportIssueTitle": "[{cert}] Issue with {questionId}",
-    "reportIssueBody": "**Question:** {question}\n\n**File:** {fileLink}\n\n**Issue:**\n\nPlease describe the problem with this question.\n\n**Documentation / Changelog link:**\n\nPlease provide a link to official documentation or changelog that supports your report."
+    "reportIssueBody": "**Question:** {question}\n\n**File:** {fileLink}\n\n**Issue:**\n\nPlease describe the problem with this question.\n\n**Documentation / Changelog link:**\n\nPlease provide a link to official documentation or changelog that supports your report.",
+    "scoreLabel": "score"
   },
   "CertDescriptions": {
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",

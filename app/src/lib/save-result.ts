@@ -69,7 +69,7 @@ export async function saveChallengeResult(
     challenge: gameType,
     correct: result.correct,
     wrong: result.wrong,
-    score: result.correct,
+    score: result.score ?? result.correct,
   });
 
   if (error) {

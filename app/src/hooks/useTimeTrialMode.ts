@@ -4,8 +4,8 @@
  * useTimeTrialMode — game engine hook for Time Trial.
  *
  * A single global countdown starts at INITIAL_TIME seconds.
- * Correct answers add CORRECT_BONUS seconds, wrong answers subtract
- * WRONG_PENALTY seconds. Timer reaches 0 → game over.
+ * Correct answers add CORRECT_BONUS seconds. Wrong answers deduct SCORE_PENALTY
+ * points from the score (score never goes below 0). Timer reaches 0 → game over.
  * Score = total correct answers.
  *
  * Timer pauses during feedback and pause phases, resumes on next question.
@@ -34,8 +34,8 @@ const FEEDBACK_ADVANCE_DELAY = 1200;
 export const INITIAL_TIME = 60;
 /** Seconds added for a correct answer. */
 export const CORRECT_BONUS = 15;
-/** Seconds subtracted for a wrong answer. */
-export const WRONG_PENALTY = 10;
+/** Score points deducted for a wrong answer (no time penalty). */
+export const SCORE_PENALTY = 1;
 
 export function useTimeTrialMode(allQuestions: Question[]) {
   const makeInitialState = useCallback((): TimeTrialState => ({
@@ -238,10 +238,9 @@ export function useTimeTrialMode(allQuestions: Question[]) {
         }
       }, FEEDBACK_ADVANCE_DELAY);
     } else {
-      // Wrong answer — subtract penalty, show review
-      adjustTime(-WRONG_PENALTY);
-      setTotalLost((prev) => prev + WRONG_PENALTY);
-      setLastDelta(-WRONG_PENALTY);
+      // Wrong answer — deduct score point (no time penalty), show review
+      setTotalLost((prev) => prev + SCORE_PENALTY);
+      setLastDelta(-SCORE_PENALTY);
       setDeltaKey((prev) => prev + 1);
       setFailedQuestion(currentQuestion);
       setFailedAnswers(new Set(selectedAnswers));
@@ -257,11 +256,6 @@ export function useTimeTrialMode(allQuestions: Question[]) {
   // Continue after wrong answer review
   const continueAfterWrong = useCallback(() => {
     if (state.phase !== "wrong_review") return;
-    // If time already hit 0 from the penalty, go to game over
-    if (timeRemainingRef.current <= 0) {
-      setState((prev) => ({ ...prev, phase: "game_over" }));
-      return;
-    }
     if (pauseRequested) {
       setState((prev) => ({ ...prev, phase: "paused", lastAnswerCorrect: null }));
     } else {
@@ -279,11 +273,14 @@ export function useTimeTrialMode(allQuestions: Question[]) {
     }
   }, [state.phase, advanceToNext]);
 
+  const score = Math.max(0, state.correct - state.wrong * SCORE_PENALTY);
+
   const result: ChallengeResult | null =
     state.phase === "game_over"
       ? {
           correct: state.correct,
           wrong: state.wrong,
+          score,
         }
       : null;
 
@@ -306,5 +303,6 @@ export function useTimeTrialMode(allQuestions: Question[]) {
     totalLost,
     lastDelta,
     deltaKey,
+    score,
   };
 }

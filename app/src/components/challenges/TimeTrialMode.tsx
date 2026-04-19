@@ -11,7 +11,7 @@
 import { useEffect, useState } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
-import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
+import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, SCORE_PENALTY } from "@/hooks/useTimeTrialMode";
 import { useTranslations } from "next-intl";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
@@ -51,6 +51,7 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
     totalLost,
     lastDelta,
     deltaKey,
+    score,
   } = useTimeTrialMode(questions);
 
   function buildReportHref(q: Question) {
@@ -80,13 +81,13 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
           )}
           {totalLost > 0 && (
             <span className="text-[12px] font-bold tabular-nums text-destructive">
-              −{totalLost}s
+              −{totalLost} pts
             </span>
           )}
         </div>
       }
       scoreLabel={tChallenges("score")}
-      scoreValue={state.correct}
+      scoreValue={score}
       pauseSlot={
         state.phase !== "paused" && !frozen ? (
           <PauseButton
@@ -334,6 +335,9 @@ function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKe
   if (!visible || displayDelta === null) return null;
 
   const isPositive = displayDelta > 0;
+  const label = isPositive
+    ? `+${displayDelta}s`
+    : `−${Math.abs(displayDelta)} pt`;
 
   return (
     <span
@@ -344,7 +348,7 @@ function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKe
         isPositive ? "text-emerald-500" : "text-destructive",
       )}
     >
-      {isPositive ? `+${displayDelta}s` : `${displayDelta}s`}
+      {label}
     </span>
   );
 }
