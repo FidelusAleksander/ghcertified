@@ -71,7 +71,7 @@ jobs:
       - run: npm run test:e2e
         working-directory: app
       - uses: actions/upload-artifact@043fb46d1ac8dc357dfe103e980d66bb9cc66911 # v7.0.1
-        if: ${{ !cancelled() }}
+        if: ${{ always() }}
         with:
           name: playwright-report
           path: app/playwright-report/
