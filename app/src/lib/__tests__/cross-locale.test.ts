@@ -62,45 +62,46 @@ describe("cross-locale consistency", () => {
       if (localeQuestions.size === 0) continue;
 
       describe(`${locale}/${cert}`, () => {
-        for (const [qId, localeQ] of localeQuestions) {
-          const enQ = enQuestions.get(qId);
-          if (!enQ) continue; // translated question without English source — skip
+        it("all questions match English answer structure", () => {
+          for (const [qId, localeQ] of localeQuestions) {
+            const enQ = enQuestions.get(qId);
+            if (!enQ) continue;
 
-          it(`${qId} matches English answer structure`, () => {
-            // Same number of answers
             expect(
               localeQ.answers.length,
-              `answer count mismatch`,
+              `${qId} answer count mismatch`,
             ).toBe(enQ.answers.length);
 
-            // Same correct/incorrect pattern
             const enPattern = enQ.answers.map((a) => a.isCorrect);
             const localePattern = localeQ.answers.map((a) => a.isCorrect);
             expect(
               localePattern,
-              `correct/incorrect pattern mismatch`,
+              `${qId} correct/incorrect pattern mismatch`,
             ).toEqual(enPattern);
-          });
+          }
+        });
 
-          it(`${qId} matches English documentation link`, () => {
+        it("all questions match English documentation links", () => {
+          for (const [qId, localeQ] of localeQuestions) {
+            const enQ = enQuestions.get(qId);
+            if (!enQ) continue;
+
             const enDoc = enQ.frontmatter.documentation as string | undefined;
             const localeDoc = localeQ.frontmatter.documentation as string | undefined;
 
-            // Both must have or both must lack a documentation link
             if (enDoc && localeDoc) {
               expect(
                 localeDoc,
-                `documentation link mismatch`,
+                `${qId} documentation link mismatch`,
               ).toBe(enDoc);
             } else {
-              // If one has it the other should too
               expect(
                 !!localeDoc,
-                `documentation link presence mismatch`,
+                `${qId} documentation link presence mismatch`,
               ).toBe(!!enDoc);
             }
-          });
-        }
+          }
+        });
       });
     }
   }
