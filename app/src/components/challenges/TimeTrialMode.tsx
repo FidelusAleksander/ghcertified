@@ -412,10 +412,10 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
       <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
         <div
           className={cn(
-            "h-full rounded-full transition-[width] duration-1000 ease-linear",
+            "h-full w-full rounded-full transition-transform duration-1000 ease-linear origin-left",
             isCritical ? "bg-destructive" : isLow ? "bg-warning" : "bg-primary",
           )}
-          style={{ width: `${Math.max(0, fraction) * 100}%` }}
+          style={{ transform: `scaleX(${Math.max(0, fraction)})` }}
         />
       </div>
       <span className={cn(

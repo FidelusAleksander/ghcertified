@@ -155,7 +155,7 @@ export function Navbar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="lg:hidden ml-auto p-2 -mr-2 text-foreground rounded-md focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+          className="touch-target lg:hidden ml-auto p-2 -mr-2 text-foreground rounded-md focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
         >

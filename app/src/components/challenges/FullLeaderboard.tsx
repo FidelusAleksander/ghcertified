@@ -113,6 +113,7 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
               <img
                 src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=120`}
                 alt=""
+                loading="lazy"
                 className={cn("rounded-full shrink-0", config.avatarSize, config.ring)}
               />
               <div className="min-w-0 w-full">
@@ -174,6 +175,7 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
         <img
           src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=60`}
           alt=""
+          loading="lazy"
           className="size-8 rounded-full shrink-0"
         />
         <span className="truncate text-[14px] font-medium text-foreground">
@@ -208,6 +210,7 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
         <img
           src="/images/github_invertocat_black.svg"
           alt="GitHub"
+          loading="lazy"
           className="size-4"
         />
       </a>

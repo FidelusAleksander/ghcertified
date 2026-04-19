@@ -62,6 +62,7 @@ export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
           <img
             src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=60`}
             alt=""
+            loading="lazy"
             className="size-5 rounded-full shrink-0"
           />
           <span className="flex-1 truncate text-[13px] font-medium text-foreground">
@@ -85,6 +86,7 @@ export function Leaderboard({ entries, scoreLabel }: LeaderboardProps) {
             <img
               src="/images/github_invertocat_black.svg"
               alt="GitHub"
+              loading="lazy"
               className="size-4"
             />
           </a>

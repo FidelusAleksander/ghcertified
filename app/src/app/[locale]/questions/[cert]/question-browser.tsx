@@ -127,7 +127,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                 key={i}
                 onClick={() => handleSetCurrentIndex(i)}
                 className={cn(
-                  "size-[30px] rounded-[7px] text-[11px] font-bold border flex-shrink-0 flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  "touch-target size-[30px] rounded-[7px] text-[11px] font-bold border flex-shrink-0 flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                   i === currentIndex
                     ? "bg-primary text-primary-foreground border-primary"
                     : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
@@ -147,7 +147,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                     key={i}
                     onClick={() => handleSetCurrentIndex(i)}
                     className={cn(
-                      "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                      "touch-target size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                       i === currentIndex
                         ? "bg-primary text-primary-foreground border-primary"
                         : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
@@ -165,7 +165,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                   onClick={() => setManualSidebarPage(Math.max(0, sidebarPage - 1))}
                   disabled={sidebarPage === 0}
                   aria-label={t("previousSidebarPage")}
-                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+                  className="touch-target size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsLeft className="size-3.5" />
                 </button>
@@ -183,7 +183,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                       key={p}
                       onClick={() => setManualSidebarPage(p)}
                       className={cn(
-                        "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                        "touch-target size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                         p === sidebarPage
                           ? "bg-primary text-primary-foreground"
                           : "text-muted-foreground hover:text-foreground hover:bg-muted",
@@ -197,7 +197,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
                   onClick={() => setManualSidebarPage(Math.min(totalPages - 1, sidebarPage + 1))}
                   disabled={sidebarPage === totalPages - 1}
                   aria-label={t("nextSidebarPage")}
-                  className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+                  className="touch-target size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
                 >
                   <ChevronsRight className="size-3.5" />
                 </button>
