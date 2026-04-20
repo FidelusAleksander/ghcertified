@@ -8,7 +8,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { buildAlternates, OG_IMAGE } from "@/lib/seo";
+import { buildAlternates, CHALLENGES_OG_IMAGE } from "@/lib/seo";
 import { LeaderboardPage } from "./leaderboard-page";
 
 interface Props {
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: buildAlternates(locale, "/challenges/leaderboard"),
-    openGraph: { title, description, locale, images: [OG_IMAGE] },
+    openGraph: { title, description, locale, images: [CHALLENGES_OG_IMAGE] },
   };
 }
 

@@ -36,3 +36,6 @@ export function buildAlternates(
 
 /** Standard OG image shared across all pages. */
 export const OG_IMAGE = { url: "/opengraph.png", width: 1200, height: 630 };
+
+/** OG image for challenge mode pages. */
+export const CHALLENGES_OG_IMAGE = { url: "/images/opengraph-challenges.png", width: 1200, height: 630 };
