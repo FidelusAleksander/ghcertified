@@ -91,13 +91,13 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
       scoreLabel={tChallenges("score")}
       scoreValue={state.correct}
       progressSlot={
-        <div className="flex items-center justify-between text-[12px] text-muted-foreground tabular-nums">
+        <div className="flex items-center justify-between gap-1.5 text-[12px] text-muted-foreground tabular-nums">
           <span>{tChallenges("progress")}</span>
           <span className="font-bold text-foreground">{state.correct + state.wrong} / {state.questions.length}</span>
         </div>
       }
       countersSlot={
-        <div className="flex items-center justify-between text-[12px] tabular-nums">
+        <div className="flex items-center justify-between gap-1.5 text-[12px] tabular-nums">
           <span className="text-emerald-500 font-bold">✓ {state.correct}</span>
           <span className="text-destructive font-bold">✗ {state.wrong}</span>
         </div>

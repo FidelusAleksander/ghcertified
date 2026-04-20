@@ -185,8 +185,8 @@ export function ChallengeSidebar({
       </div>
 
       {/* Mobile: compact horizontal strip */}
-      <div className="flex lg:hidden items-center justify-between gap-3 mb-4 px-1">
-        <div className="flex items-center gap-3">
+      <div className="flex lg:hidden items-center justify-between gap-3 mb-4 px-1 flex-wrap">
+        <div className="flex items-center gap-3 flex-wrap">
           {livesSlot}
           <div className="flex items-center gap-1.5 text-[13px] text-muted-foreground">
             <span className="font-display font-bold text-foreground tabular-nums">{scoreValue}</span>
