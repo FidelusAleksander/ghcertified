@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identit
 ---
 
 - [x] It allows for automatic reflection of membership changes in the IdP group on GitHub, reducing the need for manual updates and custom scripts by synchronizing teams in GitHub organizations with IdP groups.
-- [ ] It enables GitHub to serve as an identity provider for Microsoft Entra ID, streamlining user authentication processes.
-- [ ] It automatically converts Microsoft Entra ID group memberships into corresponding GitHub repositories, facilitating resource allocation.
-- [ ] It backs up GitHub organization data to Microsoft Entra ID servers, providing an additional layer of data redundancy.
+- [ ] It enables GitHub to serve as an identity provider for Microsoft Entra ID, streamlining user authentication processes and managing login flows across enterprise applications.
+- [ ] It automatically converts Microsoft Entra ID group memberships into corresponding GitHub repositories, facilitating resource allocation and project organization.
+- [ ] It backs up GitHub organization data to Microsoft Entra ID servers, providing an additional layer of data redundancy and disaster recovery capabilities.

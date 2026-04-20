@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configu
 ---
 
 - [x] No, they cannot manage entries inherited from the enterprise account's allow list
-- [ ] Yes, they have full control over inherited entries
-- [ ] Yes, but only with approval from enterprise owners
-- [ ] No, only GitHub support can manage inherited entries
+- [ ] Yes, they have full control over inherited entries from the enterprise
+- [ ] Yes, but only with prior approval from enterprise owners first
+- [ ] No, only GitHub support can manage inherited entries via tickets

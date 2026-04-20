@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 ---
 
 - [x] Outside collaborators are assigned access on a repository-by-repository basis, while members may have broader permissions within the organization depending on their role.
-- [ ] Outside collaborators have the capability to modify organization settings.
-- [ ] There is no distinction in access levels between outside collaborators and members.
-- [ ] Outside collaborators can add or remove members from the organization.
+- [ ] Outside collaborators have the capability to modify organization settings and manage teams, just like regular members of the organization do.
+- [ ] There is no distinction in access levels between outside collaborators and members; they share identical permissions across all repositories.
+- [ ] Outside collaborators can add or remove members from the organization and manage billing settings, unlike regular members.

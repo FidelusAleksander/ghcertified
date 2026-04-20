@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 ---
 
 - [x] `github/codeql-action/upload-sarif`
-- [ ] `codeql-upload-sarif`
-- [ ] `github/codeql-action`
-- [ ] `actions/upload-sarif`
+- [ ] `github/codeql-upload-sarif`
+- [ ] `github/codeql-action/analyze`
+- [ ] `actions/upload-sarif-results`

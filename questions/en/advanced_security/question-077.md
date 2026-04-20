@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/creating-
 ---
 
 - [x] By creating a `languages` matrix for the job and then reference it in the `github/codeql-action/init` action's `languages` input parameter
-- [ ] By calling the `github/codeql-action/analyze` action in separate steps for each language
-- [ ] By creating a separate workflow for each language
-- [ ] Define the parallelism in the `github/codeql-action/analyze` action
+- [ ] By calling the `github/codeql-action/analyze` action in separate sequential steps for each language in the workflow
+- [ ] By creating a separate workflow file for each language and triggering them all on the same event
+- [ ] Define the parallelism in the `github/codeql-action/analyze` action using the `parallel` input parameter

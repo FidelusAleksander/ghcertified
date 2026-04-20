@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/organizing-members-into
 ---
 
 - [x] Team members, child teams, the team’s repositories, and access to team settings, including the ability to update the team’s description and profile picture.
-- [ ] A live chat feature that allows real-time communication between team members.
-- [ ] Financial reports related to the team's use of organization resources.
-- [ ] External links to non-GitHub resources used by the team.
+- [ ] A live chat feature that allows real-time communication between team members, including direct messages and group conversations.
+- [ ] Financial reports related to the team’s use of organization resources, including storage and compute costs.
+- [ ] External links to non-GitHub resources used by the team, such as third-party project management tools and documentation.

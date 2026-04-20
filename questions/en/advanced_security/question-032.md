@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/security-overview/about
 ---
 
 - [x] Centralized view of security alerts and policy management in an organization
-- [ ] Automatic code review for every push
-- [ ] Real-time threat detection
-- [ ] Automated dependency updates
+- [ ] Automatic code review and approval for every push to the default branch
+- [ ] Real-time threat detection and active blocking of malicious commits
+- [ ] Automated dependency updates and pull request creation for patches

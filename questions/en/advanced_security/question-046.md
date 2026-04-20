@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 ---
 
 - [x] A GitHub App or personal access token with `security_events` write permission.
-- [ ] A direct connection to the GitHub Advisory Database.
-- [ ] Administrator access to the GitHub repository.
-- [ ] A special plugin installed in the CI system.
+- [ ] A direct connection to the GitHub Advisory Database with read access.
+- [ ] Administrator access to the GitHub repository and organization settings.
+- [ ] A special plugin installed in the CI system with GitHub integration.

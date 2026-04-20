@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/actions/using-workflows/caching-depen
 ---
 
 - [x] provide alternative keys to use in case of a cache miss
-- [ ] indicate whether a cache hit occurred
-- [ ] specify the location of the cached files
-- [ ] enable cross-OS cache functionality
+- [ ] indicate whether a cache hit occurred on the primary key
+- [ ] specify the location of the cached files on the runner
+- [ ] enable cross-OS cache functionality between runners

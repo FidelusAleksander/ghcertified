@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-pro
 ---
 
 - [x] The new GitHub Projects provide a flexible spreadsheet-like interface, custom fields, and two-way issue synchronization that were not available in Projects Classic.  
-- [ ] GitHub Projects Classic has a built-in AI that automatically closes pull requests, while the new GitHub Projects do not.  
-- [ ] GitHub Projects Classic supports code scanning and secret scanning, while the new GitHub Projects do not.  
-- [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests.
+- [ ] GitHub Projects Classic has a built-in AI that automatically closes pull requests and manages project timelines, while the new Projects do not.  
+- [ ] GitHub Projects Classic supports code scanning and secret scanning directly from the board interface, while the new GitHub Projects do not.  
+- [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests, milestones, or custom automation rules.

@@ -4,6 +4,6 @@ documentation: "https://learn.microsoft.com/en-us/training/modules/responsible-a
 ---
 
 - [x] Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, and Accountability
-- [ ] Efficiency, Speed, Accuracy, Innovation, Reliability, and Security
-- [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing
-- [ ] Security, Development, Operations, Maintenance, Support, and Documentation
+- [ ] Efficiency, Speed, Accuracy, Innovation, Reliability, and Security Enhancement
+- [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing Coverage
+- [ ] Security, Development, Operations, Maintenance, Support, and Documentation Standards

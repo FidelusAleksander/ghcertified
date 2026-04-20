@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/get-started/writing-on-github/getting
 ---
 
 - [x] There is a text formatting toolbar on issue and pull request comment forms which generates Markdown for you.
-- [ ] By providing a Markdown cheat sheet.
-- [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments.
-- [ ] GitHub pull requests and issues don't support Markdown.
+- [ ] By providing a Markdown cheat sheet displayed at the top of each comment form for easy reference.
+- [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments when submitted.
+- [ ] GitHub pull requests and issues don't support Markdown and use plain text formatting only.

@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/organizing-members-into
 ---
 
 - [x] A security manager has permissions to view security alerts and manage settings for code security across the organization, in addition to read permissions for all repositories.
-- [ ] Security managers are responsible for financial transactions and billing information security within the organization.
-- [ ] They can delete or transfer ownership of any repository within the organization for security reasons.
-- [ ] Security managers exclusively manage two-factor authentication settings for all organization members.
+- [ ] Security managers are responsible for financial transactions and billing information security within the organization, including managing payment methods.
+- [ ] They can delete or transfer ownership of any repository within the organization for security reasons, bypassing standard approval workflows.
+- [ ] Security managers exclusively manage two-factor authentication settings for all organization members, enforcing compliance with security policies.

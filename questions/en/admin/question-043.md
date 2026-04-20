@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/collaborating-with-grou
 ---
 
 - [x] By creating nested teams that reflect the group's structure, with cascading access permissions.
-- [ ] Through the use of single sign-on (SSO) for all members exclusively.
-- [ ] By granting all members owner-level permissions.
-- [ ] Limiting repository creation to organization owners only.
+- [ ] Through the use of single sign-on (SSO) for all members exclusively without teams.
+- [ ] By granting all members owner-level permissions across the entire organization.
+- [ ] Limiting repository creation to organization owners only without delegating access.

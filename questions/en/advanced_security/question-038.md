@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-star
 ---
 
 - [x] To generate a database representation of a codebase, a CodeQL database
-- [ ] To manage repository settings and permissions
-- [ ] To schedule regular maintenance tasks in a repository
-- [ ] To automatically merge pull requests
+- [ ] To manage repository settings and permissions on GitHub Enterprise
+- [ ] To schedule regular maintenance tasks in a repository's workflow
+- [ ] To automatically merge pull requests after status checks pass

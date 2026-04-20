@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using
 ---
 
 - [x] Allows defining multiple job configurations to run in parallel
-- [ ] Sets environment variables for the job
-- [ ] Triggers workflows based on a schedule
-- [ ] Defines secrets for the workflow
+- [ ] Sets environment variables for the job across all steps
+- [ ] Triggers workflows based on a cron schedule expression
+- [ ] Defines secrets for the workflow at the job level
