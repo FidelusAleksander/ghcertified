@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identit
 ---
 
 - [x] User accounts are provisioned by the enterprise's IdP, with access provided to GitHub Enterprise Cloud.
-- [ ] User accounts are created manually by each user on GitHub.com.
-- [ ] User accounts are provisioned by GitHub without any input from the enterprise's IdP.
-- [ ] User accounts are automatically generated based on public email addresses.
+- [ ] User accounts are created manually by each user on GitHub.com through the standard signup flow.
+- [ ] User accounts are provisioned by GitHub without any input from the enterprise's IdP or admins.
+- [ ] User accounts are automatically generated based on public email addresses found in commits.

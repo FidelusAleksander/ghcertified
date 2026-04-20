@@ -4,5 +4,5 @@ documentation: "https://docs.github.com/en/codespaces/customizing-your-codespace
 ---
 
 - [x] Yes, you can choose an alternative machine type either when you create a codespace or at any time after you've created a codespace.
-- [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
+- [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running on or how resources are allocated.
 > GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use

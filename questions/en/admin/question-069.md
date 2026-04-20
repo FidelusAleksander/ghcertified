@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/authentication/keeping-your-account-a
 ---
 
 - [x] Contact GitHub Support to remove cached views and references
-- [ ] Notify all users who have forked the repository
-- [ ] Change the repository's visibility to private
-- [ ] Rename the repository
+- [ ] Notify all users who have forked the repository to update
+- [ ] Change the repository's visibility to private permanently
+- [ ] Rename the repository and update all references to it

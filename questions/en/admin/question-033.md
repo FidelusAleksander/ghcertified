@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overvi
 ---
 
 - [x] Via browser, administrative SSH access, and REST or GraphQL APIs
-- [ ] Only through direct access to the server's console
-- [ ] Via GitHub.com's web interface exclusively
-- [ ] Through third-party management tools only
+- [ ] Only through direct access to the server's physical console
+- [ ] Via GitHub.com's web interface exclusively without local access
+- [ ] Through third-party management tools only with special plugins
