@@ -253,7 +253,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
                     const correct = isComplete ? isQuestionCorrect(q) : null;
                     const state = getQuestionState(q);
                     const dotClass = cn(
-                      "touch-target size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                      "size-7 rounded-md text-[10px] font-bold border flex items-center justify-center flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                       i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
                       isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
                       isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",

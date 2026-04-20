@@ -63,7 +63,7 @@ export function QuizQuestionMap({
             const correct = isComplete ? isQuestionCorrect(q) : null;
             const state = getQuestionState(q);
             const btnClass = cn(
-              "touch-target size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+              "size-[30px] rounded-[7px] text-[11px] font-bold border flex items-center justify-center cursor-pointer transition-colors relative focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
               i === currentIndex && !isComplete && "bg-primary text-primary-foreground border-primary",
               isComplete && correct && i === currentIndex && "bg-success text-white border-success ring-2 ring-success/50 ring-offset-1",
               isComplete && correct && i !== currentIndex && "bg-success/15 border-success/50 text-success",
@@ -98,7 +98,7 @@ export function QuizQuestionMap({
               onClick={() => setManualMapPage(Math.max(0, mapPage - 1))}
               disabled={mapPage === 0}
               aria-label={labels.previousMapPage}
-              className="touch-target size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+              className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
             >
               <ChevronsLeft className="size-3.5" />
             </button>
@@ -117,7 +117,7 @@ export function QuizQuestionMap({
                   onClick={() => setManualMapPage(p)}
                   aria-label={`Go to page ${p + 1}`}
                   className={cn(
-                    "touch-target size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                    "size-7 rounded text-[11px] font-bold flex items-center justify-center transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
                     p === mapPage
                       ? "bg-primary text-primary-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted",
@@ -132,7 +132,7 @@ export function QuizQuestionMap({
               onClick={() => setManualMapPage(Math.min(mapTotalPages - 1, mapPage + 1))}
               disabled={mapPage === mapTotalPages - 1}
               aria-label={labels.nextMapPage}
-              className="touch-target size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+              className="size-7 rounded flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
             >
               <ChevronsRight className="size-3.5" />
             </button>
