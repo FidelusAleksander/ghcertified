@@ -1,22 +1,22 @@
 ---
-question: "Twój workflow analizy Pull Request używa wielu narzędzi do analizy kodu i zajmuje około 20 minut na pełne ukończenie. Jest uruchamiany na zdarzeniu `pull_request` z filtrem `branches` ustawionym na `master`. Dlatego, jeśli programista wypchnie wiele commitów w ciągu kilku minut, wiele workflowów działa równolegle. Jak możesz zatrzymać wszystkie poprzednie uruchomienia workflowów i uruchomić tylko ten z najnowszymi zmianami?"
+question: "Twoje workflow analizy Pull Request wykorzystuje wiele narzędzi do analizy kodu i trwa około 20 minut, aby zakończyć. Jest uruchamiane na zdarzenie `pull_request` z filtrem `branches` ustawionym na `master`. W związku z tym, jeśli deweloper wykonuje wiele commitów w ciągu kilku minut, wiele workflow działa równolegle. Jak można zatrzymać wszystkie wcześniejsze uruchomienia workflow i uruchomić tylko to z najnowszymi zmianami?"
 documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run"
 ---
 
-- [x] Użyj współbieżności z anulowaniem w toku
+- [x] Użyj `concurrency` z `cancel-in-progress`
 ```yaml
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 ```
-- [ ] Użyj współbieżności
+- [ ] Użyj `concurrency`
 ```yaml
 concurrency:
   group: ${{ github.ref }}
 ```
-> To zakolejkuje uruchomienia dla tego github ref. Nie zatrzyma poprzednich uruchomień
+> To ustawi w kolejce uruchomienia na tym samym github ref. Nie zatrzyma to poprzednich uruchomień
 
-- [ ] Użyj filtra typów aktywności
+- [ ] Użyj filtru typów aktywności
 ```yaml
 on:
   pull_request:
@@ -24,8 +24,8 @@ on:
       - master
     types: [latest]
 ```
-> Nie istnieje taki typ aktywności jak `latest` dla zdarzenia pull_request
-- [ ] Użyj flagi cancel-in-progress dla zdarzenia `pull_request`
+> Nie ma takiego typu aktywności jak `latest` dla zdarzenia pull_request
+- [ ] Użyj flagi `cancel-in-progress` dla zdarzenia `pull_request`
 ```yaml
 on:
   pull_request:
@@ -33,3 +33,4 @@ on:
       - master
     cancel-in-progress: true
 ```
+> `cancel-in-progress` może być używane tylko wewnątrz bloku `concurrency`. Nie jest to prawidłowy klucz dla `pull_request`.
