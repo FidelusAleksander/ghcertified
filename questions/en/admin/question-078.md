@@ -5,5 +5,5 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/github-
 
 - [x] By using webhooks to subscribe to information about workflow jobs and runs, and potentially using a data archiving system.
 - [ ] By manually counting workflow runs and jobs in each repository at the end of each month.
-- [ ] Through unlimited access to GitHub's internal analytics dashboard without any additional configuration.
+- [ ] By enabling a built-in GitHub Actions plugin that automatically generates per-workflow cost breakdowns and resource optimization recommendations.
 - [ ] GitHub Actions usage cannot be tracked; enterprises must estimate usage based on developer feedback.

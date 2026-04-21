@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/authenticatio
 ---
 
 - [x] SAML SSO allows organization owners to control and secure access to organization resources.
-- [ ] SAML SSO restricts repository access to only those with a linked SAML identity.
+- [ ] Enabling SAML SSO automatically provisions new GitHub accounts for all IdP users.
 - [ ] Once SAML SSO is enabled, public repositories become inaccessible.
 - [ ] Enabling SAML SSO requires members to authenticate through GitHub, not the IdP.
