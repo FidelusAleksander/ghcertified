@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 ---
 
 - [x] To provide administrators with a single point of visibility and management across multiple organizations
-- [ ] To provide individual users with unlimited private repositories
-- [ ] To offer free access to GitHub Enterprise Server
-- [ ] To allow users to manage their public and private contributions separately
+- [ ] To provide individual users with unlimited private repositories regardless of their plan
+- [ ] To offer free access to GitHub Enterprise Server for all organization members
+- [ ] To allow users to manage their public and private contributions separately from teams

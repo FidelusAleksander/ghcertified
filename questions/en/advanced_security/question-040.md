@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 ---
 
 - [x] It generates a CodeQL database and runs queries to identify problems, displaying results as code scanning alerts
-- [ ] It uses machine learning to predict potential vulnerabilities based on past commits
-- [ ] It performs manual code reviews submitted by GitHub community members
-- [ ] It relies solely on third-party tools for code analysis
+- [ ] It uses machine learning to predict potential vulnerabilities based on patterns found in past commits
+- [ ] It performs automated code reviews submitted by the GitHub community members for validation
+- [ ] It relies solely on third-party tools for code analysis and vulnerability reporting to GitHub

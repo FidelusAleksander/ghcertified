@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/overvie
 ---
 
 - [x] It allows owners to centrally manage policy and billing for multiple organizations.
-- [ ] It provides unlimited private repositories for individual users.
-- [ ] It offers a free domain for hosting the organization's website.
-- [ ] It automatically enrolls the organization in a premium support plan.
+- [ ] It provides unlimited private repositories for individual users in the enterprise.
+- [ ] It offers a free custom domain for hosting the organization's website pages.
+- [ ] It automatically enrolls the organization in a premium support plan for free.

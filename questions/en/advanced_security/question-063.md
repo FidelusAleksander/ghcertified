@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 ---
 
 - [x] Both compiled and interpreted languages
-- [ ] Only compiled languages
-- [ ] Only interpreted languages
-- [ ] All programming languages
+- [ ] Only compiled languages like Java and C++
+- [ ] Only interpreted languages like Python
+- [ ] All programming languages without exception

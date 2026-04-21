@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/organizing-members-into
 ---
 
 - [x] Nested teams reflect the organization's hierarchy, inheriting access permissions from parent teams and streamlining permission management and communication across multiple levels of the organization.
-- [ ] Nested teams complicate the organization's structure and should be avoided to simplify team management.
-- [ ] Child teams can override the access permissions of their parent teams, providing flexibility in access control.
-- [ ] Members of nested teams have restricted access to communicate with members of their parent teams, enhancing security.
+- [ ] Nested teams complicate the organization's structure and should be avoided to simplify team management, since flat team hierarchies are always more efficient and easier to maintain.
+- [ ] Child teams can override the access permissions of their parent teams, providing flexibility in access control and enabling more granular restrictions that supersede parent settings.
+- [ ] Members of nested teams have restricted access to communicate with members of their parent teams, enhancing security by isolating team interactions and preventing information sharing.

@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/managing-peoples-access
 ---
 
 - [x] Managing billing settings for the organization, including updating payment methods and reviewing invoices.
-- [ ] They can manage team permissions and repository settings.
-- [ ] Creating and deleting all repositories within the organization.
-- [ ] Assigning and removing organization owners.
+- [ ] They can manage team permissions and repository settings across all repositories in the org.
+- [ ] Creating and deleting all repositories within the organization without owner approval.
+- [ ] Assigning and removing organization owners and managing SAML SSO configuration.

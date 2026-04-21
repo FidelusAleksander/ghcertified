@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/copilot/managing-copilot/configure-pe
 ---
 
 - [x] gh extension install github/gh-copilot
-- [ ] gh copilot install
-- [ ] gh copilot setup
-- [ ] gh extension add copilot
+- [ ] gh copilot install --enable-cli
+- [ ] gh copilot setup --global
+- [ ] gh extension add github/copilot

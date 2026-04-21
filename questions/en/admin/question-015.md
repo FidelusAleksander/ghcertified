@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/organizations/keeping-your-organizati
 ---
 
 - [x] In the organization's settings, under `Security`, select `Authentication security`, and then choose `Require two-factor authentication for everyone in your organization`.
-- [ ] Go to the organization's page, click on `Members`, and individually set up 2FA for each member.
-- [ ] In your organization's settings, under `Billing`, select `Require two-factor authentication for billing managers only`.
-- [ ] Send an email to all organization members asking them to manually enable 2FA on their accounts.
+- [ ] Go to the organization's page, click on `Members`, and individually set up 2FA for each member through their profile settings.
+- [ ] In your organization's settings, under `Billing`, select `Require two-factor authentication for billing managers only` to secure finances.
+- [ ] Send an email to all organization members asking them to manually enable 2FA on their accounts through their own settings.

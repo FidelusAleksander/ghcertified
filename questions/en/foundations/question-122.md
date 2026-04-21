@@ -5,6 +5,6 @@ documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscrip
 ---
 
 - [x] Organization-wide policy management, including restricting model suggestions based on public code  
-- [ ] Exemption from all paid usage fees  
-- [ ] 24/7 phone support from GitHub Copilot team  
-- [ ] Local hosting of the AI model behind GitHub Copilot  
+- [ ] Exemption from all paid usage fees for all organization members who actively use Copilot  
+- [ ] 24/7 dedicated phone support from the GitHub Copilot engineering and support team  
+- [ ] Local on-premise hosting of the AI model that powers GitHub Copilot suggestions  

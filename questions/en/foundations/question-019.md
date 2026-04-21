@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/a
 ---
 
 - [x] Running automated tests prior to merging a pull request
-- [ ] Adding sponsorship button to your project
-- [ ] Large data processing and analytics
-- [ ] Training machine learning models
+- [ ] Adding a sponsorship button to your project page
+- [ ] Large data processing and analytics workloads
+- [ ] Training machine learning models on GPU clusters

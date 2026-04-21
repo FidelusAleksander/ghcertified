@@ -3,7 +3,7 @@ question: "How does the `actions/cache` action in GitHub Actions handle a cache 
 documentation: "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#managing-caches"
 ---
 
-- [ ] by requiring manual intervention to create a new cache
-- [ ] by searching for a cache in other repositories
+- [ ] by requiring manual intervention to create a new cache entry
+- [ ] by searching for a cache in other repositories in the org
 - [x] by automatically creating a new cache if the job is completed successfully
-- [ ] by terminating the workflow if a cache miss occurs
+- [ ] by terminating the workflow if a cache miss occurs on the key

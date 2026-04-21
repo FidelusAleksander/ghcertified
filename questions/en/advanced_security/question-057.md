@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/integrati
 ---
 
 - [x] You don't specifically need a GitHub tool, any static analysis tool that can produce results in SARIF format will work.
-- [ ] You need to install the GitHub Code Scanning tool.
-- [ ] You need to install CodeQL CLI
-- [ ] You need to install GitHub CLI
+- [ ] You need to install the GitHub Code Scanning tool and configure it specifically for your third-party CI environment.
+- [ ] You need to install CodeQL CLI and run it exclusively within the third-party CI pipeline for all analysis.
+- [ ] You need to install GitHub CLI and authenticate it with a personal access token for scanning your codebase.

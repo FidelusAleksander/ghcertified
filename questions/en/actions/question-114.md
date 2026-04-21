@@ -12,6 +12,6 @@ jobs:
                 os: [ubuntu-latest, windows-latest]
 ```
 - [x] reference variables through the `matrix` context with syntax like`matrix.version` and `matrix.os`
-- [ ] by using the `matrix.property` syntax
-- [ ] by using the `context` keyword within the job configuration
-- [ ] by accessing the variables directly with the syntax `version` and `os`
+- [ ] by using the `matrix.property` syntax to access all values as a single object
+- [ ] by using the `context` keyword within the job configuration to look up values
+- [ ] by accessing the variables directly with the syntax `version` and `os` in expressions

@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/code-security/code-scanning/introduct
 ---
 
 - [x] Automatically chooses languages to analyze, query suite to run, and events that trigger scans
-- [ ] Manually requires users to specify languages and queries for each scan
-- [ ] Scans code only on a monthly basis
-- [ ] Requires separate installation of third-party scanning tools
+- [ ] Manually requires users to specify languages and queries for each individual scan run
+- [ ] Scans code only on a monthly basis regardless of commit frequency or schedule
+- [ ] Requires separate installation of third-party scanning tools before it can operate

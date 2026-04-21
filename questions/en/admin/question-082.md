@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configu
 ---
 
 - [x] Add the IP address or IP address range of your runners to the IP allow list configured for your enterprise
-- [ ] Disable the IP allow list for GitHub Actions runners
-- [ ] Register the runners in Enterprise > Network security > Actions settings
-- [ ] Use a VPN for all runners to bypass the IP allow list
+- [ ] Disable the IP allow list for GitHub Actions runners in the organization security settings
+- [ ] Register the runners in Enterprise > Network security > Actions settings configuration page
+- [ ] Use a VPN for all runners to bypass the IP allow list and connect to GitHub servers

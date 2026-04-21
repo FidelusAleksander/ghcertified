@@ -4,6 +4,6 @@ documentation: "https://docs.github.com/en/copilot/using-github-copilot/guides-o
 ---
 
 - [x] It generates a suite of unit tests for the currently open file, using context from existing test files if available
-- [ ] It runs all existing unit tests in the project without generating new ones
-- [ ] It only validates the syntax of existing test files without creating new tests
-- [ ] It permanently removes all existing test files to start fresh
+- [ ] It runs all existing unit tests in the project and reports coverage without generating new ones
+- [ ] It only validates the syntax of existing test files without creating new tests or running them
+- [ ] It refactors existing test files to follow updated testing conventions without adding new tests
