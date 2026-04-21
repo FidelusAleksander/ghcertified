@@ -1,10 +1,10 @@
 ---
 question: "GitHub Copilotは無料で利用できますか？"
-documentation: "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business"
+documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
 ---
 
-- [ ] いいえ
-- [ ] はい
-- [x] はい、学生、教師、または人気のあるオープンソースプロジェクトのメンテナーであれば
-- [ ] はい、ただし公開リポジトリで作業している個人のみ
-> 無料トライアルがあります。ただし、GitHub Copilotは個人向けであっても有料機能です。
+- [ ] いいえ、有料サブスクリプションが必要です
+- [x] はい、GitHub Copilot Freeはすべての個人GitHubアカウントで限定的に利用可能です
+> GitHub Copilot Freeは、すべての個人GitHubアカウントで利用可能で、月間で限定的なコード補完およびチャット機能を提供します。
+- [ ] はい、ただし学生、教師、オープンソースのメンテナーに限定されます
+- [ ] はい、ただしパブリックリポジトリで作業する個人に限定されます
