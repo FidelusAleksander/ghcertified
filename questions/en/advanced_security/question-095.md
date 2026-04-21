@@ -1,5 +1,5 @@
 ---
-question: "How can you set a default security policy for all repositories in `my-org` GitHub Organization?"
+question: "How can you set a default security vulnerability reporting policy (`SECURITY.md`) for all repositories in the `my-org` GitHub Organization?"
 documentation: "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#supported-file-types"
 ---
 
