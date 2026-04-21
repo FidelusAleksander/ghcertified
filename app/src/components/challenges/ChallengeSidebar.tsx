@@ -22,17 +22,37 @@ export function LivesDisplay({ lives, initialLives, compact }: { lives: number; 
   const size = compact ? "size-3.5" : "size-5";
   return (
     <div className="flex items-center gap-0.5">
-      {Array.from({ length: initialLives }, (_, i) => (
-        <Heart
-          key={i}
-          className={cn(
-            size,
-            i < lives
-              ? "text-destructive fill-destructive"
-              : compact ? "text-card/20" : "text-muted-foreground/30",
-          )}
-        />
-      ))}
+      {Array.from({ length: initialLives }, (_, i) => {
+        const remaining = lives - i;
+        if (remaining >= 1) {
+          // Full heart
+          return (
+            <Heart
+              key={i}
+              className={cn(size, "text-destructive fill-destructive")}
+            />
+          );
+        }
+        if (remaining > 0) {
+          // Half heart — filled left half over empty heart
+          return (
+            <span key={i} className={cn("relative inline-flex", size)}>
+              <Heart className={cn("absolute inset-0", size, compact ? "text-card/20" : "text-muted-foreground/30")} />
+              <Heart
+                className={cn("absolute inset-0", size, "text-destructive fill-destructive")}
+                style={{ clipPath: "inset(0 50% 0 0)" }}
+              />
+            </span>
+          );
+        }
+        // Empty heart
+        return (
+          <Heart
+            key={i}
+            className={cn(size, compact ? "text-card/20" : "text-muted-foreground/30")}
+          />
+        );
+      })}
     </div>
   );
 }

@@ -50,6 +50,7 @@ export function GauntletMode({ questions }: GauntletModeProps) {
     failedQuestion,
     failedAnswers,
     failedByTimeout,
+    lastPenalty,
     proceedToResults,
     continueAfterWrong,
   } = useGauntletMode(questions);
@@ -173,7 +174,9 @@ export function GauntletMode({ questions }: GauntletModeProps) {
                 incorrectLabel={
                   failedByTimeout
                     ? (isGameOver ? t("timeUpGameOver") : t("timeUpLifeLost"))
-                    : (isGameOver ? t("wrongGameOver") : t("wrongLifeLost"))
+                    : isGameOver ? t("wrongGameOver")
+                    : lastPenalty < 1 ? t("wrongHalfLifeLost")
+                    : t("wrongLifeLost")
                 }
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />

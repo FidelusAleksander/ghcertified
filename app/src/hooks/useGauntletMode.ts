@@ -60,6 +60,7 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
   const [failedQuestion, setFailedQuestion] = useState<Question | null>(null);
   const [failedAnswers, setFailedAnswers] = useState<Set<string>>(new Set());
   const [failedByTimeout, setFailedByTimeout] = useState(false);
+  const [lastPenalty, setLastPenalty] = useState<number>(1);
 
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -84,12 +85,14 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
   }, []);
 
   // Handle wrong answer — routes to wrong_review (lives remaining) or game_over_review (last life)
-  const handleWrong = useCallback((question: Question, answers: Set<string>, byTimeout: boolean) => {
+  // penalty: 1 for full life loss, 0.5 for half-life (multi-select partial credit)
+  const handleWrong = useCallback((question: Question, answers: Set<string>, byTimeout: boolean, penalty: number = 1) => {
     setFailedQuestion(question);
     setFailedAnswers(new Set(answers));
     setFailedByTimeout(byTimeout);
+    setLastPenalty(penalty);
     setState((prev) => {
-      const newLives = prev.lives - 1;
+      const newLives = prev.lives - penalty;
       const isLastLife = newLives <= 0;
       return {
         ...prev,
@@ -129,6 +132,7 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
     setFailedQuestion(null);
     setFailedAnswers(new Set());
     setFailedByTimeout(false);
+    setLastPenalty(1);
     const shuffled = shuffle(allQuestions).map((q) => ({
       ...q,
       answers: shuffle(q.answers),
@@ -249,7 +253,18 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
         }
       }, CORRECT_ADVANCE_DELAY);
     } else {
-      handleWrong(currentQuestion, selectedAnswers, false);
+      // Multi-select partial credit: ≥50% correct picks → half-life penalty
+      let penalty = 1;
+      if (currentQuestion.isMultiSelect) {
+        const correctIds = new Set(
+          currentQuestion.answers.filter((a) => a.isCorrect).map((a) => a.id),
+        );
+        const correctPicks = [...selectedAnswers].filter((id) => correctIds.has(id)).length;
+        if (correctPicks >= correctIds.size / 2) {
+          penalty = 0.5;
+        }
+      }
+      handleWrong(currentQuestion, selectedAnswers, false, penalty);
     }
   }, [state.phase, currentQuestion, selectedAnswers, isAnswerComplete, clearAdvanceTimer, stopCountdown, pauseRequested, advanceToNext, handleWrong]);
 
@@ -304,6 +319,7 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
     failedQuestion,
     failedAnswers,
     failedByTimeout,
+    lastPenalty,
     proceedToResults,
     continueAfterWrong,
   };

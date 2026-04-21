@@ -296,4 +296,119 @@ describe("useGauntletMode", () => {
     expect(hook.result.current.state.phase).toBe("game_over");
     expect(hook.result.current.result).not.toBeNull();
   });
+
+  describe("multi-select partial credit", () => {
+    const makeMultiQuestion = (id: string, correctCount: number, wrongCount: number): Question => {
+      const answers = [];
+      for (let i = 0; i < correctCount; i++) {
+        answers.push({ id: `${id}-c${i}`, text: `Correct ${i}`, isCorrect: true });
+      }
+      for (let i = 0; i < wrongCount; i++) {
+        answers.push({ id: `${id}-w${i}`, text: `Wrong ${i}`, isCorrect: false });
+      }
+      return {
+        id,
+        cert: "foundations",
+        question: `Multi ${id}`,
+        answers,
+        isMultiSelect: true,
+      };
+    };
+
+    it("≥50% correct picks loses half a life (4 correct, select 2 correct + 2 wrong)", async () => {
+      const multiQ = makeMultiQuestion("m1", 4, 2);
+      const filler = makeMultiQuestion("m1f", 2, 2);
+      const hook = renderHook(() => useGauntletMode([multiQ, filler], {}));
+      await act(async () => {});
+
+      // Find the 4-correct question in shuffled order
+      let q = hook.result.current.currentQuestion!;
+      if (q.answers.filter((a) => a.isCorrect).length !== 4) {
+        // It's the filler — answer it correctly to advance
+        const correctIds = q.answers.filter((a) => a.isCorrect).map((a) => a.id);
+        for (const id of correctIds) act(() => { hook.result.current.toggleAnswer(id); });
+        act(() => { hook.result.current.confirmAnswer(); });
+        act(() => { vi.advanceTimersByTime(CORRECT_ADVANCE_DELAY + 50); });
+        q = hook.result.current.currentQuestion!;
+      }
+
+      expect(q.isMultiSelect).toBe(true);
+      const correctAnswers = q.answers.filter((a) => a.isCorrect);
+      const wrongAnswers = q.answers.filter((a) => !a.isCorrect);
+      expect(correctAnswers).toHaveLength(4);
+
+      // Select 2 correct + 2 wrong (need correctCount=4 selections)
+      act(() => { hook.result.current.toggleAnswer(correctAnswers[0].id); });
+      act(() => { hook.result.current.toggleAnswer(correctAnswers[1].id); });
+      act(() => { hook.result.current.toggleAnswer(wrongAnswers[0].id); });
+      act(() => { hook.result.current.toggleAnswer(wrongAnswers[1].id); });
+      act(() => { hook.result.current.confirmAnswer(); });
+
+      // 2 correct picks out of 4 needed = 50% → half life
+      expect(hook.result.current.lastPenalty).toBe(0.5);
+      expect(hook.result.current.state.phase).toBe("wrong_review");
+    });
+
+    it("<50% correct picks loses a full life (4 correct, select 1 correct + 3 wrong)", async () => {
+      const multiQ = makeMultiQuestion("m2", 4, 4);
+      const hook = renderHook(() => useGauntletMode([multiQ], {}));
+      await act(async () => {});
+
+      const q = hook.result.current.currentQuestion!;
+      const correctAnswers = q.answers.filter((a) => a.isCorrect);
+      const wrongAnswers = q.answers.filter((a) => !a.isCorrect);
+
+      // Select 1 correct + 3 wrong = 25% correct picks
+      act(() => { hook.result.current.toggleAnswer(correctAnswers[0].id); });
+      act(() => { hook.result.current.toggleAnswer(wrongAnswers[0].id); });
+      act(() => { hook.result.current.toggleAnswer(wrongAnswers[1].id); });
+      act(() => { hook.result.current.toggleAnswer(wrongAnswers[2].id); });
+      act(() => { hook.result.current.confirmAnswer(); });
+
+      // 1/4 = 25% → full life loss
+      expect(hook.result.current.state.lives).toBe(2);
+      expect(hook.result.current.lastPenalty).toBe(1);
+    });
+
+    it("single-select wrong always loses full life regardless", async () => {
+      const hook = await setup();
+      const { wrongId } = answerIds(hook);
+
+      act(() => { hook.result.current.toggleAnswer(wrongId); });
+      act(() => { hook.result.current.confirmAnswer(); });
+
+      expect(hook.result.current.state.lives).toBe(2);
+      expect(hook.result.current.lastPenalty).toBe(1);
+    });
+
+    it("half-life losses accumulate correctly (3 lives → 2.5 → 2 → 1.5 → ...)", async () => {
+      // Use multiple multi-select questions where user always gets ≥50% right
+      const multiQs = Array.from({ length: 7 }, (_, i) => makeMultiQuestion(`acc${i}`, 2, 2));
+      const hook = renderHook(() => useGauntletMode(multiQs, {}));
+      await act(async () => {});
+
+      // Each wrong answer with 1/2 correct picks (50%) → half life
+      for (let i = 0; i < 6; i++) {
+        const q = hook.result.current.currentQuestion!;
+        const correct = q.answers.find((a) => a.isCorrect)!;
+        const wrong = q.answers.find((a) => !a.isCorrect)!;
+
+        // Select 1 correct + 1 wrong = 50% correct picks
+        act(() => { hook.result.current.toggleAnswer(correct.id); });
+        act(() => { hook.result.current.toggleAnswer(wrong.id); });
+        act(() => { hook.result.current.confirmAnswer(); });
+
+        const expectedLives = 3 - (i + 1) * 0.5;
+        expect(hook.result.current.state.lives).toBe(expectedLives);
+
+        if (expectedLives > 0) {
+          act(() => { hook.result.current.continueAfterWrong(); });
+        }
+      }
+
+      // After 6 half-life losses: 3 - 3 = 0 → game over
+      expect(hook.result.current.state.lives).toBe(0);
+      expect(hook.result.current.state.phase).toBe("game_over_review");
+    });
+  });
 });
