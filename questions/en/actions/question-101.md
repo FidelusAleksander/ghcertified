@@ -44,6 +44,7 @@ documentation: "https://docs.github.com/en/actions/learn-github-actions/expressi
     name: test-report
     path: test-reports.html
 ```
+> `if: steps.run-tests.outcome == 'failure'` is not enough because step `if` conditions that do not contain a status check function still get an implicit `success()` check, so this step is skipped after `Run Tests` fails. Add `failure()` to override that default and combine it with `steps.run-tests.outcome == 'failure'` so the step runs only when `run-tests` fails.
 
 - [ ] 
 ```yaml

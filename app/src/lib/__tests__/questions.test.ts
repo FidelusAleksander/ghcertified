@@ -66,4 +66,19 @@ describe("question parsing", () => {
       }
     });
   }
+
+  it("preserves actions/question-101 explanation about failure() override", () => {
+    const dir = join(QUESTIONS_ROOT, "en", "actions");
+    const questions = parseDirectory(dir, { filePrefix: "question-", strict: true });
+    const question = questions.find((q) => q.id === "question-101");
+
+    expect(question, "actions/question-101 missing").toBeTruthy();
+    expect(
+      question?.answers.some((answer) =>
+        answer.explanation?.includes("implicit `success()` check") &&
+        answer.explanation.includes("Add `failure()` to override that default"),
+      ),
+      "actions/question-101 missing failure() explanation",
+    ).toBe(true);
+  });
 });
