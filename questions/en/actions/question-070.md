@@ -5,5 +5,6 @@ documentation: "https://docs.github.com/en/rest/actions/secrets?create-or-update
 
 - [x] `PUT /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 - [ ] `POST /repos/{owner}/{repo}/actions/secrets/{secret_name}`
+> `POST` is not valid for this endpoint — only `PUT` can create or update repository secrets.
 - [ ] `HEAD /repos/{owner}/{repo}/actions/secrets/{secret_name}`
 - [ ] `GET /repos/{owner}/{repo}/actions/secrets/{secret_name}`
