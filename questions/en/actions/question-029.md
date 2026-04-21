@@ -33,3 +33,4 @@ on:
       - master
     cancel-in-progress: true
 ```
+> `cancel-in-progress` can only be used inside a `concurrency` block. It is not a valid key for `pull_request`.
