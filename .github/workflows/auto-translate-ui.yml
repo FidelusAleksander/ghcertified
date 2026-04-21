@@ -82,6 +82,7 @@ jobs:
           gh pr create \
             --title "i18n: auto-translate UI strings" \
             --body "This PR updates UI translations for all locales based on changes to \`app/messages/en.json\` from commit ${{ github.sha }}." \
+            --label translations \
             --base main \
             --head i18n/auto-translate-ui-${{ github.sha }}
 
