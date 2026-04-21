@@ -198,13 +198,13 @@ describe("useTimeTrialMode", () => {
     let correctId = getCorrectId(result.current);
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
-    act(() => { vi.advanceTimersByTime(1200 + 50); }); // FEEDBACK_ADVANCE_DELAY
+    act(() => { vi.advanceTimersByTime(1800 + 50); }); // FEEDBACK_ADVANCE_DELAY
 
     // Answer question 2 correctly
     correctId = getCorrectId(result.current);
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
 
     expect(result.current.state.phase).toBe("game_over");
     expect(result.current.state.correct).toBe(2);
@@ -225,7 +225,7 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.state.phase).toBe("feedback");
 
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
     expect(result.current.state.phase).toBe("paused");
 
     // Resume
@@ -281,7 +281,7 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.timeRemaining).toBe(INITIAL_TIME + CORRECT_BONUS); // 105
-    act(() => { vi.advanceTimersByTime(1200 + 50); }); // advance past feedback
+    act(() => { vi.advanceTimersByTime(1800 + 50); }); // advance past feedback
 
     // Second correct: 105 + 15 = 120 (exactly MAX_TIME)
     correctId = getCorrectId(result.current);
@@ -289,7 +289,7 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.timeRemaining).toBe(MAX_TIME); // 120
     expect(result.current.lastDelta).toBe(CORRECT_BONUS); // full bonus applied
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
 
     // Third correct: 120 + 15 would be 135, but capped at 120
     correctId = getCorrectId(result.current);
@@ -308,14 +308,14 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.totalGained).toBe(15);
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
 
     // At 105: correct → 120 (capped), gained = 15
     correctId = getCorrectId(result.current);
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.totalGained).toBe(30);
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
 
     // At 120: correct → 120 (capped), gained = 0
     correctId = getCorrectId(result.current);
@@ -354,7 +354,7 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
     // At 105, in feedback (timer stopped)
-    act(() => { vi.advanceTimersByTime(1200 + 50); }); // advance to next Q
+    act(() => { vi.advanceTimersByTime(1800 + 50); }); // advance to next Q
 
     // Now playing at 105. Drain to 113 by... wait, 105 already. We need to get to near 120.
     // Answer another correct: 105→120
@@ -362,7 +362,7 @@ describe("useTimeTrialMode", () => {
     act(() => { result.current.toggleAnswer(correctId); });
     act(() => { result.current.confirmAnswer(); });
     expect(result.current.timeRemaining).toBe(MAX_TIME);
-    act(() => { vi.advanceTimersByTime(1200 + 50); });
+    act(() => { vi.advanceTimersByTime(1800 + 50); });
 
     // Now at 120, drain to 113 (7 seconds tick during playing)
     act(() => { vi.advanceTimersByTime(7000); });

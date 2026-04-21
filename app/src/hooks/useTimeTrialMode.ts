@@ -28,7 +28,7 @@ interface TimeTrialState {
   lastAnswerCorrect: boolean | null;
 }
 
-const FEEDBACK_ADVANCE_DELAY = 1200;
+const FEEDBACK_ADVANCE_DELAY = 1800;
 
 /** Starting time in seconds. */
 export const INITIAL_TIME = 90;
