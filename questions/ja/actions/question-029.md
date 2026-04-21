@@ -1,22 +1,22 @@
 ---
-question: "Pull Request の分析ワークフローでは複数のコード分析ツールを使用しており、完了するまでに約20分かかります。このワークフローは `pull_request` イベントでトリガーされ、`branches` フィルターが `master` に設定されています。このため、開発者が数分以内に複数のコミットをプッシュすると、複数のワークフローが並行して実行されます。すべての以前のワークフロー実行を停止し、最新の変更でのみワークフローを実行するにはどうすればよいですか？"
+question: "あなたのPull Request分析ワークフローでは、複数のコード分析ツールを使用しており、完全に完了するまで約20分かかります。このワークフローは、`branches`フィルターを`master`に設定した`pull_request`イベントでトリガーされます。そのため、開発者が数分以内に複数のコミットをプッシュすると、複数のワークフローが並行して実行されます。すべての以前のワークフローを停止し、最新の変更のみを実行するにはどうすればよいですか？"
 documentation: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run"
 ---
 
-- [x] concurrency を使用して進行中の実行をキャンセルする
+- [x] cancel-in-progressを使用して並行処理を設定
 ```yaml
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 ```
-- [ ] concurrency を使用する
+- [ ] 並行処理を使用
 ```yaml
 concurrency:
   group: ${{ github.ref }}
 ```
-> これにより、その GitHub リファレンス上の実行がキューに入りますが、以前の実行を停止することはありません。
+> これにより、そのgithub ref上の実行がキューに入ります。ただし、以前の実行を停止することはありません。
 
-- [ ] アクティビティタイプフィルターを使用する
+- [ ] アクティビティタイプフィルターを使用
 ```yaml
 on:
   pull_request:
@@ -24,9 +24,9 @@ on:
       - master
     types: [latest]
 ```
-> `latest` というアクティビティタイプは pull_request イベントには存在しません。
+> pull_requestイベントには`latest`というアクティビティタイプはありません。
 
-- [ ] `pull_request` イベント用の cancel-in-progress フラグを使用する
+- [ ] `pull_request`イベントのcancel-in-progressフラグを使用
 ```yaml
 on:
   pull_request:
@@ -34,3 +34,4 @@ on:
       - master
     cancel-in-progress: true
 ```
+> `cancel-in-progress`は`concurrency`ブロック内でのみ使用可能です。これは`pull_request`の有効なキーではありません。
