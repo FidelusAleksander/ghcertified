@@ -1,10 +1,10 @@
 ---
-question: "¿GitHub Copilot es gratuito?"
-documentation: "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business"
+question: "¿Es GitHub Copilot gratuito?"
+documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
 ---
 
-- [ ] No
-- [ ] Sí
-- [x] Sí, si eres estudiante, profesor o mantenedor de un proyecto de código abierto popular
-- [ ] Sí, pero solo para individuos que trabajen en repositorios públicos
-> Hay una prueba gratuita. Sin embargo, GitHub Copilot es una funcionalidad de pago incluso para individuos.
+- [ ] No, requiere una suscripción de pago
+- [x] Sí, GitHub Copilot Free está disponible para todas las cuentas personales de GitHub con uso limitado
+> GitHub Copilot Free está disponible para todas las cuentas personales de GitHub, proporcionando un número limitado de autocompletados de código e interacciones de chat por mes.
+- [ ] Sí, pero solo para estudiantes, profesores y mantenedores de código abierto
+- [ ] Sí, pero solo para personas que trabajan en repositorios públicos
