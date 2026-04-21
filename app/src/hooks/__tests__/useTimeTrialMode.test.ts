@@ -6,6 +6,7 @@ import {
   INITIAL_TIME,
   MAX_TIME,
   CORRECT_BONUS,
+  CORRECT_BONUS_MULTI,
   WRONG_PENALTY,
 } from "@/hooks/useTimeTrialMode";
 import type { Question } from "@/types/quiz";
@@ -19,6 +20,18 @@ const makeQuestion = (id: string, correctId: string, wrongId: string): Question 
     { id: wrongId, text: "Wrong", isCorrect: false },
   ],
   isMultiSelect: false,
+});
+
+const makeMultiSelectQuestion = (id: string): Question => ({
+  id,
+  cert: "foundations",
+  question: `Multi ${id}`,
+  answers: [
+    { id: `${id}-c1`, text: "Correct 1", isCorrect: true },
+    { id: `${id}-c2`, text: "Correct 2", isCorrect: true },
+    { id: `${id}-w1`, text: "Wrong 1", isCorrect: false },
+  ],
+  isMultiSelect: true,
 });
 
 const questions = [
@@ -71,6 +84,30 @@ describe("useTimeTrialMode", () => {
     expect(result.current.timeRemaining).toBe(INITIAL_TIME + CORRECT_BONUS);
     expect(result.current.totalGained).toBe(CORRECT_BONUS);
     expect(result.current.lastDelta).toBe(CORRECT_BONUS);
+  });
+
+  it("correct multi-select answer adds higher time bonus", () => {
+    const multiQuestions = [
+      makeMultiSelectQuestion("mq1"),
+      makeMultiSelectQuestion("mq2"),
+      makeMultiSelectQuestion("mq3"),
+    ];
+    const { result } = renderHook(() => useTimeTrialMode(multiQuestions));
+    act(() => {});
+
+    // All questions are multi-select, so whichever comes first works
+    const q = result.current.currentQuestion!;
+    const correctIds = q.answers.filter((a) => a.isCorrect).map((a) => a.id);
+    for (const id of correctIds) {
+      act(() => { result.current.toggleAnswer(id); });
+    }
+    act(() => { result.current.confirmAnswer(); });
+
+    expect(result.current.state.phase).toBe("feedback");
+    expect(result.current.state.correct).toBe(1);
+    expect(result.current.timeRemaining).toBe(INITIAL_TIME + CORRECT_BONUS_MULTI);
+    expect(result.current.totalGained).toBe(CORRECT_BONUS_MULTI);
+    expect(result.current.lastDelta).toBe(CORRECT_BONUS_MULTI);
   });
 
   it("wrong answer subtracts time penalty", () => {
