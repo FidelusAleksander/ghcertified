@@ -1,9 +1,9 @@
 ---
-question: "どのようにして `my-org` GitHub Organization 内のすべてのリポジトリに対してデフォルトのセキュリティポリシーを設定できますか？"
+question: "すべてのリポジトリに対してデフォルトのセキュリティ脆弱性報告ポリシーを `my-org` GitHub Organization に設定するにはどうすればよいですか？"
 documentation: "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#supported-file-types"
 ---
 
-- [x] `my-org/.github` リポジトリに `SECURITY.md` ファイルを作成する
-- [ ] 組織の `Code Security and analysis` 設定でセキュリティポリシーを編集する
+- [x] `my-org/.github` リポジトリに `SECURITY.md` ファイルを作成することで
+- [ ] Organization の `Code Security and analysis` 設定でセキュリティ脆弱性報告ポリシーを構成することで
 - [ ] デフォルトのセキュリティポリシーは GitHub サポートによってのみ設定可能
-- [ ] `my-org` GitHub Organization 内のすべてのリポジトリに対してデフォルトのセキュリティポリシーを設定するには、各個別のリポジトリに `SECURITY.md` ファイルを追加する必要がある
+- [ ] 各リポジトリごとに `SECURITY.md` ファイルを作成することで
