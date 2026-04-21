@@ -1,9 +1,11 @@
 ---
-question: "どのGitHub Copilotサブスクリプションプランでコードレビューのためのコーディングガイドラインを指定できますか？"
-documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/3-compare-github-copilot-plans"
+question: "どのGitHub Copilotサブスクリプションプランが組織レベルのカスタム指示をサポートしていますか？"
+documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-organization-custom-instructions-for-github-copilot"
 ---
 
-- [x] Copilot Enterprise
-- [ ] Copilot Business and Copilot Enterprise
-- [ ] Copilot Pro+, Copilot Business and Copilot Enterprise
-- [ ] Copilot Pro, Copilot Pro+, Copilot Business and Copilot Enterprise
+- [ ] GitHub Copilotを含むすべてのプラン
+- [ ] Copilot Pro+以上
+- [x] Copilot BusinessおよびCopilot Enterprise
+> 組織カスタム指示は、組織の設定で構成され、Copilot BusinessまたはEnterpriseプランが必要です。リポジトリレベルのカスタム指示はすべてのプランで利用可能です。
+- [ ] Copilot Enterpriseのみ
+
