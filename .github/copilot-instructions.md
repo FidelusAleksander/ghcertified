@@ -57,8 +57,11 @@ Access at `http://localhost:3000`. The dev server provides hot reload.
 ```bash
 cd app && npm run build   # production build (static export)
 cd app && npm run lint     # ESLint
-cd app && npm test         # Vitest unit tests
+cd app && npm test         # Vitest unit tests (excludes cross-locale translation tests)
+cd app && npm run test:translations  # Cross-locale translation consistency tests
 ```
+
+> **Note:** `npm test` excludes cross-locale tests by default so English source edits aren't blocked by stale translations. Translation tests run in a separate CI workflow (`translation-checks.yml`) only on PRs labeled `translations` (auto-applied when non-English question/message files change).
 
 ## Browser Testing
 Use the **agent-browser** skill for any tasks that involve browser interaction — such as testing the website, verifying UI changes, taking screenshots, checking page behavior, or any form of exploratory/automated browser testing.
