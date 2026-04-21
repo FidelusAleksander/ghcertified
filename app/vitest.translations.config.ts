@@ -8,7 +8,6 @@ export default defineConfig({
     },
   },
   test: {
-    include: ["src/**/*.test.{ts,tsx}"],
-    exclude: ["src/lib/__tests__/cross-locale.test.ts", "node_modules"],
+    include: ["src/lib/__tests__/cross-locale.test.ts"],
   },
 });

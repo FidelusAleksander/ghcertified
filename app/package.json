@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "test:translations": "vitest run --config vitest.translations.config.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {

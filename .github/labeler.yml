@@ -22,6 +22,18 @@ copilot:
 - changed-files:
   - any-glob-to-any-file: "questions/en/copilot/*"
 
+translations:
+- changed-files:
+  - any-glob-to-any-file:
+    - "questions/es/**"
+    - "questions/pt/**"
+    - "questions/pl/**"
+    - "questions/ja/**"
+    - "app/messages/es.json"
+    - "app/messages/pt.json"
+    - "app/messages/pl.json"
+    - "app/messages/ja.json"
+
 documentation:
 - changed-files:
   - any-glob-to-any-file: ["README.md", "CONTRIBUTING.md"]
