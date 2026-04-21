@@ -11,7 +11,7 @@
 import { useEffect, useState } from "react";
 import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
-import { useTimeTrialMode, INITIAL_TIME, CORRECT_BONUS, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
+import { useTimeTrialMode, MAX_TIME, CORRECT_BONUS, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
 import { useTranslations } from "next-intl";
 import { renderCodeSpans } from "@/lib/render-code-spans";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
@@ -198,8 +198,8 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
 
               <FeedbackAlert
                 isCorrect={false}
-                correctLabel={t("correctFeedback")}
-                incorrectLabel={t("incorrectFeedback")}
+                correctLabel={t("correctFeedback", { seconds: CORRECT_BONUS })}
+                incorrectLabel={t("incorrectFeedback", { seconds: Math.abs(lastDelta ?? WRONG_PENALTY) })}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />
 
@@ -324,8 +324,12 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
             {isFeedback && state.lastAnswerCorrect !== null && (
               <FeedbackAlert
                 isCorrect={state.lastAnswerCorrect}
-                correctLabel={t("correctFeedback")}
-                incorrectLabel={t("incorrectFeedback")}
+                correctLabel={
+                  lastDelta !== null && lastDelta < CORRECT_BONUS && timeRemaining >= MAX_TIME
+                    ? t("cappedFeedback", { seconds: lastDelta })
+                    : t("correctFeedback", { seconds: lastDelta ?? CORRECT_BONUS })
+                }
+                incorrectLabel={t("incorrectFeedback", { seconds: Math.abs(lastDelta ?? WRONG_PENALTY) })}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />
             )}
@@ -366,6 +370,7 @@ function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKe
   if (!visible || displayDelta === null) return null;
 
   const isPositive = displayDelta > 0;
+  const isZero = displayDelta === 0;
 
   return (
     <span
@@ -373,10 +378,10 @@ function TimeDeltaPopup({ delta, triggerKey }: { delta: number | null; triggerKe
       className={cn(
         "absolute -top-6 left-1/2 -translate-x-1/2 font-display text-[14px] font-extrabold tabular-nums pointer-events-none whitespace-nowrap",
         "motion-safe:animate-out motion-safe:fade-out motion-safe:slide-out-to-top-4 motion-safe:duration-1000 motion-safe:fill-forwards",
-        isPositive ? "text-emerald-500" : "text-destructive",
+        isZero ? "text-amber-500" : isPositive ? "text-emerald-500" : "text-destructive",
       )}
     >
-      {isPositive ? `+${displayDelta}s` : `${displayDelta}s`}
+      {isZero ? "MAX" : isPositive ? `+${displayDelta}s` : `${displayDelta}s`}
     </span>
   );
 }
@@ -404,7 +409,8 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
     );
   }
 
-  const fraction = Math.min(timeRemaining / INITIAL_TIME, 1);
+  const fraction = Math.min(timeRemaining / MAX_TIME, 1);
+  const isAtMax = timeRemaining >= MAX_TIME;
 
   return (
     <div className="flex items-center gap-2.5 w-full">
@@ -413,14 +419,14 @@ function GlobalTimerDisplay({ timeRemaining, compact }: { timeRemaining: number;
         <div
           className={cn(
             "h-full w-full rounded-full transition-transform duration-1000 ease-linear origin-left",
-            isCritical ? "bg-destructive" : isLow ? "bg-warning" : "bg-primary",
+            isAtMax ? "bg-amber-500" : isCritical ? "bg-destructive" : isLow ? "bg-warning" : "bg-primary",
           )}
           style={{ transform: `scaleX(${Math.max(0, fraction)})` }}
         />
       </div>
       <span className={cn(
         "font-display text-[14px] font-bold tabular-nums min-w-[40px] text-right",
-        isCritical ? "text-destructive motion-safe:animate-pulse" : isLow ? "text-warning" : "text-foreground",
+        isAtMax ? "text-amber-500" : isCritical ? "text-destructive motion-safe:animate-pulse" : isLow ? "text-warning" : "text-foreground",
       )}>
         {display}
       </span>

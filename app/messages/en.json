@@ -210,8 +210,9 @@
   },
   "TimeTrial": {
     "title": "Time Trial",
-    "correctFeedback": "Correct! +15 seconds!",
-    "incorrectFeedback": "Wrong! −5 seconds!",
+    "correctFeedback": "Correct! +{seconds} seconds!",
+    "cappedFeedback": "Correct! +{seconds} seconds (max 2:00)!",
+    "incorrectFeedback": "Wrong! −{seconds} seconds!",
     "questionsAnswered": "questions answered correctly",
     "wrong": "Wrong",
     "resultLegendary": "Time Lord!",

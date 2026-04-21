@@ -28,10 +28,12 @@ interface TimeTrialState {
   lastAnswerCorrect: boolean | null;
 }
 
-const FEEDBACK_ADVANCE_DELAY = 1200;
+const FEEDBACK_ADVANCE_DELAY = 1800;
 
 /** Starting time in seconds. */
 export const INITIAL_TIME = 90;
+/** Maximum time allowed (cap). */
+export const MAX_TIME = 120;
 /** Seconds added for a correct answer. */
 export const CORRECT_BONUS = 15;
 /** Seconds subtracted for a wrong answer. */
@@ -106,15 +108,18 @@ export function useTimeTrialMode(allQuestions: Question[]) {
     setSelectedAnswers(new Set());
   }, []);
 
-  // Adjust timer by delta (positive = add, negative = subtract)
-  const adjustTime = useCallback((delta: number) => {
-    const newTime = Math.max(0, timeRemainingRef.current + delta);
+  // Adjust timer by delta (positive = add, negative = subtract), capped at [0, MAX_TIME].
+  // Returns the actual delta applied after clamping.
+  const adjustTime = useCallback((delta: number): number => {
+    const oldTime = timeRemainingRef.current;
+    const newTime = Math.min(MAX_TIME, Math.max(0, oldTime + delta));
     timeRemainingRef.current = newTime;
     setTimeRemaining(newTime);
     if (newTime <= 0) {
       stopCountdown();
       setState((prev) => ({ ...prev, phase: "game_over" }));
     }
+    return newTime - oldTime;
   }, [stopCountdown]);
 
   // Initialize / restart
@@ -206,6 +211,8 @@ export function useTimeTrialMode(allQuestions: Question[]) {
 
   const confirmAnswer = useCallback(() => {
     if (state.phase !== "playing" || !currentQuestion || !isAnswerComplete()) return;
+    // Guard: if timer already expired between render and click, bail out
+    if (timeRemainingRef.current <= 0) return;
 
     // Pause timer during feedback
     stopCountdown();
@@ -218,9 +225,9 @@ export function useTimeTrialMode(allQuestions: Question[]) {
       [...selectedAnswers].every((id) => correctIds.has(id));
 
     if (isCorrect) {
-      adjustTime(CORRECT_BONUS);
-      setTotalGained((prev) => prev + CORRECT_BONUS);
-      setLastDelta(CORRECT_BONUS);
+      const actual = adjustTime(CORRECT_BONUS);
+      setTotalGained((prev) => prev + actual);
+      setLastDelta(actual);
       setDeltaKey((prev) => prev + 1);
       setState((prev) => ({
         ...prev,
@@ -239,9 +246,9 @@ export function useTimeTrialMode(allQuestions: Question[]) {
       }, FEEDBACK_ADVANCE_DELAY);
     } else {
       // Wrong answer — subtract penalty, show review
-      adjustTime(-WRONG_PENALTY);
-      setTotalLost((prev) => prev + WRONG_PENALTY);
-      setLastDelta(-WRONG_PENALTY);
+      const actual = adjustTime(-WRONG_PENALTY);
+      setTotalLost((prev) => prev + Math.abs(actual));
+      setLastDelta(actual);
       setDeltaKey((prev) => prev + 1);
       setFailedQuestion(currentQuestion);
       setFailedAnswers(new Set(selectedAnswers));
