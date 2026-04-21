@@ -1,5 +1,5 @@
 ---
-question: "When GitHub runs a scan of all historical code in enterprise repositories what is the notification behavior?"
+question: "When GitHub runs a secret scanning scan of all historical code in enterprise repositories what is the notification behavior?"
 documentation: "https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/monitoring-alerts#historical-scans"
 ---
 
