@@ -74,10 +74,13 @@ describe("question parsing", () => {
 
     expect(question, "actions/question-101 missing").toBeTruthy();
     expect(
-      question?.answers.some((answer) =>
-        answer.explanation?.includes("implicit `success()` check") &&
-        answer.explanation.includes("Add `failure()` to override that default"),
-      ),
+      question?.answers.some((answer) => {
+        const explanation = answer.explanation;
+        return explanation
+          ? explanation.includes("implicit `success()` check") &&
+              explanation.includes("Add `failure()` to override that default")
+          : false;
+      }),
       "actions/question-101 missing failure() explanation",
     ).toBe(true);
   });
