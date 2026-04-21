@@ -194,6 +194,7 @@
   "Gauntlet": {
     "correctFeedback": "Correct! Keep going!",
     "wrongLifeLost": "Wrong answer — you lost a life!",
+    "wrongHalfLifeLost": "Almost there — lost only half a life!",
     "wrongGameOver": "Wrong answer — game over!",
     "timeUpLifeLost": "Time's up — you lost a life!",
     "timeUpGameOver": "Time's up — game over!",
