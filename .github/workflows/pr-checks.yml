@@ -76,3 +76,33 @@ jobs:
           name: playwright-report
           path: app/playwright-report/
           retention-days: 7
+  translation-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Detect translation changes
+        id: filter
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eo pipefail
+          CHANGED_FILES=$(gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files --paginate --jq '.[].filename')
+          if echo "$CHANGED_FILES" | grep -qE '^(questions/(es|pt|pl|ja)/|app/messages/(es|pt|pl|ja)\.json)'; then
+            echo "translations=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "translations=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        if: steps.filter.outputs.translations == 'true'
+        with:
+          node-version-file: '.node-version'
+      - name: Install dependencies
+        if: steps.filter.outputs.translations == 'true'
+        run: npm ci
+        working-directory: app
+      - name: Run translation tests
+        if: steps.filter.outputs.translations == 'true'
+        run: npm run test:translations
+        working-directory: app

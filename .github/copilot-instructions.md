@@ -61,7 +61,7 @@ cd app && npm test         # Vitest unit tests (excludes cross-locale translatio
 cd app && npm run test:translations  # Cross-locale translation consistency tests
 ```
 
-> **Note:** `npm test` excludes cross-locale tests by default so English source edits aren't blocked by stale translations. Translation tests run in a separate CI workflow (`translation-checks.yml`) only on PRs labeled `translations` (auto-applied when non-English question/message files change).
+> **Note:** `npm test` excludes cross-locale tests by default so English source edits aren't blocked by stale translations. Translation tests run inside the `pr-checks.yml` workflow, conditionally — they are skipped when no translation files were changed.
 
 ## Browser Testing
 Use the **agent-browser** skill for any tasks that involve browser interaction — such as testing the website, verifying UI changes, taking screenshots, checking page behavior, or any form of exploratory/automated browser testing.
