@@ -1,10 +1,10 @@
 ---
-question: "Quais dos planos de assinatura do GitHub Copilot permitem especificar diretrizes de codificação para revisões de código?"
-documentation: "https://learn.microsoft.com/en-us/training/modules/get-started-github-copilot/3-compare-github-copilot-plans"
+question: "Quais planos de assinatura do GitHub Copilot oferecem suporte para instruções personalizadas no nível da organização?"
+documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-organization-custom-instructions-for-github-copilot"
 ---
 
-- [x] Copilot Enterprise
-- [ ] Copilot Business and Copilot Enterprise
-- [ ] Copilot Pro+, Copilot Business and Copilot Enterprise
-- [ ] Copilot Pro, Copilot Pro+, Copilot Business and Copilot Enterprise
-
+- [ ] Todos os planos que incluem GitHub Copilot
+- [ ] Copilot Pro+ e acima
+- [x] Copilot Business e Copilot Enterprise
+> As instruções personalizadas da organização são configuradas nas configurações da organização e exigem um plano Copilot Business ou Enterprise. As instruções personalizadas no nível de repositório estão disponíveis em todos os planos.
+- [ ] Copilot Enterprise apenas
