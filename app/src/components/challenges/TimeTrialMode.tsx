@@ -324,7 +324,11 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
             {isFeedback && state.lastAnswerCorrect !== null && (
               <FeedbackAlert
                 isCorrect={state.lastAnswerCorrect}
-                correctLabel={lastDelta === 0 ? t("maxTimeFeedback") : t("correctFeedback", { seconds: lastDelta ?? CORRECT_BONUS })}
+                correctLabel={
+                  lastDelta !== null && lastDelta < CORRECT_BONUS && timeRemaining >= MAX_TIME
+                    ? t("cappedFeedback", { seconds: lastDelta })
+                    : t("correctFeedback", { seconds: lastDelta ?? CORRECT_BONUS })
+                }
                 incorrectLabel={t("incorrectFeedback", { seconds: Math.abs(lastDelta ?? WRONG_PENALTY) })}
                 className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1 motion-safe:duration-200"
               />

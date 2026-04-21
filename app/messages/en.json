@@ -211,7 +211,7 @@
   "TimeTrial": {
     "title": "Time Trial",
     "correctFeedback": "Correct! +{seconds} seconds!",
-    "maxTimeFeedback": "Correct! Time is at maximum!",
+    "cappedFeedback": "Correct! +{seconds} seconds (max 2:00)!",
     "incorrectFeedback": "Wrong! −{seconds} seconds!",
     "questionsAnswered": "questions answered correctly",
     "wrong": "Wrong",
