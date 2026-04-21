@@ -4,6 +4,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import {
   useTimeTrialMode,
   INITIAL_TIME,
+  MAX_TIME,
   CORRECT_BONUS,
   WRONG_PENALTY,
 } from "@/hooks/useTimeTrialMode";
@@ -268,5 +269,110 @@ describe("useTimeTrialMode", () => {
     // Resume
     act(() => { result.current.togglePause(); });
     expect(result.current.state.phase).toBe("playing");
+  });
+
+  it("correct answer caps time at MAX_TIME", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    // Time starts at INITIAL_TIME (90). Answer multiple correct to approach cap.
+    // First correct: 90 + 15 = 105
+    let correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.timeRemaining).toBe(INITIAL_TIME + CORRECT_BONUS); // 105
+    act(() => { vi.advanceTimersByTime(1200 + 50); }); // advance past feedback
+
+    // Second correct: 105 + 15 = 120 (exactly MAX_TIME)
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.timeRemaining).toBe(MAX_TIME); // 120
+    expect(result.current.lastDelta).toBe(CORRECT_BONUS); // full bonus applied
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+
+    // Third correct: 120 + 15 would be 135, but capped at 120
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.timeRemaining).toBe(MAX_TIME); // stays at 120
+    expect(result.current.lastDelta).toBe(0); // no time actually gained
+  });
+
+  it("totalGained tracks actual capped amounts", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    // At 90: correct → 105, gained = 15
+    let correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.totalGained).toBe(15);
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+
+    // At 105: correct → 120 (capped), gained = 15
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.totalGained).toBe(30);
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+
+    // At 120: correct → 120 (capped), gained = 0
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.totalGained).toBe(30); // unchanged
+    expect(result.current.lastDelta).toBe(0);
+  });
+
+  it("wrong answer near zero tracks actual loss", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    // Drain time to 3 seconds
+    const ticksNeeded = INITIAL_TIME - 3;
+    act(() => { vi.advanceTimersByTime(ticksNeeded * 1000); });
+    expect(result.current.timeRemaining).toBe(3);
+
+    // Wrong answer: penalty is 5 but only 3 available
+    const wrongId = getWrongId(result.current);
+    act(() => { result.current.toggleAnswer(wrongId); });
+    act(() => { result.current.confirmAnswer(); });
+
+    expect(result.current.timeRemaining).toBe(0);
+    expect(result.current.lastDelta).toBe(-3); // actual loss, not -5
+    expect(result.current.totalLost).toBe(3); // actual loss
+  });
+
+  it("correct answer near cap gives partial bonus", () => {
+    const { result } = renderHook(() => useTimeTrialMode(questions));
+    act(() => {});
+
+    // Get to 113: answer one correct (90→105), then drain 105 down by waiting
+    // but timer stops during feedback... Let's just use two corrects + drain.
+    let correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    // At 105, in feedback (timer stopped)
+    act(() => { vi.advanceTimersByTime(1200 + 50); }); // advance to next Q
+
+    // Now playing at 105. Drain to 113 by... wait, 105 already. We need to get to near 120.
+    // Answer another correct: 105→120
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.timeRemaining).toBe(MAX_TIME);
+    act(() => { vi.advanceTimersByTime(1200 + 50); });
+
+    // Now at 120, drain to 113 (7 seconds tick during playing)
+    act(() => { vi.advanceTimersByTime(7000); });
+    expect(result.current.timeRemaining).toBe(113);
+
+    // Answer correct: 113 + 15 = 128, capped at 120. Actual gain = 7.
+    correctId = getCorrectId(result.current);
+    act(() => { result.current.toggleAnswer(correctId); });
+    act(() => { result.current.confirmAnswer(); });
+    expect(result.current.timeRemaining).toBe(MAX_TIME);
+    expect(result.current.lastDelta).toBe(7); // partial bonus
   });
 });
