@@ -25,7 +25,7 @@ documentation: "https://docs.github.com/en/actions/learn-github-actions/expressi
   run: npm run test
 
 - name: Upload Failure test report
-  if: always() && steps.run-tests.outcome == 'failure'
+  if: always()
   uses: actions/upload-artifact@v3
   with:
     name: test-report
