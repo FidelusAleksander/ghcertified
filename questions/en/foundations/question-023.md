@@ -1,10 +1,10 @@
 ---
 question: "Is GitHub Copilot free to use?"
-documentation: "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business"
+documentation: "https://docs.github.com/en/copilot/concepts/billing/individual-plans"
 ---
 
 - [ ] No
-- [ ] Yes
-- [x] Yes, if you are a student, teacher, or maintainer of a popular open source project
+- [x] Yes, for most personal accounts with limited usage on the Copilot Free plan
+- [ ] Yes, if you are a student, teacher, or maintainer of a popular open source project
 - [ ] Yes, but only for individuals working on public repositories
-> There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
+> Copilot Free is available for most personal accounts. Students, teachers, and some open source maintainers get Copilot Pro at no cost instead.
