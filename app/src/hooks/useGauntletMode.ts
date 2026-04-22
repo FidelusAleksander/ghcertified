@@ -256,9 +256,6 @@ export function useGauntletMode(allQuestions: Question[], options: GauntletModeO
       // Multi-select partial credit: ≥50% correct picks → half-life penalty
       let penalty = 1;
       if (currentQuestion.isMultiSelect) {
-        const correctIds = new Set(
-          currentQuestion.answers.filter((a) => a.isCorrect).map((a) => a.id),
-        );
         const correctPicks = [...selectedAnswers].filter((id) => correctIds.has(id)).length;
         if (correctPicks >= correctIds.size / 2) {
           penalty = 0.5;
