@@ -4,7 +4,8 @@
  * useTimeTrialMode — game engine hook for Time Trial.
  *
  * A single global countdown starts at INITIAL_TIME seconds.
- * Correct answers add CORRECT_BONUS seconds, wrong answers subtract
+ * Correct answers add CORRECT_BONUS seconds (or CORRECT_BONUS_MULTI for
+ * multi-select questions), wrong answers subtract
  * WRONG_PENALTY seconds. Timer reaches 0 → game over.
  * Score = total correct answers.
  *
@@ -34,8 +35,10 @@ const FEEDBACK_ADVANCE_DELAY = 1800;
 export const INITIAL_TIME = 90;
 /** Maximum time allowed (cap). */
 export const MAX_TIME = 120;
-/** Seconds added for a correct answer. */
+/** Seconds added for a correct single-select answer. */
 export const CORRECT_BONUS = 15;
+/** Seconds added for a correct multi-select answer. */
+export const CORRECT_BONUS_MULTI = 20;
 /** Seconds subtracted for a wrong answer. */
 export const WRONG_PENALTY = 5;
 
@@ -225,7 +228,8 @@ export function useTimeTrialMode(allQuestions: Question[]) {
       [...selectedAnswers].every((id) => correctIds.has(id));
 
     if (isCorrect) {
-      const actual = adjustTime(CORRECT_BONUS);
+      const bonus = currentQuestion.isMultiSelect ? CORRECT_BONUS_MULTI : CORRECT_BONUS;
+      const actual = adjustTime(bonus);
       setTotalGained((prev) => prev + actual);
       setLastDelta(actual);
       setDeltaKey((prev) => prev + 1);
