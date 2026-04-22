@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { ChallengeCard } from "@/components/challenges/ChallengeCard";
 import { DEFAULT_LIVES, DEFAULT_TIME_LIMIT } from "@/hooks/useGauntletMode";
+import { INITIAL_TIME, MAX_TIME, CORRECT_BONUS, CORRECT_BONUS_MULTI, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
 import { getLeaderboard } from "@/lib/leaderboard";
 import { hasSupabaseConfig } from "@/lib/supabase";
 import { Heart, Timer, Lightbulb } from "lucide-react";
@@ -93,9 +94,10 @@ export function ChallengesCatalog({ locale }: Props) {
         ]}
         rules={[
           t("gauntletRule1", { lives: DEFAULT_LIVES }),
-          t("gauntletRule2", { seconds: DEFAULT_TIME_LIMIT }),
-          t("gauntletRule3"),
+          t("gauntletRule2"),
+          t("gauntletRule3", { seconds: DEFAULT_TIME_LIMIT }),
           t("gauntletRule4"),
+          t("gauntletRule5"),
         ]}
         leaderboard={gauntletLeaderboard.entries}
         leaderboardStatus={gauntletLeaderboard.status}
@@ -115,10 +117,11 @@ export function ChallengesCatalog({ locale }: Props) {
           { label: "All Certs" },
         ]}
         rules={[
-          t("timeTrialRule1"),
-          t("timeTrialRule2"),
-          t("timeTrialRule3"),
-          t("timeTrialRule4"),
+          t("timeTrialRule1", { seconds: INITIAL_TIME }),
+          t("timeTrialRule2", { seconds: CORRECT_BONUS, multiSeconds: CORRECT_BONUS_MULTI }),
+          t("timeTrialRule3", { seconds: WRONG_PENALTY }),
+          t("timeTrialRule4", { maxTime: `${Math.floor(MAX_TIME / 60)}:${String(MAX_TIME % 60).padStart(2, "0")}` }),
+          t("timeTrialRule5"),
         ]}
         leaderboard={timeTrialLeaderboard.entries}
         leaderboardStatus={timeTrialLeaderboard.status}
