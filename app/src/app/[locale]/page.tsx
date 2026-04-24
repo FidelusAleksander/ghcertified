@@ -213,15 +213,20 @@ export default async function HomePage({ params }: Props) {
               </div>
               <div className="flex flex-col gap-1.5">
                 {[
-                  { rank: "🥇", name: "Mona", score: 47, color: "bg-amber-500" },
-                  { rank: "🥈", name: "Copilot", score: 38, color: "bg-violet-500" },
-                  { rank: "🥉", name: "Ducky", score: 31, color: "bg-amber-400" },
+                  { rank: "🥇", name: "Mona", score: 47, icon: "/images/mona.png" },
+                  { rank: "🥈", name: "Copilot", score: 38, icon: "/images/copilot.png" },
+                  { rank: "🥉", name: "Ducky", score: 31, icon: "/images/ducky.png" },
                 ].map((entry) => (
                   <div key={entry.name} className="flex items-center gap-2 rounded-md border px-2 py-1">
                     <span className="text-[11px]">{entry.rank}</span>
-                    <div className={`size-5 rounded-full ${entry.color} flex items-center justify-center text-[9px] font-bold text-white`}>
-                      {entry.name[0]}
-                    </div>
+                    <Image
+                      src={entry.icon}
+                      alt={entry.name}
+                      width={20}
+                      height={20}
+                      unoptimized
+                      className="size-5 rounded-full"
+                    />
                     <span className="text-[11px] font-semibold text-foreground flex-1">{entry.name}</span>
                     <span className="font-display text-[12px] font-extrabold tabular-nums text-foreground">{entry.score}</span>
                   </div>
