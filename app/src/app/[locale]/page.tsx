@@ -225,7 +225,7 @@ export default async function HomePage({ params }: Props) {
                       width={20}
                       height={20}
                       unoptimized
-                      className="size-5 rounded-full"
+                      className="size-5 object-contain"
                     />
                     <span className="text-[11px] font-semibold text-foreground flex-1">{entry.name}</span>
                     <span className="font-display text-[12px] font-extrabold tabular-nums text-foreground">{entry.score}</span>
