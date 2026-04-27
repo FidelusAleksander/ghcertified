@@ -10,4 +10,4 @@ documentation: "https://docs.github.com/en/enterprise-server@3.17/admin/github-a
 - [ ] Using actions-sync tool
 > While actions-sync can be used to sync individual action repositories from GitHub.com to an enterprise, this is a manual approach. See the [documentation](https://docs.github.com/en/enterprise-server@3.17/admin/github-actions/managing-access-to-actions-from-githubcom/manually-syncing-actions-from-githubcom#about-the-actions-sync-tool) for more details.
 - [ ] GitHub Enterprise Server (GHES) cannot use GitHub.com Actions because of its on-premise nature and no internet access.
-> While workflows located on a GHES instance cannot use GitHub.com Actions nor Github Marketplace actions by default, this can be rectified via the use of GitHub Connect or actions-sync. 
+> While workflows located on a GHES instance cannot use GitHub.com Actions nor GitHub Marketplace actions by default, this can be rectified via the use of GitHub Connect or actions-sync. 

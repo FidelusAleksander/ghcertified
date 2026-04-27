@@ -70,7 +70,7 @@ export function AnswerOption({
         <div className={selectorClass}>
           {showDot && <div className="size-2 rounded-full bg-card" />}
         </div>
-        <div className="text-foreground flex-1 min-w-0">{renderInlineMarkdown(answer.text)}</div>
+        <div className="text-foreground flex-1 min-w-0">{renderInlineMarkdown(answer.text, { skipLinks: true })}</div>
         {showResults && isSelected && (
           <span className={cn(
             "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",

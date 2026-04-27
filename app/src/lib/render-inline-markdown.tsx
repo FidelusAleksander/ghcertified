@@ -4,9 +4,9 @@ import React from "react";
  * Renders inline Markdown in quiz text: fenced code blocks, inline code spans,
  * markdown links [text](url), and bare URLs.
  */
-export function renderInlineMarkdown(text: string): React.ReactNode[] {
+export function renderInlineMarkdown(text: string, options?: { skipLinks?: boolean }): React.ReactNode[] {
   // 1. Split out fenced code blocks first (they should not be parsed further)
-  const fencedRe = /(```\w*\n[\s\S]*?```)/g;
+  const fencedRe = /(```[^\n]*\n[\s\S]*?```)/g;
   const segments = text.split(fencedRe);
 
   return segments.flatMap((segment, i) => {
@@ -39,7 +39,10 @@ export function renderInlineMarkdown(text: string): React.ReactNode[] {
         ];
       }
 
-      // 3. In non-code text, parse markdown links and bare URLs
+      // 3. In non-code text, parse markdown links and bare URLs (unless skipped)
+      if (options?.skipLinks) {
+        return [<span key={`${i}-${j}`}>{codePart}</span>];
+      }
       return renderLinksAndText(codePart, `${i}-${j}`);
     });
   });

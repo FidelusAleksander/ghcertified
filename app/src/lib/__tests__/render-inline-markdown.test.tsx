@@ -75,6 +75,15 @@ describe("renderInlineMarkdown", () => {
     expect(container.textContent).toContain("after");
   });
 
+  it("does not leak language tag when fenced block tag has trailing space", () => {
+    const input = "```yaml \nkey: value\n```";
+    const { container } = render(<>{renderInlineMarkdown(input)}</>);
+    const code = container.querySelector("pre code");
+    expect(code).not.toBeNull();
+    expect(code!.textContent).toBe("key: value");
+    expect(code!.textContent).not.toContain("yaml");
+  });
+
   // ── Link tests ────────────────────────────────────────────────────
 
   it("renders a markdown link as <a>", () => {
@@ -124,5 +133,21 @@ describe("renderInlineMarkdown", () => {
     expect(links).toHaveLength(2);
     expect(links[0].textContent).toBe("docs");
     expect(links[1].textContent).toBe("https://other.com");
+  });
+
+  // ── skipLinks option ──────────────────────────────────────────────
+
+  it("does not render links when skipLinks is true", () => {
+    const input = "See [docs](https://example.com) and https://other.com";
+    const { container } = render(<>{renderInlineMarkdown(input, { skipLinks: true })}</>);
+    expect(container.querySelector("a")).toBeNull();
+    expect(container.textContent).toContain("See [docs](https://example.com) and https://other.com");
+  });
+
+  it("still renders code spans when skipLinks is true", () => {
+    const input = "Use `git status` and see [docs](https://example.com)";
+    const { container } = render(<>{renderInlineMarkdown(input, { skipLinks: true })}</>);
+    expect(container.querySelector("code")!.textContent).toBe("git status");
+    expect(container.querySelector("a")).toBeNull();
   });
 });
