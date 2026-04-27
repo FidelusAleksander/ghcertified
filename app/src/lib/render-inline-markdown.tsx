@@ -9,7 +9,7 @@ export function renderInlineMarkdown(text: string, options?: { skipLinks?: boole
   const fencedRe = /(```[^\n]*\n[\s\S]*?```)/g;
   const segments = text.split(fencedRe);
 
-  return segments.flatMap((segment, i) => {
+  return segments.flatMap((segment, i): React.ReactNode[] => {
     if (segment.startsWith("```")) {
       const firstNewline = segment.indexOf("\n");
       const code = segment
@@ -27,7 +27,7 @@ export function renderInlineMarkdown(text: string, options?: { skipLinks?: boole
 
     // 2. Within plain segments, split by inline code spans first to protect them
     const codeParts = segment.split(/(`[^`]+`)/g);
-    return codeParts.flatMap((codePart, j) => {
+    return codeParts.flatMap((codePart, j): React.ReactNode[] => {
       if (codePart.startsWith("`") && codePart.endsWith("`")) {
         return [
           <code
