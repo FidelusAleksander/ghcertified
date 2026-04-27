@@ -13,7 +13,7 @@ import type { Question } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 import { useTimeTrialMode, MAX_TIME, CORRECT_BONUS, WRONG_PENALTY } from "@/hooks/useTimeTrialMode";
 import { useTranslations } from "next-intl";
-import { renderCodeSpans } from "@/lib/render-code-spans";
+import { renderInlineMarkdown } from "@/lib/render-inline-markdown";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
@@ -176,8 +176,8 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
           >
             <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-200">
               <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
-                {renderCodeSpans(failedQuestion.question)}
-                {failedQuestion.codeBlock && renderCodeSpans(failedQuestion.codeBlock)}
+                {renderInlineMarkdown(failedQuestion.question)}
+                {failedQuestion.codeBlock && renderInlineMarkdown(failedQuestion.codeBlock)}
               </div>
 
               <AnswerList
@@ -301,8 +301,8 @@ export function TimeTrialMode({ questions }: TimeTrialModeProps) {
             className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-right-2 motion-safe:duration-200"
           >
             <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
-              {renderCodeSpans(currentQuestion.question)}
-              {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
+              {renderInlineMarkdown(currentQuestion.question)}
+              {currentQuestion.codeBlock && renderInlineMarkdown(currentQuestion.codeBlock)}
             </div>
 
             <AnswerList

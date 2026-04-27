@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
-import { renderCodeSpans } from "@/lib/render-code-spans";
+import { renderInlineMarkdown } from "@/lib/render-inline-markdown";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
@@ -241,8 +241,8 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       >
         {/* Question text */}
         <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
-          {renderCodeSpans(currentQuestion.question)}
-          {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
+          {renderInlineMarkdown(currentQuestion.question)}
+          {currentQuestion.codeBlock && renderInlineMarkdown(currentQuestion.codeBlock)}
         </div>
 
         <AnswerList

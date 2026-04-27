@@ -21,7 +21,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Flag, ChevronLeft, ChevronRight, Send } from "lucide-react";
-import { renderCodeSpans } from "@/lib/render-code-spans";
+import { renderInlineMarkdown } from "@/lib/render-inline-markdown";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
 import { FeedbackAlert } from "@/components/quiz/FeedbackAlert";
@@ -316,8 +316,8 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
           >
             {/* Question text */}
             <div className="text-[17px] font-medium text-foreground leading-relaxed mb-6 text-left">
-              {renderCodeSpans(currentQuestion.question)}
-              {currentQuestion.codeBlock && renderCodeSpans(currentQuestion.codeBlock)}
+              {renderInlineMarkdown(currentQuestion.question)}
+              {currentQuestion.codeBlock && renderInlineMarkdown(currentQuestion.codeBlock)}
             </div>
 
             <AnswerList

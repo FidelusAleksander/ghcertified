@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { renderCodeSpans } from "@/lib/render-code-spans";
+import { renderInlineMarkdown } from "@/lib/render-inline-markdown";
 import { AnswerExplanation } from "@/components/quiz/AnswerExplanation";
 import type { AnswerOption as AnswerOptionType } from "@/types/quiz";
 
@@ -70,7 +70,7 @@ export function AnswerOption({
         <div className={selectorClass}>
           {showDot && <div className="size-2 rounded-full bg-card" />}
         </div>
-        <div className="text-foreground flex-1 min-w-0">{renderCodeSpans(answer.text)}</div>
+        <div className="text-foreground flex-1 min-w-0">{renderInlineMarkdown(answer.text)}</div>
         {showResults && isSelected && (
           <span className={cn(
             "text-[11px] font-semibold uppercase tracking-wide whitespace-nowrap px-2 py-0.5 rounded-md motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-75 motion-safe:duration-200",

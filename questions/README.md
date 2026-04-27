@@ -82,6 +82,13 @@ Add a blockquote (`>`) on the line immediately after an answer to explain why it
 
 Keep explanations short — one line is ideal.
 
+Explanations support inline Markdown: backtick code spans (`` `code` ``), markdown links (`[text](url)`), and bare URLs are rendered as clickable links.
+
+```markdown
+- [x] Use `GITHUB_TOKEN` for authentication
+> See [authentication docs](https://docs.github.com/en/actions/security-guides/automatic-token-authentication) for more details
+```
+
 ### Code blocks
 
 Add a fenced code block between the frontmatter and the answers. It renders above the answer options.
