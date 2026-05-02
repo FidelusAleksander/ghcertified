@@ -25,7 +25,6 @@ export interface Question {
   question: string;
   answers: { id: string; text: string; isCorrect: boolean; explanation?: string }[];
   isMultiSelect: boolean;
-  hint?: string;
   codeBlock?: string;
   documentation?: string;
 }
@@ -91,7 +90,6 @@ function loadAll(locale: SupportedLocale): Question[] {
         question: q.question,
         answers: q.answers,
         isMultiSelect: q.isMultiSelect,
-        hint: q.hint,
         codeBlock: q.codeBlock,
         documentation: q.frontmatter.documentation as string | undefined,
       });

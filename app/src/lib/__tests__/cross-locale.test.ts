@@ -36,7 +36,6 @@ interface ParsedQuestion {
   question: string;
   answers: { text: string; isCorrect: boolean }[];
   isMultiSelect: boolean;
-  hint?: string;
   frontmatter: Record<string, unknown>;
 }
 
