@@ -17,3 +17,5 @@ app/.env.*
 .local/
 supabase/migrations/
 supabase/seed.sql
+
+.temp/
