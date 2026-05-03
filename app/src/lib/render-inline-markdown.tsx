@@ -41,11 +41,28 @@ export function renderInlineMarkdown(text: string, options?: { skipLinks?: boole
 
       // 3. In non-code text, parse markdown links and bare URLs (unless skipped)
       if (options?.skipLinks) {
-        return [<span key={`${i}-${j}`}>{codePart}</span>];
+        return [renderTextWithLineBreaks(codePart, `${i}-${j}`)];
       }
       return renderLinksAndText(codePart, `${i}-${j}`);
     });
   });
+}
+
+function renderTextWithLineBreaks(text: string, key: string): React.ReactNode {
+  if (!text.includes("\n")) {
+    return <span key={key}>{text}</span>;
+  }
+  const parts = text.split("\n");
+  return (
+    <span key={key}>
+      {parts.map((part, idx) => (
+        <React.Fragment key={idx}>
+          {part}
+          {idx < parts.length - 1 && <br />}
+        </React.Fragment>
+      ))}
+    </span>
+  );
 }
 
 const LINK_RE = /(\[([^\]]+)\]\((https?:\/\/[^)]+)\))|(https?:\/\/[^\s<>)\]]+)/g;
@@ -59,9 +76,7 @@ function renderLinksAndText(text: string, keyPrefix: string): React.ReactNode[] 
   while ((match = LINK_RE.exec(text)) !== null) {
     if (match.index > lastIndex) {
       nodes.push(
-        <span key={`${keyPrefix}-t${lastIndex}`}>
-          {text.slice(lastIndex, match.index)}
-        </span>,
+        renderTextWithLineBreaks(text.slice(lastIndex, match.index), `${keyPrefix}-t${lastIndex}`),
       );
     }
 
@@ -98,9 +113,7 @@ function renderLinksAndText(text: string, keyPrefix: string): React.ReactNode[] 
 
   if (lastIndex < text.length) {
     nodes.push(
-      <span key={`${keyPrefix}-t${lastIndex}`}>
-        {text.slice(lastIndex)}
-      </span>,
+      renderTextWithLineBreaks(text.slice(lastIndex), `${keyPrefix}-t${lastIndex}`),
     );
   }
 
