@@ -32,11 +32,8 @@ jobs:
 
 > `os:macos-latest,comment-color:yellow` 
 
-> 🔥Jobs with `os:ubuntu-latest` get `comment-color: "blue"` since it's not in the original matrix and can be overwritten.
+> An `include` key NOT defind in `strategy.matrix` can be added to a job configuration if it does not overwrite the configuration. `include` keys already present in `strategy.matrix` will create a new job if they have a new value. 
 
-> 🔥All original matrix jobs get `error-color: "red"` added, as it doesn't overwrite existing values and is defined once.
-
-> 🔥The last `include` entry creates a new job `{os:macos-latest, comment-color: "yellow"}` since it overwrites `os`. It lacks `error-color` as it's not in the original matrix, unlike `comment-color` which is included here.
 - [ ] 6
 - [ ] 7
 - [ ] 10
