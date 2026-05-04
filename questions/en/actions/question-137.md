@@ -27,11 +27,11 @@ jobs:
 > `os:windows-latest,version:2,comment-color:green,error-color:red` 
 > `os:macos-latest,comment-color:yellow` 
 
-> 🔥For jobs that use `os:ubuntu-latest`, the `comment-color` will be `"blue"` because `comment-color` is not part of the original matrix configuration, so it can be overwritten by other mentions of itself.  
+> 🔥Jobs with `os:ubuntu-latest` get `comment-color: "blue"` since it's not in the original matrix and can be overwritten.
 
-> 🔥All jobs originating from combinations of the original will use `error-color:red` because `error-color` does not overwrite any combinations in the original matrix, and will thus get added to each said configuration. It is only defined once, meaning it will always be `"red"`  
+> 🔥All original matrix jobs get `error-color: "red"` added, as it doesn't overwrite existing values and is defined once.
 
-> 🔥The last job is made from the last set of configurations in `include`. `{os:macos-latest,comment-color:yellow}` cannot be added to any original matrix combination without overwriting a value (in this case, `os`), so a new job must be made. This job will not have `error-color` in it because `error-color` is not part of the original matrix configuration. While `comment-color` is also not in the original matrix configuration, it IS included as part of the last set of configurations.  
+> 🔥The last `include` entry creates a new job `{os:macos-latest, comment-color: "yellow"}` since it overwrites `os`. It lacks `error-color` as it's not in the original matrix, unlike `comment-color` which is included here.
 - [ ] 6
 - [ ] 7
 - [ ] 10
