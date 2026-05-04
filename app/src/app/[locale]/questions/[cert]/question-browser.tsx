@@ -7,13 +7,14 @@
  *   Left: compact numbered grid for quick navigation
  *   Right: question card with answer options, check/reveal, prev/next
  *
- * Stateless — no scoring, no flagging, no shuffling, no results screen.
+ * Stateless — no scoring, no flagging, no results screen.
+ * Answer order is shuffled on mount (client-side) to prevent position memorization.
  */
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import type { Question } from "@/types/quiz";
-import { cn } from "@/lib/utils";
+import { cn, shuffle } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
@@ -32,6 +33,17 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
+
+  // Shuffle answers per question on mount (client-only to avoid hydration mismatch)
+  const [shuffledAnswerMap, setShuffledAnswerMap] = useState<Record<string, Question["answers"]>>({});
+  useEffect(() => {
+    const map: Record<string, Question["answers"]> = {};
+    for (const q of questions) {
+      map[q.id] = shuffle(q.answers);
+    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- shuffle must run client-side only to avoid hydration mismatch
+    setShuffledAnswerMap(map);
+  }, [questions]);
 
   // Sidebar pagination — auto-follows active question, manual override resets on question nav
   const PAGE_SIZE = 20;
@@ -53,8 +65,15 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
     });
   }, []);
 
-  const currentQuestion = questions[currentIndex];
-  const currentSelected = selectedAnswers[currentQuestion?.id] ?? new Set<string>();
+  const currentQuestion = useMemo(() => {
+    const q = questions[currentIndex];
+    if (!q) return null;
+    const shuffledAnswers = shuffledAnswerMap[q.id];
+    // Return null until shuffle is ready to prevent flash of unshuffled answers
+    if (!shuffledAnswers) return null;
+    return { ...q, answers: shuffledAnswers };
+  }, [questions, currentIndex, shuffledAnswerMap]);
+  const currentSelected = selectedAnswers[currentQuestion?.id ?? ""] ?? new Set<string>();
   const isRevealed = revealedMap[currentIndex] || false;
 
   const handleToggleAnswer = useCallback(

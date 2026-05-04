@@ -150,4 +150,40 @@ describe("renderInlineMarkdown", () => {
     expect(container.querySelector("code")!.textContent).toBe("git status");
     expect(container.querySelector("a")).toBeNull();
   });
+
+  // ── Line break tests ──────────────────────────────────────────────
+
+  it("renders newlines as <br> in plain text", () => {
+    const input = "Line one\nLine two\nLine three";
+    const { container } = render(<>{renderInlineMarkdown(input)}</>);
+    const brs = container.querySelectorAll("br");
+    expect(brs).toHaveLength(2);
+    expect(container.textContent).toContain("Line one");
+    expect(container.textContent).toContain("Line two");
+    expect(container.textContent).toContain("Line three");
+  });
+
+  it("renders newlines as <br> in text with inline code", () => {
+    const input = "Use `foo`\nthen `bar`";
+    const { container } = render(<>{renderInlineMarkdown(input)}</>);
+    const brs = container.querySelectorAll("br");
+    expect(brs).toHaveLength(1);
+    const codes = container.querySelectorAll("code");
+    expect(codes).toHaveLength(2);
+  });
+
+  it("renders newlines as <br> in text with links", () => {
+    const input = "See [docs](https://example.com)\nfor details";
+    const { container } = render(<>{renderInlineMarkdown(input)}</>);
+    const brs = container.querySelectorAll("br");
+    expect(brs).toHaveLength(1);
+    expect(container.querySelector("a")).not.toBeNull();
+  });
+
+  it("renders newlines as <br> when skipLinks is true", () => {
+    const input = "Line one\nLine two";
+    const { container } = render(<>{renderInlineMarkdown(input, { skipLinks: true })}</>);
+    const brs = container.querySelectorAll("br");
+    expect(brs).toHaveLength(1);
+  });
 });

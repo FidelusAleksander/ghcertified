@@ -68,6 +68,10 @@ Use Markdown list items with checkboxes. Mark correct answers with `[x]`, incorr
 
 Aim for 2–6 answer options.
 
+### Answer ordering
+
+Answers are automatically shuffled in the application . You don't need to worry about the position of correct answers in your markdown file. Placing correct answers first (as shown in the examples above) is a recommended practice to improve readability.
+
 ### Answer explanations
 
 Add a blockquote (`>`) on the line immediately after an answer to explain why it's correct or incorrect. These are optional and help learners understand the reasoning.
