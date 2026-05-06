@@ -7,10 +7,12 @@ documentation: "TODO"
 ```yaml
     if: startsWith(inputs.branch-name, 'smoke-test')
 ```
+
 - [ ]
 ```yaml
     if: inputs.branch-name.startsWith('smoke-test')
 ``` 
+
 - [ ]
 ```yaml
 on:
@@ -19,6 +21,7 @@ on:
         - 'smoke-test/**'
 ```
 > `branches` is not a child of `workflow_call`. Furthermore, `workflow_call` is at workflow-level; items at this level cannot directly cause a step to run/not run.
+
 - [ ]
 ```yaml
     if: [[ "${{inputs.branch-name}}" == "smoke-test"* ]]
