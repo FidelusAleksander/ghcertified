@@ -20,7 +20,7 @@ on:
     branches:
         - 'smoke-test/**'
 ```
-> `branches` is not a child of `workflow_call`. Furthermore, `workflow_call` is at workflow-level; items at this level cannot directly cause a step to run/not run.
+> `branches` filter is not available for `workflow_call` event trigger. Furthermore, workflow event triggers can't be used to control whether a step runs or not
 
 - [ ] Use shell conditionals in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
