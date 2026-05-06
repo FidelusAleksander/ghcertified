@@ -26,4 +26,4 @@ on:
 ```yaml
     if: [[ "${{inputs.branch-name}}" == "smoke-test"* ]]
 ```
-> Only supported Github Actions contexts and expressions can be used in `jobs.<job_id>.steps[*].if` conditonals. 
+> Only supported Github Actions contexts and expressions can be used in `jobs.<job_id>.steps[*].if` conditionals. 
