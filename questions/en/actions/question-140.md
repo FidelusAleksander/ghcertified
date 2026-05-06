@@ -12,7 +12,7 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 ```yaml
     if: inputs.branch-name.startsWith('smoke-test')
 ``` 
-
+> You cannot use method chaining with Github Actions built-in methods. Almost all built-in methods are written in the style of `methodName(arg1,arg2,...)` 
 - [ ] Use the `branches` filter under `workflow_call`
 ```yaml
 on:
