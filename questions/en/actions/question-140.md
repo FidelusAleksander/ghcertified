@@ -1,6 +1,6 @@
 ---
 question: "You are writing a reusable workflow which has `branch-name` as an input. How can you conditionally run a step in that workflow if the branch name begins with 'smoke-test'?"
-documentation: "TODO"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#startswith"
 ---
 
 - [x] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if` as seen below
