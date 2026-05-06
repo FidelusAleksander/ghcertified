@@ -3,12 +3,12 @@ question: "You are writing a reusable workflow which has `branch-name` as an inp
 documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#startswith"
 ---
 
-- [x] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if` as seen below
+- [x] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
     if: startsWith(inputs.branch-name, 'smoke-test')
 ```
 
-- [ ] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if` as seen below
+- [ ] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
     if: inputs.branch-name.startsWith('smoke-test')
 ``` 
@@ -22,7 +22,7 @@ on:
 ```
 > `branches` is not a child of `workflow_call`. Furthermore, `workflow_call` is at workflow-level; items at this level cannot directly cause a step to run/not run.
 
-- [ ] Use shell conditionals in combination with `jobs.<job_id>.steps[*].if` as seen below
+- [ ] Use shell conditionals in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
     if: [[ "${{inputs.branch-name}}" == "smoke-test"* ]]
 ```
