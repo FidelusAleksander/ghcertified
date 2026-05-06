@@ -3,17 +3,17 @@ question: "You are writing a reusable workflow which has `branch-name` as an inp
 documentation: "TODO"
 ---
 
-- [x] 
+- [x] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if` as seen below
 ```yaml
     if: startsWith(inputs.branch-name, 'smoke-test')
 ```
 
-- [ ]
+- [ ] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if` as seen below
 ```yaml
     if: inputs.branch-name.startsWith('smoke-test')
 ``` 
 
-- [ ]
+- [ ] Use the `branches` filter under `workflow_call`
 ```yaml
 on:
   workflow_call:
@@ -22,7 +22,7 @@ on:
 ```
 > `branches` is not a child of `workflow_call`. Furthermore, `workflow_call` is at workflow-level; items at this level cannot directly cause a step to run/not run.
 
-- [ ]
+- [ ] Use shell conditionals in combination with `jobs.<job_id>.steps[*].if` as seen below
 ```yaml
     if: [[ "${{inputs.branch-name}}" == "smoke-test"* ]]
 ```
