@@ -9,5 +9,5 @@ documentation: "https://docs.github.com/en/apps/creating-github-apps/authenticat
 - [x] The `actions/create-github-app-token` can be called within workflows to create an installation access token available for immediate use. 
 - [ ] The `actions/create-github-app-token` can be called within workflows to create an installation access token, but the installation access token can only be used in future runs of the workflow.
 > Once created, an installation access can be used immediately. See the [official page for this action](https://github.com/actions/create-github-app-token) for additional details.
-- [ ] Installation access tokens are similar to personal access tokens (PATs) in that both are tied to a specific user account
-> Installation access tokens act on behalf of their associated Github App, not a user account.
+- [ ] Installation access tokens cannot be configued to act on behalf of their associated Github App. 
+> Installation access tokens are often configured to act on behalf of their associated Github App. This can aid in auditing automated activity.
