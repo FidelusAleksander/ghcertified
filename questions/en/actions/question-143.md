@@ -1,5 +1,5 @@
 ---
-question: "Your organization wants to lower the retention period for stored artifacts. How can this be done at an organizational level?"
+question: "Your organization wants to lower the retention period for stored artifacts, citing storage concerns. How can this be done at an organizational level?"
 documentation: "https://docs.github.com/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization"
 ---
 
