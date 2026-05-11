@@ -1,14 +1,14 @@
 ---
-question: "Which statement is true regarding `github.ref` when the workflow is triggered by a `pull_request` event?"
+question: "Which statements are true regarding `github.ref` when the workflow is triggered by a `pull_request` event?"
 documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context"
 ---
 
 - [x] In pull requests that have not been merged, `github.ref` refers to the fully-formed ref of the pull request merge branch/tag 
 > For more information about refs, see the official [Git documentation](https://git-scm.com/book/en/Git-Internals-Git-References).
 - [x] In pull requests that have been merged, `github.ref` refers to the fully-formed ref of the branch that was merged into, depending on whether the pull request was merged. 
-- [ ] In pull requests (regardless of merged status), `github.ref` refers to the pull request number 
+- [ ] In pull requests, `github.ref` refers to the pull request number 
 > For the `pull_request` event, the value of `github.ref` varies depending on whether the pull request was merged. This value will always be a ref, not the pull request number.
-- [ ] In pull requests (regardless of merged status), `github.ref` is the SHA of the last merge commit on the `GITHUB_REF` branch.
+- [ ] In pull requests, `github.ref` is the SHA of the last merge commit on the `GITHUB_REF` branch.
 > `github.sha` is what points to the latest SHA on the merge branch (ex. `refs/pull/PULL_REQUEST_NUMBER/merge`).  Refer to the [events documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request) for more details.
 - [ ] In pull requests, `github.ref` is the fully-formed ref of the pull request title. 
 > Refs are not formed from pull request titles. `github.event.pull_request.title` is what contains the pull request title. See the [documentation](https://docs.github.com/en/webhooks/webhook-events-and-payloads#pull_request) for more details.
