@@ -113,6 +113,7 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
                 href={`https://github.com/${entry.githubUsername}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${entry.githubUsername} GitHub profile`}
                 className="hover:opacity-80 transition-opacity"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -128,6 +129,7 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
                   href={`https://github.com/${entry.githubUsername}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`${entry.githubUsername} GitHub profile`}
                   className="truncate text-[13px] font-semibold text-foreground hover:underline block"
                 >
                   {entry.githubUsername}
