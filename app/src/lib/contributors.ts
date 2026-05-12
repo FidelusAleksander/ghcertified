@@ -1,10 +1,4 @@
 const REPO = "FidelusAleksander/ghcertified";
-const BOT_LOGINS = new Set([
-  "dependabot[bot]",
-  "github-actions[bot]",
-  "imgbot[bot]",
-  "Copilot",
-]);
 
 export interface Contributor {
   login: string;
@@ -30,10 +24,11 @@ export async function getContributors(): Promise<Contributor[]> {
     avatar_url: string;
     html_url: string;
     contributions: number;
+    type: string;
   }> = await res.json();
 
   return data
-    .filter((c) => !BOT_LOGINS.has(c.login))
+    .filter((c) => c.type !== "Bot")
     .map((c) => ({
       login: c.login,
       avatarUrl: c.avatar_url,
