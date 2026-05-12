@@ -3,23 +3,24 @@
 /**
  * FullLeaderboard — paginated leaderboard with podium and styled rows.
  *
- * Top 3 get a visual podium section. Remaining entries (#4+) displayed
- * in a card with alternating row backgrounds and load-more pagination.
+ * Top 3 get a persistent podium section (always visible). Remaining entries
+ * (#4+) displayed in a card with prev/next page navigation, 10 per page.
  * Shows when each high score was achieved.
  */
 
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { ChallengeType, LeaderboardEntry } from "@/types/challenges";
-import { getLeaderboardPage, type LeaderboardCursor } from "@/lib/leaderboard";
+import { getLeaderboard, getLeaderboardPageByOffset } from "@/lib/leaderboard";
 import { hasSupabaseConfig } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Loader2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const PAGE_SIZE = 10;
+const PODIUM_COUNT = 3;
 
 interface FullLeaderboardProps {
   gameType: ChallengeType;
@@ -229,56 +230,61 @@ function LeaderboardRow({ entry, isCurrentUser, t }: {
 
 export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardProps) {
   const t = useTranslations("Challenges");
-  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
+  const [podiumEntries, setPodiumEntries] = useState<LeaderboardEntry[]>([]);
+  const [pageEntries, setPageEntries] = useState<LeaderboardEntry[]>([]);
   const [totalCount, setTotalCount] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const [status, setStatus] = useState<Status>(
     hasSupabaseConfig() ? "idle" : "unavailable"
   );
-  const [loadingMore, setLoadingMore] = useState(false);
-  const [cursor, setCursor] = useState<LeaderboardCursor | undefined>(undefined);
+  const [pageLoading, setPageLoading] = useState(false);
 
-  const fetchPage = useCallback(async (pageCursor: LeaderboardCursor | undefined, append: boolean) => {
-    if (!append) {
-      setStatus("loading");
-      setEntries([]);
-    }
+  const totalPages = Math.max(1, Math.ceil(Math.max(0, totalCount - PODIUM_COUNT) / PAGE_SIZE));
+
+  // Fetch podium (top 3) on mount / gameType change
+  const fetchPodium = useCallback(async () => {
+    const entries = await getLeaderboard(gameType, PODIUM_COUNT);
+    setPodiumEntries(entries);
+  }, [gameType]);
+
+  // Fetch a single page of entries (rank 4+)
+  const fetchPage = useCallback(async (page: number) => {
+    setPageLoading(true);
     try {
-      const result = await getLeaderboardPage(gameType, PAGE_SIZE, pageCursor);
+      const startRank = PODIUM_COUNT + 1 + (page - 1) * PAGE_SIZE;
+      const result = await getLeaderboardPageByOffset(gameType, startRank, PAGE_SIZE);
+      setPageEntries(result.entries);
       setTotalCount(result.totalCount);
-      setEntries((prev) => {
-        const next = append ? [...prev, ...result.entries] : result.entries;
-        // Fix ranks based on accumulated position
-        return next.map((e, i) => ({ ...e, rank: i + 1 }));
-      });
-      // Update cursor to last entry for next page
-      const lastEntry = result.entries[result.entries.length - 1];
-      if (lastEntry) {
-        setCursor({
-          score: lastEntry.score,
-          achievedAt: lastEntry.achievedAt ?? "",
-          githubUsername: lastEntry.githubUsername,
-        });
-      }
-      setStatus(result.entries.length === 0 && !append ? "empty" : "ready");
+      setStatus(result.totalCount === 0 ? "empty" : "ready");
     } catch {
-      if (!append) setStatus("error");
+      setStatus("error");
+    } finally {
+      setPageLoading(false);
     }
   }, [gameType]);
 
   useEffect(() => {
     if (status === "unavailable") return;
-    setCursor(undefined);
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- data-fetch pattern: setState tracks async loading lifecycle
-    void fetchPage(undefined, false);
-  }, [gameType, fetchPage]); // eslint-disable-line react-hooks/exhaustive-deps -- status is a guard, not a trigger
+    setStatus("loading");
+    setCurrentPage(1);
+    setPodiumEntries([]);
+    setPageEntries([]);
+    void Promise.all([fetchPodium(), fetchPage(1)]).catch(() => {
+      setStatus("error");
+    });
+  }, [gameType, fetchPodium, fetchPage]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleLoadMore = async () => {
-    setLoadingMore(true);
-    await fetchPage(cursor, true);
-    setLoadingMore(false);
+  const handlePrev = () => {
+    const prev = currentPage - 1;
+    setCurrentPage(prev);
+    void fetchPage(prev);
   };
 
-  const hasMore = entries.length < totalCount;
+  const handleNext = () => {
+    const next = currentPage + 1;
+    setCurrentPage(next);
+    void fetchPage(next);
+  };
 
   if (status === "loading") {
     return <LeaderboardSkeleton />;
@@ -300,56 +306,76 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
     );
   }
 
-  const podiumEntries = entries.slice(0, 3);
-  const restEntries = entries.slice(3);
+  const hasMorePages = totalCount > PODIUM_COUNT;
 
   return (
     <div>
-      {/* Podium for top 3 */}
+      {/* Podium for top 3 — always visible */}
       <Podium entries={podiumEntries} currentUsername={currentUsername} />
 
-      {/* Remaining rows in a card */}
-      {restEntries.length > 0 && (
-        <Card className="overflow-hidden">
-          {/* Table header */}
-          <div className="hidden sm:grid grid-cols-[3rem_1fr_4rem_5.5rem_2rem] items-center gap-3 px-4 py-2 text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground border-b bg-muted/40">
-            <span>{t("rank")}</span>
-            <span>{t("player")}</span>
-            <span className="text-right">{t("score")}</span>
-            <span className="text-right">{t("dateColumnHeader")}</span>
-            <span />
-          </div>
+      {/* Paginated rows in a card */}
+      {hasMorePages && (
+        <>
+          <Card className={cn("overflow-hidden", pageLoading && "opacity-60 pointer-events-none")}>
+            {/* Table header */}
+            <div className="hidden sm:grid grid-cols-[3rem_1fr_4rem_5.5rem_2rem] items-center gap-3 px-4 py-2 text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground border-b bg-muted/40">
+              <span>{t("rank")}</span>
+              <span>{t("player")}</span>
+              <span className="text-right">{t("score")}</span>
+              <span className="text-right">{t("dateColumnHeader")}</span>
+              <span />
+            </div>
 
-          {restEntries.map((entry) => (
-            <LeaderboardRow
-              key={`${entry.rank}-${entry.githubUsername}`}
-              entry={entry}
-              isCurrentUser={!!currentUsername && entry.githubUsername === currentUsername}
-              t={t}
-            />
-          ))}
-        </Card>
+            {pageLoading ? (
+              <div className="flex items-center justify-center py-8">
+                <Loader2 className="size-5 animate-spin text-muted-foreground" />
+              </div>
+            ) : (
+              pageEntries.map((entry) => (
+                <LeaderboardRow
+                  key={`${entry.rank}-${entry.githubUsername}`}
+                  entry={entry}
+                  isCurrentUser={!!currentUsername && entry.githubUsername === currentUsername}
+                  t={t}
+                />
+              ))
+            )}
+          </Card>
+
+          {/* Pagination footer */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-4 pt-4 pb-2">
+              {currentPage > 1 && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handlePrev}
+                  disabled={pageLoading}
+                  className="rounded-[9px] text-[13px] font-semibold gap-1"
+                >
+                  <ChevronLeft className="size-4" />
+                  {t("previousPage")}
+                </Button>
+              )}
+              <span className="text-[13px] text-muted-foreground tabular-nums">
+                {t("pageIndicator", { page: currentPage, total: totalPages })}
+              </span>
+              {currentPage < totalPages && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleNext}
+                  disabled={pageLoading}
+                  className="rounded-[9px] text-[13px] font-semibold gap-1"
+                >
+                  {t("nextPage")}
+                  <ChevronRight className="size-4" />
+                </Button>
+              )}
+            </div>
+          )}
+        </>
       )}
-
-      {/* Footer: count + load more */}
-      <div className="flex flex-col items-center gap-3 pt-6 pb-2">
-        <p className="text-[13px] text-muted-foreground">
-          {hasMore
-            ? t("showingEntries", { count: entries.length, total: totalCount })
-            : t("noMoreEntries")}
-        </p>
-        {hasMore && (
-          <Button
-            variant="outline"
-            onClick={handleLoadMore}
-            disabled={loadingMore}
-            className="rounded-[9px] text-[14px] font-semibold"
-          >
-            {loadingMore && <Loader2 className="size-4 animate-spin mr-2" />}
-            {t("loadMore")}
-          </Button>
-        )}
-      </div>
     </div>
   );
 }
