@@ -113,8 +113,7 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
                 href={`https://github.com/${entry.githubUsername}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`${entry.githubUsername} GitHub profile`}
-                className="hover:opacity-80 transition-opacity"
+                className="flex flex-col items-center gap-1.5 hover:opacity-80 transition-opacity"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -123,17 +122,11 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
                   loading="lazy"
                   className={cn("rounded-full shrink-0", config.avatarSize, config.ring)}
                 />
+                <span className="truncate text-[13px] font-semibold text-foreground hover:underline block min-w-0 w-full">
+                  {entry.githubUsername}
+                </span>
               </a>
               <div className="min-w-0 w-full">
-                <a
-                  href={`https://github.com/${entry.githubUsername}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${entry.githubUsername} GitHub profile`}
-                  className="truncate text-[13px] font-semibold text-foreground hover:underline block"
-                >
-                  {entry.githubUsername}
-                </a>
                 <div className="text-[12px] font-bold tabular-nums text-muted-foreground">
                   {entry.score}
                 </div>
