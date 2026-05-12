@@ -19,7 +19,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 10;
 
 interface FullLeaderboardProps {
   gameType: ChallengeType;
