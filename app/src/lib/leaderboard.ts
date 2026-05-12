@@ -77,14 +77,9 @@ export async function getLeaderboardPageByOffset(
   const supabase = getSupabase();
   const offset = startRank - 1; // convert 1-based rank to 0-based offset
 
-  const { count } = await supabase
+  const { data, error, count } = await supabase
     .from("challenge_leaderboard")
-    .select("*", { count: "exact", head: true })
-    .eq("challenge", challengeType);
-
-  const { data, error } = await supabase
-    .from("challenge_leaderboard")
-    .select("github_username, avatar_url, score, achieved_at")
+    .select("github_username, avatar_url, score, achieved_at", { count: "exact" })
     .eq("challenge", challengeType)
     .order("score", { ascending: false })
     .order("achieved_at", { ascending: true })

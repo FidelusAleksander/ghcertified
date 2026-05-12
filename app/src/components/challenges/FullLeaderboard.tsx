@@ -241,14 +241,10 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
 
   const totalPages = Math.max(1, Math.ceil(Math.max(0, totalCount - PODIUM_COUNT) / PAGE_SIZE));
 
-  // Fetch podium (top 3) once on mount / gameType change
+  // Fetch podium (top 3) on mount / gameType change
   const fetchPodium = useCallback(async () => {
-    try {
-      const entries = await getLeaderboard(gameType, PODIUM_COUNT);
-      setPodiumEntries(entries);
-    } catch {
-      // Podium fetch failure handled by page status
-    }
+    const entries = await getLeaderboard(gameType, PODIUM_COUNT);
+    setPodiumEntries(entries);
   }, [gameType]);
 
   // Fetch a single page of entries (rank 4+)
@@ -271,8 +267,10 @@ export function FullLeaderboard({ gameType, currentUsername }: FullLeaderboardPr
     if (status === "unavailable") return;
     setStatus("loading");
     setCurrentPage(1);
-    void Promise.all([fetchPodium(), fetchPage(1)]).then(() => {
-      // status set inside fetchPage
+    setPodiumEntries([]);
+    setPageEntries([]);
+    void Promise.all([fetchPodium(), fetchPage(1)]).catch(() => {
+      setStatus("error");
     });
   }, [gameType, fetchPodium, fetchPage]); // eslint-disable-line react-hooks/exhaustive-deps
 
