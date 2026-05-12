@@ -19,7 +19,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 10;
 
 interface FullLeaderboardProps {
   gameType: ChallengeType;
@@ -109,17 +109,24 @@ function Podium({ entries, currentUsername }: { entries: LeaderboardEntry[]; cur
           >
             <div className="flex flex-col items-center gap-1.5">
               <span className="text-lg">{config.label}</span>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=120`}
-                alt=""
-                loading="lazy"
-                className={cn("rounded-full shrink-0", config.avatarSize, config.ring)}
-              />
-              <div className="min-w-0 w-full">
-                <div className="truncate text-[13px] font-semibold text-foreground">
+              <a
+                href={`https://github.com/${entry.githubUsername}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-1.5 hover:opacity-80 transition-opacity"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={entry.avatarUrl ?? `https://github.com/${entry.githubUsername}.png?size=120`}
+                  alt=""
+                  loading="lazy"
+                  className={cn("rounded-full shrink-0", config.avatarSize, config.ring)}
+                />
+                <span className="truncate text-[13px] font-semibold text-foreground hover:underline block min-w-0 w-full">
                   {entry.githubUsername}
-                </div>
+                </span>
+              </a>
+              <div className="min-w-0 w-full">
                 <div className="text-[12px] font-bold tabular-nums text-muted-foreground">
                   {entry.score}
                 </div>
