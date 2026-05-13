@@ -13,7 +13,7 @@ import {
   ShieldLockIcon,
   OrganizationIcon,
   CopilotIcon,
-  HubotIcon,
+  AgentIcon,
 } from "@primer/octicons-react";
 import type { CertificationType } from "./questions";
 
@@ -48,7 +48,7 @@ export const CERT_META: Record<CertificationType, CertMeta> = {
     colorClass: "bg-cert-agentic",
     borderClass: "border-cert-agentic",
     textClass: "text-cert-agentic",
-    icon: <HubotIcon size={24} className="text-primary-foreground" />,
+    icon: <AgentIcon size={24} className="text-primary-foreground" />,
     beta: true,
   },
   admin: {
