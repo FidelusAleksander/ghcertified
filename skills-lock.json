@@ -5,19 +5,19 @@
       "source": "vercel-labs/agent-browser",
       "sourceType": "github",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "computedHash": "00709861067d0cbb634609778b1be0469de6d6cef5293fcd24cbd469faaae42c"
+      "computedHash": "228f87d57035100d9dc6efcfc05aafd4b6e3962adacaa04b8217ab2fadb15dc8"
     },
     "caveman": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "skillPath": "skills/caveman/SKILL.md",
-      "computedHash": "6a93e68b5d843ab6da3290dfe81cfdf26de166be7f3feca5acb52744f63db593"
+      "computedHash": "dfbf85749fd474feeb0bbe60c779795ecd5dbec0083299b56e68916bc3ddd8c9"
     },
     "caveman-commit": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "skillPath": "skills/caveman-commit/SKILL.md",
-      "computedHash": "9ea361c8617aaabb0dada200c0bbe3f3eb9e4a28d44366b1d3a6e4ef600e96e2"
+      "computedHash": "f456ea0564875e46858890ac39ee701ecb9c601c72a2da1e6ce6bd5f9fc5d817"
     },
     "impeccable": {
       "source": "pbakaus/impeccable",
@@ -26,16 +26,16 @@
       "computedHash": "9aec36a70b0c2cafd3ded7e2c523c77beddcdb814fac86cda42f395ef719a924"
     },
     "shadcn": {
-      "source": "shadcn-ui/agent",
+      "source": "shadcn/ui",
       "sourceType": "github",
       "skillPath": "skills/shadcn/SKILL.md",
-      "computedHash": "2089d0638e494b7f7a2222775945badaa1242f05424e341ef9b1f640093cf8a4"
+      "computedHash": "80a6226e78f6d1fe464214ae0ef449d49d8ffaa3e7704f011e9b418c678ad4d1"
     },
     "supabase": {
       "source": "supabase/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/supabase/SKILL.md",
-      "computedHash": "41f4694e5e8114215fb2c4b1b72f373dddec52eb784ec92ed8d8a6885cb0f197"
+      "computedHash": "45a3cdccc364a4bbd6cdf700fc069e9f24ebc0428098746cbfbf8b18a5e160d2"
     },
     "supabase-postgres-best-practices": {
       "source": "supabase/agent-skills",
