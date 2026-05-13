@@ -227,6 +227,7 @@
     "actions": "Master CI/CD, workflow triggers, jobs, steps, secrets, and GitHub-hosted runners.",
     "foundations": "Core concepts, repositories, issues, pull requests, GitHub Flow, and Codespaces.",
     "advanced_security": "Secret scanning, code scanning with CodeQL, security policies, and Dependabot alerts.",
+    "agentic": "Operating, integrating, and governing AI agents in SDLC workflows using GitHub as the control plane.",
     "admin": "Managing organizations, teams, permissions, billing, and enterprise-level GitHub.",
     "copilot": "AI pair programming, prompt engineering, Copilot features, and responsible use."
   },

@@ -16,6 +16,7 @@ export type CertificationType =
   | "actions"
   | "admin"
   | "advanced_security"
+  | "agentic"
   | "copilot"
   | "foundations";
 
@@ -54,12 +55,13 @@ export const CERT_TITLES: Record<CertificationType, string> = {
   actions: "GitHub Actions (GH-200)",
   admin: "GitHub Administration (GH-100)",
   advanced_security: "GitHub Advanced Security (GH-500)",
+  agentic: "GitHub Agentic AI Developer (GH-600)",
   copilot: "GitHub Copilot (GH-300)",
   foundations: "GitHub Foundations (GH-900)",
 };
 
 const VALID_CERTS: CertificationType[] = [
-  "actions", "admin", "advanced_security", "copilot", "foundations",
+  "actions", "admin", "advanced_security", "agentic", "copilot", "foundations",
 ];
 
 export { VALID_CERTS };

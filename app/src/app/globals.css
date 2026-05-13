@@ -55,6 +55,7 @@
   --color-cert-actions: var(--cert-actions);
   --color-cert-foundations: var(--cert-foundations);
   --color-cert-advanced-security: var(--cert-advanced-security);
+  --color-cert-agentic: var(--cert-agentic);
   --color-cert-admin: var(--cert-admin);
   --color-cert-copilot: var(--cert-copilot);
   --color-hover-ring: var(--primary-soft);
@@ -120,6 +121,7 @@
   --cert-actions: hsl(220 100% 55%);
   --cert-foundations: hsl(157 74% 41%);
   --cert-advanced-security: hsl(269 67% 52%);
+  --cert-agentic: hsl(187 85% 43%);
   --cert-admin: hsl(27 90% 47%);
   --cert-copilot: hsl(0 0% 6%);
 }
