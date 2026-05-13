@@ -33,6 +33,7 @@
     "VCS",
     "DVCS",
     "relref",
-    "rerequested"
+    "rerequested",
+    "frontmatter"
   ]
 }
