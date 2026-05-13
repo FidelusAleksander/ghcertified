@@ -5,7 +5,7 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 
 ```yaml
 - name: "Write results of test suite"
-  run:
+  run: |
     echo "The results of the testing suite are:" >> $GITHUB_STEP_SUMMARY
 ```
 - [x] Adds this line to the job summary
