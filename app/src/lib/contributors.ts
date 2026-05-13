@@ -13,7 +13,7 @@ export interface Contributor {
  * Intended to be called at build time (SSG).
  *
  * Uses GITHUB_TOKEN env var when available to avoid rate-limit issues on shared
- * build infrastructure (unauthenticated: 60 req/hr/IP, authenticated: 5 000 req/hr).
+ * build infrastructure (unauthenticated: 60 req/hr/IP, authenticated: 5000 req/hr).
  */
 export async function getContributors(): Promise<Contributor[]> {
   try {
