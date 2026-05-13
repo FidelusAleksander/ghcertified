@@ -6,7 +6,7 @@ Identify reusable patterns, components, and design tokens, then extract and cons
 
 Find the design system, component library, or shared UI directory. Understand its structure: component organization, naming conventions, design token structure, import/export conventions.
 
-**CRITICAL**: If no design system exists, ask the user directly to clarify what you cannot infer. before creating one. Understand the preferred location and structure first.
+**CRITICAL**: If no design system exists, {{ask_instruction}} before creating one. Understand the preferred location and structure first.
 
 ## Step 2: Identify Patterns
 
@@ -67,4 +67,3 @@ Update design system documentation:
 - Create tokens for every single value (tokens should have semantic meaning)
 - Extract things that differ in intent (two buttons that look similar but serve different purposes should stay separate)
 
-Remember: A good design system is a living system. Extract patterns as they emerge, enrich them thoughtfully, and maintain them consistently.

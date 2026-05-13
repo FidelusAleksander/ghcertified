@@ -4,7 +4,7 @@
 
 ### Vertical Rhythm
 
-Your line-height should be the base unit for ALL vertical spacing. If body text has `line-height: 1.5` on `16px` type (= 24px), spacing values should be multiples of 24px. This creates subconscious harmony—text and space share a mathematical foundation.
+Your line-height should be the base unit for ALL vertical spacing. If body text has `line-height: 1.5` on `16px` type (= 24px), spacing values should be multiples of 24px. This creates subconscious harmony; text and space share a mathematical foundation.
 
 ### Modular Scale & Hierarchy
 
@@ -24,30 +24,22 @@ Popular ratios: 1.25 (major third), 1.333 (perfect fourth), 1.5 (perfect fifth).
 
 ### Readability & Measure
 
-Use `ch` units for character-based measure (`max-width: 65ch`). Line-height scales inversely with line length—narrow columns need tighter leading, wide columns need more.
+Use `ch` units for character-based measure (`max-width: 65ch`). Line-height scales inversely with line length: narrow columns need tighter leading, wide columns need more.
 
-**Non-obvious**: Increase line-height for light text on dark backgrounds. The perceived weight is lighter, so text needs more breathing room. Add 0.05-0.1 to your normal line-height.
+**Non-obvious**: Light text on dark backgrounds needs compensation on three axes, not just one. Bump line-height by 0.05–0.1, add a touch of letter-spacing (0.01–0.02em), and optionally step the body weight up one notch (regular → medium). The perceived weight drops across all three; fix all three.
+
+**Paragraph rhythm**: Pick either space between paragraphs OR first-line indentation. Never both. Digital usually wants space; editorial/long-form can justify indent-only.
 
 ## Font Selection & Pairing
 
-### Choosing Distinctive Fonts
+The tactical selection procedure and the reflex-reject list live in [reference/brand.md](brand.md) under **Font selection procedure** and **Reflex-reject list** (loaded for brand-register tasks). The rest of this section covers the adjacent knowledge: anti-reflex corrections, system font use, and pairing rules.
 
-**Avoid the invisible defaults**: Inter, Roboto, Open Sans, Lato, Montserrat. These are everywhere, making your design feel generic. They're fine for documentation or tools where personality isn't the goal—but if you want distinctive design, look elsewhere.
+### Anti-reflexes worth defending against
 
-**Pick the font from the brief, not from a category preset.** The most common AI typography failure is reaching for the same "tasteful" font for every editorial brief, the same "modern" font for every tech brief, the same "elegant serif" for every premium brief. Those reflexes produce monoculture across projects. The right font is one whose physical character matches *this specific* brand, audience, and moment.
-
-A working selection process:
-
-1. Read the brief once. Write down three concrete words for the brand voice. Not "modern" or "elegant" — those are dead categories. Try "warm and mechanical and opinionated" or "calm and clinical and careful" or "fast and dense and unimpressed" or "handmade and a little weird."
-2. Now imagine the font as a physical object the brand could ship: a typewriter ribbon, a hand-lettered shop sign, a 1970s mainframe terminal manual, a fabric label on the inside of a coat, a museum exhibit caption, a tax form, a children's book printed on cheap newsprint. Whichever physical object fits the three words is pointing at the right *kind* of typeface.
-3. Browse a font catalog (Google Fonts, Pangram Pangram, Adobe Fonts, Future Fonts, ABC Dinamo) with that physical object in mind. **Reject the first thing that "looks designy."** That's your trained-everywhere reflex. Keep looking.
-4. Avoid your defaults from previous projects. If you find yourself reaching for the same display font you used last time, make yourself pick something else.
-
-**Anti-reflexes worth defending against**:
 - A technical/utilitarian brief does NOT need a serif "for warmth." Most tech tools should look like tech tools.
 - An editorial/premium brief does NOT need the same expressive serif everyone is using right now. Premium can be Swiss-modern, can be neo-grotesque, can be a literal monospace, can be a quiet humanist sans.
 - A children's product does NOT need a rounded display font. Kids' books use real type.
-- A "modern" brief does NOT need a geometric sans. The most modern thing you can do in 2026 is not use the font everyone else is using.
+- A "modern" brief does NOT need a geometric sans. The most modern thing you can do is not use the font everyone else is using.
 
 **System fonts are underrated**: `-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui` looks native, loads instantly, and is highly readable. Consider this for apps where performance > personality.
 
@@ -91,15 +83,25 @@ body {
 
 Tools like [Fontaine](https://github.com/unjs/fontaine) calculate these overrides automatically.
 
+**`swap` vs `optional`**: `swap` shows fallback text immediately and FOUT-swaps when the web font arrives. `optional` uses the fallback if the web font misses a small load budget (~100ms) and avoids the shift entirely. Pick `optional` when zero layout shift matters more than seeing the branded font on slow networks.
+
+**Preload the critical weight only**: typically the regular-weight body font used above the fold. Preloading every weight costs more bandwidth than it saves.
+
+**Variable fonts for 3+ weights or styles**: a single variable font file is usually smaller than three static weight files, gives fractional weight control, and pairs well with `font-optical-sizing: auto`. For 1–2 weights, static is fine.
+
 ## Modern Web Typography
 
 ### Fluid Type
 
-Fluid typography via `clamp(min, preferred, max)` scales text smoothly with the viewport. The middle value (e.g., `5vw + 1rem`) controls scaling rate—higher vw = faster scaling. Add a rem offset so it doesn't collapse to 0 on small screens.
+Fluid typography via `clamp(min, preferred, max)` scales text smoothly with the viewport. The middle value (e.g., `5vw + 1rem`) controls scaling rate (higher vw = faster scaling). Add a rem offset so it doesn't collapse to 0 on small screens.
 
 **Use fluid type for**: Headings and display text on marketing/content pages where text dominates the layout and needs to breathe across viewport sizes.
 
-**Use fixed `rem` scales for**: App UIs, dashboards, and data-dense interfaces. No major app design system (Material, Polaris, Primer, Carbon) uses fluid type in product UI — fixed scales with optional breakpoint adjustments give the spatial predictability that container-based layouts need. Body text should also be fixed even on marketing pages, since the size difference across viewports is too small to warrant it.
+**Use fixed `rem` scales for**: App UIs, dashboards, and data-dense interfaces. No major app design system (Material, Polaris, Primer, Carbon) uses fluid type in product UI; fixed scales with optional breakpoint adjustments give the spatial predictability that container-based layouts need. Body text should also be fixed even on marketing pages, since the size difference across viewports is too small to warrant it.
+
+**Bound your clamp()**: keep `max-size ≤ ~2.5 × min-size`. Wider ratios break the browser's zoom and reflow behaviour and make large viewports feel like the page is shouting.
+
+**Scale container width and font-size together** so effective character measure stays in the 45–75ch band at every viewport. A heading that widens faster than its container drifts out of the comfortable measure at the top end.
 
 ### OpenType Features
 
@@ -123,6 +125,21 @@ body { font-kerning: normal; }
 ```
 
 Check what features your font supports at [Wakamai Fondue](https://wakamaifondue.com/).
+
+### Rendering polish
+
+```css
+/* Even out heading line lengths (browser picks better break points) */
+h1, h2, h3 { text-wrap: balance; }
+
+/* Reduce orphans and ragged endings in long prose */
+article p { text-wrap: pretty; }
+
+/* Variable fonts: pick the right optical-size master automatically */
+body { font-optical-sizing: auto; }
+```
+
+**ALL-CAPS tracking**: capitals sit too close at default spacing. Add 5–12% letter-spacing (`letter-spacing: 0.05em` to `0.12em`) to short all-caps labels, eyebrows, and small headings. Real small caps (via `font-variant-caps`) need the same treatment, slightly gentler.
 
 ## Typography System Architecture
 
