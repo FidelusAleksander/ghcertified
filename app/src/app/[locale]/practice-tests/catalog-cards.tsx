@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Slider } from "@/components/ui/slider";
+import { Badge } from "@/components/ui/badge";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { CERT_META } from "@/lib/cert-meta";
 
@@ -63,9 +64,16 @@ export function CatalogCards({ certs, locale }: Props) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-3">
-                      <h3 className="font-display text-lg font-bold text-foreground tracking-tight leading-tight">
-                        {cert.name}
-                      </h3>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-display text-lg font-bold text-foreground tracking-tight leading-tight">
+                          {cert.name}
+                        </h3>
+                        {meta.beta && (
+                          <Badge className="text-[10px] px-2 py-0.5 font-bold bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/30">
+                            Beta
+                          </Badge>
+                        )}
+                      </div>
                       <ChevronDown className={`
                         size-4 text-muted-foreground/60 flex-shrink-0 transition-transform duration-200
                         ${isExpanded ? "rotate-180" : "group-hover:text-muted-foreground"}

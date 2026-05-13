@@ -22,6 +22,10 @@ copilot:
 - changed-files:
   - any-glob-to-any-file: "questions/en/copilot/*"
 
+agentic:
+- changed-files:
+  - any-glob-to-any-file: "questions/en/agentic/*"
+
 translations:
 - changed-files:
   - any-glob-to-any-file:

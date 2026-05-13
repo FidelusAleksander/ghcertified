@@ -17,6 +17,7 @@ Pick the certification and name your file `question-XXX.md`, where `XXX` is the 
 | Actions | `questions/en/actions/` |
 | Admin | `questions/en/admin/` |
 | Advanced Security | `questions/en/advanced_security/` |
+| Agentic AI Developer | `questions/en/agentic/` |
 | Copilot | `questions/en/copilot/` |
 | Foundations | `questions/en/foundations/` |
 

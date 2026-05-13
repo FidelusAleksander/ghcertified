@@ -13,6 +13,7 @@ import {
   ShieldLockIcon,
   OrganizationIcon,
   CopilotIcon,
+  AgentIcon,
 } from "@primer/octicons-react";
 import type { CertificationType } from "./questions";
 
@@ -21,6 +22,7 @@ export interface CertMeta {
   borderClass: string;
   textClass: string;
   icon: React.ReactNode;
+  beta?: boolean;
 }
 
 export const CERT_META: Record<CertificationType, CertMeta> = {
@@ -41,6 +43,13 @@ export const CERT_META: Record<CertificationType, CertMeta> = {
     borderClass: "border-cert-advanced-security",
     textClass: "text-cert-advanced-security",
     icon: <ShieldLockIcon size={24} className="text-primary-foreground" />,
+  },
+  agentic: {
+    colorClass: "bg-cert-agentic",
+    borderClass: "border-cert-agentic",
+    textClass: "text-cert-agentic",
+    icon: <AgentIcon size={24} className="text-primary-foreground" />,
+    beta: true,
   },
   admin: {
     colorClass: "bg-cert-admin",

@@ -10,6 +10,7 @@ This guide covers everything you need to write questions for [ghcertified](https
   - `questions/en/actions/`
   - `questions/en/admin/`
   - `questions/en/advanced_security/`
+  - `questions/en/agentic/`
   - `questions/en/copilot/`
   - `questions/en/foundations/`
 
