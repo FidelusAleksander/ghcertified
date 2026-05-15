@@ -49,7 +49,7 @@ jobs:
 
       - name: Build System Prompt
         id: build-system-prompt
-        uses: skills/action-text-variables@4409ce6819131b716e644291b7cf59bfcfe9db82 # v4.0.0
+        uses: skills/action-text-variables@d277ce34621ab00a53db0517d18304a7032453c5 # v4.0.1
         with:
           template-file: .github/translation-system-prompt.md
           template-vars: |

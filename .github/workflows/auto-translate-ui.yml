@@ -32,7 +32,7 @@ jobs:
 
       - name: Build System Prompt
         id: build-system-prompt
-        uses: skills/action-text-variables@4409ce6819131b716e644291b7cf59bfcfe9db82 # v4.0.0
+        uses: skills/action-text-variables@d277ce34621ab00a53db0517d18304a7032453c5 # v4.0.1
         with:
           template-file: .github/ui-translation-system-prompt.md
           template-vars: |
@@ -71,7 +71,7 @@ jobs:
       # do not trigger subsequent workflow runs.
       - name: Generate GitHub App Token
         id: app-token
-        uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
           client-id: ${{ secrets.AUTO_TRANSLATE_APP_CLIENT_ID }}
           private-key: ${{ secrets.AUTO_TRANSLATE_APP_PRIVATE_KEY }}
