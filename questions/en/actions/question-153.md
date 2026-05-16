@@ -1,6 +1,6 @@
 ---
 question: "Which of the following events can trigger a workflow that has not been merged to the default branch?"
-documentation: "https://docs.github.com/en/enterprise-server/admin/managing-github-actions-for-your-enterprise/managing-access-to-actions-from-githubcom/setting-up-the-tool-cache-on-self-hosted-runners-without-internet-access"
+documentation: ""
 ---
 
 - [x] `workflow_dispatch`
