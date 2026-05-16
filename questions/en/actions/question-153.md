@@ -1,6 +1,6 @@
 ---
 question: "Which of the following events can trigger a workflow that has not been merged to the default branch?"
-documentation: ""
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request"
 ---
 
 - [x] `workflow_dispatch`
