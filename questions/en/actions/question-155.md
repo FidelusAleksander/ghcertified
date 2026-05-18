@@ -1,5 +1,5 @@
 ---
-question: "Marianne has a feature branch that contains her new workflow file, which is set to be triggered at 2 AM every day, using the syntax seen below. However, the workflow does not trigger as expected. Why might this be the case?"
+question: "Marianne has a feature branch that contains her new workflow file, which is set to be triggered at 2 AM every day, using the syntax seen below. However, the next day, the workflow does not trigger. Why might this be the case?"
 documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule"
 ---
 
