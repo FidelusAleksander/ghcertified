@@ -3,7 +3,7 @@ question: "In what ways can you delete workflow artifacts?"
 documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/remove-workflow-artifacts"
 ---
 
-- [x] By using the Github Actions UI to navigate to a workflow run and delete the artifacts indvidually
+- [x] By using the Github Actions UI to navigate to a workflow run and delete the artifacts individually
 - [x] By using the Github Actions UI to delete the workflow run that generated the artifacts
 > Deleting a workflow run also deletes the artifacts associated with the run. 
 - [x] By using a specific GitHub API endpoint
