@@ -4,8 +4,9 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 ---
 
 - [x] In pull requests that have not been merged, `github.ref` refers to the fully-formed ref of the pull request merge branch/tag 
-> For more information about refs, see the official [Git documentation](https://git-scm.com/book/en/Git-Internals-Git-References).
+> For example, if the (opened) pull request's number was #123, `github.ref` would be `refs/pull/123/merge`. For more information about refs, see the official [Git documentation](https://git-scm.com/book/en/Git-Internals-Git-References).
 - [x] In pull requests that have been merged, `github.ref` refers to the fully-formed ref of the branch that was merged into.
+> For example, if you were merging something into the `main` branch, `github.ref` would be `ref/heads/main` after the pull request was merged.
 - [ ] In pull requests (regardless of merge status), `github.ref` refers to the pull request number 
 > For the `pull_request` event, the value of `github.ref` varies depending on whether the pull request was merged. This value will always be a ref, not the pull request number.
 - [ ] In pull requests (regardless of merge status), `github.ref` is the SHA of the last merge commit on the `GITHUB_REF` branch.
