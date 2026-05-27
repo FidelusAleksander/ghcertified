@@ -5,5 +5,5 @@ documentation: "https://docs.github.com/en/actions/using-workflows/workflow-synt
 
 - [x] Referenciar o commit SHA
 - [ ] Referenciar uma tag de versão
-- [ ] Referenciar a branch principal
+- [ ] Referenciar a branch main
 
