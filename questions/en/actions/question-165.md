@@ -1,5 +1,5 @@
 ---
-question: "How does `respository_dispatch` enable systems outside of GitHub to trigger a workflow?"
+question: "How does `repository_dispatch` enable systems outside of GitHub to trigger a workflow?"
 documentation: "https://docs.github.com/en/rest/repos/repos?apiVersion=2026-03-10#create-a-repository-dispatch-event"
 ---
 
