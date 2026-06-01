@@ -1,0 +1,11 @@
+---
+question: "Które klucze są wymagane podczas tworzenia pliku `action.yml`?"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/metadata-syntax"
+---
+
+- [x] `name`
+- [x] `description`
+- [x] `runs`
+- [ ] `author`
+- [ ] `inputs`
+- [ ] `outputs`
