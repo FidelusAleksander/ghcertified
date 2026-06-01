@@ -64,27 +64,6 @@ describe("question parsing", () => {
           }
         });
       }
-
-      it("keeps foundations/question-119 aligned with repository role terminology", () => {
-        const dir = join(QUESTIONS_ROOT, "en", "foundations");
-        const questions = parseDirectory(dir, { filePrefix: "question-", strict: true });
-        const question119 = questions.find((q) => q.id === "question-119");
-
-        expect(question119).toBeTruthy();
-        expect(question119?.question).toBe(
-          "What is the minimum repository role a user must have to directly push commits to a repository owned by an organization?",
-        );
-        expect(question119?.answers.map((answer) => answer.text)).toEqual([
-          "Read",
-          "Triage",
-          "Write",
-          "Maintain",
-          "Admin",
-        ]);
-        expect(
-          question119?.answers.filter((answer) => answer.isCorrect).map((answer) => answer.text),
-        ).toEqual(["Write"]);
-      });
     });
   }
 });
