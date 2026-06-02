@@ -13,6 +13,6 @@ jobs:
 - [ ] The workflow will run on a self-hosted runner that has any of the labels applied.
 > Runner labels apply cumulatively; a workflow will not run on a runner that only has some of the labels. All of them are needed.
 - [ ] The workflow will still be able to run on GitHub-hosted runners, since they can have custom labels applied to them
-> GitHub-hosted runners cannot hvae custom labels applied to them. They must be referenced with the [predefined labels](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories) they have been assigned.
+> GitHub-hosted runners cannot have custom labels applied to them. They must be referenced with the [predefined labels](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories) they have been assigned.
 - [ ] The workflow will run on a runner (self-hosted or GitHub-hosted, whichever is first available) with the name `self-hosted,nes,linux`
 > `runs-on` points to runner labels, not names.
