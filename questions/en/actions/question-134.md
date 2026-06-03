@@ -12,4 +12,4 @@ documentation: "https://github.com/marketplace/actions/github-script"
 - [ ] Write the contents of a script block to the `GITHUB_SCRIPT` environmental variable
 > `GITHUB_SCRIPT` is not a default Github Actions environmental variable. A list of default environmental variables can be found in the [documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/variables)
 - [ ] In a JavaScript Action, set the `using` key to `'github-script'`
-> JavaScript Actions must have their `using` key set to `node*` where * is a supported version of Node.js.  Generally, JavaScript Actions do not have a need for `actions/github-script`.
+> JavaScript Actions must have their `using` key set to `node*` where `*` is a supported version of Node.js.  Generally, JavaScript Actions do not have a need for `actions/github-script`.
