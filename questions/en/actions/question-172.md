@@ -1,5 +1,5 @@
 ---
-question: "Ingrid's organization has a subset of self-hosted Linux runners that should only be used by certain repositories. What is the best approach for Ingrid to enforce this behavior?"
+question: "Ingrid's organization has a subset of self-hosted Linux runners that should only be used by certain repositories. What is the best approach for her to enforce this behavior?"
 documentation: ""
 ---
 
