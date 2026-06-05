@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
     groups:
       github-actions:
         patterns:
@@ -11,7 +11,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/app'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
     groups:
       npm-dependencies:
         patterns:
