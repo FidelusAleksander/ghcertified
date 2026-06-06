@@ -3,7 +3,7 @@ question: "Why would you re-run a workflow versus generating a new workflow run?
 documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/re-run-workflows-and-jobs"
 ---
 
-- [x] Re-running a workflow lets you selectively re-run workflow jobs, as opposed to generating a new run which will run all jobs.
+- [x] Re-running a workflow lets you re-run failed workflow jobs, as opposed to generating a new run which will run all jobs.
 - [x] Re-running a workflow means the workflow jobs run in the same context of the commit SHA and git ref of the original event that triggered the job
 - [x] Re-running a workflow allows you to enable extra debug logging for the selected job(s).
 - [ ] Re-running a workflow ensures `GITHUB_TRIGGERING_ACTOR` remains unchanged, so it is unambiguous as to who originally triggered the workflow
