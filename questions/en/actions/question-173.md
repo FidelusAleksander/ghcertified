@@ -7,7 +7,7 @@ documentation: "https://docs.github.com/en/actions/concepts/runners/self-hosted-
 - [ ] One self-hosted runner per repository, set up at the repository level
 > This would be duplicative and complex to manage. Repositories can reference the same organization-level runner, which is the correct approach in this situation.
 - [ ] GitHub-hosted runners, with all workflows utilizing `actions/setup-node`
-> GitHub-hosted runners are [ephermal](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners#overview-of-github-hosted-runners), meaning that a new instance of the runner is set up per workflow run. This would not work well with node-locking software, which only allows the software to run on a specified device/VM. Additionally, while GitHub-hosted runners can be set up to access private networks, this is not out-of-the-box functionality.
+> GitHub-hosted runners are [ephemeral](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners#overview-of-github-hosted-runners), meaning that a new instance of the runner is set up per workflow run. This would not work well with node-locking software, which only allows the software to run on a specified device/VM. Additionally, while GitHub-hosted runners can be set up to access private networks, this is not out-of-the-box functionality.
 - [ ] GitHub-hosted runners set up at the organization-level
 > GitHub-hosted runners cannot be set up in this way.
 - [ ] GitHub-hosted runners, using `runs-on: [node<version>]` (`<version>` being the desired Node version) in all workflows.
