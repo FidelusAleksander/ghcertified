@@ -27,5 +27,5 @@ jobs:
 - [ ] The Python script will run successfully, because the `chmod` command grants execute permissions to the script.
 > This would be true if `actions/checkout` was used.
 - [ ] The Python script will not run, because `runs-on` does not have a value of `python`.
-- [ ] The Python script will not run, because `actions/python-setup` is not the correct action for setting up Python.
+- [ ] The Python script will not run, because `actions/python-setup` is the correct action for setting up Python.
 > Most official actions that set up programming languages use the structure `actions/setup-<language>`. 
