@@ -1,5 +1,5 @@
 ---
-question: "Leonie has a workflow that should be triggered time a commit is made to the repository. The repository is not always that active, so Leonie desires the workflow to programmatically run once a week as a failsafe. What combination of events should she use to enforce this behavior?"
+question: "Judith has a workflow that should be triggered time a commit is made to the repository. The repository is not always that active, so Judith desires the workflow to programmatically run once a week as a failsafe. What combination of events should she use to enforce this behavior?"
 documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
 ---
 
