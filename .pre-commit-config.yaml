@@ -6,3 +6,17 @@ repos:
     hooks:
       - id: check-yaml
       - id: check-toml
+  - repo: local
+    hooks:
+      - id: lint
+        name: lint
+        entry: bash -c "cd app && npm run lint"
+        language: system
+        types: [javascript, typescript, jsx, tsx]
+        pass_filenames: false
+      - id: tsc
+        name: tsc
+        entry: bash -c "cd app && npx tsc --noEmit"
+        language: system
+        types: [typescript, tsx]
+        pass_filenames: false
