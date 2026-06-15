@@ -1,9 +1,10 @@
 ---
-question: "Jak można wymagać ręcznych zatwierdzeń przez maintainerów, jeśli uruchomienie workflow dotyczy środowiska `production`?"
-documentation: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment"
+question: "Jak można wymagać ręcznej akceptacji przez maintainera, jeśli uruchomienie workflow dotyczy środowiska `production`?"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments#deployment-protection-rules"
 ---
 
-- [x] Korzystając z zasad ochrony wdrożenia
+- [x] Używając zasad ochrony wdrożeń (deployment protection rules)
 - [ ] Ustawiając wymaganych recenzentów w workflow `production`
-- [ ] Korzystając z zasad ochrony gałęzi
-- [ ] Ręczne zatwierdzenia nie są obsługiwane przez GitHub Actions
+- [ ] Używając zasad ochrony gałęzi (branch protection rules)
+- [ ] Manualne akceptacje nie są obsługiwane przez GitHub Actions
+
