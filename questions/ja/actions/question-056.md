@@ -1,9 +1,9 @@
 ---
-question: "ワークフロー実行が `production` 環境をターゲットとする場合、メンテナーによる手動承認を必須にするにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment"
+question: "ワークフロー実行が`production`環境を対象としている場合、メンテナーによる手動承認を必要とするにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments#deployment-protection-rules"
 ---
 
-- [x] デプロイ保護ルールを使用する
-- [ ] `production` ワークフローで必要なレビュアーを設定する
+- [x] デプロイメント保護ルールを使用する
+- [ ] `production`ワークフローで必要なレビュアーを設定する
 - [ ] ブランチ保護ルールを使用する
-- [ ] GitHub Actions は手動承認をサポートしていない
+- [ ] GitHub Actions では手動承認はサポートされていない
