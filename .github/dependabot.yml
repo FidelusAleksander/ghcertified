@@ -4,6 +4,8 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    cooldown:
+      default-days: 14
     groups:
       github-actions:
         patterns:
@@ -12,6 +14,8 @@ updates:
     directory: '/app'
     schedule:
       interval: 'monthly'
+    cooldown:
+      default-days: 14
     groups:
       npm-dependencies:
         patterns:
