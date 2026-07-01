@@ -1,9 +1,9 @@
 ---
-question: "Qual afirmação descreve corretamente a funcionalidade de comandos CLI do GitHub Copilot?"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line"
+question: "Qual afirmação descreve corretamente o GitHub Copilot CLI?"
+documentation: "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli"
 ---
 
-- [x] Os usuários podem obter explicações de comandos usando 'gh copilot explain' e sugestões de comandos usando 'gh copilot suggest'
-- [ ] Os comandos são executados automaticamente sem confirmação do usuário ao usar 'gh copilot suggest'
-- [ ] O comando 'gh copilot explain' modifica arquivos do sistema sem mostrar a explicação
-- [ ] Comandos sugeridos são diretamente executados sem serem copiados para a área de transferência primeiro
+- [x] Permite que você use o Copilot a partir do terminal para responder perguntas, escrever e depurar código, e interagir com o GitHub.com
+- [ ] É limitado à geração de aliases de shell para `gh copilot suggest` e `gh copilot explain`
+- [ ] Funciona apenas dentro da interface web do GitHub e não pode acessar arquivos de projetos locais
+- [ ] Executa automaticamente todos os comandos de shell sugeridos sem pedir aprovação
