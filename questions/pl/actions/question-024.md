@@ -3,6 +3,6 @@ question: "Do czego służą `typy aktywności` wydarzenia?"
 documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows"
 ---
 
-- [x] Ograniczanie uruchomień workflow do określonych typów aktywności za pomocą filtra `types`
-- [ ] Sprawdzanie, czy aktywność pochodzi od użytkownika czy bota
-- [ ] Reagowanie na nową aktywność w repository (np. nowy współtwórca)
+- [x] Ograniczania uruchamiania przepływów pracy do określonych typów aktywności za pomocą filtra `types`
+- [ ] Sprawdzania, czy aktywność pochodzi od użytkownika czy bota
+- [ ] Reagowania na nową aktywność w repozytorium (np. nowy współtwórca)
