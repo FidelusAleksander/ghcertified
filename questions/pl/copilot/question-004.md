@@ -1,9 +1,10 @@
 ---
-question: "Jakie polecenie jest używane do instalacji rozszerzenia GitHub Copilot w CLI?"
-documentation: "https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-github-copilot-in-the-cli"
+question: "Które polecenie instaluje GitHub Copilot CLI?"
+documentation: "https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli"
 ---
 
-- [x] gh extension install github/gh-copilot
-- [ ] gh copilot install
-- [ ] gh copilot setup
-- [ ] gh extension add copilot
+- [x] `npm install -g @github/copilot`
+- [ ] `gh install -g github/copilot-cli`
+- [ ] `npm install -g gh-copilot`
+- [ ] `gh extension install github/gh-copilot`
+
