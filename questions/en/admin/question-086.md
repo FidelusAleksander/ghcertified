@@ -1,6 +1,6 @@
 ---
 question: "How do you add a self-hosted runner to a GitHub repository?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners"
 ---
 
 - [x] Navigate to the repository settings, select Actions, then Runners, and follow the instructions to download, configure, and run the self-hosted runner application.

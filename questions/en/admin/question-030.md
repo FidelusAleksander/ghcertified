@@ -1,6 +1,6 @@
 ---
 question: "What is GitHub Enterprise Server primarily designed for?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: "https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server"
 ---
 
 - [x] A self-hosted platform for software development within your enterprise
