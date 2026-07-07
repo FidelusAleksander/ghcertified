@@ -1,6 +1,6 @@
 ---
 question: "Which top-level keys are required in the `dependabot.yml` file?"
-documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file"
 ---
 
 - [x] `version` and `updates`

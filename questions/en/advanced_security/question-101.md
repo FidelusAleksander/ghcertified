@@ -1,6 +1,6 @@
 ---
 question: "Dependabot Alerts are enabled by default on:"
-documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts"
 ---
 
 - [x] Dependabot Alerts are not enabled by default on any repositories.

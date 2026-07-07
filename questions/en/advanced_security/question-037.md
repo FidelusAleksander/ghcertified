@@ -1,6 +1,6 @@
 ---
 question: "What does the default CodeQL analysis setup in GitHub do?"
-documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning-with-codeql#about-code-scanning-with-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql/codeql-code-scanning"
 ---
 
 - [x] Automatically detects languages, selects the default query suite, and configures scan triggers
