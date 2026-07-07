@@ -1,6 +1,6 @@
 ---
-question: "「dependabot.yml」ファイルに必要なトップレベルキーはどれですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file"
+question: "`dependabot.yml`ファイルに必要なトップレベルキーはどれですか？"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#about-the-dependabotyml-file"
 ---
 
 - [x] `version` と `updates`
