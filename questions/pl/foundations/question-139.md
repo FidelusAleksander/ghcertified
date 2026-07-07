@@ -1,9 +1,8 @@
 ---
-question: "W jakiej sytuacji GitHub Issues byłyby bardziej efektywne niż Discussions?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+question: "W jakim scenariuszu GitHub Issues będą bardziej skuteczne niż Discussions?"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
 ---
 
-- [ ] Przy ogłaszaniu i dzieleniu się wiadomościami z zespołem.
-- [x] Przy śledzeniu konkretnych zadań i błędów wymagających rozwiązania.
-- [ ] Przy szukaniu opinii społeczności na temat pomysłów i ulepszeń projektu.
-
+- [ ] Podczas ogłaszania i dzielenia się wiadomościami z zespołem.
+- [x] Podczas śledzenia konkretnych zadań i błędów wymagających rozwiązania.
+- [ ] Podczas poszukiwania opinii społeczności na temat pomysłów i ulepszeń projektu.
