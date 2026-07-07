@@ -1,9 +1,9 @@
 ---
-question: "エンタープライズ管理ユーザーのユーザーアカウントはどのようにプロビジョニングされますか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+question: "Enterprise Managed Usersでユーザーアカウントはどのようにプロビジョニングされますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users"
 ---
 
-- [x] エンタープライズの IdP によってユーザーアカウントがプロビジョニングされ、GitHub Enterprise Cloud へのアクセスが提供されます。
-- [ ] ユーザーアカウントは、各ユーザーが GitHub.com で手動で作成します。
-- [ ] ユーザーアカウントは、エンタープライズの IdP からの入力なしに GitHub によってプロビジョニングされます。
-- [ ] ユーザーアカウントは、公開メールアドレスに基づいて自動的に生成されます。
+- [x] ユーザーアカウントはエンタープライズのIdPによってプロビジョニングされ、GitHub Enterprise Cloudへのアクセスが提供されます。
+- [ ] ユーザーアカウントはGitHub.comで各ユーザーが手動で作成します。
+- [ ] ユーザーアカウントはエンタープライズのIdPからの入力なしでGitHubによってプロビジョニングされます。
+- [ ] ユーザーアカウントは公開メールアドレスに基づいて自動生成されます。
