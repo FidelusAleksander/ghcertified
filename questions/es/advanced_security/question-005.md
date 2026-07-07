@@ -1,6 +1,6 @@
 ---
-question: "¿Cuál de los siguientes es una lista seleccionada de vulnerabilidades de seguridad encontradas en proyectos de código abierto?"
-documentation: "https://docs.github.com/en/code-security/security-advisories/working-with-global-security-advisories-from-the-github-advisory-database/about-the-github-advisory-database"
+question: "¿Cuál de los siguientes es una lista curada de vulnerabilidades de seguridad encontradas en proyectos de código abierto?"
+documentation: "https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database"
 ---
 
 - [x] GitHub Advisory Database
