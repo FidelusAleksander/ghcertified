@@ -1,10 +1,10 @@
 ---
-question: "Jakie są niektóre zasady inżynierii podpowiedzi?"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot"
+question: "Jakie są niektóre zasady Inżynierii Podpowiedzi?"
+documentation: "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering"
 ---
 
-- [x] Skup się na jednym, dobrze zdefiniowanym zadaniu
+- [x] Skup się na jednym, jasno zdefiniowanym zadaniu
 - [x] Upewnij się, że instrukcje są szczegółowe i precyzyjne
-- [x] Dostarcz bogaty kontekst dla AI
+- [x] Zapewnij bogaty kontekst dla AI
 - [ ] Pisz długie, złożone instrukcje
-> Jeśli chcesz, aby Copilot wykonał złożone lub obszerne zadanie, podziel je na wiele prostych, małych zadań.
+> Jeśli chcesz, aby Copilot wykonał złożone lub duże zadanie, podziel je na wiele prostych, małych zadań.
