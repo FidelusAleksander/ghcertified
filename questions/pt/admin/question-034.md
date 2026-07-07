@@ -1,6 +1,6 @@
 ---
 question: "O que o GitHub recomenda para proteger contra perda de dados no GitHub Enterprise Server?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: "https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server"
 ---
 
 - [x] Estabelecer um plano de recuperação de desastres e configurar backups
