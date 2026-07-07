@@ -1,6 +1,6 @@
 ---
 question: "¿Cuáles son algunos de los principios de la ingeniería de indicaciones?"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering"
 ---
 
 - [x] Centrarse en una tarea única y bien definida
