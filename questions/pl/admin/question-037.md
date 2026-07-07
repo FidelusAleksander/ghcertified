@@ -1,9 +1,9 @@
 ---
-question: "Jaki jest domyślny limit wydatków dla GitHub Actions w przypadku kont rozliczanych miesięcznie?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+question: "Jaki jest domyślny limit wydatków dla GitHub Actions na kontach rozliczanych miesięcznie?"
+documentation: "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
 ---
 
-- [x] Domyślny limit wydatków wynosi 0$, co zapobiega dodatkowym użyciom przekraczającym uwzględnione limity.
-- [ ] Domyślny limit wydatków wynosi 50$, co pozwala na pewne przekroczenie poza uwzględnione limity.
-- [ ] Nie ma domyślnego limitu wydatków, a użytkownicy są obciążani za każdy użytek przekraczający darmowy poziom.
-- [ ] Domyślny limit wydatków różni się w zależności od historii użytkowania konta.
+- [x] Domyślny limit wydatków wynosi 0$, co zapobiega dodatkowym wykorzystaniom poza wliczone limity.
+- [ ] Domyślny limit wydatków wynosi 50$, pozwalając na pewne przekroczenie wliczonych limitów.
+- [ ] Nie ma domyślnego limitu wydatków, a użytkownicy są obciążani za każde wykorzystanie poza darmowym limitem.
+- [ ] Domyślny limit wydatków zależy od historycznego wykorzystania konta.
