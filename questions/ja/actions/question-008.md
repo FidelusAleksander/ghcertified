@@ -1,6 +1,6 @@
 ---
-question: "リポジトリの外部からのウェブフックアクションによってトリガーされるイベントはどれですか？"
-documentation: "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows"
+question: "どのイベントがリポジトリ外からのウェブフックアクションによってトリガーされますか？"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
 ---
 
 - [x] repository_dispatch
@@ -8,4 +8,4 @@ documentation: "https://docs.github.com/en/actions/using-workflows/events-that-t
 - [ ] workflow_dispatch
 - [ ] remote_dispatch
 - [ ] api_dispatch
----
+
