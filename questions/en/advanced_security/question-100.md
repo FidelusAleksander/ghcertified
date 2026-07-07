@@ -1,6 +1,6 @@
 ---
 question: "What are Dependabot security updates?"
-documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-security-updates/about-dependabot-security-updates"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates"
 ---
 
 - [x] It's a Dependabot feature that automatically creates pull requests to update vulnerable dependencies in your repository.
