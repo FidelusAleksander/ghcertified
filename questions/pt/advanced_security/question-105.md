@@ -1,6 +1,6 @@
 ---
-question: "Qual destas é um arquivo de configuração `dependabot.yml` válido?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
+question: "Qual dessas é uma configuração válida de arquivo `dependabot.yml`?"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
 ---
 
 - [x] 
