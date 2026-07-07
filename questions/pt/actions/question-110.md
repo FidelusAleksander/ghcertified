@@ -1,6 +1,6 @@
 ---
-question: "Dave está criando um fluxo de trabalho modelado para sua organização. Onde Dave deve armazenar os arquivos do fluxo de trabalho e os arquivos de metadados associados para o fluxo de trabalho modelado?"
-documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
+question: "Dave está criando um fluxo de trabalho modelado para sua organização. Onde Dave deve armazenar os arquivos de fluxo de trabalho e os arquivos de metadados associados ao fluxo de trabalho modelado?"
+documentation: "https://docs.github.com/en/actions/how-tos/reuse-automations/create-workflow-templates"
 ---
 
 - [x] dentro de um diretório chamado `workflow-templates` dentro de um repositório chamado `.github`
