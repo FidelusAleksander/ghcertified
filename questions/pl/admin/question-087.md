@@ -1,9 +1,9 @@
 ---
 question: "Co jest wymagane, aby dodać samodzielnie hostowanego runnera do organizacji na GitHub?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners"
 ---
 
-- [x] Dostęp właściciela organizacji, przejście do ustawień organizacji, wybór Actions, następnie Runners, i wykonanie instrukcji konfiguracji samodzielnie hostowanego runnera.
-- [ ] Dostęp dla zwykłego członka bez specjalnych uprawnień oraz użycie GitHub Action w celu automatycznej rejestracji samodzielnie hostowanego runnera.
-- [ ] Dostęp do publicznego repository w organizacji oraz ręczne wykonanie skryptu na serwerze przewidzianym jako runner.
-- [ ] Wysłanie formularza na stronie GitHub w celu zgłoszenia prośby do zespołu GitHub o ręczne dodanie samodzielnie hostowanego runnera do organizacji.
+- [x] Dostęp właściciela organizacji, przejście do ustawień organizacji, wybranie Actions, następnie Runners, i postępowanie zgodnie z instrukcjami konfiguracji dla samodzielnie hostowanego runnera.
+- [ ] Dostęp członka ogólnego bez specjalnych uprawnień i wykorzystanie GitHub Action do automatycznej rejestracji samodzielnie hostowanego runnera.
+- [ ] Dostęp do publicznego repozytorium w organizacji i ręczne uruchomienie skryptu na serwerze przeznaczonym na runnera.
+- [ ] Wysłanie formularza na stronie internetowej GitHub w celu poproszenia zespołu GitHub o ręczne dodanie samodzielnie hostowanego runnera do Twojej organizacji.
