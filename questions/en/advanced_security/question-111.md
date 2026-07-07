@@ -1,6 +1,6 @@
 ---
 question: "You need GitHub Actions enabled for"
-documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-version-updates"
 ---
 
 - [x] Dependency Review
