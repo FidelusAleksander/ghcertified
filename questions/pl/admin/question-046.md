@@ -1,9 +1,9 @@
 ---
-question: "Jak organizacja może zwiększyć bezpieczeństwo swoich GitHub Actions workflows?"
-documentation: "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions"
+question: "W jaki sposób organizacja może zwiększyć bezpieczeństwo swoich GitHub Actions workflows?"
+documentation: "https://docs.github.com/en/actions/reference/security/secure-use"
 ---
 
-- [x] Poprzez wprowadzenie praktyk bezpieczeństwa, takich jak bezpieczne zarządzanie sekretami i regularne przeglądanie logów auditowych pod kątem anomalii.
-- [ ] Poprzez wymaganie od wszystkich członków używania uwierzytelniania biometrycznego do uzyskiwania dostępu do GitHub.
-- [ ] Poprzez uczynienie wszystkich repozytoriów w organizacji publicznymi, aby zapewnić przejrzystość.
-- [ ] Poprzez wyłączenie tworzenia i przetwarzania issues oraz pull requests w celu zmniejszenia powierzchni ataku.
+- [x] Stosując praktyki bezpieczeństwa, takie jak bezpieczne zarządzanie sekretami i regularne przeglądanie dzienników audytu pod kątem anomalii.
+- [ ] Wymagając od wszystkich członków korzystania z uwierzytelniania biometrycznego przy dostępie do GitHub.
+- [ ] Udostępniając wszystkie repositories w organizacji, aby zapewnić przejrzystość.
+- [ ] Wyłączając tworzenie i przetwarzanie issues oraz pull requests w celu zmniejszenia powierzchni ataku.
