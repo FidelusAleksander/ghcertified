@@ -1,6 +1,6 @@
 ---
 question: "How can you skip the following workflow run when you commit or create a PR?"
-documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs"
 ---
 
 ```yaml

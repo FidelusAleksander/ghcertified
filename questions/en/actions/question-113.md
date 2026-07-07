@@ -1,6 +1,6 @@
 ---
 question: "What is true about the following workflow configuration if triggered against the `octo/my-dev-repo` repository?"
-documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions"
 ---
 
 ```yaml
