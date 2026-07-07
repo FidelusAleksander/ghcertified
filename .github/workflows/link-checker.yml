@@ -61,20 +61,26 @@ jobs:
           Otherwise leave it unchanged and list it as unresolved.
 
           Don't change anything else in the files.
-          When done, write the summary to ${{ env.COPILOT_SUMMARY_PATH }} as a single
-          Markdown table with columns: File | Old URL | New URL / Reason | Status.
-          - File: path relative to repo root
-          - Old URL: the link as reported by lychee
-          - New URL / Reason: the replacement URL if Fixed, or a short reason if Unresolved
-          - Status: 'Fixed' or 'Unresolved'
-          One row per link. No extra commentary before or after the table." \
+          When done, write the summary to ${{ env.COPILOT_SUMMARY_PATH }} in this format:
+
+          A top-level heading '## 🔗 Link Checker Summary — ${{ matrix.exam }}', then a small
+          stats table with columns Type | Fixed | Unresolved and one row per link type
+          (e.g. '🔀 Redirect', '🚫 Broken') plus a bold Total row. Do NOT list individual
+          fixed links or their URLs anywhere.
+
+          Then, only if there are unresolved links, a '### ⚠️ Unresolved links' heading
+          followed by a table with columns Question | Broken URL, one row per unresolved
+          link (Question = filename only, e.g. question-050.md).
+
+          No other commentary before, between, or after these sections." \
             --allow-tool=shell --allow-tool=write --allow-tool=context7 --allow-all-urls --no-ask-user --max-ai-credits=${{ env.COPILOT_MAX_AI_CREDITS }}
 
       - name: Open PR with fixes
         if: github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
         with:
-          add-paths: questions/en/${{ matrix.exam }}/**
+          add-paths: |
+            questions/en/${{ matrix.exam }}/question-*.md
           branch: fix/link-checker-${{ matrix.exam }}
           title: "fix: broken/redirected links in ${{ matrix.exam }}"
           body-path: ${{ env.COPILOT_SUMMARY_PATH }}
