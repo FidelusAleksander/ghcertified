@@ -1,6 +1,6 @@
 ---
 question: "Quais são as diferentes fases possíveis do ciclo de vida de um GitHub Codespace?"
-documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle"
 ---
 
 - [x] Criar, Reconstruir, Parar, Excluir
