@@ -1,6 +1,6 @@
 ---
 question: "How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository"
 ---
 
 - [x] Go to repository settings and invite him as a collaborator

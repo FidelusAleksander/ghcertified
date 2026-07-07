@@ -1,7 +1,7 @@
 ---
 question: "Which of these statements about GitHub Pages is correct?"  
 draft: false  
-documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
 ---
 
 - [ ] GitHub Pages allows you to host a private website for free, accessible only by organization members.  

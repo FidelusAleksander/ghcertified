@@ -1,7 +1,7 @@
 ---
 question: "Which of these statements about pinned items on your GitHub profile is true?"  
 draft: false  
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [ ] You can pin up to 10 repositories on your profile.  

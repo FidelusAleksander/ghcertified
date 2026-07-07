@@ -1,6 +1,6 @@
 ---
 question: "What is the difference between GitHub projects and GitHub projects classic?"
-documentation: "https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects"
 ---
 
 - [x] GitHub Projects is a the new GitHub experience which offers a lot of new features and improvements over the older GitHub Projects classic. 

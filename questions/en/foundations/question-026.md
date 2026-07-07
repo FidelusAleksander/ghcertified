@@ -1,6 +1,6 @@
 ---
 question: "What is a GitHub Codespace?"
-documentation: "https://docs.github.com/en/codespaces/overview"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces"
 ---
 
 - [x] It's a preconfigured development environment specifically setup for a repository. It allows you immediately start writing code for a project without having to setup a local development environment.

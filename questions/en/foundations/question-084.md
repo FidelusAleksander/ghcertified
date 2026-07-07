@@ -1,6 +1,6 @@
 ---
 question: "What are GitHub's slash commands?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/about-slash-commands"
 ---
 
 - [x] It's a way to quickly insert complex Markdown into your pull request or issue comments and descriptions.
