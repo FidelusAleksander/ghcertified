@@ -1,14 +1,13 @@
 ---
-question: "Która z poniższych opcji najlepiej opisuje GitHub secret scanning?"  
+question: "Które z poniższych najlepiej opisuje GitHub secret scanning?"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
-- [ ] Funkcja, która skanuje zgłoszenia pod kątem nieweryfikowanych danych uwierzytelniających i automatycznie je usuwa.  
+- [ ] Funkcja, która skanuje issues w poszukiwaniu niezweryfikowanych poświadczeń i automatycznie je usuwa.  
 > Secret scanning nie usuwa niczego automatycznie; wykrywa potencjalnie ujawnione sekrety.  
-- [ ] Funkcja, która szyfruje sekrety repozytorium przed ich wysłaniem do GitHub.  
-> GitHub Actions Encrypted Secrets zajmują się szyfrowaniem, ale to różni się od secret scanning.  
-- [ ] Funkcja, która uruchamia na Twoim kodzie menedżery haseł innych firm w celu bezpiecznego przechowywania sekretów.  
-- [x] Funkcja, która przeszukuje repozytoria w poszukiwaniu znanych formatów sekretów, aby zapobiec przypadkowemu ujawnieniu wrażliwych danych.  
-> **Poprawne**. Secret scanning wykrywa tokeny, klucze i inne dane uwierzytelniające, aby pomóc w uniknięciu wycieków.  
-
+- [ ] Funkcja, która szyfruje sekrety repozytorium przed przesłaniem ich na GitHub.  
+> GitHub Actions Encrypted Secrets zajmuje się szyfrowaniem, ale to różni się od secret scanning.  
+- [ ] Funkcja, która uruchamia menedżery haseł firm trzecich na Twoim kodzie, aby bezpiecznie przechowywać sekrety.  
+- [x] Funkcja, która przeszukuje repozytoria pod kątem znanych formatów sekretów, aby zapobiec przypadkowemu ujawnieniu wrażliwych danych.  
+> **Poprawna odpowiedź**. Secret scanning wykrywa tokeny, klucze i inne poświadczenia, aby pomóc uniknąć wycieków.  
