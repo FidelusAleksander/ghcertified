@@ -1,9 +1,9 @@
 ---
-question: "Organizacja niedawno zaczęła korzystać z analizy CodeQL dla wszystkich pull requestów w ich repositories, a także uruchamia analizę według godzinowego harmonogramu. Od tego czasu doświadcza wyższych niż zwykle rachunków za GitHub Actions. Jaka jest najbardziej prawdopodobna przyczyna tego?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-billing-for-code-scanning"
+question: "Organizacja niedawno zaczęła używać analizy CodeQL dla wszystkich pull requestów w ich repozytoriach, a także uruchamiać analizę co godzinę. Od tego momentu ponoszą wyższe niż zwykle koszty za GitHub Actions. Co jest najbardziej prawdopodobną przyczyną tego?"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-billing-for-code-scanning"
 ---
 
-- [x] Code scanning używa GitHub Actions, a organizacja jest obciążana kosztami za dodatkowe wykorzystanie.
-- [ ] Analiza code scanning wykrywa więcej problemów niż się spodziewano i zajmuje więcej czasu na zakończenie.
-- [ ] Code scanning może być uruchamiany tylko w harmonogramie dziennym, a organizacja jest obciążana kosztami za dodatkowe wykorzystanie.
-- [ ] Nie ma korelacji między code scanning a rachunkami za GitHub Actions. Organizacja jest obciążana kosztami za inne GitHub Actions workflows.
+- [x] Skanowanie kodu wykorzystuje GitHub Actions i organizacja ponosi koszty za dodatkowe wykorzystanie.
+- [ ] Analiza skanowania kodu wykrywa więcej problemów niż oczekiwano i zajmuje więcej czasu na zakończenie.
+- [ ] Skanowanie kodu może być uruchamiane tylko w harmonogramie dziennym i organizacja ponosi koszty za dodatkowe wykorzystanie.
+- [ ] Nie ma związku między skanowaniem kodu a rozliczeniem GitHub Actions. Organizacja ponosi koszty za inne przepływy pracy w GitHub Actions.
