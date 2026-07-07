@@ -1,6 +1,6 @@
 ---
-question: "コミットまたはプルリクエストを作成する際に、次のワークフローの実行をスキップするにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
+question: "コミットまたはプルリクエストを作成した際に、次のワークフローの実行をスキップするにはどうすればよいですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs"
 ---
 
 ```yaml
@@ -14,7 +14,7 @@ jobs:
 ...
 ```
 
-- [x] コミットメッセージまたはプルリクエストのタイトルに以下のいずれかのキーワードを含めることでスキップ可能
+- [x] コミットメッセージまたはプルリクエストのタイトルに次のいずれかのキーワードを含める
 ```yaml
 [skip ci]
 [ci skip]
@@ -23,5 +23,5 @@ jobs:
 [actions skip]
 ```
 
-- [ ] コミットメッセージに `SKIP_WORKFLOW` を含める
-- [ ] 上記のワークフローは、すべての push や pull request イベントで必ず実行される
+- [ ] コミットメッセージに `SKIP_WORKFLOW` を記載する  
+- [ ] 上記のワークフローは、どのプッシュまたはプルリクエストのイベントでも常に実行される  
