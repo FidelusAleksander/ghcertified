@@ -1,6 +1,6 @@
 ---
-question: "ステップのデバッグロギングを有効にするために `true` に設定する変数はどれですか？"
-documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging"
+question: "ステップのデバッグログを有効にするために、どの変数を`true`に設定しますか？"
+documentation: "https://docs.github.com/en/actions/how-tos/monitor-workflows/enable-debug-logging"
 ---
 
 - [x] `ACTIONS_STEP_DEBUG`
