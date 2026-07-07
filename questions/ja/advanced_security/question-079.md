@@ -1,10 +1,10 @@
 ---
-question: "GitHub Actions ワークフロー内で実行する CodeQL クエリを指定できる場所はどこですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries"
+question: "GitHub Actions ワークフローで実行する CodeQL クエリをどこで指定できますか？"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#running-additional-queries"
 ---
 
 - [x] `github/codeql-action/init` アクションの `queries` 入力パラメータ内
-- [x] CodeQL 設定 YAML ファイル内
+- [x] CodeQL 構成 YAML ファイル内
 - [ ] `github/codeql-action/queries` アクションの `paths` 入力パラメータ内
-- [ ] リポジトリのセキュリティタブの Code Scanning セクション内
+- [ ] リポジトリのセキュリティ タブ内の Code Scanning セクション
 - [ ] `.github/settings.yml` ファイルの `codeql` フィールド内
