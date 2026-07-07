@@ -1,9 +1,9 @@
 ---
-question: "「`permissions`」を使用して `GITHUB_TOKEN` の権限を変更できる場所は？"
-documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token"
+question: "`permissions` を使用して、`GITHUB_TOKEN` の権限を変更できるのは次のレベルです："
+documentation: "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token"
 ---
 
-- [x] ワークフローのレベル
-- [x] ジョブのレベル
-- [ ] ステップのレベル
-
+- [x] ワークフローレベル
+- [x] ジョブレベル
+- [ ] ステップレベル
+---

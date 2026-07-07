@@ -1,6 +1,6 @@
 ---
-question: "Co jest prawdą o poniższej konfiguracji workflow, jeśli zostanie uruchomiona dla repozytorium `octo/my-dev-repo`?"
-documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
+question: "Co jest prawdą o poniższej konfiguracji workflow jeśli zostanie uruchomiony w repozytorium `octo/my-dev-repo`?"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions"
 ---
 
 ```yaml

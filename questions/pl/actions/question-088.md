@@ -1,10 +1,10 @@
 ---
-question: "Co robi słowo kluczowe `matrix` w przepływie pracy GitHub Actions?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/using-jobs/using-a-matrix-for-your-jobs"
+question: "Co robi słowo kluczowe `matrix` w workflow GitHub Actions?"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations"
 ---
 
-- [x] Pozwala definiować wiele konfiguracji zadań do uruchomienia równolegle
+- [x] Pozwala definiować wiele konfiguracji zadań do uruchamiania równolegle
 - [ ] Ustawia zmienne środowiskowe dla zadania
-- [ ] Wyzwala przepływy pracy na podstawie harmonogramu
-- [ ] Definiuje tajne dane dla przepływu pracy
+- [ ] Wyzwala workflow według harmonogramu
+- [ ] Definiuje sekrety dla workflow
 

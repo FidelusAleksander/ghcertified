@@ -1,10 +1,10 @@
 ---
 question: "環境変数はどのレベルで定義できますか？"
-documentation: "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables"
 ---
 
-- [x] Workflowレベル
-- [x] Jobレベル
-- [x] Stepレベル
-- [ ] Actionレベル
+- [x] ワークフローレベル
+- [x] ジョブレベル
+- [x] ステップレベル
+- [ ] アクションレベル
 

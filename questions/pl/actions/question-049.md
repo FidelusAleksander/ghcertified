@@ -1,12 +1,12 @@
 ---
-question: "Które z poniższych stwierdzeń dotyczą `Starter Workflows` są prawdziwe?"
-documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
+question: "Co jest prawdą o `Starter Workflows`?"
+documentation: "https://docs.github.com/en/actions/how-tos/reuse-automations/create-workflow-templates"
 ---
 
-- [x] Umożliwiają użytkownikom korzystanie z gotowych (lub wymagających minimalnych zmian) szablonów workflow
+- [x] Umożliwiają użytkownikom korzystanie z gotowych (lub wymagających minimalnych zmian) szablonów przepływów pracy
 - [x] GitHub dostarcza i utrzymuje starter workflows dla różnych kategorii, języków i narzędzi
-- [x] Twoja organizacja może tworzyć niestandardowe starter workflows dla użytkowników w twojej organizacji
-- [ ] Starter workflows nie mogą wywoływać wielokrotnego użycia workflows
-- [ ] Starter workflows są funkcją płatną GitHub
-- [ ] Starter workflows są dostarczane jako gotowe do użycia i nie można ich modyfikować ani rozwijać
+- [x] Twoja organizacja może tworzyć niestandardowe starter workflows dla użytkowników w Twojej organizacji
+- [ ] Starter workflows nie mogą wywoływać reusable workflows
+- [ ] Starter workflows są płatną funkcją GitHub
+- [ ] Starter workflows są dostępne w wersjach gotowych do użycia i nie można ich modyfikować ani ulepszać
 > https://docs.github.com/en/actions/using-workflows/using-starter-workflows#using-starter-workflows

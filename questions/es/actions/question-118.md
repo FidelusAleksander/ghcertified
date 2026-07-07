@@ -1,6 +1,6 @@
 ---
-question: "¿Cómo puedes omitir la siguiente ejecución del flujo de trabajo cuando realizas un commit o creas un PR?"
-documentation: "https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs"
+question: "¿Cómo puedes omitir la ejecución del siguiente flujo de trabajo cuando realizas un commit o creas un PR?"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs"
 ---
 
 ```yaml

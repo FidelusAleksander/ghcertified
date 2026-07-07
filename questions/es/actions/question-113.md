@@ -1,6 +1,6 @@
 ---
-question: "¿Qué es cierto sobre la siguiente configuración de workflow si se activa contra el repositorio `octo/my-dev-repo`?"
-documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
+question: "¿Qué es verdadero acerca de la siguiente configuración de flujo de trabajo si se activa en el repositorio `octo/my-dev-repo`?"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions"
 ---
 
 ```yaml
@@ -18,6 +18,6 @@ jobs:
             - run: npm install -g bats
 ```
 - [x] el trabajo `production-deploy` será marcado como omitido
-- [ ] el trabajo `production-deploy` generará un error
+- [ ] el trabajo `production-deploy` tendrá un error
 - [ ] el trabajo `production-deploy` ejecutará tres pasos
-- [ ] el trabajo `production-deploy` se ejecutará si la `node-version` es `14`
+- [ ] el trabajo `production-deploy` se ejecutará si el `node-version` es `14`

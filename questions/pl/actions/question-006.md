@@ -1,14 +1,14 @@
 ---
-question: "Co jest prawdą o workflowach?"
-documentation: "https://docs.github.com/en/actions/using-workflows/about-workflows"
+question: "Które stwierdzenie dotyczące workflows jest prawdziwe?"
+documentation: "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows"
 ---
 
-- [x] Workflowy mogą wykonywać jedno lub wiele zadań jednocześnie
-- [x] Workflowy mogą być uruchamiane ręcznie, przez zdarzenie lub według harmonogramu
-- [x] Workflowy muszą być zdefiniowane w katalogu `.github/workflows`
-- [ ] Workflowy mogą być uruchamiane tylko według harmonogramu
-- [ ] Workflow może wykonywać tylko jedno zadanie jednocześnie
-- [ ] Workflowy są pisane w jednym z formatów `.yaml`, `.json` lub `.toml`
-> Workflowy mogą być definiowane tylko w formacie `.yaml`
-- [ ] Workflowy mogą być udostępniane w GitHub Marketplace
-> Actions (a nie workflowy) mogą być udostępniane w GitHub Marketplace
+- [x] Workflows mogą wykonywać jedno lub wiele zadań jednocześnie
+- [x] Workflows mogą być uruchamiane ręcznie, przez zdarzenie lub według harmonogramu
+- [x] Workflows muszą być zdefiniowane w katalogu `.github/workflows`
+- [ ] Workflows mogą być uruchamiane wyłącznie według harmonogramu
+- [ ] Workflow może wykonywać tylko jedno zadanie naraz
+- [ ] Workflows mogą być zapisane w formatach `.yaml`, `.json` lub `.toml`
+> Workflows mogą być zdefiniowane wyłącznie w formacie `.yaml`
+- [ ] Workflows mogą być udostępniane w GitHub Marketplace
+> Actions (nie workflows) mogą być udostępniane w GitHub Marketplace

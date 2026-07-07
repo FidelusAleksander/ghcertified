@@ -1,6 +1,6 @@
 ---
-question: "Jakie różne poziomy uprawnień możesz przypisać do `GITHUB_TOKEN` w bloku `permissions`?"
-documentation: "https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs"
+question: "Jakie są różne poziomy uprawnień, które możesz przypisać do `GITHUB_TOKEN` w bloku `permissions`?"
+documentation: "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token"
 ---
 
 - [x] none, write, read

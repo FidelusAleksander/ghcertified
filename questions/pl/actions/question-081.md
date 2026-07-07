@@ -1,9 +1,10 @@
 ---
-question: "Jak można ponownie wykorzystać zdefiniowany workflow w wielu repozytoriach?"
-documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
+question: "W jaki sposób można ponownie wykorzystać zdefiniowany workflow w wielu repozytoriach?"
+documentation: "https://docs.github.com/en/actions/how-tos/reuse-automations/create-workflow-templates"
 ---
 
-- [ ] Poprzez skopiowanie pliku workflow do każdego repozytorium
-- [x] Poprzez użycie szablonów workflow
-- [ ] Poprzez stworzenie akcji wielokrotnego użytku
-- [x] Poprzez zdefiniowanie workflow w centralnym repozytorium
+- [ ] Kopiując plik workflow do każdego repozytorium
+- [x] Używając szablonów workflow
+- [ ] Tworząc wielokrotnie używaną akcję
+- [x] Definiując workflow w centralnym repozytorium
+

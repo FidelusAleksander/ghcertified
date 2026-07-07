@@ -1,10 +1,10 @@
 ---
-question: "Gdzie powinieneś przechowywać wrażliwe dane, takie jak hasła lub certyfikaty, które będą używane w workflowach"
-documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions"
+question: "Gdzie powinieneś przechowywać wrażliwe dane, takie jak hasła lub certyfikaty, które będą używane w workflowach?"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
 ---
 
 - [x] secrets
-- [ ] config variables
+- [ ] zmienne konfiguracyjne
 - [ ] vault
-- [ ] environment variables
----
+- [ ] zmienne środowiskowe
+
