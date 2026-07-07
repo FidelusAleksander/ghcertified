@@ -1,9 +1,9 @@
 ---
-question: "GitHub Enterpriseポリシーを最もよく定義するのはどれですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+question: "GitHub Enterprise Policies を最もよく定義しているのは次のうちどれですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
 ---
 
-- [x] GitHub組織内でリポジトリ管理、チームアクセス、セキュリティ機能などの側面を制御するためにエンタープライズオーナーによって管理される設定。
-- [ ] エンタープライズアカウントのすべての組織における請求およびサブスクリプションの詳細を規定するエンタープライズレベルで設定されたポリシー。
-- [ ] GitHubが提案するガイドラインであり、すべての組織間のコラボレーションと生産性を向上させるが、強制力はない。
-- [ ] 組織内のすべての新しいリポジトリに適用されるデフォルト設定であり、組織オーナーによって上書き可能。
+- [x] GitHub の組織内で、リポジトリ管理、チームアクセス、セキュリティ機能などの側面を制御するためにエンタープライズオーナーによって管理される設定。
+- [ ] エンタープライズ アカウント下のすべての組織に対する請求とサブスクリプションの詳細を規定するエンタープライズ レベルで設定されたポリシー。
+- [ ] すべての組織でのコラボレーションと生産性を向上させるために GitHub が提案するが、強制力のないガイドライン。
+- [ ] 組織内のすべての新しいリポジトリに適用されるデフォルト設定で、組織オーナーによって上書き可能。
