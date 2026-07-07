@@ -3,15 +3,21 @@ name: Links
 on:
   workflow_dispatch: 
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 1 * *"
       timezone: "Europe/Warsaw"
   pull_request:
     paths:
       - .github/workflows/link-checker.yml
 
 permissions:
-  contents: read
-  issues: write
+  contents: write
+  pull-requests: write
+  copilot-requests: write
+
+env:
+  LYCHEE_REPORT_PATH: lychee/out.md
+  COPILOT_SUMMARY_PATH: summary.md
+  COPILOT_MAX_AI_CREDITS: 100
 
 jobs:
   check-links:
@@ -27,14 +33,50 @@ jobs:
         uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
         with:
           fail: false
+          output: ${{ env.LYCHEE_REPORT_PATH }}
           args: --verbose --no-progress './**/*.md' --exclude-all-private --exclude 'file:///*'
           workingDirectory: questions/en/${{ matrix.exam }}
-          
 
-      - name: Create Issue From File
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
-        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+      - name: Install Copilot CLI
+        if: github.event_name != 'pull_request'
+        run: npm install -g @github/copilot
+
+      - name: Fix links with Copilot
+        if: github.event_name != 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          copilot -p "Read the lychee link-checker report at questions/en/${{ matrix.exam }}/${{ env.LYCHEE_REPORT_PATH }}.
+          Only edit files under questions/en/${{ matrix.exam }}/ (never other exam or language dirs).
+
+          For each REDIRECTED link, replace it with the final resolved URL already shown
+          in the report.
+
+          For each BROKEN (4xx/5xx) link, try to find the correct replacement before giving up:
+          - Use the context7 MCP tools to look up the relevant library/product docs and find
+            the page that replaced it.
+          - Or fetch the linked domain's search/nearby pages to locate the moved content.
+          - Verify the replacement URL actually resolves (200 OK) before using it.
+          Only replace the link if you're confident the replacement covers the same content.
+          Otherwise leave it unchanged and list it as unresolved.
+
+          Don't change anything else in the files.
+          When done, write the summary to ${{ env.COPILOT_SUMMARY_PATH }} as a single
+          Markdown table with columns: File | Old URL | New URL / Reason | Status.
+          - File: path relative to repo root
+          - Old URL: the link as reported by lychee
+          - New URL / Reason: the replacement URL if Fixed, or a short reason if Unresolved
+          - Status: 'Fixed' or 'Unresolved'
+          One row per link. No extra commentary before or after the table." \
+            --allow-tool=shell --allow-tool=write --allow-tool=context7 --allow-all-urls --no-ask-user --max-ai-credits=${{ env.COPILOT_MAX_AI_CREDITS }}
+
+      - name: Open PR with fixes
+        if: github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
         with:
-          title: "Link Checker Report: ${{ matrix.exam }}"
-          content-filepath: questions/en/${{ matrix.exam }}/lychee/out.md
-          labels: good first issue, bug
+          add-paths: questions/en/${{ matrix.exam }}/**
+          branch: fix/link-checker-${{ matrix.exam }}
+          title: "fix: broken/redirected links in ${{ matrix.exam }}"
+          body-path: ${{ env.COPILOT_SUMMARY_PATH }}
+          labels: link-checker
+          

@@ -1,6 +1,6 @@
 ---
 question: "Is GitHub dependency graph available for free to all repositories?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#dependency-graph-availability"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#dependency-graph-availability"
 ---
 
 - [x] Yes, it's available for free for all repositories.

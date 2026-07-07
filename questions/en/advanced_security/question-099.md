@@ -1,6 +1,6 @@
 ---
 question: "Which of these statements best defines a vulnerable dependency?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-alerts/about-dependabot-alerts"
 ---
 
 - [x] A vulnerable dependency is dependency that a project relies on, which contains security flaws that could potentially be exploited, compromising the project's security.

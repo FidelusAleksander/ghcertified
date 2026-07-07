@@ -1,6 +1,6 @@
 ---
 question: "Which of these statements regarding viewing the results of a CodeQL analysis are true?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository"
+documentation: "https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts"
 ---
 
 - [x] You need write permission to view a summary of all the alerts for a repository in the Security tab.

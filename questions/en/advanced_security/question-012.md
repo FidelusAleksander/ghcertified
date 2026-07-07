@@ -1,6 +1,6 @@
 ---
 question: "Which of these is true about the GitHub secret scanning partner program?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: "https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program"
 ---
 
 - [x] It is a program where service providers can provide GitHub with the regex patterns of secrets that they issue so GitHub secret scanning can recognize them.

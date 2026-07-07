@@ -1,6 +1,6 @@
 ---
 question: "Which of these statements isn't true about secret scanning on GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] Secret scanning is a tool for secure secret storage and management.

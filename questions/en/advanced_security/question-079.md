@@ -1,6 +1,6 @@
 ---
 question: "Where can you specify the CodeQL queries to run in a GitHub Actions workflow?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#running-additional-queries"
 ---
 
 - [x] In the `queries` input parameter of the `github/codeql-action/init` action

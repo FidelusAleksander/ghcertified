@@ -1,6 +1,6 @@
 ---
 question: "An organization has recently started using CodeQL analysis for all pull requests on their repositories as well as running the analysis on an hourly schedule. Since then they are experiencing larger than usual GitHub Actions bills. What is the most likely cause of this?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-billing-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-billing-for-code-scanning"
 ---
 
 - [x] Code scanning uses GitHub Actions and the organization is being billed for the additional usage.

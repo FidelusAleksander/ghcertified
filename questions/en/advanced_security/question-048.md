@@ -1,6 +1,6 @@
 ---
 question: "How can users exclude specific directories from secret scanning alerts on GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/exclude-folders-and-files"
 ---
 
 - [x] By configuring a `secret_scanning.yml` file, under the `.github` path in the repository.

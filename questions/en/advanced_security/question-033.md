@@ -1,6 +1,6 @@
 ---
 question: "What is CodeQL?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning-with-codeql#about-code-scanning-with-codeql"
 ---
 
 - [x] A code analysis engine developed by GitHub
