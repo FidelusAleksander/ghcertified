@@ -1,15 +1,15 @@
 ---
-question: "Dlaczego warto używać OIDC przy łączeniu workflow z dostawcami usług w chmurze?"
-documentation: "https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect"
+question: "Dlaczego powinieneś używać OIDC podczas łączenia workflow z dostawcami chmury?"
+documentation: "https://docs.github.com/en/actions/concepts/security/openid-connect"
 ---
 
-- [x] OIDC eliminuje konieczność przechowywania danych uwierzytelniających do chmury jako długoterminowych sekretów GitHub 
-- [x] OIDC polega na generowaniu i używaniu krótkoterminowych tokenów, co jest bardziej bezpieczne
-- [ ] Dostawcy usług w chmurze wymagają użycia OIDC.
+- [x] OIDC pozwala uniknąć przechowywania długoterminowych poświadczeń do chmury jako GitHub secrets
+- [x] OIDC wiąże się z generowaniem i wykorzystaniem tokenów krótkoterminowych, co jest bezpieczniejsze
+- [ ] Dostawcy chmury wymagają użycia OIDC.
 > OIDC jest opcjonalny i zalecany, ale nie jest bezwzględnie wymagany.
-- [ ] Użycie OIDC pozwala na obejście konfiguracji zasad zaufania z dostawcami usług w chmurze
-> Aby korzystać z OIDC, konieczne jest skonfigurowanie zasad zaufania z dostawcą usług w chmurze
-- [ ] OIDC generuje tokeny webowe w formacie JSON (JWT), które mogą być używane w różnych zadaniach workflow
-> Infrastruktura OIDC obejmuje tworzenie unikalnych JWT dla każdego zadania workflow
-- [ ] Używanie OIDC w workflow automatycznie zapisze logi tego workflow w pamięci chmury
-> OIDC dotyczy bezpieczeństwa w połączeniach z dostawcami usług w chmurze, a nie przechowywania danych. W związku z tym nie ma wpływu na zapisywanie logów workflow w jakimkolwiek miejscu. 
+- [ ] Korzystanie z OIDC pozwala ominąć konfigurację zasad zaufania z dostawcami chmury
+> Aby używać OIDC, musisz skonfigurować zasady zaufania u dostawcy chmury.
+- [ ] OIDC generuje JSON web tokens (JWTs), które mogą być używane w różnych zadaniach workflow
+> Infrastruktura OIDC polega na tworzeniu JSON web tokens (JWTs), które są unikalne dla każdego zadania workflow.
+- [ ] Korzystanie z OIDC wewnątrz workflow automatycznie zapisze logi tego workflow w pamięci chmury
+> OIDC zajmuje się bezpieczeństwem podczas łączenia z dostawcami chmury, a nie przechowywaniem. W związku z tym nie jest używany do zapisywania logów workflow w żadnym miejscu. 
