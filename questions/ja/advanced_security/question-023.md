@@ -1,10 +1,10 @@
 ---
-question: "Dependabotアラートはどのような情報を提供しますか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+question: "Dependabot アラートにはどのような情報が含まれていますか？"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
-- [x] Dependabotアラートは、リポジトリが安全でないパッケージを使用していることを通知します。
-- [ ] Dependabotアラートは、リポジトリが他の公開リポジトリで使用されていることを通知します。
-- [ ] Dependabotアラートは、リポジトリが未テストのバージョンのパッケージを使用していることを通知します。
-- [ ] Dependabotアラートは、リポジトリが古いバージョンのパッケージを使用していることを通知します。
-> Dependabotはバージョン更新ではこれを実行しますが、アラートではありません。
+- [x] Dependabot アラートは、リポジトリで安全ではないパッケージが使用されていることを通知します。
+- [ ] Dependabot アラートは、リポジトリが他の公開リポジトリで使用されていることを通知します。
+- [ ] Dependabot アラートは、リポジトリで未テストのバージョンのパッケージが使用されていることを通知します。
+- [ ] Dependabot アラートは、リポジトリで古いバージョンのパッケージが使用されていることを通知します。
+> Dependabot はバージョン更新でそれを行いますが、アラートでは行いません。
