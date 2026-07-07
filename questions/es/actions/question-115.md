@@ -1,10 +1,9 @@
 ---
-question: "¿Qué nivel de permiso se requiere para ejecutar nuevamente los workflows?"
-documentation: "https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs"
+question: "¿Qué nivel de permiso se requiere para volver a ejecutar los workflows?"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/re-run-workflows-and-jobs"
 ---
 
-- [x] write 
-- [ ] read
-- [ ] admin
-- [ ] owner
----
+- [x] escritura  
+- [ ] lectura  
+- [ ] administrador  
+- [ ] propietario  
