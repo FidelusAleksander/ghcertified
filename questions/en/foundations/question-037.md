@@ -1,6 +1,6 @@
 ---
 question: "What are the different permission levels for a repository owned by a personal account?"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository"
 ---
 
 - [x] repository owner

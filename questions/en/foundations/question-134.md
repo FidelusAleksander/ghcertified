@@ -1,7 +1,7 @@
 ---
 question: "Which of the following best describes GitHub secret scanning?"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [ ] A feature that scans issues for unverified credentials and deletes them automatically.  

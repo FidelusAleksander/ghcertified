@@ -1,6 +1,6 @@
 ---
 question: "Why might a team choose GitHub Issues over Discussions for managing bug reports?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
 ---
 
 - [ ] Discussions provide better visibility and tracking for bug reports.

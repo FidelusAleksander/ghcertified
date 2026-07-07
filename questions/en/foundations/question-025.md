@@ -1,6 +1,6 @@
 ---
 question: "How can you start using GitHub Copilot after activating the GitHub Copilot subscription?"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/quickstart"
 ---
 
 - [x] Setup GitHub Copilot in one of the supported IDE's such as Visual Studio Code or JetBrains and start coding
