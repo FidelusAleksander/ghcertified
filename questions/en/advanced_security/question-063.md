@@ -1,6 +1,6 @@
 ---
 question: "CodeQL scanning supports:"
-documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning-with-codeql#about-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql"
 ---
 
 - [x] Both compiled and interpreted languages

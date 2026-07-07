@@ -1,6 +1,6 @@
 ---
 question: "Which of these best describes secret scanning?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] Secret scanning scans your repository for secrets such as private keys or tokens.
