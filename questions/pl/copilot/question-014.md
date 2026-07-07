@@ -1,9 +1,9 @@
 ---
 question: "Jaki jest najprostszy sposób na rozpoczęcie pracy z GitHub Copilot?"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/quickstart"
 ---
 
-- [ ] Poproś GitHub Support o dostęp i poczekaj na zatwierdzenie przed rozpoczęciem korzystania z GitHub Copilot.
-- [ ] Użyj strony internetowej Copilot i wklej swój kod, aby otrzymać sugestie.
+- [ ] Poproś o dostęp od GitHub Support i poczekaj na zatwierdzenie przed użyciem GitHub Copilot.
+- [ ] Użyj strony internetowej Copilot i wklej swój kod, prosząc o sugestie.
 - [x] Zainstaluj rozszerzenie Copilot w preferowanym środowisku, takim jak Visual Studio Code.
-- [ ] Utwórz nowy publiczny repozytorium GitHub i włącz Copilot, aby przeszukał Twój kod i przedstawił sugestie.
+- [ ] Utwórz nowe publiczne repozytorium na GitHub i włącz Copilot, aby analizował Twój kod i przedstawiał sugestie.
