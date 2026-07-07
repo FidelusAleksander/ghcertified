@@ -22,6 +22,10 @@ env:
 jobs:
   check-links:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        exam: [actions, admin, advanced_security, agentic, copilot, foundations]
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: Link Checker
@@ -30,7 +34,8 @@ jobs:
         with:
           fail: false
           output: ${{ env.LYCHEE_REPORT_PATH }}
-          args: --verbose --no-progress 'questions/en/**/*.md' --exclude-all-private --exclude 'file:///*'
+          args: --verbose --no-progress './**/*.md' --exclude-all-private --exclude 'file:///*'
+          workingDirectory: questions/en/${{ matrix.exam }}
 
       - name: Install Copilot CLI
         if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
@@ -41,8 +46,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          copilot -p "Read the lychee link-checker report at ${{ env.LYCHEE_REPORT_PATH }}.
-          Only edit files under questions/en/ (never other questions/<lang>/ dirs).
+          copilot -p "Read the lychee link-checker report at questions/en/${{ matrix.exam }}/${{ env.LYCHEE_REPORT_PATH }}.
+          Only edit files under questions/en/${{ matrix.exam }}/ (never other exam or language dirs).
 
           For each REDIRECTED link, replace it with the final resolved URL already shown
           in the report.
@@ -70,6 +75,6 @@ jobs:
         uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
         with:
           add-paths: questions/en/**
-          branch: fix/link-checker
-          title: "fix: broken/redirected links found by link checker"
+          branch: fix/link-checker-${{ matrix.exam }}
+          title: "fix: broken/redirected links in ${{ matrix.exam }}"
           body-path: ${{ env.COPILOT_SUMMARY_PATH }}
