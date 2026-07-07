@@ -1,12 +1,12 @@
 ---
-question: "Você precisa habilitar o GitHub Actions para"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates"
+question: "Você precisa habilitar GitHub Actions para"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/about-dependabot-version-updates#about-dependabot-version-updates"
 ---
 
-- [x] Dependency Review
-- [ ] Dependabot Security Updates
-- [ ] Dependabot Version Updates
-- [ ] Todas as opções
-> O GitHub Actions não é necessário para que as atualizações de versão do Dependabot e as atualizações de segurança do Dependabot sejam executadas no GitHub. No entanto, pull requests abertos pelo Dependabot podem acionar workflows que executam actions.
-- [ ] Nenhuma das opções
-> A revisão de dependências usa o GitHub Action `actions/dependency-review-action`
+- [x] Revisão de Dependências
+- [ ] Atualizações de Segurança do Dependabot
+- [ ] Atualizações de Versão do Dependabot
+- [ ] Todas essas opções
+> GitHub Actions não é necessário para que as atualizações de versão e de segurança do Dependabot sejam executadas no GitHub. No entanto, pull requests abertos pelo Dependabot podem acionar fluxos de trabalho que executam actions.
+- [ ] Nenhuma dessas opções
+> A revisão de dependências utiliza a GitHub Action `actions/dependency-review-action`
