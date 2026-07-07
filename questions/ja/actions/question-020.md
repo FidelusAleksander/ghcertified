@@ -1,6 +1,6 @@
 ---
-question: "GitHubのUIから手動でワークフローをトリガーすることを可能にするイベントはどれですか？"
-documentation: "https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow"
+question: "GitHub UI からワークフローを手動でトリガーすることを可能にするイベントはどれですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow"
 ---
 
 - [x] workflow_dispatch
