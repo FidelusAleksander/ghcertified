@@ -1,6 +1,6 @@
 ---
 question: "How can you reuse a defined workflow in multiple repositories?"
-documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
+documentation: "https://docs.github.com/en/actions/how-tos/reuse-automations/create-workflow-templates"
 ---
 
 - [ ] By copying the workflow file to each repository

@@ -1,6 +1,6 @@
 ---
 question: "To stop a workflow from running temporarily without modifying the source code you should"
-documentation: "https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows"
 ---
 
 - [x] Use the `Disable workflow` option in GitHub Actions

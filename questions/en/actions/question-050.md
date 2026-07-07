@@ -1,6 +1,5 @@
 ---
 question: "Secrets and configuration variables can be scoped to:"
-documentation: "https://docs.github.com/en/actions/using-workflows/sharing-workflows-secrets-and-runners-with-your-organization#sharing-secrets-and-variables-within-an-organization"
 ---
 
 - [x] The entire organization, or selected repositories in an organization

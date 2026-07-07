@@ -1,6 +1,6 @@
 ---
 question: "Which is true about `Starter Workflows` ?"
-documentation: "https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization"
+documentation: "https://docs.github.com/en/actions/how-tos/reuse-automations/create-workflow-templates"
 ---
 
 - [x] They allow users to leverage ready-to-use (or requiring minimal changes) workflow templates

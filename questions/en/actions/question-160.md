@@ -1,6 +1,6 @@
 ---
 question: "Why should you use OIDC when connecting a workflow to cloud providers?"
-documentation: "https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect"
+documentation: "https://docs.github.com/en/actions/concepts/security/openid-connect"
 ---
 
 - [x] OIDC prevents you from having to keep cloud credentials as long-lived GitHub secrets 

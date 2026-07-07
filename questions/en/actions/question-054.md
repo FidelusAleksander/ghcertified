@@ -1,6 +1,6 @@
 ---
 question: "When creating custom GitHub Actions - in what file does all the action `metadata` have to be defined?"
-documentation: "https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions"
+documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/metadata-syntax"
 ---
 
 Metadata examples: name, description, outputs or required inputs
