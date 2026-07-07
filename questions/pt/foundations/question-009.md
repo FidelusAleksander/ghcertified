@@ -1,13 +1,12 @@
 ---
-question: "Quais são as diferentes opções que permitem automatizar operações no seu projeto do GitHub?"
-documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/"
+question: "Quais são as diferentes opções que permitem automatizar operações em seu Projeto GitHub?"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project"
 ---
 
-- [x] Workflows do projeto
+- [x] Fluxos de trabalho de projetos
 - [x] GitHub GraphQL API
 - [x] GitHub Actions
 - [ ] GitHub Copilot
-- [ ] Gráficos do GitHub
+- [ ] GitHub Charts
 - [ ] GitHub Dependabot
 - [ ] Itens do projeto
-

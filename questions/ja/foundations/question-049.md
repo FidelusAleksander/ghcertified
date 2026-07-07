@@ -1,11 +1,11 @@
 ---
-question: "リポジトリのコラボレーターとは誰を指しますか？"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository"
+question: "リポジトリのコラボレーターとは誰ですか？"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository"
 ---
 
-- [x] コラボレーターは、リポジトリへの書き込みアクセス権を付与された人々のことです。
-- [ ] コラボレーターは、リポジトリにコードを貢献した人々のことです。
-> それはコントリビューターです。リポジトリに貢献していなくてもコラボレーターになることができます。また、リポジトリをフォークしてプルリクエストを送信することで、コラボレーターでなくてもリポジトリに貢献することが可能です。
-- [ ] コラボレーターは、リポジトリに資金提供をした人々のことです。
+- [x] コラボレーターは、リポジトリへの書き込みアクセス権を与えられた人々です。
+- [ ] コラボレーターは、リポジトリにコードを提供した人々です。
+> それはコントリビューターのことです。リポジトリに貢献しなくてもコラボレーターになることができます。また、リポジトリをフォークしてPull Requestを送信することで、コラボレーターではなくてもリポジトリに貢献することができます。
+- [ ] コラボレーターは、リポジトリに資金提供をした人々です。
 > それはスポンサーです。
-- [ ] コラボレーターは、リポジトリにIssueやPull Requestを提起した人々のことです。
+- [ ] コラボレーターは、リポジトリでIssueやPull Requestを作成した人々です。

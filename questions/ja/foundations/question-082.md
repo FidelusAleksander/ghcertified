@@ -1,8 +1,8 @@
 ---
-question: "次のうち、GitHubプロファイルをカスタマイズできるファイルはどれですか？"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme"
+question: "次のうち、どのファイルがあなたのGitHubプロフィールをカスタマイズできますか？"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme"
 ---
 
-- [x] プロファイルの`README.md`ファイル
-- [ ] プロファイルの`CONTRIBUTING.md`ファイル
-- [ ] プロファイルはファイルではなくアカウント設定を通じてカスタマイズされる
+- [x] プロフィールの `README.md` ファイル
+- [ ] プロフィールの `CONTRIBUTING.md` ファイル
+- [ ] プロフィールはファイルではカスタマイズできず、アカウント設定を通じてのみカスタマイズ可能です

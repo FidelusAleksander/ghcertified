@@ -1,10 +1,10 @@
 ---
-question: "Qual dessas é uma prática que incentiva a colaboração, visibilidade e compartilhamento de código entre diferentes equipes dentro de uma organização?"
-documentation: "https://resources.github.com/innersource/what-is-innersource/"
+question: "Qual destas é uma prática que incentiva a colaboração, visibilidade e compartilhamento de código entre diferentes equipes dentro de uma organização?"
+documentation: "https://github.com/resources/articles/innersource"
 ---
 
 - [x] InnerSource
 - [ ] OpenSource
 - [ ] Continuous Integration
 - [ ] Git Flow
-
+---

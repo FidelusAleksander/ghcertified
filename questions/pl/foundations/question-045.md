@@ -1,9 +1,9 @@
 ---
-question: "Co można znaleźć na karcie zabezpieczeń w repozytorium?"
-documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
+question: "Co można znaleźć w zakładce bezpieczeństwa w repozytorium?"
+documentation: "https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository"
 ---
 
-- [x] Przegląd zabezpieczeń tego repozytorium, takich jak podatności w zależnościach, wyniki skanowania kodu i alerty skanowania sekretów
-- [ ] Lista wszystkich GitHub Issues otwartych w repozytorium z powodów bezpieczeństwa
-- [ ] Lista wszystkich najlepszych praktyk, które GitHub rekomenduje dla zabezpieczenia oprogramowania
+- [x] Przegląd bezpieczeństwa repozytorium, taki jak podatności w zależnościach, wyniki skanowania kodu oraz alerty skanowania tajnych danych
+- [ ] Lista wszystkich GitHub Issues otwartych w repozytorium ze względów bezpieczeństwa
+- [ ] Lista wszystkich najlepszych praktyk, które GitHub zaleca w celu zabezpieczenia oprogramowania
 - [ ] Informacje kontaktowe do zespołu ds. bezpieczeństwa w GitHub

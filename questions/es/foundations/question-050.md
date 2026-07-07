@@ -1,9 +1,9 @@
 ---
-question: "¿Cómo puedes trabajar junto con un amigo tuyo en un repository que has creado en tu cuenta personal de GitHub?"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository"
+question: "¿Cómo puedes colaborar con un amigo en un repositorio que has creado en tu cuenta personal de GitHub?"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository"
 ---
 
-- [x] Ve a la configuración del repository y envíale una invitación como colaborador
+- [x] Ve a la configuración del repositorio e invítalo como colaborador
 - [ ] Agrégalo al archivo `CODEOWNERS`
-- [ ] No es posible trabajar juntos en repositories personales. Solo puedes hacerlo en repositories pertenecientes a organizaciones.
-- [ ] Proporciona a tu amigo tus credenciales de GitHub
+- [ ] No es posible colaborar en repositorios personales. Solo puedes hacerlo en repositorios pertenecientes a organizaciones.
+- [ ] Dale a tu amigo tus credenciales de GitHub

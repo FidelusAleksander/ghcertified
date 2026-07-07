@@ -1,8 +1,8 @@
 ---
 question: "Jakie działanie jest konieczne, aby dodać plik do repozytorium GitHub?"
-documentation: "https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
 - [ ] Bycie właścicielem repozytorium.
-- [ ] Posiadanie dostępu do repozytorium w trybie tylko do odczytu.
-- [x] Posiadanie dostępu do repozytorium w trybie zapisu.
+- [ ] Posiadanie dostępu tylko do odczytu w repozytorium.
+- [x] Posiadanie dostępu do zapisu w repozytorium.
