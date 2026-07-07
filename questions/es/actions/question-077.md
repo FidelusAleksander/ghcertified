@@ -1,9 +1,9 @@
 ---
-question: "¿Qué es un runner alojado por uno mismo?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners"
+question: "¿Qué es un self-hosted runner?"
+documentation: "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners"
 ---
 
-- [x] Un runner alojado por uno mismo es un sistema que despliegas y gestionas para ejecutar trabajos desde GitHub Actions en GitHub.com
-- [ ] Un runner alojado por uno mismo es un sistema para subir código a un servidor privado
-- [ ] Un runner alojado por uno mismo es un sistema para poder crear cargas de trabajo automáticamente
-- [ ] Un runner alojado por uno mismo es un sistema para gestionar pull requests de los usuarios de la organización
+- [x] Un self-hosted runner es un sistema que configuras y gestionas para ejecutar trabajos de GitHub Actions en GitHub.com
+- [ ] Un self-hosted runner es un sistema para cargar código a un servidor privado
+- [ ] Un self-hosted runner es un sistema para poder crear cargas de trabajo automáticamente
+- [ ] Un self-hosted runner es un sistema para gestionar pull requests de los usuarios de la organización
