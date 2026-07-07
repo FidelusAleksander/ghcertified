@@ -1,10 +1,10 @@
 ---
-question: "Dependabot Alertsはデフォルトで有効になっているのは次のうちどれですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+question: "Dependabotアラートがデフォルトで有効になっているのは:"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
 ---
 
-- [x] Dependabot Alertsはどのリポジトリでもデフォルトでは有効になっていません。
+- [x] Dependabotアラートは、どのリポジトリにもデフォルトでは有効化されていません。
 - [ ] 公開リポジトリのみ。
-> GitHubは公開リポジトリ内の脆弱な依存関係を検出し、依存関係グラフを表示しますが、デフォルトではDependabot Alertsを生成しません。
+> GitHubは公開リポジトリ内の脆弱な依存関係を検出し、依存関係グラフを表示しますが、デフォルトではDependabotアラートを生成しません。
 - [ ] すべてのリポジトリ。
-- [ ] 非公開リポジトリのみ。
+- [ ] プライベートリポジトリのみ。
