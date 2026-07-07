@@ -1,6 +1,6 @@
 ---
 question: "What is the behavior when a new secret pattern is added or updated in the GitHub secret scanning partner program?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning#accessing-secret-scanning-alerts"
 ---
 
 - [x] GitHub will run a scan of all historical code content in public repositories with secret scanning enabled

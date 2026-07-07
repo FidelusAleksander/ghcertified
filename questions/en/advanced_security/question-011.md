@@ -1,6 +1,6 @@
 ---
 question: "How can you prevent commits containing cloud provider credentials from being pushed to GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/push-protection"
 ---
 
 - [x] Enable a secret scanning push protection rule for your repository or organization.

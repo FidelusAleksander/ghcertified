@@ -1,6 +1,6 @@
 ---
 question: "How can you use a custom CodeQL configuration file in a GitHub Actions workflow?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#using-a-custom-configuration-file"
 ---
 
 - [x] By explicitly providing the configuration file path in the `config-file` input parameter of the `github/codeql-action/init` action

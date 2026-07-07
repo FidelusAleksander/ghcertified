@@ -1,6 +1,6 @@
 ---
 question: "How can you customize your advanced CodeQL scanning setup with additional CodeQL query suites?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options"
 ---
 
 - [x] By using a custom configuration file and defining additional queries there

@@ -1,6 +1,6 @@
 ---
 question: "How does GitHub Dependency graph know what dependencies your project is using?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems"
 ---
 
 - [x] GitHub derives dependencies automatically from manifests and lock files committed to the repository

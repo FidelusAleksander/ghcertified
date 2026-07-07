@@ -1,6 +1,6 @@
 ---
 question: "What are Dependabot auto-triage rules?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
 ---
 
 - [x] It's a feature that allows Dependabot to automatically dismiss Dependabot alerts that match certain criteria.

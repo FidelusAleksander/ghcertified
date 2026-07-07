@@ -1,6 +1,6 @@
 ---
 question: "Which of the following statements about enabling CodeQL scanning default setup are true?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning"
 ---
 
 - [x] You can enable default setup for all eligible repositories in an organization at once in the organization settings
