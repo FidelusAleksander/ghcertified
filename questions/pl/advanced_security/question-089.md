@@ -1,10 +1,10 @@
 ---
-question: "Które z poniższych NIE jest właściwym podejściem do skrócenia czasu wykonywania CodeQL analysis workflow?" 
-documentation: "https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long"
+question: "Które z poniższych NIE jest poprawnym podejściem do skrócenia czasu trwania przepływu pracy analizy CodeQL?"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/analysis-takes-too-long"
 ---
 
-- [x] Uruchamianie analizy przy każdym zdarzeniu push
-- [ ] Wykorzystanie runnerów z większymi zasobami CPU/RAM
-- [ ] Równoległe przeprowadzanie analizy dla kodu wielojęzycznego
-- [ ] Pominięcie nieistotnych plików i katalogów w analizie
-- [ ] Zmniejszenie liczby uruchamianych zapytań
+- [x] Uruchamiaj analizę przy każdym zdarzeniu typu push
+- [ ] Używaj runnerów z większą liczbą zasobów CPU/RAM
+- [ ] Parallelizuj analizę dla baz kodu zawierających wiele języków
+- [ ] Ignoruj nieistotne pliki i katalogi podczas analizy
+- [ ] Zredukuj liczbę uruchamianych zapytań
