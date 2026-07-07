@@ -1,12 +1,12 @@
 ---
 question: "Które stwierdzenia dotyczące GitHub Copilot CLI są poprawne?"
-documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/4-git-hub-copilot-for-the-command-line"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line"
 ---
 
-- [x] Podpowiedzi nie są przechowywane, natomiast analizy użytkowania są domyślnie przechowywane.
-- [x] Można zrezygnować z opcjonalnych analiz użytkowania.
-- [x] Odpowiedzi wygenerowane przez Copilot CLI można przeglądać po każdej sugestii.
-- [ ] Zarówno podpowiedzi, jak i analizy użytkowania są domyślnie przechowywane.
-> Podpowiedzi nie są przechowywane domyślnie.
-- [ ] Nie jest możliwe zrezygnowanie z opcjonalnych analiz użytkowania, ponieważ są one anonimowe.
+- [x] Wprowadzone zapytania nie są przechowywane, natomiast analiza użycia jest domyślnie przechowywana.
+- [x] Możliwe jest rezygnowanie z opcjonalnej analizy użycia.
+- [x] Odpowiedzi generowane przez Copilot CLI mogą zostać przejrzane po każdej sugestii.
+- [ ] Zarówno zapytania, jak i analiza użycia są domyślnie przechowywane.
+> Wprowadzone zapytania nie są domyślnie przechowywane.
+- [ ] Nie można zrezygnować z opcjonalnej analizy użycia, ponieważ jest anonimowa.
 - [ ] GitHub Copilot CLI może jedynie wyjaśniać lub sugerować polecenia, ale nie może ich wykonywać w imieniu użytkownika.

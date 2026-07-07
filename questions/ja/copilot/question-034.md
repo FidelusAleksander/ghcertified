@@ -1,12 +1,12 @@
 ---
-question: "GitHub Copilot CLIについて正しい記述はどれですか？"
-documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/4-git-hub-copilot-for-the-command-line"
+question: "GitHub Copilot CLI について正しい記述はどれですか？"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line"
 ---
 
-- [x] プロンプトは保持されませんが、使用状況分析はデフォルトで保持されます。
-- [x] オプションの使用状況分析をオプトアウトすることが可能です。
-- [x] Copilot CLIによって生成された応答は、各提案後に確認することができます。
-- [ ] プロンプトと使用状況分析の両方がデフォルトで保持されます。
-> プロンプトはデフォルトで保持されません。
-- [ ] 使用状況分析が匿名化されているため、オプションの使用状況分析をオプトアウトすることはできません。
-- [ ] GitHub Copilot CLIはコマンドの説明や提案のみを行い、ユーザーの代わりに実行することはできません。
+- [x] プロンプトは保存されませんが、使用状況の分析データはデフォルトで保存されます。
+- [x] オプションの使用状況の分析データ収集をオプトアウトすることができます。
+- [x] Copilot CLI によって生成された応答は、各提案の後で確認することができます。
+- [ ] プロンプトと使用状況の分析データの両方がデフォルトで保存されます。
+> プロンプトはデフォルトでは保存されません。
+- [ ] オプションの使用状況の分析データ収集は匿名化されているため、オプトアウトすることはできません。
+- [ ] GitHub Copilot CLI はコマンドを説明したり提案したりすることはできますが、ユーザーの代わりに実行することはできません。

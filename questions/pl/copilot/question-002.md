@@ -1,9 +1,9 @@
 ---
-question: "Która opcja poniżej NIE jest możliwym sposobem na przyznanie dostępu do Copilot członkom organizacji?"
-documentation: "https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization"
+question: "Która opcja poniżej NIE jest możliwym sposobem przyznania dostępu do Copilot członkom organizacji?"
+documentation: "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access"
 ---
 
-- [x] Jako członek organizacji możesz włączyć Copilot bezpośrednio z ustawień swojego konta.
-- [ ] Poprzez ustawienia Enterprise, włącz GitHub Copilot dla wybranych organizacji lub wszystkich organizacji.
-- [ ] Poprzez ustawienia organizacji, włącz GitHub Copilot dla wybranych zespołów lub użytkowników, lub dla całej organizacji.
-- [ ] Możesz użyć GitHub REST API, aby przyznać dostęp do GitHub Copilot zespołom lub konkretnym użytkownikom w swojej organizacji.
+- [x] Jako członek Organizacji możesz włączyć Copilot bezpośrednio w ustawieniach swojego konta.
+- [ ] Poprzez ustawienia Enterprise, włącz GitHub Copilot dla wybranych lub wszystkich organizacji.
+- [ ] Poprzez ustawienia Organizacji, włącz GitHub Copilot dla wybranych zespołów, użytkowników lub całej organizacji.
+- [ ] Możesz użyć REST API GitHub do przyznania dostępu do GitHub Copilot dla zespołów lub wybranych użytkowników w organizacji.

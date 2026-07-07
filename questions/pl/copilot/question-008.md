@@ -1,6 +1,6 @@
 ---
-question: "Który z poniższych opisów dotyczy pliku konfiguracyjnego GitHub Copilot Editor?"
-documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot"
+question: "Który z poniższych opisuje plik konfiguracyjny edytora GitHub Copilot?"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions"
 ---
 
 - [ ] Plik JSON z ustawieniami bezpieczeństwa

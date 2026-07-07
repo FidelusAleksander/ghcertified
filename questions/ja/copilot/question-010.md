@@ -1,6 +1,6 @@
 ---
-question: "次のうち、GitHub Copilot Chatを外部ツールと統合するものはどれですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat"
+question: "次のうち、どれがGitHub Copilot Chatを外部ツールと統合しますか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/context/mcp"
 ---
 
 - [x] GitHub Copilot Extensions
