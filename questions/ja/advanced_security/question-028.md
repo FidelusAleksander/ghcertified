@@ -1,6 +1,6 @@
 ---
-question: "リポジトリのGitHub Dependencyグラフをどの形式でエクスポートできますか？"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository"
+question: "リポジトリのGitHub依存関係グラフをどの形式でエクスポートできますか？"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom"
 ---
 
 - [x] SPDX
@@ -8,4 +8,4 @@ documentation: "https://docs.github.com/en/code-security/supply-chain-security/u
 - [ ] JSON
 - [ ] XML
 - [ ] CSV
----
+
