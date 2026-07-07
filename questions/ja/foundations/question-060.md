@@ -1,6 +1,6 @@
 ---
-question: "これらのうち、組織内の異なるチーム間でのコラボレーション、可視性、コードの共有を促進するプラクティスはどれですか？"
-documentation: "https://resources.github.com/innersource/what-is-innersource/"
+question: "組織内の異なるチーム間でのコラボレーション、可視性、コードの共有を促進する実践のうち、どれが該当しますか？"
+documentation: "https://github.com/resources/articles/innersource"
 ---
 
 - [x] InnerSource
