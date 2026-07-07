@@ -1,9 +1,9 @@
 ---
-question: "リポジトリでDependabotアラートを有効にできるのは誰ですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+question: "誰がリポジトリでDependabotアラートを有効にできますか？"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
-- [x] リポジトリ所有者および管理者アクセス権を持つユーザー
-- [ ] リポジトリ所有者のみ
-- [ ] DependabotアラートはGitHubによってすべてのリポジトリで有効化されており、個人が有効化または無効化することはできません。
-- [ ] Dependabotアラートは、リポジトリにGitHub Actionを追加することで有効化されるため、リポジトリに書き込みアクセス権を持つ人であれば誰でも有効化できます。
+- [x] リポジトリの所有者と管理者アクセス権を持つ人
+- [ ] リポジトリの所有者のみ
+- [ ] DependabotアラートはすべてのリポジトリでGitHubによって有効化されており、個人によって有効化または無効化することはできません。
+- [ ] DependabotアラートはリポジトリにGitHub Actionを追加することで有効化されるため、リポジトリへの書き込み権限を持つ誰でも有効化できます。

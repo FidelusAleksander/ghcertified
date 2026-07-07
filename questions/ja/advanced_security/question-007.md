@@ -1,10 +1,9 @@
 ---
-question: "シークレットスキャンについて最もよく説明しているものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+question: "次のうち、Secret Scanning を最もよく説明しているものはどれですか？"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
-- [x] Secret scanningは、リポジトリ内の秘密情報（プライベートキーやトークンなど）をスキャンします。
-- [ ] Secret scanningは、秘密情報（プライベートキーやトークンなど）を公開する可能性のあるコードの脆弱性をリポジトリ内でスキャンします。
-- [ ] Secret scanningは、安全な秘密情報の保存と管理のためのツールです。
-- [ ] Secret scanningは、コミットをGitHubにプッシュする前にプライベートキーやトークンなどの秘密情報をスキャンするgit hookです。
-
+- [x] Secret Scanning は、リポジトリ内のシークレット（プライベートキーやトークンなど）をスキャンします。
+- [ ] Secret Scanning は、プライベートキーやトークンなどのシークレットを露出させる可能性のあるコードの脆弱性をリポジトリ内でスキャンします。
+- [ ] Secret Scanning は、シークレットの安全な保存と管理のためのツールです。
+- [ ] Secret Scanning は、Git のフックであり、プライベートキーやトークンなどのシークレットを GitHub にプッシュする前にコミットをスキャンします。
