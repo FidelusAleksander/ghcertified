@@ -1,6 +1,6 @@
 ---
-question: "Qual das seguintes opções é uma afirmação correta sobre GitHub Workflows e Actions?"
-documentation: "https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions"
+question: "Qual das seguintes afirmações sobre GitHub Workflows e Actions está correta?"
+documentation: "https://docs.github.com/en/actions/get-started/understand-github-actions"
 ---
 
 - [ ] Cada action é composta por um ou mais workflows, que são compostos por um ou mais jobs, e cada job é composto por um ou mais steps
