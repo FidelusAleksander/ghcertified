@@ -1,9 +1,9 @@
 ---
-question: "組織はGitHub Actionsのワークフローのセキュリティをどのように向上させることができますか？"
-documentation: "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions"
+question: "組織がGitHub Actionsワークフローのセキュリティを高める方法は？"
+documentation: "https://docs.github.com/en/actions/reference/security/secure-use"
 ---
 
-- [x] シークレットの安全な取り扱いや、異常がないか監査ログを定期的にレビューするなどのセキュリティ対策を採用する。
-- [ ] GitHubへのアクセスに全メンバーが生体認証を使用することを要求する。
-- [ ] 組織内のすべてのリポジトリを公開し、透明性を確保する。
-- [ ] アタックサーフェスを減らすため、IssueおよびPull Requestの作成と処理を無効化する。
+- [x] シークレットの安全な取り扱いや異常を検出するための監査ログの定期的なレビューなどのセキュリティ対策を採用する。
+- [ ] GitHubへのアクセスに関して、すべてのメンバーに生体認証を要求する。
+- [ ] 組織内のすべてのリポジトリを公開して透明性を確保する。
+- [ ] 攻撃対象領域を減らすために、IssueやPull Requestの作成および処理を無効にする。
