@@ -1,9 +1,9 @@
 ---
-question: "ある組織が、すべてのリポジトリのPull Requestに対してCodeQL分析を使用し始め、さらに1時間おきに分析を実行するようになりました。その結果、通常よりも多くのGitHub Actionsの請求を受けています。この原因として最も考えられるのは何でしょうか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-billing-for-code-scanning"
+question: "ある組織が、リポジトリのすべてのPull Requestに対してCodeQL分析を使用し始めたほか、毎時スケジュールで分析を実行するようになりました。それ以降、GitHub Actionsの請求額が通常よりも高くなっています。この原因として最も考えられるのは何ですか？"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-billing-for-code-scanning"
 ---
 
-- [x] コードスキャニングはGitHub Actionsを使用しており、その追加使用に対して組織が請求を受けている。
-- [ ] コードスキャニング分析が予想以上に多くの問題を検出し、完了に時間がかかっている。
-- [ ] コードスキャニングは1日単位のスケジュールでしか実行できず、追加使用に対して請求を受けている。
-- [ ] コードスキャニングとGitHub Actionsの請求には相関関係がない。組織は他のGitHub Actionsワークフローに対して請求を受けている。
+- [x] コードスキャンはGitHub Actionsを使用しており、追加使用分の請求が行われています。
+- [ ] コードスキャンの分析において予想より多くの問題が検出されており、完了までに時間がかかっています。
+- [ ] コードスキャンは1日単位のスケジュールでしか実行できず、追加使用分が請求されています。
+- [ ] コードスキャンとGitHub Actionsの請求は無関係です。組織は他のGitHub Actionsワークフローの使用に対する請求を受けています。
