@@ -1,10 +1,10 @@
 ---
-question: "GitHub Codespace における異なる可能性のあるライフサイクルフェーズは何ですか？"
-documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
+question: "GitHub Codespaceの可能なライフサイクルフェーズにはどのようなものがありますか？"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle"
 ---
 
-- [x] Create, Rebuild, Stop, Delete
-- [ ] Create, Delete
-- [ ] Create, Stop, Delete
-- [ ] Create, Rebuild, Delete
----
+- [x] 作成、再構築、停止、削除
+- [ ] 作成、削除
+- [ ] 作成、停止、削除
+- [ ] 作成、再構築、削除
+
