@@ -1,6 +1,6 @@
 ---
 question: "Which statement correctly describes GitHub Copilot CLI?"
-documentation: "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli"
+documentation: "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli"
 ---
 
 - [x] It lets you use Copilot from your terminal to answer questions, write and debug code, and interact with GitHub.com

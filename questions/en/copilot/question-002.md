@@ -1,6 +1,6 @@
 ---
 question: "Which option below is NOT a possible way to grant access to Copilot for members of an organization?"
-documentation: "https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization"
+documentation: "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access"
 ---
 
 - [x] As a member of an Organization, you can enable Copilot directly from your account settings.

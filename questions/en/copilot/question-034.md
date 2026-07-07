@@ -1,6 +1,6 @@
 ---
 question: "Which statements are correct about GitHub Copilot CLI?"
-documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/4-git-hub-copilot-for-the-command-line"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line"
 ---
 
 - [x] Prompts are not retained, whereas usage analytics are retained by default.

@@ -1,6 +1,6 @@
 ---
 question: "What is an alias used for when using GitHub Copilot?"
-documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/4-git-hub-copilot-for-the-command-line"
+documentation: "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line"
 ---
 
 - [x] Using an alias enables GitHub Copilot  CLI to automatically execute commands in the command line.

@@ -1,6 +1,6 @@
 ---
 question: "What are the post-processing checks performed on GitHub Copilot's responses?"
-documentation: "https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/"
+documentation: "https://learn.github.com/learning-pathways/github-copilot"
 ---
 
 - [x] Toxic language, relevancy, code quality (including security vulnerabilities), unique identifiers, and optional public code matching

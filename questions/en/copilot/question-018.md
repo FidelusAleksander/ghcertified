@@ -1,6 +1,6 @@
 ---
 question: "Which steps occur when GitHub Copilot's proxy service processes a prompt?"
-documentation: "https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/"
+documentation: "https://learn.github.com/learning-pathways/github-copilot"
 ---
 
 - [x] Tests for toxic language, relevance checks, and detection of prompt hacking attempts
