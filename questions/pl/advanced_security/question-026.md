@@ -1,9 +1,9 @@
 ---
-question: "Skąd GitHub Dependency graph wie, jakie zależności wykorzystuje Twój projekt?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+question: "W jaki sposób GitHub Dependency graph rozpoznaje, jakich zależności używa Twój projekt?"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems"
 ---
 
-- [x] GitHub automatycznie wywodzi zależności z plików manifestów i lock commitowanych do repozytorium
-- [x] Zależności mogą być ręcznie dodawane za pomocą Dependency submission API
+- [x] GitHub automatycznie wyprowadza zależności z plików manifestów i plików blokad, które zostały zatwierdzone do repozytorium
+- [x] Zależności mogą być ręcznie dodane za pomocą Dependency submission API
 - [ ] GitHub skanuje kod repozytorium w poszukiwaniu instrukcji importu zewnętrznych pakietów
-- [ ] Należy dodać GitHub Actions workflow, który wykorzystuje oficjalny `actions/dependency-graph` GitHub Action, aby dodawać zależności do grafu za każdym razem, gdy nowy commit jest pushowany do repozytorium
+- [ ] Wymagane jest dodanie GitHub Actions workflow, który używa oficjalnej `actions/dependency-graph` GitHub Action, aby dodawać zależności do grafu za każdym razem, gdy nowy commit jest wypychany do repozytorium
