@@ -1,9 +1,9 @@
 ---
 question: "特定のランナーグループにアクセスできるリポジトリを組織内で変更するにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access"
 ---
 
-- [x] 組織設定で「Actions」に移動し、「Runner groups」を選択してグループを選び、リポジトリのアクセス設定を変更します。
-- [ ] GitHub CLI を使用して、異なるランナーグループにリポジトリへのアクセス権を再割り当てするコマンドを実行します。
-- [ ] 自己ホスト型ランナーをホストしているサーバー上のランナーグループの構成ファイルを編集してリポジトリアクセスを更新します。
-- [ ] リポジトリは手動で設定を変更する必要なく、自動的にすべてのランナーグループにアクセスできるようになります。
+- [x] 組織の設定で、Actions に移動し、Runner groups を選択してグループを選び、リポジトリのアクセス設定を変更します。
+- [ ] GitHub CLI を使用して、組織内の異なるランナーグループにリポジトリアクセスを再割り当てするコマンドを実行します。
+- [ ] セルフホステッドランナーをホストしているサーバー上のランナーグループの設定ファイルを編集して、リポジトリアクセスを更新します。
+- [ ] リポジトリは、手動での設定変更を必要とせず、自動的にすべてのランナーグループにアクセスできます。
