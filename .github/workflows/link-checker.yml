@@ -36,5 +36,5 @@ jobs:
         uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
           title: "Link Checker Report: ${{ matrix.exam }}"
-          content-filepath: ./lychee/out.md
+          content-filepath: questions/en/${{ matrix.exam }}/lychee/out.md
           labels: good first issue, bug
