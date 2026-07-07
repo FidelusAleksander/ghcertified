@@ -1,6 +1,6 @@
 ---
 question: "Fill in the blank: When using self-hosted runners, the tool cache ___"
-documentation: "https://docs.github.com/en/enterprise-server/admin/managing-github-actions-for-your-enterprise/managing-access-to-actions-from-githubcom/setting-up-the-tool-cache-on-self-hosted-runners-without-internet-access"
+documentation: "https://docs.github.com/en/enterprise-server@3.21/admin/managing-github-actions-for-your-enterprise/managing-access-to-actions-from-githubcom/setting-up-the-tool-cache-on-self-hosted-runners-without-internet-access"
 ---
 
 - [x] starts off empty and must be populated in order to save tools between runs
