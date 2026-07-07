@@ -17,6 +17,7 @@ permissions:
 env:
   LYCHEE_REPORT_PATH: lychee/out.md
   COPILOT_SUMMARY_PATH: summary.md
+  COPILOT_MAX_AI_CREDITS: 100
 
 jobs:
   check-links:
@@ -42,13 +43,27 @@ jobs:
         run: |
           copilot -p "Read the lychee link-checker report at ${{ env.LYCHEE_REPORT_PATH }}.
           Only edit files under questions/en/ (never other questions/<lang>/ dirs).
-          For each redirected link, replace it with its final resolved URL.
-          For each broken (4xx/5xx) link, replace it with an obviously correct replacement
-          only if confident, otherwise leave it unchanged and list it as unresolved.
+
+          For each REDIRECTED link, replace it with the final resolved URL already shown
+          in the report.
+
+          For each BROKEN (4xx/5xx) link, try to find the correct replacement before giving up:
+          - Use the context7 MCP tools to look up the relevant library/product docs and find
+            the page that replaced it.
+          - Or fetch the linked domain's search/nearby pages to locate the moved content.
+          - Verify the replacement URL actually resolves (200 OK) before using it.
+          Only replace the link if you're confident the replacement covers the same content.
+          Otherwise leave it unchanged and list it as unresolved.
+
           Don't change anything else in the files.
-          When done, write a short Markdown summary with '## Fixed' and '## Unresolved'
-          sections listing the affected file and URL for each link to ${{ env.COPILOT_SUMMARY_PATH }}" \
-            --allow-tool=write --no-ask-user
+          When done, write the summary to ${{ env.COPILOT_SUMMARY_PATH }} as a single
+          Markdown table with columns: File | Old URL | New URL / Reason | Status.
+          - File: path relative to repo root
+          - Old URL: the link as reported by lychee
+          - New URL / Reason: the replacement URL if Fixed, or a short reason if Unresolved
+          - Status: 'Fixed' or 'Unresolved'
+          One row per link. No extra commentary before or after the table." \
+            --allow-tool=shell --allow-tool=write --allow-tool=context7 --allow-all-urls --no-ask-user --max-ai-credits=${{ env.COPILOT_MAX_AI_CREDITS }}
 
       - name: Open PR with fixes
         if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
@@ -58,4 +73,3 @@ jobs:
           branch: fix/link-checker
           title: "fix: broken/redirected links found by link checker"
           body-path: ${{ env.COPILOT_SUMMARY_PATH }}
-          labels: good first issue, bug
