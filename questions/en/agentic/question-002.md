@@ -1,6 +1,6 @@
 ---
 question: "Which GitHub CLI command starts a new Copilot cloud agent session to work on a task autonomously?"
-documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-a-pr"
+documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions"
 ---
 
 - [x] `gh agent-task create`
