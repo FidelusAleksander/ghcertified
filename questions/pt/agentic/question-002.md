@@ -1,6 +1,6 @@
 ---
-question: "Qual comando GitHub CLI inicia uma nova sessão de agente de nuvem do Copilot para trabalhar em uma tarefa de forma autônoma?"
-documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-a-pr"
+question: "Qual comando do GitHub CLI inicia uma nova sessão de agente de nuvem do Copilot para trabalhar em uma tarefa autonomamente?"
+documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions"
 ---
 
 - [x] `gh agent-task create`
@@ -8,6 +8,6 @@ documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cl
 - [ ] `gh copilot agent start`
 > Este comando não existe no GitHub CLI.
 - [ ] `gh workflow run copilot-agent`
-> Este comando iniciaria um workflow do GitHub Actions, não uma sessão de agente de nuvem do Copilot.
+> Isso executaria um workflow do GitHub Actions, não uma sessão de agente de nuvem do Copilot.
 - [ ] `gh issue assign --copilot`
-> Embora seja possível atribuir issues ao Copilot via API, esta não é a sintaxe correta do comando CLI.
+> Embora seja possível atribuir issues ao Copilot via a API, esta não é a sintaxe correta do comando CLI.
