@@ -1,9 +1,9 @@
 ---
-question: "Jaki jest koszt użytkowania GitHub Actions dla publicznych repozytoriów?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+question: "Jaki jest koszt korzystania z GitHub Actions dla publicznych repozytoriów?"
+documentation: "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
 ---
 
-- [x] Użycie GitHub Actions jest darmowe dla publicznych repozytoriów.
-- [ ] GitHub Actions nalicza opłatę za każdą minutę użycia w publicznych repozytoriach.
-- [ ] Publiczne repozytoria mają dwa razy mniej darmowych minut niż prywatne repozytoria.
+- [x] Korzystanie z GitHub Actions jest bezpłatne dla publicznych repozytoriów.
+- [ ] GitHub Actions wiąże się z opłatą za każdą minutę użytkowania w publicznych repozytoriach.
+- [ ] Publiczne repozytoria mają połowę liczby darmowych minut w porównaniu do prywatnych repozytoriów.
 - [ ] GitHub Actions nie jest dostępne dla publicznych repozytoriów.
