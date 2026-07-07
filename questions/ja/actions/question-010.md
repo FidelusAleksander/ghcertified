@@ -1,6 +1,6 @@
 ---
-question: "ワークフローで使用されるパスワードや証明書などの機密データはどこに保存すべきですか"
-documentation: "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions"
+question: "ワークフローで使用するパスワードや証明書などの機密データはどこに保存すべきですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
 ---
 
 - [x] secrets
