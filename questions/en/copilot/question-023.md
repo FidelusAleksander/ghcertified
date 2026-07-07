@@ -1,6 +1,6 @@
 ---
 question: "How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-copilot-for-your-enterprise/managing-access-to-copilot-in-your-enterprise/viewing-copilot-license-usage-in-your-enterprise"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/view-license-usage"
 ---
 
 - [x] Number of seats × (Days elapsed / Total days in billing cycle)

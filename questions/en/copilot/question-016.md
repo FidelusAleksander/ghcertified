@@ -1,6 +1,6 @@
 ---
 question: "Which of the following options best describes GitHub Copilot?"
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
 ---
 
 - [x] An AI coding assistant that helps developers by suggesting code and completing code snippets.

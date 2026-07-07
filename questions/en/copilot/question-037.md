@@ -1,6 +1,6 @@
 ---
 question: "Which GitHub Copilot subscription plans support organization-level custom instructions?"
-documentation: "https://docs.github.com/en/copilot/customizing-copilot/adding-organization-custom-instructions-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions"
 ---
 
 - [ ] All plans that include GitHub Copilot

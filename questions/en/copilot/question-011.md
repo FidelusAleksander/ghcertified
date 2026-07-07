@@ -1,6 +1,6 @@
 ---
 question: "How can you provide GitHub Copilot with context to generate tailored responses for your repository?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions"
 ---
 
 - [x] By creating a file named `.github/copilot-instructions.md` in the repository
