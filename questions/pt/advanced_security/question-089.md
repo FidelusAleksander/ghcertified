@@ -1,10 +1,11 @@
 ---
-question: "Qual dessas NÃO é uma abordagem válida que se pode adotar para reduzir o tempo que leva para o workflow de análise do CodeQL ser concluído?" 
-documentation: "https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long"
+question: "Qual destas NÃO é uma abordagem válida que pode ser adotada para reduzir o tempo necessário para a conclusão do workflow de análise do CodeQL?" 
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/analysis-takes-too-long"
 ---
 
-- [x] Executar a análise em todos os eventos de push
+- [x] Executar a análise em cada evento de push
 - [ ] Usar runners com mais recursos de CPU/RAM
-- [ ] Paralelizar a análise para bases de código em várias linguagens
+- [ ] Paralelizar a análise para bases de código multilíngues
 - [ ] Ignorar arquivos e diretórios irrelevantes na análise
-- [ ] Reduzir o número de queries que são executadas
+- [ ] Reduzir o número de queries executadas
+
