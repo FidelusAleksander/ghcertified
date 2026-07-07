@@ -78,3 +78,5 @@ jobs:
           branch: fix/link-checker-${{ matrix.exam }}
           title: "fix: broken/redirected links in ${{ matrix.exam }}"
           body-path: ${{ env.COPILOT_SUMMARY_PATH }}
+          labels: link-checker
+          
