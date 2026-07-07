@@ -1,9 +1,9 @@
 ---
-question: "Co to jest graf zależności GitHub?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph"
+question: "Czym jest GitHub dependency graph?"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph"
 ---
 
-- [x] Jest to reprezentacja zależności i zależności zwrotnych repozytorium.
-- [ ] Graf zależności GitHub nie istnieje.
-- [ ] Jest to narzędzie, które automatycznie proponuje aktualizacje wersji zależności w repozytorium.
-- [ ] Jest to lista utrzymywana przez GitHub, zawierająca znane podatności w pakietach oprogramowania open source.
+- [x] To reprezentacja zależności i zależności zwrotnych danego repository.
+- [ ] Nie istnieje coś takiego jak GitHub dependency graph.
+- [ ] To narzędzie, które automatycznie proponuje aktualizacje wersji zależności w repository.
+- [ ] To lista utrzymywana przez GitHub znanych podatności w pakietach oprogramowania open source.
