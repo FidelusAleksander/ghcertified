@@ -1,6 +1,6 @@
 ---
 question: "Which of the following statements accurately describes the behavior of workflow jobs referencing an environment's protection rules?"
-documentation: "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment"
+documentation: "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments"
 ---
 
 - [x] workflow jobs won't start until all the environment's protection rules pass

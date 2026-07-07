@@ -1,6 +1,6 @@
 ---
 question: "Which of the following is a correct statement about GitHub Workflows and Actions?"
-documentation: "https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions"
+documentation: "https://docs.github.com/en/actions/get-started/understand-github-actions"
 ---
 
 - [ ] Each action is composed of one or more workflows which is composed of one or more jobs, and each job is composed of one or more steps

@@ -1,6 +1,6 @@
 ---
 question: "Which is true about workflows?"
-documentation: "https://docs.github.com/en/actions/using-workflows/about-workflows"
+documentation: "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows"
 ---
 
 - [x] Workflows can run one or multiple jobs at a time
