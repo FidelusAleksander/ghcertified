@@ -1,9 +1,10 @@
 ---
 question: "Które z poniższych opisuje sposób korzystania z Productivity API GitHub Copilot?"
-documentation: "https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/analyzing-usage-over-time-with-the-copilot-metrics-api"
+documentation: "https://docs.github.com/en/copilot/tutorials/roll-out-at-scale/assign-licenses/track-usage-and-adoption"
 ---
 
-- [ ] Aby zbierać dzienniki audytu
-- [ ] Aby wykluczyć określone pliki
+- [ ] Aby zbierać logi audytowe
+- [ ] Aby wykluczyć konkretne pliki
 - [x] Aby zbierać metryki użycia od członków organizacji
 - [ ] Aby automatycznie aktualizować Copilot
+
