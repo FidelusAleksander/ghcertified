@@ -1,6 +1,6 @@
 ---
-question: "¿Qué comando de comentario de Dependabot completará correctamente un pull request?"
-documentation: "https://docs.github.com/en/code-security/dependabot/working-with-dependabot/managing-pull-requests-for-dependency-updates#managing-dependabot-pull-requests-with-comment-commands"
+question: "¿Qué comando de comentario de Dependabot completará exitosamente un pull request?"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/working-with-dependabot/managing-pull-requests-for-dependency-updates#managing-dependabot-pull-requests-with-comment-commands"
 ---
 
 - [ ] `@dependabot close`
