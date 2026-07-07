@@ -1,9 +1,9 @@
 ---
-question: "Umieściłeś fałszywe sekrety w swoim kodzie testowym i zostały one wykryte przez GitHub's secret scanning. Co możesz zrobić, aby poinformować GitHub, że są to fałszywe sekrety używane w testach i mogą być pominięte przez secret scanning?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/excluding-folders-and-files-from-secret-scanning"
+question: "W swoim kodzie testowym zawarłeś fałszywe dane uwierzytelniające, które zostały wykryte przez funkcję skanowania sekretów GitHub. Co możesz zrobić, aby poinformować GitHub, że są to fałszywe dane używane w testach i mogą być pomijane przez skanowanie sekretów?"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/exclude-folders-and-files"
 ---
 
-- [x] Tworząc plik `secret_scanning.yml`, w którym zadeklarujesz ścieżki zawierające fałszywe sekrety, aby skanowanie je pominęło
-- [x] Zamknij alert Secret Scanning, wybierając powód zamknięcia `Used in tests`
-- [ ] W swoich plikach testowych dodaj komentarz `#gh_ignore: fake secret` do linii zawierającej fałszywy sekret.
-- [ ] Tworząc plik `.github/codeql.yml`, w którym zadeklarujesz ścieżki zawierające fałszywe sekrety, aby skanowanie je pominęło
+- [x] Tworząc plik `secret_scanning.yml`, w którym zadeklarujesz ścieżki, gdzie znajdują się fałszywe dane uwierzytelniające, aby były one pomijane podczas skanowania
+- [x] Zamykając powiadomienie Secret Scanning Alert z powodem zamknięcia `Used in tests`
+- [ ] Dodając w plikach testowych komentarz `#gh_ignore: fake secret` w linii, w której znajduje się fałszywy sekret.
+- [ ] Tworząc plik `.github/codeql.yml`, w którym zadeklarujesz ścieżki, gdzie znajdują się fałszywe dane uwierzytelniające, aby były one pomijane podczas skanowania
