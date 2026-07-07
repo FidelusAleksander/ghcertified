@@ -1,6 +1,6 @@
 ---
 question: "What is the default spending limit for GitHub Actions on monthly-billed accounts?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
 ---
 
 - [x] The default spending limit is 0$, preventing additional usage beyond the included amounts.

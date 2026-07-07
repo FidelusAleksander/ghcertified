@@ -1,6 +1,6 @@
 ---
 question: "How can an organization owner find statistics on license usage for their GitHub Enterprise Server?"
-documentation: "https://docs.github.com/en/enterprise-server/billing/managing-your-license-for-github-enterprise/viewing-license-usage-for-github-enterprise"
+documentation: "https://docs.github.com/en/enterprise-server@3.21/billing/how-tos/manage-plan-and-licenses/view-enterprise-usage"
 ---
 
 - [x] By navigating to the `Site admin` dashboard to view the license usage under `Enterprise account` settings.

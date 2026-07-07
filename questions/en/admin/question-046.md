@@ -1,6 +1,6 @@
 ---
 question: "How can an organization enhance the security of their GitHub Actions workflows?"
-documentation: "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions"
+documentation: "https://docs.github.com/en/actions/reference/security/secure-use"
 ---
 
 - [x] By adopting security practices like secure handling of secrets and regularly reviewing audit logs for anomalies.
