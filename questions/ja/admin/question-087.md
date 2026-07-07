@@ -1,9 +1,9 @@
 ---
-question: "GitHubで組織にセルフホストランナーを追加するには何が必要ですか？"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+question: "GitHubの組織にセルフホストランナーを追加するために必要なものは何ですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners"
 ---
 
-- [x] Organization ownerアクセスを持ち、組織設定に移動して、Actionsを選択し、次にRunnersを選択し、セルフホストランナーのセットアップ手順に従う。
-- [ ] 特別な権限を持たない一般メンバーアクセスを使用し、セルフホストランナーを自動的に登録するGitHub Actionを利用する。
-- [ ] 組織内のパブリックリポジトリへのアクセスと、ランナーとして設定するサーバー上での手動スクリプトの実行。
-- [ ] GitHubのウェブサイトでフォームを提出して、GitHubチームに組織にセルフホストランナーを手動で追加してもらうよう依頼。
+- [x] 組織オーナー権限を持ち、組織設定に移動して、Actionsを選択し、その後Runnersを選択してセルフホストランナーのセットアップ手順に従う。
+- [ ] 特別な権限を持たない一般メンバー権限を利用して、GitHub Actionを用いてセルフホストランナーを自動登録する。
+- [ ] 組織内のパブリックリポジトリへのアクセス権を持ち、ランナーとして使用するサーバーで手動でスクリプトを実行する。
+- [ ] GitHubのウェブサイト上のフォームを送信して、GitHubチームに組織にセルフホストランナーを手動で追加するよう依頼する。
