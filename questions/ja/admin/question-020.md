@@ -1,9 +1,9 @@
 ---
-question: "Enterprise Managed Usersのユーザー名とプロフィール情報に関するどの記述が正しいですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+question: "Enterprise Managed User のユーザー名とプロフィール情報に関して正しい記述はどれですか？"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users"
 ---
 
-- [x] ユーザー名とプロフィール情報はエンタープライズのIdPを通じて設定され、ユーザー自身が変更することはできません。
-- [ ] ユーザーはGitHub上でいつでも自分のユーザー名とプロフィール情報を変更できます。
-- [ ] ユーザー名とプロフィール情報はGitHubアカウント設定中にユーザー自身が設定します。
-- [ ] GitHubはセキュリティ向上のためにランダムなユーザー名とプロフィール情報を自動的に割り当てます。
+- [x] ユーザー名とプロフィール情報はエンタープライズの IdP を通じて設定され、ユーザーが変更することはできません。
+- [ ] ユーザーは GitHub 上でいつでも自分のユーザー名やプロフィール情報を変更できます。
+- [ ] ユーザー名とプロフィール情報は GitHub アカウント設定時にユーザー自身で設定されます。
+- [ ] GitHub はセキュリティ強化のためランダムなユーザー名とプロフィール情報を自動的に割り当てます。
