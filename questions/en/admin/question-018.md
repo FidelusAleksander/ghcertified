@@ -1,6 +1,6 @@
 ---
 question: "How are user accounts provisioned with Enterprise Managed Users?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users"
 ---
 
 - [x] User accounts are provisioned by the enterprise's IdP, with access provided to GitHub Enterprise Cloud.

@@ -1,6 +1,6 @@
 ---
 question: "Which of the following is a key feature of GitHub Enterprise Server?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: "https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server"
 ---
 
 - [x] Runs on your infrastructure and governed by access and security controls you define
