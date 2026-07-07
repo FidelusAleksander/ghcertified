@@ -1,6 +1,6 @@
 ---
 question: "What is InnerSource?"
-documentation: "https://resources.github.com/innersource/what-is-innersource/"
+documentation: "https://github.com/resources/articles/innersource"
 ---
 
 - [x] InnerSource refers to the practice of applying open source principles within an organization

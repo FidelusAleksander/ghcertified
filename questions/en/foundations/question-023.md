@@ -1,6 +1,6 @@
 ---
 question: "Is GitHub Copilot free to use?"
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [ ] No, it requires a paid subscription

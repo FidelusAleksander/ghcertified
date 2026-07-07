@@ -1,6 +1,6 @@
 ---
 question: "What are pinned repositories on GitHub?"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [x] Pinned repositories are repositories that you have pinned to the top of your GitHub profile.
