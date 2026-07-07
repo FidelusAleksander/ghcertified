@@ -1,9 +1,9 @@
 ---
-question: "GitHub Dependency graph は、プロジェクトが使用している依存関係をどのようにして把握しますか？"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+question: "GitHub の依存関係グラフは、プロジェクトが使用している依存関係をどのように認識しますか？"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems"
 ---
 
-- [x] GitHub は、リポジトリにコミットされたマニフェストおよびロックファイルから自動的に依存関係を取得します
-- [x] Dependency submission API を使用して依存関係を手動で追加できます
-- [ ] GitHub は、リポジトリコードをスキャンして外部パッケージのインポートステートメントを検出します
-- [ ] GitHub Actions ワークフローを追加し、新しいコミットがリポジトリにプッシュされるたびに公式の `actions/dependency-graph` GitHub Action を使用して依存関係をグラフに追加する必要があります
+- [x] GitHub は、リポジトリにコミットされたマニフェストやロックファイルから依存関係を自動的に抽出します
+- [x] 依存関係は Dependency submission API を使用して手動で追加することができます
+- [ ] GitHub は外部パッケージのインポートステートメントをリポジトリコード内でスキャンします
+- [ ] 新しいコミットがリポジトリにプッシュされるたびに依存関係をグラフに追加する公式な `actions/dependency-graph` GitHub Action を使用する GitHub Actions ワークフローを追加する必要があります
