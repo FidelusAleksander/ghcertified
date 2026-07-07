@@ -1,10 +1,10 @@
 ---
-question: "Które z tych funkcji oferuje GitHub Copilot for Business, a nie GitHub Copilot for Individuals?"  
+question: "Które z tych funkcji oferuje GitHub Copilot for Business, a których nie ma GitHub Copilot for Individuals?"  
 draft: false  
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
-- [x] Zarządzanie polityką na poziomie organizacji, w tym ograniczenie sugestii modelu opartych na publicznym kodzie  
-- [ ] Zwolnienie ze wszystkich opłat za użytkowanie  
+- [x] Zarządzanie polityką na poziomie organizacji, w tym możliwość ograniczenia sugestii modelu opartych na publicznym kodzie  
+- [ ] Zwolnienie z wszystkich opłat za korzystanie  
 - [ ] Całodobowe wsparcie telefoniczne od zespołu GitHub Copilot  
-- [ ] Lokalne hostowanie modelu AI za GitHub Copilot  
+- [ ] Lokalny hosting modelu AI używanego przez GitHub Copilot  
