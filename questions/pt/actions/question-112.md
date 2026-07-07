@@ -1,9 +1,9 @@
 ---
-question: "Qual nível de acesso é necessário em um repositório do GitHub para excluir arquivos de log de execuções de workflows?"
-documentation: "https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-workflow-run-logs"
+question: "Qual nível de acesso é necessário em um repositório GitHub para excluir arquivos de log de execuções de workflow?"
+documentation: "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
 ---
 
-- [x] write
+- [x] write 
 - [ ] read
 - [ ] admin
 - [ ] owner
