@@ -3,7 +3,7 @@ name: Links
 on:
   workflow_dispatch: 
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 1 * *"
       timezone: "Europe/Warsaw"
   pull_request:
     paths:
@@ -38,11 +38,11 @@ jobs:
           workingDirectory: questions/en/${{ matrix.exam }}
 
       - name: Install Copilot CLI
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         run: npm install -g @github/copilot
 
       - name: Fix links with Copilot
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -71,10 +71,10 @@ jobs:
             --allow-tool=shell --allow-tool=write --allow-tool=context7 --allow-all-urls --no-ask-user --max-ai-credits=${{ env.COPILOT_MAX_AI_CREDITS }}
 
       - name: Open PR with fixes
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
         with:
-          add-paths: questions/en/**
+          add-paths: questions/en/${{ matrix.exam }}/**
           branch: fix/link-checker-${{ matrix.exam }}
           title: "fix: broken/redirected links in ${{ matrix.exam }}"
           body-path: ${{ env.COPILOT_SUMMARY_PATH }}
