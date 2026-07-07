@@ -1,10 +1,10 @@
 ---
-question: "Który z nich jest prawidłowym plikiem konfiguracyjnym `dependabot.yml`?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
+question: "Który z tych plików `dependabot.yml` jest poprawną konfiguracją?"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
 ---
 
 - [x] 
-```yaml
+```yaml 
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -13,7 +13,7 @@ updates:
       interval: "daily"
 ```
 - [ ] 
-```yaml
+```yaml 
 version: 2
 config:
   - directory: "/"
@@ -21,7 +21,7 @@ config:
       interval: "daily"
 ```
 - [ ] 
-```yaml
+```yaml 
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -30,7 +30,7 @@ updates:
       interval: "everyday"
 ```
 - [ ] 
-```yaml
+```yaml 
 version: 2
 config:
   - package-ecosystem: "npm"
