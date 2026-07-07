@@ -1,10 +1,10 @@
 ---
-question: "Las alertas de Dependabot están habilitadas por defecto en:"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+question: "Dependabot Alerts están habilitadas de forma predeterminada en:"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
 ---
 
-- [x] Las alertas de Dependabot no están habilitadas por defecto en ningún repositorio.
+- [x] Dependabot Alerts no están habilitadas de forma predeterminada en ningún repositorio.
 - [ ] Solo en repositorios públicos.
-> GitHub detecta dependencias vulnerables en repositorios públicos y muestra el gráfico de dependencias, pero no genera alertas de Dependabot por defecto.
+> GitHub detecta dependencias vulnerables en repositorios públicos y muestra el gráfico de dependencias, pero no genera alertas de Dependabot de forma predeterminada.
 - [ ] Todos los repositorios.
 - [ ] Solo en repositorios privados.
