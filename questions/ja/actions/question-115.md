@@ -1,10 +1,9 @@
 ---
-question: "ワークフローを再実行するために必要な権限レベルは何ですか？"
-documentation: "https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs"
+question: "ワークフローを再実行するにはどのレベルの権限が必要ですか"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/re-run-workflows-and-jobs"
 ---
 
-- [x] write 
-- [ ] read
-- [ ] admin
-- [ ] owner
----
+- [x] 書き込み
+- [ ] 読み取り
+- [ ] 管理者
+- [ ] オーナー
