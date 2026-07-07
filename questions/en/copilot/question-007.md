@@ -1,6 +1,6 @@
 ---
 question: "Which is true about Copilot's Content exclusions?"
-documentation: "https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot"
+documentation: "https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot"
 ---
 
 - [x] Context exclusions can be configured at the repository and organization level

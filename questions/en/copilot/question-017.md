@@ -1,6 +1,6 @@
 ---
 question: "How does GitHub Copilot handle data retention for code suggestions in the IDE?"
-documentation: "https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/"
+documentation: "https://learn.github.com/learning-pathways/github-copilot"
 ---
 
 - [x] Suggestions are held temporarily in memory and discarded after use, not written to disk
