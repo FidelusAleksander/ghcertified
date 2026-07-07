@@ -1,6 +1,6 @@
 ---
-question: "次のワークフロー構成が`octo/my-dev-repo`リポジトリに対してトリガーされた場合、正しいのはどれですか？"
-documentation: "https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution"
+question: "次のワークフロー構成について、`octo/my-dev-repo` リポジトリでトリガーされた場合に当てはまることは何ですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions"
 ---
 
 ```yaml
@@ -17,7 +17,7 @@ jobs:
                   node-version: '14'
             - run: npm install -g bats
 ```
-- [x] `production-deploy`ジョブはスキップとしてマークされる
-- [ ] `production-deploy`ジョブはエラーになる
-- [ ] `production-deploy`ジョブは3つのステップを実行する
-- [ ] `production-deploy`ジョブは`node-version`が`14`の場合に実行される
+- [x] `production-deploy` ジョブはスキップとしてマークされる
+- [ ] `production-deploy` ジョブはエラーになる
+- [ ] `production-deploy` ジョブは3つのステップを実行する
+- [ ] `production-deploy` ジョブは `node-version` が`14`の場合に実行される
