@@ -10,16 +10,17 @@ on:
       - .github/workflows/link-checker.yml
 
 permissions:
-  contents: read
-  issues: write
+  contents: write
+  pull-requests: write
+  copilot-requests: write
+
+env:
+  LYCHEE_REPORT_PATH: lychee/out.md
+  COPILOT_SUMMARY_PATH: summary.md
 
 jobs:
   check-links:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        exam: [actions, admin, advanced_security, agentic, copilot, foundations]
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: Link Checker
@@ -27,14 +28,34 @@ jobs:
         uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
         with:
           fail: false
-          args: --verbose --no-progress './**/*.md' --exclude-all-private --exclude 'file:///*'
-          workingDirectory: questions/en/${{ matrix.exam }}
-          
+          output: ${{ env.LYCHEE_REPORT_PATH }}
+          args: --verbose --no-progress 'questions/en/**/*.md' --exclude-all-private --exclude 'file:///*'
 
-      - name: Create Issue From File
+      - name: Install Copilot CLI
         if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
-        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+        run: npm install -g @github/copilot
+
+      - name: Fix links with Copilot
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          copilot -p "Read the lychee link-checker report at ${{ env.LYCHEE_REPORT_PATH }}.
+          Only edit files under questions/en/ (never other questions/<lang>/ dirs).
+          For each redirected link, replace it with its final resolved URL.
+          For each broken (4xx/5xx) link, replace it with an obviously correct replacement
+          only if confident, otherwise leave it unchanged and list it as unresolved.
+          Don't change anything else in the files.
+          When done, write a short Markdown summary with '## Fixed' and '## Unresolved'
+          sections listing the affected file and URL for each link to ${{ env.COPILOT_SUMMARY_PATH }}" \
+            --allow-tool=write --no-ask-user
+
+      - name: Open PR with fixes
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
         with:
-          title: "Link Checker Report: ${{ matrix.exam }}"
-          content-filepath: questions/en/${{ matrix.exam }}/lychee/out.md
+          add-paths: questions/en/**
+          branch: fix/link-checker
+          title: "fix: broken/redirected links found by link checker"
+          body-path: ${{ env.COPILOT_SUMMARY_PATH }}
           labels: good first issue, bug
