@@ -1,9 +1,9 @@
 ---
-question: "GitHub組織でセルフホストランナーグループを作成するにはどのようなステップが必要ですか？"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+question: "GitHubで組織のセルフホストランナーグループを作成するには、どのような手順が必要ですか？"
+documentation: "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access"
 ---
 
-- [x] 組織設定に移動し、Actionsを選択、Runner groupsをクリックして新しいグループを作成し、リポジトリアクセスポリシーを割り当てます。
-- [ ] `.github`リポジトリ内の`.gitconfig`ファイルを変更して、ランナーグループと関連するアクセスポリシーを指定します。
-- [ ] GitHubサポートに連絡してランナーグループの作成を依頼し、アクセス構成のためのリポジトリリストを提供します。
-- [ ] リポジトリのアクティビティと使用パターンに基づいて自動的にランナーグループを生成するGitHub Actionsワークフローを使用します。
+- [x] 組織の設定に移動し、Actionsを選択、Runnerグループをクリック、新しいグループを作成してリポジトリのアクセスポリシーを割り当てます。
+- [ ] `.github`リポジトリ内で、ランナーグループと関連するアクセスポリシーを指定するために`.gitconfig`ファイルを変更します。
+- [ ] ランナーグループの作成を依頼し、アクセス構成のためのリポジトリ一覧を提出するようGitHubサポートに連絡します。
+- [ ] リポジトリアクティビティと使用パターンに基づいてランナーグループを自動生成するためのGitHub Actionsワークフローを使用します。
