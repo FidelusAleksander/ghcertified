@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo puedes evitar que los commits que contienen credenciales de proveedores de nube se publiquen en GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/push-protection"
 ---
 
 - [x] Habilita una regla de protección contra el envío de secretos para tu repositorio u organización.

@@ -1,6 +1,6 @@
 ---
 question: "次のうち、GitHub Codespacesのライフサイクルに関する記述として正しいものはどれですか？"
-documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle"
 ---
 
 - [x] Codespaceのライフサイクルは、Codespaceを作成した時に始まり、それを削除した時に終了します。

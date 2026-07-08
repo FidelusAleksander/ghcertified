@@ -1,6 +1,6 @@
 ---
 question: "コードスキャンのGitHub Actionsワークフローに`paths-ignore`キーワードを追加する効果は何ですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#avoiding-unnecessary-scans-of-pull-requests"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#avoiding-unnecessary-scans-of-pull-requests"
 ---
 
 ```yaml

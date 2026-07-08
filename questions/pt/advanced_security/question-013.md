@@ -1,6 +1,6 @@
 ---
 question: "Como você pode excluir determinados diretórios ou arquivos da verificação de segredos?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/exclude-folders-and-files"
 ---
 
 - [x] Criando um arquivo `secret_scanning.yml` e incluindo os caminhos que não devem ser verificados

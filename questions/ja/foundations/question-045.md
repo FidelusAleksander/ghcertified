@@ -1,6 +1,6 @@
 ---
 question: "リポジトリのセキュリティタブで何を見つけることができますか？"
-documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
+documentation: "https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository"
 ---
 
 - [x] 依存関係の脆弱性、コードスキャンの結果、シークレットスキャンアラートなど、そのリポジトリのセキュリティ概要  

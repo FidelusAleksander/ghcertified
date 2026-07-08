@@ -1,6 +1,6 @@
 ---
 question: "GitHub Copilot のサブスクリプションを有効化した後、GitHub Copilot を使い始めるにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/quickstart"
 ---
 
 - [x] Visual Studio Code や JetBrains などのサポートされている IDE のいずれかで GitHub Copilot をセットアップし、コーディングを開始します

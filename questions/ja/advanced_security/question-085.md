@@ -1,6 +1,6 @@
 ---
 question: "CodeQL分析の結果を表示することに関する次の記述のうち、正しいものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository"
+documentation: "https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts"
 ---
 
 - [x] リポジトリのセキュリティタブで、すべてのアラートの概要を表示するには書き込み権限が必要です。

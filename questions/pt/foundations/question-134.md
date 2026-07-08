@@ -1,7 +1,7 @@
 ---
 question: "Qual das seguintes opções descreve melhor a varredura de segredos do GitHub?"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [ ] Um recurso que analisa issues em busca de credenciais não verificadas e as exclui automaticamente.  

@@ -1,6 +1,6 @@
 ---
 question: "O que a configuração padrão de análise CodeQL no GitHub faz?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-code-scanning-with-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql"
 ---
 
 - [x] Detecta automaticamente linguagens, seleciona o conjunto de consultas padrão e configura gatilhos de análise

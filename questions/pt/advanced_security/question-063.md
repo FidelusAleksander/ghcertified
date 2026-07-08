@@ -1,6 +1,6 @@
 ---
 question: "A verificação do CodeQL oferece suporte a:"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql"
 ---
 
 - [x] Tanto linguagens compiladas quanto interpretadas  

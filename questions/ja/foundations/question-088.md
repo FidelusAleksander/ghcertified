@@ -1,6 +1,6 @@
 ---
 question: "プルリクエストをIssueにリンクする方法は？"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue"
 ---
 
 - [x] プルリクエストまたはIssueビューのいずれかから手動でリンクする。

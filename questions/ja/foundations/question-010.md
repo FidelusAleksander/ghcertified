@@ -1,6 +1,6 @@
 ---
 question: "GitHub Projects と GitHub Projects classic の違いは何ですか？"
-documentation: "https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects"
 ---
 
 - [x] GitHub Projects は、新しい GitHub の体験であり、従来の GitHub Projects classic に比べて多くの新機能と改善を提供します。

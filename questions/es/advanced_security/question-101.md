@@ -1,6 +1,6 @@
 ---
 question: "Las alertas de Dependabot están habilitadas por defecto en:"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Las alertas de Dependabot no están habilitadas por defecto en ningún repositorio.

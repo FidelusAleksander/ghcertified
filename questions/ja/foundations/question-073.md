@@ -1,6 +1,6 @@
 ---
 question: "GitHub Flowとは何ですか？"
-documentation: "https://docs.github.com/en/get-started/quickstart/github-flow"
+documentation: "https://docs.github.com/en/get-started/using-github/github-flow"
 ---
 
 - [x] 開発者が作業中のそれぞれの新しい変更のためにブランチを作成し、その後、コードレビュー、テスト、メインブランチへのマージを行うためのプルリクエストを作成する、ブランチベースのワークフローを指します。

@@ -1,7 +1,7 @@
 ---
 question: "次のうち、GitHub Pagesに関する正しい記述はどれですか？"  
 draft: false  
-documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
 ---
 
 - [ ] GitHub Pagesを使用すると、組織メンバーのみがアクセス可能なプライベートウェブサイトを無料でホストできます。  

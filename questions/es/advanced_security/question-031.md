@@ -1,6 +1,6 @@
 ---
 question: "¿Cuáles de estas afirmaciones sobre Dependabot Alerts son verdaderas?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Dependen parcialmente de la GitHub Advisory Database

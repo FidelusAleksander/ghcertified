@@ -1,6 +1,6 @@
 ---
 question: "GitHub 秘密スキャンパートナープログラムについて正しいものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: "https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program"
 ---
 
 - [x] サービスプロバイダーが発行する秘密の正規表現パターンを GitHub に提供するプログラムで、GitHub 秘密スキャンがそれらを認識できるようにします。

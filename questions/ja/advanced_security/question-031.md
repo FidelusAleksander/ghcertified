@@ -1,6 +1,6 @@
 ---
 question: "Dependabot Alertsに関する次の記述のうち正しいものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] GitHub Advisory Database に部分的に依存しています

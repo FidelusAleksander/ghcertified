@@ -1,6 +1,6 @@
 ---
 question: "Jaki jest cel programu partnerskiego skanowania sekretów?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: "https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program"
 ---
 
 - [x] Dostawcy usług mogą współpracować z GitHub, aby format ich sekretów był rozpoznawany przez GitHub secret scanning.

@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo analiza CodeQL el código en GitHub?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql"
 ---
 
 - [x] Genera una base de datos de CodeQL y ejecuta consultas para identificar problemas, mostrando los resultados como alertas de análisis de código

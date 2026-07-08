@@ -1,6 +1,6 @@
 ---
 question: "Dependabotの自動トリアージルールとは何ですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/auto-triage-dependabot-alerts"
 ---
 
 - [x] Dependabotアラートを特定の条件に一致する場合に自動で却下する機能です。

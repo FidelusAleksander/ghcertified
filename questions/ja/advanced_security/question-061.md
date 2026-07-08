@@ -1,6 +1,6 @@
 ---
 question: "GitHub Actions ワークフローで CodeQL 分析を使用する場合、スキャンはどのくらいの頻度でトリガーされますか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning"
 ---
 
 - [x] コードスキャンは、リポジトリ内で発生するさまざまなイベントに対してトリガーされる可能性があります。

@@ -1,7 +1,7 @@
 ---
 question: "Qual dessas afirmações sobre itens fixados no seu perfil do GitHub é verdadeira?"  
 draft: false  
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [ ] Você pode fixar até 10 repositórios no seu perfil.  

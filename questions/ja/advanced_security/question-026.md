@@ -1,6 +1,6 @@
 ---
 question: "GitHub Dependency graph は、プロジェクトが使用している依存関係をどのようにして把握しますか？"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems"
 ---
 
 - [x] GitHub は、リポジトリにコミットされたマニフェストおよびロックファイルから自動的に依存関係を取得します

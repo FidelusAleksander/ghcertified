@@ -1,6 +1,6 @@
 ---
 question: "¿Qué es el GitHub Flow?"
-documentation: "https://docs.github.com/en/get-started/quickstart/github-flow"
+documentation: "https://docs.github.com/en/get-started/using-github/github-flow"
 ---
 
 - [x] Se refiere a un flujo de trabajo basado en ramas donde los desarrolladores crean una rama para cada nuevo cambio en el que están trabajando, y luego abren pull requests para que su código sea revisado, probado y fusionado en la rama principal.

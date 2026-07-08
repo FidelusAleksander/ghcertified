@@ -1,6 +1,6 @@
 ---
 question: "GitHub でのシークレットスキャンについて、これらの記述のうち正しくないものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] シークレットスキャンは、シークレットの安全な保存と管理のためのツールです。

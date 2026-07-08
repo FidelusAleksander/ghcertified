@@ -1,6 +1,6 @@
 ---
 question: "Czym jest GitHub Dependabot dependency graph?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph"
 ---
 
 - [x] Jest to reprezentacja zależności i zależności zwrotnych repozytorium.

@@ -1,6 +1,6 @@
 ---
 question: "Quem pode ativar os alertas do Dependabot em um repositório?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Proprietários do repositório e pessoas com acesso de administrador

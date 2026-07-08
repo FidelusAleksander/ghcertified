@@ -1,6 +1,6 @@
 ---
 question: "Qual dessas afirmações é verdadeira sobre o programa de parceiros de verificação de segredos do GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: "https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program"
 ---
 
 - [x] É um programa em que os provedores de serviço podem fornecer ao GitHub os padrões de regex dos segredos que eles emitem para que a verificação de segredos do GitHub possa reconhecê-los.

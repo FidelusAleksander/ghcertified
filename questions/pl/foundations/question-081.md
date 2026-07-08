@@ -1,6 +1,6 @@
 ---
 question: "Czym są przypięte repozytoria na GitHub?"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [x] Przypięte repozytoria to repozytoria, które zostały przez Ciebie przypięte na górze Twojego profilu na GitHub.

@@ -1,6 +1,6 @@
 ---
 question: "GitHub 秘密スキャニングパートナープログラムに新しい秘密パターンが追加または更新された場合の動作は何ですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning#accessing-secret-scanning-alerts"
 ---
 
 - [x] GitHub は、秘密スキャニングが有効になっている公開リポジトリ内のすべての履歴コードコンテンツをスキャンします

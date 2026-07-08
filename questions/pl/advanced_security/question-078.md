@@ -1,6 +1,6 @@
 ---
 question: "Jak używać niestandardowego pliku konfiguracji CodeQL w ramach GitHub Actions workflow?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#using-a-custom-configuration-file"
 ---
 
 - [x] Poprzez jawne podanie ścieżki do pliku konfiguracji w parametrze wejściowym `config-file` akcji `github/codeql-action/init`

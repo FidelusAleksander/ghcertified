@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de las siguientes opciones describe mejor el escaneo de secretos?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] El escaneo de secretos examina tu repository en busca de secretos como claves privadas o tokens.

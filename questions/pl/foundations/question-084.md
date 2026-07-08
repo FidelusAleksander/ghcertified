@@ -1,6 +1,6 @@
 ---
 question: "Czym są polecenia slash GitHub?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/about-slash-commands"
 ---
 
 - [x] Jest to sposób na szybkie wstawianie złożonego Markdown do komentarzy i opisów pull requestów lub issues.

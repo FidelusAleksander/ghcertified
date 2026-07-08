@@ -1,7 +1,7 @@
 ---
 question: "Które z poniższych stwierdzeń dotyczących GitHub Pages jest poprawne?"  
 draft: false  
-documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
 ---
 
 - [ ] GitHub Pages pozwala na hostowanie prywatnej strony internetowej za darmo, dostępnej tylko dla członków organizacji.  

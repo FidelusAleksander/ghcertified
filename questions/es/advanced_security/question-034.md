@@ -1,6 +1,6 @@
 ---
 question: "¿Qué indican las alertas de Dependabot en GitHub?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] La presencia de una dependencia vulnerable o malware en tu repository

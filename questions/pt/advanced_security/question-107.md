@@ -1,6 +1,6 @@
 ---
 question: "O que são as regras de triagem automática do Dependabot?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/auto-triage-dependabot-alerts"
 ---
 
 - [x] É um recurso que permite ao Dependabot dispensar automaticamente alertas do Dependabot que correspondem a determinados critérios.

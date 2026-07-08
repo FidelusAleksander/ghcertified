@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de estas afirmaciones no es verdadera sobre el escaneo de secretos en GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] El escaneo de secretos es una herramienta para almacenamiento y gestión segura de secretos.

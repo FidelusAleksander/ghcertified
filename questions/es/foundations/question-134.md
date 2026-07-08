@@ -1,7 +1,7 @@
 ---
 question: "¿Cuál de las siguientes opciones describe mejor el escaneo de secretos de GitHub?"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [ ] Una función que escanea issues en busca de credenciales no verificadas y las elimina automáticamente.  

@@ -1,6 +1,6 @@
 ---
 question: "追加のCodeQLクエリスイートを使用して、CodeQLの高度なスキャン設定をどのようにカスタマイズできますか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options"
 ---
 
 - [x] カスタム設定ファイルを使用し、そこで追加のクエリを定義する

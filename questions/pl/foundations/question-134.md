@@ -1,7 +1,7 @@
 ---
 question: "Która z poniższych opcji najlepiej opisuje GitHub secret scanning?"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [ ] Funkcja, która skanuje zgłoszenia pod kątem nieweryfikowanych danych uwierzytelniających i automatycznie je usuwa.  

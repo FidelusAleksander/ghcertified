@@ -1,6 +1,6 @@
 ---
 question: "InnerSourceとは何ですか？"
-documentation: "https://resources.github.com/innersource/what-is-innersource/"
+documentation: "https://github.com/resources/articles/innersource"
 ---
 
 - [x] InnerSourceは、オープンソースの原則を組織内で適用する実践を指します

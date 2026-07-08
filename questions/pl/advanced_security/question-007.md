@@ -1,6 +1,6 @@
 ---
 question: "Które z poniższych najlepiej opisuje skanowanie sekretów?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] Skanowanie sekretów przeszukuje Twoje repozytorium w poszukiwaniu sekretów, takich jak klucze prywatne czy tokeny.

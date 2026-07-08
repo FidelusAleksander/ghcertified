@@ -1,6 +1,6 @@
 ---
 question: "GitHub Copilotは無料で利用できますか？"
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [ ] いいえ、有料サブスクリプションが必要です

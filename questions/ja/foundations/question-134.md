@@ -1,7 +1,7 @@
 ---
 question: "次のうち、GitHubのシークレットスキャンを最もよく表しているのはどれですか？"  
 draft: false  
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [ ] 認証されていない資格情報を検出して自動的に削除する機能。  

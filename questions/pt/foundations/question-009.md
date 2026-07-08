@@ -1,6 +1,6 @@
 ---
 question: "Quais são as diferentes opções que permitem automatizar operações no seu projeto do GitHub?"
-documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/"
+documentation: "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project"
 ---
 
 - [x] Workflows do projeto

@@ -1,6 +1,6 @@
 ---
 question: "シークレットスキャンについて最もよく説明しているものはどれですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] Secret scanningは、リポジトリ内の秘密情報（プライベートキーやトークンなど）をスキャンします。

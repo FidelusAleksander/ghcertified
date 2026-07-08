@@ -1,6 +1,6 @@
 ---
 question: "次のうち、GitHub Actionsの一般的な使用例はどれですか？"
-documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration"
+documentation: "https://docs.github.com/en/actions/get-started/continuous-integration"
 ---
 
 - [x] プルリクエストをマージする前に自動テストを実行する  

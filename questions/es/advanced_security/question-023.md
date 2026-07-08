@@ -1,6 +1,6 @@
 ---
 question: "¿Qué información proporcionan las alertas de Dependabot?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Las alertas de Dependabot te indican que tu repository utiliza un paquete que es inseguro.

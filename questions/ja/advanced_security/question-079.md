@@ -1,6 +1,6 @@
 ---
 question: "GitHub Actions ワークフロー内で実行する CodeQL クエリを指定できる場所はどこですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#running-additional-queries"
 ---
 
 - [x] `github/codeql-action/init` アクションの `queries` 入力パラメータ内

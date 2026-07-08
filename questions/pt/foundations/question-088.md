@@ -1,6 +1,6 @@
 ---
 question: "Como você pode vincular um pull request a uma issue?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue"
 ---
 
 - [x] Manualmente, a partir da visualização do pull request ou da issue.

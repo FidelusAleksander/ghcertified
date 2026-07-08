@@ -1,6 +1,6 @@
 ---
 question: "どのようなシナリオでGitHub IssuesがDiscussionsよりも効果的ですか？"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
 ---
 
 - [ ] チームと一緒に発表やニュースを共有するとき。

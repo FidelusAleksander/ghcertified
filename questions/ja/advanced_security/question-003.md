@@ -1,6 +1,6 @@
 ---
 question: "Repository Security Advisories とは何ですか？"
-documentation: "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories"
+documentation: "https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/repository-security-advisories"
 ---
 
 - [x] リポジトリのメンテナーがコードベース内の脆弱性やセキュリティ問題について議論するための非公開スペース。

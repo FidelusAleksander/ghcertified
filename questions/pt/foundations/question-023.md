@@ -1,6 +1,6 @@
 ---
 question: "O GitHub Copilot é gratuito para usar?"
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [ ] Não, é necessário uma assinatura paga

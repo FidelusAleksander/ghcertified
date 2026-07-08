@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo puedes automatizar la desestimación de alertas de baja gravedad de Dependabot?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-auto-triage-rules/about-dependabot-auto-triage-rules"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/auto-triage-dependabot-alerts"
 ---
 
 - [x] Usando las reglas de auto-triage de Dependabot.

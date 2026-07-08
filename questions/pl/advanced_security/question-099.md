@@ -1,6 +1,6 @@
 ---
 question: "Które z tych stwierdzeń najlepiej definiuje podatną zależność?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Podatna zależność to zależność, od której projekt zależy, zawierająca luki w zabezpieczeniach, które mogą zostać wykorzystane, zagrażając bezpieczeństwu projektu.

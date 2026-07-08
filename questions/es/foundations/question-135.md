@@ -1,7 +1,7 @@
 ---
 question: "¿Cuál de estas afirmaciones sobre GitHub Pages es correcta?"  
 draft: false  
-documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+documentation: "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
 ---
 
 - [ ] GitHub Pages te permite alojar un sitio web privado de forma gratuita, accesible solo por miembros de la organización.  

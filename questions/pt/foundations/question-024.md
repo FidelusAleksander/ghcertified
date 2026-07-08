@@ -1,6 +1,6 @@
 ---
 question: "Quais são as diferenças entre GitHub Copilot Individual e GitHub Copilot Business?"
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [x] GitHub Copilot Individual só pode ser usado por contas pessoais e GitHub Copilot Business é usado por organizações e empresas

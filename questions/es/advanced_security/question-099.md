@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de estas afirmaciones define mejor una dependencia vulnerable?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Una dependencia vulnerable es una dependencia de la que depende un proyecto, que contiene fallos de seguridad que podrían ser explotados, comprometiendo la seguridad del proyecto.

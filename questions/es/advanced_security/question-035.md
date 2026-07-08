@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál es el propósito del análisis de código en GitHub?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning"
 ---
 
 - [x] Identificar vulnerabilidades y errores en el código

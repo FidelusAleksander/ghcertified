@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de estos es un caso de uso común para GitHub Actions?"
-documentation: "https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration"
+documentation: "https://docs.github.com/en/actions/get-started/continuous-integration"
 ---
 
 - [x] Ejecutar pruebas automatizadas antes de fusionar un pull request

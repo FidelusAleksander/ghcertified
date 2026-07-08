@@ -1,6 +1,6 @@
 ---
 question: "GitHub Codespaceとは何ですか？"
-documentation: "https://docs.github.com/en/codespaces/overview"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces"
 ---
 
 - [x] リポジトリ用に特別に設定された事前構成済みの開発環境です。ローカル開発環境を設定することなく、プロジェクト用のコードを書くことを直ちに開始できます。

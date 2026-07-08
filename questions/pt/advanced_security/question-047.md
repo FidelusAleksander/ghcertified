@@ -1,6 +1,6 @@
 ---
 question: "O que acontece quando um segundo arquivo de resultados SARIF é enviado para o GitHub para um único commit?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/using-code-scanning-with-your-existing-ci-system#uploading-your-results-to-github"
+documentation: "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/use-with-existing-ci-system#uploading-your-results-to-github"
 ---
 
 - [x] Ele substitui o conjunto de dados original.

@@ -1,6 +1,6 @@
 ---
 question: "Jaka jest najprostsza metoda jednoczesnego wykonania analizy CodeQL dla każdego języka w repozytorium wielojęzykowym za pomocą GitHub Actions?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#changing-the-languages-that-are-analyzed"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#changing-the-languages-that-are-analyzed"
 ---
 
 - [x] Poprzez utworzenie matrycy `languages` dla zadania i odwołanie się do niej w parametrze wejściowym `languages` akcji `github/codeql-action/init`

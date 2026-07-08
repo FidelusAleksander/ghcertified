@@ -1,6 +1,6 @@
 ---
 question: "¿Qué son los Repository Security Advisories?"
-documentation: "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories"
+documentation: "https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/repository-security-advisories"
 ---
 
 - [x] Un espacio privado donde los mantenedores del repository pueden debatir vulnerabilidades y problemas de seguridad dentro del código.

@@ -1,6 +1,6 @@
 ---
 question: "GitHubリポジトリにファイルを追加するために必要な操作はどれですか？"
-documentation: "https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
 ---
 
 - [ ] リポジトリ所有者であること。

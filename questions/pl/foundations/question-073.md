@@ -1,6 +1,6 @@
 ---
 question: "Czym jest GitHub Flow?"
-documentation: "https://docs.github.com/en/get-started/quickstart/github-flow"
+documentation: "https://docs.github.com/en/get-started/using-github/github-flow"
 ---
 
 - [x] Odnosi się do przepływu pracy opartego na gałęziach, w którym programiści tworzą gałąź dla każdej nowej zmiany, nad którą pracują, a następnie tworzą pull requesty, aby ich kod został zrecenzowany, przetestowany i scalony z główną gałęzią.

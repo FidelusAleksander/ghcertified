@@ -1,6 +1,6 @@
 ---
 question: "W jaki sposób można dostosować zaawansowaną konfigurację skanowania CodeQL za pomocą dodatkowych pakietów zapytań CodeQL?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options"
 ---
 
 - [x] Korzystając z niestandardowego pliku konfiguracyjnego i definiując w nim dodatkowe zapytania

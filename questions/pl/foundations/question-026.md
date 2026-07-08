@@ -1,6 +1,6 @@
 ---
 question: "Co to jest GitHub Codespace?"
-documentation: "https://docs.github.com/en/codespaces/overview"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces"
 ---
 
 - [x] To wstępnie skonfigurowane środowisko programistyczne specjalnie przygotowane dla danego repository. Pozwala od razu rozpocząć pisanie kodu dla projektu bez konieczności konfiguracji lokalnego środowiska programistycznego.

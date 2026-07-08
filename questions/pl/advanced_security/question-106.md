@@ -1,6 +1,6 @@
 ---
 question: "Który z tych kanałów nie jest obsługiwany przez GitHub do otrzymywania alertów Dependabot?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-notifications-for-dependabot-alerts#configuring-notifications-for-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependabot-notifications"
 ---
 
 - [x] SMS/Call

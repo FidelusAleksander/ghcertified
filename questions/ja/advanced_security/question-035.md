@@ -1,6 +1,6 @@
 ---
 question: "GitHub でのコードスキャニングの目的は何ですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning"
 ---
 
 - [x] コードの脆弱性やエラーを特定するため

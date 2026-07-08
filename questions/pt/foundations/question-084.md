@@ -1,6 +1,6 @@
 ---
 question: "O que são os comandos de barra (slash commands) do GitHub?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/about-slash-commands"
 ---
 
 - [x] É uma forma de inserir rapidamente Markdown complexo nos comentários e descrições do seu pull request ou issue.

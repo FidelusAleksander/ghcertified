@@ -1,6 +1,6 @@
 ---
 question: "Em qual cenário o GitHub Issues seria mais eficaz do que Discussions?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
 ---
 
 - [ ] Ao fazer anúncios e compartilhar notícias com a equipe.

@@ -1,6 +1,6 @@
 ---
 question: "Które z poniższych stwierdzeń dotyczących cyklu życia GitHub Codespaces są prawdziwe?"
-documentation: "https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle"
+documentation: "https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle"
 ---
 
 - [x] Cykl życia Codespace rozpoczyna się, gdy tworzysz Codespace, a kończy, gdy go usuniesz.

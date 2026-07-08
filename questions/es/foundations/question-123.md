@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál es la principal diferencia entre un miembro de una organización y un colaborador externo para un repositorio propiedad de esa organización?"
-documentation: "https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization"
+documentation: "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization"
 ---
 
 - [x] Los colaboradores externos tienen acceso a nivel de repositorio pero no forman parte de la organización; los miembros pertenecen a la organización y pueden tener un acceso y roles más amplios.  

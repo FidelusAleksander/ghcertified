@@ -1,6 +1,6 @@
 ---
 question: "GitHubでのピン留めされたリポジトリとは何ですか？"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [x] ピン留めされたリポジトリとは、GitHubプロフィールの上部にピン留めしたリポジトリのことです。

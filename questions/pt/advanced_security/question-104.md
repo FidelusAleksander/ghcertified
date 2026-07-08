@@ -1,6 +1,6 @@
 ---
 question: "Para habilitar os Dependabot Alerts em todos os repositórios de uma organização, você deve:"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-dependabot-alerts#enabling-or-disabling-dependabot-alerts-for-all-existing-repositories"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts"
 ---
 
 - [x] Ir para as configurações de `Code security and analysis` da organização e habilitar os Dependabot Alerts para todos os repositórios de uma vez.

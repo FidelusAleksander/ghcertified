@@ -1,6 +1,6 @@
 ---
 question: "リポジトリでDependabotアラートを有効にできるのは誰ですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] リポジトリ所有者および管理者アクセス権を持つユーザー

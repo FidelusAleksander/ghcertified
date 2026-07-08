@@ -1,6 +1,6 @@
 ---
 question: "Który z nich jest prawidłowym plikiem konfiguracyjnym `dependabot.yml`?"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file"
 ---
 
 - [x] 

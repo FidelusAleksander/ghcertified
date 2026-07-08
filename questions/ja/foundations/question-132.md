@@ -1,7 +1,7 @@
 ---
 question: "GitHub プロフィールに固定できる項目について、正しい記述はどれですか？"  
 draft: false  
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile"
+documentation: "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile"
 ---
 
 - [ ] プロフィールに最大10個のリポジトリを固定できます。  

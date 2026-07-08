@@ -1,6 +1,6 @@
 ---
 question: "Como você pode personalizar sua configuração avançada de varredura CodeQL com conjuntos de consultas CodeQL adicionais?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options"
 ---
 
 - [x] Usando um arquivo de configuração personalizado e definindo consultas adicionais nele

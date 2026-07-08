@@ -1,6 +1,6 @@
 ---
 question: "O que é o GitHub Flow?"
-documentation: "https://docs.github.com/en/get-started/quickstart/github-flow"
+documentation: "https://docs.github.com/en/get-started/using-github/github-flow"
 ---
 
 - [x] Refere-se a um fluxo de trabalho baseado em branch onde os desenvolvedores criam uma branch para cada nova alteração em que estão trabalhando e, em seguida, abrem pull requests para que seu código seja revisado, testado e mesclado na branch principal.

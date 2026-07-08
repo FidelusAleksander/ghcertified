@@ -1,6 +1,6 @@
 ---
 question: "脆弱性のある依存関係を最もよく定義している文はどれですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] 脆弱性のある依存関係とは、プロジェクトが依存している中で、セキュリティの欠陥を含む可能性があり、その欠陥が悪用されることでプロジェクトのセキュリティが危険にさらされるものを指します。

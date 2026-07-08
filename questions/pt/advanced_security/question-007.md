@@ -1,6 +1,6 @@
 ---
 question: "Qual das opções melhor descreve a verificação de segredos (secret scanning)?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
 ---
 
 - [x] A verificação de segredos analisa seu repositório em busca de segredos como chaves privadas ou tokens.

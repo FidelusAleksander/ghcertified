@@ -1,6 +1,6 @@
 ---
 question: "CodeQL は GitHub でどのようにコードを分析しますか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql#about-codeql"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql"
 ---
 
 - [x] CodeQL データベースを生成し、クエリを実行して問題を特定し、コード スキャン アラートとして結果を表示します

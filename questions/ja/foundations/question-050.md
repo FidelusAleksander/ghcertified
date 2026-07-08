@@ -1,6 +1,6 @@
 ---
 question: "自分の個人GitHubアカウントで作成したRepositoryで、友人と一緒に作業するにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository"
+documentation: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository"
 ---
 
 - [x] Repositoryの設定に移動し、Collaboratorとして招待します

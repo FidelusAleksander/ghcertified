@@ -1,6 +1,6 @@
 ---
 question: "¿Cuáles de las siguientes afirmaciones sobre la configuración predeterminada de escaneo de CodeQL son verdaderas?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning"
 ---
 
 - [x] Puede habilitar la configuración predeterminada para todos los repositorios elegibles de una organización a la vez en la configuración de la organización

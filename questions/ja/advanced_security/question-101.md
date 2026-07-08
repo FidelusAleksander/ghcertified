@@ -1,6 +1,6 @@
 ---
 question: "Dependabot Alertsはデフォルトで有効になっているのは次のうちどれですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#configuration-of-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] Dependabot Alertsはどのリポジトリでもデフォルトでは有効になっていません。

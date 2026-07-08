@@ -1,6 +1,6 @@
 ---
 question: "Uma organização começou recentemente a usar a análise do CodeQL para todas as pull requests em seus repositórios, bem como a executar a análise em uma programação horária. Desde então, eles estão enfrentando contas do GitHub Actions maiores do que o usual. Qual é a causa mais provável disso?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-billing-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-billing-for-code-scanning"
 ---
 
 - [x] A varredura de código usa o GitHub Actions e a organização está sendo cobrada pelo uso adicional.

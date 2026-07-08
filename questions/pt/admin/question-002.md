@@ -1,6 +1,6 @@
 ---
 question: "O que é o gráfico de dependência do GitHub Dependabot?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph"
 ---
 
 - [x] É uma representação das dependências e dependentes de um repositório.

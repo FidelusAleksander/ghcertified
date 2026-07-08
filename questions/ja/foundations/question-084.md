@@ -1,6 +1,6 @@
 ---
 question: "GitHub のスラッシュコマンドとは何ですか？"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/about-slash-commands"
 ---
 
 - [x] プルリクエストや Issue のコメントおよび説明に複雑な Markdown を素早く挿入する方法です。

@@ -1,7 +1,7 @@
 ---
 question: "Quais desses recursos o GitHub Copilot for Business oferece que o GitHub Copilot for Individuals não oferece?"  
 draft: false  
-documentation: "https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot"
+documentation: "https://docs.github.com/en/copilot/get-started/plans"
 ---
 
 - [x] Gerenciamento de políticas em nível organizacional, incluindo a restrição de sugestões do modelo com base em código público  

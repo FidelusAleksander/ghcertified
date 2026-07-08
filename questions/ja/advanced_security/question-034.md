@@ -1,6 +1,6 @@
 ---
 question: "GitHubでDependabotアラートが示すものは何ですか？"
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#about-dependabot-alerts"
+documentation: "https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts"
 ---
 
 - [x] リポジトリ内の脆弱な依存関係やマルウェアの存在  

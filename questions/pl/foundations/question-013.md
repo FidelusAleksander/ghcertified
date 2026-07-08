@@ -1,6 +1,6 @@
 ---
 question: "Jak można przypisać osobę do issue lub pull request?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users"
 ---
 
 - [x] Korzystając z pola Assignees w pasku bocznym

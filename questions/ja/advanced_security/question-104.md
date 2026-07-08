@@ -1,6 +1,6 @@
 ---
 question: "組織内のすべてのリポジトリでDependabot Alertsを有効にする方法は次のうちどれですか："
-documentation: "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/configuring-dependabot-alerts#enabling-or-disabling-dependabot-alerts-for-all-existing-repositories"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts"
 ---
 
 - [x] 組織の`Code security and analysis`設定に移動し、すべてのリポジトリでDependabot Alertsを一括で有効にします。

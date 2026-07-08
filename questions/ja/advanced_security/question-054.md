@@ -1,6 +1,6 @@
 ---
 question: "GitHubリポジトリをスケジュールに基づいてCodeQL分析を実行するように設定するにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning#about-default-setup"
+documentation: "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#about-default-setup"
 ---
 
 - [x] `schedule`トリガーを使用したGitHub Actionsワークフローを作成します。このワークフローは`github/codeql-action`リポジトリのアクションを利用する必要があります。

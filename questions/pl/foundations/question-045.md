@@ -1,6 +1,6 @@
 ---
 question: "Co można znaleźć na karcie zabezpieczeń w repozytorium?"
-documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
+documentation: "https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository"
 ---
 
 - [x] Przegląd zabezpieczeń tego repozytorium, takich jak podatności w zależnościach, wyniki skanowania kodu i alerty skanowania sekretów

@@ -1,6 +1,6 @@
 ---
 question: "Como você pode ativar a análise de código para um repositório?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning"
 ---
 
 - [x] Vá para a aba de segurança nas configurações do repositório e ative a análise de código com configuração padrão ou avançada.

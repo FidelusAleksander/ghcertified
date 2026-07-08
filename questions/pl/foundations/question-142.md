@@ -1,6 +1,6 @@
 ---
 question: "Dlaczego zespół może wybrać GitHub Issues zamiast Discussions do zarządzania zgłoszeniami błędów?"
-documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+documentation: "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
 ---
 
 - [ ] Discussions zapewniają lepszą widoczność i śledzenie zgłoszeń błędów.

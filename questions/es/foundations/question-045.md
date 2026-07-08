@@ -1,6 +1,6 @@
 ---
 question: "¿Qué puedes encontrar en la pestaña de seguridad de un repositorio?"
-documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
+documentation: "https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository"
 ---
 
 - [x] Un resumen de seguridad de ese repositorio, como vulnerabilidades en las dependencias, resultados del análisis de código y alertas de escaneo de secretos

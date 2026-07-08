@@ -1,6 +1,6 @@
 ---
 question: "O que você pode encontrar na aba de segurança de um repositório?"
-documentation: "https://docs.github.com/en/code-security/getting-started/securing-your-repository"
+documentation: "https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository"
 ---
 
 - [x] Uma visão geral de segurança desse repositório, como vulnerabilidades em dependências, resultados de verificação de código e alertas de verificação de segredos

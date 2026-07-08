@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo puedes excluir ciertos directorios o archivos del análisis de secretos?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories#excluding-directories-from-secret-scanning-alerts-for-users"
+documentation: "https://docs.github.com/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/exclude-folders-and-files"
 ---
 
 - [x] Creando un archivo `secret_scanning.yml` e incluyendo las rutas que no deben ser analizadas
