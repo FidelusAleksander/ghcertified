@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo beneficia la sincronización de equipos con Microsoft Entra ID (anteriormente Azure AD) a las organizaciones de GitHub Enterprise Cloud?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise
 ---
 
 - [x] Permite la actualización automática de los cambios de membresía en el grupo de IdP en GitHub, reduciendo la necesidad de actualizaciones manuales y scripts personalizados al sincronizar equipos en las organizaciones de GitHub con los grupos de IdP.

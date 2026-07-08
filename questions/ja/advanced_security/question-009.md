@@ -1,6 +1,6 @@
 ---
 question: "Secret scanning partner programの目的は何ですか？"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program
 ---
 
 - [x] サービスプロバイダーはGitHubと提携し、自社のシークレットフォーマットをGitHubのシークレットスキャンで認識できるようにすることができます。

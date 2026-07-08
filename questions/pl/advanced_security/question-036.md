@@ -1,6 +1,6 @@
 ---
 question: "Czy skanowanie tajnych danych jest dostępne zarówno dla publicznych, jak i prywatnych repozytoriów na GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning#about-secret-scanning
 ---
 
 - [x] Tak, ale dla prywatnych repozytoriów wymagana jest licencja na GitHub Advanced Security

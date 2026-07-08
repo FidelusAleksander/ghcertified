@@ -1,6 +1,6 @@
 ---
 question: "Jak są obliczane minuty dla zadań uruchamianych na różnych systemach operacyjnych w GitHub Actions?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 ---
 
 - [x] Zadania na Windows i macOS zużywają minuty odpowiednio 2 i 10 razy szybciej niż zadania na Linux runners.

@@ -1,6 +1,6 @@
 ---
 question: "Co jest wymagane, aby dodać samodzielnie hostowanego runnera do organizacji na GitHub?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners
 ---
 
 - [x] Dostęp właściciela organizacji, przejście do ustawień organizacji, wybór Actions, następnie Runners, i wykonanie instrukcji konfiguracji samodzielnie hostowanego runnera.

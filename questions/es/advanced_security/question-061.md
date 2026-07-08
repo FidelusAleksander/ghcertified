@@ -1,6 +1,6 @@
 ---
 question: "¿Con qué frecuencia se activa el escaneo cuando utilizas el análisis de CodeQL en el flujo de trabajo de GitHub Actions?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning
 ---
 
 - [x] El escaneo de código puede activarse por muchos eventos diferentes que ocurren en el repositorio.

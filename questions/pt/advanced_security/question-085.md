@@ -1,6 +1,6 @@
 ---
 question: "Quais dessas afirmações sobre visualizar os resultados de uma análise do CodeQL são verdadeiras?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/assessing-code-scanning-alerts-for-your-repository"
+documentation: https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts
 ---
 
 - [x] Você precisa de permissão de gravação para visualizar um resumo de todos os alertas de um repositório na aba Segurança.

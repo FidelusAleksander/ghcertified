@@ -1,6 +1,6 @@
 ---
 question: "GitHubリポジトリにセルフホストランナーを追加する方法は？"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners
 ---
 
 - [x] リポジトリ設定に移動し、「Actions」を選択して「Runners」を選択し、セルフホストランナーアプリケーションをダウンロード、設定、実行するための指示に従います。

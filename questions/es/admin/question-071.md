@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de estas opciones define mejor las Políticas de GitHub Enterprise?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
 ---
 
 - [x] Configuraciones gestionadas por los propietarios de la empresa para controlar aspectos como la gestión de repositorios, el acceso de los equipos y las funciones de seguridad dentro de sus organizaciones de GitHub.

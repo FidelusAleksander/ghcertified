@@ -1,6 +1,6 @@
 ---
 question: "Umieściłeś fałszywe sekrety w swoim kodzie testowym i zostały one wykryte przez GitHub's secret scanning. Co możesz zrobić, aby poinformować GitHub, że są to fałszywe sekrety używane w testach i mogą być pominięte przez secret scanning?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/excluding-folders-and-files-from-secret-scanning"
+documentation: https://docs.github.com/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/exclude-folders-and-files
 ---
 
 - [x] Tworząc plik `secret_scanning.yml`, w którym zadeklarujesz ścieżki zawierające fałszywe sekrety, aby skanowanie je pominęło

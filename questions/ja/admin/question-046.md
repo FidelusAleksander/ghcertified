@@ -1,6 +1,6 @@
 ---
 question: "組織はGitHub Actionsのワークフローのセキュリティをどのように向上させることができますか？"
-documentation: "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions"
+documentation: https://docs.github.com/en/actions/reference/security/secure-use
 ---
 
 - [x] シークレットの安全な取り扱いや、異常がないか監査ログを定期的にレビューするなどのセキュリティ対策を採用する。

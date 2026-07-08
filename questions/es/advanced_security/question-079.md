@@ -1,6 +1,6 @@
 ---
 question: "¿Dónde puedes especificar las consultas de CodeQL para ejecutar en un flujo de trabajo de GitHub Actions?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#running-additional-queries"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#running-additional-queries
 ---
 
 - [x] En el parámetro de entrada `queries` de la acción `github/codeql-action/init`

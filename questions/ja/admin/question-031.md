@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Server はどのような環境にデプロイできますか？"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] オンプレミスのデータセンターまたはパブリッククラウドサービス（例：AWS、GCP、Azure）

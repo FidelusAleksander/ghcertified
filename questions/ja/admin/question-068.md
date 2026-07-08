@@ -1,6 +1,6 @@
 ---
 question: "リポジトリから機密データを削除するために、git filter-repo または BFG Repo-Cleaner を実行する前に何をすべきですか？"
-documentation: "https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository"
+documentation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 ---
 
 - [x] すべてのオープン中のPull Requestをマージまたはクローズする

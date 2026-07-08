@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Cloud 上で、エンタープライズ アカウント内のすべての組織に SAML シングルサインオン (SSO) を有効化する場合と、単一の組織に対して有効化する場合の主な違いは何ですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on
 ---
 
 - [x] 単一の組織に対して SAML SSO を有効化する場合、各組織で異なる IdP を使用できますが、すべての組織に対して有効化する場合は、エンタープライズ全体で単一の IdP が必要となります。

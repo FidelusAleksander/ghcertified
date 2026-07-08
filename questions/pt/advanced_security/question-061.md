@@ -1,6 +1,6 @@
 ---
 question: "Ao usar a análise do CodeQL no seu fluxo de trabalho do GitHub Actions, com que frequência a varredura é acionada?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning
 ---
 
 - [x] A varredura de código pode ser acionada por muitos eventos diferentes que acontecem no repositório.

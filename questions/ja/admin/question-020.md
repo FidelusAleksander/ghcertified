@@ -1,6 +1,6 @@
 ---
 question: "Enterprise Managed Usersのユーザー名とプロフィール情報に関するどの記述が正しいですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] ユーザー名とプロフィール情報はエンタープライズのIdPを通じて設定され、ユーザー自身が変更することはできません。

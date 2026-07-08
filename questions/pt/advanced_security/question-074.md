@@ -1,6 +1,6 @@
 ---
 question: "Quais das seguintes afirmações sobre a habilitação da configuração padrão do CodeQL scanning são verdadeiras?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning
 ---
 
 - [x] Você pode habilitar a configuração padrão para todos os repositórios elegíveis em uma organização de uma só vez nas configurações da organização

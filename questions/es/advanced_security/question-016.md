@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál es el comportamiento cuando se agrega o actualiza un nuevo patrón de secreto en el programa de socios de análisis de secretos de GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning#accessing-secret-scanning-alerts
 ---
 
 - [x] GitHub realizará un análisis de todo el contenido de código histórico en los repositorios públicos con el análisis de secretos habilitado

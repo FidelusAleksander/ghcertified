@@ -1,6 +1,6 @@
 ---
 question: "Które z poniższych stwierdzeń dotyczą programu partnerskiego GitHub secret scanning?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program
 ---
 
 - [x] Jest to program, w ramach którego dostawcy usług mogą dostarczyć GitHub wzorce regex dla swoich sekretów, aby GitHub secret scanning mógł je rozpoznawać.

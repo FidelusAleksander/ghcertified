@@ -1,6 +1,6 @@
 ---
 question: "Jakie kroki są potrzebne do utworzenia grupy runnerów self-hosted dla organizacji na GitHub?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access
 ---
 
 - [x] Przejdź do ustawień organizacji, wybierz Actions, kliknij Runner groups, utwórz nową grupę i przypisz politykę dostępu do repozytoriów.

@@ -1,6 +1,6 @@
 ---
 question: "Qual afirmação é verdadeira em relação a nomes de usuários e informações de perfil para Enterprise Managed Users?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] Os nomes de usuários e as informações de perfil são definidos através do IdP da empresa e não podem ser alterados pelos usuários.

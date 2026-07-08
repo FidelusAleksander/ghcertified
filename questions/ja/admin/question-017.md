@@ -1,6 +1,6 @@
 ---
 question: "GitHub での Enterprise Managed Users の主な機能は何ですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] Identity Provider (IdP) から GitHub 上の企業メンバーのアイデンティティとアクセスを一元管理すること。

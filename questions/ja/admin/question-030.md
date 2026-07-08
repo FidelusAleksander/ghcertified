@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Serverは主に何を目的として設計されていますか？"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] エンタープライズ内でのソフトウェア開発を目的としたセルフホスト型プラットフォーム

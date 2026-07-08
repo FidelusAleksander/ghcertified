@@ -1,6 +1,6 @@
 ---
 question: "Quais ferramentas podem ser usadas para remover dados sensíveis do histórico de um repositório Git?"
-documentation: "https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository"
+documentation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 ---
 
 - [x] git filter-repo & BFG Repo-Cleaner

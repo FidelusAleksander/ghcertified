@@ -1,6 +1,6 @@
 ---
 question: "Qual dessas afirmações não é verdadeira sobre a verificação de segredos no GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
 ---
 
 - [x] Secret scanning é uma ferramenta para armazenamento e gerenciamento seguro de segredos.

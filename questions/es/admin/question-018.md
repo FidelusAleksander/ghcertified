@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo se aprovisionan las cuentas de usuario con Enterprise Managed Users?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] Las cuentas de usuario son aprovisionadas por el IdP de la empresa, con acceso proporcionado a GitHub Enterprise Cloud.

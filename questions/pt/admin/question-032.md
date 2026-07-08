@@ -1,6 +1,6 @@
 ---
 question: "Qual das seguintes é uma característica principal do GitHub Enterprise Server?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] Executa na sua infraestrutura e é governado pelos controles de acesso e segurança que você define

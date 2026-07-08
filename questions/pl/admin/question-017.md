@@ -1,6 +1,6 @@
 ---
 question: "Jaka jest główna funkcja Enterprise Managed Users w GitHub?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] Centralne zarządzanie tożsamością i dostępem członków przedsiębiorstwa na GitHub za pomocą dostawcy tożsamości (IdP).

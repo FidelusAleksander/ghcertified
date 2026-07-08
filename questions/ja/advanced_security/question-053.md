@@ -1,6 +1,6 @@
 ---
 question: "リポジトリでコードスキャンを有効にするにはどうすればよいですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning
 ---
 
 - [x] リポジトリ設定のセキュリティタブに移動し、デフォルトまたは高度なセットアップでコードスキャンを有効にします。

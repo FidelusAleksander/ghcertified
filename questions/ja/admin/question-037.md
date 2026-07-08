@@ -1,6 +1,6 @@
 ---
 question: "GitHub Actions の月次請求アカウントにおけるデフォルトの支出上限は何ですか？"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 ---
 
 - [x] デフォルトの支出上限は0ドルで、含まれる量を超えた追加使用を防ぎます。

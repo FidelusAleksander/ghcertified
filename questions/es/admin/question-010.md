@@ -1,6 +1,6 @@
 ---
 question: "¿Cuáles son las implicaciones clave de habilitar el inicio de sesión único (SSO) con SAML para una organización en GitHub Enterprise Cloud?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on
 ---
 
 - [x] SAML SSO permite a los propietarios de la organización controlar y asegurar el acceso a los recursos de la organización.
