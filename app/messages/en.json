@@ -134,7 +134,11 @@
     "checkAnswer": "Check Answer",
     "sidebarRange": "{start}–{end} of {total}",
     "previousSidebarPage": "Previous question page",
-    "nextSidebarPage": "Next question page"
+    "nextSidebarPage": "Next question page",
+    "orderLabel": "Order",
+    "sequential": "Sequential",
+    "randomOrder": "Random",
+    "shuffle": "Shuffle questions"
   },
   "Challenges": {
     "label": "Challenges",
