@@ -137,11 +137,14 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
 
   const applyOrder = useCallback(
     (random: boolean) => {
+      // No-op when the mode is already active — avoids resetting progress
+      // (and reshuffling) on a repeat click. Use the Shuffle button to reshuffle.
+      if (random === isRandomOrder) return;
       setIsRandomOrder(random);
       setOrderedQuestions(random ? shuffle(questions) : questions);
       resetProgress();
     },
-    [questions, resetProgress],
+    [questions, resetProgress, isRandomOrder],
   );
 
   const handleShuffle = useCallback(() => {
