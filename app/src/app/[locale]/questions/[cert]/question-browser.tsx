@@ -9,6 +9,8 @@
  *
  * Stateless — no scoring, no flagging, no results screen.
  * Answer order is shuffled on mount (client-side) to prevent position memorization.
+ * Question order can be toggled between file order (Sequential) and Random via an
+ * in-page control; switching order or reshuffling resets progress to the first question.
  */
 
 import { useState, useCallback, useEffect, useMemo } from "react";
@@ -17,7 +19,7 @@ import type { Question } from "@/types/quiz";
 import { cn, shuffle } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Shuffle } from "lucide-react";
 import { renderInlineMarkdown } from "@/lib/render-inline-markdown";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { AnswerList } from "@/components/quiz/AnswerList";
@@ -34,6 +36,10 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, Set<string>>>({});
   const [revealedMap, setRevealedMap] = useState<Record<number, boolean>>({});
 
+  // Question display order — sequential (file order) by default, or client-shuffled
+  const [isRandomOrder, setIsRandomOrder] = useState(false);
+  const [orderedQuestions, setOrderedQuestions] = useState<Question[]>(questions);
+
   // Shuffle answers per question on mount (client-only to avoid hydration mismatch)
   const [shuffledAnswerMap, setShuffledAnswerMap] = useState<Record<string, Question["answers"]>>({});
   useEffect(() => {
@@ -47,12 +53,12 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
 
   // Sidebar pagination — auto-follows active question, manual override resets on question nav
   const PAGE_SIZE = 20;
-  const totalPages = Math.ceil(questions.length / PAGE_SIZE);
+  const totalPages = Math.ceil(orderedQuestions.length / PAGE_SIZE);
   const activeQuestionPage = Math.floor(currentIndex / PAGE_SIZE);
   const [manualSidebarPage, setManualSidebarPage] = useState<number | null>(null);
   const sidebarPage = manualSidebarPage ?? activeQuestionPage;
   const pageStart = sidebarPage * PAGE_SIZE;
-  const pageEnd = Math.min(pageStart + PAGE_SIZE, questions.length);
+  const pageEnd = Math.min(pageStart + PAGE_SIZE, orderedQuestions.length);
 
   // Reset manual override when active question moves to a different page
   const handleSetCurrentIndex = useCallback((idx: number | ((prev: number) => number)) => {
@@ -66,13 +72,13 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   }, []);
 
   const currentQuestion = useMemo(() => {
-    const q = questions[currentIndex];
+    const q = orderedQuestions[currentIndex];
     if (!q) return null;
     const shuffledAnswers = shuffledAnswerMap[q.id];
     // Return null until shuffle is ready to prevent flash of unshuffled answers
     if (!shuffledAnswers) return null;
     return { ...q, answers: shuffledAnswers };
-  }, [questions, currentIndex, shuffledAnswerMap]);
+  }, [orderedQuestions, currentIndex, shuffledAnswerMap]);
   const currentSelected = selectedAnswers[currentQuestion?.id ?? ""] ?? new Set<string>();
   const isRevealed = revealedMap[currentIndex] || false;
 
@@ -114,12 +120,37 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
   const canCheck = currentSelected.size === requiredCount;
 
   const handleNext = () => {
-    if (currentIndex < questions.length - 1) handleSetCurrentIndex((i) => i + 1);
+    if (currentIndex < orderedQuestions.length - 1) handleSetCurrentIndex((i) => i + 1);
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) handleSetCurrentIndex((i) => i - 1);
   };
+
+  // Reset all per-question progress — used whenever the display order changes
+  const resetProgress = useCallback(() => {
+    setCurrentIndex(0);
+    setRevealedMap({});
+    setSelectedAnswers({});
+    setManualSidebarPage(null);
+  }, []);
+
+  const applyOrder = useCallback(
+    (random: boolean) => {
+      // No-op when the mode is already active — avoids resetting progress
+      // (and reshuffling) on a repeat click. Use the Shuffle button to reshuffle.
+      if (random === isRandomOrder) return;
+      setIsRandomOrder(random);
+      setOrderedQuestions(random ? shuffle(questions) : questions);
+      resetProgress();
+    },
+    [questions, resetProgress, isRandomOrder],
+  );
+
+  const handleShuffle = useCallback(() => {
+    setOrderedQuestions(shuffle(questions));
+    resetProgress();
+  }, [questions, resetProgress]);
 
   const isCurrentCorrect = () => {
     if (!currentQuestion) return false;
@@ -133,15 +164,61 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
     <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6 items-start">
       {/* Sidebar — paginated numbered grid */}
       <Card className="shadow-sm border-[1.5px] lg:sticky lg:top-6">
-        <CardHeader className="p-4 pb-0">
+        <CardHeader className="p-4 pb-0 gap-3">
+          {/* Order control — Sequential / Random segmented toggle + reshuffle */}
+          <div className="flex items-center gap-1.5">
+            <div
+              role="group"
+              aria-label={t("orderLabel")}
+              className="flex flex-1 rounded-[8px] border border-border bg-muted/40 p-0.5"
+            >
+              <button
+                type="button"
+                onClick={() => applyOrder(false)}
+                aria-pressed={!isRandomOrder}
+                className={cn(
+                  "flex-1 rounded-[6px] px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  !isRandomOrder
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {t("sequential")}
+              </button>
+              <button
+                type="button"
+                onClick={() => applyOrder(true)}
+                aria-pressed={isRandomOrder}
+                className={cn(
+                  "flex-1 rounded-[6px] px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+                  isRandomOrder
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {t("randomOrder")}
+              </button>
+            </div>
+            {isRandomOrder && (
+              <button
+                type="button"
+                onClick={handleShuffle}
+                aria-label={t("shuffle")}
+                title={t("shuffle")}
+                className="size-7 flex-shrink-0 rounded-[7px] border border-border bg-card flex items-center justify-center text-muted-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+              >
+                <Shuffle className="size-3.5" />
+              </button>
+            )}
+          </div>
           <span className="font-display text-[11px] font-bold tracking-[1px] uppercase text-muted-foreground">
-            {t("sidebarRange", { start: pageStart + 1, end: pageEnd, total: questions.length })}
+            {t("sidebarRange", { start: pageStart + 1, end: pageEnd, total: orderedQuestions.length })}
           </span>
         </CardHeader>
         <CardContent className="p-4 pt-3">
           {/* Mobile: horizontal scroll strip (all questions) */}
           <div className="flex gap-1.5 overflow-x-auto pb-1 lg:hidden">
-            {questions.map((_, i) => (
+            {orderedQuestions.map((_, i) => (
               <button
                 key={i}
                 onClick={() => handleSetCurrentIndex(i)}
@@ -228,7 +305,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
 
       {/* Question card */}
       <QuestionCard
-        headerLabel={tQ("questionOf", { current: currentIndex + 1, total: questions.length })}
+        headerLabel={tQ("questionOf", { current: currentIndex + 1, total: orderedQuestions.length })}
         documentationHref={currentQuestion.documentation}
         reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${currentQuestion.cert}/question-${currentQuestion.id.replace(`${currentQuestion.cert}-`, "")}.md)` }))}&labels=question-issue`}
         learnMoreLabel={tQ("learnMore")}
@@ -248,7 +325,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
               </Button>
               <Button
                 onClick={handleNext}
-                disabled={currentIndex === questions.length - 1}
+                disabled={currentIndex === orderedQuestions.length - 1}
                 className="bg-foreground text-card hover:bg-foreground/90"
               >
                 {tQ("nextQuestion")}
