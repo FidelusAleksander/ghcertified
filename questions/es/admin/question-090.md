@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo cambias qué repositorios pueden acceder a un grupo específico de runners en una organización?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access
 ---
 
 - [x] En la configuración de la organización, navega a Actions, selecciona grupos de runners, elige un grupo y modifica la configuración de acceso a los repositorios.

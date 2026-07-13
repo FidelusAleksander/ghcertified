@@ -1,6 +1,6 @@
 ---
 question: "Jak włączyć skanowanie kodu dla repozytorium?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning"
+documentation: https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning
 ---
 
 - [x] Przejdź do zakładki bezpieczeństwa w ustawieniach repozytorium i włącz skanowanie kodu z ustawieniami domyślnymi lub zaawansowanymi.

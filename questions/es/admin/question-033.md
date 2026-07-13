@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo se puede manejar la administración de GitHub Enterprise Server?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] A través del navegador, acceso administrativo SSH y REST o GraphQL APIs

@@ -1,6 +1,6 @@
 ---
 question: "GitHub Action内の`github/codeql-action/init`における`external-repository-token`パラメーターの目的は何ですか？"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-queries-in-ql-packs"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#using-queries-in-ql-packs
 ---
 
 - [x] アクションが分析に必要な構成ファイル、クエリ、またはパックを含むプライベートGitHubリポジトリにアクセスできるようにします。

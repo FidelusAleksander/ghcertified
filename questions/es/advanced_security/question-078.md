@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo puedes usar un archivo de configuración personalizado de CodeQL en un flujo de trabajo de GitHub Actions?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options#using-a-custom-configuration-file
 ---
 
 - [x] Proporcionando explícitamente la ruta del archivo de configuración en el parámetro de entrada `config-file` de la acción `github/codeql-action/init`

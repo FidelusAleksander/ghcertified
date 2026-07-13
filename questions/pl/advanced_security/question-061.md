@@ -1,6 +1,6 @@
 ---
 question: "Podczas używania analizy CodeQL w GitHub Actions workflow, jak często jest uruchamiane skanowanie?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning"
+documentation: https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning#about-code-scanning
 ---
 
 - [x] Skanowanie kodu może być uruchamiane przez różne zdarzenia zachodzące w repository.

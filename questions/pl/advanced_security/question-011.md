@@ -1,6 +1,6 @@
 ---
 question: "Jak możesz zapobiec przesyłaniu commitów zawierających dane uwierzytelniające dostawcy usług w chmurze do GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/push-protection
 ---
 
 - [x] Włącz regułę ochrony przed przesyłaniem z tajnym skanowaniem dla swojego repozytorium lub organizacji.

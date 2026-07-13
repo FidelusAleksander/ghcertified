@@ -1,6 +1,6 @@
 ---
 question: "Jak są tworzone konta użytkowników z Enterprise Managed Users?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users
 ---
 
 - [x] Konta użytkowników są tworzone przez IdP przedsiębiorstwa, a dostęp jest przyznawany do GitHub Enterprise Cloud.

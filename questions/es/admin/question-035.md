@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál es el costo de uso de GitHub Actions para repositorios públicos?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 ---
 
 - [x] El uso de GitHub Actions es gratuito para repositorios públicos.

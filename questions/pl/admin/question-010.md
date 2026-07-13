@@ -1,6 +1,6 @@
 ---
 question: "Jakie są kluczowe implikacje włączenia logowania jednokrotnego (SSO) z SAML dla organizacji w GitHub Enterprise Cloud?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on
 ---
 
 - [x] Logowanie jednokrotne z SAML umożliwia właścicielom organizacji kontrolowanie i zabezpieczanie dostępu do zasobów organizacji.

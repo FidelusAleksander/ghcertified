@@ -1,6 +1,6 @@
 ---
 question: "O que é necessário para adicionar um runner auto-hospedado a uma organização no GitHub?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners
 ---
 
 - [x] Acesso como proprietário da organização, navegar até as configurações da organização, selecionar Actions, depois Runners, e seguir as instruções de configuração para o runner auto-hospedado.

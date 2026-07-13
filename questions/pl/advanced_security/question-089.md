@@ -1,6 +1,6 @@
 ---
 question: "Które z poniższych NIE jest właściwym podejściem do skrócenia czasu wykonywania CodeQL analysis workflow?" 
-documentation: "https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/analysis-takes-too-long
 ---
 
 - [x] Uruchamianie analizy przy każdym zdarzeniu push

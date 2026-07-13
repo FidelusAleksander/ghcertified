@@ -1,6 +1,6 @@
 ---
 question: "¿Qué son las políticas empresariales en el contexto de GitHub Enterprise Cloud?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
 ---
 
 - [x] Las políticas empresariales establecen una política uniforme en todas las organizaciones dentro de una empresa.

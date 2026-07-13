@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo puede personalizar su configuración avanzada de escaneo de CodeQL con suites de consultas adicionales de CodeQL?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options
 ---
 
 - [x] Usando un archivo de configuración personalizado y definiendo consultas adicionales allí

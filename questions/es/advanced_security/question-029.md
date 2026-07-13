@@ -1,6 +1,6 @@
 ---
 question: "¿Puede tu repositorio usar Dependency Graph sin utilizar Dependabot Alerts?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#using-the-dependency-graph"
+documentation: https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#using-the-dependency-graph
 ---
 
 - [x] Sí

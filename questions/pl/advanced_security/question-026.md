@@ -1,6 +1,6 @@
 ---
 question: "Skąd GitHub Dependency graph wie, jakie zależności wykorzystuje Twój projekt?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+documentation: https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems
 ---
 
 - [x] GitHub automatycznie wywodzi zależności z plików manifestów i lock commitowanych do repozytorium

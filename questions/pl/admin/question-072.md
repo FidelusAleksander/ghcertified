@@ -1,6 +1,6 @@
 ---
 question: "Czym są zasady przedsiębiorstwa w kontekście GitHub Enterprise Cloud?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
 ---
 
 - [x] Zasady przedsiębiorstwa nakładają jednolitą politykę na wszystkie organizacje w ramach przedsiębiorstwa.

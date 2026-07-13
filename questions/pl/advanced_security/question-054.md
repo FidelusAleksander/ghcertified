@@ -1,6 +1,6 @@
 ---
 question: "Jak skonfigurować swoje repozytorium GitHub do uruchamiania analizy CodeQL zgodnie z harmonogramem?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning#about-default-setup"
+documentation: https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#about-default-setup
 ---
 
 - [x] Tworząc GitHub Actions workflow z wyzwalaczem `schedule`. Workflow powinien korzystać z akcji z repozytorium `github/codeql-action`.

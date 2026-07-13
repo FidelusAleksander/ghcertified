@@ -1,6 +1,6 @@
 ---
 question: "Quem pode configurar listas de permissão de IP para uma enterprise no GitHub?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/configuring-settings/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list
 ---
 
 - [x] Proprietários da enterprise

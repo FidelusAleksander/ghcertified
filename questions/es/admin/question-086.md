@@ -1,6 +1,6 @@
 ---
 question: "¿Cómo se agrega un runner autohospedado a un repositorio de GitHub?"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners
 ---
 
 - [x] Navega a la configuración del repositorio, selecciona Actions, luego Runners, y sigue las instrucciones para descargar, configurar y ejecutar la aplicación de runner autohospedado.

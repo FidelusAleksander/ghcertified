@@ -1,6 +1,6 @@
 ---
 question: "Como o GitHub Dependency graph sabe quais dependências seu projeto está usando?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems"
+documentation: https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph#supported-package-ecosystems
 ---
 
 - [x] O GitHub deriva automaticamente as dependências a partir dos manifests e arquivos de bloqueio (*lock files*) comprometidos no repositório

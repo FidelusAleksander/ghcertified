@@ -1,6 +1,6 @@
 ---
 question: "Como os minutos são calculados para jobs que executam em sistemas operacionais diferentes no GitHub Actions?"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 ---
 
 - [x] Jobs em Windows e macOS consomem minutos a uma taxa 2 e 10 vezes maior do que jobs em runners Linux.

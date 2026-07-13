@@ -1,6 +1,6 @@
 ---
 question: "組織の所有者は、GitHub Enterprise Serverのライセンス使用状況に関する統計をどのように確認できますか？"
-documentation: "https://docs.github.com/en/enterprise-server/billing/managing-your-license-for-github-enterprise/viewing-license-usage-for-github-enterprise"
+documentation: https://docs.github.com/en/enterprise-server@3.21/billing/how-tos/manage-plan-and-licenses/view-enterprise-usage
 ---
 
 - [x] `Site admin` ダッシュボードに移動し、`Enterprise account` 設定でライセンス使用状況を確認します。

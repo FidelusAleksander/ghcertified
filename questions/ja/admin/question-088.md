@@ -1,6 +1,6 @@
 ---
 question: "組織内でランナーグループを使用してセルフホスト型ランナーへのアクセスをどのように管理できますか？"
-documentation: "https://docs.github.com/en/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups"
+documentation: https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access
 ---
 
 - [x] ランナーグループを作成してランナーをまとめ、それから組織内のリポジトリに対するアクセスポリシーを構成します。

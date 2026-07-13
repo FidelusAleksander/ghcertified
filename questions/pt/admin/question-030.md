@@ -1,6 +1,6 @@
 ---
 question: "Para que o GitHub Enterprise Server é principalmente projetado?"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] Uma plataforma autohospedada para desenvolvimento de software dentro da sua empresa

@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterpriseポリシーを最もよく定義するのはどれですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
 ---
 
 - [x] GitHub組織内でリポジトリ管理、チームアクセス、セキュリティ機能などの側面を制御するためにエンタープライズオーナーによって管理される設定。

@@ -1,6 +1,6 @@
 ---
 question: "GitHub Actions の公開リポジトリでの使用コストは何ですか？"
-documentation: "https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions"
+documentation: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 ---
 
 - [x] GitHub Actions の使用は公開リポジトリに対して無料です。

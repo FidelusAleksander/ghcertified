@@ -1,6 +1,6 @@
 ---
 question: "Em que formato você pode exportar o gráfico de dependência do GitHub do seu repositório?"
-documentation: "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository"
+documentation: https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom
 ---
 
 - [x] SPDX

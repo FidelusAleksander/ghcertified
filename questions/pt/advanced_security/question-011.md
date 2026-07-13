@@ -1,6 +1,6 @@
 ---
 question: "Como você pode impedir que commits contendo credenciais de provedores de nuvem sejam enviados para o GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/push-protection
 ---
 
 - [x] Ative uma regra de proteção contra envio na varredura de segredos para seu repositório ou organização.

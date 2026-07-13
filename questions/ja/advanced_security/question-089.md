@@ -1,6 +1,6 @@
 ---
 question: "CodeQL分析ワークフローの完了にかかる時間を短縮するための有効なアプローチではないものは次のうちどれですか？" 
-documentation: "https://docs.github.com/en/code-security/code-scanning/troubleshooting-code-scanning/analysis-takes-too-long"
+documentation: https://docs.github.com/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/analysis-takes-too-long
 ---
 
 - [x] Pushイベントごとに分析を実行する

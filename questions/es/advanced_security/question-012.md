@@ -1,6 +1,6 @@
 ---
 question: "¿Cuál de estas afirmaciones es verdadera sobre el programa de asociación de análisis de secretos de GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/secret-scanning-partner-program"
+documentation: https://docs.github.com/en/code-security/tutorials/secret-scanning-partner-program
 ---
 
 - [x] Es un programa en el que los proveedores de servicios pueden proporcionar a GitHub los patrones regex de los secretos que emiten para que el análisis de secretos de GitHub pueda reconocerlos.

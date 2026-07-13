@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Cloud のコンテキストでのエンタープライズポリシーとは何ですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise
 ---
 
 - [x] エンタープライズポリシーは、エンタープライズ内のすべての組織で統一されたポリシーを義務付けます。

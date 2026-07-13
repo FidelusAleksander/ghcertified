@@ -1,6 +1,6 @@
 ---
 question: "Jakie jest zachowanie po dodaniu lub zaktualizowaniu nowego wzorca sekretów w programie partnerskim skanowania sekretów GitHub?"
-documentation: "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#accessing-secret-scanning-alerts"
+documentation: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning#accessing-secret-scanning-alerts
 ---
 
 - [x] GitHub przeprowadzi skanowanie całej historii kodu w publicznych repozytoriach z włączonym skanowaniem sekretów

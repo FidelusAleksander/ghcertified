@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Cloud で組織に対して SAML シングルサインオン (SSO) を有効にすることの主な影響は何ですか？"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on"
+documentation: https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on
 ---
 
 - [x] SAML SSO により、組織の所有者は組織リソースへのアクセスを管理し、セキュリティを強化することができます。

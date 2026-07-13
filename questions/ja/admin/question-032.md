@@ -1,6 +1,6 @@
 ---
 question: "次のうち、GitHub Enterprise Serverの主な機能はどれですか？"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] 自社のインフラ上で動作し、定義したアクセスおよびセキュリティ制御により管理される

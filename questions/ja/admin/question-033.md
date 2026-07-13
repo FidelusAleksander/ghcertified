@@ -1,6 +1,6 @@
 ---
 question: "GitHub Enterprise Server の管理はどのように行えますか？"
-documentation: "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server"
+documentation: https://docs.github.com/en/enterprise-server@3.21/admin/overview/about-github-enterprise-server
 ---
 
 - [x] ブラウザ、管理用SSHアクセス、REST または GraphQL API を介して
