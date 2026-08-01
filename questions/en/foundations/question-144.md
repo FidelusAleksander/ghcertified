@@ -1,6 +1,6 @@
 ---
 question: "While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?"
-documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches"
+documentation: "https://docs.github.com/en/pull-requests/reference/branches"
 ---
 
 - [ ] They prevent unauthorized users from viewing the repository.

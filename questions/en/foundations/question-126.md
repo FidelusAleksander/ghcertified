@@ -1,7 +1,7 @@
 ---
 question: "Which of the following are valid states for a pull request on GitHub?"  
 draft: false  
-documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+documentation: "https://docs.github.com/en/pull-requests/reference/pull-requests"
 ---
 
 - [x] Open  
