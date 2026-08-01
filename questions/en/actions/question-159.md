@@ -4,7 +4,7 @@ documentation: "https://docs.github.com/en/actions/reference/workflows-and-actio
 ---
 
 - [x] The `pull_request` event runs within the context of the merge commit, while `pull_request_target` runs in the context of the default branch of the base repository.
-> For more information about merge commits, see the GitHub [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges). 
+> For more information about merge commits, see the GitHub [documentation](https://docs.github.com/en/pull-requests/reference/pull-request-merges). 
 - [x] Workflows will not run on `pull_request` activity if there is a merge conflict
 - [x] Both `pull_request` and `pull_request_target` events have default activity types of `opened`, `synchronize`, and `reopened`.
 - [ ] `pull_request` should be used with caution, since PRs from forks will allow the workflow to access all secrets within the repository due to being associated with the default branch.
