@@ -1,6 +1,6 @@
 ---
 question: "What is a fork in GitHub?"
-documentation: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
+documentation: "https://docs.github.com/en/pull-requests/reference/forks"
 ---
 
 - [x] A fork is a personal copy of another user's repository that lives on your account.

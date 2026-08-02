@@ -1,6 +1,6 @@
 ---
 question: "What is the significance of the 'commit message' in the GitHub flow process?"
-documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
+documentation: "https://docs.github.com/en/pull-requests/reference/commits"
 ---
 
 - [ ] It automatically merges changes into the main branch.

@@ -1,6 +1,6 @@
 ---
 question: "What is a git commit?"
-documentation: "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits"
+documentation: "https://docs.github.com/en/pull-requests/reference/commits"
 ---
 
 - [x] A commit is a snapshot of a repository at a specific point in time.
