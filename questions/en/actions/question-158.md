@@ -33,7 +33,7 @@ jobs:
     post-merge:
 ``` 
 > The `pull_request` event does not have a `merged` activity type.
-- [ ] Specify the the `pull_request` activity type as `closed` (no need for a job-level conditional)
+- [ ] Specify the `pull_request` activity type as `closed` (no need for a job-level conditional)
 ```yaml
 on:
     pull_request:
@@ -42,7 +42,7 @@ jobs:
     post-merge:
 ``` 
 > Pull requests can be closed without being merged. If you do not use a corresponding job-level conditional that checks whether the PR was merged, then the job will fire any time a PR is closed, not just when merging occurred.
-- [ ]  Specify the the `pull_request` activity type as `closed` and use a job-level conditional to check if `github.ref` is equal to the merge branch of the pull request.
+- [ ]  Specify the `pull_request` activity type as `closed` and use a job-level conditional to check if `github.ref` is equal to the merge branch of the pull request.
 ```yaml
 on:
     pull_request:
