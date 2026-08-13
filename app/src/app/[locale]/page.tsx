@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Play, Swords, Trophy, Timer, Flame, Heart } from "lucide-react";
+import { Play, Swords, Trophy, Timer, Flame, Heart, CircleAlert } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCertCatalog } from "@/lib/questions";
 import { parseSupportedLocale } from "@/lib/questions";
@@ -273,7 +273,7 @@ export default async function HomePage({ params }: Props) {
               </a>
             ))}
           </div>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Button
               variant="outline"
               render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
@@ -282,6 +282,29 @@ export default async function HomePage({ params }: Props) {
             >
               {t("joinContributors")}
             </Button>
+          </div>
+
+          {/* Question report callout */}
+          <div className="mt-8 rounded-[14px] border border-amber-500/30 bg-amber-500/5 px-5 py-4 max-w-[520px]">
+            <div className="flex items-start gap-3">
+              <CircleAlert className="size-5 text-amber-500 shrink-0 mt-0.5" />
+              <div>
+                <p className="text-[14px] font-semibold text-foreground leading-snug">
+                  {t("questionReportCalloutTitle")}
+                </p>
+                <p className="text-[13px] text-muted-foreground mt-1 leading-relaxed">
+                  {t("questionReportCalloutDescription")}
+                </p>
+                <a
+                  href="https://github.com/FidelusAleksander/ghcertified/issues?q=is:issue+is:open+label:question-report"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2.5 text-[13px] font-medium text-amber-600 hover:text-amber-500 dark:text-amber-400 dark:hover:text-amber-300 transition-colors"
+                >
+                  {t("questionReportCalloutCta")}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       )}
