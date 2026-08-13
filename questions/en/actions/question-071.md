@@ -4,10 +4,10 @@ documentation: "https://docs.github.com/en/actions/reference/security/secrets"
 ---
 
 - [x] By creating a repository secret with the same name `API_KEY`
-- [x] By creating a environment secret with the same name `API_KEY`
-- [ ] By creating a enterprise secret with the same name `API_KEY`
-- [ ] By creating a enterprise secret with the name `OVERRIDE_API_KEY`
+- [x] By creating an environment secret with the same name `API_KEY`
+- [ ] By creating an enterprise secret with the same name `API_KEY`
+- [ ] By creating an enterprise secret with the name `OVERRIDE_API_KEY`
 - [ ] By creating a repository secret with the name `OVERRIDE_API_KEY`
-- [ ] By creating a environment secret with the name `OVERRIDE_API_KEY`
+- [ ] By creating an environment secret with the name `OVERRIDE_API_KEY`
 - [ ] By creating a repository secret with the name `REPOSITORY_API_KEY`
-- [ ] By creating a environment secret with the name `ENVIRONMENT_API_KEY`
+- [ ] By creating an environment secret with the name `ENVIRONMENT_API_KEY`
