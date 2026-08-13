@@ -27,10 +27,10 @@ jobs:
       matrix:
         exam: [actions, admin, advanced_security, agentic, copilot, foundations]
     steps:
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           fail: false
           output: ${{ env.LYCHEE_REPORT_PATH }}
@@ -78,7 +78,7 @@ jobs:
 
       - name: Open PR with fixes
         if: github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           add-paths: |
             questions/en/${{ matrix.exam }}/question-*.md
