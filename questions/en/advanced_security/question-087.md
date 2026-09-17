@@ -1,6 +1,6 @@
 ---
 question: "When viewing a code scanning alert what is the `Show paths` option used for?"
-documentation: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/managing-code-scanning-alerts-for-your-repository#viewing-the-alerts-for-a-repository"
+documentation: "https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts#viewing-the-alerts-for-a-repository"
 ---
 
 - [x] It will display the path through the code that leads to the issue causing the alert.
