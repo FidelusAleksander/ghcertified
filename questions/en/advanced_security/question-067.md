@@ -1,6 +1,6 @@
 ---
 question: "What are the different types of CodeQL packs?"
-documentation: "https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/customizing-analysis-with-codeql-packs#about-codeql-packs"
+documentation: "https://docs.github.com/en/code-security/concepts/code-scanning/codeql/query-packs#types-of-codeql-packs"
 ---
 
 - [x] Query packs
