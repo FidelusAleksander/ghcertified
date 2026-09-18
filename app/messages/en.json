@@ -42,6 +42,9 @@
     "communityTitle": "Built by {count}+ contributors",
     "communityDescription": "This project is shaped by the community. Every question, fix, and improvement comes from people like you.",
     "joinContributors": "Join the contributors →",
+    "questionReportCalloutTitle": "Help fix reported questions",
+    "questionReportCalloutDescription": "Community members have flagged questions that need review. Pick one up and help improve the question bank.",
+    "questionReportCalloutCta": "View reported issues →",
     "contributorTooltip": "{login} — {count} contributions",
     "tryChallenges": "Try Challenge Modes",
     "ctaPracticeTest": "Take a Practice Test"
