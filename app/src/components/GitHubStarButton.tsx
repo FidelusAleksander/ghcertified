@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { GitHubMark } from "@/components/GitHubMark";
 
-const OWNER = "FidelusAleksander";
+const OWNER = "v-fidelusaleksander";
 const REPO = "ghcertified";
 
 function formatNumber(num: number): string {

@@ -1,13 +1,13 @@
 # Contributing to ghcertified
 
-> The easiest way to contribute is by [opening an issue](https://github.com/FidelusAleksander/ghcertified/issues/new/choose). No contribution is too small — we encourage you to report typos, unclear questions, or feature requests.
+> The easiest way to contribute is by [opening an issue](https://github.com/v-fidelusaleksander/ghcertified/issues/new/choose). No contribution is too small — we encourage you to report typos, unclear questions, or feature requests.
 
 ## Add a new question
 
 > [!WARNING]
 > We do not support the inclusion of questions directly copied from official GitHub certification exams. Please only submit original questions and content that you have created.
 
-**1. [Fork](https://github.com/FidelusAleksander/ghcertified/fork) the repository** (or use the GitHub web editor).
+**1. [Fork](https://github.com/v-fidelusaleksander/ghcertified/fork) the repository** (or use the GitHub web editor).
 
 **2. Create a new file** in the appropriate certification directory.
 Pick the certification and name your file `question-XXX.md`, where `XXX` is the next available number:
@@ -50,7 +50,7 @@ That's all! 🎉 The [Question Writing Guide](questions/README.md) covers advanc
 
 ## Edit an existing question
 
-Find the file in the [questions/en/](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en) directory and edit the Markdown directly.
+Find the file in the [questions/en/](https://github.com/v-fidelusaleksander/ghcertified/blob/main/questions/en) directory and edit the Markdown directly.
 
 ## Running the project
 
@@ -58,7 +58,7 @@ Setting up the dev environment is **only needed if you want to work on the websi
 
 ### GitHub Codespaces
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/FidelusAleksander/ghcertified)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/v-fidelusaleksander/ghcertified)
 
 Once the Codespace is ready, start the dev server:
 
@@ -68,7 +68,7 @@ cd app && npm run dev
 
 ### Local setup
 
-1. [Fork](https://github.com/FidelusAleksander/ghcertified/fork) the repository
+1. [Fork](https://github.com/v-fidelusaleksander/ghcertified/fork) the repository
 2. Install [Node.js](https://nodejs.org/) (see `.node-version` for the recommended version)
 3. Install dependencies and start the dev server:
    ```bash

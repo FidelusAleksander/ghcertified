@@ -30,7 +30,7 @@ export function Footer() {
           })}{" "}
           ·{" "}
           <a
-            href="https://github.com/FidelusAleksander/ghcertified"
+            href="https://github.com/v-fidelusaleksander/ghcertified"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary no-underline hover:underline"

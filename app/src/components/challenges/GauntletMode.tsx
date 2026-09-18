@@ -56,10 +56,10 @@ export function GauntletMode({ questions }: GauntletModeProps) {
   } = useGauntletMode(questions);
 
   function buildReportHref(q: Question) {
-    const fileLink = `[${q.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
+    const fileLink = `[${q.id}](https://github.com/v-fidelusaleksander/ghcertified/blob/main/questions/en/${q.cert}/question-${q.id.replace(`${q.cert}-`, "")}.md)`;
     const title = encodeURIComponent(tQ("reportIssueTitle", { cert: q.cert, questionId: q.id }));
     const body = encodeURIComponent(tQ("reportIssueBody", { question: q.question, fileLink }));
-    return `https://github.com/FidelusAleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
+    return `https://github.com/v-fidelusaleksander/ghcertified/issues/new?title=${title}&body=${body}&labels=question-issue`;
   }
 
   // Shared sidebar element reused across phases
