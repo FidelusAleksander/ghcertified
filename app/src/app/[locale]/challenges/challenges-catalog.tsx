@@ -29,7 +29,7 @@ interface LoadableLeaderboard {
   status: LeaderboardStatus;
 }
 
-const SUGGEST_DISCUSSION_URL = "https://github.com/FidelusAleksander/ghcertified/discussions/new?category=challenge-ideas";
+const SUGGEST_DISCUSSION_URL = "https://github.com/v-fidelusaleksander/ghcertified/discussions/new?category=challenge-ideas";
 
 function toLoadableLeaderboard(
   result: PromiseSettledResult<LeaderboardEntry[]>,

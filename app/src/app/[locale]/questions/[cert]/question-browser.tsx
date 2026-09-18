@@ -307,7 +307,7 @@ export function QuestionBrowser({ questions }: QuestionBrowserProps) {
       <QuestionCard
         headerLabel={tQ("questionOf", { current: currentIndex + 1, total: orderedQuestions.length })}
         documentationHref={currentQuestion.documentation}
-        reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${currentQuestion.cert}/question-${currentQuestion.id.replace(`${currentQuestion.cert}-`, "")}.md)` }))}&labels=question-issue`}
+        reportHref={`https://github.com/v-fidelusaleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert: currentQuestion.cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/v-fidelusaleksander/ghcertified/blob/main/questions/en/${currentQuestion.cert}/question-${currentQuestion.id.replace(`${currentQuestion.cert}-`, "")}.md)` }))}&labels=question-issue`}
         learnMoreLabel={tQ("learnMore")}
         reportLabel={tQ("report")}
         reportTooltip={tQ("reportTooltip")}

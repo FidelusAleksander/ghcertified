@@ -1,4 +1,4 @@
-const REPO = "FidelusAleksander/ghcertified";
+const REPO = "v-fidelusaleksander/ghcertified";
 
 export interface Contributor {
   login: string;

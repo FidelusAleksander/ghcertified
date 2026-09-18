@@ -240,7 +240,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             ) : undefined
           }
           documentationHref={currentQuestion.documentation}
-          reportHref={`https://github.com/FidelusAleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/FidelusAleksander/ghcertified/blob/main/questions/en/${cert}/question-${currentQuestion.id.replace(`${cert}-`, "")}.md)` }))}&labels=question-issue`}
+          reportHref={`https://github.com/v-fidelusaleksander/ghcertified/issues/new?title=${encodeURIComponent(tQ("reportIssueTitle", { cert, questionId: currentQuestion.id }))}&body=${encodeURIComponent(tQ("reportIssueBody", { question: currentQuestion.question, fileLink: `[${currentQuestion.id}](https://github.com/v-fidelusaleksander/ghcertified/blob/main/questions/en/${cert}/question-${currentQuestion.id.replace(`${cert}-`, "")}.md)` }))}&labels=question-issue`}
           learnMoreLabel={tQ("learnMore")}
           reportLabel={tQ("report")}
           reportTooltip={tQ("reportTooltip")}
@@ -394,7 +394,7 @@ export function Quiz({ questions, questionCount, cert, certName }: QuizProps) {
             <CardContent className="px-4 py-3.5 flex items-center justify-between gap-3">
               <span className="text-[13px] text-card/65 leading-snug">{t("contributePrompt")}</span>
               <Button
-                render={<a href="https://github.com/FidelusAleksander/ghcertified/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
+                render={<a href="https://github.com/v-fidelusaleksander/ghcertified/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" />}
                 nativeButton={false}
                 className="bg-card text-foreground hover:bg-card/90 font-bold text-[12px] px-3 py-1.5 h-auto flex-shrink-0"
               >

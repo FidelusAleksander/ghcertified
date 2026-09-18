@@ -1,6 +1,6 @@
 # Question Writing Guide
 
-This guide covers everything you need to write questions for [ghcertified](https://github.com/FidelusAleksander/ghcertified). Questions are parsed by [mdquiz](https://github.com/FidelusAleksander/mdquiz) — a Markdown quiz parser.
+This guide covers everything you need to write questions for [ghcertified](https://github.com/v-fidelusaleksander/ghcertified). Questions are parsed by [mdquiz](https://github.com/v-fidelusaleksander/mdquiz) — a Markdown quiz parser.
 
 ## File basics
 
@@ -151,4 +151,4 @@ Code blocks can also appear inside individual answer options:
 
 ## Parser reference
 
-Questions are parsed by [FidelusAleksander/mdquiz](https://github.com/FidelusAleksander/mdquiz). See its README for the full specification of supported Markdown syntax.
+Questions are parsed by [v-fidelusaleksander/mdquiz](https://github.com/v-fidelusaleksander/mdquiz). See its README for the full specification of supported Markdown syntax.

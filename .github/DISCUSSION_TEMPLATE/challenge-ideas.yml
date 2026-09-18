@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         Thanks for suggesting a new challenge mode! The community votes on ideas by upvoting them.
-        Browse existing ideas in the [Challenge Ideas](https://github.com/FidelusAleksander/ghcertified/discussions/categories/challenge-ideas) discussions.
+        Browse existing ideas in the [Challenge Ideas](https://github.com/v-fidelusaleksander/ghcertified/discussions/categories/challenge-ideas) discussions.
 
   - type: input
     id: name
