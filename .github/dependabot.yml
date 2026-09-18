@@ -20,3 +20,7 @@ updates:
       npm-dependencies:
         patterns:
           - '*'
+      npm-security-dependencies:
+        applies-to: 'security-updates'
+        patterns:
+          - '*'
